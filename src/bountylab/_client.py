@@ -21,7 +21,7 @@ from ._types import (
 )
 from ._utils import is_given, get_async_library
 from ._version import __version__
-from .resources import api, health
+from .resources import health
 from ._streaming import Stream as Stream, AsyncStream as AsyncStream
 from ._exceptions import APIStatusError, BountylabError
 from ._base_client import (
@@ -44,7 +44,6 @@ __all__ = [
 
 class Bountylab(SyncAPIClient):
     health: health.HealthResource
-    api: api.APIResource
     with_raw_response: BountylabWithRawResponse
     with_streaming_response: BountylabWithStreamedResponse
 
@@ -103,7 +102,6 @@ class Bountylab(SyncAPIClient):
         )
 
         self.health = health.HealthResource(self)
-        self.api = api.APIResource(self)
         self.with_raw_response = BountylabWithRawResponse(self)
         self.with_streaming_response = BountylabWithStreamedResponse(self)
 
@@ -214,7 +212,6 @@ class Bountylab(SyncAPIClient):
 
 class AsyncBountylab(AsyncAPIClient):
     health: health.AsyncHealthResource
-    api: api.AsyncAPIResource
     with_raw_response: AsyncBountylabWithRawResponse
     with_streaming_response: AsyncBountylabWithStreamedResponse
 
@@ -273,7 +270,6 @@ class AsyncBountylab(AsyncAPIClient):
         )
 
         self.health = health.AsyncHealthResource(self)
-        self.api = api.AsyncAPIResource(self)
         self.with_raw_response = AsyncBountylabWithRawResponse(self)
         self.with_streaming_response = AsyncBountylabWithStreamedResponse(self)
 
@@ -385,25 +381,21 @@ class AsyncBountylab(AsyncAPIClient):
 class BountylabWithRawResponse:
     def __init__(self, client: Bountylab) -> None:
         self.health = health.HealthResourceWithRawResponse(client.health)
-        self.api = api.APIResourceWithRawResponse(client.api)
 
 
 class AsyncBountylabWithRawResponse:
     def __init__(self, client: AsyncBountylab) -> None:
         self.health = health.AsyncHealthResourceWithRawResponse(client.health)
-        self.api = api.AsyncAPIResourceWithRawResponse(client.api)
 
 
 class BountylabWithStreamedResponse:
     def __init__(self, client: Bountylab) -> None:
         self.health = health.HealthResourceWithStreamingResponse(client.health)
-        self.api = api.APIResourceWithStreamingResponse(client.api)
 
 
 class AsyncBountylabWithStreamedResponse:
     def __init__(self, client: AsyncBountylab) -> None:
         self.health = health.AsyncHealthResourceWithStreamingResponse(client.health)
-        self.api = api.AsyncAPIResourceWithStreamingResponse(client.api)
 
 
 Client = Bountylab
