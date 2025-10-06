@@ -31,9 +31,9 @@ class TestSearchUsers:
         search_user = client.search_users.search(
             query="machine learning engineer san francisco",
             filters={
+                "field": "company",
                 "op": "Eq",
                 "value": "GitHub",
-                "field": "company",
             },
             max_results=50,
         )
@@ -85,9 +85,9 @@ class TestAsyncSearchUsers:
         search_user = await async_client.search_users.search(
             query="machine learning engineer san francisco",
             filters={
+                "field": "company",
                 "op": "Eq",
                 "value": "GitHub",
-                "field": "company",
             },
             max_results=50,
         )
