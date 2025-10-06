@@ -32,8 +32,11 @@ client = Bountylab(
     api_key=os.environ.get("BOUNTYLAB_API_KEY"),  # This is the default and can be omitted
 )
 
-response = client.health.check()
-print(response.status)
+response = client.search_users.search(
+    query="machine learning engineer",
+    max_results=10,
+)
+print(response.count)
 ```
 
 While you can provide an `api_key` keyword argument,
@@ -56,8 +59,11 @@ client = AsyncBountylab(
 
 
 async def main() -> None:
-    response = await client.health.check()
-    print(response.status)
+    response = await client.search_users.search(
+        query="machine learning engineer",
+        max_results=10,
+    )
+    print(response.count)
 
 
 asyncio.run(main())
@@ -89,8 +95,11 @@ async def main() -> None:
         api_key="My API Key",
         http_client=DefaultAioHttpClient(),
     ) as client:
-        response = await client.health.check()
-        print(response.status)
+        response = await client.search_users.search(
+            query="machine learning engineer",
+            max_results=10,
+        )
+        print(response.count)
 
 
 asyncio.run(main())
