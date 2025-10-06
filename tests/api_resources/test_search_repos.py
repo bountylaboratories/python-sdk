@@ -31,9 +31,9 @@ class TestSearchRepos:
         search_repo = client.search_repos.search(
             query="react component library with typescript",
             filters={
+                "field": "language",
                 "op": "Eq",
                 "value": "TypeScript",
-                "field": "language",
             },
             max_results=50,
         )
@@ -85,9 +85,9 @@ class TestAsyncSearchRepos:
         search_repo = await async_client.search_repos.search(
             query="react component library with typescript",
             filters={
+                "field": "language",
                 "op": "Eq",
                 "value": "TypeScript",
-                "field": "language",
             },
             max_results=50,
         )
