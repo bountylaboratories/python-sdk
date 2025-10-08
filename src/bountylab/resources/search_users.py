@@ -66,8 +66,8 @@ class SearchUsersResource(SyncAPIResource):
               company, location, emails, resolvedCountry, resolvedState, resolvedCity (with
               login weighted 2x)
 
-          filters: Optional filters for narrowing search results. Supports filtering on: login,
-              company, location, emails, resolvedCountry, resolvedState, resolvedCity.
+          filters: Optional filters for narrowing search results. Supports filtering on: githubId,
+              login, company, location, emails, resolvedCountry, resolvedState, resolvedCity.
 
               Full-text searchable fields (automatically searched): login, displayName, bio,
               company, location, emails, resolvedCountry, resolvedState, resolvedCity.
@@ -152,8 +152,8 @@ class AsyncSearchUsersResource(AsyncAPIResource):
               company, location, emails, resolvedCountry, resolvedState, resolvedCity (with
               login weighted 2x)
 
-          filters: Optional filters for narrowing search results. Supports filtering on: login,
-              company, location, emails, resolvedCountry, resolvedState, resolvedCity.
+          filters: Optional filters for narrowing search results. Supports filtering on: githubId,
+              login, company, location, emails, resolvedCountry, resolvedState, resolvedCity.
 
               Full-text searchable fields (automatically searched): login, displayName, bio,
               company, location, emails, resolvedCountry, resolvedState, resolvedCity.
