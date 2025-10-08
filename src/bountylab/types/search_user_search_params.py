@@ -25,6 +25,8 @@ __all__ = [
     "FiltersUnionMember11",
     "FiltersUnionMember12",
     "FiltersUnionMember13",
+    "FiltersUnionMember14",
+    "FiltersUnionMember15",
     "FiltersUserCompositeFilter",
     "FiltersUserCompositeFilterFilter",
     "FiltersUserCompositeFilterFilterUnionMember0",
@@ -41,6 +43,8 @@ __all__ = [
     "FiltersUserCompositeFilterFilterUnionMember11",
     "FiltersUserCompositeFilterFilterUnionMember12",
     "FiltersUserCompositeFilterFilterUnionMember13",
+    "FiltersUserCompositeFilterFilterUnionMember14",
+    "FiltersUserCompositeFilterFilterUnionMember15",
 ]
 
 
@@ -55,8 +59,8 @@ class SearchUserSearchParams(TypedDict, total=False):
     filters: Optional[Filters]
     """Optional filters for narrowing search results.
 
-    Supports filtering on: login, company, location, emails, resolvedCountry,
-    resolvedState, resolvedCity.
+    Supports filtering on: githubId, login, company, location, emails,
+    resolvedCountry, resolvedState, resolvedCity.
 
     Full-text searchable fields (automatically searched): login, displayName, bio,
     company, location, emails, resolvedCountry, resolvedState, resolvedCity.
@@ -77,7 +81,7 @@ class SearchUserSearchParams(TypedDict, total=False):
 
 
 class FiltersUnionMember0(TypedDict, total=False):
-    field: Required[Literal["login"]]
+    field: Required[Literal["githubId"]]
 
     op: Required[Literal["Eq"]]
 
@@ -85,7 +89,7 @@ class FiltersUnionMember0(TypedDict, total=False):
 
 
 class FiltersUnionMember1(TypedDict, total=False):
-    field: Required[Literal["login"]]
+    field: Required[Literal["githubId"]]
 
     op: Required[Literal["In"]]
 
@@ -93,7 +97,7 @@ class FiltersUnionMember1(TypedDict, total=False):
 
 
 class FiltersUnionMember2(TypedDict, total=False):
-    field: Required[Literal["company"]]
+    field: Required[Literal["login"]]
 
     op: Required[Literal["Eq"]]
 
@@ -101,7 +105,7 @@ class FiltersUnionMember2(TypedDict, total=False):
 
 
 class FiltersUnionMember3(TypedDict, total=False):
-    field: Required[Literal["company"]]
+    field: Required[Literal["login"]]
 
     op: Required[Literal["In"]]
 
@@ -109,7 +113,7 @@ class FiltersUnionMember3(TypedDict, total=False):
 
 
 class FiltersUnionMember4(TypedDict, total=False):
-    field: Required[Literal["location"]]
+    field: Required[Literal["company"]]
 
     op: Required[Literal["Eq"]]
 
@@ -117,7 +121,7 @@ class FiltersUnionMember4(TypedDict, total=False):
 
 
 class FiltersUnionMember5(TypedDict, total=False):
-    field: Required[Literal["location"]]
+    field: Required[Literal["company"]]
 
     op: Required[Literal["In"]]
 
@@ -125,7 +129,7 @@ class FiltersUnionMember5(TypedDict, total=False):
 
 
 class FiltersUnionMember6(TypedDict, total=False):
-    field: Required[Literal["emails"]]
+    field: Required[Literal["location"]]
 
     op: Required[Literal["Eq"]]
 
@@ -133,7 +137,7 @@ class FiltersUnionMember6(TypedDict, total=False):
 
 
 class FiltersUnionMember7(TypedDict, total=False):
-    field: Required[Literal["emails"]]
+    field: Required[Literal["location"]]
 
     op: Required[Literal["In"]]
 
@@ -141,7 +145,7 @@ class FiltersUnionMember7(TypedDict, total=False):
 
 
 class FiltersUnionMember8(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
+    field: Required[Literal["emails"]]
 
     op: Required[Literal["Eq"]]
 
@@ -149,7 +153,7 @@ class FiltersUnionMember8(TypedDict, total=False):
 
 
 class FiltersUnionMember9(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
+    field: Required[Literal["emails"]]
 
     op: Required[Literal["In"]]
 
@@ -157,7 +161,7 @@ class FiltersUnionMember9(TypedDict, total=False):
 
 
 class FiltersUnionMember10(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
+    field: Required[Literal["resolvedCountry"]]
 
     op: Required[Literal["Eq"]]
 
@@ -165,7 +169,7 @@ class FiltersUnionMember10(TypedDict, total=False):
 
 
 class FiltersUnionMember11(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
+    field: Required[Literal["resolvedCountry"]]
 
     op: Required[Literal["In"]]
 
@@ -173,7 +177,7 @@ class FiltersUnionMember11(TypedDict, total=False):
 
 
 class FiltersUnionMember12(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
+    field: Required[Literal["resolvedState"]]
 
     op: Required[Literal["Eq"]]
 
@@ -181,6 +185,22 @@ class FiltersUnionMember12(TypedDict, total=False):
 
 
 class FiltersUnionMember13(TypedDict, total=False):
+    field: Required[Literal["resolvedState"]]
+
+    op: Required[Literal["In"]]
+
+    value: Required[SequenceNotStr[str]]
+
+
+class FiltersUnionMember14(TypedDict, total=False):
+    field: Required[Literal["resolvedCity"]]
+
+    op: Required[Literal["Eq"]]
+
+    value: Required[str]
+
+
+class FiltersUnionMember15(TypedDict, total=False):
     field: Required[Literal["resolvedCity"]]
 
     op: Required[Literal["In"]]
@@ -189,7 +209,7 @@ class FiltersUnionMember13(TypedDict, total=False):
 
 
 class FiltersUserCompositeFilterFilterUnionMember0(TypedDict, total=False):
-    field: Required[Literal["login"]]
+    field: Required[Literal["githubId"]]
 
     op: Required[Literal["Eq"]]
 
@@ -197,7 +217,7 @@ class FiltersUserCompositeFilterFilterUnionMember0(TypedDict, total=False):
 
 
 class FiltersUserCompositeFilterFilterUnionMember1(TypedDict, total=False):
-    field: Required[Literal["login"]]
+    field: Required[Literal["githubId"]]
 
     op: Required[Literal["In"]]
 
@@ -205,7 +225,7 @@ class FiltersUserCompositeFilterFilterUnionMember1(TypedDict, total=False):
 
 
 class FiltersUserCompositeFilterFilterUnionMember2(TypedDict, total=False):
-    field: Required[Literal["company"]]
+    field: Required[Literal["login"]]
 
     op: Required[Literal["Eq"]]
 
@@ -213,7 +233,7 @@ class FiltersUserCompositeFilterFilterUnionMember2(TypedDict, total=False):
 
 
 class FiltersUserCompositeFilterFilterUnionMember3(TypedDict, total=False):
-    field: Required[Literal["company"]]
+    field: Required[Literal["login"]]
 
     op: Required[Literal["In"]]
 
@@ -221,7 +241,7 @@ class FiltersUserCompositeFilterFilterUnionMember3(TypedDict, total=False):
 
 
 class FiltersUserCompositeFilterFilterUnionMember4(TypedDict, total=False):
-    field: Required[Literal["location"]]
+    field: Required[Literal["company"]]
 
     op: Required[Literal["Eq"]]
 
@@ -229,7 +249,7 @@ class FiltersUserCompositeFilterFilterUnionMember4(TypedDict, total=False):
 
 
 class FiltersUserCompositeFilterFilterUnionMember5(TypedDict, total=False):
-    field: Required[Literal["location"]]
+    field: Required[Literal["company"]]
 
     op: Required[Literal["In"]]
 
@@ -237,7 +257,7 @@ class FiltersUserCompositeFilterFilterUnionMember5(TypedDict, total=False):
 
 
 class FiltersUserCompositeFilterFilterUnionMember6(TypedDict, total=False):
-    field: Required[Literal["emails"]]
+    field: Required[Literal["location"]]
 
     op: Required[Literal["Eq"]]
 
@@ -245,7 +265,7 @@ class FiltersUserCompositeFilterFilterUnionMember6(TypedDict, total=False):
 
 
 class FiltersUserCompositeFilterFilterUnionMember7(TypedDict, total=False):
-    field: Required[Literal["emails"]]
+    field: Required[Literal["location"]]
 
     op: Required[Literal["In"]]
 
@@ -253,7 +273,7 @@ class FiltersUserCompositeFilterFilterUnionMember7(TypedDict, total=False):
 
 
 class FiltersUserCompositeFilterFilterUnionMember8(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
+    field: Required[Literal["emails"]]
 
     op: Required[Literal["Eq"]]
 
@@ -261,7 +281,7 @@ class FiltersUserCompositeFilterFilterUnionMember8(TypedDict, total=False):
 
 
 class FiltersUserCompositeFilterFilterUnionMember9(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
+    field: Required[Literal["emails"]]
 
     op: Required[Literal["In"]]
 
@@ -269,7 +289,7 @@ class FiltersUserCompositeFilterFilterUnionMember9(TypedDict, total=False):
 
 
 class FiltersUserCompositeFilterFilterUnionMember10(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
+    field: Required[Literal["resolvedCountry"]]
 
     op: Required[Literal["Eq"]]
 
@@ -277,7 +297,7 @@ class FiltersUserCompositeFilterFilterUnionMember10(TypedDict, total=False):
 
 
 class FiltersUserCompositeFilterFilterUnionMember11(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
+    field: Required[Literal["resolvedCountry"]]
 
     op: Required[Literal["In"]]
 
@@ -285,7 +305,7 @@ class FiltersUserCompositeFilterFilterUnionMember11(TypedDict, total=False):
 
 
 class FiltersUserCompositeFilterFilterUnionMember12(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
+    field: Required[Literal["resolvedState"]]
 
     op: Required[Literal["Eq"]]
 
@@ -293,6 +313,22 @@ class FiltersUserCompositeFilterFilterUnionMember12(TypedDict, total=False):
 
 
 class FiltersUserCompositeFilterFilterUnionMember13(TypedDict, total=False):
+    field: Required[Literal["resolvedState"]]
+
+    op: Required[Literal["In"]]
+
+    value: Required[SequenceNotStr[str]]
+
+
+class FiltersUserCompositeFilterFilterUnionMember14(TypedDict, total=False):
+    field: Required[Literal["resolvedCity"]]
+
+    op: Required[Literal["Eq"]]
+
+    value: Required[str]
+
+
+class FiltersUserCompositeFilterFilterUnionMember15(TypedDict, total=False):
     field: Required[Literal["resolvedCity"]]
 
     op: Required[Literal["In"]]
@@ -315,6 +351,8 @@ FiltersUserCompositeFilterFilter: TypeAlias = Union[
     FiltersUserCompositeFilterFilterUnionMember11,
     FiltersUserCompositeFilterFilterUnionMember12,
     FiltersUserCompositeFilterFilterUnionMember13,
+    FiltersUserCompositeFilterFilterUnionMember14,
+    FiltersUserCompositeFilterFilterUnionMember15,
 ]
 
 
@@ -341,5 +379,7 @@ Filters: TypeAlias = Union[
     FiltersUnionMember11,
     FiltersUnionMember12,
     FiltersUnionMember13,
+    FiltersUnionMember14,
+    FiltersUnionMember15,
     FiltersUserCompositeFilter,
 ]

@@ -35,6 +35,8 @@ __all__ = [
     "FiltersUnionMember21",
     "FiltersUnionMember22",
     "FiltersUnionMember23",
+    "FiltersUnionMember24",
+    "FiltersUnionMember25",
     "FiltersRepoCompositeFilter",
     "FiltersRepoCompositeFilterFilter",
     "FiltersRepoCompositeFilterFilterUnionMember0",
@@ -61,6 +63,8 @@ __all__ = [
     "FiltersRepoCompositeFilterFilterUnionMember21",
     "FiltersRepoCompositeFilterFilterUnionMember22",
     "FiltersRepoCompositeFilterFilterUnionMember23",
+    "FiltersRepoCompositeFilterFilterUnionMember24",
+    "FiltersRepoCompositeFilterFilterUnionMember25",
 ]
 
 
@@ -74,7 +78,7 @@ class SearchRepoSearchParams(TypedDict, total=False):
     filters: Optional[Filters]
     """Optional filters for narrowing search results.
 
-    Supports filtering on: ownerLogin, name, stargazerCount, language,
+    Supports filtering on: githubId, ownerLogin, name, stargazerCount, language,
     totalIssuesCount, totalIssuesOpen, totalIssuesClosed, lastContributorLocations.
 
     Filter structure:
@@ -95,7 +99,7 @@ class SearchRepoSearchParams(TypedDict, total=False):
 
 
 class FiltersUnionMember0(TypedDict, total=False):
-    field: Required[Literal["ownerLogin"]]
+    field: Required[Literal["githubId"]]
 
     op: Required[Literal["Eq"]]
 
@@ -103,7 +107,7 @@ class FiltersUnionMember0(TypedDict, total=False):
 
 
 class FiltersUnionMember1(TypedDict, total=False):
-    field: Required[Literal["ownerLogin"]]
+    field: Required[Literal["githubId"]]
 
     op: Required[Literal["In"]]
 
@@ -111,7 +115,7 @@ class FiltersUnionMember1(TypedDict, total=False):
 
 
 class FiltersUnionMember2(TypedDict, total=False):
-    field: Required[Literal["name"]]
+    field: Required[Literal["ownerLogin"]]
 
     op: Required[Literal["Eq"]]
 
@@ -119,7 +123,7 @@ class FiltersUnionMember2(TypedDict, total=False):
 
 
 class FiltersUnionMember3(TypedDict, total=False):
-    field: Required[Literal["name"]]
+    field: Required[Literal["ownerLogin"]]
 
     op: Required[Literal["In"]]
 
@@ -127,25 +131,25 @@ class FiltersUnionMember3(TypedDict, total=False):
 
 
 class FiltersUnionMember4(TypedDict, total=False):
-    field: Required[Literal["stargazerCount"]]
+    field: Required[Literal["name"]]
 
     op: Required[Literal["Eq"]]
 
-    value: Required[float]
+    value: Required[str]
 
 
 class FiltersUnionMember5(TypedDict, total=False):
-    field: Required[Literal["stargazerCount"]]
+    field: Required[Literal["name"]]
 
     op: Required[Literal["In"]]
 
-    value: Required[Iterable[float]]
+    value: Required[SequenceNotStr[str]]
 
 
 class FiltersUnionMember6(TypedDict, total=False):
     field: Required[Literal["stargazerCount"]]
 
-    op: Required[Literal["Gte"]]
+    op: Required[Literal["Eq"]]
 
     value: Required[float]
 
@@ -153,12 +157,28 @@ class FiltersUnionMember6(TypedDict, total=False):
 class FiltersUnionMember7(TypedDict, total=False):
     field: Required[Literal["stargazerCount"]]
 
+    op: Required[Literal["In"]]
+
+    value: Required[Iterable[float]]
+
+
+class FiltersUnionMember8(TypedDict, total=False):
+    field: Required[Literal["stargazerCount"]]
+
+    op: Required[Literal["Gte"]]
+
+    value: Required[float]
+
+
+class FiltersUnionMember9(TypedDict, total=False):
+    field: Required[Literal["stargazerCount"]]
+
     op: Required[Literal["Lte"]]
 
     value: Required[float]
 
 
-class FiltersUnionMember8(TypedDict, total=False):
+class FiltersUnionMember10(TypedDict, total=False):
     field: Required[Literal["language"]]
 
     op: Required[Literal["Eq"]]
@@ -166,7 +186,7 @@ class FiltersUnionMember8(TypedDict, total=False):
     value: Required[str]
 
 
-class FiltersUnionMember9(TypedDict, total=False):
+class FiltersUnionMember11(TypedDict, total=False):
     field: Required[Literal["language"]]
 
     op: Required[Literal["In"]]
@@ -174,26 +194,10 @@ class FiltersUnionMember9(TypedDict, total=False):
     value: Required[SequenceNotStr[str]]
 
 
-class FiltersUnionMember10(TypedDict, total=False):
-    field: Required[Literal["totalIssuesCount"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[float]
-
-
-class FiltersUnionMember11(TypedDict, total=False):
-    field: Required[Literal["totalIssuesCount"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[Iterable[float]]
-
-
 class FiltersUnionMember12(TypedDict, total=False):
     field: Required[Literal["totalIssuesCount"]]
 
-    op: Required[Literal["Gte"]]
+    op: Required[Literal["Eq"]]
 
     value: Required[float]
 
@@ -201,31 +205,31 @@ class FiltersUnionMember12(TypedDict, total=False):
 class FiltersUnionMember13(TypedDict, total=False):
     field: Required[Literal["totalIssuesCount"]]
 
-    op: Required[Literal["Lte"]]
-
-    value: Required[float]
-
-
-class FiltersUnionMember14(TypedDict, total=False):
-    field: Required[Literal["totalIssuesOpen"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[float]
-
-
-class FiltersUnionMember15(TypedDict, total=False):
-    field: Required[Literal["totalIssuesOpen"]]
-
     op: Required[Literal["In"]]
 
     value: Required[Iterable[float]]
 
 
+class FiltersUnionMember14(TypedDict, total=False):
+    field: Required[Literal["totalIssuesCount"]]
+
+    op: Required[Literal["Gte"]]
+
+    value: Required[float]
+
+
+class FiltersUnionMember15(TypedDict, total=False):
+    field: Required[Literal["totalIssuesCount"]]
+
+    op: Required[Literal["Lte"]]
+
+    value: Required[float]
+
+
 class FiltersUnionMember16(TypedDict, total=False):
     field: Required[Literal["totalIssuesOpen"]]
 
-    op: Required[Literal["Gte"]]
+    op: Required[Literal["Eq"]]
 
     value: Required[float]
 
@@ -233,31 +237,31 @@ class FiltersUnionMember16(TypedDict, total=False):
 class FiltersUnionMember17(TypedDict, total=False):
     field: Required[Literal["totalIssuesOpen"]]
 
-    op: Required[Literal["Lte"]]
-
-    value: Required[float]
-
-
-class FiltersUnionMember18(TypedDict, total=False):
-    field: Required[Literal["totalIssuesClosed"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[float]
-
-
-class FiltersUnionMember19(TypedDict, total=False):
-    field: Required[Literal["totalIssuesClosed"]]
-
     op: Required[Literal["In"]]
 
     value: Required[Iterable[float]]
 
 
+class FiltersUnionMember18(TypedDict, total=False):
+    field: Required[Literal["totalIssuesOpen"]]
+
+    op: Required[Literal["Gte"]]
+
+    value: Required[float]
+
+
+class FiltersUnionMember19(TypedDict, total=False):
+    field: Required[Literal["totalIssuesOpen"]]
+
+    op: Required[Literal["Lte"]]
+
+    value: Required[float]
+
+
 class FiltersUnionMember20(TypedDict, total=False):
     field: Required[Literal["totalIssuesClosed"]]
 
-    op: Required[Literal["Gte"]]
+    op: Required[Literal["Eq"]]
 
     value: Required[float]
 
@@ -265,12 +269,28 @@ class FiltersUnionMember20(TypedDict, total=False):
 class FiltersUnionMember21(TypedDict, total=False):
     field: Required[Literal["totalIssuesClosed"]]
 
+    op: Required[Literal["In"]]
+
+    value: Required[Iterable[float]]
+
+
+class FiltersUnionMember22(TypedDict, total=False):
+    field: Required[Literal["totalIssuesClosed"]]
+
+    op: Required[Literal["Gte"]]
+
+    value: Required[float]
+
+
+class FiltersUnionMember23(TypedDict, total=False):
+    field: Required[Literal["totalIssuesClosed"]]
+
     op: Required[Literal["Lte"]]
 
     value: Required[float]
 
 
-class FiltersUnionMember22(TypedDict, total=False):
+class FiltersUnionMember24(TypedDict, total=False):
     field: Required[Literal["lastContributorLocations"]]
 
     op: Required[Literal["Eq"]]
@@ -278,7 +298,7 @@ class FiltersUnionMember22(TypedDict, total=False):
     value: Required[str]
 
 
-class FiltersUnionMember23(TypedDict, total=False):
+class FiltersUnionMember25(TypedDict, total=False):
     field: Required[Literal["lastContributorLocations"]]
 
     op: Required[Literal["In"]]
@@ -287,7 +307,7 @@ class FiltersUnionMember23(TypedDict, total=False):
 
 
 class FiltersRepoCompositeFilterFilterUnionMember0(TypedDict, total=False):
-    field: Required[Literal["ownerLogin"]]
+    field: Required[Literal["githubId"]]
 
     op: Required[Literal["Eq"]]
 
@@ -295,7 +315,7 @@ class FiltersRepoCompositeFilterFilterUnionMember0(TypedDict, total=False):
 
 
 class FiltersRepoCompositeFilterFilterUnionMember1(TypedDict, total=False):
-    field: Required[Literal["ownerLogin"]]
+    field: Required[Literal["githubId"]]
 
     op: Required[Literal["In"]]
 
@@ -303,7 +323,7 @@ class FiltersRepoCompositeFilterFilterUnionMember1(TypedDict, total=False):
 
 
 class FiltersRepoCompositeFilterFilterUnionMember2(TypedDict, total=False):
-    field: Required[Literal["name"]]
+    field: Required[Literal["ownerLogin"]]
 
     op: Required[Literal["Eq"]]
 
@@ -311,7 +331,7 @@ class FiltersRepoCompositeFilterFilterUnionMember2(TypedDict, total=False):
 
 
 class FiltersRepoCompositeFilterFilterUnionMember3(TypedDict, total=False):
-    field: Required[Literal["name"]]
+    field: Required[Literal["ownerLogin"]]
 
     op: Required[Literal["In"]]
 
@@ -319,25 +339,25 @@ class FiltersRepoCompositeFilterFilterUnionMember3(TypedDict, total=False):
 
 
 class FiltersRepoCompositeFilterFilterUnionMember4(TypedDict, total=False):
-    field: Required[Literal["stargazerCount"]]
+    field: Required[Literal["name"]]
 
     op: Required[Literal["Eq"]]
 
-    value: Required[float]
+    value: Required[str]
 
 
 class FiltersRepoCompositeFilterFilterUnionMember5(TypedDict, total=False):
-    field: Required[Literal["stargazerCount"]]
+    field: Required[Literal["name"]]
 
     op: Required[Literal["In"]]
 
-    value: Required[Iterable[float]]
+    value: Required[SequenceNotStr[str]]
 
 
 class FiltersRepoCompositeFilterFilterUnionMember6(TypedDict, total=False):
     field: Required[Literal["stargazerCount"]]
 
-    op: Required[Literal["Gte"]]
+    op: Required[Literal["Eq"]]
 
     value: Required[float]
 
@@ -345,12 +365,28 @@ class FiltersRepoCompositeFilterFilterUnionMember6(TypedDict, total=False):
 class FiltersRepoCompositeFilterFilterUnionMember7(TypedDict, total=False):
     field: Required[Literal["stargazerCount"]]
 
+    op: Required[Literal["In"]]
+
+    value: Required[Iterable[float]]
+
+
+class FiltersRepoCompositeFilterFilterUnionMember8(TypedDict, total=False):
+    field: Required[Literal["stargazerCount"]]
+
+    op: Required[Literal["Gte"]]
+
+    value: Required[float]
+
+
+class FiltersRepoCompositeFilterFilterUnionMember9(TypedDict, total=False):
+    field: Required[Literal["stargazerCount"]]
+
     op: Required[Literal["Lte"]]
 
     value: Required[float]
 
 
-class FiltersRepoCompositeFilterFilterUnionMember8(TypedDict, total=False):
+class FiltersRepoCompositeFilterFilterUnionMember10(TypedDict, total=False):
     field: Required[Literal["language"]]
 
     op: Required[Literal["Eq"]]
@@ -358,7 +394,7 @@ class FiltersRepoCompositeFilterFilterUnionMember8(TypedDict, total=False):
     value: Required[str]
 
 
-class FiltersRepoCompositeFilterFilterUnionMember9(TypedDict, total=False):
+class FiltersRepoCompositeFilterFilterUnionMember11(TypedDict, total=False):
     field: Required[Literal["language"]]
 
     op: Required[Literal["In"]]
@@ -366,26 +402,10 @@ class FiltersRepoCompositeFilterFilterUnionMember9(TypedDict, total=False):
     value: Required[SequenceNotStr[str]]
 
 
-class FiltersRepoCompositeFilterFilterUnionMember10(TypedDict, total=False):
-    field: Required[Literal["totalIssuesCount"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[float]
-
-
-class FiltersRepoCompositeFilterFilterUnionMember11(TypedDict, total=False):
-    field: Required[Literal["totalIssuesCount"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[Iterable[float]]
-
-
 class FiltersRepoCompositeFilterFilterUnionMember12(TypedDict, total=False):
     field: Required[Literal["totalIssuesCount"]]
 
-    op: Required[Literal["Gte"]]
+    op: Required[Literal["Eq"]]
 
     value: Required[float]
 
@@ -393,31 +413,31 @@ class FiltersRepoCompositeFilterFilterUnionMember12(TypedDict, total=False):
 class FiltersRepoCompositeFilterFilterUnionMember13(TypedDict, total=False):
     field: Required[Literal["totalIssuesCount"]]
 
-    op: Required[Literal["Lte"]]
-
-    value: Required[float]
-
-
-class FiltersRepoCompositeFilterFilterUnionMember14(TypedDict, total=False):
-    field: Required[Literal["totalIssuesOpen"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[float]
-
-
-class FiltersRepoCompositeFilterFilterUnionMember15(TypedDict, total=False):
-    field: Required[Literal["totalIssuesOpen"]]
-
     op: Required[Literal["In"]]
 
     value: Required[Iterable[float]]
 
 
+class FiltersRepoCompositeFilterFilterUnionMember14(TypedDict, total=False):
+    field: Required[Literal["totalIssuesCount"]]
+
+    op: Required[Literal["Gte"]]
+
+    value: Required[float]
+
+
+class FiltersRepoCompositeFilterFilterUnionMember15(TypedDict, total=False):
+    field: Required[Literal["totalIssuesCount"]]
+
+    op: Required[Literal["Lte"]]
+
+    value: Required[float]
+
+
 class FiltersRepoCompositeFilterFilterUnionMember16(TypedDict, total=False):
     field: Required[Literal["totalIssuesOpen"]]
 
-    op: Required[Literal["Gte"]]
+    op: Required[Literal["Eq"]]
 
     value: Required[float]
 
@@ -425,31 +445,31 @@ class FiltersRepoCompositeFilterFilterUnionMember16(TypedDict, total=False):
 class FiltersRepoCompositeFilterFilterUnionMember17(TypedDict, total=False):
     field: Required[Literal["totalIssuesOpen"]]
 
-    op: Required[Literal["Lte"]]
-
-    value: Required[float]
-
-
-class FiltersRepoCompositeFilterFilterUnionMember18(TypedDict, total=False):
-    field: Required[Literal["totalIssuesClosed"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[float]
-
-
-class FiltersRepoCompositeFilterFilterUnionMember19(TypedDict, total=False):
-    field: Required[Literal["totalIssuesClosed"]]
-
     op: Required[Literal["In"]]
 
     value: Required[Iterable[float]]
 
 
+class FiltersRepoCompositeFilterFilterUnionMember18(TypedDict, total=False):
+    field: Required[Literal["totalIssuesOpen"]]
+
+    op: Required[Literal["Gte"]]
+
+    value: Required[float]
+
+
+class FiltersRepoCompositeFilterFilterUnionMember19(TypedDict, total=False):
+    field: Required[Literal["totalIssuesOpen"]]
+
+    op: Required[Literal["Lte"]]
+
+    value: Required[float]
+
+
 class FiltersRepoCompositeFilterFilterUnionMember20(TypedDict, total=False):
     field: Required[Literal["totalIssuesClosed"]]
 
-    op: Required[Literal["Gte"]]
+    op: Required[Literal["Eq"]]
 
     value: Required[float]
 
@@ -457,12 +477,28 @@ class FiltersRepoCompositeFilterFilterUnionMember20(TypedDict, total=False):
 class FiltersRepoCompositeFilterFilterUnionMember21(TypedDict, total=False):
     field: Required[Literal["totalIssuesClosed"]]
 
+    op: Required[Literal["In"]]
+
+    value: Required[Iterable[float]]
+
+
+class FiltersRepoCompositeFilterFilterUnionMember22(TypedDict, total=False):
+    field: Required[Literal["totalIssuesClosed"]]
+
+    op: Required[Literal["Gte"]]
+
+    value: Required[float]
+
+
+class FiltersRepoCompositeFilterFilterUnionMember23(TypedDict, total=False):
+    field: Required[Literal["totalIssuesClosed"]]
+
     op: Required[Literal["Lte"]]
 
     value: Required[float]
 
 
-class FiltersRepoCompositeFilterFilterUnionMember22(TypedDict, total=False):
+class FiltersRepoCompositeFilterFilterUnionMember24(TypedDict, total=False):
     field: Required[Literal["lastContributorLocations"]]
 
     op: Required[Literal["Eq"]]
@@ -470,7 +506,7 @@ class FiltersRepoCompositeFilterFilterUnionMember22(TypedDict, total=False):
     value: Required[str]
 
 
-class FiltersRepoCompositeFilterFilterUnionMember23(TypedDict, total=False):
+class FiltersRepoCompositeFilterFilterUnionMember25(TypedDict, total=False):
     field: Required[Literal["lastContributorLocations"]]
 
     op: Required[Literal["In"]]
@@ -503,6 +539,8 @@ FiltersRepoCompositeFilterFilter: TypeAlias = Union[
     FiltersRepoCompositeFilterFilterUnionMember21,
     FiltersRepoCompositeFilterFilterUnionMember22,
     FiltersRepoCompositeFilterFilterUnionMember23,
+    FiltersRepoCompositeFilterFilterUnionMember24,
+    FiltersRepoCompositeFilterFilterUnionMember25,
 ]
 
 
@@ -539,5 +577,7 @@ Filters: TypeAlias = Union[
     FiltersUnionMember21,
     FiltersUnionMember22,
     FiltersUnionMember23,
+    FiltersUnionMember24,
+    FiltersUnionMember25,
     FiltersRepoCompositeFilter,
 ]
