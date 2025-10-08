@@ -65,8 +65,7 @@ class SearchReposResource(SyncAPIResource):
           query: Natural language search query for semantic search across repository README and
               description using vector embeddings
 
-          filters:
-              Optional filters for narrowing search results. Supports filtering on:
+          filters: Optional filters for narrowing search results. Supports filtering on: githubId,
               ownerLogin, name, stargazerCount, language, totalIssuesCount, totalIssuesOpen,
               totalIssuesClosed, lastContributorLocations.
 
@@ -151,8 +150,7 @@ class AsyncSearchReposResource(AsyncAPIResource):
           query: Natural language search query for semantic search across repository README and
               description using vector embeddings
 
-          filters:
-              Optional filters for narrowing search results. Supports filtering on:
+          filters: Optional filters for narrowing search results. Supports filtering on: githubId,
               ownerLogin, name, stargazerCount, language, totalIssuesCount, totalIssuesOpen,
               totalIssuesClosed, lastContributorLocations.
 
