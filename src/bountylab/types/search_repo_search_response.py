@@ -11,6 +11,9 @@ __all__ = ["SearchRepoSearchResponse", "Repository"]
 
 class Repository(BaseModel):
     id: str
+    """BountyLab internal ID"""
+
+    github_id: str = FieldInfo(alias="githubId")
     """GitHub node ID"""
 
     name: str
