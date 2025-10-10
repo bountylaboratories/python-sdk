@@ -59,7 +59,7 @@ class RawReposResource(SyncAPIResource):
         1 per result.
 
         Args:
-          id: GitHub node ID
+          id: GitHub node ID (used to look up the repository)
 
           extra_headers: Send extra headers
 
@@ -154,7 +154,7 @@ class AsyncRawReposResource(AsyncAPIResource):
         1 per result.
 
         Args:
-          id: GitHub node ID
+          id: GitHub node ID (used to look up the repository)
 
           extra_headers: Send extra headers
 

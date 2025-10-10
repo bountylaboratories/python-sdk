@@ -59,7 +59,7 @@ class RawUsersResource(SyncAPIResource):
         per result.
 
         Args:
-          id: GitHub node ID
+          id: GitHub node ID (used to look up the user)
 
           extra_headers: Send extra headers
 
@@ -153,7 +153,7 @@ class AsyncRawUsersResource(AsyncAPIResource):
         per result.
 
         Args:
-          id: GitHub node ID
+          id: GitHub node ID (used to look up the user)
 
           extra_headers: Send extra headers
 
