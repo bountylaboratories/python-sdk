@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.5.1 (2025-10-11)
+
+Full Changelog: [v0.5.0...v0.5.1](https://github.com/bountylaboratories/python-sdk/compare/v0.5.0...v0.5.1)
+
+### Chores
+
+* **internal:** detect missing future annotations with ruff ([319408e](https://github.com/bountylaboratories/python-sdk/commit/319408ed5a2ec94d5e2565bc56db5880360596be))
+
 ## 0.5.0 (2025-10-10)
 
 Full Changelog: [v0.4.0...v0.5.0](https://github.com/bountylaboratories/python-sdk/compare/v0.4.0...v0.5.0)
