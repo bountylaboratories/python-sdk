@@ -1,12 +1,18 @@
 # File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-from typing import Optional
+from typing import List, Optional
 
 from pydantic import Field as FieldInfo
 
 from .._models import BaseModel
 
-__all__ = ["RawUserRetrieveResponse", "User"]
+__all__ = ["RawUserRetrieveResponse", "User", "UserSocialAccount"]
+
+
+class UserSocialAccount(BaseModel):
+    provider: str
+
+    url: str
 
 
 class User(BaseModel):
@@ -31,8 +37,8 @@ class User(BaseModel):
     display_name: Optional[str] = FieldInfo(alias="displayName", default=None)
     """User display name"""
 
-    emails: Optional[str] = None
-    """Email addresses as JSON string"""
+    emails: Optional[List[str]] = None
+    """Email addresses"""
 
     embedded_at: Optional[str] = FieldInfo(alias="embeddedAt", default=None)
     """ISO 8601 timestamp when metadata was extracted"""
@@ -52,8 +58,8 @@ class User(BaseModel):
     score: Optional[float] = None
     """Relevance score from search (0-1, lower is more relevant for distance metrics)"""
 
-    social_accounts: Optional[str] = FieldInfo(alias="socialAccounts", default=None)
-    """Social accounts as JSON string"""
+    social_accounts: Optional[List[UserSocialAccount]] = FieldInfo(alias="socialAccounts", default=None)
+    """Social media accounts"""
 
     updated_at: Optional[str] = FieldInfo(alias="updatedAt", default=None)
     """ISO 8601 timestamp when user was last updated"""
