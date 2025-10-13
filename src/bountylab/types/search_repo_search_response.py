@@ -46,6 +46,9 @@ class Repository(BaseModel):
     language: Optional[str] = None
     """Primary programming language"""
 
+    last_contributor_locations: Optional[List[str]] = FieldInfo(alias="lastContributorLocations", default=None)
+    """Locations of last contributors to this repository"""
+
     readme_preview: Optional[str] = FieldInfo(alias="readmePreview", default=None)
     """Preview of repository README (first ~500 chars)"""
 
