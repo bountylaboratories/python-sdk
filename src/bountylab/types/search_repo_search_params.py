@@ -199,6 +199,9 @@ __all__ = [
     "FiltersRepoCompositeFilterFilterUnionMember90",
     "FiltersRepoCompositeFilterFilterUnionMember91",
     "FiltersRepoCompositeFilterFilterUnionMember92",
+    "IncludeAttributes",
+    "IncludeAttributesContributors",
+    "IncludeAttributesStarrers",
 ]
 
 
@@ -227,6 +230,9 @@ class SearchRepoSearchParams(TypedDict, total=False):
     - Number fields: Eq (exact), In (one of array), Gte (>=), Lte (<=)
     - Use And/Or to combine multiple filters
     """
+
+    include_attributes: Annotated[IncludeAttributes, PropertyInfo(alias="includeAttributes")]
+    """Optional graph relationships to include (owner, contributors, starrers)"""
 
     max_results: Annotated[int, PropertyInfo(alias="maxResults")]
     """Maximum number of results to return (default: 100, max: 1000)"""
@@ -1921,3 +1927,24 @@ Filters: TypeAlias = Union[
     FiltersUnionMember92,
     FiltersRepoCompositeFilter,
 ]
+
+
+class IncludeAttributesContributors(TypedDict, total=False):
+    limit: Required[int]
+    """Maximum number of contributors to return (max: 100)"""
+
+
+class IncludeAttributesStarrers(TypedDict, total=False):
+    limit: Required[int]
+    """Maximum number of starrers to return (max: 100)"""
+
+
+class IncludeAttributes(TypedDict, total=False):
+    contributors: IncludeAttributesContributors
+    """Include repository contributors with limit"""
+
+    owner: bool
+    """Include repository owner information"""
+
+    starrers: IncludeAttributesStarrers
+    """Include users who starred the repository with limit"""
