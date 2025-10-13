@@ -35,6 +35,11 @@ class TestSearchRepos:
                 "op": "Eq",
                 "value": "TypeScript",
             },
+            include_attributes={
+                "contributors": {"limit": 10},
+                "owner": True,
+                "starrers": {"limit": 5},
+            },
             max_results=50,
         )
         assert_matches_type(SearchRepoSearchResponse, search_repo, path=["response"])
@@ -88,6 +93,11 @@ class TestAsyncSearchRepos:
                 "field": "language",
                 "op": "Eq",
                 "value": "TypeScript",
+            },
+            include_attributes={
+                "contributors": {"limit": 10},
+                "owner": True,
+                "starrers": {"limit": 5},
             },
             max_results=50,
         )

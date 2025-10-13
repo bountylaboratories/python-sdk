@@ -48,6 +48,7 @@ class SearchReposResource(SyncAPIResource):
         *,
         query: str,
         filters: Optional[search_repo_search_params.Filters] | Omit = omit,
+        include_attributes: search_repo_search_params.IncludeAttributes | Omit = omit,
         max_results: int | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
@@ -81,6 +82,8 @@ class SearchReposResource(SyncAPIResource):
               - Number fields: Eq (exact), In (one of array), Gte (>=), Lte (<=)
               - Use And/Or to combine multiple filters
 
+          include_attributes: Optional graph relationships to include (owner, contributors, starrers)
+
           max_results: Maximum number of results to return (default: 100, max: 1000)
 
           extra_headers: Send extra headers
@@ -97,6 +100,7 @@ class SearchReposResource(SyncAPIResource):
                 {
                     "query": query,
                     "filters": filters,
+                    "include_attributes": include_attributes,
                     "max_results": max_results,
                 },
                 search_repo_search_params.SearchRepoSearchParams,
@@ -133,6 +137,7 @@ class AsyncSearchReposResource(AsyncAPIResource):
         *,
         query: str,
         filters: Optional[search_repo_search_params.Filters] | Omit = omit,
+        include_attributes: search_repo_search_params.IncludeAttributes | Omit = omit,
         max_results: int | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
@@ -166,6 +171,8 @@ class AsyncSearchReposResource(AsyncAPIResource):
               - Number fields: Eq (exact), In (one of array), Gte (>=), Lte (<=)
               - Use And/Or to combine multiple filters
 
+          include_attributes: Optional graph relationships to include (owner, contributors, starrers)
+
           max_results: Maximum number of results to return (default: 100, max: 1000)
 
           extra_headers: Send extra headers
@@ -182,6 +189,7 @@ class AsyncSearchReposResource(AsyncAPIResource):
                 {
                     "query": query,
                     "filters": filters,
+                    "include_attributes": include_attributes,
                     "max_results": max_results,
                 },
                 search_repo_search_params.SearchRepoSearchParams,
