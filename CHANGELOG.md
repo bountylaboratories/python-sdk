@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.6.0 (2025-10-13)
+
+Full Changelog: [v0.5.0...v0.6.0](https://github.com/bountylaboratories/python-sdk/compare/v0.5.0...v0.6.0)
+
+### Features
+
+* **api:** api update ([f6869ec](https://github.com/bountylaboratories/python-sdk/commit/f6869ec87246466482d395e4155734b9ea5fae89))
+
+
+### Chores
+
+* **internal:** detect missing future annotations with ruff ([319408e](https://github.com/bountylaboratories/python-sdk/commit/319408ed5a2ec94d5e2565bc56db5880360596be))
+
 ## 0.5.0 (2025-10-10)
 
 Full Changelog: [v0.4.0...v0.5.0](https://github.com/bountylaboratories/python-sdk/compare/v0.4.0...v0.5.0)
