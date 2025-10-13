@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.7.0 (2025-10-13)
+
+Full Changelog: [v0.6.0...v0.7.0](https://github.com/bountylaboratories/python-sdk/compare/v0.6.0...v0.7.0)
+
+### Features
+
+* **api:** api update ([a6b3fc5](https://github.com/bountylaboratories/python-sdk/commit/a6b3fc5e26176da800c1a2083c1229da1da9465d))
+
 ## 0.6.0 (2025-10-13)
 
 Full Changelog: [v0.5.0...v0.6.0](https://github.com/bountylaboratories/python-sdk/compare/v0.5.0...v0.6.0)
