@@ -261,9 +261,6 @@ class SearchRepoSearchResponse(BaseModel):
     count: float
     """Number of repositories returned"""
 
-    credits_used: float = FieldInfo(alias="creditsUsed")
-    """Credits consumed (1 per result + graph relationship costs)"""
-
     repositories: List[Optional[Repository]]
     """
     Array of repository search results with relevance scores and optional graph

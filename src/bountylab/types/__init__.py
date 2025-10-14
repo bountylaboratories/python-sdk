@@ -2,7 +2,6 @@
 
 from __future__ import annotations
 
-from .health_check_response import HealthCheckResponse as HealthCheckResponse
 from .raw_user_by_login_params import RawUserByLoginParams as RawUserByLoginParams
 from .search_repo_search_params import SearchRepoSearchParams as SearchRepoSearchParams
 from .search_user_search_params import SearchUserSearchParams as SearchUserSearchParams

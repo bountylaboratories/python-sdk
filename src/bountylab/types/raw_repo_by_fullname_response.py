@@ -63,8 +63,5 @@ class RawRepoByFullnameResponse(BaseModel):
     count: float
     """Number of repositories returned"""
 
-    credits_used: float = FieldInfo(alias="creditsUsed")
-    """Credits consumed (1 per result)"""
-
     repositories: List[Optional[Repository]]
     """Array of repository objects"""
