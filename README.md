@@ -150,7 +150,9 @@ from bountylab import Bountylab
 client = Bountylab()
 
 try:
-    client.health.check()
+    client.raw_users.retrieve(
+        "MDQ6VXNlcjU4MzIzMQ==",
+    )
 except bountylab.APIConnectionError as e:
     print("The server could not be reached")
     print(e.__cause__)  # an underlying Exception, likely raised within httpx.
@@ -193,7 +195,9 @@ client = Bountylab(
 )
 
 # Or, configure per-request:
-client.with_options(max_retries=5).health.check()
+client.with_options(max_retries=5).raw_users.retrieve(
+    "MDQ6VXNlcjU4MzIzMQ==",
+)
 ```
 
 ### Timeouts
@@ -216,7 +220,9 @@ client = Bountylab(
 )
 
 # Override per-request:
-client.with_options(timeout=5.0).health.check()
+client.with_options(timeout=5.0).raw_users.retrieve(
+    "MDQ6VXNlcjU4MzIzMQ==",
+)
 ```
 
 On timeout, an `APITimeoutError` is thrown.
@@ -257,11 +263,13 @@ The "raw" Response object can be accessed by prefixing `.with_raw_response.` to 
 from bountylab import Bountylab
 
 client = Bountylab()
-response = client.health.with_raw_response.check()
+response = client.raw_users.with_raw_response.retrieve(
+    "MDQ6VXNlcjU4MzIzMQ==",
+)
 print(response.headers.get('X-My-Header'))
 
-health = response.parse()  # get the object that `health.check()` would have returned
-print(health.status)
+raw_user = response.parse()  # get the object that `raw_users.retrieve()` would have returned
+print(raw_user.user)
 ```
 
 These methods return an [`APIResponse`](https://github.com/bountylaboratories/python-sdk/tree/main/src/bountylab/_response.py) object.
@@ -275,7 +283,9 @@ The above interface eagerly reads the full response body when you make the reque
 To stream the response body, use `.with_streaming_response` instead, which requires a context manager and only reads the response body once you call `.read()`, `.text()`, `.json()`, `.iter_bytes()`, `.iter_text()`, `.iter_lines()` or `.parse()`. In the async client, these are async methods.
 
 ```python
-with client.health.with_streaming_response.check() as response:
+with client.raw_users.with_streaming_response.retrieve(
+    "MDQ6VXNlcjU4MzIzMQ==",
+) as response:
     print(response.headers.get("X-My-Header"))
 
     for line in response.iter_lines():

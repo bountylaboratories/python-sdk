@@ -714,20 +714,22 @@ class TestBountylab:
     @mock.patch("bountylab._base_client.BaseClient._calculate_retry_timeout", _low_retry_timeout)
     @pytest.mark.respx(base_url=base_url)
     def test_retrying_timeout_errors_doesnt_leak(self, respx_mock: MockRouter, client: Bountylab) -> None:
-        respx_mock.get("/health").mock(side_effect=httpx.TimeoutException("Test timeout error"))
+        respx_mock.get("/api/raw/users/MDQ6VXNlcjU4MzIzMQ==").mock(
+            side_effect=httpx.TimeoutException("Test timeout error")
+        )
 
         with pytest.raises(APITimeoutError):
-            client.health.with_streaming_response.check().__enter__()
+            client.raw_users.with_streaming_response.retrieve("MDQ6VXNlcjU4MzIzMQ==").__enter__()
 
         assert _get_open_connections(self.client) == 0
 
     @mock.patch("bountylab._base_client.BaseClient._calculate_retry_timeout", _low_retry_timeout)
     @pytest.mark.respx(base_url=base_url)
     def test_retrying_status_errors_doesnt_leak(self, respx_mock: MockRouter, client: Bountylab) -> None:
-        respx_mock.get("/health").mock(return_value=httpx.Response(500))
+        respx_mock.get("/api/raw/users/MDQ6VXNlcjU4MzIzMQ==").mock(return_value=httpx.Response(500))
 
         with pytest.raises(APIStatusError):
-            client.health.with_streaming_response.check().__enter__()
+            client.raw_users.with_streaming_response.retrieve("MDQ6VXNlcjU4MzIzMQ==").__enter__()
         assert _get_open_connections(self.client) == 0
 
     @pytest.mark.parametrize("failures_before_success", [0, 2, 4])
@@ -754,9 +756,9 @@ class TestBountylab:
                 return httpx.Response(500)
             return httpx.Response(200)
 
-        respx_mock.get("/health").mock(side_effect=retry_handler)
+        respx_mock.get("/api/raw/users/MDQ6VXNlcjU4MzIzMQ==").mock(side_effect=retry_handler)
 
-        response = client.health.with_raw_response.check()
+        response = client.raw_users.with_raw_response.retrieve("MDQ6VXNlcjU4MzIzMQ==")
 
         assert response.retries_taken == failures_before_success
         assert int(response.http_request.headers.get("x-stainless-retry-count")) == failures_before_success
@@ -778,9 +780,11 @@ class TestBountylab:
                 return httpx.Response(500)
             return httpx.Response(200)
 
-        respx_mock.get("/health").mock(side_effect=retry_handler)
+        respx_mock.get("/api/raw/users/MDQ6VXNlcjU4MzIzMQ==").mock(side_effect=retry_handler)
 
-        response = client.health.with_raw_response.check(extra_headers={"x-stainless-retry-count": Omit()})
+        response = client.raw_users.with_raw_response.retrieve(
+            "MDQ6VXNlcjU4MzIzMQ==", extra_headers={"x-stainless-retry-count": Omit()}
+        )
 
         assert len(response.http_request.headers.get_list("x-stainless-retry-count")) == 0
 
@@ -801,9 +805,11 @@ class TestBountylab:
                 return httpx.Response(500)
             return httpx.Response(200)
 
-        respx_mock.get("/health").mock(side_effect=retry_handler)
+        respx_mock.get("/api/raw/users/MDQ6VXNlcjU4MzIzMQ==").mock(side_effect=retry_handler)
 
-        response = client.health.with_raw_response.check(extra_headers={"x-stainless-retry-count": "42"})
+        response = client.raw_users.with_raw_response.retrieve(
+            "MDQ6VXNlcjU4MzIzMQ==", extra_headers={"x-stainless-retry-count": "42"}
+        )
 
         assert response.http_request.headers.get("x-stainless-retry-count") == "42"
 
@@ -1531,10 +1537,12 @@ class TestAsyncBountylab:
     async def test_retrying_timeout_errors_doesnt_leak(
         self, respx_mock: MockRouter, async_client: AsyncBountylab
     ) -> None:
-        respx_mock.get("/health").mock(side_effect=httpx.TimeoutException("Test timeout error"))
+        respx_mock.get("/api/raw/users/MDQ6VXNlcjU4MzIzMQ==").mock(
+            side_effect=httpx.TimeoutException("Test timeout error")
+        )
 
         with pytest.raises(APITimeoutError):
-            await async_client.health.with_streaming_response.check().__aenter__()
+            await async_client.raw_users.with_streaming_response.retrieve("MDQ6VXNlcjU4MzIzMQ==").__aenter__()
 
         assert _get_open_connections(self.client) == 0
 
@@ -1543,10 +1551,10 @@ class TestAsyncBountylab:
     async def test_retrying_status_errors_doesnt_leak(
         self, respx_mock: MockRouter, async_client: AsyncBountylab
     ) -> None:
-        respx_mock.get("/health").mock(return_value=httpx.Response(500))
+        respx_mock.get("/api/raw/users/MDQ6VXNlcjU4MzIzMQ==").mock(return_value=httpx.Response(500))
 
         with pytest.raises(APIStatusError):
-            await async_client.health.with_streaming_response.check().__aenter__()
+            await async_client.raw_users.with_streaming_response.retrieve("MDQ6VXNlcjU4MzIzMQ==").__aenter__()
         assert _get_open_connections(self.client) == 0
 
     @pytest.mark.parametrize("failures_before_success", [0, 2, 4])
@@ -1574,9 +1582,9 @@ class TestAsyncBountylab:
                 return httpx.Response(500)
             return httpx.Response(200)
 
-        respx_mock.get("/health").mock(side_effect=retry_handler)
+        respx_mock.get("/api/raw/users/MDQ6VXNlcjU4MzIzMQ==").mock(side_effect=retry_handler)
 
-        response = await client.health.with_raw_response.check()
+        response = await client.raw_users.with_raw_response.retrieve("MDQ6VXNlcjU4MzIzMQ==")
 
         assert response.retries_taken == failures_before_success
         assert int(response.http_request.headers.get("x-stainless-retry-count")) == failures_before_success
@@ -1599,9 +1607,11 @@ class TestAsyncBountylab:
                 return httpx.Response(500)
             return httpx.Response(200)
 
-        respx_mock.get("/health").mock(side_effect=retry_handler)
+        respx_mock.get("/api/raw/users/MDQ6VXNlcjU4MzIzMQ==").mock(side_effect=retry_handler)
 
-        response = await client.health.with_raw_response.check(extra_headers={"x-stainless-retry-count": Omit()})
+        response = await client.raw_users.with_raw_response.retrieve(
+            "MDQ6VXNlcjU4MzIzMQ==", extra_headers={"x-stainless-retry-count": Omit()}
+        )
 
         assert len(response.http_request.headers.get_list("x-stainless-retry-count")) == 0
 
@@ -1623,9 +1633,11 @@ class TestAsyncBountylab:
                 return httpx.Response(500)
             return httpx.Response(200)
 
-        respx_mock.get("/health").mock(side_effect=retry_handler)
+        respx_mock.get("/api/raw/users/MDQ6VXNlcjU4MzIzMQ==").mock(side_effect=retry_handler)
 
-        response = await client.health.with_raw_response.check(extra_headers={"x-stainless-retry-count": "42"})
+        response = await client.raw_users.with_raw_response.retrieve(
+            "MDQ6VXNlcjU4MzIzMQ==", extra_headers={"x-stainless-retry-count": "42"}
+        )
 
         assert response.http_request.headers.get("x-stainless-retry-count") == "42"
 

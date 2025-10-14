@@ -21,7 +21,7 @@ from ._types import (
 )
 from ._utils import is_given, get_async_library
 from ._version import __version__
-from .resources import health, raw_repos, raw_users, search_repos, search_users
+from .resources import raw_repos, raw_users, search_repos, search_users
 from ._streaming import Stream as Stream, AsyncStream as AsyncStream
 from ._exceptions import APIStatusError, BountylabError
 from ._base_client import (
@@ -43,7 +43,6 @@ __all__ = [
 
 
 class Bountylab(SyncAPIClient):
-    health: health.HealthResource
     raw_users: raw_users.RawUsersResource
     raw_repos: raw_repos.RawReposResource
     search_users: search_users.SearchUsersResource
@@ -105,7 +104,6 @@ class Bountylab(SyncAPIClient):
             _strict_response_validation=_strict_response_validation,
         )
 
-        self.health = health.HealthResource(self)
         self.raw_users = raw_users.RawUsersResource(self)
         self.raw_repos = raw_repos.RawReposResource(self)
         self.search_users = search_users.SearchUsersResource(self)
@@ -219,7 +217,6 @@ class Bountylab(SyncAPIClient):
 
 
 class AsyncBountylab(AsyncAPIClient):
-    health: health.AsyncHealthResource
     raw_users: raw_users.AsyncRawUsersResource
     raw_repos: raw_repos.AsyncRawReposResource
     search_users: search_users.AsyncSearchUsersResource
@@ -281,7 +278,6 @@ class AsyncBountylab(AsyncAPIClient):
             _strict_response_validation=_strict_response_validation,
         )
 
-        self.health = health.AsyncHealthResource(self)
         self.raw_users = raw_users.AsyncRawUsersResource(self)
         self.raw_repos = raw_repos.AsyncRawReposResource(self)
         self.search_users = search_users.AsyncSearchUsersResource(self)
@@ -396,7 +392,6 @@ class AsyncBountylab(AsyncAPIClient):
 
 class BountylabWithRawResponse:
     def __init__(self, client: Bountylab) -> None:
-        self.health = health.HealthResourceWithRawResponse(client.health)
         self.raw_users = raw_users.RawUsersResourceWithRawResponse(client.raw_users)
         self.raw_repos = raw_repos.RawReposResourceWithRawResponse(client.raw_repos)
         self.search_users = search_users.SearchUsersResourceWithRawResponse(client.search_users)
@@ -405,7 +400,6 @@ class BountylabWithRawResponse:
 
 class AsyncBountylabWithRawResponse:
     def __init__(self, client: AsyncBountylab) -> None:
-        self.health = health.AsyncHealthResourceWithRawResponse(client.health)
         self.raw_users = raw_users.AsyncRawUsersResourceWithRawResponse(client.raw_users)
         self.raw_repos = raw_repos.AsyncRawReposResourceWithRawResponse(client.raw_repos)
         self.search_users = search_users.AsyncSearchUsersResourceWithRawResponse(client.search_users)
@@ -414,7 +408,6 @@ class AsyncBountylabWithRawResponse:
 
 class BountylabWithStreamedResponse:
     def __init__(self, client: Bountylab) -> None:
-        self.health = health.HealthResourceWithStreamingResponse(client.health)
         self.raw_users = raw_users.RawUsersResourceWithStreamingResponse(client.raw_users)
         self.raw_repos = raw_repos.RawReposResourceWithStreamingResponse(client.raw_repos)
         self.search_users = search_users.SearchUsersResourceWithStreamingResponse(client.search_users)
@@ -423,7 +416,6 @@ class BountylabWithStreamedResponse:
 
 class AsyncBountylabWithStreamedResponse:
     def __init__(self, client: AsyncBountylab) -> None:
-        self.health = health.AsyncHealthResourceWithStreamingResponse(client.health)
         self.raw_users = raw_users.AsyncRawUsersResourceWithStreamingResponse(client.raw_users)
         self.raw_repos = raw_repos.AsyncRawReposResourceWithStreamingResponse(client.raw_repos)
         self.search_users = search_users.AsyncSearchUsersResourceWithStreamingResponse(client.search_users)

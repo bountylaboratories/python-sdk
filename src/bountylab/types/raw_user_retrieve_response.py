@@ -69,8 +69,5 @@ class User(BaseModel):
 
 
 class RawUserRetrieveResponse(BaseModel):
-    credits_used: float = FieldInfo(alias="creditsUsed")
-    """Credits consumed (1 per result)"""
-
     user: Optional[User] = None
     """User object or null if not found"""
