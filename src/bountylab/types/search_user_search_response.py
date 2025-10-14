@@ -72,8 +72,5 @@ class SearchUserSearchResponse(BaseModel):
     count: float
     """Number of users returned"""
 
-    credits_used: float = FieldInfo(alias="creditsUsed")
-    """Credits consumed (1 per result)"""
-
     users: List[Optional[User]]
     """Array of user search results with relevance scores"""

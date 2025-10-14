@@ -60,8 +60,5 @@ class Repository(BaseModel):
 
 
 class RawRepoRetrieveResponse(BaseModel):
-    credits_used: float = FieldInfo(alias="creditsUsed")
-    """Credits consumed (1 per result)"""
-
     repository: Optional[Repository] = None
     """Repository object or null if not found"""
