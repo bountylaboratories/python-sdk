@@ -12,3 +12,11 @@ from .raw_repo_by_fullname_params import RawRepoByFullnameParams as RawRepoByFul
 from .search_repo_search_response import SearchRepoSearchResponse as SearchRepoSearchResponse
 from .search_user_search_response import SearchUserSearchResponse as SearchUserSearchResponse
 from .raw_repo_by_fullname_response import RawRepoByFullnameResponse as RawRepoByFullnameResponse
+from .search_repo_natural_language_params import SearchRepoNaturalLanguageParams as SearchRepoNaturalLanguageParams
+from .search_user_natural_language_params import SearchUserNaturalLanguageParams as SearchUserNaturalLanguageParams
+from .search_repo_natural_language_response import (
+    SearchRepoNaturalLanguageResponse as SearchRepoNaturalLanguageResponse,
+)
+from .search_user_natural_language_response import (
+    SearchUserNaturalLanguageResponse as SearchUserNaturalLanguageResponse,
+)

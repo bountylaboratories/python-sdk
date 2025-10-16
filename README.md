@@ -32,9 +32,9 @@ client = Bountylab(
     api_key=os.environ.get("BOUNTYLAB_API_KEY"),  # This is the default and can be omitted
 )
 
-response = client.search_users.search(
-    query="developer",
-    max_results=5,
+response = client.search_users.natural_language(
+    query="Find me senior engineers who work on machine learning at big tech companies",
+    max_results=10,
 )
 print(response.count)
 ```
@@ -59,9 +59,9 @@ client = AsyncBountylab(
 
 
 async def main() -> None:
-    response = await client.search_users.search(
-        query="developer",
-        max_results=5,
+    response = await client.search_users.natural_language(
+        query="Find me senior engineers who work on machine learning at big tech companies",
+        max_results=10,
     )
     print(response.count)
 
@@ -95,9 +95,9 @@ async def main() -> None:
         api_key="My API Key",
         http_client=DefaultAioHttpClient(),
     ) as client:
-        response = await client.search_users.search(
-            query="developer",
-            max_results=5,
+        response = await client.search_users.natural_language(
+            query="Find me senior engineers who work on machine learning at big tech companies",
+            max_results=10,
         )
         print(response.count)
 
@@ -123,8 +123,8 @@ from bountylab import Bountylab
 
 client = Bountylab()
 
-response = client.search_repos.search(
-    query="react component library with typescript",
+response = client.search_repos.natural_language(
+    query="Find React libraries with over 1000 stars that have good TypeScript support and are actively maintained",
     include_attributes={
         "contributors": {"limit": 10},
         "owner": True,
