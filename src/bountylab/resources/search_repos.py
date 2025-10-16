@@ -6,7 +6,7 @@ from typing import Optional
 
 import httpx
 
-from ..types import search_repo_search_params
+from ..types import search_repo_search_params, search_repo_natural_language_params
 from .._types import Body, Omit, Query, Headers, NotGiven, omit, not_given
 from .._utils import maybe_transform, async_maybe_transform
 from .._compat import cached_property
@@ -19,6 +19,7 @@ from .._response import (
 )
 from .._base_client import make_request_options
 from ..types.search_repo_search_response import SearchRepoSearchResponse
+from ..types.search_repo_natural_language_response import SearchRepoNaturalLanguageResponse
 
 __all__ = ["SearchReposResource", "AsyncSearchReposResource"]
 
@@ -42,6 +43,56 @@ class SearchReposResource(SyncAPIResource):
         For more information, see https://www.github.com/bountylaboratories/python-sdk#with_streaming_response
         """
         return SearchReposResourceWithStreamingResponse(self)
+
+    def natural_language(
+        self,
+        *,
+        query: str,
+        include_attributes: search_repo_natural_language_params.IncludeAttributes | Omit = omit,
+        max_results: int | Omit = omit,
+        # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
+        # The extra values given here take precedence over values defined on the client or passed to this method.
+        extra_headers: Headers | None = None,
+        extra_query: Query | None = None,
+        extra_body: Body | None = None,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
+    ) -> SearchRepoNaturalLanguageResponse:
+        """
+        Natural language search that uses AI to understand your query and automatically
+        generate search terms and filters. Requires SEARCH service. Credits: 1 per
+        result returned + 1 for AI processing + graph relationship credits if
+        includeAttributes is specified.
+
+        Args:
+          query: Natural language query describing the repositories you want to find
+
+          include_attributes: Optional graph relationships to include (owner, contributors, starrers)
+
+          max_results: Maximum number of results to return (default: 100, max: 1000)
+
+          extra_headers: Send extra headers
+
+          extra_query: Add additional query parameters to the request
+
+          extra_body: Add additional JSON properties to the request
+
+          timeout: Override the client-level default timeout for this request, in seconds
+        """
+        return self._post(
+            "/api/search/repos/natural-language",
+            body=maybe_transform(
+                {
+                    "query": query,
+                    "include_attributes": include_attributes,
+                    "max_results": max_results,
+                },
+                search_repo_natural_language_params.SearchRepoNaturalLanguageParams,
+            ),
+            options=make_request_options(
+                extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
+            ),
+            cast_to=SearchRepoNaturalLanguageResponse,
+        )
 
     def search(
         self,
@@ -132,6 +183,56 @@ class AsyncSearchReposResource(AsyncAPIResource):
         """
         return AsyncSearchReposResourceWithStreamingResponse(self)
 
+    async def natural_language(
+        self,
+        *,
+        query: str,
+        include_attributes: search_repo_natural_language_params.IncludeAttributes | Omit = omit,
+        max_results: int | Omit = omit,
+        # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
+        # The extra values given here take precedence over values defined on the client or passed to this method.
+        extra_headers: Headers | None = None,
+        extra_query: Query | None = None,
+        extra_body: Body | None = None,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
+    ) -> SearchRepoNaturalLanguageResponse:
+        """
+        Natural language search that uses AI to understand your query and automatically
+        generate search terms and filters. Requires SEARCH service. Credits: 1 per
+        result returned + 1 for AI processing + graph relationship credits if
+        includeAttributes is specified.
+
+        Args:
+          query: Natural language query describing the repositories you want to find
+
+          include_attributes: Optional graph relationships to include (owner, contributors, starrers)
+
+          max_results: Maximum number of results to return (default: 100, max: 1000)
+
+          extra_headers: Send extra headers
+
+          extra_query: Add additional query parameters to the request
+
+          extra_body: Add additional JSON properties to the request
+
+          timeout: Override the client-level default timeout for this request, in seconds
+        """
+        return await self._post(
+            "/api/search/repos/natural-language",
+            body=await async_maybe_transform(
+                {
+                    "query": query,
+                    "include_attributes": include_attributes,
+                    "max_results": max_results,
+                },
+                search_repo_natural_language_params.SearchRepoNaturalLanguageParams,
+            ),
+            options=make_request_options(
+                extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
+            ),
+            cast_to=SearchRepoNaturalLanguageResponse,
+        )
+
     async def search(
         self,
         *,
@@ -205,6 +306,9 @@ class SearchReposResourceWithRawResponse:
     def __init__(self, search_repos: SearchReposResource) -> None:
         self._search_repos = search_repos
 
+        self.natural_language = to_raw_response_wrapper(
+            search_repos.natural_language,
+        )
         self.search = to_raw_response_wrapper(
             search_repos.search,
         )
@@ -214,6 +318,9 @@ class AsyncSearchReposResourceWithRawResponse:
     def __init__(self, search_repos: AsyncSearchReposResource) -> None:
         self._search_repos = search_repos
 
+        self.natural_language = async_to_raw_response_wrapper(
+            search_repos.natural_language,
+        )
         self.search = async_to_raw_response_wrapper(
             search_repos.search,
         )
@@ -223,6 +330,9 @@ class SearchReposResourceWithStreamingResponse:
     def __init__(self, search_repos: SearchReposResource) -> None:
         self._search_repos = search_repos
 
+        self.natural_language = to_streamed_response_wrapper(
+            search_repos.natural_language,
+        )
         self.search = to_streamed_response_wrapper(
             search_repos.search,
         )
@@ -232,6 +342,9 @@ class AsyncSearchReposResourceWithStreamingResponse:
     def __init__(self, search_repos: AsyncSearchReposResource) -> None:
         self._search_repos = search_repos
 
+        self.natural_language = async_to_streamed_response_wrapper(
+            search_repos.natural_language,
+        )
         self.search = async_to_streamed_response_wrapper(
             search_repos.search,
         )

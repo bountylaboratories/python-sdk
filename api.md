@@ -29,11 +29,12 @@ Methods:
 Types:
 
 ```python
-from bountylab.types import SearchUserSearchResponse
+from bountylab.types import SearchUserNaturalLanguageResponse, SearchUserSearchResponse
 ```
 
 Methods:
 
+- <code title="post /api/search/users/natural-language">client.search_users.<a href="./src/bountylab/resources/search_users.py">natural_language</a>(\*\*<a href="src/bountylab/types/search_user_natural_language_params.py">params</a>) -> <a href="./src/bountylab/types/search_user_natural_language_response.py">SearchUserNaturalLanguageResponse</a></code>
 - <code title="post /api/search/users">client.search_users.<a href="./src/bountylab/resources/search_users.py">search</a>(\*\*<a href="src/bountylab/types/search_user_search_params.py">params</a>) -> <a href="./src/bountylab/types/search_user_search_response.py">SearchUserSearchResponse</a></code>
 
 # SearchRepos
@@ -41,9 +42,10 @@ Methods:
 Types:
 
 ```python
-from bountylab.types import SearchRepoSearchResponse
+from bountylab.types import SearchRepoNaturalLanguageResponse, SearchRepoSearchResponse
 ```
 
 Methods:
 
+- <code title="post /api/search/repos/natural-language">client.search_repos.<a href="./src/bountylab/resources/search_repos.py">natural_language</a>(\*\*<a href="src/bountylab/types/search_repo_natural_language_params.py">params</a>) -> <a href="./src/bountylab/types/search_repo_natural_language_response.py">SearchRepoNaturalLanguageResponse</a></code>
 - <code title="post /api/search/repos">client.search_repos.<a href="./src/bountylab/resources/search_repos.py">search</a>(\*\*<a href="src/bountylab/types/search_repo_search_params.py">params</a>) -> <a href="./src/bountylab/types/search_repo_search_response.py">SearchRepoSearchResponse</a></code>
