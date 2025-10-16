@@ -33,8 +33,8 @@ client = Bountylab(
 )
 
 response = client.search_users.search(
-    query="machine learning engineer",
-    max_results=10,
+    query="developer",
+    max_results=5,
 )
 print(response.count)
 ```
@@ -60,8 +60,8 @@ client = AsyncBountylab(
 
 async def main() -> None:
     response = await client.search_users.search(
-        query="machine learning engineer",
-        max_results=10,
+        query="developer",
+        max_results=5,
     )
     print(response.count)
 
@@ -96,8 +96,8 @@ async def main() -> None:
         http_client=DefaultAioHttpClient(),
     ) as client:
         response = await client.search_users.search(
-            query="machine learning engineer",
-            max_results=10,
+            query="developer",
+            max_results=5,
         )
         print(response.count)
 
@@ -150,8 +150,9 @@ from bountylab import Bountylab
 client = Bountylab()
 
 try:
-    client.raw_users.retrieve(
-        "MDQ6VXNlcjU4MzIzMQ==",
+    client.search_users.search(
+        query="developer",
+        max_results=5,
     )
 except bountylab.APIConnectionError as e:
     print("The server could not be reached")
@@ -195,8 +196,9 @@ client = Bountylab(
 )
 
 # Or, configure per-request:
-client.with_options(max_retries=5).raw_users.retrieve(
-    "MDQ6VXNlcjU4MzIzMQ==",
+client.with_options(max_retries=5).search_users.search(
+    query="developer",
+    max_results=5,
 )
 ```
 
@@ -220,8 +222,9 @@ client = Bountylab(
 )
 
 # Override per-request:
-client.with_options(timeout=5.0).raw_users.retrieve(
-    "MDQ6VXNlcjU4MzIzMQ==",
+client.with_options(timeout=5.0).search_users.search(
+    query="developer",
+    max_results=5,
 )
 ```
 
@@ -263,13 +266,14 @@ The "raw" Response object can be accessed by prefixing `.with_raw_response.` to 
 from bountylab import Bountylab
 
 client = Bountylab()
-response = client.raw_users.with_raw_response.retrieve(
-    "MDQ6VXNlcjU4MzIzMQ==",
+response = client.search_users.with_raw_response.search(
+    query="developer",
+    max_results=5,
 )
 print(response.headers.get('X-My-Header'))
 
-raw_user = response.parse()  # get the object that `raw_users.retrieve()` would have returned
-print(raw_user.user)
+search_user = response.parse()  # get the object that `search_users.search()` would have returned
+print(search_user.count)
 ```
 
 These methods return an [`APIResponse`](https://github.com/bountylaboratories/python-sdk/tree/main/src/bountylab/_response.py) object.
@@ -283,8 +287,9 @@ The above interface eagerly reads the full response body when you make the reque
 To stream the response body, use `.with_streaming_response` instead, which requires a context manager and only reads the response body once you call `.read()`, `.text()`, `.json()`, `.iter_bytes()`, `.iter_text()`, `.iter_lines()` or `.parse()`. In the async client, these are async methods.
 
 ```python
-with client.raw_users.with_streaming_response.retrieve(
-    "MDQ6VXNlcjU4MzIzMQ==",
+with client.search_users.with_streaming_response.search(
+    query="developer",
+    max_results=5,
 ) as response:
     print(response.headers.get("X-My-Header"))
 
