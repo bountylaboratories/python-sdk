@@ -9,22 +9,26 @@ from .._models import BaseModel
 __all__ = [
     "RawRepoByFullnameResponse",
     "Repository",
-    "RepositoryContributor",
-    "RepositoryContributorSocialAccount",
+    "RepositoryContributors",
+    "RepositoryContributorsEdge",
+    "RepositoryContributorsEdgeSocialAccount",
+    "RepositoryContributorsPageInfo",
     "RepositoryOwner",
     "RepositoryOwnerSocialAccount",
-    "RepositoryStarrer",
-    "RepositoryStarrerSocialAccount",
+    "RepositoryStarrers",
+    "RepositoryStarrersEdge",
+    "RepositoryStarrersEdgeSocialAccount",
+    "RepositoryStarrersPageInfo",
 ]
 
 
-class RepositoryContributorSocialAccount(BaseModel):
+class RepositoryContributorsEdgeSocialAccount(BaseModel):
     provider: str
 
     url: str
 
 
-class RepositoryContributor(BaseModel):
+class RepositoryContributorsEdge(BaseModel):
     id: str
     """BountyLab internal ID"""
 
@@ -67,7 +71,7 @@ class RepositoryContributor(BaseModel):
     score: Optional[float] = None
     """Relevance score from search (0-1, lower is more relevant for distance metrics)"""
 
-    social_accounts: Optional[List[RepositoryContributorSocialAccount]] = FieldInfo(
+    social_accounts: Optional[List[RepositoryContributorsEdgeSocialAccount]] = FieldInfo(
         alias="socialAccounts", default=None
     )
     """Social media accounts"""
@@ -77,6 +81,22 @@ class RepositoryContributor(BaseModel):
 
     website_url: Optional[str] = FieldInfo(alias="websiteUrl", default=None)
     """User website URL"""
+
+
+class RepositoryContributorsPageInfo(BaseModel):
+    end_cursor: Optional[str] = FieldInfo(alias="endCursor", default=None)
+    """Cursor to fetch next page (null if no more items)"""
+
+    has_next_page: bool = FieldInfo(alias="hasNextPage")
+    """Whether there are more items available"""
+
+
+class RepositoryContributors(BaseModel):
+    edges: List[RepositoryContributorsEdge]
+    """Array of user objects"""
+
+    page_info: RepositoryContributorsPageInfo = FieldInfo(alias="pageInfo")
+    """Pagination information"""
 
 
 class RepositoryOwnerSocialAccount(BaseModel):
@@ -138,13 +158,13 @@ class RepositoryOwner(BaseModel):
     """User website URL"""
 
 
-class RepositoryStarrerSocialAccount(BaseModel):
+class RepositoryStarrersEdgeSocialAccount(BaseModel):
     provider: str
 
     url: str
 
 
-class RepositoryStarrer(BaseModel):
+class RepositoryStarrersEdge(BaseModel):
     id: str
     """BountyLab internal ID"""
 
@@ -187,7 +207,9 @@ class RepositoryStarrer(BaseModel):
     score: Optional[float] = None
     """Relevance score from search (0-1, lower is more relevant for distance metrics)"""
 
-    social_accounts: Optional[List[RepositoryStarrerSocialAccount]] = FieldInfo(alias="socialAccounts", default=None)
+    social_accounts: Optional[List[RepositoryStarrersEdgeSocialAccount]] = FieldInfo(
+        alias="socialAccounts", default=None
+    )
     """Social media accounts"""
 
     updated_at: Optional[str] = FieldInfo(alias="updatedAt", default=None)
@@ -195,6 +217,22 @@ class RepositoryStarrer(BaseModel):
 
     website_url: Optional[str] = FieldInfo(alias="websiteUrl", default=None)
     """User website URL"""
+
+
+class RepositoryStarrersPageInfo(BaseModel):
+    end_cursor: Optional[str] = FieldInfo(alias="endCursor", default=None)
+    """Cursor to fetch next page (null if no more items)"""
+
+    has_next_page: bool = FieldInfo(alias="hasNextPage")
+    """Whether there are more items available"""
+
+
+class RepositoryStarrers(BaseModel):
+    edges: List[RepositoryStarrersEdge]
+    """Array of user objects"""
+
+    page_info: RepositoryStarrersPageInfo = FieldInfo(alias="pageInfo")
+    """Pagination information"""
 
 
 class Repository(BaseModel):
@@ -222,8 +260,8 @@ class Repository(BaseModel):
     total_issues_open: float = FieldInfo(alias="totalIssuesOpen")
     """Number of open issues"""
 
-    contributors: Optional[List[RepositoryContributor]] = None
-    """Repository contributors (when includeAttributes.contributors is specified)"""
+    contributors: Optional[RepositoryContributors] = None
+    """Users who follow this user (when includeAttributes.followers is specified)"""
 
     created_at: Optional[str] = FieldInfo(alias="createdAt", default=None)
     """ISO 8601 timestamp when repository was created"""
@@ -249,10 +287,8 @@ class Repository(BaseModel):
     score: Optional[float] = None
     """Relevance score from search (0-1, lower is more relevant for cosine distance)"""
 
-    starrers: Optional[List[RepositoryStarrer]] = None
-    """
-    Users who starred this repository (when includeAttributes.starrers is specified)
-    """
+    starrers: Optional[RepositoryStarrers] = None
+    """Users who follow this user (when includeAttributes.followers is specified)"""
 
     updated_at: Optional[str] = FieldInfo(alias="updatedAt", default=None)
     """ISO 8601 timestamp when repository was last updated"""
