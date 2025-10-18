@@ -8,8 +8,8 @@ __all__ = ["RawRepoStarsParams"]
 
 
 class RawRepoStarsParams(TypedDict, total=False):
-    limit: str
-    """Maximum number of results to return (default: 100, max: 1000)"""
+    after: str
+    """Cursor for pagination (opaque base64-encoded string from previous response)"""
 
-    offset: str
-    """Number of results to skip (default: 0)"""
+    first: str
+    """Number of items to return (default: 100, max: 100)"""

@@ -34,9 +34,15 @@ class TestSearchRepos:
         search_repo = client.search_repos.natural_language(
             query="Find React libraries with over 1000 stars that have good TypeScript support and are actively maintained",
             include_attributes={
-                "contributors": {"limit": 10},
+                "contributors": {
+                    "first": 10,
+                    "after": "after",
+                },
                 "owner": True,
-                "starrers": {"limit": 5},
+                "starrers": {
+                    "first": 1,
+                    "after": "after",
+                },
             },
             max_results=50,
         )
@@ -87,9 +93,15 @@ class TestSearchRepos:
                 "value": "TypeScript",
             },
             include_attributes={
-                "contributors": {"limit": 10},
+                "contributors": {
+                    "first": 10,
+                    "after": "after",
+                },
                 "owner": True,
-                "starrers": {"limit": 5},
+                "starrers": {
+                    "first": 1,
+                    "after": "after",
+                },
             },
             max_results=50,
         )
@@ -141,9 +153,15 @@ class TestAsyncSearchRepos:
         search_repo = await async_client.search_repos.natural_language(
             query="Find React libraries with over 1000 stars that have good TypeScript support and are actively maintained",
             include_attributes={
-                "contributors": {"limit": 10},
+                "contributors": {
+                    "first": 10,
+                    "after": "after",
+                },
                 "owner": True,
-                "starrers": {"limit": 5},
+                "starrers": {
+                    "first": 1,
+                    "after": "after",
+                },
             },
             max_results=50,
         )
@@ -194,9 +212,15 @@ class TestAsyncSearchRepos:
                 "value": "TypeScript",
             },
             include_attributes={
-                "contributors": {"limit": 10},
+                "contributors": {
+                    "first": 10,
+                    "after": "after",
+                },
                 "owner": True,
-                "starrers": {"limit": 5},
+                "starrers": {
+                    "first": 1,
+                    "after": "after",
+                },
             },
             max_results=50,
         )
