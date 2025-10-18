@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.14.0 (2025-10-18)
+
+Full Changelog: [v0.13.0...v0.14.0](https://github.com/bountylaboratories/python-sdk/compare/v0.13.0...v0.14.0)
+
+### Features
+
+* **api:** api update ([cd1ec48](https://github.com/bountylaboratories/python-sdk/commit/cd1ec4862cfe4df78a02d0b7f52f65e1d5442b9c))
+
+
+### Chores
+
+* bump `httpx-aiohttp` version to 0.1.9 ([27fa027](https://github.com/bountylaboratories/python-sdk/commit/27fa0279d88e2d889817bf48d22242d9c1b71cc3))
+
 ## 0.13.0 (2025-10-18)
 
 Full Changelog: [v0.12.0...v0.13.0](https://github.com/bountylaboratories/python-sdk/compare/v0.12.0...v0.13.0)
