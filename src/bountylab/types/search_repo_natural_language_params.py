@@ -26,21 +26,27 @@ class SearchRepoNaturalLanguageParams(TypedDict, total=False):
 
 
 class IncludeAttributesContributors(TypedDict, total=False):
-    limit: Required[int]
-    """Maximum number of contributors to return (max: 100)"""
+    first: Required[int]
+    """Number of items to return (max: 100)"""
+
+    after: str
+    """Cursor for pagination (opaque base64-encoded)"""
 
 
 class IncludeAttributesStarrers(TypedDict, total=False):
-    limit: Required[int]
-    """Maximum number of starrers to return (max: 100)"""
+    first: Required[int]
+    """Number of items to return (max: 100)"""
+
+    after: str
+    """Cursor for pagination (opaque base64-encoded)"""
 
 
 class IncludeAttributes(TypedDict, total=False):
     contributors: IncludeAttributesContributors
-    """Include repository contributors with limit"""
+    """Include repository contributors with cursor pagination"""
 
     owner: bool
     """Include repository owner information"""
 
     starrers: IncludeAttributesStarrers
-    """Include users who starred the repository with limit"""
+    """Include users who starred the repository with cursor pagination"""

@@ -23,7 +23,6 @@ from .._response import (
 from .._base_client import make_request_options
 from ..types.raw_repo_owns_response import RawRepoOwnsResponse
 from ..types.raw_repo_stars_response import RawRepoStarsResponse
-from ..types.raw_repo_retrieve_response import RawRepoRetrieveResponse
 from ..types.raw_repo_by_fullname_response import RawRepoByFullnameResponse
 from ..types.raw_repo_contributes_response import RawRepoContributesResponse
 
@@ -50,47 +49,11 @@ class RawReposResource(SyncAPIResource):
         """
         return RawReposResourceWithStreamingResponse(self)
 
-    def retrieve(
-        self,
-        id: str,
-        *,
-        # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
-        # The extra values given here take precedence over values defined on the client or passed to this method.
-        extra_headers: Headers | None = None,
-        extra_query: Query | None = None,
-        extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = not_given,
-    ) -> RawRepoRetrieveResponse:
-        """Fetch a single GitHub repository by its node ID.
-
-        Requires RAW service. Credits:
-        1 per result.
-
-        Args:
-          id: GitHub node ID (used to look up the repository)
-
-          extra_headers: Send extra headers
-
-          extra_query: Add additional query parameters to the request
-
-          extra_body: Add additional JSON properties to the request
-
-          timeout: Override the client-level default timeout for this request, in seconds
-        """
-        if not id:
-            raise ValueError(f"Expected a non-empty value for `id` but received {id!r}")
-        return self._get(
-            f"/api/raw/repos/{id}",
-            options=make_request_options(
-                extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
-            ),
-            cast_to=RawRepoRetrieveResponse,
-        )
-
     def by_fullname(
         self,
         *,
         full_names: SequenceNotStr[str],
+        include_attributes: raw_repo_by_fullname_params.IncludeAttributes | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -107,6 +70,8 @@ class RawReposResource(SyncAPIResource):
         Args:
           full_names: Array of repository full names in "owner/name" format (1-100)
 
+          include_attributes: Optional graph relationships to include (owner, contributors, starrers)
+
           extra_headers: Send extra headers
 
           extra_query: Add additional query parameters to the request
@@ -117,7 +82,13 @@ class RawReposResource(SyncAPIResource):
         """
         return self._post(
             "/api/raw/repos/by-fullname",
-            body=maybe_transform({"full_names": full_names}, raw_repo_by_fullname_params.RawRepoByFullnameParams),
+            body=maybe_transform(
+                {
+                    "full_names": full_names,
+                    "include_attributes": include_attributes,
+                },
+                raw_repo_by_fullname_params.RawRepoByFullnameParams,
+            ),
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
@@ -128,8 +99,8 @@ class RawReposResource(SyncAPIResource):
         self,
         id: str,
         *,
-        limit: str | Omit = omit,
-        offset: str | Omit = omit,
+        after: str | Omit = omit,
+        first: str | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -142,11 +113,11 @@ class RawReposResource(SyncAPIResource):
         Supports pagination. Requires RAW service. Credits: 1 per result.
 
         Args:
-          id: GitHub node ID (used to look up the repository)
+          id: GitHub node ID or BountyLab ID
 
-          limit: Maximum number of results to return (default: 100, max: 1000)
+          after: Cursor for pagination (opaque base64-encoded string from previous response)
 
-          offset: Number of results to skip (default: 0)
+          first: Number of items to return (default: 100, max: 100)
 
           extra_headers: Send extra headers
 
@@ -167,8 +138,8 @@ class RawReposResource(SyncAPIResource):
                 timeout=timeout,
                 query=maybe_transform(
                     {
-                        "limit": limit,
-                        "offset": offset,
+                        "after": after,
+                        "first": first,
                     },
                     raw_repo_contributes_params.RawRepoContributesParams,
                 ),
@@ -180,8 +151,8 @@ class RawReposResource(SyncAPIResource):
         self,
         id: str,
         *,
-        limit: str | Omit = omit,
-        offset: str | Omit = omit,
+        after: str | Omit = omit,
+        first: str | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -194,11 +165,11 @@ class RawReposResource(SyncAPIResource):
         Supports pagination. Requires RAW service. Credits: 1 per result.
 
         Args:
-          id: GitHub node ID (used to look up the repository)
+          id: GitHub node ID or BountyLab ID
 
-          limit: Maximum number of results to return (default: 100, max: 1000)
+          after: Cursor for pagination (opaque base64-encoded string from previous response)
 
-          offset: Number of results to skip (default: 0)
+          first: Number of items to return (default: 100, max: 100)
 
           extra_headers: Send extra headers
 
@@ -219,8 +190,8 @@ class RawReposResource(SyncAPIResource):
                 timeout=timeout,
                 query=maybe_transform(
                     {
-                        "limit": limit,
-                        "offset": offset,
+                        "after": after,
+                        "first": first,
                     },
                     raw_repo_owns_params.RawRepoOwnsParams,
                 ),
@@ -232,8 +203,8 @@ class RawReposResource(SyncAPIResource):
         self,
         id: str,
         *,
-        limit: str | Omit = omit,
-        offset: str | Omit = omit,
+        after: str | Omit = omit,
+        first: str | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -247,11 +218,11 @@ class RawReposResource(SyncAPIResource):
         pagination. Requires RAW service. Credits: 1 per result.
 
         Args:
-          id: GitHub node ID (used to look up the repository)
+          id: GitHub node ID or BountyLab ID
 
-          limit: Maximum number of results to return (default: 100, max: 1000)
+          after: Cursor for pagination (opaque base64-encoded string from previous response)
 
-          offset: Number of results to skip (default: 0)
+          first: Number of items to return (default: 100, max: 100)
 
           extra_headers: Send extra headers
 
@@ -272,8 +243,8 @@ class RawReposResource(SyncAPIResource):
                 timeout=timeout,
                 query=maybe_transform(
                     {
-                        "limit": limit,
-                        "offset": offset,
+                        "after": after,
+                        "first": first,
                     },
                     raw_repo_stars_params.RawRepoStarsParams,
                 ),
@@ -302,47 +273,11 @@ class AsyncRawReposResource(AsyncAPIResource):
         """
         return AsyncRawReposResourceWithStreamingResponse(self)
 
-    async def retrieve(
-        self,
-        id: str,
-        *,
-        # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
-        # The extra values given here take precedence over values defined on the client or passed to this method.
-        extra_headers: Headers | None = None,
-        extra_query: Query | None = None,
-        extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = not_given,
-    ) -> RawRepoRetrieveResponse:
-        """Fetch a single GitHub repository by its node ID.
-
-        Requires RAW service. Credits:
-        1 per result.
-
-        Args:
-          id: GitHub node ID (used to look up the repository)
-
-          extra_headers: Send extra headers
-
-          extra_query: Add additional query parameters to the request
-
-          extra_body: Add additional JSON properties to the request
-
-          timeout: Override the client-level default timeout for this request, in seconds
-        """
-        if not id:
-            raise ValueError(f"Expected a non-empty value for `id` but received {id!r}")
-        return await self._get(
-            f"/api/raw/repos/{id}",
-            options=make_request_options(
-                extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
-            ),
-            cast_to=RawRepoRetrieveResponse,
-        )
-
     async def by_fullname(
         self,
         *,
         full_names: SequenceNotStr[str],
+        include_attributes: raw_repo_by_fullname_params.IncludeAttributes | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -359,6 +294,8 @@ class AsyncRawReposResource(AsyncAPIResource):
         Args:
           full_names: Array of repository full names in "owner/name" format (1-100)
 
+          include_attributes: Optional graph relationships to include (owner, contributors, starrers)
+
           extra_headers: Send extra headers
 
           extra_query: Add additional query parameters to the request
@@ -370,7 +307,11 @@ class AsyncRawReposResource(AsyncAPIResource):
         return await self._post(
             "/api/raw/repos/by-fullname",
             body=await async_maybe_transform(
-                {"full_names": full_names}, raw_repo_by_fullname_params.RawRepoByFullnameParams
+                {
+                    "full_names": full_names,
+                    "include_attributes": include_attributes,
+                },
+                raw_repo_by_fullname_params.RawRepoByFullnameParams,
             ),
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
@@ -382,8 +323,8 @@ class AsyncRawReposResource(AsyncAPIResource):
         self,
         id: str,
         *,
-        limit: str | Omit = omit,
-        offset: str | Omit = omit,
+        after: str | Omit = omit,
+        first: str | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -396,11 +337,11 @@ class AsyncRawReposResource(AsyncAPIResource):
         Supports pagination. Requires RAW service. Credits: 1 per result.
 
         Args:
-          id: GitHub node ID (used to look up the repository)
+          id: GitHub node ID or BountyLab ID
 
-          limit: Maximum number of results to return (default: 100, max: 1000)
+          after: Cursor for pagination (opaque base64-encoded string from previous response)
 
-          offset: Number of results to skip (default: 0)
+          first: Number of items to return (default: 100, max: 100)
 
           extra_headers: Send extra headers
 
@@ -421,8 +362,8 @@ class AsyncRawReposResource(AsyncAPIResource):
                 timeout=timeout,
                 query=await async_maybe_transform(
                     {
-                        "limit": limit,
-                        "offset": offset,
+                        "after": after,
+                        "first": first,
                     },
                     raw_repo_contributes_params.RawRepoContributesParams,
                 ),
@@ -434,8 +375,8 @@ class AsyncRawReposResource(AsyncAPIResource):
         self,
         id: str,
         *,
-        limit: str | Omit = omit,
-        offset: str | Omit = omit,
+        after: str | Omit = omit,
+        first: str | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -448,11 +389,11 @@ class AsyncRawReposResource(AsyncAPIResource):
         Supports pagination. Requires RAW service. Credits: 1 per result.
 
         Args:
-          id: GitHub node ID (used to look up the repository)
+          id: GitHub node ID or BountyLab ID
 
-          limit: Maximum number of results to return (default: 100, max: 1000)
+          after: Cursor for pagination (opaque base64-encoded string from previous response)
 
-          offset: Number of results to skip (default: 0)
+          first: Number of items to return (default: 100, max: 100)
 
           extra_headers: Send extra headers
 
@@ -473,8 +414,8 @@ class AsyncRawReposResource(AsyncAPIResource):
                 timeout=timeout,
                 query=await async_maybe_transform(
                     {
-                        "limit": limit,
-                        "offset": offset,
+                        "after": after,
+                        "first": first,
                     },
                     raw_repo_owns_params.RawRepoOwnsParams,
                 ),
@@ -486,8 +427,8 @@ class AsyncRawReposResource(AsyncAPIResource):
         self,
         id: str,
         *,
-        limit: str | Omit = omit,
-        offset: str | Omit = omit,
+        after: str | Omit = omit,
+        first: str | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -501,11 +442,11 @@ class AsyncRawReposResource(AsyncAPIResource):
         pagination. Requires RAW service. Credits: 1 per result.
 
         Args:
-          id: GitHub node ID (used to look up the repository)
+          id: GitHub node ID or BountyLab ID
 
-          limit: Maximum number of results to return (default: 100, max: 1000)
+          after: Cursor for pagination (opaque base64-encoded string from previous response)
 
-          offset: Number of results to skip (default: 0)
+          first: Number of items to return (default: 100, max: 100)
 
           extra_headers: Send extra headers
 
@@ -526,8 +467,8 @@ class AsyncRawReposResource(AsyncAPIResource):
                 timeout=timeout,
                 query=await async_maybe_transform(
                     {
-                        "limit": limit,
-                        "offset": offset,
+                        "after": after,
+                        "first": first,
                     },
                     raw_repo_stars_params.RawRepoStarsParams,
                 ),
@@ -540,9 +481,6 @@ class RawReposResourceWithRawResponse:
     def __init__(self, raw_repos: RawReposResource) -> None:
         self._raw_repos = raw_repos
 
-        self.retrieve = to_raw_response_wrapper(
-            raw_repos.retrieve,
-        )
         self.by_fullname = to_raw_response_wrapper(
             raw_repos.by_fullname,
         )
@@ -561,9 +499,6 @@ class AsyncRawReposResourceWithRawResponse:
     def __init__(self, raw_repos: AsyncRawReposResource) -> None:
         self._raw_repos = raw_repos
 
-        self.retrieve = async_to_raw_response_wrapper(
-            raw_repos.retrieve,
-        )
         self.by_fullname = async_to_raw_response_wrapper(
             raw_repos.by_fullname,
         )
@@ -582,9 +517,6 @@ class RawReposResourceWithStreamingResponse:
     def __init__(self, raw_repos: RawReposResource) -> None:
         self._raw_repos = raw_repos
 
-        self.retrieve = to_streamed_response_wrapper(
-            raw_repos.retrieve,
-        )
         self.by_fullname = to_streamed_response_wrapper(
             raw_repos.by_fullname,
         )
@@ -603,9 +535,6 @@ class AsyncRawReposResourceWithStreamingResponse:
     def __init__(self, raw_repos: AsyncRawReposResource) -> None:
         self._raw_repos = raw_repos
 
-        self.retrieve = async_to_streamed_response_wrapper(
-            raw_repos.retrieve,
-        )
         self.by_fullname = async_to_streamed_response_wrapper(
             raw_repos.by_fullname,
         )

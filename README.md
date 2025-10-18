@@ -123,12 +123,11 @@ from bountylab import Bountylab
 
 client = Bountylab()
 
-response = client.search_repos.natural_language(
-    query="Find React libraries with over 1000 stars that have good TypeScript support and are actively maintained",
+response = client.raw_users.by_login(
+    logins=["octocat", "torvalds"],
     include_attributes={
-        "contributors": {"limit": 10},
-        "owner": True,
-        "starrers": {"limit": 5},
+        "followers": {"first": 10},
+        "stars": {"first": 10},
     },
 )
 print(response.include_attributes)

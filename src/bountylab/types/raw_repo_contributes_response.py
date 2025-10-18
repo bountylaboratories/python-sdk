@@ -6,7 +6,15 @@ from pydantic import Field as FieldInfo
 
 from .._models import BaseModel
 
-__all__ = ["RawRepoContributesResponse", "User", "UserSocialAccount"]
+__all__ = ["RawRepoContributesResponse", "PageInfo", "User", "UserSocialAccount"]
+
+
+class PageInfo(BaseModel):
+    end_cursor: Optional[str] = FieldInfo(alias="endCursor", default=None)
+    """Cursor to fetch next page (null if no more items)"""
+
+    has_next_page: bool = FieldInfo(alias="hasNextPage")
+    """Whether there are more items available"""
 
 
 class UserSocialAccount(BaseModel):
@@ -69,11 +77,8 @@ class User(BaseModel):
 
 
 class RawRepoContributesResponse(BaseModel):
-    count: float
-    """Number of users in current page"""
+    page_info: PageInfo = FieldInfo(alias="pageInfo")
+    """Pagination information"""
 
-    total: float
-    """Total number of contributors"""
-
-    users: List[Optional[User]]
+    users: List[User]
     """Array of users who contribute to this repository"""

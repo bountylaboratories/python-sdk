@@ -72,5 +72,8 @@ class SearchUserNaturalLanguageResponse(BaseModel):
     count: float
     """Number of users returned"""
 
-    users: List[Optional[User]]
+    search_query: str = FieldInfo(alias="searchQuery")
+    """The generated search query used for the search"""
+
+    users: List[User]
     """Array of user search results with relevance scores"""
