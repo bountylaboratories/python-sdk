@@ -4,12 +4,7 @@ from __future__ import annotations
 
 import httpx
 
-from ..types import (
-    raw_repo_owns_params,
-    raw_repo_stars_params,
-    raw_repo_by_fullname_params,
-    raw_repo_contributes_params,
-)
+from ..types import raw_repo_retrieve_params, raw_repo_by_fullname_params
 from .._types import Body, Omit, Query, Headers, NotGiven, SequenceNotStr, omit, not_given
 from .._utils import maybe_transform, async_maybe_transform
 from .._compat import cached_property
@@ -21,10 +16,8 @@ from .._response import (
     async_to_streamed_response_wrapper,
 )
 from .._base_client import make_request_options
-from ..types.raw_repo_owns_response import RawRepoOwnsResponse
-from ..types.raw_repo_stars_response import RawRepoStarsResponse
+from ..types.raw_repo_retrieve_response import RawRepoRetrieveResponse
 from ..types.raw_repo_by_fullname_response import RawRepoByFullnameResponse
-from ..types.raw_repo_contributes_response import RawRepoContributesResponse
 
 __all__ = ["RawReposResource", "AsyncRawReposResource"]
 
@@ -48,6 +41,52 @@ class RawReposResource(SyncAPIResource):
         For more information, see https://www.github.com/bountylaboratories/python-sdk#with_streaming_response
         """
         return RawReposResourceWithStreamingResponse(self)
+
+    def retrieve(
+        self,
+        *,
+        github_ids: SequenceNotStr[str],
+        include_attributes: raw_repo_retrieve_params.IncludeAttributes | Omit = omit,
+        # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
+        # The extra values given here take precedence over values defined on the client or passed to this method.
+        extra_headers: Headers | None = None,
+        extra_query: Query | None = None,
+        extra_body: Body | None = None,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
+    ) -> RawRepoRetrieveResponse:
+        """Fetch GitHub repositories by their node IDs.
+
+        Supports batch requests (1-100
+        IDs). Requires RAW service. Credits: 1 per result returned + graph relationship
+        credits if includeAttributes is specified.
+
+        Args:
+          github_ids: Array of GitHub node IDs (1-100)
+
+          include_attributes: Optional graph relationships to include (owner, contributors, starrers)
+
+          extra_headers: Send extra headers
+
+          extra_query: Add additional query parameters to the request
+
+          extra_body: Add additional JSON properties to the request
+
+          timeout: Override the client-level default timeout for this request, in seconds
+        """
+        return self._post(
+            "/api/raw/repos",
+            body=maybe_transform(
+                {
+                    "github_ids": github_ids,
+                    "include_attributes": include_attributes,
+                },
+                raw_repo_retrieve_params.RawRepoRetrieveParams,
+            ),
+            options=make_request_options(
+                extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
+            ),
+            cast_to=RawRepoRetrieveResponse,
+        )
 
     def by_fullname(
         self,
@@ -95,163 +134,6 @@ class RawReposResource(SyncAPIResource):
             cast_to=RawRepoByFullnameResponse,
         )
 
-    def contributes(
-        self,
-        id: str,
-        *,
-        after: str | Omit = omit,
-        first: str | Omit = omit,
-        # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
-        # The extra values given here take precedence over values defined on the client or passed to this method.
-        extra_headers: Headers | None = None,
-        extra_query: Query | None = None,
-        extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = not_given,
-    ) -> RawRepoContributesResponse:
-        """
-        Get users who contribute to this repository (incoming "contributes" edges).
-        Supports pagination. Requires RAW service. Credits: 1 per result.
-
-        Args:
-          id: GitHub node ID or BountyLab ID
-
-          after: Cursor for pagination (opaque base64-encoded string from previous response)
-
-          first: Number of items to return (default: 100, max: 100)
-
-          extra_headers: Send extra headers
-
-          extra_query: Add additional query parameters to the request
-
-          extra_body: Add additional JSON properties to the request
-
-          timeout: Override the client-level default timeout for this request, in seconds
-        """
-        if not id:
-            raise ValueError(f"Expected a non-empty value for `id` but received {id!r}")
-        return self._get(
-            f"/api/raw/repos/{id}/contributes",
-            options=make_request_options(
-                extra_headers=extra_headers,
-                extra_query=extra_query,
-                extra_body=extra_body,
-                timeout=timeout,
-                query=maybe_transform(
-                    {
-                        "after": after,
-                        "first": first,
-                    },
-                    raw_repo_contributes_params.RawRepoContributesParams,
-                ),
-            ),
-            cast_to=RawRepoContributesResponse,
-        )
-
-    def owns(
-        self,
-        id: str,
-        *,
-        after: str | Omit = omit,
-        first: str | Omit = omit,
-        # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
-        # The extra values given here take precedence over values defined on the client or passed to this method.
-        extra_headers: Headers | None = None,
-        extra_query: Query | None = None,
-        extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = not_given,
-    ) -> RawRepoOwnsResponse:
-        """
-        Get users who own this repository (incoming "owns" edges, typically 1 user).
-        Supports pagination. Requires RAW service. Credits: 1 per result.
-
-        Args:
-          id: GitHub node ID or BountyLab ID
-
-          after: Cursor for pagination (opaque base64-encoded string from previous response)
-
-          first: Number of items to return (default: 100, max: 100)
-
-          extra_headers: Send extra headers
-
-          extra_query: Add additional query parameters to the request
-
-          extra_body: Add additional JSON properties to the request
-
-          timeout: Override the client-level default timeout for this request, in seconds
-        """
-        if not id:
-            raise ValueError(f"Expected a non-empty value for `id` but received {id!r}")
-        return self._get(
-            f"/api/raw/repos/{id}/owns",
-            options=make_request_options(
-                extra_headers=extra_headers,
-                extra_query=extra_query,
-                extra_body=extra_body,
-                timeout=timeout,
-                query=maybe_transform(
-                    {
-                        "after": after,
-                        "first": first,
-                    },
-                    raw_repo_owns_params.RawRepoOwnsParams,
-                ),
-            ),
-            cast_to=RawRepoOwnsResponse,
-        )
-
-    def stars(
-        self,
-        id: str,
-        *,
-        after: str | Omit = omit,
-        first: str | Omit = omit,
-        # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
-        # The extra values given here take precedence over values defined on the client or passed to this method.
-        extra_headers: Headers | None = None,
-        extra_query: Query | None = None,
-        extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = not_given,
-    ) -> RawRepoStarsResponse:
-        """Get users who starred this repository (incoming "stars" edges).
-
-        Supports
-        pagination. Requires RAW service. Credits: 1 per result.
-
-        Args:
-          id: GitHub node ID or BountyLab ID
-
-          after: Cursor for pagination (opaque base64-encoded string from previous response)
-
-          first: Number of items to return (default: 100, max: 100)
-
-          extra_headers: Send extra headers
-
-          extra_query: Add additional query parameters to the request
-
-          extra_body: Add additional JSON properties to the request
-
-          timeout: Override the client-level default timeout for this request, in seconds
-        """
-        if not id:
-            raise ValueError(f"Expected a non-empty value for `id` but received {id!r}")
-        return self._get(
-            f"/api/raw/repos/{id}/stars",
-            options=make_request_options(
-                extra_headers=extra_headers,
-                extra_query=extra_query,
-                extra_body=extra_body,
-                timeout=timeout,
-                query=maybe_transform(
-                    {
-                        "after": after,
-                        "first": first,
-                    },
-                    raw_repo_stars_params.RawRepoStarsParams,
-                ),
-            ),
-            cast_to=RawRepoStarsResponse,
-        )
-
 
 class AsyncRawReposResource(AsyncAPIResource):
     @cached_property
@@ -272,6 +154,52 @@ class AsyncRawReposResource(AsyncAPIResource):
         For more information, see https://www.github.com/bountylaboratories/python-sdk#with_streaming_response
         """
         return AsyncRawReposResourceWithStreamingResponse(self)
+
+    async def retrieve(
+        self,
+        *,
+        github_ids: SequenceNotStr[str],
+        include_attributes: raw_repo_retrieve_params.IncludeAttributes | Omit = omit,
+        # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
+        # The extra values given here take precedence over values defined on the client or passed to this method.
+        extra_headers: Headers | None = None,
+        extra_query: Query | None = None,
+        extra_body: Body | None = None,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
+    ) -> RawRepoRetrieveResponse:
+        """Fetch GitHub repositories by their node IDs.
+
+        Supports batch requests (1-100
+        IDs). Requires RAW service. Credits: 1 per result returned + graph relationship
+        credits if includeAttributes is specified.
+
+        Args:
+          github_ids: Array of GitHub node IDs (1-100)
+
+          include_attributes: Optional graph relationships to include (owner, contributors, starrers)
+
+          extra_headers: Send extra headers
+
+          extra_query: Add additional query parameters to the request
+
+          extra_body: Add additional JSON properties to the request
+
+          timeout: Override the client-level default timeout for this request, in seconds
+        """
+        return await self._post(
+            "/api/raw/repos",
+            body=await async_maybe_transform(
+                {
+                    "github_ids": github_ids,
+                    "include_attributes": include_attributes,
+                },
+                raw_repo_retrieve_params.RawRepoRetrieveParams,
+            ),
+            options=make_request_options(
+                extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
+            ),
+            cast_to=RawRepoRetrieveResponse,
+        )
 
     async def by_fullname(
         self,
@@ -319,179 +247,16 @@ class AsyncRawReposResource(AsyncAPIResource):
             cast_to=RawRepoByFullnameResponse,
         )
 
-    async def contributes(
-        self,
-        id: str,
-        *,
-        after: str | Omit = omit,
-        first: str | Omit = omit,
-        # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
-        # The extra values given here take precedence over values defined on the client or passed to this method.
-        extra_headers: Headers | None = None,
-        extra_query: Query | None = None,
-        extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = not_given,
-    ) -> RawRepoContributesResponse:
-        """
-        Get users who contribute to this repository (incoming "contributes" edges).
-        Supports pagination. Requires RAW service. Credits: 1 per result.
-
-        Args:
-          id: GitHub node ID or BountyLab ID
-
-          after: Cursor for pagination (opaque base64-encoded string from previous response)
-
-          first: Number of items to return (default: 100, max: 100)
-
-          extra_headers: Send extra headers
-
-          extra_query: Add additional query parameters to the request
-
-          extra_body: Add additional JSON properties to the request
-
-          timeout: Override the client-level default timeout for this request, in seconds
-        """
-        if not id:
-            raise ValueError(f"Expected a non-empty value for `id` but received {id!r}")
-        return await self._get(
-            f"/api/raw/repos/{id}/contributes",
-            options=make_request_options(
-                extra_headers=extra_headers,
-                extra_query=extra_query,
-                extra_body=extra_body,
-                timeout=timeout,
-                query=await async_maybe_transform(
-                    {
-                        "after": after,
-                        "first": first,
-                    },
-                    raw_repo_contributes_params.RawRepoContributesParams,
-                ),
-            ),
-            cast_to=RawRepoContributesResponse,
-        )
-
-    async def owns(
-        self,
-        id: str,
-        *,
-        after: str | Omit = omit,
-        first: str | Omit = omit,
-        # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
-        # The extra values given here take precedence over values defined on the client or passed to this method.
-        extra_headers: Headers | None = None,
-        extra_query: Query | None = None,
-        extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = not_given,
-    ) -> RawRepoOwnsResponse:
-        """
-        Get users who own this repository (incoming "owns" edges, typically 1 user).
-        Supports pagination. Requires RAW service. Credits: 1 per result.
-
-        Args:
-          id: GitHub node ID or BountyLab ID
-
-          after: Cursor for pagination (opaque base64-encoded string from previous response)
-
-          first: Number of items to return (default: 100, max: 100)
-
-          extra_headers: Send extra headers
-
-          extra_query: Add additional query parameters to the request
-
-          extra_body: Add additional JSON properties to the request
-
-          timeout: Override the client-level default timeout for this request, in seconds
-        """
-        if not id:
-            raise ValueError(f"Expected a non-empty value for `id` but received {id!r}")
-        return await self._get(
-            f"/api/raw/repos/{id}/owns",
-            options=make_request_options(
-                extra_headers=extra_headers,
-                extra_query=extra_query,
-                extra_body=extra_body,
-                timeout=timeout,
-                query=await async_maybe_transform(
-                    {
-                        "after": after,
-                        "first": first,
-                    },
-                    raw_repo_owns_params.RawRepoOwnsParams,
-                ),
-            ),
-            cast_to=RawRepoOwnsResponse,
-        )
-
-    async def stars(
-        self,
-        id: str,
-        *,
-        after: str | Omit = omit,
-        first: str | Omit = omit,
-        # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
-        # The extra values given here take precedence over values defined on the client or passed to this method.
-        extra_headers: Headers | None = None,
-        extra_query: Query | None = None,
-        extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = not_given,
-    ) -> RawRepoStarsResponse:
-        """Get users who starred this repository (incoming "stars" edges).
-
-        Supports
-        pagination. Requires RAW service. Credits: 1 per result.
-
-        Args:
-          id: GitHub node ID or BountyLab ID
-
-          after: Cursor for pagination (opaque base64-encoded string from previous response)
-
-          first: Number of items to return (default: 100, max: 100)
-
-          extra_headers: Send extra headers
-
-          extra_query: Add additional query parameters to the request
-
-          extra_body: Add additional JSON properties to the request
-
-          timeout: Override the client-level default timeout for this request, in seconds
-        """
-        if not id:
-            raise ValueError(f"Expected a non-empty value for `id` but received {id!r}")
-        return await self._get(
-            f"/api/raw/repos/{id}/stars",
-            options=make_request_options(
-                extra_headers=extra_headers,
-                extra_query=extra_query,
-                extra_body=extra_body,
-                timeout=timeout,
-                query=await async_maybe_transform(
-                    {
-                        "after": after,
-                        "first": first,
-                    },
-                    raw_repo_stars_params.RawRepoStarsParams,
-                ),
-            ),
-            cast_to=RawRepoStarsResponse,
-        )
-
 
 class RawReposResourceWithRawResponse:
     def __init__(self, raw_repos: RawReposResource) -> None:
         self._raw_repos = raw_repos
 
+        self.retrieve = to_raw_response_wrapper(
+            raw_repos.retrieve,
+        )
         self.by_fullname = to_raw_response_wrapper(
             raw_repos.by_fullname,
-        )
-        self.contributes = to_raw_response_wrapper(
-            raw_repos.contributes,
-        )
-        self.owns = to_raw_response_wrapper(
-            raw_repos.owns,
-        )
-        self.stars = to_raw_response_wrapper(
-            raw_repos.stars,
         )
 
 
@@ -499,17 +264,11 @@ class AsyncRawReposResourceWithRawResponse:
     def __init__(self, raw_repos: AsyncRawReposResource) -> None:
         self._raw_repos = raw_repos
 
+        self.retrieve = async_to_raw_response_wrapper(
+            raw_repos.retrieve,
+        )
         self.by_fullname = async_to_raw_response_wrapper(
             raw_repos.by_fullname,
-        )
-        self.contributes = async_to_raw_response_wrapper(
-            raw_repos.contributes,
-        )
-        self.owns = async_to_raw_response_wrapper(
-            raw_repos.owns,
-        )
-        self.stars = async_to_raw_response_wrapper(
-            raw_repos.stars,
         )
 
 
@@ -517,17 +276,11 @@ class RawReposResourceWithStreamingResponse:
     def __init__(self, raw_repos: RawReposResource) -> None:
         self._raw_repos = raw_repos
 
+        self.retrieve = to_streamed_response_wrapper(
+            raw_repos.retrieve,
+        )
         self.by_fullname = to_streamed_response_wrapper(
             raw_repos.by_fullname,
-        )
-        self.contributes = to_streamed_response_wrapper(
-            raw_repos.contributes,
-        )
-        self.owns = to_streamed_response_wrapper(
-            raw_repos.owns,
-        )
-        self.stars = to_streamed_response_wrapper(
-            raw_repos.stars,
         )
 
 
@@ -535,15 +288,9 @@ class AsyncRawReposResourceWithStreamingResponse:
     def __init__(self, raw_repos: AsyncRawReposResource) -> None:
         self._raw_repos = raw_repos
 
+        self.retrieve = async_to_streamed_response_wrapper(
+            raw_repos.retrieve,
+        )
         self.by_fullname = async_to_streamed_response_wrapper(
             raw_repos.by_fullname,
-        )
-        self.contributes = async_to_streamed_response_wrapper(
-            raw_repos.contributes,
-        )
-        self.owns = async_to_streamed_response_wrapper(
-            raw_repos.owns,
-        )
-        self.stars = async_to_streamed_response_wrapper(
-            raw_repos.stars,
         )
