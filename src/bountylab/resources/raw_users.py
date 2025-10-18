@@ -26,7 +26,6 @@ from .._base_client import make_request_options
 from ..types.raw_user_owns_response import RawUserOwnsResponse
 from ..types.raw_user_stars_response import RawUserStarsResponse
 from ..types.raw_user_by_login_response import RawUserByLoginResponse
-from ..types.raw_user_retrieve_response import RawUserRetrieveResponse
 from ..types.raw_user_followers_response import RawUserFollowersResponse
 from ..types.raw_user_following_response import RawUserFollowingResponse
 from ..types.raw_user_contributes_response import RawUserContributesResponse
@@ -54,47 +53,11 @@ class RawUsersResource(SyncAPIResource):
         """
         return RawUsersResourceWithStreamingResponse(self)
 
-    def retrieve(
-        self,
-        id: str,
-        *,
-        # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
-        # The extra values given here take precedence over values defined on the client or passed to this method.
-        extra_headers: Headers | None = None,
-        extra_query: Query | None = None,
-        extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = not_given,
-    ) -> RawUserRetrieveResponse:
-        """Fetch a single GitHub user by their node ID.
-
-        Requires RAW service. Credits: 1
-        per result.
-
-        Args:
-          id: GitHub node ID (used to look up the user)
-
-          extra_headers: Send extra headers
-
-          extra_query: Add additional query parameters to the request
-
-          extra_body: Add additional JSON properties to the request
-
-          timeout: Override the client-level default timeout for this request, in seconds
-        """
-        if not id:
-            raise ValueError(f"Expected a non-empty value for `id` but received {id!r}")
-        return self._get(
-            f"/api/raw/users/{id}",
-            options=make_request_options(
-                extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
-            ),
-            cast_to=RawUserRetrieveResponse,
-        )
-
     def by_login(
         self,
         *,
         logins: SequenceNotStr[str],
+        include_attributes: raw_user_by_login_params.IncludeAttributes | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -110,6 +73,9 @@ class RawUsersResource(SyncAPIResource):
         Args:
           logins: Array of GitHub usernames (1-100)
 
+          include_attributes: Optional graph relationships to include (followers, following, stars, owns,
+              contributes)
+
           extra_headers: Send extra headers
 
           extra_query: Add additional query parameters to the request
@@ -120,7 +86,13 @@ class RawUsersResource(SyncAPIResource):
         """
         return self._post(
             "/api/raw/users/by-login",
-            body=maybe_transform({"logins": logins}, raw_user_by_login_params.RawUserByLoginParams),
+            body=maybe_transform(
+                {
+                    "logins": logins,
+                    "include_attributes": include_attributes,
+                },
+                raw_user_by_login_params.RawUserByLoginParams,
+            ),
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
@@ -131,8 +103,8 @@ class RawUsersResource(SyncAPIResource):
         self,
         id: str,
         *,
-        limit: str | Omit = omit,
-        offset: str | Omit = omit,
+        after: str | Omit = omit,
+        first: str | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -145,11 +117,11 @@ class RawUsersResource(SyncAPIResource):
         Supports pagination. Requires RAW service. Credits: 1 per result.
 
         Args:
-          id: GitHub node ID (used to look up the user)
+          id: GitHub node ID or BountyLab ID
 
-          limit: Maximum number of results to return (default: 100, max: 1000)
+          after: Cursor for pagination (opaque base64-encoded string from previous response)
 
-          offset: Number of results to skip (default: 0)
+          first: Number of items to return (default: 100, max: 100)
 
           extra_headers: Send extra headers
 
@@ -170,8 +142,8 @@ class RawUsersResource(SyncAPIResource):
                 timeout=timeout,
                 query=maybe_transform(
                     {
-                        "limit": limit,
-                        "offset": offset,
+                        "after": after,
+                        "first": first,
                     },
                     raw_user_contributes_params.RawUserContributesParams,
                 ),
@@ -183,8 +155,8 @@ class RawUsersResource(SyncAPIResource):
         self,
         id: str,
         *,
-        limit: str | Omit = omit,
-        offset: str | Omit = omit,
+        after: str | Omit = omit,
+        first: str | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -198,11 +170,11 @@ class RawUsersResource(SyncAPIResource):
         Requires RAW service. Credits: 1 per result.
 
         Args:
-          id: GitHub node ID (used to look up the user)
+          id: GitHub node ID or BountyLab ID
 
-          limit: Maximum number of results to return (default: 100, max: 1000)
+          after: Cursor for pagination (opaque base64-encoded string from previous response)
 
-          offset: Number of results to skip (default: 0)
+          first: Number of items to return (default: 100, max: 100)
 
           extra_headers: Send extra headers
 
@@ -223,8 +195,8 @@ class RawUsersResource(SyncAPIResource):
                 timeout=timeout,
                 query=maybe_transform(
                     {
-                        "limit": limit,
-                        "offset": offset,
+                        "after": after,
+                        "first": first,
                     },
                     raw_user_followers_params.RawUserFollowersParams,
                 ),
@@ -236,8 +208,8 @@ class RawUsersResource(SyncAPIResource):
         self,
         id: str,
         *,
-        limit: str | Omit = omit,
-        offset: str | Omit = omit,
+        after: str | Omit = omit,
+        first: str | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -251,11 +223,11 @@ class RawUsersResource(SyncAPIResource):
         Requires RAW service. Credits: 1 per result.
 
         Args:
-          id: GitHub node ID (used to look up the user)
+          id: GitHub node ID or BountyLab ID
 
-          limit: Maximum number of results to return (default: 100, max: 1000)
+          after: Cursor for pagination (opaque base64-encoded string from previous response)
 
-          offset: Number of results to skip (default: 0)
+          first: Number of items to return (default: 100, max: 100)
 
           extra_headers: Send extra headers
 
@@ -276,8 +248,8 @@ class RawUsersResource(SyncAPIResource):
                 timeout=timeout,
                 query=maybe_transform(
                     {
-                        "limit": limit,
-                        "offset": offset,
+                        "after": after,
+                        "first": first,
                     },
                     raw_user_following_params.RawUserFollowingParams,
                 ),
@@ -289,8 +261,8 @@ class RawUsersResource(SyncAPIResource):
         self,
         id: str,
         *,
-        limit: str | Omit = omit,
-        offset: str | Omit = omit,
+        after: str | Omit = omit,
+        first: str | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -304,11 +276,11 @@ class RawUsersResource(SyncAPIResource):
         pagination. Requires RAW service. Credits: 1 per result.
 
         Args:
-          id: GitHub node ID (used to look up the user)
+          id: GitHub node ID or BountyLab ID
 
-          limit: Maximum number of results to return (default: 100, max: 1000)
+          after: Cursor for pagination (opaque base64-encoded string from previous response)
 
-          offset: Number of results to skip (default: 0)
+          first: Number of items to return (default: 100, max: 100)
 
           extra_headers: Send extra headers
 
@@ -329,8 +301,8 @@ class RawUsersResource(SyncAPIResource):
                 timeout=timeout,
                 query=maybe_transform(
                     {
-                        "limit": limit,
-                        "offset": offset,
+                        "after": after,
+                        "first": first,
                     },
                     raw_user_owns_params.RawUserOwnsParams,
                 ),
@@ -342,8 +314,8 @@ class RawUsersResource(SyncAPIResource):
         self,
         id: str,
         *,
-        limit: str | Omit = omit,
-        offset: str | Omit = omit,
+        after: str | Omit = omit,
+        first: str | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -357,11 +329,11 @@ class RawUsersResource(SyncAPIResource):
         pagination. Requires RAW service. Credits: 1 per result.
 
         Args:
-          id: GitHub node ID (used to look up the user)
+          id: GitHub node ID or BountyLab ID
 
-          limit: Maximum number of results to return (default: 100, max: 1000)
+          after: Cursor for pagination (opaque base64-encoded string from previous response)
 
-          offset: Number of results to skip (default: 0)
+          first: Number of items to return (default: 100, max: 100)
 
           extra_headers: Send extra headers
 
@@ -382,8 +354,8 @@ class RawUsersResource(SyncAPIResource):
                 timeout=timeout,
                 query=maybe_transform(
                     {
-                        "limit": limit,
-                        "offset": offset,
+                        "after": after,
+                        "first": first,
                     },
                     raw_user_stars_params.RawUserStarsParams,
                 ),
@@ -412,47 +384,11 @@ class AsyncRawUsersResource(AsyncAPIResource):
         """
         return AsyncRawUsersResourceWithStreamingResponse(self)
 
-    async def retrieve(
-        self,
-        id: str,
-        *,
-        # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
-        # The extra values given here take precedence over values defined on the client or passed to this method.
-        extra_headers: Headers | None = None,
-        extra_query: Query | None = None,
-        extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = not_given,
-    ) -> RawUserRetrieveResponse:
-        """Fetch a single GitHub user by their node ID.
-
-        Requires RAW service. Credits: 1
-        per result.
-
-        Args:
-          id: GitHub node ID (used to look up the user)
-
-          extra_headers: Send extra headers
-
-          extra_query: Add additional query parameters to the request
-
-          extra_body: Add additional JSON properties to the request
-
-          timeout: Override the client-level default timeout for this request, in seconds
-        """
-        if not id:
-            raise ValueError(f"Expected a non-empty value for `id` but received {id!r}")
-        return await self._get(
-            f"/api/raw/users/{id}",
-            options=make_request_options(
-                extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
-            ),
-            cast_to=RawUserRetrieveResponse,
-        )
-
     async def by_login(
         self,
         *,
         logins: SequenceNotStr[str],
+        include_attributes: raw_user_by_login_params.IncludeAttributes | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -468,6 +404,9 @@ class AsyncRawUsersResource(AsyncAPIResource):
         Args:
           logins: Array of GitHub usernames (1-100)
 
+          include_attributes: Optional graph relationships to include (followers, following, stars, owns,
+              contributes)
+
           extra_headers: Send extra headers
 
           extra_query: Add additional query parameters to the request
@@ -478,7 +417,13 @@ class AsyncRawUsersResource(AsyncAPIResource):
         """
         return await self._post(
             "/api/raw/users/by-login",
-            body=await async_maybe_transform({"logins": logins}, raw_user_by_login_params.RawUserByLoginParams),
+            body=await async_maybe_transform(
+                {
+                    "logins": logins,
+                    "include_attributes": include_attributes,
+                },
+                raw_user_by_login_params.RawUserByLoginParams,
+            ),
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
@@ -489,8 +434,8 @@ class AsyncRawUsersResource(AsyncAPIResource):
         self,
         id: str,
         *,
-        limit: str | Omit = omit,
-        offset: str | Omit = omit,
+        after: str | Omit = omit,
+        first: str | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -503,11 +448,11 @@ class AsyncRawUsersResource(AsyncAPIResource):
         Supports pagination. Requires RAW service. Credits: 1 per result.
 
         Args:
-          id: GitHub node ID (used to look up the user)
+          id: GitHub node ID or BountyLab ID
 
-          limit: Maximum number of results to return (default: 100, max: 1000)
+          after: Cursor for pagination (opaque base64-encoded string from previous response)
 
-          offset: Number of results to skip (default: 0)
+          first: Number of items to return (default: 100, max: 100)
 
           extra_headers: Send extra headers
 
@@ -528,8 +473,8 @@ class AsyncRawUsersResource(AsyncAPIResource):
                 timeout=timeout,
                 query=await async_maybe_transform(
                     {
-                        "limit": limit,
-                        "offset": offset,
+                        "after": after,
+                        "first": first,
                     },
                     raw_user_contributes_params.RawUserContributesParams,
                 ),
@@ -541,8 +486,8 @@ class AsyncRawUsersResource(AsyncAPIResource):
         self,
         id: str,
         *,
-        limit: str | Omit = omit,
-        offset: str | Omit = omit,
+        after: str | Omit = omit,
+        first: str | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -556,11 +501,11 @@ class AsyncRawUsersResource(AsyncAPIResource):
         Requires RAW service. Credits: 1 per result.
 
         Args:
-          id: GitHub node ID (used to look up the user)
+          id: GitHub node ID or BountyLab ID
 
-          limit: Maximum number of results to return (default: 100, max: 1000)
+          after: Cursor for pagination (opaque base64-encoded string from previous response)
 
-          offset: Number of results to skip (default: 0)
+          first: Number of items to return (default: 100, max: 100)
 
           extra_headers: Send extra headers
 
@@ -581,8 +526,8 @@ class AsyncRawUsersResource(AsyncAPIResource):
                 timeout=timeout,
                 query=await async_maybe_transform(
                     {
-                        "limit": limit,
-                        "offset": offset,
+                        "after": after,
+                        "first": first,
                     },
                     raw_user_followers_params.RawUserFollowersParams,
                 ),
@@ -594,8 +539,8 @@ class AsyncRawUsersResource(AsyncAPIResource):
         self,
         id: str,
         *,
-        limit: str | Omit = omit,
-        offset: str | Omit = omit,
+        after: str | Omit = omit,
+        first: str | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -609,11 +554,11 @@ class AsyncRawUsersResource(AsyncAPIResource):
         Requires RAW service. Credits: 1 per result.
 
         Args:
-          id: GitHub node ID (used to look up the user)
+          id: GitHub node ID or BountyLab ID
 
-          limit: Maximum number of results to return (default: 100, max: 1000)
+          after: Cursor for pagination (opaque base64-encoded string from previous response)
 
-          offset: Number of results to skip (default: 0)
+          first: Number of items to return (default: 100, max: 100)
 
           extra_headers: Send extra headers
 
@@ -634,8 +579,8 @@ class AsyncRawUsersResource(AsyncAPIResource):
                 timeout=timeout,
                 query=await async_maybe_transform(
                     {
-                        "limit": limit,
-                        "offset": offset,
+                        "after": after,
+                        "first": first,
                     },
                     raw_user_following_params.RawUserFollowingParams,
                 ),
@@ -647,8 +592,8 @@ class AsyncRawUsersResource(AsyncAPIResource):
         self,
         id: str,
         *,
-        limit: str | Omit = omit,
-        offset: str | Omit = omit,
+        after: str | Omit = omit,
+        first: str | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -662,11 +607,11 @@ class AsyncRawUsersResource(AsyncAPIResource):
         pagination. Requires RAW service. Credits: 1 per result.
 
         Args:
-          id: GitHub node ID (used to look up the user)
+          id: GitHub node ID or BountyLab ID
 
-          limit: Maximum number of results to return (default: 100, max: 1000)
+          after: Cursor for pagination (opaque base64-encoded string from previous response)
 
-          offset: Number of results to skip (default: 0)
+          first: Number of items to return (default: 100, max: 100)
 
           extra_headers: Send extra headers
 
@@ -687,8 +632,8 @@ class AsyncRawUsersResource(AsyncAPIResource):
                 timeout=timeout,
                 query=await async_maybe_transform(
                     {
-                        "limit": limit,
-                        "offset": offset,
+                        "after": after,
+                        "first": first,
                     },
                     raw_user_owns_params.RawUserOwnsParams,
                 ),
@@ -700,8 +645,8 @@ class AsyncRawUsersResource(AsyncAPIResource):
         self,
         id: str,
         *,
-        limit: str | Omit = omit,
-        offset: str | Omit = omit,
+        after: str | Omit = omit,
+        first: str | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -715,11 +660,11 @@ class AsyncRawUsersResource(AsyncAPIResource):
         pagination. Requires RAW service. Credits: 1 per result.
 
         Args:
-          id: GitHub node ID (used to look up the user)
+          id: GitHub node ID or BountyLab ID
 
-          limit: Maximum number of results to return (default: 100, max: 1000)
+          after: Cursor for pagination (opaque base64-encoded string from previous response)
 
-          offset: Number of results to skip (default: 0)
+          first: Number of items to return (default: 100, max: 100)
 
           extra_headers: Send extra headers
 
@@ -740,8 +685,8 @@ class AsyncRawUsersResource(AsyncAPIResource):
                 timeout=timeout,
                 query=await async_maybe_transform(
                     {
-                        "limit": limit,
-                        "offset": offset,
+                        "after": after,
+                        "first": first,
                     },
                     raw_user_stars_params.RawUserStarsParams,
                 ),
@@ -754,9 +699,6 @@ class RawUsersResourceWithRawResponse:
     def __init__(self, raw_users: RawUsersResource) -> None:
         self._raw_users = raw_users
 
-        self.retrieve = to_raw_response_wrapper(
-            raw_users.retrieve,
-        )
         self.by_login = to_raw_response_wrapper(
             raw_users.by_login,
         )
@@ -781,9 +723,6 @@ class AsyncRawUsersResourceWithRawResponse:
     def __init__(self, raw_users: AsyncRawUsersResource) -> None:
         self._raw_users = raw_users
 
-        self.retrieve = async_to_raw_response_wrapper(
-            raw_users.retrieve,
-        )
         self.by_login = async_to_raw_response_wrapper(
             raw_users.by_login,
         )
@@ -808,9 +747,6 @@ class RawUsersResourceWithStreamingResponse:
     def __init__(self, raw_users: RawUsersResource) -> None:
         self._raw_users = raw_users
 
-        self.retrieve = to_streamed_response_wrapper(
-            raw_users.retrieve,
-        )
         self.by_login = to_streamed_response_wrapper(
             raw_users.by_login,
         )
@@ -835,9 +771,6 @@ class AsyncRawUsersResourceWithStreamingResponse:
     def __init__(self, raw_users: AsyncRawUsersResource) -> None:
         self._raw_users = raw_users
 
-        self.retrieve = async_to_streamed_response_wrapper(
-            raw_users.retrieve,
-        )
         self.by_login = async_to_streamed_response_wrapper(
             raw_users.by_login,
         )

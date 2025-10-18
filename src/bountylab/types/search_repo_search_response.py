@@ -222,7 +222,7 @@ class Repository(BaseModel):
     total_issues_open: float = FieldInfo(alias="totalIssuesOpen")
     """Number of open issues"""
 
-    contributors: Optional[List[Optional[RepositoryContributor]]] = None
+    contributors: Optional[List[RepositoryContributor]] = None
     """Repository contributors (when includeAttributes.contributors is specified)"""
 
     created_at: Optional[str] = FieldInfo(alias="createdAt", default=None)
@@ -241,6 +241,7 @@ class Repository(BaseModel):
     """Locations of last contributors to this repository"""
 
     owner: Optional[RepositoryOwner] = None
+    """Repository owner (when includeAttributes.owner = true)"""
 
     readme_preview: Optional[str] = FieldInfo(alias="readmePreview", default=None)
     """Preview of repository README (first ~500 chars)"""
@@ -248,7 +249,7 @@ class Repository(BaseModel):
     score: Optional[float] = None
     """Relevance score from search (0-1, lower is more relevant for cosine distance)"""
 
-    starrers: Optional[List[Optional[RepositoryStarrer]]] = None
+    starrers: Optional[List[RepositoryStarrer]] = None
     """
     Users who starred this repository (when includeAttributes.starrers is specified)
     """
@@ -261,7 +262,7 @@ class SearchRepoSearchResponse(BaseModel):
     count: float
     """Number of repositories returned"""
 
-    repositories: List[Optional[Repository]]
+    repositories: List[Repository]
     """
     Array of repository search results with relevance scores and optional graph
     relationships
