@@ -3,44 +3,26 @@
 Types:
 
 ```python
-from bountylab.types import (
-    RawUserByLoginResponse,
-    RawUserContributesResponse,
-    RawUserFollowersResponse,
-    RawUserFollowingResponse,
-    RawUserOwnsResponse,
-    RawUserStarsResponse,
-)
+from bountylab.types import RawUserRetrieveResponse, RawUserByLoginResponse
 ```
 
 Methods:
 
+- <code title="post /api/raw/users">client.raw_users.<a href="./src/bountylab/resources/raw_users.py">retrieve</a>(\*\*<a href="src/bountylab/types/raw_user_retrieve_params.py">params</a>) -> <a href="./src/bountylab/types/raw_user_retrieve_response.py">RawUserRetrieveResponse</a></code>
 - <code title="post /api/raw/users/by-login">client.raw_users.<a href="./src/bountylab/resources/raw_users.py">by_login</a>(\*\*<a href="src/bountylab/types/raw_user_by_login_params.py">params</a>) -> <a href="./src/bountylab/types/raw_user_by_login_response.py">RawUserByLoginResponse</a></code>
-- <code title="get /api/raw/users/{id}/contributes">client.raw_users.<a href="./src/bountylab/resources/raw_users.py">contributes</a>(id, \*\*<a href="src/bountylab/types/raw_user_contributes_params.py">params</a>) -> <a href="./src/bountylab/types/raw_user_contributes_response.py">RawUserContributesResponse</a></code>
-- <code title="get /api/raw/users/{id}/followers">client.raw_users.<a href="./src/bountylab/resources/raw_users.py">followers</a>(id, \*\*<a href="src/bountylab/types/raw_user_followers_params.py">params</a>) -> <a href="./src/bountylab/types/raw_user_followers_response.py">RawUserFollowersResponse</a></code>
-- <code title="get /api/raw/users/{id}/following">client.raw_users.<a href="./src/bountylab/resources/raw_users.py">following</a>(id, \*\*<a href="src/bountylab/types/raw_user_following_params.py">params</a>) -> <a href="./src/bountylab/types/raw_user_following_response.py">RawUserFollowingResponse</a></code>
-- <code title="get /api/raw/users/{id}/owns">client.raw_users.<a href="./src/bountylab/resources/raw_users.py">owns</a>(id, \*\*<a href="src/bountylab/types/raw_user_owns_params.py">params</a>) -> <a href="./src/bountylab/types/raw_user_owns_response.py">RawUserOwnsResponse</a></code>
-- <code title="get /api/raw/users/{id}/stars">client.raw_users.<a href="./src/bountylab/resources/raw_users.py">stars</a>(id, \*\*<a href="src/bountylab/types/raw_user_stars_params.py">params</a>) -> <a href="./src/bountylab/types/raw_user_stars_response.py">RawUserStarsResponse</a></code>
 
 # RawRepos
 
 Types:
 
 ```python
-from bountylab.types import (
-    RawRepoByFullnameResponse,
-    RawRepoContributesResponse,
-    RawRepoOwnsResponse,
-    RawRepoStarsResponse,
-)
+from bountylab.types import RawRepoRetrieveResponse, RawRepoByFullnameResponse
 ```
 
 Methods:
 
+- <code title="post /api/raw/repos">client.raw_repos.<a href="./src/bountylab/resources/raw_repos.py">retrieve</a>(\*\*<a href="src/bountylab/types/raw_repo_retrieve_params.py">params</a>) -> <a href="./src/bountylab/types/raw_repo_retrieve_response.py">RawRepoRetrieveResponse</a></code>
 - <code title="post /api/raw/repos/by-fullname">client.raw_repos.<a href="./src/bountylab/resources/raw_repos.py">by_fullname</a>(\*\*<a href="src/bountylab/types/raw_repo_by_fullname_params.py">params</a>) -> <a href="./src/bountylab/types/raw_repo_by_fullname_response.py">RawRepoByFullnameResponse</a></code>
-- <code title="get /api/raw/repos/{id}/contributes">client.raw_repos.<a href="./src/bountylab/resources/raw_repos.py">contributes</a>(id, \*\*<a href="src/bountylab/types/raw_repo_contributes_params.py">params</a>) -> <a href="./src/bountylab/types/raw_repo_contributes_response.py">RawRepoContributesResponse</a></code>
-- <code title="get /api/raw/repos/{id}/owns">client.raw_repos.<a href="./src/bountylab/resources/raw_repos.py">owns</a>(id, \*\*<a href="src/bountylab/types/raw_repo_owns_params.py">params</a>) -> <a href="./src/bountylab/types/raw_repo_owns_response.py">RawRepoOwnsResponse</a></code>
-- <code title="get /api/raw/repos/{id}/stars">client.raw_repos.<a href="./src/bountylab/resources/raw_repos.py">stars</a>(id, \*\*<a href="src/bountylab/types/raw_repo_stars_params.py">params</a>) -> <a href="./src/bountylab/types/raw_repo_stars_response.py">RawRepoStarsResponse</a></code>
 
 # SearchUsers
 

@@ -123,14 +123,14 @@ from bountylab import Bountylab
 
 client = Bountylab()
 
-response = client.raw_users.by_login(
-    logins=["octocat", "torvalds"],
+raw_user = client.raw_users.retrieve(
+    github_ids=["MDQ6VXNlcjU4MzIzMQ==", "MDQ6VXNlcjE="],
     include_attributes={
         "followers": {"first": 10},
         "stars": {"first": 10},
     },
 )
-print(response.include_attributes)
+print(raw_user.include_attributes)
 ```
 
 ## Handling errors
