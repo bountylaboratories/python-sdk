@@ -2,6 +2,10 @@
 
 from __future__ import annotations
 
+from .raw_repo_graph_params import RawRepoGraphParams as RawRepoGraphParams
+from .raw_user_graph_params import RawUserGraphParams as RawUserGraphParams
+from .raw_repo_graph_response import RawRepoGraphResponse as RawRepoGraphResponse
+from .raw_user_graph_response import RawUserGraphResponse as RawUserGraphResponse
 from .raw_repo_retrieve_params import RawRepoRetrieveParams as RawRepoRetrieveParams
 from .raw_user_by_login_params import RawUserByLoginParams as RawUserByLoginParams
 from .raw_user_retrieve_params import RawUserRetrieveParams as RawUserRetrieveParams

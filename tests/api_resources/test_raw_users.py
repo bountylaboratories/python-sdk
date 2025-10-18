@@ -10,6 +10,7 @@ import pytest
 from bountylab import Bountylab, AsyncBountylab
 from tests.utils import assert_matches_type
 from bountylab.types import (
+    RawUserGraphResponse,
     RawUserByLoginResponse,
     RawUserRetrieveResponse,
 )
@@ -148,6 +149,64 @@ class TestRawUsers:
 
         assert cast(Any, response.is_closed) is True
 
+    @pytest.mark.skip(reason="Prism tests are disabled")
+    @parametrize
+    def test_method_graph(self, client: Bountylab) -> None:
+        raw_user = client.raw_users.graph(
+            relationship="followers",
+            id="id",
+        )
+        assert_matches_type(RawUserGraphResponse, raw_user, path=["response"])
+
+    @pytest.mark.skip(reason="Prism tests are disabled")
+    @parametrize
+    def test_method_graph_with_all_params(self, client: Bountylab) -> None:
+        raw_user = client.raw_users.graph(
+            relationship="followers",
+            id="id",
+            after="eyJvZmZzZXQiOjEwMH0=",
+            first="100",
+            include_attributes={},
+        )
+        assert_matches_type(RawUserGraphResponse, raw_user, path=["response"])
+
+    @pytest.mark.skip(reason="Prism tests are disabled")
+    @parametrize
+    def test_raw_response_graph(self, client: Bountylab) -> None:
+        response = client.raw_users.with_raw_response.graph(
+            relationship="followers",
+            id="id",
+        )
+
+        assert response.is_closed is True
+        assert response.http_request.headers.get("X-Stainless-Lang") == "python"
+        raw_user = response.parse()
+        assert_matches_type(RawUserGraphResponse, raw_user, path=["response"])
+
+    @pytest.mark.skip(reason="Prism tests are disabled")
+    @parametrize
+    def test_streaming_response_graph(self, client: Bountylab) -> None:
+        with client.raw_users.with_streaming_response.graph(
+            relationship="followers",
+            id="id",
+        ) as response:
+            assert not response.is_closed
+            assert response.http_request.headers.get("X-Stainless-Lang") == "python"
+
+            raw_user = response.parse()
+            assert_matches_type(RawUserGraphResponse, raw_user, path=["response"])
+
+        assert cast(Any, response.is_closed) is True
+
+    @pytest.mark.skip(reason="Prism tests are disabled")
+    @parametrize
+    def test_path_params_graph(self, client: Bountylab) -> None:
+        with pytest.raises(ValueError, match=r"Expected a non-empty value for `id` but received ''"):
+            client.raw_users.with_raw_response.graph(
+                relationship="followers",
+                id="",
+            )
+
 
 class TestAsyncRawUsers:
     parametrize = pytest.mark.parametrize(
@@ -281,3 +340,61 @@ class TestAsyncRawUsers:
             assert_matches_type(RawUserByLoginResponse, raw_user, path=["response"])
 
         assert cast(Any, response.is_closed) is True
+
+    @pytest.mark.skip(reason="Prism tests are disabled")
+    @parametrize
+    async def test_method_graph(self, async_client: AsyncBountylab) -> None:
+        raw_user = await async_client.raw_users.graph(
+            relationship="followers",
+            id="id",
+        )
+        assert_matches_type(RawUserGraphResponse, raw_user, path=["response"])
+
+    @pytest.mark.skip(reason="Prism tests are disabled")
+    @parametrize
+    async def test_method_graph_with_all_params(self, async_client: AsyncBountylab) -> None:
+        raw_user = await async_client.raw_users.graph(
+            relationship="followers",
+            id="id",
+            after="eyJvZmZzZXQiOjEwMH0=",
+            first="100",
+            include_attributes={},
+        )
+        assert_matches_type(RawUserGraphResponse, raw_user, path=["response"])
+
+    @pytest.mark.skip(reason="Prism tests are disabled")
+    @parametrize
+    async def test_raw_response_graph(self, async_client: AsyncBountylab) -> None:
+        response = await async_client.raw_users.with_raw_response.graph(
+            relationship="followers",
+            id="id",
+        )
+
+        assert response.is_closed is True
+        assert response.http_request.headers.get("X-Stainless-Lang") == "python"
+        raw_user = await response.parse()
+        assert_matches_type(RawUserGraphResponse, raw_user, path=["response"])
+
+    @pytest.mark.skip(reason="Prism tests are disabled")
+    @parametrize
+    async def test_streaming_response_graph(self, async_client: AsyncBountylab) -> None:
+        async with async_client.raw_users.with_streaming_response.graph(
+            relationship="followers",
+            id="id",
+        ) as response:
+            assert not response.is_closed
+            assert response.http_request.headers.get("X-Stainless-Lang") == "python"
+
+            raw_user = await response.parse()
+            assert_matches_type(RawUserGraphResponse, raw_user, path=["response"])
+
+        assert cast(Any, response.is_closed) is True
+
+    @pytest.mark.skip(reason="Prism tests are disabled")
+    @parametrize
+    async def test_path_params_graph(self, async_client: AsyncBountylab) -> None:
+        with pytest.raises(ValueError, match=r"Expected a non-empty value for `id` but received ''"):
+            await async_client.raw_users.with_raw_response.graph(
+                relationship="followers",
+                id="",
+            )
