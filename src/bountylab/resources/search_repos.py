@@ -48,6 +48,7 @@ class SearchReposResource(SyncAPIResource):
         self,
         *,
         query: str,
+        filter_user_include_attributes: bool | Omit = omit,
         include_attributes: search_repo_natural_language_params.IncludeAttributes | Omit = omit,
         max_results: int | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
@@ -66,6 +67,10 @@ class SearchReposResource(SyncAPIResource):
         Args:
           query: Natural language query describing the repositories you want to find
 
+          filter_user_include_attributes: When true, the AI will generate a user location filter and apply it to ALL
+              user-returning includeAttributes (contributors, starrers). This filter will
+              override any manually-specified filters.
+
           include_attributes: Optional graph relationships to include (owner, contributors, starrers)
 
           max_results: Maximum number of results to return (default: 100, max: 1000)
@@ -83,6 +88,7 @@ class SearchReposResource(SyncAPIResource):
             body=maybe_transform(
                 {
                     "query": query,
+                    "filter_user_include_attributes": filter_user_include_attributes,
                     "include_attributes": include_attributes,
                     "max_results": max_results,
                 },
@@ -187,6 +193,7 @@ class AsyncSearchReposResource(AsyncAPIResource):
         self,
         *,
         query: str,
+        filter_user_include_attributes: bool | Omit = omit,
         include_attributes: search_repo_natural_language_params.IncludeAttributes | Omit = omit,
         max_results: int | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
@@ -205,6 +212,10 @@ class AsyncSearchReposResource(AsyncAPIResource):
         Args:
           query: Natural language query describing the repositories you want to find
 
+          filter_user_include_attributes: When true, the AI will generate a user location filter and apply it to ALL
+              user-returning includeAttributes (contributors, starrers). This filter will
+              override any manually-specified filters.
+
           include_attributes: Optional graph relationships to include (owner, contributors, starrers)
 
           max_results: Maximum number of results to return (default: 100, max: 1000)
@@ -222,6 +233,7 @@ class AsyncSearchReposResource(AsyncAPIResource):
             body=await async_maybe_transform(
                 {
                     "query": query,
+                    "filter_user_include_attributes": filter_user_include_attributes,
                     "include_attributes": include_attributes,
                     "max_results": max_results,
                 },
