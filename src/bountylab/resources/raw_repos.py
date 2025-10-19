@@ -3,13 +3,13 @@
 from __future__ import annotations
 
 from typing import Any, cast
-from typing_extensions import Literal, overload
+from typing_extensions import Literal
 
 import httpx
 
 from ..types import raw_repo_graph_params, raw_repo_retrieve_params, raw_repo_by_fullname_params
 from .._types import Body, Omit, Query, Headers, NotGiven, SequenceNotStr, omit, not_given
-from .._utils import required_args, maybe_transform, async_maybe_transform
+from .._utils import maybe_transform, async_maybe_transform
 from .._compat import cached_property
 from .._resource import SyncAPIResource, AsyncAPIResource
 from .._response import (
@@ -138,7 +138,6 @@ class RawReposResource(SyncAPIResource):
             cast_to=RawRepoByFullnameResponse,
         )
 
-    @overload
     def graph(
         self,
         relationship: Literal["stars", "contributes", "owns"],
@@ -146,7 +145,7 @@ class RawReposResource(SyncAPIResource):
         id: str,
         after: str | Omit = omit,
         first: float | Omit = omit,
-        include_attributes: raw_repo_graph_params.Variant0IncludeAttributes | Omit = omit,
+        include_attributes: raw_repo_graph_params.IncludeAttributes | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -169,8 +168,9 @@ class RawReposResource(SyncAPIResource):
 
           first: Number of items to return (default: 100, max: 100)
 
-          include_attributes: Optional graph relationships to include (followers, following, stars, owns,
-              contributes)
+          include_attributes: Optional graph relationships to include. Use user attributes (followers,
+              following, owns, stars, contributes) for user-returning relationships, or repo
+              attributes (owner, contributors, starrers) for repo-returning relationships.
 
           extra_headers: Send extra headers
 
@@ -180,69 +180,6 @@ class RawReposResource(SyncAPIResource):
 
           timeout: Override the client-level default timeout for this request, in seconds
         """
-        ...
-
-    @overload
-    def graph(
-        self,
-        relationship: Literal["stars", "contributes", "owns"],
-        *,
-        id: str,
-        after: str | Omit = omit,
-        first: float | Omit = omit,
-        include_attributes: raw_repo_graph_params.Variant1IncludeAttributes | Omit = omit,
-        # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
-        # The extra values given here take precedence over values defined on the client or passed to this method.
-        extra_headers: Headers | None = None,
-        extra_query: Query | None = None,
-        extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = not_given,
-    ) -> RawRepoGraphResponse:
-        """Get graph relationships for a repository (stars, contributes, owns).
-
-        Supports
-        pagination and includeAttributes. Requires RAW service. Credits: 1 per result +
-        graph relationship credits if includeAttributes is specified.
-
-        Args:
-          id: GitHub node ID or BountyLab ID of the repository
-
-          relationship: Graph relationship type
-
-          after: Cursor for pagination (opaque base64-encoded string from previous response)
-
-          first: Number of items to return (default: 100, max: 100)
-
-          include_attributes: Optional graph relationships to include (owner, contributors, starrers)
-
-          extra_headers: Send extra headers
-
-          extra_query: Add additional query parameters to the request
-
-          extra_body: Add additional JSON properties to the request
-
-          timeout: Override the client-level default timeout for this request, in seconds
-        """
-        ...
-
-    @required_args(["id"])
-    def graph(
-        self,
-        relationship: Literal["stars", "contributes", "owns"],
-        *,
-        id: str,
-        after: str | Omit = omit,
-        first: float | Omit = omit,
-        include_attributes: raw_repo_graph_params.Variant0IncludeAttributes
-        | raw_repo_graph_params.Variant1IncludeAttributes
-        | Omit = omit,
-        # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
-        # The extra values given here take precedence over values defined on the client or passed to this method.
-        extra_headers: Headers | None = None,
-        extra_query: Query | None = None,
-        extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = not_given,
-    ) -> RawRepoGraphResponse:
         if not id:
             raise ValueError(f"Expected a non-empty value for `id` but received {id!r}")
         if not relationship:
@@ -381,7 +318,6 @@ class AsyncRawReposResource(AsyncAPIResource):
             cast_to=RawRepoByFullnameResponse,
         )
 
-    @overload
     async def graph(
         self,
         relationship: Literal["stars", "contributes", "owns"],
@@ -389,7 +325,7 @@ class AsyncRawReposResource(AsyncAPIResource):
         id: str,
         after: str | Omit = omit,
         first: float | Omit = omit,
-        include_attributes: raw_repo_graph_params.Variant0IncludeAttributes | Omit = omit,
+        include_attributes: raw_repo_graph_params.IncludeAttributes | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -412,8 +348,9 @@ class AsyncRawReposResource(AsyncAPIResource):
 
           first: Number of items to return (default: 100, max: 100)
 
-          include_attributes: Optional graph relationships to include (followers, following, stars, owns,
-              contributes)
+          include_attributes: Optional graph relationships to include. Use user attributes (followers,
+              following, owns, stars, contributes) for user-returning relationships, or repo
+              attributes (owner, contributors, starrers) for repo-returning relationships.
 
           extra_headers: Send extra headers
 
@@ -423,69 +360,6 @@ class AsyncRawReposResource(AsyncAPIResource):
 
           timeout: Override the client-level default timeout for this request, in seconds
         """
-        ...
-
-    @overload
-    async def graph(
-        self,
-        relationship: Literal["stars", "contributes", "owns"],
-        *,
-        id: str,
-        after: str | Omit = omit,
-        first: float | Omit = omit,
-        include_attributes: raw_repo_graph_params.Variant1IncludeAttributes | Omit = omit,
-        # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
-        # The extra values given here take precedence over values defined on the client or passed to this method.
-        extra_headers: Headers | None = None,
-        extra_query: Query | None = None,
-        extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = not_given,
-    ) -> RawRepoGraphResponse:
-        """Get graph relationships for a repository (stars, contributes, owns).
-
-        Supports
-        pagination and includeAttributes. Requires RAW service. Credits: 1 per result +
-        graph relationship credits if includeAttributes is specified.
-
-        Args:
-          id: GitHub node ID or BountyLab ID of the repository
-
-          relationship: Graph relationship type
-
-          after: Cursor for pagination (opaque base64-encoded string from previous response)
-
-          first: Number of items to return (default: 100, max: 100)
-
-          include_attributes: Optional graph relationships to include (owner, contributors, starrers)
-
-          extra_headers: Send extra headers
-
-          extra_query: Add additional query parameters to the request
-
-          extra_body: Add additional JSON properties to the request
-
-          timeout: Override the client-level default timeout for this request, in seconds
-        """
-        ...
-
-    @required_args(["id"])
-    async def graph(
-        self,
-        relationship: Literal["stars", "contributes", "owns"],
-        *,
-        id: str,
-        after: str | Omit = omit,
-        first: float | Omit = omit,
-        include_attributes: raw_repo_graph_params.Variant0IncludeAttributes
-        | raw_repo_graph_params.Variant1IncludeAttributes
-        | Omit = omit,
-        # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
-        # The extra values given here take precedence over values defined on the client or passed to this method.
-        extra_headers: Headers | None = None,
-        extra_query: Query | None = None,
-        extra_body: Body | None = None,
-        timeout: float | httpx.Timeout | None | NotGiven = not_given,
-    ) -> RawRepoGraphResponse:
         if not id:
             raise ValueError(f"Expected a non-empty value for `id` but received {id!r}")
         if not relationship:
