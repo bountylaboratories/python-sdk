@@ -124,8 +124,8 @@ class SearchReposResource(SyncAPIResource):
               description using vector embeddings
 
           filters: Optional filters for narrowing search results. Supports filtering on: githubId,
-              ownerLogin, name, stargazerCount, language, totalIssuesCount, totalIssuesOpen,
-              totalIssuesClosed, lastContributorLocations.
+              ownerLogin, ownerLocation, name, stargazerCount, language, totalIssuesCount,
+              totalIssuesOpen, totalIssuesClosed, lastContributorLocations.
 
               Filter structure:
 
@@ -269,8 +269,8 @@ class AsyncSearchReposResource(AsyncAPIResource):
               description using vector embeddings
 
           filters: Optional filters for narrowing search results. Supports filtering on: githubId,
-              ownerLogin, name, stargazerCount, language, totalIssuesCount, totalIssuesOpen,
-              totalIssuesClosed, lastContributorLocations.
+              ownerLogin, ownerLocation, name, stargazerCount, language, totalIssuesCount,
+              totalIssuesOpen, totalIssuesClosed, lastContributorLocations.
 
               Filter structure:
 
