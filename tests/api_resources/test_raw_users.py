@@ -38,22 +38,47 @@ class TestRawUsers:
                 "contributes": {
                     "first": 1,
                     "after": "after",
+                    "filters": {
+                        "field": "resolvedCountry",
+                        "op": "Eq",
+                        "value": "string",
+                    },
                 },
                 "followers": {
                     "first": 10,
                     "after": "after",
+                    "filters": {
+                        "field": "resolvedCountry",
+                        "op": "Eq",
+                        "value": "string",
+                    },
                 },
                 "following": {
                     "first": 1,
                     "after": "after",
+                    "filters": {
+                        "field": "resolvedCountry",
+                        "op": "Eq",
+                        "value": "string",
+                    },
                 },
                 "owns": {
                     "first": 1,
                     "after": "after",
+                    "filters": {
+                        "field": "resolvedCountry",
+                        "op": "Eq",
+                        "value": "string",
+                    },
                 },
                 "stars": {
                     "first": 10,
                     "after": "after",
+                    "filters": {
+                        "field": "resolvedCountry",
+                        "op": "Eq",
+                        "value": "string",
+                    },
                 },
             },
         )
@@ -102,22 +127,47 @@ class TestRawUsers:
                 "contributes": {
                     "first": 1,
                     "after": "after",
+                    "filters": {
+                        "field": "resolvedCountry",
+                        "op": "Eq",
+                        "value": "string",
+                    },
                 },
                 "followers": {
                     "first": 10,
                     "after": "after",
+                    "filters": {
+                        "field": "resolvedCountry",
+                        "op": "Eq",
+                        "value": "string",
+                    },
                 },
                 "following": {
                     "first": 1,
                     "after": "after",
+                    "filters": {
+                        "field": "resolvedCountry",
+                        "op": "Eq",
+                        "value": "string",
+                    },
                 },
                 "owns": {
                     "first": 1,
                     "after": "after",
+                    "filters": {
+                        "field": "resolvedCountry",
+                        "op": "Eq",
+                        "value": "string",
+                    },
                 },
                 "stars": {
                     "first": 10,
                     "after": "after",
+                    "filters": {
+                        "field": "resolvedCountry",
+                        "op": "Eq",
+                        "value": "string",
+                    },
                 },
             },
         )
@@ -170,31 +220,66 @@ class TestRawUsers:
                 "contributes": {
                     "first": 1,
                     "after": "after",
+                    "filters": {
+                        "field": "resolvedCountry",
+                        "op": "Eq",
+                        "value": "string",
+                    },
                 },
                 "contributors": {
                     "first": 1,
                     "after": "after",
+                    "filters": {
+                        "field": "resolvedCountry",
+                        "op": "Eq",
+                        "value": "string",
+                    },
                 },
                 "followers": {
                     "first": 1,
                     "after": "after",
+                    "filters": {
+                        "field": "resolvedCountry",
+                        "op": "Eq",
+                        "value": "string",
+                    },
                 },
                 "following": {
                     "first": 1,
                     "after": "after",
+                    "filters": {
+                        "field": "resolvedCountry",
+                        "op": "Eq",
+                        "value": "string",
+                    },
                 },
                 "owner": True,
                 "owns": {
                     "first": 1,
                     "after": "after",
+                    "filters": {
+                        "field": "resolvedCountry",
+                        "op": "Eq",
+                        "value": "string",
+                    },
                 },
                 "starrers": {
                     "first": 1,
                     "after": "after",
+                    "filters": {
+                        "field": "resolvedCountry",
+                        "op": "Eq",
+                        "value": "string",
+                    },
                 },
                 "stars": {
                     "first": 1,
                     "after": "after",
+                    "filters": {
+                        "field": "resolvedCountry",
+                        "op": "Eq",
+                        "value": "string",
+                    },
                 },
             },
         )
@@ -260,22 +345,47 @@ class TestAsyncRawUsers:
                 "contributes": {
                     "first": 1,
                     "after": "after",
+                    "filters": {
+                        "field": "resolvedCountry",
+                        "op": "Eq",
+                        "value": "string",
+                    },
                 },
                 "followers": {
                     "first": 10,
                     "after": "after",
+                    "filters": {
+                        "field": "resolvedCountry",
+                        "op": "Eq",
+                        "value": "string",
+                    },
                 },
                 "following": {
                     "first": 1,
                     "after": "after",
+                    "filters": {
+                        "field": "resolvedCountry",
+                        "op": "Eq",
+                        "value": "string",
+                    },
                 },
                 "owns": {
                     "first": 1,
                     "after": "after",
+                    "filters": {
+                        "field": "resolvedCountry",
+                        "op": "Eq",
+                        "value": "string",
+                    },
                 },
                 "stars": {
                     "first": 10,
                     "after": "after",
+                    "filters": {
+                        "field": "resolvedCountry",
+                        "op": "Eq",
+                        "value": "string",
+                    },
                 },
             },
         )
@@ -324,22 +434,47 @@ class TestAsyncRawUsers:
                 "contributes": {
                     "first": 1,
                     "after": "after",
+                    "filters": {
+                        "field": "resolvedCountry",
+                        "op": "Eq",
+                        "value": "string",
+                    },
                 },
                 "followers": {
                     "first": 10,
                     "after": "after",
+                    "filters": {
+                        "field": "resolvedCountry",
+                        "op": "Eq",
+                        "value": "string",
+                    },
                 },
                 "following": {
                     "first": 1,
                     "after": "after",
+                    "filters": {
+                        "field": "resolvedCountry",
+                        "op": "Eq",
+                        "value": "string",
+                    },
                 },
                 "owns": {
                     "first": 1,
                     "after": "after",
+                    "filters": {
+                        "field": "resolvedCountry",
+                        "op": "Eq",
+                        "value": "string",
+                    },
                 },
                 "stars": {
                     "first": 10,
                     "after": "after",
+                    "filters": {
+                        "field": "resolvedCountry",
+                        "op": "Eq",
+                        "value": "string",
+                    },
                 },
             },
         )
@@ -392,31 +527,66 @@ class TestAsyncRawUsers:
                 "contributes": {
                     "first": 1,
                     "after": "after",
+                    "filters": {
+                        "field": "resolvedCountry",
+                        "op": "Eq",
+                        "value": "string",
+                    },
                 },
                 "contributors": {
                     "first": 1,
                     "after": "after",
+                    "filters": {
+                        "field": "resolvedCountry",
+                        "op": "Eq",
+                        "value": "string",
+                    },
                 },
                 "followers": {
                     "first": 1,
                     "after": "after",
+                    "filters": {
+                        "field": "resolvedCountry",
+                        "op": "Eq",
+                        "value": "string",
+                    },
                 },
                 "following": {
                     "first": 1,
                     "after": "after",
+                    "filters": {
+                        "field": "resolvedCountry",
+                        "op": "Eq",
+                        "value": "string",
+                    },
                 },
                 "owner": True,
                 "owns": {
                     "first": 1,
                     "after": "after",
+                    "filters": {
+                        "field": "resolvedCountry",
+                        "op": "Eq",
+                        "value": "string",
+                    },
                 },
                 "starrers": {
                     "first": 1,
                     "after": "after",
+                    "filters": {
+                        "field": "resolvedCountry",
+                        "op": "Eq",
+                        "value": "string",
+                    },
                 },
                 "stars": {
                     "first": 1,
                     "after": "after",
+                    "filters": {
+                        "field": "resolvedCountry",
+                        "op": "Eq",
+                        "value": "string",
+                    },
                 },
             },
         )

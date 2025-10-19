@@ -33,15 +33,26 @@ class TestSearchRepos:
     def test_method_natural_language_with_all_params(self, client: Bountylab) -> None:
         search_repo = client.search_repos.natural_language(
             query="Find React libraries with over 1000 stars that have good TypeScript support and are actively maintained",
+            filter_user_include_attributes=True,
             include_attributes={
                 "contributors": {
                     "first": 10,
                     "after": "after",
+                    "filters": {
+                        "field": "resolvedCountry",
+                        "op": "Eq",
+                        "value": "string",
+                    },
                 },
                 "owner": True,
                 "starrers": {
                     "first": 1,
                     "after": "after",
+                    "filters": {
+                        "field": "resolvedCountry",
+                        "op": "Eq",
+                        "value": "string",
+                    },
                 },
             },
             max_results=50,
@@ -96,11 +107,21 @@ class TestSearchRepos:
                 "contributors": {
                     "first": 10,
                     "after": "after",
+                    "filters": {
+                        "field": "resolvedCountry",
+                        "op": "Eq",
+                        "value": "string",
+                    },
                 },
                 "owner": True,
                 "starrers": {
                     "first": 1,
                     "after": "after",
+                    "filters": {
+                        "field": "resolvedCountry",
+                        "op": "Eq",
+                        "value": "string",
+                    },
                 },
             },
             max_results=50,
@@ -152,15 +173,26 @@ class TestAsyncSearchRepos:
     async def test_method_natural_language_with_all_params(self, async_client: AsyncBountylab) -> None:
         search_repo = await async_client.search_repos.natural_language(
             query="Find React libraries with over 1000 stars that have good TypeScript support and are actively maintained",
+            filter_user_include_attributes=True,
             include_attributes={
                 "contributors": {
                     "first": 10,
                     "after": "after",
+                    "filters": {
+                        "field": "resolvedCountry",
+                        "op": "Eq",
+                        "value": "string",
+                    },
                 },
                 "owner": True,
                 "starrers": {
                     "first": 1,
                     "after": "after",
+                    "filters": {
+                        "field": "resolvedCountry",
+                        "op": "Eq",
+                        "value": "string",
+                    },
                 },
             },
             max_results=50,
@@ -215,11 +247,21 @@ class TestAsyncSearchRepos:
                 "contributors": {
                     "first": 10,
                     "after": "after",
+                    "filters": {
+                        "field": "resolvedCountry",
+                        "op": "Eq",
+                        "value": "string",
+                    },
                 },
                 "owner": True,
                 "starrers": {
                     "first": 1,
                     "after": "after",
+                    "filters": {
+                        "field": "resolvedCountry",
+                        "op": "Eq",
+                        "value": "string",
+                    },
                 },
             },
             max_results=50,
