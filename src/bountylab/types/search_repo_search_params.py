@@ -48,8 +48,9 @@ class SearchRepoSearchParams(TypedDict, total=False):
     filters: Optional[Filters]
     """Optional filters for narrowing search results.
 
-    Supports filtering on: githubId, ownerLogin, name, stargazerCount, language,
-    totalIssuesCount, totalIssuesOpen, totalIssuesClosed, lastContributorLocations.
+    Supports filtering on: githubId, ownerLogin, ownerLocation, name,
+    stargazerCount, language, totalIssuesCount, totalIssuesOpen, totalIssuesClosed,
+    lastContributorLocations.
 
     Filter structure:
 
