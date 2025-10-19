@@ -2,28 +2,24 @@
 
 from __future__ import annotations
 
-from typing import Union
-from typing_extensions import Required, Annotated, TypeAlias, TypedDict
+from typing_extensions import Required, Annotated, TypedDict
 
 from .._utils import PropertyInfo
 
 __all__ = [
     "RawUserGraphParams",
-    "Variant0",
-    "Variant0IncludeAttributes",
-    "Variant0IncludeAttributesContributes",
-    "Variant0IncludeAttributesFollowers",
-    "Variant0IncludeAttributesFollowing",
-    "Variant0IncludeAttributesOwns",
-    "Variant0IncludeAttributesStars",
-    "Variant1",
-    "Variant1IncludeAttributes",
-    "Variant1IncludeAttributesContributors",
-    "Variant1IncludeAttributesStarrers",
+    "IncludeAttributes",
+    "IncludeAttributesContributes",
+    "IncludeAttributesContributors",
+    "IncludeAttributesFollowers",
+    "IncludeAttributesFollowing",
+    "IncludeAttributesOwns",
+    "IncludeAttributesStarrers",
+    "IncludeAttributesStars",
 ]
 
 
-class Variant0(TypedDict, total=False):
+class RawUserGraphParams(TypedDict, total=False):
     id: Required[str]
     """GitHub node ID or BountyLab ID of the user"""
 
@@ -33,14 +29,16 @@ class Variant0(TypedDict, total=False):
     first: float
     """Number of items to return (default: 100, max: 100)"""
 
-    include_attributes: Annotated[Variant0IncludeAttributes, PropertyInfo(alias="includeAttributes")]
+    include_attributes: Annotated[IncludeAttributes, PropertyInfo(alias="includeAttributes")]
+    """Optional graph relationships to include.
+
+    Use user attributes (followers, following, owns, stars, contributes) for
+    user-returning relationships, or repo attributes (owner, contributors, starrers)
+    for repo-returning relationships.
     """
-    Optional graph relationships to include (followers, following, stars, owns,
-    contributes)
-    """
 
 
-class Variant0IncludeAttributesContributes(TypedDict, total=False):
+class IncludeAttributesContributes(TypedDict, total=False):
     first: Required[int]
     """Number of items to return (max: 100)"""
 
@@ -48,7 +46,7 @@ class Variant0IncludeAttributesContributes(TypedDict, total=False):
     """Cursor for pagination (opaque base64-encoded)"""
 
 
-class Variant0IncludeAttributesFollowers(TypedDict, total=False):
+class IncludeAttributesContributors(TypedDict, total=False):
     first: Required[int]
     """Number of items to return (max: 100)"""
 
@@ -56,7 +54,7 @@ class Variant0IncludeAttributesFollowers(TypedDict, total=False):
     """Cursor for pagination (opaque base64-encoded)"""
 
 
-class Variant0IncludeAttributesFollowing(TypedDict, total=False):
+class IncludeAttributesFollowers(TypedDict, total=False):
     first: Required[int]
     """Number of items to return (max: 100)"""
 
@@ -64,7 +62,7 @@ class Variant0IncludeAttributesFollowing(TypedDict, total=False):
     """Cursor for pagination (opaque base64-encoded)"""
 
 
-class Variant0IncludeAttributesOwns(TypedDict, total=False):
+class IncludeAttributesFollowing(TypedDict, total=False):
     first: Required[int]
     """Number of items to return (max: 100)"""
 
@@ -72,7 +70,7 @@ class Variant0IncludeAttributesOwns(TypedDict, total=False):
     """Cursor for pagination (opaque base64-encoded)"""
 
 
-class Variant0IncludeAttributesStars(TypedDict, total=False):
+class IncludeAttributesOwns(TypedDict, total=False):
     first: Required[int]
     """Number of items to return (max: 100)"""
 
@@ -80,62 +78,43 @@ class Variant0IncludeAttributesStars(TypedDict, total=False):
     """Cursor for pagination (opaque base64-encoded)"""
 
 
-class Variant0IncludeAttributes(TypedDict, total=False):
-    contributes: Variant0IncludeAttributesContributes
+class IncludeAttributesStarrers(TypedDict, total=False):
+    first: Required[int]
+    """Number of items to return (max: 100)"""
+
+    after: str
+    """Cursor for pagination (opaque base64-encoded)"""
+
+
+class IncludeAttributesStars(TypedDict, total=False):
+    first: Required[int]
+    """Number of items to return (max: 100)"""
+
+    after: str
+    """Cursor for pagination (opaque base64-encoded)"""
+
+
+class IncludeAttributes(TypedDict, total=False):
+    contributes: IncludeAttributesContributes
     """Include contributed repositories with cursor pagination"""
 
-    followers: Variant0IncludeAttributesFollowers
+    contributors: IncludeAttributesContributors
+    """Include repository contributors with cursor pagination"""
+
+    followers: IncludeAttributesFollowers
     """Include followers with cursor pagination"""
 
-    following: Variant0IncludeAttributesFollowing
+    following: IncludeAttributesFollowing
     """Include users this user follows with cursor pagination"""
-
-    owns: Variant0IncludeAttributesOwns
-    """Include owned repositories with cursor pagination"""
-
-    stars: Variant0IncludeAttributesStars
-    """Include starred repositories with cursor pagination"""
-
-
-class Variant1(TypedDict, total=False):
-    id: Required[str]
-    """GitHub node ID or BountyLab ID of the user"""
-
-    after: str
-    """Cursor for pagination (opaque base64-encoded string from previous response)"""
-
-    first: float
-    """Number of items to return (default: 100, max: 100)"""
-
-    include_attributes: Annotated[Variant1IncludeAttributes, PropertyInfo(alias="includeAttributes")]
-    """Optional graph relationships to include (owner, contributors, starrers)"""
-
-
-class Variant1IncludeAttributesContributors(TypedDict, total=False):
-    first: Required[int]
-    """Number of items to return (max: 100)"""
-
-    after: str
-    """Cursor for pagination (opaque base64-encoded)"""
-
-
-class Variant1IncludeAttributesStarrers(TypedDict, total=False):
-    first: Required[int]
-    """Number of items to return (max: 100)"""
-
-    after: str
-    """Cursor for pagination (opaque base64-encoded)"""
-
-
-class Variant1IncludeAttributes(TypedDict, total=False):
-    contributors: Variant1IncludeAttributesContributors
-    """Include repository contributors with cursor pagination"""
 
     owner: bool
     """Include repository owner information"""
 
-    starrers: Variant1IncludeAttributesStarrers
+    owns: IncludeAttributesOwns
+    """Include owned repositories with cursor pagination"""
+
+    starrers: IncludeAttributesStarrers
     """Include users who starred the repository with cursor pagination"""
 
-
-RawUserGraphParams: TypeAlias = Union[Variant0, Variant1]
+    stars: IncludeAttributesStars
+    """Include starred repositories with cursor pagination"""

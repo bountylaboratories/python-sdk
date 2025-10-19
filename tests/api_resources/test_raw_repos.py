@@ -129,7 +129,7 @@ class TestRawRepos:
 
     @pytest.mark.skip(reason="Prism tests are disabled")
     @parametrize
-    def test_method_graph_overload_1(self, client: Bountylab) -> None:
+    def test_method_graph(self, client: Bountylab) -> None:
         raw_repo = client.raw_repos.graph(
             relationship="stars",
             id="id",
@@ -138,7 +138,7 @@ class TestRawRepos:
 
     @pytest.mark.skip(reason="Prism tests are disabled")
     @parametrize
-    def test_method_graph_with_all_params_overload_1(self, client: Bountylab) -> None:
+    def test_method_graph_with_all_params(self, client: Bountylab) -> None:
         raw_repo = client.raw_repos.graph(
             relationship="stars",
             id="id",
@@ -149,87 +149,28 @@ class TestRawRepos:
                     "first": 1,
                     "after": "after",
                 },
+                "contributors": {
+                    "first": 1,
+                    "after": "after",
+                },
                 "followers": {
-                    "first": 10,
+                    "first": 1,
                     "after": "after",
                 },
                 "following": {
                     "first": 1,
                     "after": "after",
                 },
+                "owner": True,
                 "owns": {
                     "first": 1,
                     "after": "after",
                 },
-                "stars": {
-                    "first": 10,
-                    "after": "after",
-                },
-            },
-        )
-        assert_matches_type(RawRepoGraphResponse, raw_repo, path=["response"])
-
-    @pytest.mark.skip(reason="Prism tests are disabled")
-    @parametrize
-    def test_raw_response_graph_overload_1(self, client: Bountylab) -> None:
-        response = client.raw_repos.with_raw_response.graph(
-            relationship="stars",
-            id="id",
-        )
-
-        assert response.is_closed is True
-        assert response.http_request.headers.get("X-Stainless-Lang") == "python"
-        raw_repo = response.parse()
-        assert_matches_type(RawRepoGraphResponse, raw_repo, path=["response"])
-
-    @pytest.mark.skip(reason="Prism tests are disabled")
-    @parametrize
-    def test_streaming_response_graph_overload_1(self, client: Bountylab) -> None:
-        with client.raw_repos.with_streaming_response.graph(
-            relationship="stars",
-            id="id",
-        ) as response:
-            assert not response.is_closed
-            assert response.http_request.headers.get("X-Stainless-Lang") == "python"
-
-            raw_repo = response.parse()
-            assert_matches_type(RawRepoGraphResponse, raw_repo, path=["response"])
-
-        assert cast(Any, response.is_closed) is True
-
-    @pytest.mark.skip(reason="Prism tests are disabled")
-    @parametrize
-    def test_path_params_graph_overload_1(self, client: Bountylab) -> None:
-        with pytest.raises(ValueError, match=r"Expected a non-empty value for `id` but received ''"):
-            client.raw_repos.with_raw_response.graph(
-                relationship="stars",
-                id="",
-            )
-
-    @pytest.mark.skip(reason="Prism tests are disabled")
-    @parametrize
-    def test_method_graph_overload_2(self, client: Bountylab) -> None:
-        raw_repo = client.raw_repos.graph(
-            relationship="stars",
-            id="id",
-        )
-        assert_matches_type(RawRepoGraphResponse, raw_repo, path=["response"])
-
-    @pytest.mark.skip(reason="Prism tests are disabled")
-    @parametrize
-    def test_method_graph_with_all_params_overload_2(self, client: Bountylab) -> None:
-        raw_repo = client.raw_repos.graph(
-            relationship="stars",
-            id="id",
-            after="eyJvZmZzZXQiOjEwMH0=",
-            first=100,
-            include_attributes={
-                "contributors": {
-                    "first": 10,
-                    "after": "after",
-                },
-                "owner": True,
                 "starrers": {
+                    "first": 1,
+                    "after": "after",
+                },
+                "stars": {
                     "first": 1,
                     "after": "after",
                 },
@@ -239,7 +180,7 @@ class TestRawRepos:
 
     @pytest.mark.skip(reason="Prism tests are disabled")
     @parametrize
-    def test_raw_response_graph_overload_2(self, client: Bountylab) -> None:
+    def test_raw_response_graph(self, client: Bountylab) -> None:
         response = client.raw_repos.with_raw_response.graph(
             relationship="stars",
             id="id",
@@ -252,7 +193,7 @@ class TestRawRepos:
 
     @pytest.mark.skip(reason="Prism tests are disabled")
     @parametrize
-    def test_streaming_response_graph_overload_2(self, client: Bountylab) -> None:
+    def test_streaming_response_graph(self, client: Bountylab) -> None:
         with client.raw_repos.with_streaming_response.graph(
             relationship="stars",
             id="id",
@@ -267,7 +208,7 @@ class TestRawRepos:
 
     @pytest.mark.skip(reason="Prism tests are disabled")
     @parametrize
-    def test_path_params_graph_overload_2(self, client: Bountylab) -> None:
+    def test_path_params_graph(self, client: Bountylab) -> None:
         with pytest.raises(ValueError, match=r"Expected a non-empty value for `id` but received ''"):
             client.raw_repos.with_raw_response.graph(
                 relationship="stars",
@@ -388,7 +329,7 @@ class TestAsyncRawRepos:
 
     @pytest.mark.skip(reason="Prism tests are disabled")
     @parametrize
-    async def test_method_graph_overload_1(self, async_client: AsyncBountylab) -> None:
+    async def test_method_graph(self, async_client: AsyncBountylab) -> None:
         raw_repo = await async_client.raw_repos.graph(
             relationship="stars",
             id="id",
@@ -397,7 +338,7 @@ class TestAsyncRawRepos:
 
     @pytest.mark.skip(reason="Prism tests are disabled")
     @parametrize
-    async def test_method_graph_with_all_params_overload_1(self, async_client: AsyncBountylab) -> None:
+    async def test_method_graph_with_all_params(self, async_client: AsyncBountylab) -> None:
         raw_repo = await async_client.raw_repos.graph(
             relationship="stars",
             id="id",
@@ -408,87 +349,28 @@ class TestAsyncRawRepos:
                     "first": 1,
                     "after": "after",
                 },
+                "contributors": {
+                    "first": 1,
+                    "after": "after",
+                },
                 "followers": {
-                    "first": 10,
+                    "first": 1,
                     "after": "after",
                 },
                 "following": {
                     "first": 1,
                     "after": "after",
                 },
+                "owner": True,
                 "owns": {
                     "first": 1,
                     "after": "after",
                 },
-                "stars": {
-                    "first": 10,
-                    "after": "after",
-                },
-            },
-        )
-        assert_matches_type(RawRepoGraphResponse, raw_repo, path=["response"])
-
-    @pytest.mark.skip(reason="Prism tests are disabled")
-    @parametrize
-    async def test_raw_response_graph_overload_1(self, async_client: AsyncBountylab) -> None:
-        response = await async_client.raw_repos.with_raw_response.graph(
-            relationship="stars",
-            id="id",
-        )
-
-        assert response.is_closed is True
-        assert response.http_request.headers.get("X-Stainless-Lang") == "python"
-        raw_repo = await response.parse()
-        assert_matches_type(RawRepoGraphResponse, raw_repo, path=["response"])
-
-    @pytest.mark.skip(reason="Prism tests are disabled")
-    @parametrize
-    async def test_streaming_response_graph_overload_1(self, async_client: AsyncBountylab) -> None:
-        async with async_client.raw_repos.with_streaming_response.graph(
-            relationship="stars",
-            id="id",
-        ) as response:
-            assert not response.is_closed
-            assert response.http_request.headers.get("X-Stainless-Lang") == "python"
-
-            raw_repo = await response.parse()
-            assert_matches_type(RawRepoGraphResponse, raw_repo, path=["response"])
-
-        assert cast(Any, response.is_closed) is True
-
-    @pytest.mark.skip(reason="Prism tests are disabled")
-    @parametrize
-    async def test_path_params_graph_overload_1(self, async_client: AsyncBountylab) -> None:
-        with pytest.raises(ValueError, match=r"Expected a non-empty value for `id` but received ''"):
-            await async_client.raw_repos.with_raw_response.graph(
-                relationship="stars",
-                id="",
-            )
-
-    @pytest.mark.skip(reason="Prism tests are disabled")
-    @parametrize
-    async def test_method_graph_overload_2(self, async_client: AsyncBountylab) -> None:
-        raw_repo = await async_client.raw_repos.graph(
-            relationship="stars",
-            id="id",
-        )
-        assert_matches_type(RawRepoGraphResponse, raw_repo, path=["response"])
-
-    @pytest.mark.skip(reason="Prism tests are disabled")
-    @parametrize
-    async def test_method_graph_with_all_params_overload_2(self, async_client: AsyncBountylab) -> None:
-        raw_repo = await async_client.raw_repos.graph(
-            relationship="stars",
-            id="id",
-            after="eyJvZmZzZXQiOjEwMH0=",
-            first=100,
-            include_attributes={
-                "contributors": {
-                    "first": 10,
-                    "after": "after",
-                },
-                "owner": True,
                 "starrers": {
+                    "first": 1,
+                    "after": "after",
+                },
+                "stars": {
                     "first": 1,
                     "after": "after",
                 },
@@ -498,7 +380,7 @@ class TestAsyncRawRepos:
 
     @pytest.mark.skip(reason="Prism tests are disabled")
     @parametrize
-    async def test_raw_response_graph_overload_2(self, async_client: AsyncBountylab) -> None:
+    async def test_raw_response_graph(self, async_client: AsyncBountylab) -> None:
         response = await async_client.raw_repos.with_raw_response.graph(
             relationship="stars",
             id="id",
@@ -511,7 +393,7 @@ class TestAsyncRawRepos:
 
     @pytest.mark.skip(reason="Prism tests are disabled")
     @parametrize
-    async def test_streaming_response_graph_overload_2(self, async_client: AsyncBountylab) -> None:
+    async def test_streaming_response_graph(self, async_client: AsyncBountylab) -> None:
         async with async_client.raw_repos.with_streaming_response.graph(
             relationship="stars",
             id="id",
@@ -526,7 +408,7 @@ class TestAsyncRawRepos:
 
     @pytest.mark.skip(reason="Prism tests are disabled")
     @parametrize
-    async def test_path_params_graph_overload_2(self, async_client: AsyncBountylab) -> None:
+    async def test_path_params_graph(self, async_client: AsyncBountylab) -> None:
         with pytest.raises(ValueError, match=r"Expected a non-empty value for `id` but received ''"):
             await async_client.raw_repos.with_raw_response.graph(
                 relationship="stars",
