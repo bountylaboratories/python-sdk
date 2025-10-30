@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.19.1 (2025-10-30)
+
+Full Changelog: [v0.19.0...v0.19.1](https://github.com/bountylaboratories/python-sdk/compare/v0.19.0...v0.19.1)
+
+### Bug Fixes
+
+* **client:** close streams without requiring full consumption ([8374710](https://github.com/bountylaboratories/python-sdk/commit/8374710ecb87b4fdddc5de1b14ac4f6a490b66ae))
+
 ## 0.19.0 (2025-10-19)
 
 Full Changelog: [v0.18.0...v0.19.0](https://github.com/bountylaboratories/python-sdk/compare/v0.18.0...v0.19.0)
