@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.19.2 (2025-10-31)
+
+Full Changelog: [v0.19.1...v0.19.2](https://github.com/bountylaboratories/python-sdk/compare/v0.19.1...v0.19.2)
+
+### Chores
+
+* **internal/tests:** avoid race condition with implicit client cleanup ([25fd2c5](https://github.com/bountylaboratories/python-sdk/commit/25fd2c5cc223161f3d997d7f8a7945173764e89d))
+
 ## 0.19.1 (2025-10-30)
 
 Full Changelog: [v0.19.0...v0.19.1](https://github.com/bountylaboratories/python-sdk/compare/v0.19.0...v0.19.1)
