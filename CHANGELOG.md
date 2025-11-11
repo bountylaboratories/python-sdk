@@ -1,5 +1,20 @@
 # Changelog
 
+## 0.19.2 (2025-11-11)
+
+Full Changelog: [v0.19.1...v0.19.2](https://github.com/bountylaboratories/python-sdk/compare/v0.19.1...v0.19.2)
+
+### Bug Fixes
+
+* compat with Python 3.14 ([2f58841](https://github.com/bountylaboratories/python-sdk/commit/2f58841684e1a0d285f75be79654d386bd31b932))
+
+
+### Chores
+
+* **internal/tests:** avoid race condition with implicit client cleanup ([25fd2c5](https://github.com/bountylaboratories/python-sdk/commit/25fd2c5cc223161f3d997d7f8a7945173764e89d))
+* **internal:** grammar fix (it's -&gt; its) ([609c7b5](https://github.com/bountylaboratories/python-sdk/commit/609c7b5d17cb65576a6a4cc8cfe8cfd643c6b0a7))
+* **package:** drop Python 3.8 support ([41b673b](https://github.com/bountylaboratories/python-sdk/commit/41b673b92f26c70d46f92b7051cc21208091063c))
+
 ## 0.19.1 (2025-10-30)
 
 Full Changelog: [v0.19.0...v0.19.1](https://github.com/bountylaboratories/python-sdk/compare/v0.19.0...v0.19.1)
