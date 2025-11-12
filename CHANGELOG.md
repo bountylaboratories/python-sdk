@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.19.3 (2025-11-12)
+
+Full Changelog: [v0.19.2...v0.19.3](https://github.com/bountylaboratories/python-sdk/compare/v0.19.2...v0.19.3)
+
+### Bug Fixes
+
+* **compat:** update signatures of `model_dump` and `model_dump_json` for Pydantic v1 ([ad6efe9](https://github.com/bountylaboratories/python-sdk/commit/ad6efe9d734865cc85a9bbc7111de882c2c2a53f))
+
 ## 0.19.2 (2025-11-11)
 
 Full Changelog: [v0.19.1...v0.19.2](https://github.com/bountylaboratories/python-sdk/compare/v0.19.1...v0.19.2)
