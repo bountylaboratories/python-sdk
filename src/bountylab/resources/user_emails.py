@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import httpx
 
-from ..types import user_email_best_email_params, user_email_best_email_by_login_params
+from ..types import user_email_best_email_params, user_email_reply_signal_params, user_email_best_email_by_login_params
 from .._types import Body, Omit, Query, Headers, NotGiven, SequenceNotStr, omit, not_given
 from .._utils import maybe_transform, async_maybe_transform
 from .._compat import cached_property
@@ -17,6 +17,7 @@ from .._response import (
 )
 from .._base_client import make_request_options
 from ..types.user_email_best_email_response import UserEmailBestEmailResponse
+from ..types.user_email_reply_signal_response import UserEmailReplySignalResponse
 from ..types.user_email_best_email_by_login_response import UserEmailBestEmailByLoginResponse
 
 __all__ = ["UserEmailsResource", "AsyncUserEmailsResource"]
@@ -138,6 +139,42 @@ class UserEmailsResource(SyncAPIResource):
             cast_to=UserEmailBestEmailByLoginResponse,
         )
 
+    def reply_signal(
+        self,
+        *,
+        github_ids: SequenceNotStr[str],
+        # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
+        # The extra values given here take precedence over values defined on the client or passed to this method.
+        extra_headers: Headers | None = None,
+        extra_query: Query | None = None,
+        extra_body: Body | None = None,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
+    ) -> UserEmailReplySignalResponse:
+        """Track when users reply to emails.
+
+        This endpoint logs reply signals for analytics
+        purposes. Does not consume credits. Requires RAW service.
+
+        Args:
+          github_ids: Array of GitHub node IDs for users who replied (1-100)
+
+          extra_headers: Send extra headers
+
+          extra_query: Add additional query parameters to the request
+
+          extra_body: Add additional JSON properties to the request
+
+          timeout: Override the client-level default timeout for this request, in seconds
+        """
+        return self._post(
+            "/api/users/best-email/signal/reply",
+            body=maybe_transform({"github_ids": github_ids}, user_email_reply_signal_params.UserEmailReplySignalParams),
+            options=make_request_options(
+                extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
+            ),
+            cast_to=UserEmailReplySignalResponse,
+        )
+
 
 class AsyncUserEmailsResource(AsyncAPIResource):
     @cached_property
@@ -255,6 +292,44 @@ class AsyncUserEmailsResource(AsyncAPIResource):
             cast_to=UserEmailBestEmailByLoginResponse,
         )
 
+    async def reply_signal(
+        self,
+        *,
+        github_ids: SequenceNotStr[str],
+        # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
+        # The extra values given here take precedence over values defined on the client or passed to this method.
+        extra_headers: Headers | None = None,
+        extra_query: Query | None = None,
+        extra_body: Body | None = None,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
+    ) -> UserEmailReplySignalResponse:
+        """Track when users reply to emails.
+
+        This endpoint logs reply signals for analytics
+        purposes. Does not consume credits. Requires RAW service.
+
+        Args:
+          github_ids: Array of GitHub node IDs for users who replied (1-100)
+
+          extra_headers: Send extra headers
+
+          extra_query: Add additional query parameters to the request
+
+          extra_body: Add additional JSON properties to the request
+
+          timeout: Override the client-level default timeout for this request, in seconds
+        """
+        return await self._post(
+            "/api/users/best-email/signal/reply",
+            body=await async_maybe_transform(
+                {"github_ids": github_ids}, user_email_reply_signal_params.UserEmailReplySignalParams
+            ),
+            options=make_request_options(
+                extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
+            ),
+            cast_to=UserEmailReplySignalResponse,
+        )
+
 
 class UserEmailsResourceWithRawResponse:
     def __init__(self, user_emails: UserEmailsResource) -> None:
@@ -265,6 +340,9 @@ class UserEmailsResourceWithRawResponse:
         )
         self.best_email_by_login = to_raw_response_wrapper(
             user_emails.best_email_by_login,
+        )
+        self.reply_signal = to_raw_response_wrapper(
+            user_emails.reply_signal,
         )
 
 
@@ -278,6 +356,9 @@ class AsyncUserEmailsResourceWithRawResponse:
         self.best_email_by_login = async_to_raw_response_wrapper(
             user_emails.best_email_by_login,
         )
+        self.reply_signal = async_to_raw_response_wrapper(
+            user_emails.reply_signal,
+        )
 
 
 class UserEmailsResourceWithStreamingResponse:
@@ -290,6 +371,9 @@ class UserEmailsResourceWithStreamingResponse:
         self.best_email_by_login = to_streamed_response_wrapper(
             user_emails.best_email_by_login,
         )
+        self.reply_signal = to_streamed_response_wrapper(
+            user_emails.reply_signal,
+        )
 
 
 class AsyncUserEmailsResourceWithStreamingResponse:
@@ -301,4 +385,7 @@ class AsyncUserEmailsResourceWithStreamingResponse:
         )
         self.best_email_by_login = async_to_streamed_response_wrapper(
             user_emails.best_email_by_login,
+        )
+        self.reply_signal = async_to_streamed_response_wrapper(
+            user_emails.reply_signal,
         )

@@ -31,13 +31,18 @@ Methods:
 Types:
 
 ```python
-from bountylab.types import UserEmailBestEmailResponse, UserEmailBestEmailByLoginResponse
+from bountylab.types import (
+    UserEmailBestEmailResponse,
+    UserEmailBestEmailByLoginResponse,
+    UserEmailReplySignalResponse,
+)
 ```
 
 Methods:
 
 - <code title="post /api/users/best-email">client.user_emails.<a href="./src/bountylab/resources/user_emails.py">best_email</a>(\*\*<a href="src/bountylab/types/user_email_best_email_params.py">params</a>) -> <a href="./src/bountylab/types/user_email_best_email_response.py">UserEmailBestEmailResponse</a></code>
 - <code title="post /api/users/best-email/by-login">client.user_emails.<a href="./src/bountylab/resources/user_emails.py">best_email_by_login</a>(\*\*<a href="src/bountylab/types/user_email_best_email_by_login_params.py">params</a>) -> <a href="./src/bountylab/types/user_email_best_email_by_login_response.py">UserEmailBestEmailByLoginResponse</a></code>
+- <code title="post /api/users/best-email/signal/reply">client.user_emails.<a href="./src/bountylab/resources/user_emails.py">reply_signal</a>(\*\*<a href="src/bountylab/types/user_email_reply_signal_params.py">params</a>) -> <a href="./src/bountylab/types/user_email_reply_signal_response.py">UserEmailReplySignalResponse</a></code>
 
 # SearchUsers
 
