@@ -257,6 +257,7 @@ class TestRawUsers:
                     },
                 },
                 "owner": True,
+                "owner_devrank": True,
                 "owns": {
                     "first": 1,
                     "after": "after",
@@ -567,6 +568,7 @@ class TestAsyncRawUsers:
                     },
                 },
                 "owner": True,
+                "owner_devrank": True,
                 "owns": {
                     "first": 1,
                     "after": "after",

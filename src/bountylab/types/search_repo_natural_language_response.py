@@ -15,6 +15,7 @@ __all__ = [
     "RepositoryContributorsPageInfo",
     "RepositoryOwner",
     "RepositoryOwnerSocialAccount",
+    "RepositoryOwnerDevrank",
     "RepositoryStarrers",
     "RepositoryStarrersEdge",
     "RepositoryStarrersEdgeSocialAccount",
@@ -164,6 +165,28 @@ class RepositoryOwner(BaseModel):
     """User website URL"""
 
 
+class RepositoryOwnerDevrank(BaseModel):
+    community: int
+
+    cracked_score: float = FieldInfo(alias="crackedScore")
+
+    created_at: str = FieldInfo(alias="createdAt")
+
+    followers_in: float = FieldInfo(alias="followersIn")
+
+    following_out: float = FieldInfo(alias="followingOut")
+
+    pc: float
+
+    raw_score: float = FieldInfo(alias="rawScore")
+
+    tier: str
+
+    trust: float
+
+    updated_at: str = FieldInfo(alias="updatedAt")
+
+
 class RepositoryStarrersEdgeSocialAccount(BaseModel):
     provider: str
 
@@ -289,6 +312,12 @@ class Repository(BaseModel):
 
     owner: Optional[RepositoryOwner] = None
     """Repository owner (when includeAttributes.owner = true)"""
+
+    owner_devrank: Optional[RepositoryOwnerDevrank] = FieldInfo(alias="ownerDevrank", default=None)
+    """
+    Devrank data for the repository owner (when includeAttributes.ownerDevrank =
+    true)
+    """
 
     readme_preview: Optional[str] = FieldInfo(alias="readmePreview", default=None)
     """Preview of repository README (first ~500 chars)"""

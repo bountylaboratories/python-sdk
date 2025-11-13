@@ -269,5 +269,8 @@ class IncludeAttributes(TypedDict, total=False):
     owner: bool
     """Include repository owner information"""
 
+    owner_devrank: Annotated[bool, PropertyInfo(alias="ownerDevrank")]
+    """Include devrank data for the repository owner"""
+
     starrers: IncludeAttributesStarrers
     """Include users who starred the repository with cursor pagination"""

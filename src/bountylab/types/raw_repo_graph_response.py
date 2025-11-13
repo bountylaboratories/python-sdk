@@ -20,6 +20,7 @@ __all__ = [
     "RepoStarsResponseUserContributesEdgeContributorsPageInfo",
     "RepoStarsResponseUserContributesEdgeOwner",
     "RepoStarsResponseUserContributesEdgeOwnerSocialAccount",
+    "RepoStarsResponseUserContributesEdgeOwnerDevrank",
     "RepoStarsResponseUserContributesEdgeStarrers",
     "RepoStarsResponseUserContributesEdgeStarrersEdge",
     "RepoStarsResponseUserContributesEdgeStarrersEdgeSocialAccount",
@@ -42,6 +43,7 @@ __all__ = [
     "RepoStarsResponseUserOwnsEdgeContributorsPageInfo",
     "RepoStarsResponseUserOwnsEdgeOwner",
     "RepoStarsResponseUserOwnsEdgeOwnerSocialAccount",
+    "RepoStarsResponseUserOwnsEdgeOwnerDevrank",
     "RepoStarsResponseUserOwnsEdgeStarrers",
     "RepoStarsResponseUserOwnsEdgeStarrersEdge",
     "RepoStarsResponseUserOwnsEdgeStarrersEdgeSocialAccount",
@@ -56,6 +58,7 @@ __all__ = [
     "RepoStarsResponseUserStarsEdgeContributorsPageInfo",
     "RepoStarsResponseUserStarsEdgeOwner",
     "RepoStarsResponseUserStarsEdgeOwnerSocialAccount",
+    "RepoStarsResponseUserStarsEdgeOwnerDevrank",
     "RepoStarsResponseUserStarsEdgeStarrers",
     "RepoStarsResponseUserStarsEdgeStarrersEdge",
     "RepoStarsResponseUserStarsEdgeStarrersEdgeSocialAccount",
@@ -72,6 +75,7 @@ __all__ = [
     "RepoContributesResponseUserContributesEdgeContributorsPageInfo",
     "RepoContributesResponseUserContributesEdgeOwner",
     "RepoContributesResponseUserContributesEdgeOwnerSocialAccount",
+    "RepoContributesResponseUserContributesEdgeOwnerDevrank",
     "RepoContributesResponseUserContributesEdgeStarrers",
     "RepoContributesResponseUserContributesEdgeStarrersEdge",
     "RepoContributesResponseUserContributesEdgeStarrersEdgeSocialAccount",
@@ -94,6 +98,7 @@ __all__ = [
     "RepoContributesResponseUserOwnsEdgeContributorsPageInfo",
     "RepoContributesResponseUserOwnsEdgeOwner",
     "RepoContributesResponseUserOwnsEdgeOwnerSocialAccount",
+    "RepoContributesResponseUserOwnsEdgeOwnerDevrank",
     "RepoContributesResponseUserOwnsEdgeStarrers",
     "RepoContributesResponseUserOwnsEdgeStarrersEdge",
     "RepoContributesResponseUserOwnsEdgeStarrersEdgeSocialAccount",
@@ -108,6 +113,7 @@ __all__ = [
     "RepoContributesResponseUserStarsEdgeContributorsPageInfo",
     "RepoContributesResponseUserStarsEdgeOwner",
     "RepoContributesResponseUserStarsEdgeOwnerSocialAccount",
+    "RepoContributesResponseUserStarsEdgeOwnerDevrank",
     "RepoContributesResponseUserStarsEdgeStarrers",
     "RepoContributesResponseUserStarsEdgeStarrersEdge",
     "RepoContributesResponseUserStarsEdgeStarrersEdgeSocialAccount",
@@ -124,6 +130,7 @@ __all__ = [
     "RepoOwnsResponseUserContributesEdgeContributorsPageInfo",
     "RepoOwnsResponseUserContributesEdgeOwner",
     "RepoOwnsResponseUserContributesEdgeOwnerSocialAccount",
+    "RepoOwnsResponseUserContributesEdgeOwnerDevrank",
     "RepoOwnsResponseUserContributesEdgeStarrers",
     "RepoOwnsResponseUserContributesEdgeStarrersEdge",
     "RepoOwnsResponseUserContributesEdgeStarrersEdgeSocialAccount",
@@ -146,6 +153,7 @@ __all__ = [
     "RepoOwnsResponseUserOwnsEdgeContributorsPageInfo",
     "RepoOwnsResponseUserOwnsEdgeOwner",
     "RepoOwnsResponseUserOwnsEdgeOwnerSocialAccount",
+    "RepoOwnsResponseUserOwnsEdgeOwnerDevrank",
     "RepoOwnsResponseUserOwnsEdgeStarrers",
     "RepoOwnsResponseUserOwnsEdgeStarrersEdge",
     "RepoOwnsResponseUserOwnsEdgeStarrersEdgeSocialAccount",
@@ -160,6 +168,7 @@ __all__ = [
     "RepoOwnsResponseUserStarsEdgeContributorsPageInfo",
     "RepoOwnsResponseUserStarsEdgeOwner",
     "RepoOwnsResponseUserStarsEdgeOwnerSocialAccount",
+    "RepoOwnsResponseUserStarsEdgeOwnerDevrank",
     "RepoOwnsResponseUserStarsEdgeStarrers",
     "RepoOwnsResponseUserStarsEdgeStarrersEdge",
     "RepoOwnsResponseUserStarsEdgeStarrersEdgeSocialAccount",
@@ -320,6 +329,28 @@ class RepoStarsResponseUserContributesEdgeOwner(BaseModel):
     """User website URL"""
 
 
+class RepoStarsResponseUserContributesEdgeOwnerDevrank(BaseModel):
+    community: int
+
+    cracked_score: float = FieldInfo(alias="crackedScore")
+
+    created_at: str = FieldInfo(alias="createdAt")
+
+    followers_in: float = FieldInfo(alias="followersIn")
+
+    following_out: float = FieldInfo(alias="followingOut")
+
+    pc: float
+
+    raw_score: float = FieldInfo(alias="rawScore")
+
+    tier: str
+
+    trust: float
+
+    updated_at: str = FieldInfo(alias="updatedAt")
+
+
 class RepoStarsResponseUserContributesEdgeStarrersEdgeSocialAccount(BaseModel):
     provider: str
 
@@ -445,6 +476,14 @@ class RepoStarsResponseUserContributesEdge(BaseModel):
 
     owner: Optional[RepoStarsResponseUserContributesEdgeOwner] = None
     """Repository owner (when includeAttributes.owner = true)"""
+
+    owner_devrank: Optional[RepoStarsResponseUserContributesEdgeOwnerDevrank] = FieldInfo(
+        alias="ownerDevrank", default=None
+    )
+    """
+    Devrank data for the repository owner (when includeAttributes.ownerDevrank =
+    true)
+    """
 
     readme_preview: Optional[str] = FieldInfo(alias="readmePreview", default=None)
     """Preview of repository README (first ~500 chars)"""
@@ -801,6 +840,28 @@ class RepoStarsResponseUserOwnsEdgeOwner(BaseModel):
     """User website URL"""
 
 
+class RepoStarsResponseUserOwnsEdgeOwnerDevrank(BaseModel):
+    community: int
+
+    cracked_score: float = FieldInfo(alias="crackedScore")
+
+    created_at: str = FieldInfo(alias="createdAt")
+
+    followers_in: float = FieldInfo(alias="followersIn")
+
+    following_out: float = FieldInfo(alias="followingOut")
+
+    pc: float
+
+    raw_score: float = FieldInfo(alias="rawScore")
+
+    tier: str
+
+    trust: float
+
+    updated_at: str = FieldInfo(alias="updatedAt")
+
+
 class RepoStarsResponseUserOwnsEdgeStarrersEdgeSocialAccount(BaseModel):
     provider: str
 
@@ -926,6 +987,12 @@ class RepoStarsResponseUserOwnsEdge(BaseModel):
 
     owner: Optional[RepoStarsResponseUserOwnsEdgeOwner] = None
     """Repository owner (when includeAttributes.owner = true)"""
+
+    owner_devrank: Optional[RepoStarsResponseUserOwnsEdgeOwnerDevrank] = FieldInfo(alias="ownerDevrank", default=None)
+    """
+    Devrank data for the repository owner (when includeAttributes.ownerDevrank =
+    true)
+    """
 
     readme_preview: Optional[str] = FieldInfo(alias="readmePreview", default=None)
     """Preview of repository README (first ~500 chars)"""
@@ -1106,6 +1173,28 @@ class RepoStarsResponseUserStarsEdgeOwner(BaseModel):
     """User website URL"""
 
 
+class RepoStarsResponseUserStarsEdgeOwnerDevrank(BaseModel):
+    community: int
+
+    cracked_score: float = FieldInfo(alias="crackedScore")
+
+    created_at: str = FieldInfo(alias="createdAt")
+
+    followers_in: float = FieldInfo(alias="followersIn")
+
+    following_out: float = FieldInfo(alias="followingOut")
+
+    pc: float
+
+    raw_score: float = FieldInfo(alias="rawScore")
+
+    tier: str
+
+    trust: float
+
+    updated_at: str = FieldInfo(alias="updatedAt")
+
+
 class RepoStarsResponseUserStarsEdgeStarrersEdgeSocialAccount(BaseModel):
     provider: str
 
@@ -1231,6 +1320,12 @@ class RepoStarsResponseUserStarsEdge(BaseModel):
 
     owner: Optional[RepoStarsResponseUserStarsEdgeOwner] = None
     """Repository owner (when includeAttributes.owner = true)"""
+
+    owner_devrank: Optional[RepoStarsResponseUserStarsEdgeOwnerDevrank] = FieldInfo(alias="ownerDevrank", default=None)
+    """
+    Devrank data for the repository owner (when includeAttributes.ownerDevrank =
+    true)
+    """
 
     readme_preview: Optional[str] = FieldInfo(alias="readmePreview", default=None)
     """Preview of repository README (first ~500 chars)"""
@@ -1497,6 +1592,28 @@ class RepoContributesResponseUserContributesEdgeOwner(BaseModel):
     """User website URL"""
 
 
+class RepoContributesResponseUserContributesEdgeOwnerDevrank(BaseModel):
+    community: int
+
+    cracked_score: float = FieldInfo(alias="crackedScore")
+
+    created_at: str = FieldInfo(alias="createdAt")
+
+    followers_in: float = FieldInfo(alias="followersIn")
+
+    following_out: float = FieldInfo(alias="followingOut")
+
+    pc: float
+
+    raw_score: float = FieldInfo(alias="rawScore")
+
+    tier: str
+
+    trust: float
+
+    updated_at: str = FieldInfo(alias="updatedAt")
+
+
 class RepoContributesResponseUserContributesEdgeStarrersEdgeSocialAccount(BaseModel):
     provider: str
 
@@ -1622,6 +1739,14 @@ class RepoContributesResponseUserContributesEdge(BaseModel):
 
     owner: Optional[RepoContributesResponseUserContributesEdgeOwner] = None
     """Repository owner (when includeAttributes.owner = true)"""
+
+    owner_devrank: Optional[RepoContributesResponseUserContributesEdgeOwnerDevrank] = FieldInfo(
+        alias="ownerDevrank", default=None
+    )
+    """
+    Devrank data for the repository owner (when includeAttributes.ownerDevrank =
+    true)
+    """
 
     readme_preview: Optional[str] = FieldInfo(alias="readmePreview", default=None)
     """Preview of repository README (first ~500 chars)"""
@@ -1978,6 +2103,28 @@ class RepoContributesResponseUserOwnsEdgeOwner(BaseModel):
     """User website URL"""
 
 
+class RepoContributesResponseUserOwnsEdgeOwnerDevrank(BaseModel):
+    community: int
+
+    cracked_score: float = FieldInfo(alias="crackedScore")
+
+    created_at: str = FieldInfo(alias="createdAt")
+
+    followers_in: float = FieldInfo(alias="followersIn")
+
+    following_out: float = FieldInfo(alias="followingOut")
+
+    pc: float
+
+    raw_score: float = FieldInfo(alias="rawScore")
+
+    tier: str
+
+    trust: float
+
+    updated_at: str = FieldInfo(alias="updatedAt")
+
+
 class RepoContributesResponseUserOwnsEdgeStarrersEdgeSocialAccount(BaseModel):
     provider: str
 
@@ -2103,6 +2250,14 @@ class RepoContributesResponseUserOwnsEdge(BaseModel):
 
     owner: Optional[RepoContributesResponseUserOwnsEdgeOwner] = None
     """Repository owner (when includeAttributes.owner = true)"""
+
+    owner_devrank: Optional[RepoContributesResponseUserOwnsEdgeOwnerDevrank] = FieldInfo(
+        alias="ownerDevrank", default=None
+    )
+    """
+    Devrank data for the repository owner (when includeAttributes.ownerDevrank =
+    true)
+    """
 
     readme_preview: Optional[str] = FieldInfo(alias="readmePreview", default=None)
     """Preview of repository README (first ~500 chars)"""
@@ -2283,6 +2438,28 @@ class RepoContributesResponseUserStarsEdgeOwner(BaseModel):
     """User website URL"""
 
 
+class RepoContributesResponseUserStarsEdgeOwnerDevrank(BaseModel):
+    community: int
+
+    cracked_score: float = FieldInfo(alias="crackedScore")
+
+    created_at: str = FieldInfo(alias="createdAt")
+
+    followers_in: float = FieldInfo(alias="followersIn")
+
+    following_out: float = FieldInfo(alias="followingOut")
+
+    pc: float
+
+    raw_score: float = FieldInfo(alias="rawScore")
+
+    tier: str
+
+    trust: float
+
+    updated_at: str = FieldInfo(alias="updatedAt")
+
+
 class RepoContributesResponseUserStarsEdgeStarrersEdgeSocialAccount(BaseModel):
     provider: str
 
@@ -2408,6 +2585,14 @@ class RepoContributesResponseUserStarsEdge(BaseModel):
 
     owner: Optional[RepoContributesResponseUserStarsEdgeOwner] = None
     """Repository owner (when includeAttributes.owner = true)"""
+
+    owner_devrank: Optional[RepoContributesResponseUserStarsEdgeOwnerDevrank] = FieldInfo(
+        alias="ownerDevrank", default=None
+    )
+    """
+    Devrank data for the repository owner (when includeAttributes.ownerDevrank =
+    true)
+    """
 
     readme_preview: Optional[str] = FieldInfo(alias="readmePreview", default=None)
     """Preview of repository README (first ~500 chars)"""
@@ -2677,6 +2862,28 @@ class RepoOwnsResponseUserContributesEdgeOwner(BaseModel):
     """User website URL"""
 
 
+class RepoOwnsResponseUserContributesEdgeOwnerDevrank(BaseModel):
+    community: int
+
+    cracked_score: float = FieldInfo(alias="crackedScore")
+
+    created_at: str = FieldInfo(alias="createdAt")
+
+    followers_in: float = FieldInfo(alias="followersIn")
+
+    following_out: float = FieldInfo(alias="followingOut")
+
+    pc: float
+
+    raw_score: float = FieldInfo(alias="rawScore")
+
+    tier: str
+
+    trust: float
+
+    updated_at: str = FieldInfo(alias="updatedAt")
+
+
 class RepoOwnsResponseUserContributesEdgeStarrersEdgeSocialAccount(BaseModel):
     provider: str
 
@@ -2802,6 +3009,14 @@ class RepoOwnsResponseUserContributesEdge(BaseModel):
 
     owner: Optional[RepoOwnsResponseUserContributesEdgeOwner] = None
     """Repository owner (when includeAttributes.owner = true)"""
+
+    owner_devrank: Optional[RepoOwnsResponseUserContributesEdgeOwnerDevrank] = FieldInfo(
+        alias="ownerDevrank", default=None
+    )
+    """
+    Devrank data for the repository owner (when includeAttributes.ownerDevrank =
+    true)
+    """
 
     readme_preview: Optional[str] = FieldInfo(alias="readmePreview", default=None)
     """Preview of repository README (first ~500 chars)"""
@@ -3158,6 +3373,28 @@ class RepoOwnsResponseUserOwnsEdgeOwner(BaseModel):
     """User website URL"""
 
 
+class RepoOwnsResponseUserOwnsEdgeOwnerDevrank(BaseModel):
+    community: int
+
+    cracked_score: float = FieldInfo(alias="crackedScore")
+
+    created_at: str = FieldInfo(alias="createdAt")
+
+    followers_in: float = FieldInfo(alias="followersIn")
+
+    following_out: float = FieldInfo(alias="followingOut")
+
+    pc: float
+
+    raw_score: float = FieldInfo(alias="rawScore")
+
+    tier: str
+
+    trust: float
+
+    updated_at: str = FieldInfo(alias="updatedAt")
+
+
 class RepoOwnsResponseUserOwnsEdgeStarrersEdgeSocialAccount(BaseModel):
     provider: str
 
@@ -3283,6 +3520,12 @@ class RepoOwnsResponseUserOwnsEdge(BaseModel):
 
     owner: Optional[RepoOwnsResponseUserOwnsEdgeOwner] = None
     """Repository owner (when includeAttributes.owner = true)"""
+
+    owner_devrank: Optional[RepoOwnsResponseUserOwnsEdgeOwnerDevrank] = FieldInfo(alias="ownerDevrank", default=None)
+    """
+    Devrank data for the repository owner (when includeAttributes.ownerDevrank =
+    true)
+    """
 
     readme_preview: Optional[str] = FieldInfo(alias="readmePreview", default=None)
     """Preview of repository README (first ~500 chars)"""
@@ -3463,6 +3706,28 @@ class RepoOwnsResponseUserStarsEdgeOwner(BaseModel):
     """User website URL"""
 
 
+class RepoOwnsResponseUserStarsEdgeOwnerDevrank(BaseModel):
+    community: int
+
+    cracked_score: float = FieldInfo(alias="crackedScore")
+
+    created_at: str = FieldInfo(alias="createdAt")
+
+    followers_in: float = FieldInfo(alias="followersIn")
+
+    following_out: float = FieldInfo(alias="followingOut")
+
+    pc: float
+
+    raw_score: float = FieldInfo(alias="rawScore")
+
+    tier: str
+
+    trust: float
+
+    updated_at: str = FieldInfo(alias="updatedAt")
+
+
 class RepoOwnsResponseUserStarsEdgeStarrersEdgeSocialAccount(BaseModel):
     provider: str
 
@@ -3588,6 +3853,12 @@ class RepoOwnsResponseUserStarsEdge(BaseModel):
 
     owner: Optional[RepoOwnsResponseUserStarsEdgeOwner] = None
     """Repository owner (when includeAttributes.owner = true)"""
+
+    owner_devrank: Optional[RepoOwnsResponseUserStarsEdgeOwnerDevrank] = FieldInfo(alias="ownerDevrank", default=None)
+    """
+    Devrank data for the repository owner (when includeAttributes.ownerDevrank =
+    true)
+    """
 
     readme_preview: Optional[str] = FieldInfo(alias="readmePreview", default=None)
     """Preview of repository README (first ~500 chars)"""

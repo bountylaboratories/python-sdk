@@ -45,6 +45,7 @@ class TestSearchRepos:
                     },
                 },
                 "owner": True,
+                "owner_devrank": True,
                 "starrers": {
                     "first": 1,
                     "after": "after",
@@ -114,6 +115,7 @@ class TestSearchRepos:
                     },
                 },
                 "owner": True,
+                "owner_devrank": True,
                 "starrers": {
                     "first": 1,
                     "after": "after",
@@ -185,6 +187,7 @@ class TestAsyncSearchRepos:
                     },
                 },
                 "owner": True,
+                "owner_devrank": True,
                 "starrers": {
                     "first": 1,
                     "after": "after",
@@ -254,6 +257,7 @@ class TestAsyncSearchRepos:
                     },
                 },
                 "owner": True,
+                "owner_devrank": True,
                 "starrers": {
                     "first": 1,
                     "after": "after",
