@@ -17,6 +17,7 @@ __all__ = [
     "UserContributesEdgeContributorsPageInfo",
     "UserContributesEdgeOwner",
     "UserContributesEdgeOwnerSocialAccount",
+    "UserContributesEdgeOwnerDevrank",
     "UserContributesEdgeStarrers",
     "UserContributesEdgeStarrersEdge",
     "UserContributesEdgeStarrersEdgeSocialAccount",
@@ -39,6 +40,7 @@ __all__ = [
     "UserOwnsEdgeContributorsPageInfo",
     "UserOwnsEdgeOwner",
     "UserOwnsEdgeOwnerSocialAccount",
+    "UserOwnsEdgeOwnerDevrank",
     "UserOwnsEdgeStarrers",
     "UserOwnsEdgeStarrersEdge",
     "UserOwnsEdgeStarrersEdgeSocialAccount",
@@ -53,6 +55,7 @@ __all__ = [
     "UserStarsEdgeContributorsPageInfo",
     "UserStarsEdgeOwner",
     "UserStarsEdgeOwnerSocialAccount",
+    "UserStarsEdgeOwnerDevrank",
     "UserStarsEdgeStarrers",
     "UserStarsEdgeStarrersEdge",
     "UserStarsEdgeStarrersEdgeSocialAccount",
@@ -205,6 +208,28 @@ class UserContributesEdgeOwner(BaseModel):
     """User website URL"""
 
 
+class UserContributesEdgeOwnerDevrank(BaseModel):
+    community: int
+
+    cracked_score: float = FieldInfo(alias="crackedScore")
+
+    created_at: str = FieldInfo(alias="createdAt")
+
+    followers_in: float = FieldInfo(alias="followersIn")
+
+    following_out: float = FieldInfo(alias="followingOut")
+
+    pc: float
+
+    raw_score: float = FieldInfo(alias="rawScore")
+
+    tier: str
+
+    trust: float
+
+    updated_at: str = FieldInfo(alias="updatedAt")
+
+
 class UserContributesEdgeStarrersEdgeSocialAccount(BaseModel):
     provider: str
 
@@ -330,6 +355,12 @@ class UserContributesEdge(BaseModel):
 
     owner: Optional[UserContributesEdgeOwner] = None
     """Repository owner (when includeAttributes.owner = true)"""
+
+    owner_devrank: Optional[UserContributesEdgeOwnerDevrank] = FieldInfo(alias="ownerDevrank", default=None)
+    """
+    Devrank data for the repository owner (when includeAttributes.ownerDevrank =
+    true)
+    """
 
     readme_preview: Optional[str] = FieldInfo(alias="readmePreview", default=None)
     """Preview of repository README (first ~500 chars)"""
@@ -680,6 +711,28 @@ class UserOwnsEdgeOwner(BaseModel):
     """User website URL"""
 
 
+class UserOwnsEdgeOwnerDevrank(BaseModel):
+    community: int
+
+    cracked_score: float = FieldInfo(alias="crackedScore")
+
+    created_at: str = FieldInfo(alias="createdAt")
+
+    followers_in: float = FieldInfo(alias="followersIn")
+
+    following_out: float = FieldInfo(alias="followingOut")
+
+    pc: float
+
+    raw_score: float = FieldInfo(alias="rawScore")
+
+    tier: str
+
+    trust: float
+
+    updated_at: str = FieldInfo(alias="updatedAt")
+
+
 class UserOwnsEdgeStarrersEdgeSocialAccount(BaseModel):
     provider: str
 
@@ -805,6 +858,12 @@ class UserOwnsEdge(BaseModel):
 
     owner: Optional[UserOwnsEdgeOwner] = None
     """Repository owner (when includeAttributes.owner = true)"""
+
+    owner_devrank: Optional[UserOwnsEdgeOwnerDevrank] = FieldInfo(alias="ownerDevrank", default=None)
+    """
+    Devrank data for the repository owner (when includeAttributes.ownerDevrank =
+    true)
+    """
 
     readme_preview: Optional[str] = FieldInfo(alias="readmePreview", default=None)
     """Preview of repository README (first ~500 chars)"""
@@ -983,6 +1042,28 @@ class UserStarsEdgeOwner(BaseModel):
     """User website URL"""
 
 
+class UserStarsEdgeOwnerDevrank(BaseModel):
+    community: int
+
+    cracked_score: float = FieldInfo(alias="crackedScore")
+
+    created_at: str = FieldInfo(alias="createdAt")
+
+    followers_in: float = FieldInfo(alias="followersIn")
+
+    following_out: float = FieldInfo(alias="followingOut")
+
+    pc: float
+
+    raw_score: float = FieldInfo(alias="rawScore")
+
+    tier: str
+
+    trust: float
+
+    updated_at: str = FieldInfo(alias="updatedAt")
+
+
 class UserStarsEdgeStarrersEdgeSocialAccount(BaseModel):
     provider: str
 
@@ -1108,6 +1189,12 @@ class UserStarsEdge(BaseModel):
 
     owner: Optional[UserStarsEdgeOwner] = None
     """Repository owner (when includeAttributes.owner = true)"""
+
+    owner_devrank: Optional[UserStarsEdgeOwnerDevrank] = FieldInfo(alias="ownerDevrank", default=None)
+    """
+    Devrank data for the repository owner (when includeAttributes.ownerDevrank =
+    true)
+    """
 
     readme_preview: Optional[str] = FieldInfo(alias="readmePreview", default=None)
     """Preview of repository README (first ~500 chars)"""
