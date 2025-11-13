@@ -5,7 +5,7 @@ from __future__ import annotations
 import httpx
 
 from ..types import user_email_best_email_params, user_email_best_email_by_login_params
-from .._types import Body, Query, Headers, NotGiven, SequenceNotStr, not_given
+from .._types import Body, Omit, Query, Headers, NotGiven, SequenceNotStr, omit, not_given
 from .._utils import maybe_transform, async_maybe_transform
 from .._compat import cached_property
 from .._resource import SyncAPIResource, AsyncAPIResource
@@ -46,6 +46,7 @@ class UserEmailsResource(SyncAPIResource):
         self,
         *,
         github_ids: SequenceNotStr[str],
+        signals: user_email_best_email_params.Signals | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -64,6 +65,8 @@ class UserEmailsResource(SyncAPIResource):
         Args:
           github_ids: Array of GitHub node IDs (1-100)
 
+          signals: Optional signal data for tracking email context (body, subject, sender)
+
           extra_headers: Send extra headers
 
           extra_query: Add additional query parameters to the request
@@ -74,7 +77,13 @@ class UserEmailsResource(SyncAPIResource):
         """
         return self._post(
             "/api/users/best-email",
-            body=maybe_transform({"github_ids": github_ids}, user_email_best_email_params.UserEmailBestEmailParams),
+            body=maybe_transform(
+                {
+                    "github_ids": github_ids,
+                    "signals": signals,
+                },
+                user_email_best_email_params.UserEmailBestEmailParams,
+            ),
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
@@ -85,6 +94,7 @@ class UserEmailsResource(SyncAPIResource):
         self,
         *,
         logins: SequenceNotStr[str],
+        signals: user_email_best_email_by_login_params.Signals | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -103,6 +113,8 @@ class UserEmailsResource(SyncAPIResource):
         Args:
           logins: Array of GitHub usernames (1-100)
 
+          signals: Optional signal data for tracking email context (body, subject, sender)
+
           extra_headers: Send extra headers
 
           extra_query: Add additional query parameters to the request
@@ -114,7 +126,11 @@ class UserEmailsResource(SyncAPIResource):
         return self._post(
             "/api/users/best-email/by-login",
             body=maybe_transform(
-                {"logins": logins}, user_email_best_email_by_login_params.UserEmailBestEmailByLoginParams
+                {
+                    "logins": logins,
+                    "signals": signals,
+                },
+                user_email_best_email_by_login_params.UserEmailBestEmailByLoginParams,
             ),
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
@@ -147,6 +163,7 @@ class AsyncUserEmailsResource(AsyncAPIResource):
         self,
         *,
         github_ids: SequenceNotStr[str],
+        signals: user_email_best_email_params.Signals | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -165,6 +182,8 @@ class AsyncUserEmailsResource(AsyncAPIResource):
         Args:
           github_ids: Array of GitHub node IDs (1-100)
 
+          signals: Optional signal data for tracking email context (body, subject, sender)
+
           extra_headers: Send extra headers
 
           extra_query: Add additional query parameters to the request
@@ -176,7 +195,11 @@ class AsyncUserEmailsResource(AsyncAPIResource):
         return await self._post(
             "/api/users/best-email",
             body=await async_maybe_transform(
-                {"github_ids": github_ids}, user_email_best_email_params.UserEmailBestEmailParams
+                {
+                    "github_ids": github_ids,
+                    "signals": signals,
+                },
+                user_email_best_email_params.UserEmailBestEmailParams,
             ),
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
@@ -188,6 +211,7 @@ class AsyncUserEmailsResource(AsyncAPIResource):
         self,
         *,
         logins: SequenceNotStr[str],
+        signals: user_email_best_email_by_login_params.Signals | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -206,6 +230,8 @@ class AsyncUserEmailsResource(AsyncAPIResource):
         Args:
           logins: Array of GitHub usernames (1-100)
 
+          signals: Optional signal data for tracking email context (body, subject, sender)
+
           extra_headers: Send extra headers
 
           extra_query: Add additional query parameters to the request
@@ -217,7 +243,11 @@ class AsyncUserEmailsResource(AsyncAPIResource):
         return await self._post(
             "/api/users/best-email/by-login",
             body=await async_maybe_transform(
-                {"logins": logins}, user_email_best_email_by_login_params.UserEmailBestEmailByLoginParams
+                {
+                    "logins": logins,
+                    "signals": signals,
+                },
+                user_email_best_email_by_login_params.UserEmailBestEmailByLoginParams,
             ),
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout

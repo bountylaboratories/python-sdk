@@ -30,6 +30,19 @@ class TestUserEmails:
 
     @pytest.mark.skip(reason="Prism tests are disabled")
     @parametrize
+    def test_method_best_email_with_all_params(self, client: Bountylab) -> None:
+        user_email = client.user_emails.best_email(
+            github_ids=["MDQ6VXNlcjU4MzIzMQ==", "MDQ6VXNlcjE="],
+            signals={
+                "email_body": "emailBody",
+                "email_subject": "emailSubject",
+                "sender": "sender",
+            },
+        )
+        assert_matches_type(UserEmailBestEmailResponse, user_email, path=["response"])
+
+    @pytest.mark.skip(reason="Prism tests are disabled")
+    @parametrize
     def test_raw_response_best_email(self, client: Bountylab) -> None:
         response = client.user_emails.with_raw_response.best_email(
             github_ids=["MDQ6VXNlcjU4MzIzMQ==", "MDQ6VXNlcjE="],
@@ -59,6 +72,19 @@ class TestUserEmails:
     def test_method_best_email_by_login(self, client: Bountylab) -> None:
         user_email = client.user_emails.best_email_by_login(
             logins=["octocat", "torvalds"],
+        )
+        assert_matches_type(UserEmailBestEmailByLoginResponse, user_email, path=["response"])
+
+    @pytest.mark.skip(reason="Prism tests are disabled")
+    @parametrize
+    def test_method_best_email_by_login_with_all_params(self, client: Bountylab) -> None:
+        user_email = client.user_emails.best_email_by_login(
+            logins=["octocat", "torvalds"],
+            signals={
+                "email_body": "emailBody",
+                "email_subject": "emailSubject",
+                "sender": "sender",
+            },
         )
         assert_matches_type(UserEmailBestEmailByLoginResponse, user_email, path=["response"])
 
@@ -104,6 +130,19 @@ class TestAsyncUserEmails:
 
     @pytest.mark.skip(reason="Prism tests are disabled")
     @parametrize
+    async def test_method_best_email_with_all_params(self, async_client: AsyncBountylab) -> None:
+        user_email = await async_client.user_emails.best_email(
+            github_ids=["MDQ6VXNlcjU4MzIzMQ==", "MDQ6VXNlcjE="],
+            signals={
+                "email_body": "emailBody",
+                "email_subject": "emailSubject",
+                "sender": "sender",
+            },
+        )
+        assert_matches_type(UserEmailBestEmailResponse, user_email, path=["response"])
+
+    @pytest.mark.skip(reason="Prism tests are disabled")
+    @parametrize
     async def test_raw_response_best_email(self, async_client: AsyncBountylab) -> None:
         response = await async_client.user_emails.with_raw_response.best_email(
             github_ids=["MDQ6VXNlcjU4MzIzMQ==", "MDQ6VXNlcjE="],
@@ -133,6 +172,19 @@ class TestAsyncUserEmails:
     async def test_method_best_email_by_login(self, async_client: AsyncBountylab) -> None:
         user_email = await async_client.user_emails.best_email_by_login(
             logins=["octocat", "torvalds"],
+        )
+        assert_matches_type(UserEmailBestEmailByLoginResponse, user_email, path=["response"])
+
+    @pytest.mark.skip(reason="Prism tests are disabled")
+    @parametrize
+    async def test_method_best_email_by_login_with_all_params(self, async_client: AsyncBountylab) -> None:
+        user_email = await async_client.user_emails.best_email_by_login(
+            logins=["octocat", "torvalds"],
+            signals={
+                "email_body": "emailBody",
+                "email_subject": "emailSubject",
+                "sender": "sender",
+            },
         )
         assert_matches_type(UserEmailBestEmailByLoginResponse, user_email, path=["response"])
 
