@@ -123,14 +123,14 @@ from bountylab import Bountylab
 
 client = Bountylab()
 
-raw_user = client.raw_users.retrieve(
-    github_ids=["MDQ6VXNlcjU4MzIzMQ==", "MDQ6VXNlcjE="],
+response = client.search_users.natural_language(
+    query="Find machine learning engineers at Google who work on AI infrastructure",
     include_attributes={
         "followers": {"first": 10},
         "stars": {"first": 10},
     },
 )
-print(raw_user.include_attributes)
+print(response.include_attributes)
 ```
 
 ## Handling errors

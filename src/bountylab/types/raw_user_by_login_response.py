@@ -22,6 +22,7 @@ __all__ = [
     "UserContributesEdgeStarrersEdgeSocialAccount",
     "UserContributesEdgeStarrersPageInfo",
     "UserContributesPageInfo",
+    "UserDevrank",
     "UserFollowers",
     "UserFollowersEdge",
     "UserFollowersEdgeSocialAccount",
@@ -348,6 +349,28 @@ class UserContributes(BaseModel):
 
     page_info: UserContributesPageInfo = FieldInfo(alias="pageInfo")
     """Pagination information"""
+
+
+class UserDevrank(BaseModel):
+    community: int
+
+    cracked_score: float = FieldInfo(alias="crackedScore")
+
+    created_at: str = FieldInfo(alias="createdAt")
+
+    followers_in: float = FieldInfo(alias="followersIn")
+
+    following_out: float = FieldInfo(alias="followingOut")
+
+    pc: float
+
+    raw_score: float = FieldInfo(alias="rawScore")
+
+    tier: str
+
+    trust: float
+
+    updated_at: str = FieldInfo(alias="updatedAt")
 
 
 class UserFollowersEdgeSocialAccount(BaseModel):
@@ -1103,6 +1126,9 @@ class User(BaseModel):
 
     created_at: Optional[str] = FieldInfo(alias="createdAt", default=None)
     """ISO 8601 timestamp when user account was created"""
+
+    devrank: Optional[UserDevrank] = None
+    """Developer ranking data (only present when fetched from devrank endpoints)"""
 
     display_name: Optional[str] = FieldInfo(alias="displayName", default=None)
     """User display name"""
