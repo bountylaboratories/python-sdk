@@ -11,6 +11,7 @@ from bountylab import Bountylab, AsyncBountylab
 from tests.utils import assert_matches_type
 from bountylab.types import (
     UserEmailBestEmailResponse,
+    UserEmailReplySignalResponse,
     UserEmailBestEmailByLoginResponse,
 )
 
@@ -114,6 +115,40 @@ class TestUserEmails:
 
         assert cast(Any, response.is_closed) is True
 
+    @pytest.mark.skip(reason="Prism tests are disabled")
+    @parametrize
+    def test_method_reply_signal(self, client: Bountylab) -> None:
+        user_email = client.user_emails.reply_signal(
+            github_ids=["MDQ6VXNlcjU4MzIzMQ=="],
+        )
+        assert_matches_type(UserEmailReplySignalResponse, user_email, path=["response"])
+
+    @pytest.mark.skip(reason="Prism tests are disabled")
+    @parametrize
+    def test_raw_response_reply_signal(self, client: Bountylab) -> None:
+        response = client.user_emails.with_raw_response.reply_signal(
+            github_ids=["MDQ6VXNlcjU4MzIzMQ=="],
+        )
+
+        assert response.is_closed is True
+        assert response.http_request.headers.get("X-Stainless-Lang") == "python"
+        user_email = response.parse()
+        assert_matches_type(UserEmailReplySignalResponse, user_email, path=["response"])
+
+    @pytest.mark.skip(reason="Prism tests are disabled")
+    @parametrize
+    def test_streaming_response_reply_signal(self, client: Bountylab) -> None:
+        with client.user_emails.with_streaming_response.reply_signal(
+            github_ids=["MDQ6VXNlcjU4MzIzMQ=="],
+        ) as response:
+            assert not response.is_closed
+            assert response.http_request.headers.get("X-Stainless-Lang") == "python"
+
+            user_email = response.parse()
+            assert_matches_type(UserEmailReplySignalResponse, user_email, path=["response"])
+
+        assert cast(Any, response.is_closed) is True
+
 
 class TestAsyncUserEmails:
     parametrize = pytest.mark.parametrize(
@@ -211,5 +246,39 @@ class TestAsyncUserEmails:
 
             user_email = await response.parse()
             assert_matches_type(UserEmailBestEmailByLoginResponse, user_email, path=["response"])
+
+        assert cast(Any, response.is_closed) is True
+
+    @pytest.mark.skip(reason="Prism tests are disabled")
+    @parametrize
+    async def test_method_reply_signal(self, async_client: AsyncBountylab) -> None:
+        user_email = await async_client.user_emails.reply_signal(
+            github_ids=["MDQ6VXNlcjU4MzIzMQ=="],
+        )
+        assert_matches_type(UserEmailReplySignalResponse, user_email, path=["response"])
+
+    @pytest.mark.skip(reason="Prism tests are disabled")
+    @parametrize
+    async def test_raw_response_reply_signal(self, async_client: AsyncBountylab) -> None:
+        response = await async_client.user_emails.with_raw_response.reply_signal(
+            github_ids=["MDQ6VXNlcjU4MzIzMQ=="],
+        )
+
+        assert response.is_closed is True
+        assert response.http_request.headers.get("X-Stainless-Lang") == "python"
+        user_email = await response.parse()
+        assert_matches_type(UserEmailReplySignalResponse, user_email, path=["response"])
+
+    @pytest.mark.skip(reason="Prism tests are disabled")
+    @parametrize
+    async def test_streaming_response_reply_signal(self, async_client: AsyncBountylab) -> None:
+        async with async_client.user_emails.with_streaming_response.reply_signal(
+            github_ids=["MDQ6VXNlcjU4MzIzMQ=="],
+        ) as response:
+            assert not response.is_closed
+            assert response.http_request.headers.get("X-Stainless-Lang") == "python"
+
+            user_email = await response.parse()
+            assert_matches_type(UserEmailReplySignalResponse, user_email, path=["response"])
 
         assert cast(Any, response.is_closed) is True
