@@ -16,6 +16,14 @@ from .raw_users import (
     RawUsersResourceWithStreamingResponse,
     AsyncRawUsersResourceWithStreamingResponse,
 )
+from .user_emails import (
+    UserEmailsResource,
+    AsyncUserEmailsResource,
+    UserEmailsResourceWithRawResponse,
+    AsyncUserEmailsResourceWithRawResponse,
+    UserEmailsResourceWithStreamingResponse,
+    AsyncUserEmailsResourceWithStreamingResponse,
+)
 from .search_repos import (
     SearchReposResource,
     AsyncSearchReposResource,
@@ -46,6 +54,12 @@ __all__ = [
     "AsyncRawReposResourceWithRawResponse",
     "RawReposResourceWithStreamingResponse",
     "AsyncRawReposResourceWithStreamingResponse",
+    "UserEmailsResource",
+    "AsyncUserEmailsResource",
+    "UserEmailsResourceWithRawResponse",
+    "AsyncUserEmailsResourceWithRawResponse",
+    "UserEmailsResourceWithStreamingResponse",
+    "AsyncUserEmailsResourceWithStreamingResponse",
     "SearchUsersResource",
     "AsyncSearchUsersResource",
     "SearchUsersResourceWithRawResponse",

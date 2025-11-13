@@ -17,7 +17,9 @@ from .raw_user_retrieve_response import RawUserRetrieveResponse as RawUserRetrie
 from .raw_repo_by_fullname_params import RawRepoByFullnameParams as RawRepoByFullnameParams
 from .search_repo_search_response import SearchRepoSearchResponse as SearchRepoSearchResponse
 from .search_user_search_response import SearchUserSearchResponse as SearchUserSearchResponse
+from .user_email_best_email_params import UserEmailBestEmailParams as UserEmailBestEmailParams
 from .raw_repo_by_fullname_response import RawRepoByFullnameResponse as RawRepoByFullnameResponse
+from .user_email_best_email_response import UserEmailBestEmailResponse as UserEmailBestEmailResponse
 from .search_repo_natural_language_params import SearchRepoNaturalLanguageParams as SearchRepoNaturalLanguageParams
 from .search_user_natural_language_params import SearchUserNaturalLanguageParams as SearchUserNaturalLanguageParams
 from .search_repo_natural_language_response import (
@@ -25,4 +27,8 @@ from .search_repo_natural_language_response import (
 )
 from .search_user_natural_language_response import (
     SearchUserNaturalLanguageResponse as SearchUserNaturalLanguageResponse,
+)
+from .user_email_best_email_by_login_params import UserEmailBestEmailByLoginParams as UserEmailBestEmailByLoginParams
+from .user_email_best_email_by_login_response import (
+    UserEmailBestEmailByLoginResponse as UserEmailBestEmailByLoginResponse,
 )
