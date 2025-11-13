@@ -183,6 +183,7 @@ class TestRawRepos:
                         "value": "string",
                     },
                 },
+                "devrank": True,
                 "followers": {
                     "first": 1,
                     "after": "after",
@@ -438,6 +439,7 @@ class TestAsyncRawRepos:
                         "value": "string",
                     },
                 },
+                "devrank": True,
                 "followers": {
                     "first": 1,
                     "after": "after",
