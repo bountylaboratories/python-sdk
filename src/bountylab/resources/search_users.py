@@ -48,6 +48,7 @@ class SearchUsersResource(SyncAPIResource):
         self,
         *,
         query: str,
+        include_attributes: search_user_natural_language_params.IncludeAttributes | Omit = omit,
         max_results: int | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
@@ -59,10 +60,14 @@ class SearchUsersResource(SyncAPIResource):
         """
         Natural language search that uses AI to understand your query and automatically
         generate search terms and filters. Requires SEARCH service. Credits: 1 per
-        result returned + 1 for AI processing.
+        result returned + 1 for AI processing + graph relationship credits if
+        includeAttributes is specified.
 
         Args:
           query: Natural language query describing the users you want to find
+
+          include_attributes: Optional graph relationships to include (followers, following, stars, owns,
+              contributes)
 
           max_results: Maximum number of results to return (default: 100, max: 1000)
 
@@ -79,6 +84,7 @@ class SearchUsersResource(SyncAPIResource):
             body=maybe_transform(
                 {
                     "query": query,
+                    "include_attributes": include_attributes,
                     "max_results": max_results,
                 },
                 search_user_natural_language_params.SearchUserNaturalLanguageParams,
@@ -94,6 +100,7 @@ class SearchUsersResource(SyncAPIResource):
         *,
         query: str,
         filters: Optional[search_user_search_params.Filters] | Omit = omit,
+        include_attributes: search_user_search_params.IncludeAttributes | Omit = omit,
         max_results: int | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
@@ -105,7 +112,8 @@ class SearchUsersResource(SyncAPIResource):
         """
         Full-text search across user login, name, bio, company, and location using BM25
         ranking. Results include relevance scores. Requires SEARCH service. Credits: 1
-        per result returned.
+        per result returned + graph relationship credits if includeAttributes is
+        specified.
 
         Args:
           query: Full-text search query across user fields. Searches: login, displayName, bio,
@@ -129,6 +137,9 @@ class SearchUsersResource(SyncAPIResource):
               - String fields: Eq (exact match), In (one of array)
               - Use And/Or to combine multiple filters
 
+          include_attributes: Optional graph relationships to include (followers, following, stars, owns,
+              contributes)
+
           max_results: Maximum number of results to return (default: 100, max: 1000)
 
           extra_headers: Send extra headers
@@ -145,6 +156,7 @@ class SearchUsersResource(SyncAPIResource):
                 {
                     "query": query,
                     "filters": filters,
+                    "include_attributes": include_attributes,
                     "max_results": max_results,
                 },
                 search_user_search_params.SearchUserSearchParams,
@@ -180,6 +192,7 @@ class AsyncSearchUsersResource(AsyncAPIResource):
         self,
         *,
         query: str,
+        include_attributes: search_user_natural_language_params.IncludeAttributes | Omit = omit,
         max_results: int | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
@@ -191,10 +204,14 @@ class AsyncSearchUsersResource(AsyncAPIResource):
         """
         Natural language search that uses AI to understand your query and automatically
         generate search terms and filters. Requires SEARCH service. Credits: 1 per
-        result returned + 1 for AI processing.
+        result returned + 1 for AI processing + graph relationship credits if
+        includeAttributes is specified.
 
         Args:
           query: Natural language query describing the users you want to find
+
+          include_attributes: Optional graph relationships to include (followers, following, stars, owns,
+              contributes)
 
           max_results: Maximum number of results to return (default: 100, max: 1000)
 
@@ -211,6 +228,7 @@ class AsyncSearchUsersResource(AsyncAPIResource):
             body=await async_maybe_transform(
                 {
                     "query": query,
+                    "include_attributes": include_attributes,
                     "max_results": max_results,
                 },
                 search_user_natural_language_params.SearchUserNaturalLanguageParams,
@@ -226,6 +244,7 @@ class AsyncSearchUsersResource(AsyncAPIResource):
         *,
         query: str,
         filters: Optional[search_user_search_params.Filters] | Omit = omit,
+        include_attributes: search_user_search_params.IncludeAttributes | Omit = omit,
         max_results: int | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
@@ -237,7 +256,8 @@ class AsyncSearchUsersResource(AsyncAPIResource):
         """
         Full-text search across user login, name, bio, company, and location using BM25
         ranking. Results include relevance scores. Requires SEARCH service. Credits: 1
-        per result returned.
+        per result returned + graph relationship credits if includeAttributes is
+        specified.
 
         Args:
           query: Full-text search query across user fields. Searches: login, displayName, bio,
@@ -261,6 +281,9 @@ class AsyncSearchUsersResource(AsyncAPIResource):
               - String fields: Eq (exact match), In (one of array)
               - Use And/Or to combine multiple filters
 
+          include_attributes: Optional graph relationships to include (followers, following, stars, owns,
+              contributes)
+
           max_results: Maximum number of results to return (default: 100, max: 1000)
 
           extra_headers: Send extra headers
@@ -277,6 +300,7 @@ class AsyncSearchUsersResource(AsyncAPIResource):
                 {
                     "query": query,
                     "filters": filters,
+                    "include_attributes": include_attributes,
                     "max_results": max_results,
                 },
                 search_user_search_params.SearchUserSearchParams,

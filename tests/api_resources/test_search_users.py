@@ -33,6 +33,54 @@ class TestSearchUsers:
     def test_method_natural_language_with_all_params(self, client: Bountylab) -> None:
         search_user = client.search_users.natural_language(
             query="Find machine learning engineers at Google who work on AI infrastructure",
+            include_attributes={
+                "contributes": {
+                    "first": 1,
+                    "after": "after",
+                    "filters": {
+                        "field": "resolvedCountry",
+                        "op": "Eq",
+                        "value": "string",
+                    },
+                },
+                "devrank": True,
+                "followers": {
+                    "first": 10,
+                    "after": "after",
+                    "filters": {
+                        "field": "resolvedCountry",
+                        "op": "Eq",
+                        "value": "string",
+                    },
+                },
+                "following": {
+                    "first": 1,
+                    "after": "after",
+                    "filters": {
+                        "field": "resolvedCountry",
+                        "op": "Eq",
+                        "value": "string",
+                    },
+                },
+                "owns": {
+                    "first": 1,
+                    "after": "after",
+                    "filters": {
+                        "field": "resolvedCountry",
+                        "op": "Eq",
+                        "value": "string",
+                    },
+                },
+                "stars": {
+                    "first": 10,
+                    "after": "after",
+                    "filters": {
+                        "field": "resolvedCountry",
+                        "op": "Eq",
+                        "value": "string",
+                    },
+                },
+            },
             max_results=50,
         )
         assert_matches_type(SearchUserNaturalLanguageResponse, search_user, path=["response"])
@@ -77,9 +125,57 @@ class TestSearchUsers:
         search_user = client.search_users.search(
             query="machine learning engineer san francisco",
             filters={
-                "field": "company",
-                "op": "Eq",
-                "value": "GitHub",
+                "field": "field",
+                "op": "op",
+                "value": "string",
+            },
+            include_attributes={
+                "contributes": {
+                    "first": 1,
+                    "after": "after",
+                    "filters": {
+                        "field": "resolvedCountry",
+                        "op": "Eq",
+                        "value": "string",
+                    },
+                },
+                "devrank": True,
+                "followers": {
+                    "first": 10,
+                    "after": "after",
+                    "filters": {
+                        "field": "resolvedCountry",
+                        "op": "Eq",
+                        "value": "string",
+                    },
+                },
+                "following": {
+                    "first": 1,
+                    "after": "after",
+                    "filters": {
+                        "field": "resolvedCountry",
+                        "op": "Eq",
+                        "value": "string",
+                    },
+                },
+                "owns": {
+                    "first": 1,
+                    "after": "after",
+                    "filters": {
+                        "field": "resolvedCountry",
+                        "op": "Eq",
+                        "value": "string",
+                    },
+                },
+                "stars": {
+                    "first": 10,
+                    "after": "after",
+                    "filters": {
+                        "field": "resolvedCountry",
+                        "op": "Eq",
+                        "value": "string",
+                    },
+                },
             },
             max_results=50,
         )
@@ -130,6 +226,54 @@ class TestAsyncSearchUsers:
     async def test_method_natural_language_with_all_params(self, async_client: AsyncBountylab) -> None:
         search_user = await async_client.search_users.natural_language(
             query="Find machine learning engineers at Google who work on AI infrastructure",
+            include_attributes={
+                "contributes": {
+                    "first": 1,
+                    "after": "after",
+                    "filters": {
+                        "field": "resolvedCountry",
+                        "op": "Eq",
+                        "value": "string",
+                    },
+                },
+                "devrank": True,
+                "followers": {
+                    "first": 10,
+                    "after": "after",
+                    "filters": {
+                        "field": "resolvedCountry",
+                        "op": "Eq",
+                        "value": "string",
+                    },
+                },
+                "following": {
+                    "first": 1,
+                    "after": "after",
+                    "filters": {
+                        "field": "resolvedCountry",
+                        "op": "Eq",
+                        "value": "string",
+                    },
+                },
+                "owns": {
+                    "first": 1,
+                    "after": "after",
+                    "filters": {
+                        "field": "resolvedCountry",
+                        "op": "Eq",
+                        "value": "string",
+                    },
+                },
+                "stars": {
+                    "first": 10,
+                    "after": "after",
+                    "filters": {
+                        "field": "resolvedCountry",
+                        "op": "Eq",
+                        "value": "string",
+                    },
+                },
+            },
             max_results=50,
         )
         assert_matches_type(SearchUserNaturalLanguageResponse, search_user, path=["response"])
@@ -174,9 +318,57 @@ class TestAsyncSearchUsers:
         search_user = await async_client.search_users.search(
             query="machine learning engineer san francisco",
             filters={
-                "field": "company",
-                "op": "Eq",
-                "value": "GitHub",
+                "field": "field",
+                "op": "op",
+                "value": "string",
+            },
+            include_attributes={
+                "contributes": {
+                    "first": 1,
+                    "after": "after",
+                    "filters": {
+                        "field": "resolvedCountry",
+                        "op": "Eq",
+                        "value": "string",
+                    },
+                },
+                "devrank": True,
+                "followers": {
+                    "first": 10,
+                    "after": "after",
+                    "filters": {
+                        "field": "resolvedCountry",
+                        "op": "Eq",
+                        "value": "string",
+                    },
+                },
+                "following": {
+                    "first": 1,
+                    "after": "after",
+                    "filters": {
+                        "field": "resolvedCountry",
+                        "op": "Eq",
+                        "value": "string",
+                    },
+                },
+                "owns": {
+                    "first": 1,
+                    "after": "after",
+                    "filters": {
+                        "field": "resolvedCountry",
+                        "op": "Eq",
+                        "value": "string",
+                    },
+                },
+                "stars": {
+                    "first": 10,
+                    "after": "after",
+                    "filters": {
+                        "field": "resolvedCountry",
+                        "op": "Eq",
+                        "value": "string",
+                    },
+                },
             },
             max_results=50,
         )

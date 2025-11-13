@@ -25,6 +25,7 @@ __all__ = [
     "FollowersResponseUserContributesEdgeStarrersEdgeSocialAccount",
     "FollowersResponseUserContributesEdgeStarrersPageInfo",
     "FollowersResponseUserContributesPageInfo",
+    "FollowersResponseUserDevrank",
     "FollowersResponseUserFollowers",
     "FollowersResponseUserFollowersEdge",
     "FollowersResponseUserFollowersEdgeSocialAccount",
@@ -76,6 +77,7 @@ __all__ = [
     "FollowingResponseUserContributesEdgeStarrersEdgeSocialAccount",
     "FollowingResponseUserContributesEdgeStarrersPageInfo",
     "FollowingResponseUserContributesPageInfo",
+    "FollowingResponseUserDevrank",
     "FollowingResponseUserFollowers",
     "FollowingResponseUserFollowersEdge",
     "FollowingResponseUserFollowersEdgeSocialAccount",
@@ -449,6 +451,28 @@ class FollowersResponseUserContributes(BaseModel):
 
     page_info: FollowersResponseUserContributesPageInfo = FieldInfo(alias="pageInfo")
     """Pagination information"""
+
+
+class FollowersResponseUserDevrank(BaseModel):
+    community: int
+
+    cracked_score: float = FieldInfo(alias="crackedScore")
+
+    created_at: str = FieldInfo(alias="createdAt")
+
+    followers_in: float = FieldInfo(alias="followersIn")
+
+    following_out: float = FieldInfo(alias="followingOut")
+
+    pc: float
+
+    raw_score: float = FieldInfo(alias="rawScore")
+
+    tier: str
+
+    trust: float
+
+    updated_at: str = FieldInfo(alias="updatedAt")
 
 
 class FollowersResponseUserFollowersEdgeSocialAccount(BaseModel):
@@ -1213,6 +1237,9 @@ class FollowersResponseUser(BaseModel):
     created_at: Optional[str] = FieldInfo(alias="createdAt", default=None)
     """ISO 8601 timestamp when user account was created"""
 
+    devrank: Optional[FollowersResponseUserDevrank] = None
+    """Developer ranking data (only present when fetched from devrank endpoints)"""
+
     display_name: Optional[str] = FieldInfo(alias="displayName", default=None)
     """User display name"""
 
@@ -1565,6 +1592,28 @@ class FollowingResponseUserContributes(BaseModel):
 
     page_info: FollowingResponseUserContributesPageInfo = FieldInfo(alias="pageInfo")
     """Pagination information"""
+
+
+class FollowingResponseUserDevrank(BaseModel):
+    community: int
+
+    cracked_score: float = FieldInfo(alias="crackedScore")
+
+    created_at: str = FieldInfo(alias="createdAt")
+
+    followers_in: float = FieldInfo(alias="followersIn")
+
+    following_out: float = FieldInfo(alias="followingOut")
+
+    pc: float
+
+    raw_score: float = FieldInfo(alias="rawScore")
+
+    tier: str
+
+    trust: float
+
+    updated_at: str = FieldInfo(alias="updatedAt")
 
 
 class FollowingResponseUserFollowersEdgeSocialAccount(BaseModel):
@@ -2328,6 +2377,9 @@ class FollowingResponseUser(BaseModel):
 
     created_at: Optional[str] = FieldInfo(alias="createdAt", default=None)
     """ISO 8601 timestamp when user account was created"""
+
+    devrank: Optional[FollowingResponseUserDevrank] = None
+    """Developer ranking data (only present when fetched from devrank endpoints)"""
 
     display_name: Optional[str] = FieldInfo(alias="displayName", default=None)
     """User display name"""

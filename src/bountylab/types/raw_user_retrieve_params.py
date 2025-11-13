@@ -604,6 +604,9 @@ class IncludeAttributes(TypedDict, total=False):
     contributes: IncludeAttributesContributes
     """Include contributed repositories with cursor pagination"""
 
+    devrank: bool
+    """Include devrank data for the user"""
+
     followers: IncludeAttributesFollowers
     """Include followers with cursor pagination"""
 

@@ -44,6 +44,7 @@ class TestRawUsers:
                         "value": "string",
                     },
                 },
+                "devrank": True,
                 "followers": {
                     "first": 10,
                     "after": "after",
@@ -133,6 +134,7 @@ class TestRawUsers:
                         "value": "string",
                     },
                 },
+                "devrank": True,
                 "followers": {
                     "first": 10,
                     "after": "after",
@@ -235,6 +237,7 @@ class TestRawUsers:
                         "value": "string",
                     },
                 },
+                "devrank": True,
                 "followers": {
                     "first": 1,
                     "after": "after",
@@ -351,6 +354,7 @@ class TestAsyncRawUsers:
                         "value": "string",
                     },
                 },
+                "devrank": True,
                 "followers": {
                     "first": 10,
                     "after": "after",
@@ -440,6 +444,7 @@ class TestAsyncRawUsers:
                         "value": "string",
                     },
                 },
+                "devrank": True,
                 "followers": {
                     "first": 10,
                     "after": "after",
@@ -542,6 +547,7 @@ class TestAsyncRawUsers:
                         "value": "string",
                     },
                 },
+                "devrank": True,
                 "followers": {
                     "first": 1,
                     "after": "after",
