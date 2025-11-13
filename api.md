@@ -26,6 +26,19 @@ Methods:
 - <code title="post /api/raw/repos/by-fullname">client.raw_repos.<a href="./src/bountylab/resources/raw_repos.py">by_fullname</a>(\*\*<a href="src/bountylab/types/raw_repo_by_fullname_params.py">params</a>) -> <a href="./src/bountylab/types/raw_repo_by_fullname_response.py">RawRepoByFullnameResponse</a></code>
 - <code title="post /api/raw/repos/{id}/graph/{relationship}">client.raw_repos.<a href="./src/bountylab/resources/raw_repos.py">graph</a>(relationship, \*, id, \*\*<a href="src/bountylab/types/raw_repo_graph_params.py">params</a>) -> <a href="./src/bountylab/types/raw_repo_graph_response.py">RawRepoGraphResponse</a></code>
 
+# UserEmails
+
+Types:
+
+```python
+from bountylab.types import UserEmailBestEmailResponse, UserEmailBestEmailByLoginResponse
+```
+
+Methods:
+
+- <code title="post /api/users/best-email">client.user_emails.<a href="./src/bountylab/resources/user_emails.py">best_email</a>(\*\*<a href="src/bountylab/types/user_email_best_email_params.py">params</a>) -> <a href="./src/bountylab/types/user_email_best_email_response.py">UserEmailBestEmailResponse</a></code>
+- <code title="post /api/users/best-email/by-login">client.user_emails.<a href="./src/bountylab/resources/user_emails.py">best_email_by_login</a>(\*\*<a href="src/bountylab/types/user_email_best_email_by_login_params.py">params</a>) -> <a href="./src/bountylab/types/user_email_best_email_by_login_response.py">UserEmailBestEmailByLoginResponse</a></code>
+
 # SearchUsers
 
 Types:

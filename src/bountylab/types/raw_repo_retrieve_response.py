@@ -51,7 +51,10 @@ class RepositoryContributorsEdge(BaseModel):
     """User display name"""
 
     emails: Optional[List[str]] = None
-    """Email addresses"""
+    """
+    Email addresses (DEPRECATED: Use /api/users/best-email endpoint instead for
+    intelligent email selection)
+    """
 
     embedded_at: Optional[str] = FieldInfo(alias="embeddedAt", default=None)
     """ISO 8601 timestamp when metadata was extracted"""
@@ -128,7 +131,10 @@ class RepositoryOwner(BaseModel):
     """User display name"""
 
     emails: Optional[List[str]] = None
-    """Email addresses"""
+    """
+    Email addresses (DEPRECATED: Use /api/users/best-email endpoint instead for
+    intelligent email selection)
+    """
 
     embedded_at: Optional[str] = FieldInfo(alias="embeddedAt", default=None)
     """ISO 8601 timestamp when metadata was extracted"""
@@ -187,7 +193,10 @@ class RepositoryStarrersEdge(BaseModel):
     """User display name"""
 
     emails: Optional[List[str]] = None
-    """Email addresses"""
+    """
+    Email addresses (DEPRECATED: Use /api/users/best-email endpoint instead for
+    intelligent email selection)
+    """
 
     embedded_at: Optional[str] = FieldInfo(alias="embeddedAt", default=None)
     """ISO 8601 timestamp when metadata was extracted"""
