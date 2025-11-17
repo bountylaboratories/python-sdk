@@ -37,6 +37,8 @@ class TestUserEmails:
             signals={
                 "email_body": "emailBody",
                 "email_subject": "emailSubject",
+                "reason_for_email_natural_language": "reasonForEmailNaturalLanguage",
+                "repo_reason_for_email": "repoReasonForEmail",
                 "sender": "sender",
             },
         )
@@ -84,6 +86,8 @@ class TestUserEmails:
             signals={
                 "email_body": "emailBody",
                 "email_subject": "emailSubject",
+                "reason_for_email_natural_language": "reasonForEmailNaturalLanguage",
+                "repo_reason_for_email": "repoReasonForEmail",
                 "sender": "sender",
             },
         )
@@ -120,6 +124,15 @@ class TestUserEmails:
     def test_method_reply_signal(self, client: Bountylab) -> None:
         user_email = client.user_emails.reply_signal(
             github_ids=["MDQ6VXNlcjU4MzIzMQ=="],
+        )
+        assert_matches_type(UserEmailReplySignalResponse, user_email, path=["response"])
+
+    @pytest.mark.skip(reason="Prism tests are disabled")
+    @parametrize
+    def test_method_reply_signal_with_all_params(self, client: Bountylab) -> None:
+        user_email = client.user_emails.reply_signal(
+            github_ids=["MDQ6VXNlcjU4MzIzMQ=="],
+            email_reply_body="emailReplyBody",
         )
         assert_matches_type(UserEmailReplySignalResponse, user_email, path=["response"])
 
@@ -171,6 +184,8 @@ class TestAsyncUserEmails:
             signals={
                 "email_body": "emailBody",
                 "email_subject": "emailSubject",
+                "reason_for_email_natural_language": "reasonForEmailNaturalLanguage",
+                "repo_reason_for_email": "repoReasonForEmail",
                 "sender": "sender",
             },
         )
@@ -218,6 +233,8 @@ class TestAsyncUserEmails:
             signals={
                 "email_body": "emailBody",
                 "email_subject": "emailSubject",
+                "reason_for_email_natural_language": "reasonForEmailNaturalLanguage",
+                "repo_reason_for_email": "repoReasonForEmail",
                 "sender": "sender",
             },
         )
@@ -254,6 +271,15 @@ class TestAsyncUserEmails:
     async def test_method_reply_signal(self, async_client: AsyncBountylab) -> None:
         user_email = await async_client.user_emails.reply_signal(
             github_ids=["MDQ6VXNlcjU4MzIzMQ=="],
+        )
+        assert_matches_type(UserEmailReplySignalResponse, user_email, path=["response"])
+
+    @pytest.mark.skip(reason="Prism tests are disabled")
+    @parametrize
+    async def test_method_reply_signal_with_all_params(self, async_client: AsyncBountylab) -> None:
+        user_email = await async_client.user_emails.reply_signal(
+            github_ids=["MDQ6VXNlcjU4MzIzMQ=="],
+            email_reply_body="emailReplyBody",
         )
         assert_matches_type(UserEmailReplySignalResponse, user_email, path=["response"])
 

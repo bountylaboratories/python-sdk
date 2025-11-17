@@ -25,5 +25,11 @@ class Signals(TypedDict, total=False):
     email_subject: Annotated[str, PropertyInfo(alias="emailSubject")]
     """Email subject for tracking"""
 
+    reason_for_email_natural_language: Annotated[str, PropertyInfo(alias="reasonForEmailNaturalLanguage")]
+    """Provide the reason for emailing the user in natural language"""
+
+    repo_reason_for_email: Annotated[str, PropertyInfo(alias="repoReasonForEmail")]
+    """Provide the repo ID for why you are emailing the user"""
+
     sender: str
     """Sender identifier for tracking"""
