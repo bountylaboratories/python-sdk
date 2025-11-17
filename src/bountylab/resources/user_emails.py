@@ -143,6 +143,7 @@ class UserEmailsResource(SyncAPIResource):
         self,
         *,
         github_ids: SequenceNotStr[str],
+        email_reply_body: str | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -158,6 +159,8 @@ class UserEmailsResource(SyncAPIResource):
         Args:
           github_ids: Array of GitHub node IDs for users who replied (1-100)
 
+          email_reply_body: The body content of the user's reply email
+
           extra_headers: Send extra headers
 
           extra_query: Add additional query parameters to the request
@@ -168,7 +171,13 @@ class UserEmailsResource(SyncAPIResource):
         """
         return self._post(
             "/api/users/best-email/signal/reply",
-            body=maybe_transform({"github_ids": github_ids}, user_email_reply_signal_params.UserEmailReplySignalParams),
+            body=maybe_transform(
+                {
+                    "github_ids": github_ids,
+                    "email_reply_body": email_reply_body,
+                },
+                user_email_reply_signal_params.UserEmailReplySignalParams,
+            ),
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
@@ -296,6 +305,7 @@ class AsyncUserEmailsResource(AsyncAPIResource):
         self,
         *,
         github_ids: SequenceNotStr[str],
+        email_reply_body: str | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -311,6 +321,8 @@ class AsyncUserEmailsResource(AsyncAPIResource):
         Args:
           github_ids: Array of GitHub node IDs for users who replied (1-100)
 
+          email_reply_body: The body content of the user's reply email
+
           extra_headers: Send extra headers
 
           extra_query: Add additional query parameters to the request
@@ -322,7 +334,11 @@ class AsyncUserEmailsResource(AsyncAPIResource):
         return await self._post(
             "/api/users/best-email/signal/reply",
             body=await async_maybe_transform(
-                {"github_ids": github_ids}, user_email_reply_signal_params.UserEmailReplySignalParams
+                {
+                    "github_ids": github_ids,
+                    "email_reply_body": email_reply_body,
+                },
+                user_email_reply_signal_params.UserEmailReplySignalParams,
             ),
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
