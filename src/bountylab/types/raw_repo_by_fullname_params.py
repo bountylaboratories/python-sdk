@@ -21,6 +21,16 @@ __all__ = [
     "IncludeAttributesContributorsFiltersUnionMember2FilterUnionMember0",
     "IncludeAttributesContributorsFiltersUnionMember2FilterUnionMember1",
     "IncludeAttributesContributorsFiltersUnionMember2FilterUnionMember1Filter",
+    "IncludeAttributesContributorsFiltersUnionMember3",
+    "IncludeAttributesContributorsFiltersUnionMember3Filter",
+    "IncludeAttributesContributorsFiltersUnionMember3FilterUnionMember0",
+    "IncludeAttributesContributorsFiltersUnionMember3FilterUnionMember1",
+    "IncludeAttributesContributorsFiltersUnionMember3FilterUnionMember1Filter",
+    "IncludeAttributesContributorsFiltersUnionMember3FilterUnionMember2",
+    "IncludeAttributesContributorsFiltersUnionMember3FilterUnionMember2Filter",
+    "IncludeAttributesContributorsFiltersUnionMember3FilterUnionMember2FilterUnionMember0",
+    "IncludeAttributesContributorsFiltersUnionMember3FilterUnionMember2FilterUnionMember1",
+    "IncludeAttributesContributorsFiltersUnionMember3FilterUnionMember2FilterUnionMember1Filter",
     "IncludeAttributesStarrers",
     "IncludeAttributesStarrersFilters",
     "IncludeAttributesStarrersFiltersUnionMember0",
@@ -31,6 +41,16 @@ __all__ = [
     "IncludeAttributesStarrersFiltersUnionMember2FilterUnionMember0",
     "IncludeAttributesStarrersFiltersUnionMember2FilterUnionMember1",
     "IncludeAttributesStarrersFiltersUnionMember2FilterUnionMember1Filter",
+    "IncludeAttributesStarrersFiltersUnionMember3",
+    "IncludeAttributesStarrersFiltersUnionMember3Filter",
+    "IncludeAttributesStarrersFiltersUnionMember3FilterUnionMember0",
+    "IncludeAttributesStarrersFiltersUnionMember3FilterUnionMember1",
+    "IncludeAttributesStarrersFiltersUnionMember3FilterUnionMember1Filter",
+    "IncludeAttributesStarrersFiltersUnionMember3FilterUnionMember2",
+    "IncludeAttributesStarrersFiltersUnionMember3FilterUnionMember2Filter",
+    "IncludeAttributesStarrersFiltersUnionMember3FilterUnionMember2FilterUnionMember0",
+    "IncludeAttributesStarrersFiltersUnionMember3FilterUnionMember2FilterUnionMember1",
+    "IncludeAttributesStarrersFiltersUnionMember3FilterUnionMember2FilterUnionMember1Filter",
 ]
 
 
@@ -125,10 +145,112 @@ class IncludeAttributesContributorsFiltersUnionMember2(TypedDict, total=False):
     """Logical operator to combine filters"""
 
 
+class IncludeAttributesContributorsFiltersUnionMember3FilterUnionMember0(TypedDict, total=False):
+    field: Required[Literal["resolvedCountry", "resolvedState", "resolvedCity"]]
+    """Location field to filter on"""
+
+    op: Required[Literal["Eq", "In", "Like"]]
+    """
+    Filter operator: Eq (exact match), In (one of array), Like (SQL LIKE with %
+    wildcards)
+    """
+
+    value: Required[Union[str, SequenceNotStr[str]]]
+    """Filter value - string for Eq/Like, array of strings for In"""
+
+
+class IncludeAttributesContributorsFiltersUnionMember3FilterUnionMember1Filter(TypedDict, total=False):
+    field: Required[Literal["resolvedCountry", "resolvedState", "resolvedCity"]]
+    """Location field to filter on"""
+
+    op: Required[Literal["Eq", "In", "Like"]]
+    """
+    Filter operator: Eq (exact match), In (one of array), Like (SQL LIKE with %
+    wildcards)
+    """
+
+    value: Required[Union[str, SequenceNotStr[str]]]
+    """Filter value - string for Eq/Like, array of strings for In"""
+
+
+class IncludeAttributesContributorsFiltersUnionMember3FilterUnionMember1(TypedDict, total=False):
+    filters: Required[Iterable[IncludeAttributesContributorsFiltersUnionMember3FilterUnionMember1Filter]]
+
+    op: Required[Literal["And", "Or"]]
+    """Logical operator to combine filters"""
+
+
+class IncludeAttributesContributorsFiltersUnionMember3FilterUnionMember2FilterUnionMember0(TypedDict, total=False):
+    field: Required[Literal["resolvedCountry", "resolvedState", "resolvedCity"]]
+    """Location field to filter on"""
+
+    op: Required[Literal["Eq", "In", "Like"]]
+    """
+    Filter operator: Eq (exact match), In (one of array), Like (SQL LIKE with %
+    wildcards)
+    """
+
+    value: Required[Union[str, SequenceNotStr[str]]]
+    """Filter value - string for Eq/Like, array of strings for In"""
+
+
+class IncludeAttributesContributorsFiltersUnionMember3FilterUnionMember2FilterUnionMember1Filter(
+    TypedDict, total=False
+):
+    field: Required[Literal["resolvedCountry", "resolvedState", "resolvedCity"]]
+    """Location field to filter on"""
+
+    op: Required[Literal["Eq", "In", "Like"]]
+    """
+    Filter operator: Eq (exact match), In (one of array), Like (SQL LIKE with %
+    wildcards)
+    """
+
+    value: Required[Union[str, SequenceNotStr[str]]]
+    """Filter value - string for Eq/Like, array of strings for In"""
+
+
+class IncludeAttributesContributorsFiltersUnionMember3FilterUnionMember2FilterUnionMember1(TypedDict, total=False):
+    filters: Required[
+        Iterable[IncludeAttributesContributorsFiltersUnionMember3FilterUnionMember2FilterUnionMember1Filter]
+    ]
+
+    op: Required[Literal["And", "Or"]]
+    """Logical operator to combine filters"""
+
+
+IncludeAttributesContributorsFiltersUnionMember3FilterUnionMember2Filter: TypeAlias = Union[
+    IncludeAttributesContributorsFiltersUnionMember3FilterUnionMember2FilterUnionMember0,
+    IncludeAttributesContributorsFiltersUnionMember3FilterUnionMember2FilterUnionMember1,
+]
+
+
+class IncludeAttributesContributorsFiltersUnionMember3FilterUnionMember2(TypedDict, total=False):
+    filters: Required[Iterable[IncludeAttributesContributorsFiltersUnionMember3FilterUnionMember2Filter]]
+
+    op: Required[Literal["And", "Or"]]
+    """Logical operator to combine filters"""
+
+
+IncludeAttributesContributorsFiltersUnionMember3Filter: TypeAlias = Union[
+    IncludeAttributesContributorsFiltersUnionMember3FilterUnionMember0,
+    IncludeAttributesContributorsFiltersUnionMember3FilterUnionMember1,
+    IncludeAttributesContributorsFiltersUnionMember3FilterUnionMember2,
+]
+
+
+class IncludeAttributesContributorsFiltersUnionMember3(TypedDict, total=False):
+    filters: Required[Iterable[IncludeAttributesContributorsFiltersUnionMember3Filter]]
+
+    op: Required[Literal["And", "Or"]]
+    """Logical operator to combine filters"""
+
+
 IncludeAttributesContributorsFilters: TypeAlias = Union[
     IncludeAttributesContributorsFiltersUnionMember0,
     IncludeAttributesContributorsFiltersUnionMember1,
     IncludeAttributesContributorsFiltersUnionMember2,
+    IncludeAttributesContributorsFiltersUnionMember3,
 ]
 
 
@@ -230,10 +352,108 @@ class IncludeAttributesStarrersFiltersUnionMember2(TypedDict, total=False):
     """Logical operator to combine filters"""
 
 
+class IncludeAttributesStarrersFiltersUnionMember3FilterUnionMember0(TypedDict, total=False):
+    field: Required[Literal["resolvedCountry", "resolvedState", "resolvedCity"]]
+    """Location field to filter on"""
+
+    op: Required[Literal["Eq", "In", "Like"]]
+    """
+    Filter operator: Eq (exact match), In (one of array), Like (SQL LIKE with %
+    wildcards)
+    """
+
+    value: Required[Union[str, SequenceNotStr[str]]]
+    """Filter value - string for Eq/Like, array of strings for In"""
+
+
+class IncludeAttributesStarrersFiltersUnionMember3FilterUnionMember1Filter(TypedDict, total=False):
+    field: Required[Literal["resolvedCountry", "resolvedState", "resolvedCity"]]
+    """Location field to filter on"""
+
+    op: Required[Literal["Eq", "In", "Like"]]
+    """
+    Filter operator: Eq (exact match), In (one of array), Like (SQL LIKE with %
+    wildcards)
+    """
+
+    value: Required[Union[str, SequenceNotStr[str]]]
+    """Filter value - string for Eq/Like, array of strings for In"""
+
+
+class IncludeAttributesStarrersFiltersUnionMember3FilterUnionMember1(TypedDict, total=False):
+    filters: Required[Iterable[IncludeAttributesStarrersFiltersUnionMember3FilterUnionMember1Filter]]
+
+    op: Required[Literal["And", "Or"]]
+    """Logical operator to combine filters"""
+
+
+class IncludeAttributesStarrersFiltersUnionMember3FilterUnionMember2FilterUnionMember0(TypedDict, total=False):
+    field: Required[Literal["resolvedCountry", "resolvedState", "resolvedCity"]]
+    """Location field to filter on"""
+
+    op: Required[Literal["Eq", "In", "Like"]]
+    """
+    Filter operator: Eq (exact match), In (one of array), Like (SQL LIKE with %
+    wildcards)
+    """
+
+    value: Required[Union[str, SequenceNotStr[str]]]
+    """Filter value - string for Eq/Like, array of strings for In"""
+
+
+class IncludeAttributesStarrersFiltersUnionMember3FilterUnionMember2FilterUnionMember1Filter(TypedDict, total=False):
+    field: Required[Literal["resolvedCountry", "resolvedState", "resolvedCity"]]
+    """Location field to filter on"""
+
+    op: Required[Literal["Eq", "In", "Like"]]
+    """
+    Filter operator: Eq (exact match), In (one of array), Like (SQL LIKE with %
+    wildcards)
+    """
+
+    value: Required[Union[str, SequenceNotStr[str]]]
+    """Filter value - string for Eq/Like, array of strings for In"""
+
+
+class IncludeAttributesStarrersFiltersUnionMember3FilterUnionMember2FilterUnionMember1(TypedDict, total=False):
+    filters: Required[Iterable[IncludeAttributesStarrersFiltersUnionMember3FilterUnionMember2FilterUnionMember1Filter]]
+
+    op: Required[Literal["And", "Or"]]
+    """Logical operator to combine filters"""
+
+
+IncludeAttributesStarrersFiltersUnionMember3FilterUnionMember2Filter: TypeAlias = Union[
+    IncludeAttributesStarrersFiltersUnionMember3FilterUnionMember2FilterUnionMember0,
+    IncludeAttributesStarrersFiltersUnionMember3FilterUnionMember2FilterUnionMember1,
+]
+
+
+class IncludeAttributesStarrersFiltersUnionMember3FilterUnionMember2(TypedDict, total=False):
+    filters: Required[Iterable[IncludeAttributesStarrersFiltersUnionMember3FilterUnionMember2Filter]]
+
+    op: Required[Literal["And", "Or"]]
+    """Logical operator to combine filters"""
+
+
+IncludeAttributesStarrersFiltersUnionMember3Filter: TypeAlias = Union[
+    IncludeAttributesStarrersFiltersUnionMember3FilterUnionMember0,
+    IncludeAttributesStarrersFiltersUnionMember3FilterUnionMember1,
+    IncludeAttributesStarrersFiltersUnionMember3FilterUnionMember2,
+]
+
+
+class IncludeAttributesStarrersFiltersUnionMember3(TypedDict, total=False):
+    filters: Required[Iterable[IncludeAttributesStarrersFiltersUnionMember3Filter]]
+
+    op: Required[Literal["And", "Or"]]
+    """Logical operator to combine filters"""
+
+
 IncludeAttributesStarrersFilters: TypeAlias = Union[
     IncludeAttributesStarrersFiltersUnionMember0,
     IncludeAttributesStarrersFiltersUnionMember1,
     IncludeAttributesStarrersFiltersUnionMember2,
+    IncludeAttributesStarrersFiltersUnionMember3,
 ]
 
 

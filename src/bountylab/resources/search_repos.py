@@ -51,6 +51,7 @@ class SearchReposResource(SyncAPIResource):
         filter_user_include_attributes: bool | Omit = omit,
         include_attributes: search_repo_natural_language_params.IncludeAttributes | Omit = omit,
         max_results: int | Omit = omit,
+        rank_by: search_repo_natural_language_params.RankBy | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -75,6 +76,10 @@ class SearchReposResource(SyncAPIResource):
 
           max_results: Maximum number of results to return (default: 100, max: 1000)
 
+          rank_by: Custom ranking formula (AST expression). If not provided, uses default
+              log-normalized 70/20/10 formula (70% semantic similarity, 20% popularity, 10%
+              activity). Pure ANN queries skip multi-query for better performance.
+
           extra_headers: Send extra headers
 
           extra_query: Add additional query parameters to the request
@@ -91,6 +96,7 @@ class SearchReposResource(SyncAPIResource):
                     "filter_user_include_attributes": filter_user_include_attributes,
                     "include_attributes": include_attributes,
                     "max_results": max_results,
+                    "rank_by": rank_by,
                 },
                 search_repo_natural_language_params.SearchRepoNaturalLanguageParams,
             ),
@@ -107,6 +113,7 @@ class SearchReposResource(SyncAPIResource):
         filters: Optional[search_repo_search_params.Filters] | Omit = omit,
         include_attributes: search_repo_search_params.IncludeAttributes | Omit = omit,
         max_results: int | Omit = omit,
+        rank_by: search_repo_search_params.RankBy | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -143,6 +150,10 @@ class SearchReposResource(SyncAPIResource):
 
           max_results: Maximum number of results to return (default: 100, max: 1000)
 
+          rank_by: Custom ranking formula (AST expression). If not provided, uses default
+              log-normalized 70/20/10 formula (70% semantic similarity, 20% popularity, 10%
+              activity). Pure ANN queries skip multi-query for better performance.
+
           extra_headers: Send extra headers
 
           extra_query: Add additional query parameters to the request
@@ -159,6 +170,7 @@ class SearchReposResource(SyncAPIResource):
                     "filters": filters,
                     "include_attributes": include_attributes,
                     "max_results": max_results,
+                    "rank_by": rank_by,
                 },
                 search_repo_search_params.SearchRepoSearchParams,
             ),
@@ -196,6 +208,7 @@ class AsyncSearchReposResource(AsyncAPIResource):
         filter_user_include_attributes: bool | Omit = omit,
         include_attributes: search_repo_natural_language_params.IncludeAttributes | Omit = omit,
         max_results: int | Omit = omit,
+        rank_by: search_repo_natural_language_params.RankBy | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -220,6 +233,10 @@ class AsyncSearchReposResource(AsyncAPIResource):
 
           max_results: Maximum number of results to return (default: 100, max: 1000)
 
+          rank_by: Custom ranking formula (AST expression). If not provided, uses default
+              log-normalized 70/20/10 formula (70% semantic similarity, 20% popularity, 10%
+              activity). Pure ANN queries skip multi-query for better performance.
+
           extra_headers: Send extra headers
 
           extra_query: Add additional query parameters to the request
@@ -236,6 +253,7 @@ class AsyncSearchReposResource(AsyncAPIResource):
                     "filter_user_include_attributes": filter_user_include_attributes,
                     "include_attributes": include_attributes,
                     "max_results": max_results,
+                    "rank_by": rank_by,
                 },
                 search_repo_natural_language_params.SearchRepoNaturalLanguageParams,
             ),
@@ -252,6 +270,7 @@ class AsyncSearchReposResource(AsyncAPIResource):
         filters: Optional[search_repo_search_params.Filters] | Omit = omit,
         include_attributes: search_repo_search_params.IncludeAttributes | Omit = omit,
         max_results: int | Omit = omit,
+        rank_by: search_repo_search_params.RankBy | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -288,6 +307,10 @@ class AsyncSearchReposResource(AsyncAPIResource):
 
           max_results: Maximum number of results to return (default: 100, max: 1000)
 
+          rank_by: Custom ranking formula (AST expression). If not provided, uses default
+              log-normalized 70/20/10 formula (70% semantic similarity, 20% popularity, 10%
+              activity). Pure ANN queries skip multi-query for better performance.
+
           extra_headers: Send extra headers
 
           extra_query: Add additional query parameters to the request
@@ -304,6 +327,7 @@ class AsyncSearchReposResource(AsyncAPIResource):
                     "filters": filters,
                     "include_attributes": include_attributes,
                     "max_results": max_results,
+                    "rank_by": rank_by,
                 },
                 search_repo_search_params.SearchRepoSearchParams,
             ),
