@@ -92,12 +92,6 @@ class UserContributesEdgeContributorsEdge(BaseModel):
     display_name: Optional[str] = FieldInfo(alias="displayName", default=None)
     """User display name"""
 
-    emails: Optional[List[str]] = None
-    """
-    Email addresses (DEPRECATED: Use /api/users/best-email endpoint instead for
-    intelligent email selection)
-    """
-
     embedded_at: Optional[str] = FieldInfo(alias="embeddedAt", default=None)
     """ISO 8601 timestamp when metadata was extracted"""
 
@@ -171,12 +165,6 @@ class UserContributesEdgeOwner(BaseModel):
 
     display_name: Optional[str] = FieldInfo(alias="displayName", default=None)
     """User display name"""
-
-    emails: Optional[List[str]] = None
-    """
-    Email addresses (DEPRECATED: Use /api/users/best-email endpoint instead for
-    intelligent email selection)
-    """
 
     embedded_at: Optional[str] = FieldInfo(alias="embeddedAt", default=None)
     """ISO 8601 timestamp when metadata was extracted"""
@@ -257,12 +245,6 @@ class UserContributesEdgeStarrersEdge(BaseModel):
 
     display_name: Optional[str] = FieldInfo(alias="displayName", default=None)
     """User display name"""
-
-    emails: Optional[List[str]] = None
-    """
-    Email addresses (DEPRECATED: Use /api/users/best-email endpoint instead for
-    intelligent email selection)
-    """
 
     embedded_at: Optional[str] = FieldInfo(alias="embeddedAt", default=None)
     """ISO 8601 timestamp when metadata was extracted"""
@@ -441,12 +423,6 @@ class UserFollowersEdge(BaseModel):
     display_name: Optional[str] = FieldInfo(alias="displayName", default=None)
     """User display name"""
 
-    emails: Optional[List[str]] = None
-    """
-    Email addresses (DEPRECATED: Use /api/users/best-email endpoint instead for
-    intelligent email selection)
-    """
-
     embedded_at: Optional[str] = FieldInfo(alias="embeddedAt", default=None)
     """ISO 8601 timestamp when metadata was extracted"""
 
@@ -519,12 +495,6 @@ class UserFollowingEdge(BaseModel):
     display_name: Optional[str] = FieldInfo(alias="displayName", default=None)
     """User display name"""
 
-    emails: Optional[List[str]] = None
-    """
-    Email addresses (DEPRECATED: Use /api/users/best-email endpoint instead for
-    intelligent email selection)
-    """
-
     embedded_at: Optional[str] = FieldInfo(alias="embeddedAt", default=None)
     """ISO 8601 timestamp when metadata was extracted"""
 
@@ -596,12 +566,6 @@ class UserOwnsEdgeContributorsEdge(BaseModel):
 
     display_name: Optional[str] = FieldInfo(alias="displayName", default=None)
     """User display name"""
-
-    emails: Optional[List[str]] = None
-    """
-    Email addresses (DEPRECATED: Use /api/users/best-email endpoint instead for
-    intelligent email selection)
-    """
 
     embedded_at: Optional[str] = FieldInfo(alias="embeddedAt", default=None)
     """ISO 8601 timestamp when metadata was extracted"""
@@ -676,12 +640,6 @@ class UserOwnsEdgeOwner(BaseModel):
 
     display_name: Optional[str] = FieldInfo(alias="displayName", default=None)
     """User display name"""
-
-    emails: Optional[List[str]] = None
-    """
-    Email addresses (DEPRECATED: Use /api/users/best-email endpoint instead for
-    intelligent email selection)
-    """
 
     embedded_at: Optional[str] = FieldInfo(alias="embeddedAt", default=None)
     """ISO 8601 timestamp when metadata was extracted"""
@@ -760,12 +718,6 @@ class UserOwnsEdgeStarrersEdge(BaseModel):
 
     display_name: Optional[str] = FieldInfo(alias="displayName", default=None)
     """User display name"""
-
-    emails: Optional[List[str]] = None
-    """
-    Email addresses (DEPRECATED: Use /api/users/best-email endpoint instead for
-    intelligent email selection)
-    """
 
     embedded_at: Optional[str] = FieldInfo(alias="embeddedAt", default=None)
     """ISO 8601 timestamp when metadata was extracted"""
@@ -928,12 +880,6 @@ class UserStarsEdgeContributorsEdge(BaseModel):
     display_name: Optional[str] = FieldInfo(alias="displayName", default=None)
     """User display name"""
 
-    emails: Optional[List[str]] = None
-    """
-    Email addresses (DEPRECATED: Use /api/users/best-email endpoint instead for
-    intelligent email selection)
-    """
-
     embedded_at: Optional[str] = FieldInfo(alias="embeddedAt", default=None)
     """ISO 8601 timestamp when metadata was extracted"""
 
@@ -1007,12 +953,6 @@ class UserStarsEdgeOwner(BaseModel):
 
     display_name: Optional[str] = FieldInfo(alias="displayName", default=None)
     """User display name"""
-
-    emails: Optional[List[str]] = None
-    """
-    Email addresses (DEPRECATED: Use /api/users/best-email endpoint instead for
-    intelligent email selection)
-    """
 
     embedded_at: Optional[str] = FieldInfo(alias="embeddedAt", default=None)
     """ISO 8601 timestamp when metadata was extracted"""
@@ -1091,12 +1031,6 @@ class UserStarsEdgeStarrersEdge(BaseModel):
 
     display_name: Optional[str] = FieldInfo(alias="displayName", default=None)
     """User display name"""
-
-    emails: Optional[List[str]] = None
-    """
-    Email addresses (DEPRECATED: Use /api/users/best-email endpoint instead for
-    intelligent email selection)
-    """
 
     embedded_at: Optional[str] = FieldInfo(alias="embeddedAt", default=None)
     """ISO 8601 timestamp when metadata was extracted"""
@@ -1252,12 +1186,6 @@ class User(BaseModel):
 
     display_name: Optional[str] = FieldInfo(alias="displayName", default=None)
     """User display name"""
-
-    emails: Optional[List[str]] = None
-    """
-    Email addresses (DEPRECATED: Use /api/users/best-email endpoint instead for
-    intelligent email selection)
-    """
 
     embedded_at: Optional[str] = FieldInfo(alias="embeddedAt", default=None)
     """ISO 8601 timestamp when metadata was extracted"""
