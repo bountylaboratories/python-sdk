@@ -213,6 +213,13 @@ class RepoStarsResponseUserContributesEdgeContributorsEdge(BaseModel):
     display_name: Optional[str] = FieldInfo(alias="displayName", default=None)
     """User display name"""
 
+    emails: Optional[List[str]] = None
+    """
+    Obfuscated email addresses showing only the last 2 characters of the local part
+    and full domain (e.g., "\\**\\**\\**oe@gmail.com"). Use /api/users/best-email endpoint
+    for unobfuscated email access with intelligent selection.
+    """
+
     embedded_at: Optional[str] = FieldInfo(alias="embeddedAt", default=None)
     """ISO 8601 timestamp when metadata was extracted"""
 
@@ -286,6 +293,13 @@ class RepoStarsResponseUserContributesEdgeOwner(BaseModel):
 
     display_name: Optional[str] = FieldInfo(alias="displayName", default=None)
     """User display name"""
+
+    emails: Optional[List[str]] = None
+    """
+    Obfuscated email addresses showing only the last 2 characters of the local part
+    and full domain (e.g., "\\**\\**\\**oe@gmail.com"). Use /api/users/best-email endpoint
+    for unobfuscated email access with intelligent selection.
+    """
 
     embedded_at: Optional[str] = FieldInfo(alias="embeddedAt", default=None)
     """ISO 8601 timestamp when metadata was extracted"""
@@ -366,6 +380,13 @@ class RepoStarsResponseUserContributesEdgeStarrersEdge(BaseModel):
 
     display_name: Optional[str] = FieldInfo(alias="displayName", default=None)
     """User display name"""
+
+    emails: Optional[List[str]] = None
+    """
+    Obfuscated email addresses showing only the last 2 characters of the local part
+    and full domain (e.g., "\\**\\**\\**oe@gmail.com"). Use /api/users/best-email endpoint
+    for unobfuscated email access with intelligent selection.
+    """
 
     embedded_at: Optional[str] = FieldInfo(alias="embeddedAt", default=None)
     """ISO 8601 timestamp when metadata was extracted"""
@@ -546,6 +567,13 @@ class RepoStarsResponseUserFollowersEdge(BaseModel):
     display_name: Optional[str] = FieldInfo(alias="displayName", default=None)
     """User display name"""
 
+    emails: Optional[List[str]] = None
+    """
+    Obfuscated email addresses showing only the last 2 characters of the local part
+    and full domain (e.g., "\\**\\**\\**oe@gmail.com"). Use /api/users/best-email endpoint
+    for unobfuscated email access with intelligent selection.
+    """
+
     embedded_at: Optional[str] = FieldInfo(alias="embeddedAt", default=None)
     """ISO 8601 timestamp when metadata was extracted"""
 
@@ -619,6 +647,13 @@ class RepoStarsResponseUserFollowingEdge(BaseModel):
 
     display_name: Optional[str] = FieldInfo(alias="displayName", default=None)
     """User display name"""
+
+    emails: Optional[List[str]] = None
+    """
+    Obfuscated email addresses showing only the last 2 characters of the local part
+    and full domain (e.g., "\\**\\**\\**oe@gmail.com"). Use /api/users/best-email endpoint
+    for unobfuscated email access with intelligent selection.
+    """
 
     embedded_at: Optional[str] = FieldInfo(alias="embeddedAt", default=None)
     """ISO 8601 timestamp when metadata was extracted"""
@@ -694,6 +729,13 @@ class RepoStarsResponseUserOwnsEdgeContributorsEdge(BaseModel):
     display_name: Optional[str] = FieldInfo(alias="displayName", default=None)
     """User display name"""
 
+    emails: Optional[List[str]] = None
+    """
+    Obfuscated email addresses showing only the last 2 characters of the local part
+    and full domain (e.g., "\\**\\**\\**oe@gmail.com"). Use /api/users/best-email endpoint
+    for unobfuscated email access with intelligent selection.
+    """
+
     embedded_at: Optional[str] = FieldInfo(alias="embeddedAt", default=None)
     """ISO 8601 timestamp when metadata was extracted"""
 
@@ -767,6 +809,13 @@ class RepoStarsResponseUserOwnsEdgeOwner(BaseModel):
 
     display_name: Optional[str] = FieldInfo(alias="displayName", default=None)
     """User display name"""
+
+    emails: Optional[List[str]] = None
+    """
+    Obfuscated email addresses showing only the last 2 characters of the local part
+    and full domain (e.g., "\\**\\**\\**oe@gmail.com"). Use /api/users/best-email endpoint
+    for unobfuscated email access with intelligent selection.
+    """
 
     embedded_at: Optional[str] = FieldInfo(alias="embeddedAt", default=None)
     """ISO 8601 timestamp when metadata was extracted"""
@@ -847,6 +896,13 @@ class RepoStarsResponseUserOwnsEdgeStarrersEdge(BaseModel):
 
     display_name: Optional[str] = FieldInfo(alias="displayName", default=None)
     """User display name"""
+
+    emails: Optional[List[str]] = None
+    """
+    Obfuscated email addresses showing only the last 2 characters of the local part
+    and full domain (e.g., "\\**\\**\\**oe@gmail.com"). Use /api/users/best-email endpoint
+    for unobfuscated email access with intelligent selection.
+    """
 
     embedded_at: Optional[str] = FieldInfo(alias="embeddedAt", default=None)
     """ISO 8601 timestamp when metadata was extracted"""
@@ -1009,6 +1065,13 @@ class RepoStarsResponseUserStarsEdgeContributorsEdge(BaseModel):
     display_name: Optional[str] = FieldInfo(alias="displayName", default=None)
     """User display name"""
 
+    emails: Optional[List[str]] = None
+    """
+    Obfuscated email addresses showing only the last 2 characters of the local part
+    and full domain (e.g., "\\**\\**\\**oe@gmail.com"). Use /api/users/best-email endpoint
+    for unobfuscated email access with intelligent selection.
+    """
+
     embedded_at: Optional[str] = FieldInfo(alias="embeddedAt", default=None)
     """ISO 8601 timestamp when metadata was extracted"""
 
@@ -1082,6 +1145,13 @@ class RepoStarsResponseUserStarsEdgeOwner(BaseModel):
 
     display_name: Optional[str] = FieldInfo(alias="displayName", default=None)
     """User display name"""
+
+    emails: Optional[List[str]] = None
+    """
+    Obfuscated email addresses showing only the last 2 characters of the local part
+    and full domain (e.g., "\\**\\**\\**oe@gmail.com"). Use /api/users/best-email endpoint
+    for unobfuscated email access with intelligent selection.
+    """
 
     embedded_at: Optional[str] = FieldInfo(alias="embeddedAt", default=None)
     """ISO 8601 timestamp when metadata was extracted"""
@@ -1162,6 +1232,13 @@ class RepoStarsResponseUserStarsEdgeStarrersEdge(BaseModel):
 
     display_name: Optional[str] = FieldInfo(alias="displayName", default=None)
     """User display name"""
+
+    emails: Optional[List[str]] = None
+    """
+    Obfuscated email addresses showing only the last 2 characters of the local part
+    and full domain (e.g., "\\**\\**\\**oe@gmail.com"). Use /api/users/best-email endpoint
+    for unobfuscated email access with intelligent selection.
+    """
 
     embedded_at: Optional[str] = FieldInfo(alias="embeddedAt", default=None)
     """ISO 8601 timestamp when metadata was extracted"""
@@ -1318,6 +1395,13 @@ class RepoStarsResponseUser(BaseModel):
     display_name: Optional[str] = FieldInfo(alias="displayName", default=None)
     """User display name"""
 
+    emails: Optional[List[str]] = None
+    """
+    Obfuscated email addresses showing only the last 2 characters of the local part
+    and full domain (e.g., "\\**\\**\\**oe@gmail.com"). Use /api/users/best-email endpoint
+    for unobfuscated email access with intelligent selection.
+    """
+
     embedded_at: Optional[str] = FieldInfo(alias="embeddedAt", default=None)
     """ISO 8601 timestamp when metadata was extracted"""
 
@@ -1404,6 +1488,13 @@ class RepoContributesResponseUserContributesEdgeContributorsEdge(BaseModel):
     display_name: Optional[str] = FieldInfo(alias="displayName", default=None)
     """User display name"""
 
+    emails: Optional[List[str]] = None
+    """
+    Obfuscated email addresses showing only the last 2 characters of the local part
+    and full domain (e.g., "\\**\\**\\**oe@gmail.com"). Use /api/users/best-email endpoint
+    for unobfuscated email access with intelligent selection.
+    """
+
     embedded_at: Optional[str] = FieldInfo(alias="embeddedAt", default=None)
     """ISO 8601 timestamp when metadata was extracted"""
 
@@ -1477,6 +1568,13 @@ class RepoContributesResponseUserContributesEdgeOwner(BaseModel):
 
     display_name: Optional[str] = FieldInfo(alias="displayName", default=None)
     """User display name"""
+
+    emails: Optional[List[str]] = None
+    """
+    Obfuscated email addresses showing only the last 2 characters of the local part
+    and full domain (e.g., "\\**\\**\\**oe@gmail.com"). Use /api/users/best-email endpoint
+    for unobfuscated email access with intelligent selection.
+    """
 
     embedded_at: Optional[str] = FieldInfo(alias="embeddedAt", default=None)
     """ISO 8601 timestamp when metadata was extracted"""
@@ -1557,6 +1655,13 @@ class RepoContributesResponseUserContributesEdgeStarrersEdge(BaseModel):
 
     display_name: Optional[str] = FieldInfo(alias="displayName", default=None)
     """User display name"""
+
+    emails: Optional[List[str]] = None
+    """
+    Obfuscated email addresses showing only the last 2 characters of the local part
+    and full domain (e.g., "\\**\\**\\**oe@gmail.com"). Use /api/users/best-email endpoint
+    for unobfuscated email access with intelligent selection.
+    """
 
     embedded_at: Optional[str] = FieldInfo(alias="embeddedAt", default=None)
     """ISO 8601 timestamp when metadata was extracted"""
@@ -1737,6 +1842,13 @@ class RepoContributesResponseUserFollowersEdge(BaseModel):
     display_name: Optional[str] = FieldInfo(alias="displayName", default=None)
     """User display name"""
 
+    emails: Optional[List[str]] = None
+    """
+    Obfuscated email addresses showing only the last 2 characters of the local part
+    and full domain (e.g., "\\**\\**\\**oe@gmail.com"). Use /api/users/best-email endpoint
+    for unobfuscated email access with intelligent selection.
+    """
+
     embedded_at: Optional[str] = FieldInfo(alias="embeddedAt", default=None)
     """ISO 8601 timestamp when metadata was extracted"""
 
@@ -1810,6 +1922,13 @@ class RepoContributesResponseUserFollowingEdge(BaseModel):
 
     display_name: Optional[str] = FieldInfo(alias="displayName", default=None)
     """User display name"""
+
+    emails: Optional[List[str]] = None
+    """
+    Obfuscated email addresses showing only the last 2 characters of the local part
+    and full domain (e.g., "\\**\\**\\**oe@gmail.com"). Use /api/users/best-email endpoint
+    for unobfuscated email access with intelligent selection.
+    """
 
     embedded_at: Optional[str] = FieldInfo(alias="embeddedAt", default=None)
     """ISO 8601 timestamp when metadata was extracted"""
@@ -1885,6 +2004,13 @@ class RepoContributesResponseUserOwnsEdgeContributorsEdge(BaseModel):
     display_name: Optional[str] = FieldInfo(alias="displayName", default=None)
     """User display name"""
 
+    emails: Optional[List[str]] = None
+    """
+    Obfuscated email addresses showing only the last 2 characters of the local part
+    and full domain (e.g., "\\**\\**\\**oe@gmail.com"). Use /api/users/best-email endpoint
+    for unobfuscated email access with intelligent selection.
+    """
+
     embedded_at: Optional[str] = FieldInfo(alias="embeddedAt", default=None)
     """ISO 8601 timestamp when metadata was extracted"""
 
@@ -1958,6 +2084,13 @@ class RepoContributesResponseUserOwnsEdgeOwner(BaseModel):
 
     display_name: Optional[str] = FieldInfo(alias="displayName", default=None)
     """User display name"""
+
+    emails: Optional[List[str]] = None
+    """
+    Obfuscated email addresses showing only the last 2 characters of the local part
+    and full domain (e.g., "\\**\\**\\**oe@gmail.com"). Use /api/users/best-email endpoint
+    for unobfuscated email access with intelligent selection.
+    """
 
     embedded_at: Optional[str] = FieldInfo(alias="embeddedAt", default=None)
     """ISO 8601 timestamp when metadata was extracted"""
@@ -2038,6 +2171,13 @@ class RepoContributesResponseUserOwnsEdgeStarrersEdge(BaseModel):
 
     display_name: Optional[str] = FieldInfo(alias="displayName", default=None)
     """User display name"""
+
+    emails: Optional[List[str]] = None
+    """
+    Obfuscated email addresses showing only the last 2 characters of the local part
+    and full domain (e.g., "\\**\\**\\**oe@gmail.com"). Use /api/users/best-email endpoint
+    for unobfuscated email access with intelligent selection.
+    """
 
     embedded_at: Optional[str] = FieldInfo(alias="embeddedAt", default=None)
     """ISO 8601 timestamp when metadata was extracted"""
@@ -2202,6 +2342,13 @@ class RepoContributesResponseUserStarsEdgeContributorsEdge(BaseModel):
     display_name: Optional[str] = FieldInfo(alias="displayName", default=None)
     """User display name"""
 
+    emails: Optional[List[str]] = None
+    """
+    Obfuscated email addresses showing only the last 2 characters of the local part
+    and full domain (e.g., "\\**\\**\\**oe@gmail.com"). Use /api/users/best-email endpoint
+    for unobfuscated email access with intelligent selection.
+    """
+
     embedded_at: Optional[str] = FieldInfo(alias="embeddedAt", default=None)
     """ISO 8601 timestamp when metadata was extracted"""
 
@@ -2275,6 +2422,13 @@ class RepoContributesResponseUserStarsEdgeOwner(BaseModel):
 
     display_name: Optional[str] = FieldInfo(alias="displayName", default=None)
     """User display name"""
+
+    emails: Optional[List[str]] = None
+    """
+    Obfuscated email addresses showing only the last 2 characters of the local part
+    and full domain (e.g., "\\**\\**\\**oe@gmail.com"). Use /api/users/best-email endpoint
+    for unobfuscated email access with intelligent selection.
+    """
 
     embedded_at: Optional[str] = FieldInfo(alias="embeddedAt", default=None)
     """ISO 8601 timestamp when metadata was extracted"""
@@ -2355,6 +2509,13 @@ class RepoContributesResponseUserStarsEdgeStarrersEdge(BaseModel):
 
     display_name: Optional[str] = FieldInfo(alias="displayName", default=None)
     """User display name"""
+
+    emails: Optional[List[str]] = None
+    """
+    Obfuscated email addresses showing only the last 2 characters of the local part
+    and full domain (e.g., "\\**\\**\\**oe@gmail.com"). Use /api/users/best-email endpoint
+    for unobfuscated email access with intelligent selection.
+    """
 
     embedded_at: Optional[str] = FieldInfo(alias="embeddedAt", default=None)
     """ISO 8601 timestamp when metadata was extracted"""
@@ -2513,6 +2674,13 @@ class RepoContributesResponseUser(BaseModel):
     display_name: Optional[str] = FieldInfo(alias="displayName", default=None)
     """User display name"""
 
+    emails: Optional[List[str]] = None
+    """
+    Obfuscated email addresses showing only the last 2 characters of the local part
+    and full domain (e.g., "\\**\\**\\**oe@gmail.com"). Use /api/users/best-email endpoint
+    for unobfuscated email access with intelligent selection.
+    """
+
     embedded_at: Optional[str] = FieldInfo(alias="embeddedAt", default=None)
     """ISO 8601 timestamp when metadata was extracted"""
 
@@ -2602,6 +2770,13 @@ class RepoOwnsResponseUserContributesEdgeContributorsEdge(BaseModel):
     display_name: Optional[str] = FieldInfo(alias="displayName", default=None)
     """User display name"""
 
+    emails: Optional[List[str]] = None
+    """
+    Obfuscated email addresses showing only the last 2 characters of the local part
+    and full domain (e.g., "\\**\\**\\**oe@gmail.com"). Use /api/users/best-email endpoint
+    for unobfuscated email access with intelligent selection.
+    """
+
     embedded_at: Optional[str] = FieldInfo(alias="embeddedAt", default=None)
     """ISO 8601 timestamp when metadata was extracted"""
 
@@ -2675,6 +2850,13 @@ class RepoOwnsResponseUserContributesEdgeOwner(BaseModel):
 
     display_name: Optional[str] = FieldInfo(alias="displayName", default=None)
     """User display name"""
+
+    emails: Optional[List[str]] = None
+    """
+    Obfuscated email addresses showing only the last 2 characters of the local part
+    and full domain (e.g., "\\**\\**\\**oe@gmail.com"). Use /api/users/best-email endpoint
+    for unobfuscated email access with intelligent selection.
+    """
 
     embedded_at: Optional[str] = FieldInfo(alias="embeddedAt", default=None)
     """ISO 8601 timestamp when metadata was extracted"""
@@ -2755,6 +2937,13 @@ class RepoOwnsResponseUserContributesEdgeStarrersEdge(BaseModel):
 
     display_name: Optional[str] = FieldInfo(alias="displayName", default=None)
     """User display name"""
+
+    emails: Optional[List[str]] = None
+    """
+    Obfuscated email addresses showing only the last 2 characters of the local part
+    and full domain (e.g., "\\**\\**\\**oe@gmail.com"). Use /api/users/best-email endpoint
+    for unobfuscated email access with intelligent selection.
+    """
 
     embedded_at: Optional[str] = FieldInfo(alias="embeddedAt", default=None)
     """ISO 8601 timestamp when metadata was extracted"""
@@ -2935,6 +3124,13 @@ class RepoOwnsResponseUserFollowersEdge(BaseModel):
     display_name: Optional[str] = FieldInfo(alias="displayName", default=None)
     """User display name"""
 
+    emails: Optional[List[str]] = None
+    """
+    Obfuscated email addresses showing only the last 2 characters of the local part
+    and full domain (e.g., "\\**\\**\\**oe@gmail.com"). Use /api/users/best-email endpoint
+    for unobfuscated email access with intelligent selection.
+    """
+
     embedded_at: Optional[str] = FieldInfo(alias="embeddedAt", default=None)
     """ISO 8601 timestamp when metadata was extracted"""
 
@@ -3008,6 +3204,13 @@ class RepoOwnsResponseUserFollowingEdge(BaseModel):
 
     display_name: Optional[str] = FieldInfo(alias="displayName", default=None)
     """User display name"""
+
+    emails: Optional[List[str]] = None
+    """
+    Obfuscated email addresses showing only the last 2 characters of the local part
+    and full domain (e.g., "\\**\\**\\**oe@gmail.com"). Use /api/users/best-email endpoint
+    for unobfuscated email access with intelligent selection.
+    """
 
     embedded_at: Optional[str] = FieldInfo(alias="embeddedAt", default=None)
     """ISO 8601 timestamp when metadata was extracted"""
@@ -3083,6 +3286,13 @@ class RepoOwnsResponseUserOwnsEdgeContributorsEdge(BaseModel):
     display_name: Optional[str] = FieldInfo(alias="displayName", default=None)
     """User display name"""
 
+    emails: Optional[List[str]] = None
+    """
+    Obfuscated email addresses showing only the last 2 characters of the local part
+    and full domain (e.g., "\\**\\**\\**oe@gmail.com"). Use /api/users/best-email endpoint
+    for unobfuscated email access with intelligent selection.
+    """
+
     embedded_at: Optional[str] = FieldInfo(alias="embeddedAt", default=None)
     """ISO 8601 timestamp when metadata was extracted"""
 
@@ -3156,6 +3366,13 @@ class RepoOwnsResponseUserOwnsEdgeOwner(BaseModel):
 
     display_name: Optional[str] = FieldInfo(alias="displayName", default=None)
     """User display name"""
+
+    emails: Optional[List[str]] = None
+    """
+    Obfuscated email addresses showing only the last 2 characters of the local part
+    and full domain (e.g., "\\**\\**\\**oe@gmail.com"). Use /api/users/best-email endpoint
+    for unobfuscated email access with intelligent selection.
+    """
 
     embedded_at: Optional[str] = FieldInfo(alias="embeddedAt", default=None)
     """ISO 8601 timestamp when metadata was extracted"""
@@ -3236,6 +3453,13 @@ class RepoOwnsResponseUserOwnsEdgeStarrersEdge(BaseModel):
 
     display_name: Optional[str] = FieldInfo(alias="displayName", default=None)
     """User display name"""
+
+    emails: Optional[List[str]] = None
+    """
+    Obfuscated email addresses showing only the last 2 characters of the local part
+    and full domain (e.g., "\\**\\**\\**oe@gmail.com"). Use /api/users/best-email endpoint
+    for unobfuscated email access with intelligent selection.
+    """
 
     embedded_at: Optional[str] = FieldInfo(alias="embeddedAt", default=None)
     """ISO 8601 timestamp when metadata was extracted"""
@@ -3398,6 +3622,13 @@ class RepoOwnsResponseUserStarsEdgeContributorsEdge(BaseModel):
     display_name: Optional[str] = FieldInfo(alias="displayName", default=None)
     """User display name"""
 
+    emails: Optional[List[str]] = None
+    """
+    Obfuscated email addresses showing only the last 2 characters of the local part
+    and full domain (e.g., "\\**\\**\\**oe@gmail.com"). Use /api/users/best-email endpoint
+    for unobfuscated email access with intelligent selection.
+    """
+
     embedded_at: Optional[str] = FieldInfo(alias="embeddedAt", default=None)
     """ISO 8601 timestamp when metadata was extracted"""
 
@@ -3471,6 +3702,13 @@ class RepoOwnsResponseUserStarsEdgeOwner(BaseModel):
 
     display_name: Optional[str] = FieldInfo(alias="displayName", default=None)
     """User display name"""
+
+    emails: Optional[List[str]] = None
+    """
+    Obfuscated email addresses showing only the last 2 characters of the local part
+    and full domain (e.g., "\\**\\**\\**oe@gmail.com"). Use /api/users/best-email endpoint
+    for unobfuscated email access with intelligent selection.
+    """
 
     embedded_at: Optional[str] = FieldInfo(alias="embeddedAt", default=None)
     """ISO 8601 timestamp when metadata was extracted"""
@@ -3551,6 +3789,13 @@ class RepoOwnsResponseUserStarsEdgeStarrersEdge(BaseModel):
 
     display_name: Optional[str] = FieldInfo(alias="displayName", default=None)
     """User display name"""
+
+    emails: Optional[List[str]] = None
+    """
+    Obfuscated email addresses showing only the last 2 characters of the local part
+    and full domain (e.g., "\\**\\**\\**oe@gmail.com"). Use /api/users/best-email endpoint
+    for unobfuscated email access with intelligent selection.
+    """
 
     embedded_at: Optional[str] = FieldInfo(alias="embeddedAt", default=None)
     """ISO 8601 timestamp when metadata was extracted"""
@@ -3706,6 +3951,13 @@ class RepoOwnsResponseUser(BaseModel):
 
     display_name: Optional[str] = FieldInfo(alias="displayName", default=None)
     """User display name"""
+
+    emails: Optional[List[str]] = None
+    """
+    Obfuscated email addresses showing only the last 2 characters of the local part
+    and full domain (e.g., "\\**\\**\\**oe@gmail.com"). Use /api/users/best-email endpoint
+    for unobfuscated email access with intelligent selection.
+    """
 
     embedded_at: Optional[str] = FieldInfo(alias="embeddedAt", default=None)
     """ISO 8601 timestamp when metadata was extracted"""
