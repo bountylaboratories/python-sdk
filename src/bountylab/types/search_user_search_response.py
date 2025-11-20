@@ -61,6 +61,7 @@ __all__ = [
     "UserStarsEdgeStarrersEdgeSocialAccount",
     "UserStarsEdgeStarrersPageInfo",
     "UserStarsPageInfo",
+    "PageInfo",
 ]
 
 
@@ -1311,9 +1312,20 @@ class User(BaseModel):
     """User website URL"""
 
 
+class PageInfo(BaseModel):
+    end_cursor: Optional[str] = FieldInfo(alias="endCursor", default=None)
+    """Cursor to fetch next page (null if no more items)"""
+
+    has_next_page: bool = FieldInfo(alias="hasNextPage")
+    """Whether there are more items available"""
+
+
 class SearchUserSearchResponse(BaseModel):
     count: float
     """Number of users returned"""
 
     users: List[User]
     """Array of user search results with relevance scores"""
+
+    page_info: Optional[PageInfo] = FieldInfo(alias="pageInfo", default=None)
+    """Pagination information"""

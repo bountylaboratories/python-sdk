@@ -48,6 +48,9 @@ class SearchUsersResource(SyncAPIResource):
         self,
         *,
         query: str,
+        after: str | Omit = omit,
+        enable_pagination: bool | Omit = omit,
+        first: int | Omit = omit,
         include_attributes: search_user_natural_language_params.IncludeAttributes | Omit = omit,
         max_results: int | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
@@ -65,6 +68,12 @@ class SearchUsersResource(SyncAPIResource):
 
         Args:
           query: Natural language query describing the users you want to find
+
+          after: Cursor for pagination (from previous response pageInfo.endCursor)
+
+          enable_pagination: Enable cursor-based pagination to fetch results across multiple requests
+
+          first: Alias for maxResults (takes precedence if both provided)
 
           include_attributes: Optional graph relationships to include (followers, following, stars, owns,
               contributes)
@@ -84,6 +93,9 @@ class SearchUsersResource(SyncAPIResource):
             body=maybe_transform(
                 {
                     "query": query,
+                    "after": after,
+                    "enable_pagination": enable_pagination,
+                    "first": first,
                     "include_attributes": include_attributes,
                     "max_results": max_results,
                 },
@@ -99,7 +111,10 @@ class SearchUsersResource(SyncAPIResource):
         self,
         *,
         query: str,
+        after: str | Omit = omit,
+        enable_pagination: bool | Omit = omit,
         filters: Optional[search_user_search_params.Filters] | Omit = omit,
+        first: int | Omit = omit,
         include_attributes: search_user_search_params.IncludeAttributes | Omit = omit,
         max_results: int | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
@@ -120,6 +135,10 @@ class SearchUsersResource(SyncAPIResource):
               company, location, emails, resolvedCountry, resolvedState, resolvedCity (with
               login weighted 2x)
 
+          after: Cursor for pagination (from previous response pageInfo.endCursor)
+
+          enable_pagination: Enable cursor-based pagination to fetch results across multiple requests
+
           filters: Optional filters for narrowing search results. Supports filtering on: githubId,
               login, displayName, bio, company, location, emails, resolvedCountry,
               resolvedState, resolvedCity.
@@ -136,6 +155,8 @@ class SearchUsersResource(SyncAPIResource):
 
               - String fields: Eq (exact match), In (one of array)
               - Use And/Or to combine multiple filters
+
+          first: Alias for maxResults (takes precedence if both provided)
 
           include_attributes: Optional graph relationships to include (followers, following, stars, owns,
               contributes)
@@ -155,7 +176,10 @@ class SearchUsersResource(SyncAPIResource):
             body=maybe_transform(
                 {
                     "query": query,
+                    "after": after,
+                    "enable_pagination": enable_pagination,
                     "filters": filters,
+                    "first": first,
                     "include_attributes": include_attributes,
                     "max_results": max_results,
                 },
@@ -192,6 +216,9 @@ class AsyncSearchUsersResource(AsyncAPIResource):
         self,
         *,
         query: str,
+        after: str | Omit = omit,
+        enable_pagination: bool | Omit = omit,
+        first: int | Omit = omit,
         include_attributes: search_user_natural_language_params.IncludeAttributes | Omit = omit,
         max_results: int | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
@@ -209,6 +236,12 @@ class AsyncSearchUsersResource(AsyncAPIResource):
 
         Args:
           query: Natural language query describing the users you want to find
+
+          after: Cursor for pagination (from previous response pageInfo.endCursor)
+
+          enable_pagination: Enable cursor-based pagination to fetch results across multiple requests
+
+          first: Alias for maxResults (takes precedence if both provided)
 
           include_attributes: Optional graph relationships to include (followers, following, stars, owns,
               contributes)
@@ -228,6 +261,9 @@ class AsyncSearchUsersResource(AsyncAPIResource):
             body=await async_maybe_transform(
                 {
                     "query": query,
+                    "after": after,
+                    "enable_pagination": enable_pagination,
+                    "first": first,
                     "include_attributes": include_attributes,
                     "max_results": max_results,
                 },
@@ -243,7 +279,10 @@ class AsyncSearchUsersResource(AsyncAPIResource):
         self,
         *,
         query: str,
+        after: str | Omit = omit,
+        enable_pagination: bool | Omit = omit,
         filters: Optional[search_user_search_params.Filters] | Omit = omit,
+        first: int | Omit = omit,
         include_attributes: search_user_search_params.IncludeAttributes | Omit = omit,
         max_results: int | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
@@ -264,6 +303,10 @@ class AsyncSearchUsersResource(AsyncAPIResource):
               company, location, emails, resolvedCountry, resolvedState, resolvedCity (with
               login weighted 2x)
 
+          after: Cursor for pagination (from previous response pageInfo.endCursor)
+
+          enable_pagination: Enable cursor-based pagination to fetch results across multiple requests
+
           filters: Optional filters for narrowing search results. Supports filtering on: githubId,
               login, displayName, bio, company, location, emails, resolvedCountry,
               resolvedState, resolvedCity.
@@ -280,6 +323,8 @@ class AsyncSearchUsersResource(AsyncAPIResource):
 
               - String fields: Eq (exact match), In (one of array)
               - Use And/Or to combine multiple filters
+
+          first: Alias for maxResults (takes precedence if both provided)
 
           include_attributes: Optional graph relationships to include (followers, following, stars, owns,
               contributes)
@@ -299,7 +344,10 @@ class AsyncSearchUsersResource(AsyncAPIResource):
             body=await async_maybe_transform(
                 {
                     "query": query,
+                    "after": after,
+                    "enable_pagination": enable_pagination,
                     "filters": filters,
+                    "first": first,
                     "include_attributes": include_attributes,
                     "max_results": max_results,
                 },

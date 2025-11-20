@@ -48,7 +48,10 @@ class SearchReposResource(SyncAPIResource):
         self,
         *,
         query: str,
+        after: str | Omit = omit,
+        enable_pagination: bool | Omit = omit,
         filter_user_include_attributes: bool | Omit = omit,
+        first: int | Omit = omit,
         include_attributes: search_repo_natural_language_params.IncludeAttributes | Omit = omit,
         max_results: int | Omit = omit,
         rank_by: search_repo_natural_language_params.RankBy | Omit = omit,
@@ -68,9 +71,15 @@ class SearchReposResource(SyncAPIResource):
         Args:
           query: Natural language query describing the repositories you want to find
 
+          after: Cursor for pagination (from previous response pageInfo.endCursor)
+
+          enable_pagination: Enable cursor-based pagination to fetch results across multiple requests
+
           filter_user_include_attributes: When true, the AI will generate a user location filter and apply it to ALL
               user-returning includeAttributes (contributors, starrers). This filter will
               override any manually-specified filters.
+
+          first: Alias for maxResults (takes precedence if both provided)
 
           include_attributes: Optional graph relationships to include (owner, contributors, starrers)
 
@@ -93,7 +102,10 @@ class SearchReposResource(SyncAPIResource):
             body=maybe_transform(
                 {
                     "query": query,
+                    "after": after,
+                    "enable_pagination": enable_pagination,
                     "filter_user_include_attributes": filter_user_include_attributes,
+                    "first": first,
                     "include_attributes": include_attributes,
                     "max_results": max_results,
                     "rank_by": rank_by,
@@ -110,7 +122,10 @@ class SearchReposResource(SyncAPIResource):
         self,
         *,
         query: str,
+        after: str | Omit = omit,
+        enable_pagination: bool | Omit = omit,
         filters: Optional[search_repo_search_params.Filters] | Omit = omit,
+        first: int | Omit = omit,
         include_attributes: search_repo_search_params.IncludeAttributes | Omit = omit,
         max_results: int | Omit = omit,
         rank_by: search_repo_search_params.RankBy | Omit = omit,
@@ -130,6 +145,10 @@ class SearchReposResource(SyncAPIResource):
           query: Natural language search query for semantic search across repository README and
               description using vector embeddings
 
+          after: Cursor for pagination (from previous response pageInfo.endCursor)
+
+          enable_pagination: Enable cursor-based pagination to fetch results across multiple requests
+
           filters: Optional filters for narrowing search results. Supports filtering on: githubId,
               ownerLogin, ownerLocation, name, stargazerCount, language, totalIssuesCount,
               totalIssuesOpen, totalIssuesClosed, lastContributorLocations.
@@ -145,6 +164,8 @@ class SearchReposResource(SyncAPIResource):
               - String fields: Eq (exact match), In (one of array)
               - Number fields: Eq (exact), In (one of array), Gte (>=), Lte (<=)
               - Use And/Or to combine multiple filters
+
+          first: Alias for maxResults (takes precedence if both provided)
 
           include_attributes: Optional graph relationships to include (owner, contributors, starrers)
 
@@ -167,7 +188,10 @@ class SearchReposResource(SyncAPIResource):
             body=maybe_transform(
                 {
                     "query": query,
+                    "after": after,
+                    "enable_pagination": enable_pagination,
                     "filters": filters,
+                    "first": first,
                     "include_attributes": include_attributes,
                     "max_results": max_results,
                     "rank_by": rank_by,
@@ -205,7 +229,10 @@ class AsyncSearchReposResource(AsyncAPIResource):
         self,
         *,
         query: str,
+        after: str | Omit = omit,
+        enable_pagination: bool | Omit = omit,
         filter_user_include_attributes: bool | Omit = omit,
+        first: int | Omit = omit,
         include_attributes: search_repo_natural_language_params.IncludeAttributes | Omit = omit,
         max_results: int | Omit = omit,
         rank_by: search_repo_natural_language_params.RankBy | Omit = omit,
@@ -225,9 +252,15 @@ class AsyncSearchReposResource(AsyncAPIResource):
         Args:
           query: Natural language query describing the repositories you want to find
 
+          after: Cursor for pagination (from previous response pageInfo.endCursor)
+
+          enable_pagination: Enable cursor-based pagination to fetch results across multiple requests
+
           filter_user_include_attributes: When true, the AI will generate a user location filter and apply it to ALL
               user-returning includeAttributes (contributors, starrers). This filter will
               override any manually-specified filters.
+
+          first: Alias for maxResults (takes precedence if both provided)
 
           include_attributes: Optional graph relationships to include (owner, contributors, starrers)
 
@@ -250,7 +283,10 @@ class AsyncSearchReposResource(AsyncAPIResource):
             body=await async_maybe_transform(
                 {
                     "query": query,
+                    "after": after,
+                    "enable_pagination": enable_pagination,
                     "filter_user_include_attributes": filter_user_include_attributes,
+                    "first": first,
                     "include_attributes": include_attributes,
                     "max_results": max_results,
                     "rank_by": rank_by,
@@ -267,7 +303,10 @@ class AsyncSearchReposResource(AsyncAPIResource):
         self,
         *,
         query: str,
+        after: str | Omit = omit,
+        enable_pagination: bool | Omit = omit,
         filters: Optional[search_repo_search_params.Filters] | Omit = omit,
+        first: int | Omit = omit,
         include_attributes: search_repo_search_params.IncludeAttributes | Omit = omit,
         max_results: int | Omit = omit,
         rank_by: search_repo_search_params.RankBy | Omit = omit,
@@ -287,6 +326,10 @@ class AsyncSearchReposResource(AsyncAPIResource):
           query: Natural language search query for semantic search across repository README and
               description using vector embeddings
 
+          after: Cursor for pagination (from previous response pageInfo.endCursor)
+
+          enable_pagination: Enable cursor-based pagination to fetch results across multiple requests
+
           filters: Optional filters for narrowing search results. Supports filtering on: githubId,
               ownerLogin, ownerLocation, name, stargazerCount, language, totalIssuesCount,
               totalIssuesOpen, totalIssuesClosed, lastContributorLocations.
@@ -302,6 +345,8 @@ class AsyncSearchReposResource(AsyncAPIResource):
               - String fields: Eq (exact match), In (one of array)
               - Number fields: Eq (exact), In (one of array), Gte (>=), Lte (<=)
               - Use And/Or to combine multiple filters
+
+          first: Alias for maxResults (takes precedence if both provided)
 
           include_attributes: Optional graph relationships to include (owner, contributors, starrers)
 
@@ -324,7 +369,10 @@ class AsyncSearchReposResource(AsyncAPIResource):
             body=await async_maybe_transform(
                 {
                     "query": query,
+                    "after": after,
+                    "enable_pagination": enable_pagination,
                     "filters": filters,
+                    "first": first,
                     "include_attributes": include_attributes,
                     "max_results": max_results,
                     "rank_by": rank_by,

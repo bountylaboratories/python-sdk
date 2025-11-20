@@ -126,6 +126,12 @@ class SearchUserSearchParams(TypedDict, total=False):
     resolvedState, resolvedCity (with login weighted 2x)
     """
 
+    after: str
+    """Cursor for pagination (from previous response pageInfo.endCursor)"""
+
+    enable_pagination: Annotated[bool, PropertyInfo(alias="enablePagination")]
+    """Enable cursor-based pagination to fetch results across multiple requests"""
+
     filters: Optional[Filters]
     """Optional filters for narrowing search results.
 
@@ -145,6 +151,9 @@ class SearchUserSearchParams(TypedDict, total=False):
     - String fields: Eq (exact match), In (one of array)
     - Use And/Or to combine multiple filters
     """
+
+    first: int
+    """Alias for maxResults (takes precedence if both provided)"""
 
     include_attributes: Annotated[IncludeAttributes, PropertyInfo(alias="includeAttributes")]
     """
