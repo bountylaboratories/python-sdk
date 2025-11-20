@@ -1100,6 +1100,12 @@ class SearchRepoSearchParams(TypedDict, total=False):
     description using vector embeddings
     """
 
+    after: str
+    """Cursor for pagination (from previous response pageInfo.endCursor)"""
+
+    enable_pagination: Annotated[bool, PropertyInfo(alias="enablePagination")]
+    """Enable cursor-based pagination to fetch results across multiple requests"""
+
     filters: Optional[Filters]
     """Optional filters for narrowing search results.
 
@@ -1119,6 +1125,9 @@ class SearchRepoSearchParams(TypedDict, total=False):
     - Number fields: Eq (exact), In (one of array), Gte (>=), Lte (<=)
     - Use And/Or to combine multiple filters
     """
+
+    first: int
+    """Alias for maxResults (takes precedence if both provided)"""
 
     include_attributes: Annotated[IncludeAttributes, PropertyInfo(alias="includeAttributes")]
     """Optional graph relationships to include (owner, contributors, starrers)"""

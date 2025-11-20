@@ -33,6 +33,9 @@ class TestSearchUsers:
     def test_method_natural_language_with_all_params(self, client: Bountylab) -> None:
         search_user = client.search_users.natural_language(
             query="Find machine learning engineers at Google who work on AI infrastructure",
+            after="Y3Vyc29yOjEyMzQ1",
+            enable_pagination=True,
+            first=50,
             include_attributes={
                 "contributes": {
                     "first": 1,
@@ -124,11 +127,14 @@ class TestSearchUsers:
     def test_method_search_with_all_params(self, client: Bountylab) -> None:
         search_user = client.search_users.search(
             query="machine learning engineer san francisco",
+            after="Y3Vyc29yOjEyMzQ1",
+            enable_pagination=True,
             filters={
                 "field": "field",
                 "op": "op",
                 "value": "string",
             },
+            first=50,
             include_attributes={
                 "contributes": {
                     "first": 1,
@@ -226,6 +232,9 @@ class TestAsyncSearchUsers:
     async def test_method_natural_language_with_all_params(self, async_client: AsyncBountylab) -> None:
         search_user = await async_client.search_users.natural_language(
             query="Find machine learning engineers at Google who work on AI infrastructure",
+            after="Y3Vyc29yOjEyMzQ1",
+            enable_pagination=True,
+            first=50,
             include_attributes={
                 "contributes": {
                     "first": 1,
@@ -317,11 +326,14 @@ class TestAsyncSearchUsers:
     async def test_method_search_with_all_params(self, async_client: AsyncBountylab) -> None:
         search_user = await async_client.search_users.search(
             query="machine learning engineer san francisco",
+            after="Y3Vyc29yOjEyMzQ1",
+            enable_pagination=True,
             filters={
                 "field": "field",
                 "op": "op",
                 "value": "string",
             },
+            first=50,
             include_attributes={
                 "contributes": {
                     "first": 1,

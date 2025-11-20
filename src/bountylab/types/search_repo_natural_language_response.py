@@ -20,6 +20,7 @@ __all__ = [
     "RepositoryStarrersEdge",
     "RepositoryStarrersEdgeSocialAccount",
     "RepositoryStarrersPageInfo",
+    "PageInfo",
 ]
 
 
@@ -335,6 +336,14 @@ class Repository(BaseModel):
     """ISO 8601 timestamp when repository was last updated"""
 
 
+class PageInfo(BaseModel):
+    end_cursor: Optional[str] = FieldInfo(alias="endCursor", default=None)
+    """Cursor to fetch next page (null if no more items)"""
+
+    has_next_page: bool = FieldInfo(alias="hasNextPage")
+    """Whether there are more items available"""
+
+
 class SearchRepoNaturalLanguageResponse(BaseModel):
     count: float
     """Number of repositories returned"""
@@ -347,3 +356,6 @@ class SearchRepoNaturalLanguageResponse(BaseModel):
 
     search_query: str = FieldInfo(alias="searchQuery")
     """The generated search query used for semantic search"""
+
+    page_info: Optional[PageInfo] = FieldInfo(alias="pageInfo", default=None)
+    """Pagination information"""

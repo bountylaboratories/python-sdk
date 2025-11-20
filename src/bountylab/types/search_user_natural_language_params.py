@@ -118,6 +118,15 @@ class SearchUserNaturalLanguageParams(TypedDict, total=False):
     query: Required[str]
     """Natural language query describing the users you want to find"""
 
+    after: str
+    """Cursor for pagination (from previous response pageInfo.endCursor)"""
+
+    enable_pagination: Annotated[bool, PropertyInfo(alias="enablePagination")]
+    """Enable cursor-based pagination to fetch results across multiple requests"""
+
+    first: int
+    """Alias for maxResults (takes precedence if both provided)"""
+
     include_attributes: Annotated[IncludeAttributes, PropertyInfo(alias="includeAttributes")]
     """
     Optional graph relationships to include (followers, following, stars, owns,

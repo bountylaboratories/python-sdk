@@ -1093,12 +1093,21 @@ class SearchRepoNaturalLanguageParams(TypedDict, total=False):
     query: Required[str]
     """Natural language query describing the repositories you want to find"""
 
+    after: str
+    """Cursor for pagination (from previous response pageInfo.endCursor)"""
+
+    enable_pagination: Annotated[bool, PropertyInfo(alias="enablePagination")]
+    """Enable cursor-based pagination to fetch results across multiple requests"""
+
     filter_user_include_attributes: Annotated[bool, PropertyInfo(alias="filterUserIncludeAttributes")]
     """
     When true, the AI will generate a user location filter and apply it to ALL
     user-returning includeAttributes (contributors, starrers). This filter will
     override any manually-specified filters.
     """
+
+    first: int
+    """Alias for maxResults (takes precedence if both provided)"""
 
     include_attributes: Annotated[IncludeAttributes, PropertyInfo(alias="includeAttributes")]
     """Optional graph relationships to include (owner, contributors, starrers)"""
