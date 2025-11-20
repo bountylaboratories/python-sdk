@@ -33,7 +33,10 @@ class TestSearchRepos:
     def test_method_natural_language_with_all_params(self, client: Bountylab) -> None:
         search_repo = client.search_repos.natural_language(
             query="Find React libraries with over 1000 stars that have good TypeScript support and are actively maintained",
+            after="Y3Vyc29yOjEyMzQ1",
+            enable_pagination=True,
             filter_user_include_attributes=True,
+            first=50,
             include_attributes={
                 "contributors": {
                     "first": 10,
@@ -103,11 +106,14 @@ class TestSearchRepos:
     def test_method_search_with_all_params(self, client: Bountylab) -> None:
         search_repo = client.search_repos.search(
             query="react component library with typescript",
+            after="Y3Vyc29yOjEyMzQ1",
+            enable_pagination=True,
             filters={
                 "field": "language",
                 "op": "Eq",
                 "value": "TypeScript",
             },
+            first=50,
             include_attributes={
                 "contributors": {
                     "first": 10,
@@ -183,7 +189,10 @@ class TestAsyncSearchRepos:
     async def test_method_natural_language_with_all_params(self, async_client: AsyncBountylab) -> None:
         search_repo = await async_client.search_repos.natural_language(
             query="Find React libraries with over 1000 stars that have good TypeScript support and are actively maintained",
+            after="Y3Vyc29yOjEyMzQ1",
+            enable_pagination=True,
             filter_user_include_attributes=True,
+            first=50,
             include_attributes={
                 "contributors": {
                     "first": 10,
@@ -253,11 +262,14 @@ class TestAsyncSearchRepos:
     async def test_method_search_with_all_params(self, async_client: AsyncBountylab) -> None:
         search_repo = await async_client.search_repos.search(
             query="react component library with typescript",
+            after="Y3Vyc29yOjEyMzQ1",
+            enable_pagination=True,
             filters={
                 "field": "language",
                 "op": "Eq",
                 "value": "TypeScript",
             },
+            first=50,
             include_attributes={
                 "contributors": {
                     "first": 10,
