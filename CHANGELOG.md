@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.28.1 (2025-11-22)
+
+Full Changelog: [v0.28.0...v0.28.1](https://github.com/bountylaboratories/python-sdk/compare/v0.28.0...v0.28.1)
+
+### Chores
+
+* add Python 3.14 classifier and testing ([447c5e9](https://github.com/bountylaboratories/python-sdk/commit/447c5e998da0d61cde856874190d02a4a22b467e))
+
 ## 0.28.0 (2025-11-20)
 
 Full Changelog: [v0.27.0...v0.28.0](https://github.com/bountylaboratories/python-sdk/compare/v0.27.0...v0.28.0)
