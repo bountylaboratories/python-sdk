@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.28.1 (2025-11-28)
+
+Full Changelog: [v0.28.0...v0.28.1](https://github.com/bountylaboratories/python-sdk/compare/v0.28.0...v0.28.1)
+
+### Bug Fixes
+
+* ensure streams are always closed ([69acb0f](https://github.com/bountylaboratories/python-sdk/commit/69acb0f98828be3e0f92ef5dfc3bfd8386ba7d09))
+
+
+### Chores
+
+* add Python 3.14 classifier and testing ([447c5e9](https://github.com/bountylaboratories/python-sdk/commit/447c5e998da0d61cde856874190d02a4a22b467e))
+* **deps:** mypy 1.18.1 has a regression, pin to 1.17 ([04221aa](https://github.com/bountylaboratories/python-sdk/commit/04221aab9aee5e83a42a18a99297b220d93e8c13))
+
 ## 0.28.0 (2025-11-20)
 
 Full Changelog: [v0.27.0...v0.28.0](https://github.com/bountylaboratories/python-sdk/compare/v0.27.0...v0.28.0)
