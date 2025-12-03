@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.28.2 (2025-12-03)
+
+Full Changelog: [v0.28.1...v0.28.2](https://github.com/bountylaboratories/python-sdk/compare/v0.28.1...v0.28.2)
+
+### Chores
+
+* **docs:** use environment variables for authentication in code snippets ([d3756e2](https://github.com/bountylaboratories/python-sdk/commit/d3756e2169b955aa35e308ea13d3ede5e1f5c107))
+* update lockfile ([f974296](https://github.com/bountylaboratories/python-sdk/commit/f97429613559893eccbe4c2308d476ec598d95f2))
+
 ## 0.28.1 (2025-11-28)
 
 Full Changelog: [v0.28.0...v0.28.1](https://github.com/bountylaboratories/python-sdk/compare/v0.28.0...v0.28.1)
