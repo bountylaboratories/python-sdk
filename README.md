@@ -85,6 +85,7 @@ pip install bountylab[aiohttp]
 Then you can enable it by instantiating the client with `http_client=DefaultAioHttpClient()`:
 
 ```python
+import os
 import asyncio
 from bountylab import DefaultAioHttpClient
 from bountylab import AsyncBountylab
@@ -92,7 +93,7 @@ from bountylab import AsyncBountylab
 
 async def main() -> None:
     async with AsyncBountylab(
-        api_key="My API Key",
+        api_key=os.environ.get("BOUNTYLAB_API_KEY"),  # This is the default and can be omitted
         http_client=DefaultAioHttpClient(),
     ) as client:
         response = await client.search_users.natural_language(
