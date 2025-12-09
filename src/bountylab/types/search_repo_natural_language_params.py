@@ -1317,6 +1317,8 @@ IncludeAttributesContributorsFilters: TypeAlias = Union[
 
 
 class IncludeAttributesContributors(TypedDict, total=False):
+    """Include repository contributors with cursor pagination"""
+
     first: Required[int]
     """Number of items to return (max: 100)"""
 
@@ -1520,6 +1522,8 @@ IncludeAttributesStarrersFilters: TypeAlias = Union[
 
 
 class IncludeAttributesStarrers(TypedDict, total=False):
+    """Include users who starred the repository with cursor pagination"""
+
     first: Required[int]
     """Number of items to return (max: 100)"""
 
@@ -1535,6 +1539,8 @@ class IncludeAttributesStarrers(TypedDict, total=False):
 
 
 class IncludeAttributes(TypedDict, total=False):
+    """Optional graph relationships to include (owner, contributors, starrers)"""
+
     contributors: IncludeAttributesContributors
     """Include repository contributors with cursor pagination"""
 

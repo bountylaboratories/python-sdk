@@ -165,6 +165,8 @@ __all__ = [
 
 
 class FollowersResponsePageInfo(BaseModel):
+    """Pagination information"""
+
     end_cursor: Optional[str] = FieldInfo(alias="endCursor", default=None)
     """Cursor to fetch next page (null if no more items)"""
 
@@ -238,6 +240,8 @@ class FollowersResponseUserContributesEdgeContributorsEdge(BaseModel):
 
 
 class FollowersResponseUserContributesEdgeContributorsPageInfo(BaseModel):
+    """Pagination information"""
+
     end_cursor: Optional[str] = FieldInfo(alias="endCursor", default=None)
     """Cursor to fetch next page (null if no more items)"""
 
@@ -246,6 +250,8 @@ class FollowersResponseUserContributesEdgeContributorsPageInfo(BaseModel):
 
 
 class FollowersResponseUserContributesEdgeContributors(BaseModel):
+    """Users who follow this user (when includeAttributes.followers is specified)"""
+
     edges: List[FollowersResponseUserContributesEdgeContributorsEdge]
     """Array of user objects"""
 
@@ -260,6 +266,8 @@ class FollowersResponseUserContributesEdgeOwnerSocialAccount(BaseModel):
 
 
 class FollowersResponseUserContributesEdgeOwner(BaseModel):
+    """Repository owner (when includeAttributes.owner = true)"""
+
     id: str
     """BountyLab internal ID"""
 
@@ -319,6 +327,10 @@ class FollowersResponseUserContributesEdgeOwner(BaseModel):
 
 
 class FollowersResponseUserContributesEdgeOwnerDevrank(BaseModel):
+    """
+    Devrank data for the repository owner (when includeAttributes.ownerDevrank = true)
+    """
+
     community: int
 
     cracked_score: float = FieldInfo(alias="crackedScore")
@@ -406,6 +418,8 @@ class FollowersResponseUserContributesEdgeStarrersEdge(BaseModel):
 
 
 class FollowersResponseUserContributesEdgeStarrersPageInfo(BaseModel):
+    """Pagination information"""
+
     end_cursor: Optional[str] = FieldInfo(alias="endCursor", default=None)
     """Cursor to fetch next page (null if no more items)"""
 
@@ -414,6 +428,8 @@ class FollowersResponseUserContributesEdgeStarrersPageInfo(BaseModel):
 
 
 class FollowersResponseUserContributesEdgeStarrers(BaseModel):
+    """Users who follow this user (when includeAttributes.followers is specified)"""
+
     edges: List[FollowersResponseUserContributesEdgeStarrersEdge]
     """Array of user objects"""
 
@@ -489,6 +505,8 @@ class FollowersResponseUserContributesEdge(BaseModel):
 
 
 class FollowersResponseUserContributesPageInfo(BaseModel):
+    """Pagination information"""
+
     end_cursor: Optional[str] = FieldInfo(alias="endCursor", default=None)
     """Cursor to fetch next page (null if no more items)"""
 
@@ -497,6 +515,8 @@ class FollowersResponseUserContributesPageInfo(BaseModel):
 
 
 class FollowersResponseUserContributes(BaseModel):
+    """Repositories this user starred (when includeAttributes.stars is specified)"""
+
     edges: List[FollowersResponseUserContributesEdge]
     """Array of repository objects"""
 
@@ -505,6 +525,8 @@ class FollowersResponseUserContributes(BaseModel):
 
 
 class FollowersResponseUserDevrank(BaseModel):
+    """Developer ranking data (only present when fetched from devrank endpoints)"""
+
     community: int
 
     cracked_score: float = FieldInfo(alias="crackedScore")
@@ -592,6 +614,8 @@ class FollowersResponseUserFollowersEdge(BaseModel):
 
 
 class FollowersResponseUserFollowersPageInfo(BaseModel):
+    """Pagination information"""
+
     end_cursor: Optional[str] = FieldInfo(alias="endCursor", default=None)
     """Cursor to fetch next page (null if no more items)"""
 
@@ -600,6 +624,8 @@ class FollowersResponseUserFollowersPageInfo(BaseModel):
 
 
 class FollowersResponseUserFollowers(BaseModel):
+    """Users who follow this user (when includeAttributes.followers is specified)"""
+
     edges: List[FollowersResponseUserFollowersEdge]
     """Array of user objects"""
 
@@ -673,6 +699,8 @@ class FollowersResponseUserFollowingEdge(BaseModel):
 
 
 class FollowersResponseUserFollowingPageInfo(BaseModel):
+    """Pagination information"""
+
     end_cursor: Optional[str] = FieldInfo(alias="endCursor", default=None)
     """Cursor to fetch next page (null if no more items)"""
 
@@ -681,6 +709,8 @@ class FollowersResponseUserFollowingPageInfo(BaseModel):
 
 
 class FollowersResponseUserFollowing(BaseModel):
+    """Users who follow this user (when includeAttributes.followers is specified)"""
+
     edges: List[FollowersResponseUserFollowingEdge]
     """Array of user objects"""
 
@@ -754,6 +784,8 @@ class FollowersResponseUserOwnsEdgeContributorsEdge(BaseModel):
 
 
 class FollowersResponseUserOwnsEdgeContributorsPageInfo(BaseModel):
+    """Pagination information"""
+
     end_cursor: Optional[str] = FieldInfo(alias="endCursor", default=None)
     """Cursor to fetch next page (null if no more items)"""
 
@@ -762,6 +794,8 @@ class FollowersResponseUserOwnsEdgeContributorsPageInfo(BaseModel):
 
 
 class FollowersResponseUserOwnsEdgeContributors(BaseModel):
+    """Users who follow this user (when includeAttributes.followers is specified)"""
+
     edges: List[FollowersResponseUserOwnsEdgeContributorsEdge]
     """Array of user objects"""
 
@@ -776,6 +810,8 @@ class FollowersResponseUserOwnsEdgeOwnerSocialAccount(BaseModel):
 
 
 class FollowersResponseUserOwnsEdgeOwner(BaseModel):
+    """Repository owner (when includeAttributes.owner = true)"""
+
     id: str
     """BountyLab internal ID"""
 
@@ -835,6 +871,10 @@ class FollowersResponseUserOwnsEdgeOwner(BaseModel):
 
 
 class FollowersResponseUserOwnsEdgeOwnerDevrank(BaseModel):
+    """
+    Devrank data for the repository owner (when includeAttributes.ownerDevrank = true)
+    """
+
     community: int
 
     cracked_score: float = FieldInfo(alias="crackedScore")
@@ -922,6 +962,8 @@ class FollowersResponseUserOwnsEdgeStarrersEdge(BaseModel):
 
 
 class FollowersResponseUserOwnsEdgeStarrersPageInfo(BaseModel):
+    """Pagination information"""
+
     end_cursor: Optional[str] = FieldInfo(alias="endCursor", default=None)
     """Cursor to fetch next page (null if no more items)"""
 
@@ -930,6 +972,8 @@ class FollowersResponseUserOwnsEdgeStarrersPageInfo(BaseModel):
 
 
 class FollowersResponseUserOwnsEdgeStarrers(BaseModel):
+    """Users who follow this user (when includeAttributes.followers is specified)"""
+
     edges: List[FollowersResponseUserOwnsEdgeStarrersEdge]
     """Array of user objects"""
 
@@ -1003,6 +1047,8 @@ class FollowersResponseUserOwnsEdge(BaseModel):
 
 
 class FollowersResponseUserOwnsPageInfo(BaseModel):
+    """Pagination information"""
+
     end_cursor: Optional[str] = FieldInfo(alias="endCursor", default=None)
     """Cursor to fetch next page (null if no more items)"""
 
@@ -1011,6 +1057,8 @@ class FollowersResponseUserOwnsPageInfo(BaseModel):
 
 
 class FollowersResponseUserOwns(BaseModel):
+    """Repositories this user starred (when includeAttributes.stars is specified)"""
+
     edges: List[FollowersResponseUserOwnsEdge]
     """Array of repository objects"""
 
@@ -1090,6 +1138,8 @@ class FollowersResponseUserStarsEdgeContributorsEdge(BaseModel):
 
 
 class FollowersResponseUserStarsEdgeContributorsPageInfo(BaseModel):
+    """Pagination information"""
+
     end_cursor: Optional[str] = FieldInfo(alias="endCursor", default=None)
     """Cursor to fetch next page (null if no more items)"""
 
@@ -1098,6 +1148,8 @@ class FollowersResponseUserStarsEdgeContributorsPageInfo(BaseModel):
 
 
 class FollowersResponseUserStarsEdgeContributors(BaseModel):
+    """Users who follow this user (when includeAttributes.followers is specified)"""
+
     edges: List[FollowersResponseUserStarsEdgeContributorsEdge]
     """Array of user objects"""
 
@@ -1112,6 +1164,8 @@ class FollowersResponseUserStarsEdgeOwnerSocialAccount(BaseModel):
 
 
 class FollowersResponseUserStarsEdgeOwner(BaseModel):
+    """Repository owner (when includeAttributes.owner = true)"""
+
     id: str
     """BountyLab internal ID"""
 
@@ -1171,6 +1225,10 @@ class FollowersResponseUserStarsEdgeOwner(BaseModel):
 
 
 class FollowersResponseUserStarsEdgeOwnerDevrank(BaseModel):
+    """
+    Devrank data for the repository owner (when includeAttributes.ownerDevrank = true)
+    """
+
     community: int
 
     cracked_score: float = FieldInfo(alias="crackedScore")
@@ -1258,6 +1316,8 @@ class FollowersResponseUserStarsEdgeStarrersEdge(BaseModel):
 
 
 class FollowersResponseUserStarsEdgeStarrersPageInfo(BaseModel):
+    """Pagination information"""
+
     end_cursor: Optional[str] = FieldInfo(alias="endCursor", default=None)
     """Cursor to fetch next page (null if no more items)"""
 
@@ -1266,6 +1326,8 @@ class FollowersResponseUserStarsEdgeStarrersPageInfo(BaseModel):
 
 
 class FollowersResponseUserStarsEdgeStarrers(BaseModel):
+    """Users who follow this user (when includeAttributes.followers is specified)"""
+
     edges: List[FollowersResponseUserStarsEdgeStarrersEdge]
     """Array of user objects"""
 
@@ -1339,6 +1401,8 @@ class FollowersResponseUserStarsEdge(BaseModel):
 
 
 class FollowersResponseUserStarsPageInfo(BaseModel):
+    """Pagination information"""
+
     end_cursor: Optional[str] = FieldInfo(alias="endCursor", default=None)
     """Cursor to fetch next page (null if no more items)"""
 
@@ -1347,6 +1411,8 @@ class FollowersResponseUserStarsPageInfo(BaseModel):
 
 
 class FollowersResponseUserStars(BaseModel):
+    """Repositories this user starred (when includeAttributes.stars is specified)"""
+
     edges: List[FollowersResponseUserStarsEdge]
     """Array of repository objects"""
 
@@ -1440,6 +1506,8 @@ class FollowersResponse(BaseModel):
 
 
 class FollowingResponsePageInfo(BaseModel):
+    """Pagination information"""
+
     end_cursor: Optional[str] = FieldInfo(alias="endCursor", default=None)
     """Cursor to fetch next page (null if no more items)"""
 
@@ -1513,6 +1581,8 @@ class FollowingResponseUserContributesEdgeContributorsEdge(BaseModel):
 
 
 class FollowingResponseUserContributesEdgeContributorsPageInfo(BaseModel):
+    """Pagination information"""
+
     end_cursor: Optional[str] = FieldInfo(alias="endCursor", default=None)
     """Cursor to fetch next page (null if no more items)"""
 
@@ -1521,6 +1591,8 @@ class FollowingResponseUserContributesEdgeContributorsPageInfo(BaseModel):
 
 
 class FollowingResponseUserContributesEdgeContributors(BaseModel):
+    """Users who follow this user (when includeAttributes.followers is specified)"""
+
     edges: List[FollowingResponseUserContributesEdgeContributorsEdge]
     """Array of user objects"""
 
@@ -1535,6 +1607,8 @@ class FollowingResponseUserContributesEdgeOwnerSocialAccount(BaseModel):
 
 
 class FollowingResponseUserContributesEdgeOwner(BaseModel):
+    """Repository owner (when includeAttributes.owner = true)"""
+
     id: str
     """BountyLab internal ID"""
 
@@ -1594,6 +1668,10 @@ class FollowingResponseUserContributesEdgeOwner(BaseModel):
 
 
 class FollowingResponseUserContributesEdgeOwnerDevrank(BaseModel):
+    """
+    Devrank data for the repository owner (when includeAttributes.ownerDevrank = true)
+    """
+
     community: int
 
     cracked_score: float = FieldInfo(alias="crackedScore")
@@ -1681,6 +1759,8 @@ class FollowingResponseUserContributesEdgeStarrersEdge(BaseModel):
 
 
 class FollowingResponseUserContributesEdgeStarrersPageInfo(BaseModel):
+    """Pagination information"""
+
     end_cursor: Optional[str] = FieldInfo(alias="endCursor", default=None)
     """Cursor to fetch next page (null if no more items)"""
 
@@ -1689,6 +1769,8 @@ class FollowingResponseUserContributesEdgeStarrersPageInfo(BaseModel):
 
 
 class FollowingResponseUserContributesEdgeStarrers(BaseModel):
+    """Users who follow this user (when includeAttributes.followers is specified)"""
+
     edges: List[FollowingResponseUserContributesEdgeStarrersEdge]
     """Array of user objects"""
 
@@ -1764,6 +1846,8 @@ class FollowingResponseUserContributesEdge(BaseModel):
 
 
 class FollowingResponseUserContributesPageInfo(BaseModel):
+    """Pagination information"""
+
     end_cursor: Optional[str] = FieldInfo(alias="endCursor", default=None)
     """Cursor to fetch next page (null if no more items)"""
 
@@ -1772,6 +1856,8 @@ class FollowingResponseUserContributesPageInfo(BaseModel):
 
 
 class FollowingResponseUserContributes(BaseModel):
+    """Repositories this user starred (when includeAttributes.stars is specified)"""
+
     edges: List[FollowingResponseUserContributesEdge]
     """Array of repository objects"""
 
@@ -1780,6 +1866,8 @@ class FollowingResponseUserContributes(BaseModel):
 
 
 class FollowingResponseUserDevrank(BaseModel):
+    """Developer ranking data (only present when fetched from devrank endpoints)"""
+
     community: int
 
     cracked_score: float = FieldInfo(alias="crackedScore")
@@ -1867,6 +1955,8 @@ class FollowingResponseUserFollowersEdge(BaseModel):
 
 
 class FollowingResponseUserFollowersPageInfo(BaseModel):
+    """Pagination information"""
+
     end_cursor: Optional[str] = FieldInfo(alias="endCursor", default=None)
     """Cursor to fetch next page (null if no more items)"""
 
@@ -1875,6 +1965,8 @@ class FollowingResponseUserFollowersPageInfo(BaseModel):
 
 
 class FollowingResponseUserFollowers(BaseModel):
+    """Users who follow this user (when includeAttributes.followers is specified)"""
+
     edges: List[FollowingResponseUserFollowersEdge]
     """Array of user objects"""
 
@@ -1948,6 +2040,8 @@ class FollowingResponseUserFollowingEdge(BaseModel):
 
 
 class FollowingResponseUserFollowingPageInfo(BaseModel):
+    """Pagination information"""
+
     end_cursor: Optional[str] = FieldInfo(alias="endCursor", default=None)
     """Cursor to fetch next page (null if no more items)"""
 
@@ -1956,6 +2050,8 @@ class FollowingResponseUserFollowingPageInfo(BaseModel):
 
 
 class FollowingResponseUserFollowing(BaseModel):
+    """Users who follow this user (when includeAttributes.followers is specified)"""
+
     edges: List[FollowingResponseUserFollowingEdge]
     """Array of user objects"""
 
@@ -2029,6 +2125,8 @@ class FollowingResponseUserOwnsEdgeContributorsEdge(BaseModel):
 
 
 class FollowingResponseUserOwnsEdgeContributorsPageInfo(BaseModel):
+    """Pagination information"""
+
     end_cursor: Optional[str] = FieldInfo(alias="endCursor", default=None)
     """Cursor to fetch next page (null if no more items)"""
 
@@ -2037,6 +2135,8 @@ class FollowingResponseUserOwnsEdgeContributorsPageInfo(BaseModel):
 
 
 class FollowingResponseUserOwnsEdgeContributors(BaseModel):
+    """Users who follow this user (when includeAttributes.followers is specified)"""
+
     edges: List[FollowingResponseUserOwnsEdgeContributorsEdge]
     """Array of user objects"""
 
@@ -2051,6 +2151,8 @@ class FollowingResponseUserOwnsEdgeOwnerSocialAccount(BaseModel):
 
 
 class FollowingResponseUserOwnsEdgeOwner(BaseModel):
+    """Repository owner (when includeAttributes.owner = true)"""
+
     id: str
     """BountyLab internal ID"""
 
@@ -2110,6 +2212,10 @@ class FollowingResponseUserOwnsEdgeOwner(BaseModel):
 
 
 class FollowingResponseUserOwnsEdgeOwnerDevrank(BaseModel):
+    """
+    Devrank data for the repository owner (when includeAttributes.ownerDevrank = true)
+    """
+
     community: int
 
     cracked_score: float = FieldInfo(alias="crackedScore")
@@ -2197,6 +2303,8 @@ class FollowingResponseUserOwnsEdgeStarrersEdge(BaseModel):
 
 
 class FollowingResponseUserOwnsEdgeStarrersPageInfo(BaseModel):
+    """Pagination information"""
+
     end_cursor: Optional[str] = FieldInfo(alias="endCursor", default=None)
     """Cursor to fetch next page (null if no more items)"""
 
@@ -2205,6 +2313,8 @@ class FollowingResponseUserOwnsEdgeStarrersPageInfo(BaseModel):
 
 
 class FollowingResponseUserOwnsEdgeStarrers(BaseModel):
+    """Users who follow this user (when includeAttributes.followers is specified)"""
+
     edges: List[FollowingResponseUserOwnsEdgeStarrersEdge]
     """Array of user objects"""
 
@@ -2278,6 +2388,8 @@ class FollowingResponseUserOwnsEdge(BaseModel):
 
 
 class FollowingResponseUserOwnsPageInfo(BaseModel):
+    """Pagination information"""
+
     end_cursor: Optional[str] = FieldInfo(alias="endCursor", default=None)
     """Cursor to fetch next page (null if no more items)"""
 
@@ -2286,6 +2398,8 @@ class FollowingResponseUserOwnsPageInfo(BaseModel):
 
 
 class FollowingResponseUserOwns(BaseModel):
+    """Repositories this user starred (when includeAttributes.stars is specified)"""
+
     edges: List[FollowingResponseUserOwnsEdge]
     """Array of repository objects"""
 
@@ -2365,6 +2479,8 @@ class FollowingResponseUserStarsEdgeContributorsEdge(BaseModel):
 
 
 class FollowingResponseUserStarsEdgeContributorsPageInfo(BaseModel):
+    """Pagination information"""
+
     end_cursor: Optional[str] = FieldInfo(alias="endCursor", default=None)
     """Cursor to fetch next page (null if no more items)"""
 
@@ -2373,6 +2489,8 @@ class FollowingResponseUserStarsEdgeContributorsPageInfo(BaseModel):
 
 
 class FollowingResponseUserStarsEdgeContributors(BaseModel):
+    """Users who follow this user (when includeAttributes.followers is specified)"""
+
     edges: List[FollowingResponseUserStarsEdgeContributorsEdge]
     """Array of user objects"""
 
@@ -2387,6 +2505,8 @@ class FollowingResponseUserStarsEdgeOwnerSocialAccount(BaseModel):
 
 
 class FollowingResponseUserStarsEdgeOwner(BaseModel):
+    """Repository owner (when includeAttributes.owner = true)"""
+
     id: str
     """BountyLab internal ID"""
 
@@ -2446,6 +2566,10 @@ class FollowingResponseUserStarsEdgeOwner(BaseModel):
 
 
 class FollowingResponseUserStarsEdgeOwnerDevrank(BaseModel):
+    """
+    Devrank data for the repository owner (when includeAttributes.ownerDevrank = true)
+    """
+
     community: int
 
     cracked_score: float = FieldInfo(alias="crackedScore")
@@ -2533,6 +2657,8 @@ class FollowingResponseUserStarsEdgeStarrersEdge(BaseModel):
 
 
 class FollowingResponseUserStarsEdgeStarrersPageInfo(BaseModel):
+    """Pagination information"""
+
     end_cursor: Optional[str] = FieldInfo(alias="endCursor", default=None)
     """Cursor to fetch next page (null if no more items)"""
 
@@ -2541,6 +2667,8 @@ class FollowingResponseUserStarsEdgeStarrersPageInfo(BaseModel):
 
 
 class FollowingResponseUserStarsEdgeStarrers(BaseModel):
+    """Users who follow this user (when includeAttributes.followers is specified)"""
+
     edges: List[FollowingResponseUserStarsEdgeStarrersEdge]
     """Array of user objects"""
 
@@ -2614,6 +2742,8 @@ class FollowingResponseUserStarsEdge(BaseModel):
 
 
 class FollowingResponseUserStarsPageInfo(BaseModel):
+    """Pagination information"""
+
     end_cursor: Optional[str] = FieldInfo(alias="endCursor", default=None)
     """Cursor to fetch next page (null if no more items)"""
 
@@ -2622,6 +2752,8 @@ class FollowingResponseUserStarsPageInfo(BaseModel):
 
 
 class FollowingResponseUserStars(BaseModel):
+    """Repositories this user starred (when includeAttributes.stars is specified)"""
+
     edges: List[FollowingResponseUserStarsEdge]
     """Array of repository objects"""
 
@@ -2715,6 +2847,8 @@ class FollowingResponse(BaseModel):
 
 
 class UserOwnsResponsePageInfo(BaseModel):
+    """Pagination information"""
+
     end_cursor: Optional[str] = FieldInfo(alias="endCursor", default=None)
     """Cursor to fetch next page (null if no more items)"""
 
@@ -2788,6 +2922,8 @@ class UserOwnsResponseRepositoryContributorsEdge(BaseModel):
 
 
 class UserOwnsResponseRepositoryContributorsPageInfo(BaseModel):
+    """Pagination information"""
+
     end_cursor: Optional[str] = FieldInfo(alias="endCursor", default=None)
     """Cursor to fetch next page (null if no more items)"""
 
@@ -2796,6 +2932,8 @@ class UserOwnsResponseRepositoryContributorsPageInfo(BaseModel):
 
 
 class UserOwnsResponseRepositoryContributors(BaseModel):
+    """Users who follow this user (when includeAttributes.followers is specified)"""
+
     edges: List[UserOwnsResponseRepositoryContributorsEdge]
     """Array of user objects"""
 
@@ -2810,6 +2948,8 @@ class UserOwnsResponseRepositoryOwnerSocialAccount(BaseModel):
 
 
 class UserOwnsResponseRepositoryOwner(BaseModel):
+    """Repository owner (when includeAttributes.owner = true)"""
+
     id: str
     """BountyLab internal ID"""
 
@@ -2869,6 +3009,10 @@ class UserOwnsResponseRepositoryOwner(BaseModel):
 
 
 class UserOwnsResponseRepositoryOwnerDevrank(BaseModel):
+    """
+    Devrank data for the repository owner (when includeAttributes.ownerDevrank = true)
+    """
+
     community: int
 
     cracked_score: float = FieldInfo(alias="crackedScore")
@@ -2956,6 +3100,8 @@ class UserOwnsResponseRepositoryStarrersEdge(BaseModel):
 
 
 class UserOwnsResponseRepositoryStarrersPageInfo(BaseModel):
+    """Pagination information"""
+
     end_cursor: Optional[str] = FieldInfo(alias="endCursor", default=None)
     """Cursor to fetch next page (null if no more items)"""
 
@@ -2964,6 +3110,8 @@ class UserOwnsResponseRepositoryStarrersPageInfo(BaseModel):
 
 
 class UserOwnsResponseRepositoryStarrers(BaseModel):
+    """Users who follow this user (when includeAttributes.followers is specified)"""
+
     edges: List[UserOwnsResponseRepositoryStarrersEdge]
     """Array of user objects"""
 
@@ -3045,6 +3193,8 @@ class UserOwnsResponse(BaseModel):
 
 
 class UserStarsResponsePageInfo(BaseModel):
+    """Pagination information"""
+
     end_cursor: Optional[str] = FieldInfo(alias="endCursor", default=None)
     """Cursor to fetch next page (null if no more items)"""
 
@@ -3118,6 +3268,8 @@ class UserStarsResponseRepositoryContributorsEdge(BaseModel):
 
 
 class UserStarsResponseRepositoryContributorsPageInfo(BaseModel):
+    """Pagination information"""
+
     end_cursor: Optional[str] = FieldInfo(alias="endCursor", default=None)
     """Cursor to fetch next page (null if no more items)"""
 
@@ -3126,6 +3278,8 @@ class UserStarsResponseRepositoryContributorsPageInfo(BaseModel):
 
 
 class UserStarsResponseRepositoryContributors(BaseModel):
+    """Users who follow this user (when includeAttributes.followers is specified)"""
+
     edges: List[UserStarsResponseRepositoryContributorsEdge]
     """Array of user objects"""
 
@@ -3140,6 +3294,8 @@ class UserStarsResponseRepositoryOwnerSocialAccount(BaseModel):
 
 
 class UserStarsResponseRepositoryOwner(BaseModel):
+    """Repository owner (when includeAttributes.owner = true)"""
+
     id: str
     """BountyLab internal ID"""
 
@@ -3199,6 +3355,10 @@ class UserStarsResponseRepositoryOwner(BaseModel):
 
 
 class UserStarsResponseRepositoryOwnerDevrank(BaseModel):
+    """
+    Devrank data for the repository owner (when includeAttributes.ownerDevrank = true)
+    """
+
     community: int
 
     cracked_score: float = FieldInfo(alias="crackedScore")
@@ -3286,6 +3446,8 @@ class UserStarsResponseRepositoryStarrersEdge(BaseModel):
 
 
 class UserStarsResponseRepositoryStarrersPageInfo(BaseModel):
+    """Pagination information"""
+
     end_cursor: Optional[str] = FieldInfo(alias="endCursor", default=None)
     """Cursor to fetch next page (null if no more items)"""
 
@@ -3294,6 +3456,8 @@ class UserStarsResponseRepositoryStarrersPageInfo(BaseModel):
 
 
 class UserStarsResponseRepositoryStarrers(BaseModel):
+    """Users who follow this user (when includeAttributes.followers is specified)"""
+
     edges: List[UserStarsResponseRepositoryStarrersEdge]
     """Array of user objects"""
 
@@ -3375,6 +3539,8 @@ class UserStarsResponse(BaseModel):
 
 
 class UserContributesResponsePageInfo(BaseModel):
+    """Pagination information"""
+
     end_cursor: Optional[str] = FieldInfo(alias="endCursor", default=None)
     """Cursor to fetch next page (null if no more items)"""
 
@@ -3448,6 +3614,8 @@ class UserContributesResponseRepositoryContributorsEdge(BaseModel):
 
 
 class UserContributesResponseRepositoryContributorsPageInfo(BaseModel):
+    """Pagination information"""
+
     end_cursor: Optional[str] = FieldInfo(alias="endCursor", default=None)
     """Cursor to fetch next page (null if no more items)"""
 
@@ -3456,6 +3624,8 @@ class UserContributesResponseRepositoryContributorsPageInfo(BaseModel):
 
 
 class UserContributesResponseRepositoryContributors(BaseModel):
+    """Users who follow this user (when includeAttributes.followers is specified)"""
+
     edges: List[UserContributesResponseRepositoryContributorsEdge]
     """Array of user objects"""
 
@@ -3470,6 +3640,8 @@ class UserContributesResponseRepositoryOwnerSocialAccount(BaseModel):
 
 
 class UserContributesResponseRepositoryOwner(BaseModel):
+    """Repository owner (when includeAttributes.owner = true)"""
+
     id: str
     """BountyLab internal ID"""
 
@@ -3529,6 +3701,10 @@ class UserContributesResponseRepositoryOwner(BaseModel):
 
 
 class UserContributesResponseRepositoryOwnerDevrank(BaseModel):
+    """
+    Devrank data for the repository owner (when includeAttributes.ownerDevrank = true)
+    """
+
     community: int
 
     cracked_score: float = FieldInfo(alias="crackedScore")
@@ -3616,6 +3792,8 @@ class UserContributesResponseRepositoryStarrersEdge(BaseModel):
 
 
 class UserContributesResponseRepositoryStarrersPageInfo(BaseModel):
+    """Pagination information"""
+
     end_cursor: Optional[str] = FieldInfo(alias="endCursor", default=None)
     """Cursor to fetch next page (null if no more items)"""
 
@@ -3624,6 +3802,8 @@ class UserContributesResponseRepositoryStarrersPageInfo(BaseModel):
 
 
 class UserContributesResponseRepositoryStarrers(BaseModel):
+    """Users who follow this user (when includeAttributes.followers is specified)"""
+
     edges: List[UserContributesResponseRepositoryStarrersEdge]
     """Array of user objects"""
 

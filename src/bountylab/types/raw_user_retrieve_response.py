@@ -130,6 +130,8 @@ class UserContributesEdgeContributorsEdge(BaseModel):
 
 
 class UserContributesEdgeContributorsPageInfo(BaseModel):
+    """Pagination information"""
+
     end_cursor: Optional[str] = FieldInfo(alias="endCursor", default=None)
     """Cursor to fetch next page (null if no more items)"""
 
@@ -138,6 +140,8 @@ class UserContributesEdgeContributorsPageInfo(BaseModel):
 
 
 class UserContributesEdgeContributors(BaseModel):
+    """Users who follow this user (when includeAttributes.followers is specified)"""
+
     edges: List[UserContributesEdgeContributorsEdge]
     """Array of user objects"""
 
@@ -152,6 +156,8 @@ class UserContributesEdgeOwnerSocialAccount(BaseModel):
 
 
 class UserContributesEdgeOwner(BaseModel):
+    """Repository owner (when includeAttributes.owner = true)"""
+
     id: str
     """BountyLab internal ID"""
 
@@ -211,6 +217,10 @@ class UserContributesEdgeOwner(BaseModel):
 
 
 class UserContributesEdgeOwnerDevrank(BaseModel):
+    """
+    Devrank data for the repository owner (when includeAttributes.ownerDevrank = true)
+    """
+
     community: int
 
     cracked_score: float = FieldInfo(alias="crackedScore")
@@ -298,6 +308,8 @@ class UserContributesEdgeStarrersEdge(BaseModel):
 
 
 class UserContributesEdgeStarrersPageInfo(BaseModel):
+    """Pagination information"""
+
     end_cursor: Optional[str] = FieldInfo(alias="endCursor", default=None)
     """Cursor to fetch next page (null if no more items)"""
 
@@ -306,6 +318,8 @@ class UserContributesEdgeStarrersPageInfo(BaseModel):
 
 
 class UserContributesEdgeStarrers(BaseModel):
+    """Users who follow this user (when includeAttributes.followers is specified)"""
+
     edges: List[UserContributesEdgeStarrersEdge]
     """Array of user objects"""
 
@@ -379,6 +393,8 @@ class UserContributesEdge(BaseModel):
 
 
 class UserContributesPageInfo(BaseModel):
+    """Pagination information"""
+
     end_cursor: Optional[str] = FieldInfo(alias="endCursor", default=None)
     """Cursor to fetch next page (null if no more items)"""
 
@@ -387,6 +403,8 @@ class UserContributesPageInfo(BaseModel):
 
 
 class UserContributes(BaseModel):
+    """Repositories this user starred (when includeAttributes.stars is specified)"""
+
     edges: List[UserContributesEdge]
     """Array of repository objects"""
 
@@ -395,6 +413,8 @@ class UserContributes(BaseModel):
 
 
 class UserDevrank(BaseModel):
+    """Developer ranking data (only present when fetched from devrank endpoints)"""
+
     community: int
 
     cracked_score: float = FieldInfo(alias="crackedScore")
@@ -480,6 +500,8 @@ class UserFollowersEdge(BaseModel):
 
 
 class UserFollowersPageInfo(BaseModel):
+    """Pagination information"""
+
     end_cursor: Optional[str] = FieldInfo(alias="endCursor", default=None)
     """Cursor to fetch next page (null if no more items)"""
 
@@ -488,6 +510,8 @@ class UserFollowersPageInfo(BaseModel):
 
 
 class UserFollowers(BaseModel):
+    """Users who follow this user (when includeAttributes.followers is specified)"""
+
     edges: List[UserFollowersEdge]
     """Array of user objects"""
 
@@ -559,6 +583,8 @@ class UserFollowingEdge(BaseModel):
 
 
 class UserFollowingPageInfo(BaseModel):
+    """Pagination information"""
+
     end_cursor: Optional[str] = FieldInfo(alias="endCursor", default=None)
     """Cursor to fetch next page (null if no more items)"""
 
@@ -567,6 +593,8 @@ class UserFollowingPageInfo(BaseModel):
 
 
 class UserFollowing(BaseModel):
+    """Users who follow this user (when includeAttributes.followers is specified)"""
+
     edges: List[UserFollowingEdge]
     """Array of user objects"""
 
@@ -640,6 +668,8 @@ class UserOwnsEdgeContributorsEdge(BaseModel):
 
 
 class UserOwnsEdgeContributorsPageInfo(BaseModel):
+    """Pagination information"""
+
     end_cursor: Optional[str] = FieldInfo(alias="endCursor", default=None)
     """Cursor to fetch next page (null if no more items)"""
 
@@ -648,6 +678,8 @@ class UserOwnsEdgeContributorsPageInfo(BaseModel):
 
 
 class UserOwnsEdgeContributors(BaseModel):
+    """Users who follow this user (when includeAttributes.followers is specified)"""
+
     edges: List[UserOwnsEdgeContributorsEdge]
     """Array of user objects"""
 
@@ -662,6 +694,8 @@ class UserOwnsEdgeOwnerSocialAccount(BaseModel):
 
 
 class UserOwnsEdgeOwner(BaseModel):
+    """Repository owner (when includeAttributes.owner = true)"""
+
     id: str
     """BountyLab internal ID"""
 
@@ -719,6 +753,10 @@ class UserOwnsEdgeOwner(BaseModel):
 
 
 class UserOwnsEdgeOwnerDevrank(BaseModel):
+    """
+    Devrank data for the repository owner (when includeAttributes.ownerDevrank = true)
+    """
+
     community: int
 
     cracked_score: float = FieldInfo(alias="crackedScore")
@@ -806,6 +844,8 @@ class UserOwnsEdgeStarrersEdge(BaseModel):
 
 
 class UserOwnsEdgeStarrersPageInfo(BaseModel):
+    """Pagination information"""
+
     end_cursor: Optional[str] = FieldInfo(alias="endCursor", default=None)
     """Cursor to fetch next page (null if no more items)"""
 
@@ -814,6 +854,8 @@ class UserOwnsEdgeStarrersPageInfo(BaseModel):
 
 
 class UserOwnsEdgeStarrers(BaseModel):
+    """Users who follow this user (when includeAttributes.followers is specified)"""
+
     edges: List[UserOwnsEdgeStarrersEdge]
     """Array of user objects"""
 
@@ -887,6 +929,8 @@ class UserOwnsEdge(BaseModel):
 
 
 class UserOwnsPageInfo(BaseModel):
+    """Pagination information"""
+
     end_cursor: Optional[str] = FieldInfo(alias="endCursor", default=None)
     """Cursor to fetch next page (null if no more items)"""
 
@@ -895,6 +939,8 @@ class UserOwnsPageInfo(BaseModel):
 
 
 class UserOwns(BaseModel):
+    """Repositories this user starred (when includeAttributes.stars is specified)"""
+
     edges: List[UserOwnsEdge]
     """Array of repository objects"""
 
@@ -974,6 +1020,8 @@ class UserStarsEdgeContributorsEdge(BaseModel):
 
 
 class UserStarsEdgeContributorsPageInfo(BaseModel):
+    """Pagination information"""
+
     end_cursor: Optional[str] = FieldInfo(alias="endCursor", default=None)
     """Cursor to fetch next page (null if no more items)"""
 
@@ -982,6 +1030,8 @@ class UserStarsEdgeContributorsPageInfo(BaseModel):
 
 
 class UserStarsEdgeContributors(BaseModel):
+    """Users who follow this user (when includeAttributes.followers is specified)"""
+
     edges: List[UserStarsEdgeContributorsEdge]
     """Array of user objects"""
 
@@ -996,6 +1046,8 @@ class UserStarsEdgeOwnerSocialAccount(BaseModel):
 
 
 class UserStarsEdgeOwner(BaseModel):
+    """Repository owner (when includeAttributes.owner = true)"""
+
     id: str
     """BountyLab internal ID"""
 
@@ -1053,6 +1105,10 @@ class UserStarsEdgeOwner(BaseModel):
 
 
 class UserStarsEdgeOwnerDevrank(BaseModel):
+    """
+    Devrank data for the repository owner (when includeAttributes.ownerDevrank = true)
+    """
+
     community: int
 
     cracked_score: float = FieldInfo(alias="crackedScore")
@@ -1140,6 +1196,8 @@ class UserStarsEdgeStarrersEdge(BaseModel):
 
 
 class UserStarsEdgeStarrersPageInfo(BaseModel):
+    """Pagination information"""
+
     end_cursor: Optional[str] = FieldInfo(alias="endCursor", default=None)
     """Cursor to fetch next page (null if no more items)"""
 
@@ -1148,6 +1206,8 @@ class UserStarsEdgeStarrersPageInfo(BaseModel):
 
 
 class UserStarsEdgeStarrers(BaseModel):
+    """Users who follow this user (when includeAttributes.followers is specified)"""
+
     edges: List[UserStarsEdgeStarrersEdge]
     """Array of user objects"""
 
@@ -1221,6 +1281,8 @@ class UserStarsEdge(BaseModel):
 
 
 class UserStarsPageInfo(BaseModel):
+    """Pagination information"""
+
     end_cursor: Optional[str] = FieldInfo(alias="endCursor", default=None)
     """Cursor to fetch next page (null if no more items)"""
 
@@ -1229,6 +1291,8 @@ class UserStarsPageInfo(BaseModel):
 
 
 class UserStars(BaseModel):
+    """Repositories this user starred (when includeAttributes.stars is specified)"""
+
     edges: List[UserStarsEdge]
     """Array of repository objects"""
 
