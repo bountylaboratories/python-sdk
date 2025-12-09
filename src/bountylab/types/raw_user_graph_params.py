@@ -364,6 +364,8 @@ IncludeAttributesContributesFilters: TypeAlias = Union[
 
 
 class IncludeAttributesContributes(TypedDict, total=False):
+    """Include contributed repositories with cursor pagination"""
+
     first: Required[int]
     """Number of items to return (max: 100)"""
 
@@ -571,6 +573,8 @@ IncludeAttributesContributorsFilters: TypeAlias = Union[
 
 
 class IncludeAttributesContributors(TypedDict, total=False):
+    """Include repository contributors with cursor pagination"""
+
     first: Required[int]
     """Number of items to return (max: 100)"""
 
@@ -774,6 +778,8 @@ IncludeAttributesFollowersFilters: TypeAlias = Union[
 
 
 class IncludeAttributesFollowers(TypedDict, total=False):
+    """Include followers with cursor pagination"""
+
     first: Required[int]
     """Number of items to return (max: 100)"""
 
@@ -977,6 +983,8 @@ IncludeAttributesFollowingFilters: TypeAlias = Union[
 
 
 class IncludeAttributesFollowing(TypedDict, total=False):
+    """Include users this user follows with cursor pagination"""
+
     first: Required[int]
     """Number of items to return (max: 100)"""
 
@@ -1180,6 +1188,8 @@ IncludeAttributesOwnsFilters: TypeAlias = Union[
 
 
 class IncludeAttributesOwns(TypedDict, total=False):
+    """Include owned repositories with cursor pagination"""
+
     first: Required[int]
     """Number of items to return (max: 100)"""
 
@@ -1383,6 +1393,8 @@ IncludeAttributesStarrersFilters: TypeAlias = Union[
 
 
 class IncludeAttributesStarrers(TypedDict, total=False):
+    """Include users who starred the repository with cursor pagination"""
+
     first: Required[int]
     """Number of items to return (max: 100)"""
 
@@ -1586,6 +1598,8 @@ IncludeAttributesStarsFilters: TypeAlias = Union[
 
 
 class IncludeAttributesStars(TypedDict, total=False):
+    """Include starred repositories with cursor pagination"""
+
     first: Required[int]
     """Number of items to return (max: 100)"""
 
@@ -1601,6 +1615,11 @@ class IncludeAttributesStars(TypedDict, total=False):
 
 
 class IncludeAttributes(TypedDict, total=False):
+    """Optional graph relationships to include.
+
+    Use user attributes (followers, following, owns, stars, contributes) for user-returning relationships, or repo attributes (owner, contributors, starrers) for repo-returning relationships.
+    """
+
     contributes: IncludeAttributesContributes
     """Include contributed repositories with cursor pagination"""
 

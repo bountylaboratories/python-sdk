@@ -19,6 +19,8 @@ class UserEmailBestEmailParams(TypedDict, total=False):
 
 
 class Signals(TypedDict, total=False):
+    """Optional signal data for tracking email context (body, subject, sender)"""
+
     email_body: Annotated[str, PropertyInfo(alias="emailBody")]
     """Email body content for tracking"""
 
