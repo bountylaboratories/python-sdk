@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 import os
-from typing import Any, Mapping
+from typing import TYPE_CHECKING, Any, Mapping
 from typing_extensions import Self, override
 
 import httpx
@@ -20,8 +20,8 @@ from ._types import (
     not_given,
 )
 from ._utils import is_given, get_async_library
+from ._compat import cached_property
 from ._version import __version__
-from .resources import raw_repos, raw_users, user_emails, search_repos, search_users
 from ._streaming import Stream as Stream, AsyncStream as AsyncStream
 from ._exceptions import APIStatusError, BountylabError
 from ._base_client import (
@@ -29,6 +29,14 @@ from ._base_client import (
     SyncAPIClient,
     AsyncAPIClient,
 )
+
+if TYPE_CHECKING:
+    from .resources import raw_repos, raw_users, user_emails, search_repos, search_users
+    from .resources.raw_repos import RawReposResource, AsyncRawReposResource
+    from .resources.raw_users import RawUsersResource, AsyncRawUsersResource
+    from .resources.user_emails import UserEmailsResource, AsyncUserEmailsResource
+    from .resources.search_repos import SearchReposResource, AsyncSearchReposResource
+    from .resources.search_users import SearchUsersResource, AsyncSearchUsersResource
 
 __all__ = [
     "Timeout",
@@ -43,14 +51,6 @@ __all__ = [
 
 
 class Bountylab(SyncAPIClient):
-    raw_users: raw_users.RawUsersResource
-    raw_repos: raw_repos.RawReposResource
-    user_emails: user_emails.UserEmailsResource
-    search_users: search_users.SearchUsersResource
-    search_repos: search_repos.SearchReposResource
-    with_raw_response: BountylabWithRawResponse
-    with_streaming_response: BountylabWithStreamedResponse
-
     # client options
     api_key: str
 
@@ -105,13 +105,43 @@ class Bountylab(SyncAPIClient):
             _strict_response_validation=_strict_response_validation,
         )
 
-        self.raw_users = raw_users.RawUsersResource(self)
-        self.raw_repos = raw_repos.RawReposResource(self)
-        self.user_emails = user_emails.UserEmailsResource(self)
-        self.search_users = search_users.SearchUsersResource(self)
-        self.search_repos = search_repos.SearchReposResource(self)
-        self.with_raw_response = BountylabWithRawResponse(self)
-        self.with_streaming_response = BountylabWithStreamedResponse(self)
+    @cached_property
+    def raw_users(self) -> RawUsersResource:
+        from .resources.raw_users import RawUsersResource
+
+        return RawUsersResource(self)
+
+    @cached_property
+    def raw_repos(self) -> RawReposResource:
+        from .resources.raw_repos import RawReposResource
+
+        return RawReposResource(self)
+
+    @cached_property
+    def user_emails(self) -> UserEmailsResource:
+        from .resources.user_emails import UserEmailsResource
+
+        return UserEmailsResource(self)
+
+    @cached_property
+    def search_users(self) -> SearchUsersResource:
+        from .resources.search_users import SearchUsersResource
+
+        return SearchUsersResource(self)
+
+    @cached_property
+    def search_repos(self) -> SearchReposResource:
+        from .resources.search_repos import SearchReposResource
+
+        return SearchReposResource(self)
+
+    @cached_property
+    def with_raw_response(self) -> BountylabWithRawResponse:
+        return BountylabWithRawResponse(self)
+
+    @cached_property
+    def with_streaming_response(self) -> BountylabWithStreamedResponse:
+        return BountylabWithStreamedResponse(self)
 
     @property
     @override
@@ -219,14 +249,6 @@ class Bountylab(SyncAPIClient):
 
 
 class AsyncBountylab(AsyncAPIClient):
-    raw_users: raw_users.AsyncRawUsersResource
-    raw_repos: raw_repos.AsyncRawReposResource
-    user_emails: user_emails.AsyncUserEmailsResource
-    search_users: search_users.AsyncSearchUsersResource
-    search_repos: search_repos.AsyncSearchReposResource
-    with_raw_response: AsyncBountylabWithRawResponse
-    with_streaming_response: AsyncBountylabWithStreamedResponse
-
     # client options
     api_key: str
 
@@ -281,13 +303,43 @@ class AsyncBountylab(AsyncAPIClient):
             _strict_response_validation=_strict_response_validation,
         )
 
-        self.raw_users = raw_users.AsyncRawUsersResource(self)
-        self.raw_repos = raw_repos.AsyncRawReposResource(self)
-        self.user_emails = user_emails.AsyncUserEmailsResource(self)
-        self.search_users = search_users.AsyncSearchUsersResource(self)
-        self.search_repos = search_repos.AsyncSearchReposResource(self)
-        self.with_raw_response = AsyncBountylabWithRawResponse(self)
-        self.with_streaming_response = AsyncBountylabWithStreamedResponse(self)
+    @cached_property
+    def raw_users(self) -> AsyncRawUsersResource:
+        from .resources.raw_users import AsyncRawUsersResource
+
+        return AsyncRawUsersResource(self)
+
+    @cached_property
+    def raw_repos(self) -> AsyncRawReposResource:
+        from .resources.raw_repos import AsyncRawReposResource
+
+        return AsyncRawReposResource(self)
+
+    @cached_property
+    def user_emails(self) -> AsyncUserEmailsResource:
+        from .resources.user_emails import AsyncUserEmailsResource
+
+        return AsyncUserEmailsResource(self)
+
+    @cached_property
+    def search_users(self) -> AsyncSearchUsersResource:
+        from .resources.search_users import AsyncSearchUsersResource
+
+        return AsyncSearchUsersResource(self)
+
+    @cached_property
+    def search_repos(self) -> AsyncSearchReposResource:
+        from .resources.search_repos import AsyncSearchReposResource
+
+        return AsyncSearchReposResource(self)
+
+    @cached_property
+    def with_raw_response(self) -> AsyncBountylabWithRawResponse:
+        return AsyncBountylabWithRawResponse(self)
+
+    @cached_property
+    def with_streaming_response(self) -> AsyncBountylabWithStreamedResponse:
+        return AsyncBountylabWithStreamedResponse(self)
 
     @property
     @override
@@ -395,39 +447,151 @@ class AsyncBountylab(AsyncAPIClient):
 
 
 class BountylabWithRawResponse:
+    _client: Bountylab
+
     def __init__(self, client: Bountylab) -> None:
-        self.raw_users = raw_users.RawUsersResourceWithRawResponse(client.raw_users)
-        self.raw_repos = raw_repos.RawReposResourceWithRawResponse(client.raw_repos)
-        self.user_emails = user_emails.UserEmailsResourceWithRawResponse(client.user_emails)
-        self.search_users = search_users.SearchUsersResourceWithRawResponse(client.search_users)
-        self.search_repos = search_repos.SearchReposResourceWithRawResponse(client.search_repos)
+        self._client = client
+
+    @cached_property
+    def raw_users(self) -> raw_users.RawUsersResourceWithRawResponse:
+        from .resources.raw_users import RawUsersResourceWithRawResponse
+
+        return RawUsersResourceWithRawResponse(self._client.raw_users)
+
+    @cached_property
+    def raw_repos(self) -> raw_repos.RawReposResourceWithRawResponse:
+        from .resources.raw_repos import RawReposResourceWithRawResponse
+
+        return RawReposResourceWithRawResponse(self._client.raw_repos)
+
+    @cached_property
+    def user_emails(self) -> user_emails.UserEmailsResourceWithRawResponse:
+        from .resources.user_emails import UserEmailsResourceWithRawResponse
+
+        return UserEmailsResourceWithRawResponse(self._client.user_emails)
+
+    @cached_property
+    def search_users(self) -> search_users.SearchUsersResourceWithRawResponse:
+        from .resources.search_users import SearchUsersResourceWithRawResponse
+
+        return SearchUsersResourceWithRawResponse(self._client.search_users)
+
+    @cached_property
+    def search_repos(self) -> search_repos.SearchReposResourceWithRawResponse:
+        from .resources.search_repos import SearchReposResourceWithRawResponse
+
+        return SearchReposResourceWithRawResponse(self._client.search_repos)
 
 
 class AsyncBountylabWithRawResponse:
+    _client: AsyncBountylab
+
     def __init__(self, client: AsyncBountylab) -> None:
-        self.raw_users = raw_users.AsyncRawUsersResourceWithRawResponse(client.raw_users)
-        self.raw_repos = raw_repos.AsyncRawReposResourceWithRawResponse(client.raw_repos)
-        self.user_emails = user_emails.AsyncUserEmailsResourceWithRawResponse(client.user_emails)
-        self.search_users = search_users.AsyncSearchUsersResourceWithRawResponse(client.search_users)
-        self.search_repos = search_repos.AsyncSearchReposResourceWithRawResponse(client.search_repos)
+        self._client = client
+
+    @cached_property
+    def raw_users(self) -> raw_users.AsyncRawUsersResourceWithRawResponse:
+        from .resources.raw_users import AsyncRawUsersResourceWithRawResponse
+
+        return AsyncRawUsersResourceWithRawResponse(self._client.raw_users)
+
+    @cached_property
+    def raw_repos(self) -> raw_repos.AsyncRawReposResourceWithRawResponse:
+        from .resources.raw_repos import AsyncRawReposResourceWithRawResponse
+
+        return AsyncRawReposResourceWithRawResponse(self._client.raw_repos)
+
+    @cached_property
+    def user_emails(self) -> user_emails.AsyncUserEmailsResourceWithRawResponse:
+        from .resources.user_emails import AsyncUserEmailsResourceWithRawResponse
+
+        return AsyncUserEmailsResourceWithRawResponse(self._client.user_emails)
+
+    @cached_property
+    def search_users(self) -> search_users.AsyncSearchUsersResourceWithRawResponse:
+        from .resources.search_users import AsyncSearchUsersResourceWithRawResponse
+
+        return AsyncSearchUsersResourceWithRawResponse(self._client.search_users)
+
+    @cached_property
+    def search_repos(self) -> search_repos.AsyncSearchReposResourceWithRawResponse:
+        from .resources.search_repos import AsyncSearchReposResourceWithRawResponse
+
+        return AsyncSearchReposResourceWithRawResponse(self._client.search_repos)
 
 
 class BountylabWithStreamedResponse:
+    _client: Bountylab
+
     def __init__(self, client: Bountylab) -> None:
-        self.raw_users = raw_users.RawUsersResourceWithStreamingResponse(client.raw_users)
-        self.raw_repos = raw_repos.RawReposResourceWithStreamingResponse(client.raw_repos)
-        self.user_emails = user_emails.UserEmailsResourceWithStreamingResponse(client.user_emails)
-        self.search_users = search_users.SearchUsersResourceWithStreamingResponse(client.search_users)
-        self.search_repos = search_repos.SearchReposResourceWithStreamingResponse(client.search_repos)
+        self._client = client
+
+    @cached_property
+    def raw_users(self) -> raw_users.RawUsersResourceWithStreamingResponse:
+        from .resources.raw_users import RawUsersResourceWithStreamingResponse
+
+        return RawUsersResourceWithStreamingResponse(self._client.raw_users)
+
+    @cached_property
+    def raw_repos(self) -> raw_repos.RawReposResourceWithStreamingResponse:
+        from .resources.raw_repos import RawReposResourceWithStreamingResponse
+
+        return RawReposResourceWithStreamingResponse(self._client.raw_repos)
+
+    @cached_property
+    def user_emails(self) -> user_emails.UserEmailsResourceWithStreamingResponse:
+        from .resources.user_emails import UserEmailsResourceWithStreamingResponse
+
+        return UserEmailsResourceWithStreamingResponse(self._client.user_emails)
+
+    @cached_property
+    def search_users(self) -> search_users.SearchUsersResourceWithStreamingResponse:
+        from .resources.search_users import SearchUsersResourceWithStreamingResponse
+
+        return SearchUsersResourceWithStreamingResponse(self._client.search_users)
+
+    @cached_property
+    def search_repos(self) -> search_repos.SearchReposResourceWithStreamingResponse:
+        from .resources.search_repos import SearchReposResourceWithStreamingResponse
+
+        return SearchReposResourceWithStreamingResponse(self._client.search_repos)
 
 
 class AsyncBountylabWithStreamedResponse:
+    _client: AsyncBountylab
+
     def __init__(self, client: AsyncBountylab) -> None:
-        self.raw_users = raw_users.AsyncRawUsersResourceWithStreamingResponse(client.raw_users)
-        self.raw_repos = raw_repos.AsyncRawReposResourceWithStreamingResponse(client.raw_repos)
-        self.user_emails = user_emails.AsyncUserEmailsResourceWithStreamingResponse(client.user_emails)
-        self.search_users = search_users.AsyncSearchUsersResourceWithStreamingResponse(client.search_users)
-        self.search_repos = search_repos.AsyncSearchReposResourceWithStreamingResponse(client.search_repos)
+        self._client = client
+
+    @cached_property
+    def raw_users(self) -> raw_users.AsyncRawUsersResourceWithStreamingResponse:
+        from .resources.raw_users import AsyncRawUsersResourceWithStreamingResponse
+
+        return AsyncRawUsersResourceWithStreamingResponse(self._client.raw_users)
+
+    @cached_property
+    def raw_repos(self) -> raw_repos.AsyncRawReposResourceWithStreamingResponse:
+        from .resources.raw_repos import AsyncRawReposResourceWithStreamingResponse
+
+        return AsyncRawReposResourceWithStreamingResponse(self._client.raw_repos)
+
+    @cached_property
+    def user_emails(self) -> user_emails.AsyncUserEmailsResourceWithStreamingResponse:
+        from .resources.user_emails import AsyncUserEmailsResourceWithStreamingResponse
+
+        return AsyncUserEmailsResourceWithStreamingResponse(self._client.user_emails)
+
+    @cached_property
+    def search_users(self) -> search_users.AsyncSearchUsersResourceWithStreamingResponse:
+        from .resources.search_users import AsyncSearchUsersResourceWithStreamingResponse
+
+        return AsyncSearchUsersResourceWithStreamingResponse(self._client.search_users)
+
+    @cached_property
+    def search_repos(self) -> search_repos.AsyncSearchReposResourceWithStreamingResponse:
+        from .resources.search_repos import AsyncSearchReposResourceWithStreamingResponse
+
+        return AsyncSearchReposResourceWithStreamingResponse(self._client.search_repos)
 
 
 Client = Bountylab
