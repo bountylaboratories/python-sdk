@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.28.3 (2025-12-18)
+
+Full Changelog: [v0.28.2...v0.28.3](https://github.com/bountylaboratories/python-sdk/compare/v0.28.2...v0.28.3)
+
+### Bug Fixes
+
+* use async_to_httpx_files in patch method ([5e9911f](https://github.com/bountylaboratories/python-sdk/commit/5e9911f01a0d71aea5382863b7cd029670772632))
+
+
+### Chores
+
+* **internal:** add missing files argument to base client ([fa3c563](https://github.com/bountylaboratories/python-sdk/commit/fa3c56309612f1ccd656998e15cc42e642175f7d))
+* speedup initial import ([ba64b61](https://github.com/bountylaboratories/python-sdk/commit/ba64b610a617530709341fc57db7a2bde3782c93))
+
 ## 0.28.2 (2025-12-09)
 
 Full Changelog: [v0.28.1...v0.28.2](https://github.com/bountylaboratories/python-sdk/compare/v0.28.1...v0.28.2)
