@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.28.4 (2026-01-06)
+
+Full Changelog: [v0.28.3...v0.28.4](https://github.com/bountylaboratories/python-sdk/compare/v0.28.3...v0.28.4)
+
+### Chores
+
+* **internal:** add `--fix` argument to lint script ([c8a578e](https://github.com/bountylaboratories/python-sdk/commit/c8a578e79f967e928bb7b78c71d6c08f900f10f6))
+* **internal:** codegen related update ([8880551](https://github.com/bountylaboratories/python-sdk/commit/88805518155476346cddd82d098c3834836d4cd7))
+
 ## 0.28.3 (2025-12-18)
 
 Full Changelog: [v0.28.2...v0.28.3](https://github.com/bountylaboratories/python-sdk/compare/v0.28.2...v0.28.3)
