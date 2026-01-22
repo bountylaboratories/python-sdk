@@ -2,12 +2,12 @@
 
 from __future__ import annotations
 
-from typing import Optional
+from typing import Union, Optional
 
 import httpx
 
 from ..types import search_repo_search_params, search_repo_natural_language_params
-from .._types import Body, Omit, Query, Headers, NotGiven, omit, not_given
+from .._types import Body, Omit, Query, Headers, NotGiven, SequenceNotStr, omit, not_given
 from .._utils import maybe_transform, async_maybe_transform
 from .._compat import cached_property
 from .._resource import SyncAPIResource, AsyncAPIResource
@@ -87,7 +87,7 @@ class SearchReposResource(SyncAPIResource):
 
           rank_by: Custom ranking formula (AST expression). If not provided, uses default
               log-normalized 70/20/10 formula (70% semantic similarity, 20% popularity, 10%
-              activity). Pure ANN queries skip multi-query for better performance.
+              activity).
 
           extra_headers: Send extra headers
 
@@ -121,7 +121,7 @@ class SearchReposResource(SyncAPIResource):
     def search(
         self,
         *,
-        query: str,
+        query: Union[str, SequenceNotStr[str], None],
         after: str | Omit = omit,
         enable_pagination: bool | Omit = omit,
         filters: Optional[search_repo_search_params.Filters] | Omit = omit,
@@ -142,8 +142,9 @@ class SearchReposResource(SyncAPIResource):
         SEARCH service. Credits: 1 per result returned.
 
         Args:
-          query: Natural language search query for semantic search across repository README and
-              description using vector embeddings
+          query: Search query for semantic search across repository README and description using
+              vector embeddings. Supports: string (single query), string[] (RRF fusion), null
+              (filter-only)
 
           after: Cursor for pagination (from previous response pageInfo.endCursor)
 
@@ -173,7 +174,7 @@ class SearchReposResource(SyncAPIResource):
 
           rank_by: Custom ranking formula (AST expression). If not provided, uses default
               log-normalized 70/20/10 formula (70% semantic similarity, 20% popularity, 10%
-              activity). Pure ANN queries skip multi-query for better performance.
+              activity).
 
           extra_headers: Send extra headers
 
@@ -268,7 +269,7 @@ class AsyncSearchReposResource(AsyncAPIResource):
 
           rank_by: Custom ranking formula (AST expression). If not provided, uses default
               log-normalized 70/20/10 formula (70% semantic similarity, 20% popularity, 10%
-              activity). Pure ANN queries skip multi-query for better performance.
+              activity).
 
           extra_headers: Send extra headers
 
@@ -302,7 +303,7 @@ class AsyncSearchReposResource(AsyncAPIResource):
     async def search(
         self,
         *,
-        query: str,
+        query: Union[str, SequenceNotStr[str], None],
         after: str | Omit = omit,
         enable_pagination: bool | Omit = omit,
         filters: Optional[search_repo_search_params.Filters] | Omit = omit,
@@ -323,8 +324,9 @@ class AsyncSearchReposResource(AsyncAPIResource):
         SEARCH service. Credits: 1 per result returned.
 
         Args:
-          query: Natural language search query for semantic search across repository README and
-              description using vector embeddings
+          query: Search query for semantic search across repository README and description using
+              vector embeddings. Supports: string (single query), string[] (RRF fusion), null
+              (filter-only)
 
           after: Cursor for pagination (from previous response pageInfo.endCursor)
 
@@ -354,7 +356,7 @@ class AsyncSearchReposResource(AsyncAPIResource):
 
           rank_by: Custom ranking formula (AST expression). If not provided, uses default
               log-normalized 70/20/10 formula (70% semantic similarity, 20% popularity, 10%
-              activity). Pure ANN queries skip multi-query for better performance.
+              activity).
 
           extra_headers: Send extra headers
 
