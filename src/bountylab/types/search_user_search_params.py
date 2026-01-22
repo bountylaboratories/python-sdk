@@ -119,11 +119,12 @@ __all__ = [
 
 
 class SearchUserSearchParams(TypedDict, total=False):
-    query: Required[str]
+    query: Required[Union[str, SequenceNotStr[str], None]]
     """Full-text search query across user fields.
 
     Searches: login, displayName, bio, company, location, emails, resolvedCountry,
-    resolvedState, resolvedCity (with login weighted 2x)
+    resolvedState, resolvedCity (with login weighted 2x). Supports: string (single
+    query), string[] (RRF fusion), null (filter-only)
     """
 
     after: str

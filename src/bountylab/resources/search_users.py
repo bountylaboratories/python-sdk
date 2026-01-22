@@ -2,12 +2,12 @@
 
 from __future__ import annotations
 
-from typing import Optional
+from typing import Union, Optional
 
 import httpx
 
 from ..types import search_user_search_params, search_user_natural_language_params
-from .._types import Body, Omit, Query, Headers, NotGiven, omit, not_given
+from .._types import Body, Omit, Query, Headers, NotGiven, SequenceNotStr, omit, not_given
 from .._utils import maybe_transform, async_maybe_transform
 from .._compat import cached_property
 from .._resource import SyncAPIResource, AsyncAPIResource
@@ -110,7 +110,7 @@ class SearchUsersResource(SyncAPIResource):
     def search(
         self,
         *,
-        query: str,
+        query: Union[str, SequenceNotStr[str], None],
         after: str | Omit = omit,
         enable_pagination: bool | Omit = omit,
         filters: Optional[search_user_search_params.Filters] | Omit = omit,
@@ -133,7 +133,8 @@ class SearchUsersResource(SyncAPIResource):
         Args:
           query: Full-text search query across user fields. Searches: login, displayName, bio,
               company, location, emails, resolvedCountry, resolvedState, resolvedCity (with
-              login weighted 2x)
+              login weighted 2x). Supports: string (single query), string[] (RRF fusion), null
+              (filter-only)
 
           after: Cursor for pagination (from previous response pageInfo.endCursor)
 
@@ -278,7 +279,7 @@ class AsyncSearchUsersResource(AsyncAPIResource):
     async def search(
         self,
         *,
-        query: str,
+        query: Union[str, SequenceNotStr[str], None],
         after: str | Omit = omit,
         enable_pagination: bool | Omit = omit,
         filters: Optional[search_user_search_params.Filters] | Omit = omit,
@@ -301,7 +302,8 @@ class AsyncSearchUsersResource(AsyncAPIResource):
         Args:
           query: Full-text search query across user fields. Searches: login, displayName, bio,
               company, location, emails, resolvedCountry, resolvedState, resolvedCity (with
-              login weighted 2x)
+              login weighted 2x). Supports: string (single query), string[] (RRF fusion), null
+              (filter-only)
 
           after: Cursor for pagination (from previous response pageInfo.endCursor)
 
