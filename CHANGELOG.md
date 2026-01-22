@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.30.0 (2026-01-22)
+
+Full Changelog: [v0.29.0...v0.30.0](https://github.com/bountylaboratories/python-sdk/compare/v0.29.0...v0.30.0)
+
+### Features
+
+* **api:** api update ([7484c04](https://github.com/bountylaboratories/python-sdk/commit/7484c04c2392eb3944d609ab7c5dfcc639d3d916))
+
+
+### Chores
+
+* **internal:** update `actions/checkout` version ([9e28fea](https://github.com/bountylaboratories/python-sdk/commit/9e28fea2120968c0e34236b81496b9f2c0bc3f5f))
+
 ## 0.29.0 (2026-01-14)
 
 Full Changelog: [v0.28.3...v0.29.0](https://github.com/bountylaboratories/python-sdk/compare/v0.28.3...v0.29.0)
