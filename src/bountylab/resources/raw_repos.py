@@ -7,7 +7,7 @@ from typing_extensions import Literal
 
 import httpx
 
-from ..types import raw_repo_graph_params, raw_repo_retrieve_params, raw_repo_by_fullname_params
+from ..types import raw_repo_count_params, raw_repo_graph_params, raw_repo_retrieve_params, raw_repo_by_fullname_params
 from .._types import Body, Omit, Query, Headers, NotGiven, SequenceNotStr, omit, not_given
 from .._utils import maybe_transform, async_maybe_transform
 from .._compat import cached_property
@@ -19,6 +19,7 @@ from .._response import (
     async_to_streamed_response_wrapper,
 )
 from .._base_client import make_request_options
+from ..types.raw_repo_count_response import RawRepoCountResponse
 from ..types.raw_repo_graph_response import RawRepoGraphResponse
 from ..types.raw_repo_retrieve_response import RawRepoRetrieveResponse
 from ..types.raw_repo_by_fullname_response import RawRepoByFullnameResponse
@@ -136,6 +137,42 @@ class RawReposResource(SyncAPIResource):
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
             cast_to=RawRepoByFullnameResponse,
+        )
+
+    def count(
+        self,
+        *,
+        filters: raw_repo_count_params.Filters,
+        # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
+        # The extra values given here take precedence over values defined on the client or passed to this method.
+        extra_headers: Headers | None = None,
+        extra_query: Query | None = None,
+        extra_body: Body | None = None,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
+    ) -> RawRepoCountResponse:
+        """Count repositories in the database matching filters.
+
+        Counts are capped at
+        minimum (10k) and maximum (1M). Requires RAW service. Credits: 1 per request.
+
+        Args:
+          filters: Filters to apply (required)
+
+          extra_headers: Send extra headers
+
+          extra_query: Add additional query parameters to the request
+
+          extra_body: Add additional JSON properties to the request
+
+          timeout: Override the client-level default timeout for this request, in seconds
+        """
+        return self._post(
+            "/api/raw/repos/count",
+            body=maybe_transform({"filters": filters}, raw_repo_count_params.RawRepoCountParams),
+            options=make_request_options(
+                extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
+            ),
+            cast_to=RawRepoCountResponse,
         )
 
     def graph(
@@ -318,6 +355,42 @@ class AsyncRawReposResource(AsyncAPIResource):
             cast_to=RawRepoByFullnameResponse,
         )
 
+    async def count(
+        self,
+        *,
+        filters: raw_repo_count_params.Filters,
+        # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
+        # The extra values given here take precedence over values defined on the client or passed to this method.
+        extra_headers: Headers | None = None,
+        extra_query: Query | None = None,
+        extra_body: Body | None = None,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
+    ) -> RawRepoCountResponse:
+        """Count repositories in the database matching filters.
+
+        Counts are capped at
+        minimum (10k) and maximum (1M). Requires RAW service. Credits: 1 per request.
+
+        Args:
+          filters: Filters to apply (required)
+
+          extra_headers: Send extra headers
+
+          extra_query: Add additional query parameters to the request
+
+          extra_body: Add additional JSON properties to the request
+
+          timeout: Override the client-level default timeout for this request, in seconds
+        """
+        return await self._post(
+            "/api/raw/repos/count",
+            body=await async_maybe_transform({"filters": filters}, raw_repo_count_params.RawRepoCountParams),
+            options=make_request_options(
+                extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
+            ),
+            cast_to=RawRepoCountResponse,
+        )
+
     async def graph(
         self,
         relationship: Literal["stars", "contributes", "owns"],
@@ -396,6 +469,9 @@ class RawReposResourceWithRawResponse:
         self.by_fullname = to_raw_response_wrapper(
             raw_repos.by_fullname,
         )
+        self.count = to_raw_response_wrapper(
+            raw_repos.count,
+        )
         self.graph = to_raw_response_wrapper(
             raw_repos.graph,
         )
@@ -410,6 +486,9 @@ class AsyncRawReposResourceWithRawResponse:
         )
         self.by_fullname = async_to_raw_response_wrapper(
             raw_repos.by_fullname,
+        )
+        self.count = async_to_raw_response_wrapper(
+            raw_repos.count,
         )
         self.graph = async_to_raw_response_wrapper(
             raw_repos.graph,
@@ -426,6 +505,9 @@ class RawReposResourceWithStreamingResponse:
         self.by_fullname = to_streamed_response_wrapper(
             raw_repos.by_fullname,
         )
+        self.count = to_streamed_response_wrapper(
+            raw_repos.count,
+        )
         self.graph = to_streamed_response_wrapper(
             raw_repos.graph,
         )
@@ -440,6 +522,9 @@ class AsyncRawReposResourceWithStreamingResponse:
         )
         self.by_fullname = async_to_streamed_response_wrapper(
             raw_repos.by_fullname,
+        )
+        self.count = async_to_streamed_response_wrapper(
+            raw_repos.count,
         )
         self.graph = async_to_streamed_response_wrapper(
             raw_repos.graph,
