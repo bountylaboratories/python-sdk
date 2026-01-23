@@ -103,7 +103,7 @@ class SearchReposResource(SyncAPIResource):
           timeout: Override the client-level default timeout for this request, in seconds
         """
         return self._post(
-            "/api/search/repos/natural-language",
+            "/search/repos/natural-language",
             body=maybe_transform(
                 {
                     "query": query,
@@ -182,7 +182,7 @@ class SearchReposResource(SyncAPIResource):
           timeout: Override the client-level default timeout for this request, in seconds
         """
         return self._post(
-            "/api/search/repos",
+            "/search/repos",
             body=maybe_transform(
                 {
                     "query": query,
@@ -283,7 +283,7 @@ class AsyncSearchReposResource(AsyncAPIResource):
           timeout: Override the client-level default timeout for this request, in seconds
         """
         return await self._post(
-            "/api/search/repos/natural-language",
+            "/search/repos/natural-language",
             body=await async_maybe_transform(
                 {
                     "query": query,
@@ -362,7 +362,7 @@ class AsyncSearchReposResource(AsyncAPIResource):
           timeout: Override the client-level default timeout for this request, in seconds
         """
         return await self._post(
-            "/api/search/repos",
+            "/search/repos",
             body=await async_maybe_transform(
                 {
                     "query": query,
