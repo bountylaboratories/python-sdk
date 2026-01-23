@@ -34,6 +34,7 @@ class TestSearchRepos:
         search_repo = client.search_repos.natural_language(
             query="Find React libraries with over 1000 stars that have good TypeScript support and are actively maintained",
             after="Y3Vyc29yOjEyMzQ1",
+            apply_filters_to_include_attributes=True,
             enable_pagination=True,
             filter_user_include_attributes=True,
             first=50,
@@ -107,6 +108,7 @@ class TestSearchRepos:
         search_repo = client.search_repos.search(
             query="react component library with typescript",
             after="Y3Vyc29yOjEyMzQ1",
+            apply_filters_to_include_attributes=True,
             enable_pagination=True,
             filters={
                 "field": "field",
@@ -190,6 +192,7 @@ class TestAsyncSearchRepos:
         search_repo = await async_client.search_repos.natural_language(
             query="Find React libraries with over 1000 stars that have good TypeScript support and are actively maintained",
             after="Y3Vyc29yOjEyMzQ1",
+            apply_filters_to_include_attributes=True,
             enable_pagination=True,
             filter_user_include_attributes=True,
             first=50,
@@ -263,6 +266,7 @@ class TestAsyncSearchRepos:
         search_repo = await async_client.search_repos.search(
             query="react component library with typescript",
             after="Y3Vyc29yOjEyMzQ1",
+            apply_filters_to_include_attributes=True,
             enable_pagination=True,
             filters={
                 "field": "field",

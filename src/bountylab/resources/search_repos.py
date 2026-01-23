@@ -49,6 +49,7 @@ class SearchReposResource(SyncAPIResource):
         *,
         query: str,
         after: str | Omit = omit,
+        apply_filters_to_include_attributes: bool | Omit = omit,
         enable_pagination: bool | Omit = omit,
         filter_user_include_attributes: bool | Omit = omit,
         first: int | Omit = omit,
@@ -73,11 +74,15 @@ class SearchReposResource(SyncAPIResource):
 
           after: Cursor for pagination (from previous response pageInfo.endCursor)
 
+          apply_filters_to_include_attributes: When true, applies the LLM-generated filter to all user-returning
+              includeAttributes (contributors, starrers). Alias for
+              filterUserIncludeAttributes.
+
           enable_pagination: Enable cursor-based pagination to fetch results across multiple requests
 
-          filter_user_include_attributes: When true, the AI will generate a user location filter and apply it to ALL
-              user-returning includeAttributes (contributors, starrers). This filter will
-              override any manually-specified filters.
+          filter_user_include_attributes: [Deprecated: Use applyFiltersToIncludeAttributes] When true, applies the
+              LLM-generated filter to all user-returning includeAttributes (contributors,
+              starrers).
 
           first: Alias for maxResults (takes precedence if both provided)
 
@@ -103,6 +108,7 @@ class SearchReposResource(SyncAPIResource):
                 {
                     "query": query,
                     "after": after,
+                    "apply_filters_to_include_attributes": apply_filters_to_include_attributes,
                     "enable_pagination": enable_pagination,
                     "filter_user_include_attributes": filter_user_include_attributes,
                     "first": first,
@@ -123,6 +129,7 @@ class SearchReposResource(SyncAPIResource):
         *,
         query: Union[str, SequenceNotStr[str], None],
         after: str | Omit = omit,
+        apply_filters_to_include_attributes: bool | Omit = omit,
         enable_pagination: bool | Omit = omit,
         filters: search_repo_search_params.Filters | Omit = omit,
         first: int | Omit = omit,
@@ -147,6 +154,10 @@ class SearchReposResource(SyncAPIResource):
               (filter-only)
 
           after: Cursor for pagination (from previous response pageInfo.endCursor)
+
+          apply_filters_to_include_attributes: When true, applies the search filter to all user-returning includeAttributes
+              (contributors, starrers). This filters the returned users to match the same
+              criteria.
 
           enable_pagination: Enable cursor-based pagination to fetch results across multiple requests
 
@@ -176,6 +187,7 @@ class SearchReposResource(SyncAPIResource):
                 {
                     "query": query,
                     "after": after,
+                    "apply_filters_to_include_attributes": apply_filters_to_include_attributes,
                     "enable_pagination": enable_pagination,
                     "filters": filters,
                     "first": first,
@@ -217,6 +229,7 @@ class AsyncSearchReposResource(AsyncAPIResource):
         *,
         query: str,
         after: str | Omit = omit,
+        apply_filters_to_include_attributes: bool | Omit = omit,
         enable_pagination: bool | Omit = omit,
         filter_user_include_attributes: bool | Omit = omit,
         first: int | Omit = omit,
@@ -241,11 +254,15 @@ class AsyncSearchReposResource(AsyncAPIResource):
 
           after: Cursor for pagination (from previous response pageInfo.endCursor)
 
+          apply_filters_to_include_attributes: When true, applies the LLM-generated filter to all user-returning
+              includeAttributes (contributors, starrers). Alias for
+              filterUserIncludeAttributes.
+
           enable_pagination: Enable cursor-based pagination to fetch results across multiple requests
 
-          filter_user_include_attributes: When true, the AI will generate a user location filter and apply it to ALL
-              user-returning includeAttributes (contributors, starrers). This filter will
-              override any manually-specified filters.
+          filter_user_include_attributes: [Deprecated: Use applyFiltersToIncludeAttributes] When true, applies the
+              LLM-generated filter to all user-returning includeAttributes (contributors,
+              starrers).
 
           first: Alias for maxResults (takes precedence if both provided)
 
@@ -271,6 +288,7 @@ class AsyncSearchReposResource(AsyncAPIResource):
                 {
                     "query": query,
                     "after": after,
+                    "apply_filters_to_include_attributes": apply_filters_to_include_attributes,
                     "enable_pagination": enable_pagination,
                     "filter_user_include_attributes": filter_user_include_attributes,
                     "first": first,
@@ -291,6 +309,7 @@ class AsyncSearchReposResource(AsyncAPIResource):
         *,
         query: Union[str, SequenceNotStr[str], None],
         after: str | Omit = omit,
+        apply_filters_to_include_attributes: bool | Omit = omit,
         enable_pagination: bool | Omit = omit,
         filters: search_repo_search_params.Filters | Omit = omit,
         first: int | Omit = omit,
@@ -315,6 +334,10 @@ class AsyncSearchReposResource(AsyncAPIResource):
               (filter-only)
 
           after: Cursor for pagination (from previous response pageInfo.endCursor)
+
+          apply_filters_to_include_attributes: When true, applies the search filter to all user-returning includeAttributes
+              (contributors, starrers). This filters the returned users to match the same
+              criteria.
 
           enable_pagination: Enable cursor-based pagination to fetch results across multiple requests
 
@@ -344,6 +367,7 @@ class AsyncSearchReposResource(AsyncAPIResource):
                 {
                     "query": query,
                     "after": after,
+                    "apply_filters_to_include_attributes": apply_filters_to_include_attributes,
                     "enable_pagination": enable_pagination,
                     "filters": filters,
                     "first": first,
