@@ -13,145 +13,20 @@ __all__ = [
     "IncludeAttributes",
     "IncludeAttributesContributes",
     "IncludeAttributesContributesFilters",
-    "IncludeAttributesContributesFiltersUnionMember0",
-    "IncludeAttributesContributesFiltersUnionMember1",
-    "IncludeAttributesContributesFiltersUnionMember2",
-    "IncludeAttributesContributesFiltersUnionMember3",
-    "IncludeAttributesContributesFiltersUnionMember4",
-    "IncludeAttributesContributesFiltersUnionMember5",
-    "IncludeAttributesContributesFiltersUnionMember6",
-    "IncludeAttributesContributesFiltersUnionMember7",
-    "IncludeAttributesContributesFiltersUnionMember8",
-    "IncludeAttributesContributesFiltersUnionMember9",
-    "IncludeAttributesContributesFiltersUnionMember10",
-    "IncludeAttributesContributesFiltersUnionMember11",
-    "IncludeAttributesContributesFiltersUnionMember12",
-    "IncludeAttributesContributesFiltersUnionMember13",
-    "IncludeAttributesContributesFiltersUnionMember14",
-    "IncludeAttributesContributesFiltersUnionMember15",
-    "IncludeAttributesContributesFiltersUnionMember16",
-    "IncludeAttributesContributesFiltersUnionMember17",
-    "IncludeAttributesContributesFiltersUnionMember18",
-    "IncludeAttributesContributesFiltersUnionMember19",
-    "IncludeAttributesContributesFiltersUnionMember20",
-    "IncludeAttributesContributesFiltersUnionMember21",
-    "IncludeAttributesContributesFiltersUnionMember22",
-    "IncludeAttributesContributesFiltersUnionMember23",
-    "IncludeAttributesContributesFiltersUnionMember24",
-    "IncludeAttributesContributesFiltersUnionMember25",
-    "IncludeAttributesContributesFiltersUnionMember26",
-    "IncludeAttributesContributesFiltersUnionMember27",
-    "IncludeAttributesContributesFiltersUnionMember28",
-    "IncludeAttributesContributesFiltersUnionMember29",
-    "IncludeAttributesContributesFiltersUnionMember30",
-    "IncludeAttributesContributesFiltersUnionMember31",
-    "IncludeAttributesContributesFiltersUnionMember32",
-    "IncludeAttributesContributesFiltersUnionMember33",
-    "IncludeAttributesContributesFiltersUnionMember34",
-    "IncludeAttributesContributesFiltersUnionMember35",
-    "IncludeAttributesContributesFiltersUnionMember36",
-    "IncludeAttributesContributesFiltersUnionMember37",
-    "IncludeAttributesContributesFiltersUnionMember38",
-    "IncludeAttributesContributesFiltersUnionMember39",
-    "IncludeAttributesContributesFiltersUnionMember40",
-    "IncludeAttributesContributesFiltersUnionMember41",
-    "IncludeAttributesContributesFiltersUnionMember42",
-    "IncludeAttributesContributesFiltersUnionMember43",
-    "IncludeAttributesContributesFiltersUnionMember44",
-    "IncludeAttributesContributesFiltersUnionMember45",
-    "IncludeAttributesContributesFiltersUnionMember46",
-    "IncludeAttributesContributesFiltersUnionMember47",
-    "IncludeAttributesContributesFiltersUnionMember48",
-    "IncludeAttributesContributesFiltersUnionMember49",
-    "IncludeAttributesContributesFiltersUnionMember50",
-    "IncludeAttributesContributesFiltersUnionMember51",
-    "IncludeAttributesContributesFiltersUnionMember52",
-    "IncludeAttributesContributesFiltersUnionMember53",
-    "IncludeAttributesContributesFiltersUnionMember54",
-    "IncludeAttributesContributesFiltersUnionMember55",
-    "IncludeAttributesContributesFiltersUnionMember56",
-    "IncludeAttributesContributesFiltersUnionMember57",
-    "IncludeAttributesContributesFiltersUnionMember58",
-    "IncludeAttributesContributesFiltersUnionMember59",
-    "IncludeAttributesContributesFiltersUnionMember60",
-    "IncludeAttributesContributesFiltersUnionMember61",
-    "IncludeAttributesContributesFiltersUnionMember62",
-    "IncludeAttributesContributesFiltersUnionMember63",
-    "IncludeAttributesContributesFiltersUnionMember64",
-    "IncludeAttributesContributesFiltersUnionMember65",
-    "IncludeAttributesContributesFiltersUnionMember66",
-    "IncludeAttributesContributesFiltersUnionMember67",
-    "IncludeAttributesContributesFiltersUnionMember68",
-    "IncludeAttributesContributesFiltersUnionMember69",
-    "IncludeAttributesContributesFiltersUnionMember70",
-    "IncludeAttributesContributesFiltersUnionMember71",
-    "IncludeAttributesContributesFiltersUnionMember72",
-    "IncludeAttributesContributesFiltersUnionMember73",
-    "IncludeAttributesContributesFiltersUnionMember74",
-    "IncludeAttributesContributesFiltersUnionMember75",
-    "IncludeAttributesContributesFiltersUnionMember76",
-    "IncludeAttributesContributesFiltersUnionMember77",
-    "IncludeAttributesContributesFiltersUnionMember78",
-    "IncludeAttributesContributesFiltersUnionMember79",
-    "IncludeAttributesContributesFiltersUnionMember80",
-    "IncludeAttributesContributesFiltersUnionMember81",
-    "IncludeAttributesContributesFiltersUnionMember82",
-    "IncludeAttributesContributesFiltersUnionMember83",
-    "IncludeAttributesContributesFiltersUnionMember84",
-    "IncludeAttributesContributesFiltersUnionMember85",
-    "IncludeAttributesContributesFiltersUnionMember86",
-    "IncludeAttributesContributesFiltersUnionMember87",
-    "IncludeAttributesContributesFiltersUnionMember88",
-    "IncludeAttributesContributesFiltersUnionMember89",
-    "IncludeAttributesContributesFiltersUnionMember90",
-    "IncludeAttributesContributesFiltersUnionMember91",
-    "IncludeAttributesContributesFiltersUnionMember92",
-    "IncludeAttributesContributesFiltersUnionMember93",
-    "IncludeAttributesContributesFiltersUnionMember94",
-    "IncludeAttributesContributesFiltersUnionMember95",
-    "IncludeAttributesContributesFiltersUnionMember96",
-    "IncludeAttributesContributesFiltersUnionMember97",
-    "IncludeAttributesContributesFiltersUnionMember98",
-    "IncludeAttributesContributesFiltersUnionMember99",
-    "IncludeAttributesContributesFiltersUnionMember100",
-    "IncludeAttributesContributesFiltersUnionMember101",
-    "IncludeAttributesContributesFiltersUnionMember102",
-    "IncludeAttributesContributesFiltersUnionMember103",
-    "IncludeAttributesContributesFiltersUnionMember104",
-    "IncludeAttributesContributesFiltersUnionMember105",
-    "IncludeAttributesContributesFiltersUnionMember106",
-    "IncludeAttributesContributesFiltersUnionMember107",
-    "IncludeAttributesContributesFiltersUnionMember108",
-    "IncludeAttributesContributesFiltersUnionMember109",
-    "IncludeAttributesContributesFiltersUnionMember110",
-    "IncludeAttributesContributesFiltersUnionMember111",
-    "IncludeAttributesContributesFiltersUnionMember112",
-    "IncludeAttributesContributesFiltersUnionMember113",
-    "IncludeAttributesContributesFiltersUnionMember114",
-    "IncludeAttributesContributesFiltersUnionMember115",
-    "IncludeAttributesContributesFiltersUnionMember116",
-    "IncludeAttributesContributesFiltersUnionMember117",
-    "IncludeAttributesContributesFiltersUnionMember118",
-    "IncludeAttributesContributesFiltersUnionMember119",
-    "IncludeAttributesContributesFiltersUnionMember120",
-    "IncludeAttributesContributesFiltersUnionMember121",
-    "IncludeAttributesContributesFiltersUnionMember122",
-    "IncludeAttributesContributesFiltersUnionMember123",
-    "IncludeAttributesContributesFiltersUnionMember124",
-    "IncludeAttributesContributesFiltersUnionMember125",
-    "IncludeAttributesContributesFiltersUnionMember126",
-    "IncludeAttributesContributesFiltersUnionMember127",
-    "IncludeAttributesContributesFiltersUnionMember128",
-    "IncludeAttributesContributesFiltersUnionMember129",
-    "IncludeAttributesContributesFiltersUnionMember130",
-    "IncludeAttributesContributesFiltersUnionMember131",
-    "IncludeAttributesContributesFiltersUnionMember132",
-    "IncludeAttributesContributesFiltersUnionMember133",
-    "IncludeAttributesContributesFiltersUnionMember134",
-    "IncludeAttributesContributesFiltersUnionMember135",
-    "IncludeAttributesContributesFiltersUnionMember136",
-    "IncludeAttributesContributesFiltersUnionMember137",
-    "IncludeAttributesContributesFiltersUnionMember138",
+    "IncludeAttributesContributesFiltersEq",
+    "IncludeAttributesContributesFiltersNotEq",
+    "IncludeAttributesContributesFiltersIn",
+    "IncludeAttributesContributesFiltersNotIn",
+    "IncludeAttributesContributesFiltersLt",
+    "IncludeAttributesContributesFiltersLte",
+    "IncludeAttributesContributesFiltersGt",
+    "IncludeAttributesContributesFiltersGte",
+    "IncludeAttributesContributesFiltersGlob",
+    "IncludeAttributesContributesFiltersNotGlob",
+    "IncludeAttributesContributesFiltersIGlob",
+    "IncludeAttributesContributesFiltersNotIGlob",
+    "IncludeAttributesContributesFiltersRegex",
+    "IncludeAttributesContributesFiltersContainsAllTokens",
     "IncludeAttributesContributesFiltersUnionMember139",
     "IncludeAttributesContributesFiltersUnionMember139Filter",
     "IncludeAttributesContributesFiltersUnionMember139FilterUnionMember0",
@@ -577,145 +452,20 @@ __all__ = [
     "IncludeAttributesContributesFiltersUnionMember140FilterUnionMember139FilterUnionMember138",
     "IncludeAttributesContributors",
     "IncludeAttributesContributorsFilters",
-    "IncludeAttributesContributorsFiltersUnionMember0",
-    "IncludeAttributesContributorsFiltersUnionMember1",
-    "IncludeAttributesContributorsFiltersUnionMember2",
-    "IncludeAttributesContributorsFiltersUnionMember3",
-    "IncludeAttributesContributorsFiltersUnionMember4",
-    "IncludeAttributesContributorsFiltersUnionMember5",
-    "IncludeAttributesContributorsFiltersUnionMember6",
-    "IncludeAttributesContributorsFiltersUnionMember7",
-    "IncludeAttributesContributorsFiltersUnionMember8",
-    "IncludeAttributesContributorsFiltersUnionMember9",
-    "IncludeAttributesContributorsFiltersUnionMember10",
-    "IncludeAttributesContributorsFiltersUnionMember11",
-    "IncludeAttributesContributorsFiltersUnionMember12",
-    "IncludeAttributesContributorsFiltersUnionMember13",
-    "IncludeAttributesContributorsFiltersUnionMember14",
-    "IncludeAttributesContributorsFiltersUnionMember15",
-    "IncludeAttributesContributorsFiltersUnionMember16",
-    "IncludeAttributesContributorsFiltersUnionMember17",
-    "IncludeAttributesContributorsFiltersUnionMember18",
-    "IncludeAttributesContributorsFiltersUnionMember19",
-    "IncludeAttributesContributorsFiltersUnionMember20",
-    "IncludeAttributesContributorsFiltersUnionMember21",
-    "IncludeAttributesContributorsFiltersUnionMember22",
-    "IncludeAttributesContributorsFiltersUnionMember23",
-    "IncludeAttributesContributorsFiltersUnionMember24",
-    "IncludeAttributesContributorsFiltersUnionMember25",
-    "IncludeAttributesContributorsFiltersUnionMember26",
-    "IncludeAttributesContributorsFiltersUnionMember27",
-    "IncludeAttributesContributorsFiltersUnionMember28",
-    "IncludeAttributesContributorsFiltersUnionMember29",
-    "IncludeAttributesContributorsFiltersUnionMember30",
-    "IncludeAttributesContributorsFiltersUnionMember31",
-    "IncludeAttributesContributorsFiltersUnionMember32",
-    "IncludeAttributesContributorsFiltersUnionMember33",
-    "IncludeAttributesContributorsFiltersUnionMember34",
-    "IncludeAttributesContributorsFiltersUnionMember35",
-    "IncludeAttributesContributorsFiltersUnionMember36",
-    "IncludeAttributesContributorsFiltersUnionMember37",
-    "IncludeAttributesContributorsFiltersUnionMember38",
-    "IncludeAttributesContributorsFiltersUnionMember39",
-    "IncludeAttributesContributorsFiltersUnionMember40",
-    "IncludeAttributesContributorsFiltersUnionMember41",
-    "IncludeAttributesContributorsFiltersUnionMember42",
-    "IncludeAttributesContributorsFiltersUnionMember43",
-    "IncludeAttributesContributorsFiltersUnionMember44",
-    "IncludeAttributesContributorsFiltersUnionMember45",
-    "IncludeAttributesContributorsFiltersUnionMember46",
-    "IncludeAttributesContributorsFiltersUnionMember47",
-    "IncludeAttributesContributorsFiltersUnionMember48",
-    "IncludeAttributesContributorsFiltersUnionMember49",
-    "IncludeAttributesContributorsFiltersUnionMember50",
-    "IncludeAttributesContributorsFiltersUnionMember51",
-    "IncludeAttributesContributorsFiltersUnionMember52",
-    "IncludeAttributesContributorsFiltersUnionMember53",
-    "IncludeAttributesContributorsFiltersUnionMember54",
-    "IncludeAttributesContributorsFiltersUnionMember55",
-    "IncludeAttributesContributorsFiltersUnionMember56",
-    "IncludeAttributesContributorsFiltersUnionMember57",
-    "IncludeAttributesContributorsFiltersUnionMember58",
-    "IncludeAttributesContributorsFiltersUnionMember59",
-    "IncludeAttributesContributorsFiltersUnionMember60",
-    "IncludeAttributesContributorsFiltersUnionMember61",
-    "IncludeAttributesContributorsFiltersUnionMember62",
-    "IncludeAttributesContributorsFiltersUnionMember63",
-    "IncludeAttributesContributorsFiltersUnionMember64",
-    "IncludeAttributesContributorsFiltersUnionMember65",
-    "IncludeAttributesContributorsFiltersUnionMember66",
-    "IncludeAttributesContributorsFiltersUnionMember67",
-    "IncludeAttributesContributorsFiltersUnionMember68",
-    "IncludeAttributesContributorsFiltersUnionMember69",
-    "IncludeAttributesContributorsFiltersUnionMember70",
-    "IncludeAttributesContributorsFiltersUnionMember71",
-    "IncludeAttributesContributorsFiltersUnionMember72",
-    "IncludeAttributesContributorsFiltersUnionMember73",
-    "IncludeAttributesContributorsFiltersUnionMember74",
-    "IncludeAttributesContributorsFiltersUnionMember75",
-    "IncludeAttributesContributorsFiltersUnionMember76",
-    "IncludeAttributesContributorsFiltersUnionMember77",
-    "IncludeAttributesContributorsFiltersUnionMember78",
-    "IncludeAttributesContributorsFiltersUnionMember79",
-    "IncludeAttributesContributorsFiltersUnionMember80",
-    "IncludeAttributesContributorsFiltersUnionMember81",
-    "IncludeAttributesContributorsFiltersUnionMember82",
-    "IncludeAttributesContributorsFiltersUnionMember83",
-    "IncludeAttributesContributorsFiltersUnionMember84",
-    "IncludeAttributesContributorsFiltersUnionMember85",
-    "IncludeAttributesContributorsFiltersUnionMember86",
-    "IncludeAttributesContributorsFiltersUnionMember87",
-    "IncludeAttributesContributorsFiltersUnionMember88",
-    "IncludeAttributesContributorsFiltersUnionMember89",
-    "IncludeAttributesContributorsFiltersUnionMember90",
-    "IncludeAttributesContributorsFiltersUnionMember91",
-    "IncludeAttributesContributorsFiltersUnionMember92",
-    "IncludeAttributesContributorsFiltersUnionMember93",
-    "IncludeAttributesContributorsFiltersUnionMember94",
-    "IncludeAttributesContributorsFiltersUnionMember95",
-    "IncludeAttributesContributorsFiltersUnionMember96",
-    "IncludeAttributesContributorsFiltersUnionMember97",
-    "IncludeAttributesContributorsFiltersUnionMember98",
-    "IncludeAttributesContributorsFiltersUnionMember99",
-    "IncludeAttributesContributorsFiltersUnionMember100",
-    "IncludeAttributesContributorsFiltersUnionMember101",
-    "IncludeAttributesContributorsFiltersUnionMember102",
-    "IncludeAttributesContributorsFiltersUnionMember103",
-    "IncludeAttributesContributorsFiltersUnionMember104",
-    "IncludeAttributesContributorsFiltersUnionMember105",
-    "IncludeAttributesContributorsFiltersUnionMember106",
-    "IncludeAttributesContributorsFiltersUnionMember107",
-    "IncludeAttributesContributorsFiltersUnionMember108",
-    "IncludeAttributesContributorsFiltersUnionMember109",
-    "IncludeAttributesContributorsFiltersUnionMember110",
-    "IncludeAttributesContributorsFiltersUnionMember111",
-    "IncludeAttributesContributorsFiltersUnionMember112",
-    "IncludeAttributesContributorsFiltersUnionMember113",
-    "IncludeAttributesContributorsFiltersUnionMember114",
-    "IncludeAttributesContributorsFiltersUnionMember115",
-    "IncludeAttributesContributorsFiltersUnionMember116",
-    "IncludeAttributesContributorsFiltersUnionMember117",
-    "IncludeAttributesContributorsFiltersUnionMember118",
-    "IncludeAttributesContributorsFiltersUnionMember119",
-    "IncludeAttributesContributorsFiltersUnionMember120",
-    "IncludeAttributesContributorsFiltersUnionMember121",
-    "IncludeAttributesContributorsFiltersUnionMember122",
-    "IncludeAttributesContributorsFiltersUnionMember123",
-    "IncludeAttributesContributorsFiltersUnionMember124",
-    "IncludeAttributesContributorsFiltersUnionMember125",
-    "IncludeAttributesContributorsFiltersUnionMember126",
-    "IncludeAttributesContributorsFiltersUnionMember127",
-    "IncludeAttributesContributorsFiltersUnionMember128",
-    "IncludeAttributesContributorsFiltersUnionMember129",
-    "IncludeAttributesContributorsFiltersUnionMember130",
-    "IncludeAttributesContributorsFiltersUnionMember131",
-    "IncludeAttributesContributorsFiltersUnionMember132",
-    "IncludeAttributesContributorsFiltersUnionMember133",
-    "IncludeAttributesContributorsFiltersUnionMember134",
-    "IncludeAttributesContributorsFiltersUnionMember135",
-    "IncludeAttributesContributorsFiltersUnionMember136",
-    "IncludeAttributesContributorsFiltersUnionMember137",
-    "IncludeAttributesContributorsFiltersUnionMember138",
+    "IncludeAttributesContributorsFiltersEq",
+    "IncludeAttributesContributorsFiltersNotEq",
+    "IncludeAttributesContributorsFiltersIn",
+    "IncludeAttributesContributorsFiltersNotIn",
+    "IncludeAttributesContributorsFiltersLt",
+    "IncludeAttributesContributorsFiltersLte",
+    "IncludeAttributesContributorsFiltersGt",
+    "IncludeAttributesContributorsFiltersGte",
+    "IncludeAttributesContributorsFiltersGlob",
+    "IncludeAttributesContributorsFiltersNotGlob",
+    "IncludeAttributesContributorsFiltersIGlob",
+    "IncludeAttributesContributorsFiltersNotIGlob",
+    "IncludeAttributesContributorsFiltersRegex",
+    "IncludeAttributesContributorsFiltersContainsAllTokens",
     "IncludeAttributesContributorsFiltersUnionMember139",
     "IncludeAttributesContributorsFiltersUnionMember139Filter",
     "IncludeAttributesContributorsFiltersUnionMember139FilterUnionMember0",
@@ -1141,145 +891,20 @@ __all__ = [
     "IncludeAttributesContributorsFiltersUnionMember140FilterUnionMember139FilterUnionMember138",
     "IncludeAttributesFollowers",
     "IncludeAttributesFollowersFilters",
-    "IncludeAttributesFollowersFiltersUnionMember0",
-    "IncludeAttributesFollowersFiltersUnionMember1",
-    "IncludeAttributesFollowersFiltersUnionMember2",
-    "IncludeAttributesFollowersFiltersUnionMember3",
-    "IncludeAttributesFollowersFiltersUnionMember4",
-    "IncludeAttributesFollowersFiltersUnionMember5",
-    "IncludeAttributesFollowersFiltersUnionMember6",
-    "IncludeAttributesFollowersFiltersUnionMember7",
-    "IncludeAttributesFollowersFiltersUnionMember8",
-    "IncludeAttributesFollowersFiltersUnionMember9",
-    "IncludeAttributesFollowersFiltersUnionMember10",
-    "IncludeAttributesFollowersFiltersUnionMember11",
-    "IncludeAttributesFollowersFiltersUnionMember12",
-    "IncludeAttributesFollowersFiltersUnionMember13",
-    "IncludeAttributesFollowersFiltersUnionMember14",
-    "IncludeAttributesFollowersFiltersUnionMember15",
-    "IncludeAttributesFollowersFiltersUnionMember16",
-    "IncludeAttributesFollowersFiltersUnionMember17",
-    "IncludeAttributesFollowersFiltersUnionMember18",
-    "IncludeAttributesFollowersFiltersUnionMember19",
-    "IncludeAttributesFollowersFiltersUnionMember20",
-    "IncludeAttributesFollowersFiltersUnionMember21",
-    "IncludeAttributesFollowersFiltersUnionMember22",
-    "IncludeAttributesFollowersFiltersUnionMember23",
-    "IncludeAttributesFollowersFiltersUnionMember24",
-    "IncludeAttributesFollowersFiltersUnionMember25",
-    "IncludeAttributesFollowersFiltersUnionMember26",
-    "IncludeAttributesFollowersFiltersUnionMember27",
-    "IncludeAttributesFollowersFiltersUnionMember28",
-    "IncludeAttributesFollowersFiltersUnionMember29",
-    "IncludeAttributesFollowersFiltersUnionMember30",
-    "IncludeAttributesFollowersFiltersUnionMember31",
-    "IncludeAttributesFollowersFiltersUnionMember32",
-    "IncludeAttributesFollowersFiltersUnionMember33",
-    "IncludeAttributesFollowersFiltersUnionMember34",
-    "IncludeAttributesFollowersFiltersUnionMember35",
-    "IncludeAttributesFollowersFiltersUnionMember36",
-    "IncludeAttributesFollowersFiltersUnionMember37",
-    "IncludeAttributesFollowersFiltersUnionMember38",
-    "IncludeAttributesFollowersFiltersUnionMember39",
-    "IncludeAttributesFollowersFiltersUnionMember40",
-    "IncludeAttributesFollowersFiltersUnionMember41",
-    "IncludeAttributesFollowersFiltersUnionMember42",
-    "IncludeAttributesFollowersFiltersUnionMember43",
-    "IncludeAttributesFollowersFiltersUnionMember44",
-    "IncludeAttributesFollowersFiltersUnionMember45",
-    "IncludeAttributesFollowersFiltersUnionMember46",
-    "IncludeAttributesFollowersFiltersUnionMember47",
-    "IncludeAttributesFollowersFiltersUnionMember48",
-    "IncludeAttributesFollowersFiltersUnionMember49",
-    "IncludeAttributesFollowersFiltersUnionMember50",
-    "IncludeAttributesFollowersFiltersUnionMember51",
-    "IncludeAttributesFollowersFiltersUnionMember52",
-    "IncludeAttributesFollowersFiltersUnionMember53",
-    "IncludeAttributesFollowersFiltersUnionMember54",
-    "IncludeAttributesFollowersFiltersUnionMember55",
-    "IncludeAttributesFollowersFiltersUnionMember56",
-    "IncludeAttributesFollowersFiltersUnionMember57",
-    "IncludeAttributesFollowersFiltersUnionMember58",
-    "IncludeAttributesFollowersFiltersUnionMember59",
-    "IncludeAttributesFollowersFiltersUnionMember60",
-    "IncludeAttributesFollowersFiltersUnionMember61",
-    "IncludeAttributesFollowersFiltersUnionMember62",
-    "IncludeAttributesFollowersFiltersUnionMember63",
-    "IncludeAttributesFollowersFiltersUnionMember64",
-    "IncludeAttributesFollowersFiltersUnionMember65",
-    "IncludeAttributesFollowersFiltersUnionMember66",
-    "IncludeAttributesFollowersFiltersUnionMember67",
-    "IncludeAttributesFollowersFiltersUnionMember68",
-    "IncludeAttributesFollowersFiltersUnionMember69",
-    "IncludeAttributesFollowersFiltersUnionMember70",
-    "IncludeAttributesFollowersFiltersUnionMember71",
-    "IncludeAttributesFollowersFiltersUnionMember72",
-    "IncludeAttributesFollowersFiltersUnionMember73",
-    "IncludeAttributesFollowersFiltersUnionMember74",
-    "IncludeAttributesFollowersFiltersUnionMember75",
-    "IncludeAttributesFollowersFiltersUnionMember76",
-    "IncludeAttributesFollowersFiltersUnionMember77",
-    "IncludeAttributesFollowersFiltersUnionMember78",
-    "IncludeAttributesFollowersFiltersUnionMember79",
-    "IncludeAttributesFollowersFiltersUnionMember80",
-    "IncludeAttributesFollowersFiltersUnionMember81",
-    "IncludeAttributesFollowersFiltersUnionMember82",
-    "IncludeAttributesFollowersFiltersUnionMember83",
-    "IncludeAttributesFollowersFiltersUnionMember84",
-    "IncludeAttributesFollowersFiltersUnionMember85",
-    "IncludeAttributesFollowersFiltersUnionMember86",
-    "IncludeAttributesFollowersFiltersUnionMember87",
-    "IncludeAttributesFollowersFiltersUnionMember88",
-    "IncludeAttributesFollowersFiltersUnionMember89",
-    "IncludeAttributesFollowersFiltersUnionMember90",
-    "IncludeAttributesFollowersFiltersUnionMember91",
-    "IncludeAttributesFollowersFiltersUnionMember92",
-    "IncludeAttributesFollowersFiltersUnionMember93",
-    "IncludeAttributesFollowersFiltersUnionMember94",
-    "IncludeAttributesFollowersFiltersUnionMember95",
-    "IncludeAttributesFollowersFiltersUnionMember96",
-    "IncludeAttributesFollowersFiltersUnionMember97",
-    "IncludeAttributesFollowersFiltersUnionMember98",
-    "IncludeAttributesFollowersFiltersUnionMember99",
-    "IncludeAttributesFollowersFiltersUnionMember100",
-    "IncludeAttributesFollowersFiltersUnionMember101",
-    "IncludeAttributesFollowersFiltersUnionMember102",
-    "IncludeAttributesFollowersFiltersUnionMember103",
-    "IncludeAttributesFollowersFiltersUnionMember104",
-    "IncludeAttributesFollowersFiltersUnionMember105",
-    "IncludeAttributesFollowersFiltersUnionMember106",
-    "IncludeAttributesFollowersFiltersUnionMember107",
-    "IncludeAttributesFollowersFiltersUnionMember108",
-    "IncludeAttributesFollowersFiltersUnionMember109",
-    "IncludeAttributesFollowersFiltersUnionMember110",
-    "IncludeAttributesFollowersFiltersUnionMember111",
-    "IncludeAttributesFollowersFiltersUnionMember112",
-    "IncludeAttributesFollowersFiltersUnionMember113",
-    "IncludeAttributesFollowersFiltersUnionMember114",
-    "IncludeAttributesFollowersFiltersUnionMember115",
-    "IncludeAttributesFollowersFiltersUnionMember116",
-    "IncludeAttributesFollowersFiltersUnionMember117",
-    "IncludeAttributesFollowersFiltersUnionMember118",
-    "IncludeAttributesFollowersFiltersUnionMember119",
-    "IncludeAttributesFollowersFiltersUnionMember120",
-    "IncludeAttributesFollowersFiltersUnionMember121",
-    "IncludeAttributesFollowersFiltersUnionMember122",
-    "IncludeAttributesFollowersFiltersUnionMember123",
-    "IncludeAttributesFollowersFiltersUnionMember124",
-    "IncludeAttributesFollowersFiltersUnionMember125",
-    "IncludeAttributesFollowersFiltersUnionMember126",
-    "IncludeAttributesFollowersFiltersUnionMember127",
-    "IncludeAttributesFollowersFiltersUnionMember128",
-    "IncludeAttributesFollowersFiltersUnionMember129",
-    "IncludeAttributesFollowersFiltersUnionMember130",
-    "IncludeAttributesFollowersFiltersUnionMember131",
-    "IncludeAttributesFollowersFiltersUnionMember132",
-    "IncludeAttributesFollowersFiltersUnionMember133",
-    "IncludeAttributesFollowersFiltersUnionMember134",
-    "IncludeAttributesFollowersFiltersUnionMember135",
-    "IncludeAttributesFollowersFiltersUnionMember136",
-    "IncludeAttributesFollowersFiltersUnionMember137",
-    "IncludeAttributesFollowersFiltersUnionMember138",
+    "IncludeAttributesFollowersFiltersEq",
+    "IncludeAttributesFollowersFiltersNotEq",
+    "IncludeAttributesFollowersFiltersIn",
+    "IncludeAttributesFollowersFiltersNotIn",
+    "IncludeAttributesFollowersFiltersLt",
+    "IncludeAttributesFollowersFiltersLte",
+    "IncludeAttributesFollowersFiltersGt",
+    "IncludeAttributesFollowersFiltersGte",
+    "IncludeAttributesFollowersFiltersGlob",
+    "IncludeAttributesFollowersFiltersNotGlob",
+    "IncludeAttributesFollowersFiltersIGlob",
+    "IncludeAttributesFollowersFiltersNotIGlob",
+    "IncludeAttributesFollowersFiltersRegex",
+    "IncludeAttributesFollowersFiltersContainsAllTokens",
     "IncludeAttributesFollowersFiltersUnionMember139",
     "IncludeAttributesFollowersFiltersUnionMember139Filter",
     "IncludeAttributesFollowersFiltersUnionMember139FilterUnionMember0",
@@ -1705,145 +1330,20 @@ __all__ = [
     "IncludeAttributesFollowersFiltersUnionMember140FilterUnionMember139FilterUnionMember138",
     "IncludeAttributesFollowing",
     "IncludeAttributesFollowingFilters",
-    "IncludeAttributesFollowingFiltersUnionMember0",
-    "IncludeAttributesFollowingFiltersUnionMember1",
-    "IncludeAttributesFollowingFiltersUnionMember2",
-    "IncludeAttributesFollowingFiltersUnionMember3",
-    "IncludeAttributesFollowingFiltersUnionMember4",
-    "IncludeAttributesFollowingFiltersUnionMember5",
-    "IncludeAttributesFollowingFiltersUnionMember6",
-    "IncludeAttributesFollowingFiltersUnionMember7",
-    "IncludeAttributesFollowingFiltersUnionMember8",
-    "IncludeAttributesFollowingFiltersUnionMember9",
-    "IncludeAttributesFollowingFiltersUnionMember10",
-    "IncludeAttributesFollowingFiltersUnionMember11",
-    "IncludeAttributesFollowingFiltersUnionMember12",
-    "IncludeAttributesFollowingFiltersUnionMember13",
-    "IncludeAttributesFollowingFiltersUnionMember14",
-    "IncludeAttributesFollowingFiltersUnionMember15",
-    "IncludeAttributesFollowingFiltersUnionMember16",
-    "IncludeAttributesFollowingFiltersUnionMember17",
-    "IncludeAttributesFollowingFiltersUnionMember18",
-    "IncludeAttributesFollowingFiltersUnionMember19",
-    "IncludeAttributesFollowingFiltersUnionMember20",
-    "IncludeAttributesFollowingFiltersUnionMember21",
-    "IncludeAttributesFollowingFiltersUnionMember22",
-    "IncludeAttributesFollowingFiltersUnionMember23",
-    "IncludeAttributesFollowingFiltersUnionMember24",
-    "IncludeAttributesFollowingFiltersUnionMember25",
-    "IncludeAttributesFollowingFiltersUnionMember26",
-    "IncludeAttributesFollowingFiltersUnionMember27",
-    "IncludeAttributesFollowingFiltersUnionMember28",
-    "IncludeAttributesFollowingFiltersUnionMember29",
-    "IncludeAttributesFollowingFiltersUnionMember30",
-    "IncludeAttributesFollowingFiltersUnionMember31",
-    "IncludeAttributesFollowingFiltersUnionMember32",
-    "IncludeAttributesFollowingFiltersUnionMember33",
-    "IncludeAttributesFollowingFiltersUnionMember34",
-    "IncludeAttributesFollowingFiltersUnionMember35",
-    "IncludeAttributesFollowingFiltersUnionMember36",
-    "IncludeAttributesFollowingFiltersUnionMember37",
-    "IncludeAttributesFollowingFiltersUnionMember38",
-    "IncludeAttributesFollowingFiltersUnionMember39",
-    "IncludeAttributesFollowingFiltersUnionMember40",
-    "IncludeAttributesFollowingFiltersUnionMember41",
-    "IncludeAttributesFollowingFiltersUnionMember42",
-    "IncludeAttributesFollowingFiltersUnionMember43",
-    "IncludeAttributesFollowingFiltersUnionMember44",
-    "IncludeAttributesFollowingFiltersUnionMember45",
-    "IncludeAttributesFollowingFiltersUnionMember46",
-    "IncludeAttributesFollowingFiltersUnionMember47",
-    "IncludeAttributesFollowingFiltersUnionMember48",
-    "IncludeAttributesFollowingFiltersUnionMember49",
-    "IncludeAttributesFollowingFiltersUnionMember50",
-    "IncludeAttributesFollowingFiltersUnionMember51",
-    "IncludeAttributesFollowingFiltersUnionMember52",
-    "IncludeAttributesFollowingFiltersUnionMember53",
-    "IncludeAttributesFollowingFiltersUnionMember54",
-    "IncludeAttributesFollowingFiltersUnionMember55",
-    "IncludeAttributesFollowingFiltersUnionMember56",
-    "IncludeAttributesFollowingFiltersUnionMember57",
-    "IncludeAttributesFollowingFiltersUnionMember58",
-    "IncludeAttributesFollowingFiltersUnionMember59",
-    "IncludeAttributesFollowingFiltersUnionMember60",
-    "IncludeAttributesFollowingFiltersUnionMember61",
-    "IncludeAttributesFollowingFiltersUnionMember62",
-    "IncludeAttributesFollowingFiltersUnionMember63",
-    "IncludeAttributesFollowingFiltersUnionMember64",
-    "IncludeAttributesFollowingFiltersUnionMember65",
-    "IncludeAttributesFollowingFiltersUnionMember66",
-    "IncludeAttributesFollowingFiltersUnionMember67",
-    "IncludeAttributesFollowingFiltersUnionMember68",
-    "IncludeAttributesFollowingFiltersUnionMember69",
-    "IncludeAttributesFollowingFiltersUnionMember70",
-    "IncludeAttributesFollowingFiltersUnionMember71",
-    "IncludeAttributesFollowingFiltersUnionMember72",
-    "IncludeAttributesFollowingFiltersUnionMember73",
-    "IncludeAttributesFollowingFiltersUnionMember74",
-    "IncludeAttributesFollowingFiltersUnionMember75",
-    "IncludeAttributesFollowingFiltersUnionMember76",
-    "IncludeAttributesFollowingFiltersUnionMember77",
-    "IncludeAttributesFollowingFiltersUnionMember78",
-    "IncludeAttributesFollowingFiltersUnionMember79",
-    "IncludeAttributesFollowingFiltersUnionMember80",
-    "IncludeAttributesFollowingFiltersUnionMember81",
-    "IncludeAttributesFollowingFiltersUnionMember82",
-    "IncludeAttributesFollowingFiltersUnionMember83",
-    "IncludeAttributesFollowingFiltersUnionMember84",
-    "IncludeAttributesFollowingFiltersUnionMember85",
-    "IncludeAttributesFollowingFiltersUnionMember86",
-    "IncludeAttributesFollowingFiltersUnionMember87",
-    "IncludeAttributesFollowingFiltersUnionMember88",
-    "IncludeAttributesFollowingFiltersUnionMember89",
-    "IncludeAttributesFollowingFiltersUnionMember90",
-    "IncludeAttributesFollowingFiltersUnionMember91",
-    "IncludeAttributesFollowingFiltersUnionMember92",
-    "IncludeAttributesFollowingFiltersUnionMember93",
-    "IncludeAttributesFollowingFiltersUnionMember94",
-    "IncludeAttributesFollowingFiltersUnionMember95",
-    "IncludeAttributesFollowingFiltersUnionMember96",
-    "IncludeAttributesFollowingFiltersUnionMember97",
-    "IncludeAttributesFollowingFiltersUnionMember98",
-    "IncludeAttributesFollowingFiltersUnionMember99",
-    "IncludeAttributesFollowingFiltersUnionMember100",
-    "IncludeAttributesFollowingFiltersUnionMember101",
-    "IncludeAttributesFollowingFiltersUnionMember102",
-    "IncludeAttributesFollowingFiltersUnionMember103",
-    "IncludeAttributesFollowingFiltersUnionMember104",
-    "IncludeAttributesFollowingFiltersUnionMember105",
-    "IncludeAttributesFollowingFiltersUnionMember106",
-    "IncludeAttributesFollowingFiltersUnionMember107",
-    "IncludeAttributesFollowingFiltersUnionMember108",
-    "IncludeAttributesFollowingFiltersUnionMember109",
-    "IncludeAttributesFollowingFiltersUnionMember110",
-    "IncludeAttributesFollowingFiltersUnionMember111",
-    "IncludeAttributesFollowingFiltersUnionMember112",
-    "IncludeAttributesFollowingFiltersUnionMember113",
-    "IncludeAttributesFollowingFiltersUnionMember114",
-    "IncludeAttributesFollowingFiltersUnionMember115",
-    "IncludeAttributesFollowingFiltersUnionMember116",
-    "IncludeAttributesFollowingFiltersUnionMember117",
-    "IncludeAttributesFollowingFiltersUnionMember118",
-    "IncludeAttributesFollowingFiltersUnionMember119",
-    "IncludeAttributesFollowingFiltersUnionMember120",
-    "IncludeAttributesFollowingFiltersUnionMember121",
-    "IncludeAttributesFollowingFiltersUnionMember122",
-    "IncludeAttributesFollowingFiltersUnionMember123",
-    "IncludeAttributesFollowingFiltersUnionMember124",
-    "IncludeAttributesFollowingFiltersUnionMember125",
-    "IncludeAttributesFollowingFiltersUnionMember126",
-    "IncludeAttributesFollowingFiltersUnionMember127",
-    "IncludeAttributesFollowingFiltersUnionMember128",
-    "IncludeAttributesFollowingFiltersUnionMember129",
-    "IncludeAttributesFollowingFiltersUnionMember130",
-    "IncludeAttributesFollowingFiltersUnionMember131",
-    "IncludeAttributesFollowingFiltersUnionMember132",
-    "IncludeAttributesFollowingFiltersUnionMember133",
-    "IncludeAttributesFollowingFiltersUnionMember134",
-    "IncludeAttributesFollowingFiltersUnionMember135",
-    "IncludeAttributesFollowingFiltersUnionMember136",
-    "IncludeAttributesFollowingFiltersUnionMember137",
-    "IncludeAttributesFollowingFiltersUnionMember138",
+    "IncludeAttributesFollowingFiltersEq",
+    "IncludeAttributesFollowingFiltersNotEq",
+    "IncludeAttributesFollowingFiltersIn",
+    "IncludeAttributesFollowingFiltersNotIn",
+    "IncludeAttributesFollowingFiltersLt",
+    "IncludeAttributesFollowingFiltersLte",
+    "IncludeAttributesFollowingFiltersGt",
+    "IncludeAttributesFollowingFiltersGte",
+    "IncludeAttributesFollowingFiltersGlob",
+    "IncludeAttributesFollowingFiltersNotGlob",
+    "IncludeAttributesFollowingFiltersIGlob",
+    "IncludeAttributesFollowingFiltersNotIGlob",
+    "IncludeAttributesFollowingFiltersRegex",
+    "IncludeAttributesFollowingFiltersContainsAllTokens",
     "IncludeAttributesFollowingFiltersUnionMember139",
     "IncludeAttributesFollowingFiltersUnionMember139Filter",
     "IncludeAttributesFollowingFiltersUnionMember139FilterUnionMember0",
@@ -2269,145 +1769,20 @@ __all__ = [
     "IncludeAttributesFollowingFiltersUnionMember140FilterUnionMember139FilterUnionMember138",
     "IncludeAttributesOwns",
     "IncludeAttributesOwnsFilters",
-    "IncludeAttributesOwnsFiltersUnionMember0",
-    "IncludeAttributesOwnsFiltersUnionMember1",
-    "IncludeAttributesOwnsFiltersUnionMember2",
-    "IncludeAttributesOwnsFiltersUnionMember3",
-    "IncludeAttributesOwnsFiltersUnionMember4",
-    "IncludeAttributesOwnsFiltersUnionMember5",
-    "IncludeAttributesOwnsFiltersUnionMember6",
-    "IncludeAttributesOwnsFiltersUnionMember7",
-    "IncludeAttributesOwnsFiltersUnionMember8",
-    "IncludeAttributesOwnsFiltersUnionMember9",
-    "IncludeAttributesOwnsFiltersUnionMember10",
-    "IncludeAttributesOwnsFiltersUnionMember11",
-    "IncludeAttributesOwnsFiltersUnionMember12",
-    "IncludeAttributesOwnsFiltersUnionMember13",
-    "IncludeAttributesOwnsFiltersUnionMember14",
-    "IncludeAttributesOwnsFiltersUnionMember15",
-    "IncludeAttributesOwnsFiltersUnionMember16",
-    "IncludeAttributesOwnsFiltersUnionMember17",
-    "IncludeAttributesOwnsFiltersUnionMember18",
-    "IncludeAttributesOwnsFiltersUnionMember19",
-    "IncludeAttributesOwnsFiltersUnionMember20",
-    "IncludeAttributesOwnsFiltersUnionMember21",
-    "IncludeAttributesOwnsFiltersUnionMember22",
-    "IncludeAttributesOwnsFiltersUnionMember23",
-    "IncludeAttributesOwnsFiltersUnionMember24",
-    "IncludeAttributesOwnsFiltersUnionMember25",
-    "IncludeAttributesOwnsFiltersUnionMember26",
-    "IncludeAttributesOwnsFiltersUnionMember27",
-    "IncludeAttributesOwnsFiltersUnionMember28",
-    "IncludeAttributesOwnsFiltersUnionMember29",
-    "IncludeAttributesOwnsFiltersUnionMember30",
-    "IncludeAttributesOwnsFiltersUnionMember31",
-    "IncludeAttributesOwnsFiltersUnionMember32",
-    "IncludeAttributesOwnsFiltersUnionMember33",
-    "IncludeAttributesOwnsFiltersUnionMember34",
-    "IncludeAttributesOwnsFiltersUnionMember35",
-    "IncludeAttributesOwnsFiltersUnionMember36",
-    "IncludeAttributesOwnsFiltersUnionMember37",
-    "IncludeAttributesOwnsFiltersUnionMember38",
-    "IncludeAttributesOwnsFiltersUnionMember39",
-    "IncludeAttributesOwnsFiltersUnionMember40",
-    "IncludeAttributesOwnsFiltersUnionMember41",
-    "IncludeAttributesOwnsFiltersUnionMember42",
-    "IncludeAttributesOwnsFiltersUnionMember43",
-    "IncludeAttributesOwnsFiltersUnionMember44",
-    "IncludeAttributesOwnsFiltersUnionMember45",
-    "IncludeAttributesOwnsFiltersUnionMember46",
-    "IncludeAttributesOwnsFiltersUnionMember47",
-    "IncludeAttributesOwnsFiltersUnionMember48",
-    "IncludeAttributesOwnsFiltersUnionMember49",
-    "IncludeAttributesOwnsFiltersUnionMember50",
-    "IncludeAttributesOwnsFiltersUnionMember51",
-    "IncludeAttributesOwnsFiltersUnionMember52",
-    "IncludeAttributesOwnsFiltersUnionMember53",
-    "IncludeAttributesOwnsFiltersUnionMember54",
-    "IncludeAttributesOwnsFiltersUnionMember55",
-    "IncludeAttributesOwnsFiltersUnionMember56",
-    "IncludeAttributesOwnsFiltersUnionMember57",
-    "IncludeAttributesOwnsFiltersUnionMember58",
-    "IncludeAttributesOwnsFiltersUnionMember59",
-    "IncludeAttributesOwnsFiltersUnionMember60",
-    "IncludeAttributesOwnsFiltersUnionMember61",
-    "IncludeAttributesOwnsFiltersUnionMember62",
-    "IncludeAttributesOwnsFiltersUnionMember63",
-    "IncludeAttributesOwnsFiltersUnionMember64",
-    "IncludeAttributesOwnsFiltersUnionMember65",
-    "IncludeAttributesOwnsFiltersUnionMember66",
-    "IncludeAttributesOwnsFiltersUnionMember67",
-    "IncludeAttributesOwnsFiltersUnionMember68",
-    "IncludeAttributesOwnsFiltersUnionMember69",
-    "IncludeAttributesOwnsFiltersUnionMember70",
-    "IncludeAttributesOwnsFiltersUnionMember71",
-    "IncludeAttributesOwnsFiltersUnionMember72",
-    "IncludeAttributesOwnsFiltersUnionMember73",
-    "IncludeAttributesOwnsFiltersUnionMember74",
-    "IncludeAttributesOwnsFiltersUnionMember75",
-    "IncludeAttributesOwnsFiltersUnionMember76",
-    "IncludeAttributesOwnsFiltersUnionMember77",
-    "IncludeAttributesOwnsFiltersUnionMember78",
-    "IncludeAttributesOwnsFiltersUnionMember79",
-    "IncludeAttributesOwnsFiltersUnionMember80",
-    "IncludeAttributesOwnsFiltersUnionMember81",
-    "IncludeAttributesOwnsFiltersUnionMember82",
-    "IncludeAttributesOwnsFiltersUnionMember83",
-    "IncludeAttributesOwnsFiltersUnionMember84",
-    "IncludeAttributesOwnsFiltersUnionMember85",
-    "IncludeAttributesOwnsFiltersUnionMember86",
-    "IncludeAttributesOwnsFiltersUnionMember87",
-    "IncludeAttributesOwnsFiltersUnionMember88",
-    "IncludeAttributesOwnsFiltersUnionMember89",
-    "IncludeAttributesOwnsFiltersUnionMember90",
-    "IncludeAttributesOwnsFiltersUnionMember91",
-    "IncludeAttributesOwnsFiltersUnionMember92",
-    "IncludeAttributesOwnsFiltersUnionMember93",
-    "IncludeAttributesOwnsFiltersUnionMember94",
-    "IncludeAttributesOwnsFiltersUnionMember95",
-    "IncludeAttributesOwnsFiltersUnionMember96",
-    "IncludeAttributesOwnsFiltersUnionMember97",
-    "IncludeAttributesOwnsFiltersUnionMember98",
-    "IncludeAttributesOwnsFiltersUnionMember99",
-    "IncludeAttributesOwnsFiltersUnionMember100",
-    "IncludeAttributesOwnsFiltersUnionMember101",
-    "IncludeAttributesOwnsFiltersUnionMember102",
-    "IncludeAttributesOwnsFiltersUnionMember103",
-    "IncludeAttributesOwnsFiltersUnionMember104",
-    "IncludeAttributesOwnsFiltersUnionMember105",
-    "IncludeAttributesOwnsFiltersUnionMember106",
-    "IncludeAttributesOwnsFiltersUnionMember107",
-    "IncludeAttributesOwnsFiltersUnionMember108",
-    "IncludeAttributesOwnsFiltersUnionMember109",
-    "IncludeAttributesOwnsFiltersUnionMember110",
-    "IncludeAttributesOwnsFiltersUnionMember111",
-    "IncludeAttributesOwnsFiltersUnionMember112",
-    "IncludeAttributesOwnsFiltersUnionMember113",
-    "IncludeAttributesOwnsFiltersUnionMember114",
-    "IncludeAttributesOwnsFiltersUnionMember115",
-    "IncludeAttributesOwnsFiltersUnionMember116",
-    "IncludeAttributesOwnsFiltersUnionMember117",
-    "IncludeAttributesOwnsFiltersUnionMember118",
-    "IncludeAttributesOwnsFiltersUnionMember119",
-    "IncludeAttributesOwnsFiltersUnionMember120",
-    "IncludeAttributesOwnsFiltersUnionMember121",
-    "IncludeAttributesOwnsFiltersUnionMember122",
-    "IncludeAttributesOwnsFiltersUnionMember123",
-    "IncludeAttributesOwnsFiltersUnionMember124",
-    "IncludeAttributesOwnsFiltersUnionMember125",
-    "IncludeAttributesOwnsFiltersUnionMember126",
-    "IncludeAttributesOwnsFiltersUnionMember127",
-    "IncludeAttributesOwnsFiltersUnionMember128",
-    "IncludeAttributesOwnsFiltersUnionMember129",
-    "IncludeAttributesOwnsFiltersUnionMember130",
-    "IncludeAttributesOwnsFiltersUnionMember131",
-    "IncludeAttributesOwnsFiltersUnionMember132",
-    "IncludeAttributesOwnsFiltersUnionMember133",
-    "IncludeAttributesOwnsFiltersUnionMember134",
-    "IncludeAttributesOwnsFiltersUnionMember135",
-    "IncludeAttributesOwnsFiltersUnionMember136",
-    "IncludeAttributesOwnsFiltersUnionMember137",
-    "IncludeAttributesOwnsFiltersUnionMember138",
+    "IncludeAttributesOwnsFiltersEq",
+    "IncludeAttributesOwnsFiltersNotEq",
+    "IncludeAttributesOwnsFiltersIn",
+    "IncludeAttributesOwnsFiltersNotIn",
+    "IncludeAttributesOwnsFiltersLt",
+    "IncludeAttributesOwnsFiltersLte",
+    "IncludeAttributesOwnsFiltersGt",
+    "IncludeAttributesOwnsFiltersGte",
+    "IncludeAttributesOwnsFiltersGlob",
+    "IncludeAttributesOwnsFiltersNotGlob",
+    "IncludeAttributesOwnsFiltersIGlob",
+    "IncludeAttributesOwnsFiltersNotIGlob",
+    "IncludeAttributesOwnsFiltersRegex",
+    "IncludeAttributesOwnsFiltersContainsAllTokens",
     "IncludeAttributesOwnsFiltersUnionMember139",
     "IncludeAttributesOwnsFiltersUnionMember139Filter",
     "IncludeAttributesOwnsFiltersUnionMember139FilterUnionMember0",
@@ -2833,145 +2208,20 @@ __all__ = [
     "IncludeAttributesOwnsFiltersUnionMember140FilterUnionMember139FilterUnionMember138",
     "IncludeAttributesStarrers",
     "IncludeAttributesStarrersFilters",
-    "IncludeAttributesStarrersFiltersUnionMember0",
-    "IncludeAttributesStarrersFiltersUnionMember1",
-    "IncludeAttributesStarrersFiltersUnionMember2",
-    "IncludeAttributesStarrersFiltersUnionMember3",
-    "IncludeAttributesStarrersFiltersUnionMember4",
-    "IncludeAttributesStarrersFiltersUnionMember5",
-    "IncludeAttributesStarrersFiltersUnionMember6",
-    "IncludeAttributesStarrersFiltersUnionMember7",
-    "IncludeAttributesStarrersFiltersUnionMember8",
-    "IncludeAttributesStarrersFiltersUnionMember9",
-    "IncludeAttributesStarrersFiltersUnionMember10",
-    "IncludeAttributesStarrersFiltersUnionMember11",
-    "IncludeAttributesStarrersFiltersUnionMember12",
-    "IncludeAttributesStarrersFiltersUnionMember13",
-    "IncludeAttributesStarrersFiltersUnionMember14",
-    "IncludeAttributesStarrersFiltersUnionMember15",
-    "IncludeAttributesStarrersFiltersUnionMember16",
-    "IncludeAttributesStarrersFiltersUnionMember17",
-    "IncludeAttributesStarrersFiltersUnionMember18",
-    "IncludeAttributesStarrersFiltersUnionMember19",
-    "IncludeAttributesStarrersFiltersUnionMember20",
-    "IncludeAttributesStarrersFiltersUnionMember21",
-    "IncludeAttributesStarrersFiltersUnionMember22",
-    "IncludeAttributesStarrersFiltersUnionMember23",
-    "IncludeAttributesStarrersFiltersUnionMember24",
-    "IncludeAttributesStarrersFiltersUnionMember25",
-    "IncludeAttributesStarrersFiltersUnionMember26",
-    "IncludeAttributesStarrersFiltersUnionMember27",
-    "IncludeAttributesStarrersFiltersUnionMember28",
-    "IncludeAttributesStarrersFiltersUnionMember29",
-    "IncludeAttributesStarrersFiltersUnionMember30",
-    "IncludeAttributesStarrersFiltersUnionMember31",
-    "IncludeAttributesStarrersFiltersUnionMember32",
-    "IncludeAttributesStarrersFiltersUnionMember33",
-    "IncludeAttributesStarrersFiltersUnionMember34",
-    "IncludeAttributesStarrersFiltersUnionMember35",
-    "IncludeAttributesStarrersFiltersUnionMember36",
-    "IncludeAttributesStarrersFiltersUnionMember37",
-    "IncludeAttributesStarrersFiltersUnionMember38",
-    "IncludeAttributesStarrersFiltersUnionMember39",
-    "IncludeAttributesStarrersFiltersUnionMember40",
-    "IncludeAttributesStarrersFiltersUnionMember41",
-    "IncludeAttributesStarrersFiltersUnionMember42",
-    "IncludeAttributesStarrersFiltersUnionMember43",
-    "IncludeAttributesStarrersFiltersUnionMember44",
-    "IncludeAttributesStarrersFiltersUnionMember45",
-    "IncludeAttributesStarrersFiltersUnionMember46",
-    "IncludeAttributesStarrersFiltersUnionMember47",
-    "IncludeAttributesStarrersFiltersUnionMember48",
-    "IncludeAttributesStarrersFiltersUnionMember49",
-    "IncludeAttributesStarrersFiltersUnionMember50",
-    "IncludeAttributesStarrersFiltersUnionMember51",
-    "IncludeAttributesStarrersFiltersUnionMember52",
-    "IncludeAttributesStarrersFiltersUnionMember53",
-    "IncludeAttributesStarrersFiltersUnionMember54",
-    "IncludeAttributesStarrersFiltersUnionMember55",
-    "IncludeAttributesStarrersFiltersUnionMember56",
-    "IncludeAttributesStarrersFiltersUnionMember57",
-    "IncludeAttributesStarrersFiltersUnionMember58",
-    "IncludeAttributesStarrersFiltersUnionMember59",
-    "IncludeAttributesStarrersFiltersUnionMember60",
-    "IncludeAttributesStarrersFiltersUnionMember61",
-    "IncludeAttributesStarrersFiltersUnionMember62",
-    "IncludeAttributesStarrersFiltersUnionMember63",
-    "IncludeAttributesStarrersFiltersUnionMember64",
-    "IncludeAttributesStarrersFiltersUnionMember65",
-    "IncludeAttributesStarrersFiltersUnionMember66",
-    "IncludeAttributesStarrersFiltersUnionMember67",
-    "IncludeAttributesStarrersFiltersUnionMember68",
-    "IncludeAttributesStarrersFiltersUnionMember69",
-    "IncludeAttributesStarrersFiltersUnionMember70",
-    "IncludeAttributesStarrersFiltersUnionMember71",
-    "IncludeAttributesStarrersFiltersUnionMember72",
-    "IncludeAttributesStarrersFiltersUnionMember73",
-    "IncludeAttributesStarrersFiltersUnionMember74",
-    "IncludeAttributesStarrersFiltersUnionMember75",
-    "IncludeAttributesStarrersFiltersUnionMember76",
-    "IncludeAttributesStarrersFiltersUnionMember77",
-    "IncludeAttributesStarrersFiltersUnionMember78",
-    "IncludeAttributesStarrersFiltersUnionMember79",
-    "IncludeAttributesStarrersFiltersUnionMember80",
-    "IncludeAttributesStarrersFiltersUnionMember81",
-    "IncludeAttributesStarrersFiltersUnionMember82",
-    "IncludeAttributesStarrersFiltersUnionMember83",
-    "IncludeAttributesStarrersFiltersUnionMember84",
-    "IncludeAttributesStarrersFiltersUnionMember85",
-    "IncludeAttributesStarrersFiltersUnionMember86",
-    "IncludeAttributesStarrersFiltersUnionMember87",
-    "IncludeAttributesStarrersFiltersUnionMember88",
-    "IncludeAttributesStarrersFiltersUnionMember89",
-    "IncludeAttributesStarrersFiltersUnionMember90",
-    "IncludeAttributesStarrersFiltersUnionMember91",
-    "IncludeAttributesStarrersFiltersUnionMember92",
-    "IncludeAttributesStarrersFiltersUnionMember93",
-    "IncludeAttributesStarrersFiltersUnionMember94",
-    "IncludeAttributesStarrersFiltersUnionMember95",
-    "IncludeAttributesStarrersFiltersUnionMember96",
-    "IncludeAttributesStarrersFiltersUnionMember97",
-    "IncludeAttributesStarrersFiltersUnionMember98",
-    "IncludeAttributesStarrersFiltersUnionMember99",
-    "IncludeAttributesStarrersFiltersUnionMember100",
-    "IncludeAttributesStarrersFiltersUnionMember101",
-    "IncludeAttributesStarrersFiltersUnionMember102",
-    "IncludeAttributesStarrersFiltersUnionMember103",
-    "IncludeAttributesStarrersFiltersUnionMember104",
-    "IncludeAttributesStarrersFiltersUnionMember105",
-    "IncludeAttributesStarrersFiltersUnionMember106",
-    "IncludeAttributesStarrersFiltersUnionMember107",
-    "IncludeAttributesStarrersFiltersUnionMember108",
-    "IncludeAttributesStarrersFiltersUnionMember109",
-    "IncludeAttributesStarrersFiltersUnionMember110",
-    "IncludeAttributesStarrersFiltersUnionMember111",
-    "IncludeAttributesStarrersFiltersUnionMember112",
-    "IncludeAttributesStarrersFiltersUnionMember113",
-    "IncludeAttributesStarrersFiltersUnionMember114",
-    "IncludeAttributesStarrersFiltersUnionMember115",
-    "IncludeAttributesStarrersFiltersUnionMember116",
-    "IncludeAttributesStarrersFiltersUnionMember117",
-    "IncludeAttributesStarrersFiltersUnionMember118",
-    "IncludeAttributesStarrersFiltersUnionMember119",
-    "IncludeAttributesStarrersFiltersUnionMember120",
-    "IncludeAttributesStarrersFiltersUnionMember121",
-    "IncludeAttributesStarrersFiltersUnionMember122",
-    "IncludeAttributesStarrersFiltersUnionMember123",
-    "IncludeAttributesStarrersFiltersUnionMember124",
-    "IncludeAttributesStarrersFiltersUnionMember125",
-    "IncludeAttributesStarrersFiltersUnionMember126",
-    "IncludeAttributesStarrersFiltersUnionMember127",
-    "IncludeAttributesStarrersFiltersUnionMember128",
-    "IncludeAttributesStarrersFiltersUnionMember129",
-    "IncludeAttributesStarrersFiltersUnionMember130",
-    "IncludeAttributesStarrersFiltersUnionMember131",
-    "IncludeAttributesStarrersFiltersUnionMember132",
-    "IncludeAttributesStarrersFiltersUnionMember133",
-    "IncludeAttributesStarrersFiltersUnionMember134",
-    "IncludeAttributesStarrersFiltersUnionMember135",
-    "IncludeAttributesStarrersFiltersUnionMember136",
-    "IncludeAttributesStarrersFiltersUnionMember137",
-    "IncludeAttributesStarrersFiltersUnionMember138",
+    "IncludeAttributesStarrersFiltersEq",
+    "IncludeAttributesStarrersFiltersNotEq",
+    "IncludeAttributesStarrersFiltersIn",
+    "IncludeAttributesStarrersFiltersNotIn",
+    "IncludeAttributesStarrersFiltersLt",
+    "IncludeAttributesStarrersFiltersLte",
+    "IncludeAttributesStarrersFiltersGt",
+    "IncludeAttributesStarrersFiltersGte",
+    "IncludeAttributesStarrersFiltersGlob",
+    "IncludeAttributesStarrersFiltersNotGlob",
+    "IncludeAttributesStarrersFiltersIGlob",
+    "IncludeAttributesStarrersFiltersNotIGlob",
+    "IncludeAttributesStarrersFiltersRegex",
+    "IncludeAttributesStarrersFiltersContainsAllTokens",
     "IncludeAttributesStarrersFiltersUnionMember139",
     "IncludeAttributesStarrersFiltersUnionMember139Filter",
     "IncludeAttributesStarrersFiltersUnionMember139FilterUnionMember0",
@@ -3397,145 +2647,20 @@ __all__ = [
     "IncludeAttributesStarrersFiltersUnionMember140FilterUnionMember139FilterUnionMember138",
     "IncludeAttributesStars",
     "IncludeAttributesStarsFilters",
-    "IncludeAttributesStarsFiltersUnionMember0",
-    "IncludeAttributesStarsFiltersUnionMember1",
-    "IncludeAttributesStarsFiltersUnionMember2",
-    "IncludeAttributesStarsFiltersUnionMember3",
-    "IncludeAttributesStarsFiltersUnionMember4",
-    "IncludeAttributesStarsFiltersUnionMember5",
-    "IncludeAttributesStarsFiltersUnionMember6",
-    "IncludeAttributesStarsFiltersUnionMember7",
-    "IncludeAttributesStarsFiltersUnionMember8",
-    "IncludeAttributesStarsFiltersUnionMember9",
-    "IncludeAttributesStarsFiltersUnionMember10",
-    "IncludeAttributesStarsFiltersUnionMember11",
-    "IncludeAttributesStarsFiltersUnionMember12",
-    "IncludeAttributesStarsFiltersUnionMember13",
-    "IncludeAttributesStarsFiltersUnionMember14",
-    "IncludeAttributesStarsFiltersUnionMember15",
-    "IncludeAttributesStarsFiltersUnionMember16",
-    "IncludeAttributesStarsFiltersUnionMember17",
-    "IncludeAttributesStarsFiltersUnionMember18",
-    "IncludeAttributesStarsFiltersUnionMember19",
-    "IncludeAttributesStarsFiltersUnionMember20",
-    "IncludeAttributesStarsFiltersUnionMember21",
-    "IncludeAttributesStarsFiltersUnionMember22",
-    "IncludeAttributesStarsFiltersUnionMember23",
-    "IncludeAttributesStarsFiltersUnionMember24",
-    "IncludeAttributesStarsFiltersUnionMember25",
-    "IncludeAttributesStarsFiltersUnionMember26",
-    "IncludeAttributesStarsFiltersUnionMember27",
-    "IncludeAttributesStarsFiltersUnionMember28",
-    "IncludeAttributesStarsFiltersUnionMember29",
-    "IncludeAttributesStarsFiltersUnionMember30",
-    "IncludeAttributesStarsFiltersUnionMember31",
-    "IncludeAttributesStarsFiltersUnionMember32",
-    "IncludeAttributesStarsFiltersUnionMember33",
-    "IncludeAttributesStarsFiltersUnionMember34",
-    "IncludeAttributesStarsFiltersUnionMember35",
-    "IncludeAttributesStarsFiltersUnionMember36",
-    "IncludeAttributesStarsFiltersUnionMember37",
-    "IncludeAttributesStarsFiltersUnionMember38",
-    "IncludeAttributesStarsFiltersUnionMember39",
-    "IncludeAttributesStarsFiltersUnionMember40",
-    "IncludeAttributesStarsFiltersUnionMember41",
-    "IncludeAttributesStarsFiltersUnionMember42",
-    "IncludeAttributesStarsFiltersUnionMember43",
-    "IncludeAttributesStarsFiltersUnionMember44",
-    "IncludeAttributesStarsFiltersUnionMember45",
-    "IncludeAttributesStarsFiltersUnionMember46",
-    "IncludeAttributesStarsFiltersUnionMember47",
-    "IncludeAttributesStarsFiltersUnionMember48",
-    "IncludeAttributesStarsFiltersUnionMember49",
-    "IncludeAttributesStarsFiltersUnionMember50",
-    "IncludeAttributesStarsFiltersUnionMember51",
-    "IncludeAttributesStarsFiltersUnionMember52",
-    "IncludeAttributesStarsFiltersUnionMember53",
-    "IncludeAttributesStarsFiltersUnionMember54",
-    "IncludeAttributesStarsFiltersUnionMember55",
-    "IncludeAttributesStarsFiltersUnionMember56",
-    "IncludeAttributesStarsFiltersUnionMember57",
-    "IncludeAttributesStarsFiltersUnionMember58",
-    "IncludeAttributesStarsFiltersUnionMember59",
-    "IncludeAttributesStarsFiltersUnionMember60",
-    "IncludeAttributesStarsFiltersUnionMember61",
-    "IncludeAttributesStarsFiltersUnionMember62",
-    "IncludeAttributesStarsFiltersUnionMember63",
-    "IncludeAttributesStarsFiltersUnionMember64",
-    "IncludeAttributesStarsFiltersUnionMember65",
-    "IncludeAttributesStarsFiltersUnionMember66",
-    "IncludeAttributesStarsFiltersUnionMember67",
-    "IncludeAttributesStarsFiltersUnionMember68",
-    "IncludeAttributesStarsFiltersUnionMember69",
-    "IncludeAttributesStarsFiltersUnionMember70",
-    "IncludeAttributesStarsFiltersUnionMember71",
-    "IncludeAttributesStarsFiltersUnionMember72",
-    "IncludeAttributesStarsFiltersUnionMember73",
-    "IncludeAttributesStarsFiltersUnionMember74",
-    "IncludeAttributesStarsFiltersUnionMember75",
-    "IncludeAttributesStarsFiltersUnionMember76",
-    "IncludeAttributesStarsFiltersUnionMember77",
-    "IncludeAttributesStarsFiltersUnionMember78",
-    "IncludeAttributesStarsFiltersUnionMember79",
-    "IncludeAttributesStarsFiltersUnionMember80",
-    "IncludeAttributesStarsFiltersUnionMember81",
-    "IncludeAttributesStarsFiltersUnionMember82",
-    "IncludeAttributesStarsFiltersUnionMember83",
-    "IncludeAttributesStarsFiltersUnionMember84",
-    "IncludeAttributesStarsFiltersUnionMember85",
-    "IncludeAttributesStarsFiltersUnionMember86",
-    "IncludeAttributesStarsFiltersUnionMember87",
-    "IncludeAttributesStarsFiltersUnionMember88",
-    "IncludeAttributesStarsFiltersUnionMember89",
-    "IncludeAttributesStarsFiltersUnionMember90",
-    "IncludeAttributesStarsFiltersUnionMember91",
-    "IncludeAttributesStarsFiltersUnionMember92",
-    "IncludeAttributesStarsFiltersUnionMember93",
-    "IncludeAttributesStarsFiltersUnionMember94",
-    "IncludeAttributesStarsFiltersUnionMember95",
-    "IncludeAttributesStarsFiltersUnionMember96",
-    "IncludeAttributesStarsFiltersUnionMember97",
-    "IncludeAttributesStarsFiltersUnionMember98",
-    "IncludeAttributesStarsFiltersUnionMember99",
-    "IncludeAttributesStarsFiltersUnionMember100",
-    "IncludeAttributesStarsFiltersUnionMember101",
-    "IncludeAttributesStarsFiltersUnionMember102",
-    "IncludeAttributesStarsFiltersUnionMember103",
-    "IncludeAttributesStarsFiltersUnionMember104",
-    "IncludeAttributesStarsFiltersUnionMember105",
-    "IncludeAttributesStarsFiltersUnionMember106",
-    "IncludeAttributesStarsFiltersUnionMember107",
-    "IncludeAttributesStarsFiltersUnionMember108",
-    "IncludeAttributesStarsFiltersUnionMember109",
-    "IncludeAttributesStarsFiltersUnionMember110",
-    "IncludeAttributesStarsFiltersUnionMember111",
-    "IncludeAttributesStarsFiltersUnionMember112",
-    "IncludeAttributesStarsFiltersUnionMember113",
-    "IncludeAttributesStarsFiltersUnionMember114",
-    "IncludeAttributesStarsFiltersUnionMember115",
-    "IncludeAttributesStarsFiltersUnionMember116",
-    "IncludeAttributesStarsFiltersUnionMember117",
-    "IncludeAttributesStarsFiltersUnionMember118",
-    "IncludeAttributesStarsFiltersUnionMember119",
-    "IncludeAttributesStarsFiltersUnionMember120",
-    "IncludeAttributesStarsFiltersUnionMember121",
-    "IncludeAttributesStarsFiltersUnionMember122",
-    "IncludeAttributesStarsFiltersUnionMember123",
-    "IncludeAttributesStarsFiltersUnionMember124",
-    "IncludeAttributesStarsFiltersUnionMember125",
-    "IncludeAttributesStarsFiltersUnionMember126",
-    "IncludeAttributesStarsFiltersUnionMember127",
-    "IncludeAttributesStarsFiltersUnionMember128",
-    "IncludeAttributesStarsFiltersUnionMember129",
-    "IncludeAttributesStarsFiltersUnionMember130",
-    "IncludeAttributesStarsFiltersUnionMember131",
-    "IncludeAttributesStarsFiltersUnionMember132",
-    "IncludeAttributesStarsFiltersUnionMember133",
-    "IncludeAttributesStarsFiltersUnionMember134",
-    "IncludeAttributesStarsFiltersUnionMember135",
-    "IncludeAttributesStarsFiltersUnionMember136",
-    "IncludeAttributesStarsFiltersUnionMember137",
-    "IncludeAttributesStarsFiltersUnionMember138",
+    "IncludeAttributesStarsFiltersEq",
+    "IncludeAttributesStarsFiltersNotEq",
+    "IncludeAttributesStarsFiltersIn",
+    "IncludeAttributesStarsFiltersNotIn",
+    "IncludeAttributesStarsFiltersLt",
+    "IncludeAttributesStarsFiltersLte",
+    "IncludeAttributesStarsFiltersGt",
+    "IncludeAttributesStarsFiltersGte",
+    "IncludeAttributesStarsFiltersGlob",
+    "IncludeAttributesStarsFiltersNotGlob",
+    "IncludeAttributesStarsFiltersIGlob",
+    "IncludeAttributesStarsFiltersNotIGlob",
+    "IncludeAttributesStarsFiltersRegex",
+    "IncludeAttributesStarsFiltersContainsAllTokens",
     "IncludeAttributesStarsFiltersUnionMember139",
     "IncludeAttributesStarsFiltersUnionMember139Filter",
     "IncludeAttributesStarsFiltersUnionMember139FilterUnionMember0",
@@ -3981,7 +3106,7 @@ class RawRepoGraphParams(TypedDict, total=False):
     """
 
 
-class IncludeAttributesContributesFiltersUnionMember0(TypedDict, total=False):
+class IncludeAttributesContributesFiltersEq(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Eq"]]
@@ -3989,7 +3114,7 @@ class IncludeAttributesContributesFiltersUnionMember0(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesContributesFiltersUnionMember1(TypedDict, total=False):
+class IncludeAttributesContributesFiltersNotEq(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["NotEq"]]
@@ -3997,7 +3122,7 @@ class IncludeAttributesContributesFiltersUnionMember1(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesContributesFiltersUnionMember2(TypedDict, total=False):
+class IncludeAttributesContributesFiltersIn(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["In"]]
@@ -4005,7 +3130,7 @@ class IncludeAttributesContributesFiltersUnionMember2(TypedDict, total=False):
     value: Required[SequenceNotStr[str]]
 
 
-class IncludeAttributesContributesFiltersUnionMember3(TypedDict, total=False):
+class IncludeAttributesContributesFiltersNotIn(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["NotIn"]]
@@ -4013,7 +3138,7 @@ class IncludeAttributesContributesFiltersUnionMember3(TypedDict, total=False):
     value: Required[SequenceNotStr[str]]
 
 
-class IncludeAttributesContributesFiltersUnionMember4(TypedDict, total=False):
+class IncludeAttributesContributesFiltersLt(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Lt"]]
@@ -4021,7 +3146,7 @@ class IncludeAttributesContributesFiltersUnionMember4(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesContributesFiltersUnionMember5(TypedDict, total=False):
+class IncludeAttributesContributesFiltersLte(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Lte"]]
@@ -4029,7 +3154,7 @@ class IncludeAttributesContributesFiltersUnionMember5(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesContributesFiltersUnionMember6(TypedDict, total=False):
+class IncludeAttributesContributesFiltersGt(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Gt"]]
@@ -4037,7 +3162,7 @@ class IncludeAttributesContributesFiltersUnionMember6(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesContributesFiltersUnionMember7(TypedDict, total=False):
+class IncludeAttributesContributesFiltersGte(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Gte"]]
@@ -4045,7 +3170,7 @@ class IncludeAttributesContributesFiltersUnionMember7(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesContributesFiltersUnionMember8(TypedDict, total=False):
+class IncludeAttributesContributesFiltersGlob(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Glob"]]
@@ -4053,7 +3178,7 @@ class IncludeAttributesContributesFiltersUnionMember8(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesContributesFiltersUnionMember9(TypedDict, total=False):
+class IncludeAttributesContributesFiltersNotGlob(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["NotGlob"]]
@@ -4061,7 +3186,7 @@ class IncludeAttributesContributesFiltersUnionMember9(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesContributesFiltersUnionMember10(TypedDict, total=False):
+class IncludeAttributesContributesFiltersIGlob(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["IGlob"]]
@@ -4069,7 +3194,7 @@ class IncludeAttributesContributesFiltersUnionMember10(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesContributesFiltersUnionMember11(TypedDict, total=False):
+class IncludeAttributesContributesFiltersNotIGlob(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["NotIGlob"]]
@@ -4077,7 +3202,7 @@ class IncludeAttributesContributesFiltersUnionMember11(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesContributesFiltersUnionMember12(TypedDict, total=False):
+class IncludeAttributesContributesFiltersRegex(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Regex"]]
@@ -4085,1008 +3210,8 @@ class IncludeAttributesContributesFiltersUnionMember12(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesContributesFiltersUnionMember13(TypedDict, total=False):
+class IncludeAttributesContributesFiltersContainsAllTokens(TypedDict, total=False):
     field: Required[Literal["login"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember14(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember15(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesContributesFiltersUnionMember16(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesContributesFiltersUnionMember17(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember18(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember19(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember20(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember21(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember22(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember23(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember24(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember25(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember26(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember27(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember28(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember29(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesContributesFiltersUnionMember30(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesContributesFiltersUnionMember31(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember32(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember33(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember34(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember35(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember36(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember37(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember38(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember39(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember40(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember41(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember42(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember43(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesContributesFiltersUnionMember44(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesContributesFiltersUnionMember45(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember46(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember47(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember48(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember49(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember50(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember51(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember52(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember53(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember54(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember55(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember56(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember57(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesContributesFiltersUnionMember58(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesContributesFiltersUnionMember59(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember60(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember61(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember62(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember63(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember64(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember65(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember66(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember67(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember68(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember69(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember70(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember71(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesContributesFiltersUnionMember72(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesContributesFiltersUnionMember73(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember74(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember75(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember76(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember77(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember78(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember79(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember80(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember81(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember82(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember83(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember84(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember85(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesContributesFiltersUnionMember86(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesContributesFiltersUnionMember87(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember88(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember89(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember90(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember91(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember92(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember93(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember94(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember95(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember96(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember97(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember98(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember99(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesContributesFiltersUnionMember100(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesContributesFiltersUnionMember101(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember102(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember103(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember104(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember105(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember106(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember107(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember108(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember109(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember110(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember111(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember112(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember113(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesContributesFiltersUnionMember114(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesContributesFiltersUnionMember115(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember116(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember117(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember118(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember119(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember120(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember121(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember122(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember123(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember124(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember125(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember126(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember127(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesContributesFiltersUnionMember128(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesContributesFiltersUnionMember129(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember130(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember131(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember132(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember133(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember134(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember135(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember136(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember137(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributesFiltersUnionMember138(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
 
     op: Required[Literal["ContainsAllTokens"]]
 
@@ -8878,145 +7003,145 @@ class IncludeAttributesContributesFiltersUnionMember140(TypedDict, total=False):
 
 
 IncludeAttributesContributesFilters: TypeAlias = Union[
-    IncludeAttributesContributesFiltersUnionMember0,
-    IncludeAttributesContributesFiltersUnionMember1,
-    IncludeAttributesContributesFiltersUnionMember2,
-    IncludeAttributesContributesFiltersUnionMember3,
-    IncludeAttributesContributesFiltersUnionMember4,
-    IncludeAttributesContributesFiltersUnionMember5,
-    IncludeAttributesContributesFiltersUnionMember6,
-    IncludeAttributesContributesFiltersUnionMember7,
-    IncludeAttributesContributesFiltersUnionMember8,
-    IncludeAttributesContributesFiltersUnionMember9,
-    IncludeAttributesContributesFiltersUnionMember10,
-    IncludeAttributesContributesFiltersUnionMember11,
-    IncludeAttributesContributesFiltersUnionMember12,
-    IncludeAttributesContributesFiltersUnionMember13,
-    IncludeAttributesContributesFiltersUnionMember14,
-    IncludeAttributesContributesFiltersUnionMember15,
-    IncludeAttributesContributesFiltersUnionMember16,
-    IncludeAttributesContributesFiltersUnionMember17,
-    IncludeAttributesContributesFiltersUnionMember18,
-    IncludeAttributesContributesFiltersUnionMember19,
-    IncludeAttributesContributesFiltersUnionMember20,
-    IncludeAttributesContributesFiltersUnionMember21,
-    IncludeAttributesContributesFiltersUnionMember22,
-    IncludeAttributesContributesFiltersUnionMember23,
-    IncludeAttributesContributesFiltersUnionMember24,
-    IncludeAttributesContributesFiltersUnionMember25,
-    IncludeAttributesContributesFiltersUnionMember26,
-    IncludeAttributesContributesFiltersUnionMember27,
-    IncludeAttributesContributesFiltersUnionMember28,
-    IncludeAttributesContributesFiltersUnionMember29,
-    IncludeAttributesContributesFiltersUnionMember30,
-    IncludeAttributesContributesFiltersUnionMember31,
-    IncludeAttributesContributesFiltersUnionMember32,
-    IncludeAttributesContributesFiltersUnionMember33,
-    IncludeAttributesContributesFiltersUnionMember34,
-    IncludeAttributesContributesFiltersUnionMember35,
-    IncludeAttributesContributesFiltersUnionMember36,
-    IncludeAttributesContributesFiltersUnionMember37,
-    IncludeAttributesContributesFiltersUnionMember38,
-    IncludeAttributesContributesFiltersUnionMember39,
-    IncludeAttributesContributesFiltersUnionMember40,
-    IncludeAttributesContributesFiltersUnionMember41,
-    IncludeAttributesContributesFiltersUnionMember42,
-    IncludeAttributesContributesFiltersUnionMember43,
-    IncludeAttributesContributesFiltersUnionMember44,
-    IncludeAttributesContributesFiltersUnionMember45,
-    IncludeAttributesContributesFiltersUnionMember46,
-    IncludeAttributesContributesFiltersUnionMember47,
-    IncludeAttributesContributesFiltersUnionMember48,
-    IncludeAttributesContributesFiltersUnionMember49,
-    IncludeAttributesContributesFiltersUnionMember50,
-    IncludeAttributesContributesFiltersUnionMember51,
-    IncludeAttributesContributesFiltersUnionMember52,
-    IncludeAttributesContributesFiltersUnionMember53,
-    IncludeAttributesContributesFiltersUnionMember54,
-    IncludeAttributesContributesFiltersUnionMember55,
-    IncludeAttributesContributesFiltersUnionMember56,
-    IncludeAttributesContributesFiltersUnionMember57,
-    IncludeAttributesContributesFiltersUnionMember58,
-    IncludeAttributesContributesFiltersUnionMember59,
-    IncludeAttributesContributesFiltersUnionMember60,
-    IncludeAttributesContributesFiltersUnionMember61,
-    IncludeAttributesContributesFiltersUnionMember62,
-    IncludeAttributesContributesFiltersUnionMember63,
-    IncludeAttributesContributesFiltersUnionMember64,
-    IncludeAttributesContributesFiltersUnionMember65,
-    IncludeAttributesContributesFiltersUnionMember66,
-    IncludeAttributesContributesFiltersUnionMember67,
-    IncludeAttributesContributesFiltersUnionMember68,
-    IncludeAttributesContributesFiltersUnionMember69,
-    IncludeAttributesContributesFiltersUnionMember70,
-    IncludeAttributesContributesFiltersUnionMember71,
-    IncludeAttributesContributesFiltersUnionMember72,
-    IncludeAttributesContributesFiltersUnionMember73,
-    IncludeAttributesContributesFiltersUnionMember74,
-    IncludeAttributesContributesFiltersUnionMember75,
-    IncludeAttributesContributesFiltersUnionMember76,
-    IncludeAttributesContributesFiltersUnionMember77,
-    IncludeAttributesContributesFiltersUnionMember78,
-    IncludeAttributesContributesFiltersUnionMember79,
-    IncludeAttributesContributesFiltersUnionMember80,
-    IncludeAttributesContributesFiltersUnionMember81,
-    IncludeAttributesContributesFiltersUnionMember82,
-    IncludeAttributesContributesFiltersUnionMember83,
-    IncludeAttributesContributesFiltersUnionMember84,
-    IncludeAttributesContributesFiltersUnionMember85,
-    IncludeAttributesContributesFiltersUnionMember86,
-    IncludeAttributesContributesFiltersUnionMember87,
-    IncludeAttributesContributesFiltersUnionMember88,
-    IncludeAttributesContributesFiltersUnionMember89,
-    IncludeAttributesContributesFiltersUnionMember90,
-    IncludeAttributesContributesFiltersUnionMember91,
-    IncludeAttributesContributesFiltersUnionMember92,
-    IncludeAttributesContributesFiltersUnionMember93,
-    IncludeAttributesContributesFiltersUnionMember94,
-    IncludeAttributesContributesFiltersUnionMember95,
-    IncludeAttributesContributesFiltersUnionMember96,
-    IncludeAttributesContributesFiltersUnionMember97,
-    IncludeAttributesContributesFiltersUnionMember98,
-    IncludeAttributesContributesFiltersUnionMember99,
-    IncludeAttributesContributesFiltersUnionMember100,
-    IncludeAttributesContributesFiltersUnionMember101,
-    IncludeAttributesContributesFiltersUnionMember102,
-    IncludeAttributesContributesFiltersUnionMember103,
-    IncludeAttributesContributesFiltersUnionMember104,
-    IncludeAttributesContributesFiltersUnionMember105,
-    IncludeAttributesContributesFiltersUnionMember106,
-    IncludeAttributesContributesFiltersUnionMember107,
-    IncludeAttributesContributesFiltersUnionMember108,
-    IncludeAttributesContributesFiltersUnionMember109,
-    IncludeAttributesContributesFiltersUnionMember110,
-    IncludeAttributesContributesFiltersUnionMember111,
-    IncludeAttributesContributesFiltersUnionMember112,
-    IncludeAttributesContributesFiltersUnionMember113,
-    IncludeAttributesContributesFiltersUnionMember114,
-    IncludeAttributesContributesFiltersUnionMember115,
-    IncludeAttributesContributesFiltersUnionMember116,
-    IncludeAttributesContributesFiltersUnionMember117,
-    IncludeAttributesContributesFiltersUnionMember118,
-    IncludeAttributesContributesFiltersUnionMember119,
-    IncludeAttributesContributesFiltersUnionMember120,
-    IncludeAttributesContributesFiltersUnionMember121,
-    IncludeAttributesContributesFiltersUnionMember122,
-    IncludeAttributesContributesFiltersUnionMember123,
-    IncludeAttributesContributesFiltersUnionMember124,
-    IncludeAttributesContributesFiltersUnionMember125,
-    IncludeAttributesContributesFiltersUnionMember126,
-    IncludeAttributesContributesFiltersUnionMember127,
-    IncludeAttributesContributesFiltersUnionMember128,
-    IncludeAttributesContributesFiltersUnionMember129,
-    IncludeAttributesContributesFiltersUnionMember130,
-    IncludeAttributesContributesFiltersUnionMember131,
-    IncludeAttributesContributesFiltersUnionMember132,
-    IncludeAttributesContributesFiltersUnionMember133,
-    IncludeAttributesContributesFiltersUnionMember134,
-    IncludeAttributesContributesFiltersUnionMember135,
-    IncludeAttributesContributesFiltersUnionMember136,
-    IncludeAttributesContributesFiltersUnionMember137,
-    IncludeAttributesContributesFiltersUnionMember138,
+    IncludeAttributesContributesFiltersEq,
+    IncludeAttributesContributesFiltersNotEq,
+    IncludeAttributesContributesFiltersIn,
+    IncludeAttributesContributesFiltersNotIn,
+    IncludeAttributesContributesFiltersLt,
+    IncludeAttributesContributesFiltersLte,
+    IncludeAttributesContributesFiltersGt,
+    IncludeAttributesContributesFiltersGte,
+    IncludeAttributesContributesFiltersGlob,
+    IncludeAttributesContributesFiltersNotGlob,
+    IncludeAttributesContributesFiltersIGlob,
+    IncludeAttributesContributesFiltersNotIGlob,
+    IncludeAttributesContributesFiltersRegex,
+    IncludeAttributesContributesFiltersEq,
+    IncludeAttributesContributesFiltersNotEq,
+    IncludeAttributesContributesFiltersIn,
+    IncludeAttributesContributesFiltersNotIn,
+    IncludeAttributesContributesFiltersLt,
+    IncludeAttributesContributesFiltersLte,
+    IncludeAttributesContributesFiltersGt,
+    IncludeAttributesContributesFiltersGte,
+    IncludeAttributesContributesFiltersGlob,
+    IncludeAttributesContributesFiltersNotGlob,
+    IncludeAttributesContributesFiltersIGlob,
+    IncludeAttributesContributesFiltersNotIGlob,
+    IncludeAttributesContributesFiltersRegex,
+    IncludeAttributesContributesFiltersContainsAllTokens,
+    IncludeAttributesContributesFiltersEq,
+    IncludeAttributesContributesFiltersNotEq,
+    IncludeAttributesContributesFiltersIn,
+    IncludeAttributesContributesFiltersNotIn,
+    IncludeAttributesContributesFiltersLt,
+    IncludeAttributesContributesFiltersLte,
+    IncludeAttributesContributesFiltersGt,
+    IncludeAttributesContributesFiltersGte,
+    IncludeAttributesContributesFiltersGlob,
+    IncludeAttributesContributesFiltersNotGlob,
+    IncludeAttributesContributesFiltersIGlob,
+    IncludeAttributesContributesFiltersNotIGlob,
+    IncludeAttributesContributesFiltersRegex,
+    IncludeAttributesContributesFiltersContainsAllTokens,
+    IncludeAttributesContributesFiltersEq,
+    IncludeAttributesContributesFiltersNotEq,
+    IncludeAttributesContributesFiltersIn,
+    IncludeAttributesContributesFiltersNotIn,
+    IncludeAttributesContributesFiltersLt,
+    IncludeAttributesContributesFiltersLte,
+    IncludeAttributesContributesFiltersGt,
+    IncludeAttributesContributesFiltersGte,
+    IncludeAttributesContributesFiltersGlob,
+    IncludeAttributesContributesFiltersNotGlob,
+    IncludeAttributesContributesFiltersIGlob,
+    IncludeAttributesContributesFiltersNotIGlob,
+    IncludeAttributesContributesFiltersRegex,
+    IncludeAttributesContributesFiltersContainsAllTokens,
+    IncludeAttributesContributesFiltersEq,
+    IncludeAttributesContributesFiltersNotEq,
+    IncludeAttributesContributesFiltersIn,
+    IncludeAttributesContributesFiltersNotIn,
+    IncludeAttributesContributesFiltersLt,
+    IncludeAttributesContributesFiltersLte,
+    IncludeAttributesContributesFiltersGt,
+    IncludeAttributesContributesFiltersGte,
+    IncludeAttributesContributesFiltersGlob,
+    IncludeAttributesContributesFiltersNotGlob,
+    IncludeAttributesContributesFiltersIGlob,
+    IncludeAttributesContributesFiltersNotIGlob,
+    IncludeAttributesContributesFiltersRegex,
+    IncludeAttributesContributesFiltersContainsAllTokens,
+    IncludeAttributesContributesFiltersEq,
+    IncludeAttributesContributesFiltersNotEq,
+    IncludeAttributesContributesFiltersIn,
+    IncludeAttributesContributesFiltersNotIn,
+    IncludeAttributesContributesFiltersLt,
+    IncludeAttributesContributesFiltersLte,
+    IncludeAttributesContributesFiltersGt,
+    IncludeAttributesContributesFiltersGte,
+    IncludeAttributesContributesFiltersGlob,
+    IncludeAttributesContributesFiltersNotGlob,
+    IncludeAttributesContributesFiltersIGlob,
+    IncludeAttributesContributesFiltersNotIGlob,
+    IncludeAttributesContributesFiltersRegex,
+    IncludeAttributesContributesFiltersContainsAllTokens,
+    IncludeAttributesContributesFiltersEq,
+    IncludeAttributesContributesFiltersNotEq,
+    IncludeAttributesContributesFiltersIn,
+    IncludeAttributesContributesFiltersNotIn,
+    IncludeAttributesContributesFiltersLt,
+    IncludeAttributesContributesFiltersLte,
+    IncludeAttributesContributesFiltersGt,
+    IncludeAttributesContributesFiltersGte,
+    IncludeAttributesContributesFiltersGlob,
+    IncludeAttributesContributesFiltersNotGlob,
+    IncludeAttributesContributesFiltersIGlob,
+    IncludeAttributesContributesFiltersNotIGlob,
+    IncludeAttributesContributesFiltersRegex,
+    IncludeAttributesContributesFiltersContainsAllTokens,
+    IncludeAttributesContributesFiltersEq,
+    IncludeAttributesContributesFiltersNotEq,
+    IncludeAttributesContributesFiltersIn,
+    IncludeAttributesContributesFiltersNotIn,
+    IncludeAttributesContributesFiltersLt,
+    IncludeAttributesContributesFiltersLte,
+    IncludeAttributesContributesFiltersGt,
+    IncludeAttributesContributesFiltersGte,
+    IncludeAttributesContributesFiltersGlob,
+    IncludeAttributesContributesFiltersNotGlob,
+    IncludeAttributesContributesFiltersIGlob,
+    IncludeAttributesContributesFiltersNotIGlob,
+    IncludeAttributesContributesFiltersRegex,
+    IncludeAttributesContributesFiltersContainsAllTokens,
+    IncludeAttributesContributesFiltersEq,
+    IncludeAttributesContributesFiltersNotEq,
+    IncludeAttributesContributesFiltersIn,
+    IncludeAttributesContributesFiltersNotIn,
+    IncludeAttributesContributesFiltersLt,
+    IncludeAttributesContributesFiltersLte,
+    IncludeAttributesContributesFiltersGt,
+    IncludeAttributesContributesFiltersGte,
+    IncludeAttributesContributesFiltersGlob,
+    IncludeAttributesContributesFiltersNotGlob,
+    IncludeAttributesContributesFiltersIGlob,
+    IncludeAttributesContributesFiltersNotIGlob,
+    IncludeAttributesContributesFiltersRegex,
+    IncludeAttributesContributesFiltersContainsAllTokens,
+    IncludeAttributesContributesFiltersEq,
+    IncludeAttributesContributesFiltersNotEq,
+    IncludeAttributesContributesFiltersIn,
+    IncludeAttributesContributesFiltersNotIn,
+    IncludeAttributesContributesFiltersLt,
+    IncludeAttributesContributesFiltersLte,
+    IncludeAttributesContributesFiltersGt,
+    IncludeAttributesContributesFiltersGte,
+    IncludeAttributesContributesFiltersGlob,
+    IncludeAttributesContributesFiltersNotGlob,
+    IncludeAttributesContributesFiltersIGlob,
+    IncludeAttributesContributesFiltersNotIGlob,
+    IncludeAttributesContributesFiltersRegex,
+    IncludeAttributesContributesFiltersContainsAllTokens,
     IncludeAttributesContributesFiltersUnionMember139,
     IncludeAttributesContributesFiltersUnionMember140,
 ]
@@ -9039,7 +7164,7 @@ class IncludeAttributesContributes(TypedDict, total=False):
     """
 
 
-class IncludeAttributesContributorsFiltersUnionMember0(TypedDict, total=False):
+class IncludeAttributesContributorsFiltersEq(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Eq"]]
@@ -9047,7 +7172,7 @@ class IncludeAttributesContributorsFiltersUnionMember0(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesContributorsFiltersUnionMember1(TypedDict, total=False):
+class IncludeAttributesContributorsFiltersNotEq(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["NotEq"]]
@@ -9055,7 +7180,7 @@ class IncludeAttributesContributorsFiltersUnionMember1(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesContributorsFiltersUnionMember2(TypedDict, total=False):
+class IncludeAttributesContributorsFiltersIn(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["In"]]
@@ -9063,7 +7188,7 @@ class IncludeAttributesContributorsFiltersUnionMember2(TypedDict, total=False):
     value: Required[SequenceNotStr[str]]
 
 
-class IncludeAttributesContributorsFiltersUnionMember3(TypedDict, total=False):
+class IncludeAttributesContributorsFiltersNotIn(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["NotIn"]]
@@ -9071,7 +7196,7 @@ class IncludeAttributesContributorsFiltersUnionMember3(TypedDict, total=False):
     value: Required[SequenceNotStr[str]]
 
 
-class IncludeAttributesContributorsFiltersUnionMember4(TypedDict, total=False):
+class IncludeAttributesContributorsFiltersLt(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Lt"]]
@@ -9079,7 +7204,7 @@ class IncludeAttributesContributorsFiltersUnionMember4(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesContributorsFiltersUnionMember5(TypedDict, total=False):
+class IncludeAttributesContributorsFiltersLte(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Lte"]]
@@ -9087,7 +7212,7 @@ class IncludeAttributesContributorsFiltersUnionMember5(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesContributorsFiltersUnionMember6(TypedDict, total=False):
+class IncludeAttributesContributorsFiltersGt(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Gt"]]
@@ -9095,7 +7220,7 @@ class IncludeAttributesContributorsFiltersUnionMember6(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesContributorsFiltersUnionMember7(TypedDict, total=False):
+class IncludeAttributesContributorsFiltersGte(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Gte"]]
@@ -9103,7 +7228,7 @@ class IncludeAttributesContributorsFiltersUnionMember7(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesContributorsFiltersUnionMember8(TypedDict, total=False):
+class IncludeAttributesContributorsFiltersGlob(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Glob"]]
@@ -9111,7 +7236,7 @@ class IncludeAttributesContributorsFiltersUnionMember8(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesContributorsFiltersUnionMember9(TypedDict, total=False):
+class IncludeAttributesContributorsFiltersNotGlob(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["NotGlob"]]
@@ -9119,7 +7244,7 @@ class IncludeAttributesContributorsFiltersUnionMember9(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesContributorsFiltersUnionMember10(TypedDict, total=False):
+class IncludeAttributesContributorsFiltersIGlob(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["IGlob"]]
@@ -9127,7 +7252,7 @@ class IncludeAttributesContributorsFiltersUnionMember10(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesContributorsFiltersUnionMember11(TypedDict, total=False):
+class IncludeAttributesContributorsFiltersNotIGlob(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["NotIGlob"]]
@@ -9135,7 +7260,7 @@ class IncludeAttributesContributorsFiltersUnionMember11(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesContributorsFiltersUnionMember12(TypedDict, total=False):
+class IncludeAttributesContributorsFiltersRegex(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Regex"]]
@@ -9143,1008 +7268,8 @@ class IncludeAttributesContributorsFiltersUnionMember12(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesContributorsFiltersUnionMember13(TypedDict, total=False):
+class IncludeAttributesContributorsFiltersContainsAllTokens(TypedDict, total=False):
     field: Required[Literal["login"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember14(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember15(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesContributorsFiltersUnionMember16(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesContributorsFiltersUnionMember17(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember18(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember19(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember20(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember21(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember22(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember23(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember24(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember25(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember26(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember27(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember28(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember29(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesContributorsFiltersUnionMember30(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesContributorsFiltersUnionMember31(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember32(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember33(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember34(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember35(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember36(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember37(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember38(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember39(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember40(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember41(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember42(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember43(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesContributorsFiltersUnionMember44(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesContributorsFiltersUnionMember45(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember46(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember47(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember48(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember49(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember50(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember51(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember52(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember53(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember54(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember55(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember56(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember57(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesContributorsFiltersUnionMember58(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesContributorsFiltersUnionMember59(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember60(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember61(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember62(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember63(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember64(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember65(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember66(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember67(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember68(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember69(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember70(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember71(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesContributorsFiltersUnionMember72(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesContributorsFiltersUnionMember73(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember74(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember75(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember76(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember77(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember78(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember79(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember80(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember81(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember82(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember83(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember84(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember85(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesContributorsFiltersUnionMember86(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesContributorsFiltersUnionMember87(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember88(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember89(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember90(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember91(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember92(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember93(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember94(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember95(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember96(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember97(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember98(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember99(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesContributorsFiltersUnionMember100(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesContributorsFiltersUnionMember101(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember102(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember103(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember104(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember105(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember106(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember107(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember108(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember109(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember110(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember111(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember112(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember113(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesContributorsFiltersUnionMember114(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesContributorsFiltersUnionMember115(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember116(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember117(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember118(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember119(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember120(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember121(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember122(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember123(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember124(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember125(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember126(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember127(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesContributorsFiltersUnionMember128(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesContributorsFiltersUnionMember129(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember130(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember131(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember132(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember133(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember134(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember135(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember136(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember137(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember138(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
 
     op: Required[Literal["ContainsAllTokens"]]
 
@@ -14014,145 +11139,145 @@ class IncludeAttributesContributorsFiltersUnionMember140(TypedDict, total=False)
 
 
 IncludeAttributesContributorsFilters: TypeAlias = Union[
-    IncludeAttributesContributorsFiltersUnionMember0,
-    IncludeAttributesContributorsFiltersUnionMember1,
-    IncludeAttributesContributorsFiltersUnionMember2,
-    IncludeAttributesContributorsFiltersUnionMember3,
-    IncludeAttributesContributorsFiltersUnionMember4,
-    IncludeAttributesContributorsFiltersUnionMember5,
-    IncludeAttributesContributorsFiltersUnionMember6,
-    IncludeAttributesContributorsFiltersUnionMember7,
-    IncludeAttributesContributorsFiltersUnionMember8,
-    IncludeAttributesContributorsFiltersUnionMember9,
-    IncludeAttributesContributorsFiltersUnionMember10,
-    IncludeAttributesContributorsFiltersUnionMember11,
-    IncludeAttributesContributorsFiltersUnionMember12,
-    IncludeAttributesContributorsFiltersUnionMember13,
-    IncludeAttributesContributorsFiltersUnionMember14,
-    IncludeAttributesContributorsFiltersUnionMember15,
-    IncludeAttributesContributorsFiltersUnionMember16,
-    IncludeAttributesContributorsFiltersUnionMember17,
-    IncludeAttributesContributorsFiltersUnionMember18,
-    IncludeAttributesContributorsFiltersUnionMember19,
-    IncludeAttributesContributorsFiltersUnionMember20,
-    IncludeAttributesContributorsFiltersUnionMember21,
-    IncludeAttributesContributorsFiltersUnionMember22,
-    IncludeAttributesContributorsFiltersUnionMember23,
-    IncludeAttributesContributorsFiltersUnionMember24,
-    IncludeAttributesContributorsFiltersUnionMember25,
-    IncludeAttributesContributorsFiltersUnionMember26,
-    IncludeAttributesContributorsFiltersUnionMember27,
-    IncludeAttributesContributorsFiltersUnionMember28,
-    IncludeAttributesContributorsFiltersUnionMember29,
-    IncludeAttributesContributorsFiltersUnionMember30,
-    IncludeAttributesContributorsFiltersUnionMember31,
-    IncludeAttributesContributorsFiltersUnionMember32,
-    IncludeAttributesContributorsFiltersUnionMember33,
-    IncludeAttributesContributorsFiltersUnionMember34,
-    IncludeAttributesContributorsFiltersUnionMember35,
-    IncludeAttributesContributorsFiltersUnionMember36,
-    IncludeAttributesContributorsFiltersUnionMember37,
-    IncludeAttributesContributorsFiltersUnionMember38,
-    IncludeAttributesContributorsFiltersUnionMember39,
-    IncludeAttributesContributorsFiltersUnionMember40,
-    IncludeAttributesContributorsFiltersUnionMember41,
-    IncludeAttributesContributorsFiltersUnionMember42,
-    IncludeAttributesContributorsFiltersUnionMember43,
-    IncludeAttributesContributorsFiltersUnionMember44,
-    IncludeAttributesContributorsFiltersUnionMember45,
-    IncludeAttributesContributorsFiltersUnionMember46,
-    IncludeAttributesContributorsFiltersUnionMember47,
-    IncludeAttributesContributorsFiltersUnionMember48,
-    IncludeAttributesContributorsFiltersUnionMember49,
-    IncludeAttributesContributorsFiltersUnionMember50,
-    IncludeAttributesContributorsFiltersUnionMember51,
-    IncludeAttributesContributorsFiltersUnionMember52,
-    IncludeAttributesContributorsFiltersUnionMember53,
-    IncludeAttributesContributorsFiltersUnionMember54,
-    IncludeAttributesContributorsFiltersUnionMember55,
-    IncludeAttributesContributorsFiltersUnionMember56,
-    IncludeAttributesContributorsFiltersUnionMember57,
-    IncludeAttributesContributorsFiltersUnionMember58,
-    IncludeAttributesContributorsFiltersUnionMember59,
-    IncludeAttributesContributorsFiltersUnionMember60,
-    IncludeAttributesContributorsFiltersUnionMember61,
-    IncludeAttributesContributorsFiltersUnionMember62,
-    IncludeAttributesContributorsFiltersUnionMember63,
-    IncludeAttributesContributorsFiltersUnionMember64,
-    IncludeAttributesContributorsFiltersUnionMember65,
-    IncludeAttributesContributorsFiltersUnionMember66,
-    IncludeAttributesContributorsFiltersUnionMember67,
-    IncludeAttributesContributorsFiltersUnionMember68,
-    IncludeAttributesContributorsFiltersUnionMember69,
-    IncludeAttributesContributorsFiltersUnionMember70,
-    IncludeAttributesContributorsFiltersUnionMember71,
-    IncludeAttributesContributorsFiltersUnionMember72,
-    IncludeAttributesContributorsFiltersUnionMember73,
-    IncludeAttributesContributorsFiltersUnionMember74,
-    IncludeAttributesContributorsFiltersUnionMember75,
-    IncludeAttributesContributorsFiltersUnionMember76,
-    IncludeAttributesContributorsFiltersUnionMember77,
-    IncludeAttributesContributorsFiltersUnionMember78,
-    IncludeAttributesContributorsFiltersUnionMember79,
-    IncludeAttributesContributorsFiltersUnionMember80,
-    IncludeAttributesContributorsFiltersUnionMember81,
-    IncludeAttributesContributorsFiltersUnionMember82,
-    IncludeAttributesContributorsFiltersUnionMember83,
-    IncludeAttributesContributorsFiltersUnionMember84,
-    IncludeAttributesContributorsFiltersUnionMember85,
-    IncludeAttributesContributorsFiltersUnionMember86,
-    IncludeAttributesContributorsFiltersUnionMember87,
-    IncludeAttributesContributorsFiltersUnionMember88,
-    IncludeAttributesContributorsFiltersUnionMember89,
-    IncludeAttributesContributorsFiltersUnionMember90,
-    IncludeAttributesContributorsFiltersUnionMember91,
-    IncludeAttributesContributorsFiltersUnionMember92,
-    IncludeAttributesContributorsFiltersUnionMember93,
-    IncludeAttributesContributorsFiltersUnionMember94,
-    IncludeAttributesContributorsFiltersUnionMember95,
-    IncludeAttributesContributorsFiltersUnionMember96,
-    IncludeAttributesContributorsFiltersUnionMember97,
-    IncludeAttributesContributorsFiltersUnionMember98,
-    IncludeAttributesContributorsFiltersUnionMember99,
-    IncludeAttributesContributorsFiltersUnionMember100,
-    IncludeAttributesContributorsFiltersUnionMember101,
-    IncludeAttributesContributorsFiltersUnionMember102,
-    IncludeAttributesContributorsFiltersUnionMember103,
-    IncludeAttributesContributorsFiltersUnionMember104,
-    IncludeAttributesContributorsFiltersUnionMember105,
-    IncludeAttributesContributorsFiltersUnionMember106,
-    IncludeAttributesContributorsFiltersUnionMember107,
-    IncludeAttributesContributorsFiltersUnionMember108,
-    IncludeAttributesContributorsFiltersUnionMember109,
-    IncludeAttributesContributorsFiltersUnionMember110,
-    IncludeAttributesContributorsFiltersUnionMember111,
-    IncludeAttributesContributorsFiltersUnionMember112,
-    IncludeAttributesContributorsFiltersUnionMember113,
-    IncludeAttributesContributorsFiltersUnionMember114,
-    IncludeAttributesContributorsFiltersUnionMember115,
-    IncludeAttributesContributorsFiltersUnionMember116,
-    IncludeAttributesContributorsFiltersUnionMember117,
-    IncludeAttributesContributorsFiltersUnionMember118,
-    IncludeAttributesContributorsFiltersUnionMember119,
-    IncludeAttributesContributorsFiltersUnionMember120,
-    IncludeAttributesContributorsFiltersUnionMember121,
-    IncludeAttributesContributorsFiltersUnionMember122,
-    IncludeAttributesContributorsFiltersUnionMember123,
-    IncludeAttributesContributorsFiltersUnionMember124,
-    IncludeAttributesContributorsFiltersUnionMember125,
-    IncludeAttributesContributorsFiltersUnionMember126,
-    IncludeAttributesContributorsFiltersUnionMember127,
-    IncludeAttributesContributorsFiltersUnionMember128,
-    IncludeAttributesContributorsFiltersUnionMember129,
-    IncludeAttributesContributorsFiltersUnionMember130,
-    IncludeAttributesContributorsFiltersUnionMember131,
-    IncludeAttributesContributorsFiltersUnionMember132,
-    IncludeAttributesContributorsFiltersUnionMember133,
-    IncludeAttributesContributorsFiltersUnionMember134,
-    IncludeAttributesContributorsFiltersUnionMember135,
-    IncludeAttributesContributorsFiltersUnionMember136,
-    IncludeAttributesContributorsFiltersUnionMember137,
-    IncludeAttributesContributorsFiltersUnionMember138,
+    IncludeAttributesContributorsFiltersEq,
+    IncludeAttributesContributorsFiltersNotEq,
+    IncludeAttributesContributorsFiltersIn,
+    IncludeAttributesContributorsFiltersNotIn,
+    IncludeAttributesContributorsFiltersLt,
+    IncludeAttributesContributorsFiltersLte,
+    IncludeAttributesContributorsFiltersGt,
+    IncludeAttributesContributorsFiltersGte,
+    IncludeAttributesContributorsFiltersGlob,
+    IncludeAttributesContributorsFiltersNotGlob,
+    IncludeAttributesContributorsFiltersIGlob,
+    IncludeAttributesContributorsFiltersNotIGlob,
+    IncludeAttributesContributorsFiltersRegex,
+    IncludeAttributesContributorsFiltersEq,
+    IncludeAttributesContributorsFiltersNotEq,
+    IncludeAttributesContributorsFiltersIn,
+    IncludeAttributesContributorsFiltersNotIn,
+    IncludeAttributesContributorsFiltersLt,
+    IncludeAttributesContributorsFiltersLte,
+    IncludeAttributesContributorsFiltersGt,
+    IncludeAttributesContributorsFiltersGte,
+    IncludeAttributesContributorsFiltersGlob,
+    IncludeAttributesContributorsFiltersNotGlob,
+    IncludeAttributesContributorsFiltersIGlob,
+    IncludeAttributesContributorsFiltersNotIGlob,
+    IncludeAttributesContributorsFiltersRegex,
+    IncludeAttributesContributorsFiltersContainsAllTokens,
+    IncludeAttributesContributorsFiltersEq,
+    IncludeAttributesContributorsFiltersNotEq,
+    IncludeAttributesContributorsFiltersIn,
+    IncludeAttributesContributorsFiltersNotIn,
+    IncludeAttributesContributorsFiltersLt,
+    IncludeAttributesContributorsFiltersLte,
+    IncludeAttributesContributorsFiltersGt,
+    IncludeAttributesContributorsFiltersGte,
+    IncludeAttributesContributorsFiltersGlob,
+    IncludeAttributesContributorsFiltersNotGlob,
+    IncludeAttributesContributorsFiltersIGlob,
+    IncludeAttributesContributorsFiltersNotIGlob,
+    IncludeAttributesContributorsFiltersRegex,
+    IncludeAttributesContributorsFiltersContainsAllTokens,
+    IncludeAttributesContributorsFiltersEq,
+    IncludeAttributesContributorsFiltersNotEq,
+    IncludeAttributesContributorsFiltersIn,
+    IncludeAttributesContributorsFiltersNotIn,
+    IncludeAttributesContributorsFiltersLt,
+    IncludeAttributesContributorsFiltersLte,
+    IncludeAttributesContributorsFiltersGt,
+    IncludeAttributesContributorsFiltersGte,
+    IncludeAttributesContributorsFiltersGlob,
+    IncludeAttributesContributorsFiltersNotGlob,
+    IncludeAttributesContributorsFiltersIGlob,
+    IncludeAttributesContributorsFiltersNotIGlob,
+    IncludeAttributesContributorsFiltersRegex,
+    IncludeAttributesContributorsFiltersContainsAllTokens,
+    IncludeAttributesContributorsFiltersEq,
+    IncludeAttributesContributorsFiltersNotEq,
+    IncludeAttributesContributorsFiltersIn,
+    IncludeAttributesContributorsFiltersNotIn,
+    IncludeAttributesContributorsFiltersLt,
+    IncludeAttributesContributorsFiltersLte,
+    IncludeAttributesContributorsFiltersGt,
+    IncludeAttributesContributorsFiltersGte,
+    IncludeAttributesContributorsFiltersGlob,
+    IncludeAttributesContributorsFiltersNotGlob,
+    IncludeAttributesContributorsFiltersIGlob,
+    IncludeAttributesContributorsFiltersNotIGlob,
+    IncludeAttributesContributorsFiltersRegex,
+    IncludeAttributesContributorsFiltersContainsAllTokens,
+    IncludeAttributesContributorsFiltersEq,
+    IncludeAttributesContributorsFiltersNotEq,
+    IncludeAttributesContributorsFiltersIn,
+    IncludeAttributesContributorsFiltersNotIn,
+    IncludeAttributesContributorsFiltersLt,
+    IncludeAttributesContributorsFiltersLte,
+    IncludeAttributesContributorsFiltersGt,
+    IncludeAttributesContributorsFiltersGte,
+    IncludeAttributesContributorsFiltersGlob,
+    IncludeAttributesContributorsFiltersNotGlob,
+    IncludeAttributesContributorsFiltersIGlob,
+    IncludeAttributesContributorsFiltersNotIGlob,
+    IncludeAttributesContributorsFiltersRegex,
+    IncludeAttributesContributorsFiltersContainsAllTokens,
+    IncludeAttributesContributorsFiltersEq,
+    IncludeAttributesContributorsFiltersNotEq,
+    IncludeAttributesContributorsFiltersIn,
+    IncludeAttributesContributorsFiltersNotIn,
+    IncludeAttributesContributorsFiltersLt,
+    IncludeAttributesContributorsFiltersLte,
+    IncludeAttributesContributorsFiltersGt,
+    IncludeAttributesContributorsFiltersGte,
+    IncludeAttributesContributorsFiltersGlob,
+    IncludeAttributesContributorsFiltersNotGlob,
+    IncludeAttributesContributorsFiltersIGlob,
+    IncludeAttributesContributorsFiltersNotIGlob,
+    IncludeAttributesContributorsFiltersRegex,
+    IncludeAttributesContributorsFiltersContainsAllTokens,
+    IncludeAttributesContributorsFiltersEq,
+    IncludeAttributesContributorsFiltersNotEq,
+    IncludeAttributesContributorsFiltersIn,
+    IncludeAttributesContributorsFiltersNotIn,
+    IncludeAttributesContributorsFiltersLt,
+    IncludeAttributesContributorsFiltersLte,
+    IncludeAttributesContributorsFiltersGt,
+    IncludeAttributesContributorsFiltersGte,
+    IncludeAttributesContributorsFiltersGlob,
+    IncludeAttributesContributorsFiltersNotGlob,
+    IncludeAttributesContributorsFiltersIGlob,
+    IncludeAttributesContributorsFiltersNotIGlob,
+    IncludeAttributesContributorsFiltersRegex,
+    IncludeAttributesContributorsFiltersContainsAllTokens,
+    IncludeAttributesContributorsFiltersEq,
+    IncludeAttributesContributorsFiltersNotEq,
+    IncludeAttributesContributorsFiltersIn,
+    IncludeAttributesContributorsFiltersNotIn,
+    IncludeAttributesContributorsFiltersLt,
+    IncludeAttributesContributorsFiltersLte,
+    IncludeAttributesContributorsFiltersGt,
+    IncludeAttributesContributorsFiltersGte,
+    IncludeAttributesContributorsFiltersGlob,
+    IncludeAttributesContributorsFiltersNotGlob,
+    IncludeAttributesContributorsFiltersIGlob,
+    IncludeAttributesContributorsFiltersNotIGlob,
+    IncludeAttributesContributorsFiltersRegex,
+    IncludeAttributesContributorsFiltersContainsAllTokens,
+    IncludeAttributesContributorsFiltersEq,
+    IncludeAttributesContributorsFiltersNotEq,
+    IncludeAttributesContributorsFiltersIn,
+    IncludeAttributesContributorsFiltersNotIn,
+    IncludeAttributesContributorsFiltersLt,
+    IncludeAttributesContributorsFiltersLte,
+    IncludeAttributesContributorsFiltersGt,
+    IncludeAttributesContributorsFiltersGte,
+    IncludeAttributesContributorsFiltersGlob,
+    IncludeAttributesContributorsFiltersNotGlob,
+    IncludeAttributesContributorsFiltersIGlob,
+    IncludeAttributesContributorsFiltersNotIGlob,
+    IncludeAttributesContributorsFiltersRegex,
+    IncludeAttributesContributorsFiltersContainsAllTokens,
     IncludeAttributesContributorsFiltersUnionMember139,
     IncludeAttributesContributorsFiltersUnionMember140,
 ]
@@ -14175,7 +11300,7 @@ class IncludeAttributesContributors(TypedDict, total=False):
     """
 
 
-class IncludeAttributesFollowersFiltersUnionMember0(TypedDict, total=False):
+class IncludeAttributesFollowersFiltersEq(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Eq"]]
@@ -14183,7 +11308,7 @@ class IncludeAttributesFollowersFiltersUnionMember0(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesFollowersFiltersUnionMember1(TypedDict, total=False):
+class IncludeAttributesFollowersFiltersNotEq(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["NotEq"]]
@@ -14191,7 +11316,7 @@ class IncludeAttributesFollowersFiltersUnionMember1(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesFollowersFiltersUnionMember2(TypedDict, total=False):
+class IncludeAttributesFollowersFiltersIn(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["In"]]
@@ -14199,7 +11324,7 @@ class IncludeAttributesFollowersFiltersUnionMember2(TypedDict, total=False):
     value: Required[SequenceNotStr[str]]
 
 
-class IncludeAttributesFollowersFiltersUnionMember3(TypedDict, total=False):
+class IncludeAttributesFollowersFiltersNotIn(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["NotIn"]]
@@ -14207,7 +11332,7 @@ class IncludeAttributesFollowersFiltersUnionMember3(TypedDict, total=False):
     value: Required[SequenceNotStr[str]]
 
 
-class IncludeAttributesFollowersFiltersUnionMember4(TypedDict, total=False):
+class IncludeAttributesFollowersFiltersLt(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Lt"]]
@@ -14215,7 +11340,7 @@ class IncludeAttributesFollowersFiltersUnionMember4(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesFollowersFiltersUnionMember5(TypedDict, total=False):
+class IncludeAttributesFollowersFiltersLte(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Lte"]]
@@ -14223,7 +11348,7 @@ class IncludeAttributesFollowersFiltersUnionMember5(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesFollowersFiltersUnionMember6(TypedDict, total=False):
+class IncludeAttributesFollowersFiltersGt(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Gt"]]
@@ -14231,7 +11356,7 @@ class IncludeAttributesFollowersFiltersUnionMember6(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesFollowersFiltersUnionMember7(TypedDict, total=False):
+class IncludeAttributesFollowersFiltersGte(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Gte"]]
@@ -14239,7 +11364,7 @@ class IncludeAttributesFollowersFiltersUnionMember7(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesFollowersFiltersUnionMember8(TypedDict, total=False):
+class IncludeAttributesFollowersFiltersGlob(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Glob"]]
@@ -14247,7 +11372,7 @@ class IncludeAttributesFollowersFiltersUnionMember8(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesFollowersFiltersUnionMember9(TypedDict, total=False):
+class IncludeAttributesFollowersFiltersNotGlob(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["NotGlob"]]
@@ -14255,7 +11380,7 @@ class IncludeAttributesFollowersFiltersUnionMember9(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesFollowersFiltersUnionMember10(TypedDict, total=False):
+class IncludeAttributesFollowersFiltersIGlob(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["IGlob"]]
@@ -14263,7 +11388,7 @@ class IncludeAttributesFollowersFiltersUnionMember10(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesFollowersFiltersUnionMember11(TypedDict, total=False):
+class IncludeAttributesFollowersFiltersNotIGlob(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["NotIGlob"]]
@@ -14271,7 +11396,7 @@ class IncludeAttributesFollowersFiltersUnionMember11(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesFollowersFiltersUnionMember12(TypedDict, total=False):
+class IncludeAttributesFollowersFiltersRegex(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Regex"]]
@@ -14279,1008 +11404,8 @@ class IncludeAttributesFollowersFiltersUnionMember12(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesFollowersFiltersUnionMember13(TypedDict, total=False):
+class IncludeAttributesFollowersFiltersContainsAllTokens(TypedDict, total=False):
     field: Required[Literal["login"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember14(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember15(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesFollowersFiltersUnionMember16(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesFollowersFiltersUnionMember17(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember18(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember19(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember20(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember21(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember22(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember23(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember24(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember25(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember26(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember27(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember28(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember29(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesFollowersFiltersUnionMember30(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesFollowersFiltersUnionMember31(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember32(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember33(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember34(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember35(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember36(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember37(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember38(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember39(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember40(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember41(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember42(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember43(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesFollowersFiltersUnionMember44(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesFollowersFiltersUnionMember45(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember46(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember47(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember48(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember49(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember50(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember51(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember52(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember53(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember54(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember55(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember56(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember57(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesFollowersFiltersUnionMember58(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesFollowersFiltersUnionMember59(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember60(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember61(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember62(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember63(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember64(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember65(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember66(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember67(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember68(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember69(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember70(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember71(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesFollowersFiltersUnionMember72(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesFollowersFiltersUnionMember73(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember74(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember75(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember76(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember77(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember78(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember79(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember80(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember81(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember82(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember83(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember84(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember85(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesFollowersFiltersUnionMember86(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesFollowersFiltersUnionMember87(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember88(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember89(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember90(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember91(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember92(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember93(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember94(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember95(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember96(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember97(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember98(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember99(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesFollowersFiltersUnionMember100(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesFollowersFiltersUnionMember101(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember102(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember103(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember104(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember105(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember106(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember107(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember108(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember109(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember110(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember111(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember112(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember113(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesFollowersFiltersUnionMember114(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesFollowersFiltersUnionMember115(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember116(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember117(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember118(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember119(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember120(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember121(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember122(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember123(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember124(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember125(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember126(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember127(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesFollowersFiltersUnionMember128(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesFollowersFiltersUnionMember129(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember130(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember131(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember132(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember133(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember134(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember135(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember136(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember137(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowersFiltersUnionMember138(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
 
     op: Required[Literal["ContainsAllTokens"]]
 
@@ -19072,145 +15197,145 @@ class IncludeAttributesFollowersFiltersUnionMember140(TypedDict, total=False):
 
 
 IncludeAttributesFollowersFilters: TypeAlias = Union[
-    IncludeAttributesFollowersFiltersUnionMember0,
-    IncludeAttributesFollowersFiltersUnionMember1,
-    IncludeAttributesFollowersFiltersUnionMember2,
-    IncludeAttributesFollowersFiltersUnionMember3,
-    IncludeAttributesFollowersFiltersUnionMember4,
-    IncludeAttributesFollowersFiltersUnionMember5,
-    IncludeAttributesFollowersFiltersUnionMember6,
-    IncludeAttributesFollowersFiltersUnionMember7,
-    IncludeAttributesFollowersFiltersUnionMember8,
-    IncludeAttributesFollowersFiltersUnionMember9,
-    IncludeAttributesFollowersFiltersUnionMember10,
-    IncludeAttributesFollowersFiltersUnionMember11,
-    IncludeAttributesFollowersFiltersUnionMember12,
-    IncludeAttributesFollowersFiltersUnionMember13,
-    IncludeAttributesFollowersFiltersUnionMember14,
-    IncludeAttributesFollowersFiltersUnionMember15,
-    IncludeAttributesFollowersFiltersUnionMember16,
-    IncludeAttributesFollowersFiltersUnionMember17,
-    IncludeAttributesFollowersFiltersUnionMember18,
-    IncludeAttributesFollowersFiltersUnionMember19,
-    IncludeAttributesFollowersFiltersUnionMember20,
-    IncludeAttributesFollowersFiltersUnionMember21,
-    IncludeAttributesFollowersFiltersUnionMember22,
-    IncludeAttributesFollowersFiltersUnionMember23,
-    IncludeAttributesFollowersFiltersUnionMember24,
-    IncludeAttributesFollowersFiltersUnionMember25,
-    IncludeAttributesFollowersFiltersUnionMember26,
-    IncludeAttributesFollowersFiltersUnionMember27,
-    IncludeAttributesFollowersFiltersUnionMember28,
-    IncludeAttributesFollowersFiltersUnionMember29,
-    IncludeAttributesFollowersFiltersUnionMember30,
-    IncludeAttributesFollowersFiltersUnionMember31,
-    IncludeAttributesFollowersFiltersUnionMember32,
-    IncludeAttributesFollowersFiltersUnionMember33,
-    IncludeAttributesFollowersFiltersUnionMember34,
-    IncludeAttributesFollowersFiltersUnionMember35,
-    IncludeAttributesFollowersFiltersUnionMember36,
-    IncludeAttributesFollowersFiltersUnionMember37,
-    IncludeAttributesFollowersFiltersUnionMember38,
-    IncludeAttributesFollowersFiltersUnionMember39,
-    IncludeAttributesFollowersFiltersUnionMember40,
-    IncludeAttributesFollowersFiltersUnionMember41,
-    IncludeAttributesFollowersFiltersUnionMember42,
-    IncludeAttributesFollowersFiltersUnionMember43,
-    IncludeAttributesFollowersFiltersUnionMember44,
-    IncludeAttributesFollowersFiltersUnionMember45,
-    IncludeAttributesFollowersFiltersUnionMember46,
-    IncludeAttributesFollowersFiltersUnionMember47,
-    IncludeAttributesFollowersFiltersUnionMember48,
-    IncludeAttributesFollowersFiltersUnionMember49,
-    IncludeAttributesFollowersFiltersUnionMember50,
-    IncludeAttributesFollowersFiltersUnionMember51,
-    IncludeAttributesFollowersFiltersUnionMember52,
-    IncludeAttributesFollowersFiltersUnionMember53,
-    IncludeAttributesFollowersFiltersUnionMember54,
-    IncludeAttributesFollowersFiltersUnionMember55,
-    IncludeAttributesFollowersFiltersUnionMember56,
-    IncludeAttributesFollowersFiltersUnionMember57,
-    IncludeAttributesFollowersFiltersUnionMember58,
-    IncludeAttributesFollowersFiltersUnionMember59,
-    IncludeAttributesFollowersFiltersUnionMember60,
-    IncludeAttributesFollowersFiltersUnionMember61,
-    IncludeAttributesFollowersFiltersUnionMember62,
-    IncludeAttributesFollowersFiltersUnionMember63,
-    IncludeAttributesFollowersFiltersUnionMember64,
-    IncludeAttributesFollowersFiltersUnionMember65,
-    IncludeAttributesFollowersFiltersUnionMember66,
-    IncludeAttributesFollowersFiltersUnionMember67,
-    IncludeAttributesFollowersFiltersUnionMember68,
-    IncludeAttributesFollowersFiltersUnionMember69,
-    IncludeAttributesFollowersFiltersUnionMember70,
-    IncludeAttributesFollowersFiltersUnionMember71,
-    IncludeAttributesFollowersFiltersUnionMember72,
-    IncludeAttributesFollowersFiltersUnionMember73,
-    IncludeAttributesFollowersFiltersUnionMember74,
-    IncludeAttributesFollowersFiltersUnionMember75,
-    IncludeAttributesFollowersFiltersUnionMember76,
-    IncludeAttributesFollowersFiltersUnionMember77,
-    IncludeAttributesFollowersFiltersUnionMember78,
-    IncludeAttributesFollowersFiltersUnionMember79,
-    IncludeAttributesFollowersFiltersUnionMember80,
-    IncludeAttributesFollowersFiltersUnionMember81,
-    IncludeAttributesFollowersFiltersUnionMember82,
-    IncludeAttributesFollowersFiltersUnionMember83,
-    IncludeAttributesFollowersFiltersUnionMember84,
-    IncludeAttributesFollowersFiltersUnionMember85,
-    IncludeAttributesFollowersFiltersUnionMember86,
-    IncludeAttributesFollowersFiltersUnionMember87,
-    IncludeAttributesFollowersFiltersUnionMember88,
-    IncludeAttributesFollowersFiltersUnionMember89,
-    IncludeAttributesFollowersFiltersUnionMember90,
-    IncludeAttributesFollowersFiltersUnionMember91,
-    IncludeAttributesFollowersFiltersUnionMember92,
-    IncludeAttributesFollowersFiltersUnionMember93,
-    IncludeAttributesFollowersFiltersUnionMember94,
-    IncludeAttributesFollowersFiltersUnionMember95,
-    IncludeAttributesFollowersFiltersUnionMember96,
-    IncludeAttributesFollowersFiltersUnionMember97,
-    IncludeAttributesFollowersFiltersUnionMember98,
-    IncludeAttributesFollowersFiltersUnionMember99,
-    IncludeAttributesFollowersFiltersUnionMember100,
-    IncludeAttributesFollowersFiltersUnionMember101,
-    IncludeAttributesFollowersFiltersUnionMember102,
-    IncludeAttributesFollowersFiltersUnionMember103,
-    IncludeAttributesFollowersFiltersUnionMember104,
-    IncludeAttributesFollowersFiltersUnionMember105,
-    IncludeAttributesFollowersFiltersUnionMember106,
-    IncludeAttributesFollowersFiltersUnionMember107,
-    IncludeAttributesFollowersFiltersUnionMember108,
-    IncludeAttributesFollowersFiltersUnionMember109,
-    IncludeAttributesFollowersFiltersUnionMember110,
-    IncludeAttributesFollowersFiltersUnionMember111,
-    IncludeAttributesFollowersFiltersUnionMember112,
-    IncludeAttributesFollowersFiltersUnionMember113,
-    IncludeAttributesFollowersFiltersUnionMember114,
-    IncludeAttributesFollowersFiltersUnionMember115,
-    IncludeAttributesFollowersFiltersUnionMember116,
-    IncludeAttributesFollowersFiltersUnionMember117,
-    IncludeAttributesFollowersFiltersUnionMember118,
-    IncludeAttributesFollowersFiltersUnionMember119,
-    IncludeAttributesFollowersFiltersUnionMember120,
-    IncludeAttributesFollowersFiltersUnionMember121,
-    IncludeAttributesFollowersFiltersUnionMember122,
-    IncludeAttributesFollowersFiltersUnionMember123,
-    IncludeAttributesFollowersFiltersUnionMember124,
-    IncludeAttributesFollowersFiltersUnionMember125,
-    IncludeAttributesFollowersFiltersUnionMember126,
-    IncludeAttributesFollowersFiltersUnionMember127,
-    IncludeAttributesFollowersFiltersUnionMember128,
-    IncludeAttributesFollowersFiltersUnionMember129,
-    IncludeAttributesFollowersFiltersUnionMember130,
-    IncludeAttributesFollowersFiltersUnionMember131,
-    IncludeAttributesFollowersFiltersUnionMember132,
-    IncludeAttributesFollowersFiltersUnionMember133,
-    IncludeAttributesFollowersFiltersUnionMember134,
-    IncludeAttributesFollowersFiltersUnionMember135,
-    IncludeAttributesFollowersFiltersUnionMember136,
-    IncludeAttributesFollowersFiltersUnionMember137,
-    IncludeAttributesFollowersFiltersUnionMember138,
+    IncludeAttributesFollowersFiltersEq,
+    IncludeAttributesFollowersFiltersNotEq,
+    IncludeAttributesFollowersFiltersIn,
+    IncludeAttributesFollowersFiltersNotIn,
+    IncludeAttributesFollowersFiltersLt,
+    IncludeAttributesFollowersFiltersLte,
+    IncludeAttributesFollowersFiltersGt,
+    IncludeAttributesFollowersFiltersGte,
+    IncludeAttributesFollowersFiltersGlob,
+    IncludeAttributesFollowersFiltersNotGlob,
+    IncludeAttributesFollowersFiltersIGlob,
+    IncludeAttributesFollowersFiltersNotIGlob,
+    IncludeAttributesFollowersFiltersRegex,
+    IncludeAttributesFollowersFiltersEq,
+    IncludeAttributesFollowersFiltersNotEq,
+    IncludeAttributesFollowersFiltersIn,
+    IncludeAttributesFollowersFiltersNotIn,
+    IncludeAttributesFollowersFiltersLt,
+    IncludeAttributesFollowersFiltersLte,
+    IncludeAttributesFollowersFiltersGt,
+    IncludeAttributesFollowersFiltersGte,
+    IncludeAttributesFollowersFiltersGlob,
+    IncludeAttributesFollowersFiltersNotGlob,
+    IncludeAttributesFollowersFiltersIGlob,
+    IncludeAttributesFollowersFiltersNotIGlob,
+    IncludeAttributesFollowersFiltersRegex,
+    IncludeAttributesFollowersFiltersContainsAllTokens,
+    IncludeAttributesFollowersFiltersEq,
+    IncludeAttributesFollowersFiltersNotEq,
+    IncludeAttributesFollowersFiltersIn,
+    IncludeAttributesFollowersFiltersNotIn,
+    IncludeAttributesFollowersFiltersLt,
+    IncludeAttributesFollowersFiltersLte,
+    IncludeAttributesFollowersFiltersGt,
+    IncludeAttributesFollowersFiltersGte,
+    IncludeAttributesFollowersFiltersGlob,
+    IncludeAttributesFollowersFiltersNotGlob,
+    IncludeAttributesFollowersFiltersIGlob,
+    IncludeAttributesFollowersFiltersNotIGlob,
+    IncludeAttributesFollowersFiltersRegex,
+    IncludeAttributesFollowersFiltersContainsAllTokens,
+    IncludeAttributesFollowersFiltersEq,
+    IncludeAttributesFollowersFiltersNotEq,
+    IncludeAttributesFollowersFiltersIn,
+    IncludeAttributesFollowersFiltersNotIn,
+    IncludeAttributesFollowersFiltersLt,
+    IncludeAttributesFollowersFiltersLte,
+    IncludeAttributesFollowersFiltersGt,
+    IncludeAttributesFollowersFiltersGte,
+    IncludeAttributesFollowersFiltersGlob,
+    IncludeAttributesFollowersFiltersNotGlob,
+    IncludeAttributesFollowersFiltersIGlob,
+    IncludeAttributesFollowersFiltersNotIGlob,
+    IncludeAttributesFollowersFiltersRegex,
+    IncludeAttributesFollowersFiltersContainsAllTokens,
+    IncludeAttributesFollowersFiltersEq,
+    IncludeAttributesFollowersFiltersNotEq,
+    IncludeAttributesFollowersFiltersIn,
+    IncludeAttributesFollowersFiltersNotIn,
+    IncludeAttributesFollowersFiltersLt,
+    IncludeAttributesFollowersFiltersLte,
+    IncludeAttributesFollowersFiltersGt,
+    IncludeAttributesFollowersFiltersGte,
+    IncludeAttributesFollowersFiltersGlob,
+    IncludeAttributesFollowersFiltersNotGlob,
+    IncludeAttributesFollowersFiltersIGlob,
+    IncludeAttributesFollowersFiltersNotIGlob,
+    IncludeAttributesFollowersFiltersRegex,
+    IncludeAttributesFollowersFiltersContainsAllTokens,
+    IncludeAttributesFollowersFiltersEq,
+    IncludeAttributesFollowersFiltersNotEq,
+    IncludeAttributesFollowersFiltersIn,
+    IncludeAttributesFollowersFiltersNotIn,
+    IncludeAttributesFollowersFiltersLt,
+    IncludeAttributesFollowersFiltersLte,
+    IncludeAttributesFollowersFiltersGt,
+    IncludeAttributesFollowersFiltersGte,
+    IncludeAttributesFollowersFiltersGlob,
+    IncludeAttributesFollowersFiltersNotGlob,
+    IncludeAttributesFollowersFiltersIGlob,
+    IncludeAttributesFollowersFiltersNotIGlob,
+    IncludeAttributesFollowersFiltersRegex,
+    IncludeAttributesFollowersFiltersContainsAllTokens,
+    IncludeAttributesFollowersFiltersEq,
+    IncludeAttributesFollowersFiltersNotEq,
+    IncludeAttributesFollowersFiltersIn,
+    IncludeAttributesFollowersFiltersNotIn,
+    IncludeAttributesFollowersFiltersLt,
+    IncludeAttributesFollowersFiltersLte,
+    IncludeAttributesFollowersFiltersGt,
+    IncludeAttributesFollowersFiltersGte,
+    IncludeAttributesFollowersFiltersGlob,
+    IncludeAttributesFollowersFiltersNotGlob,
+    IncludeAttributesFollowersFiltersIGlob,
+    IncludeAttributesFollowersFiltersNotIGlob,
+    IncludeAttributesFollowersFiltersRegex,
+    IncludeAttributesFollowersFiltersContainsAllTokens,
+    IncludeAttributesFollowersFiltersEq,
+    IncludeAttributesFollowersFiltersNotEq,
+    IncludeAttributesFollowersFiltersIn,
+    IncludeAttributesFollowersFiltersNotIn,
+    IncludeAttributesFollowersFiltersLt,
+    IncludeAttributesFollowersFiltersLte,
+    IncludeAttributesFollowersFiltersGt,
+    IncludeAttributesFollowersFiltersGte,
+    IncludeAttributesFollowersFiltersGlob,
+    IncludeAttributesFollowersFiltersNotGlob,
+    IncludeAttributesFollowersFiltersIGlob,
+    IncludeAttributesFollowersFiltersNotIGlob,
+    IncludeAttributesFollowersFiltersRegex,
+    IncludeAttributesFollowersFiltersContainsAllTokens,
+    IncludeAttributesFollowersFiltersEq,
+    IncludeAttributesFollowersFiltersNotEq,
+    IncludeAttributesFollowersFiltersIn,
+    IncludeAttributesFollowersFiltersNotIn,
+    IncludeAttributesFollowersFiltersLt,
+    IncludeAttributesFollowersFiltersLte,
+    IncludeAttributesFollowersFiltersGt,
+    IncludeAttributesFollowersFiltersGte,
+    IncludeAttributesFollowersFiltersGlob,
+    IncludeAttributesFollowersFiltersNotGlob,
+    IncludeAttributesFollowersFiltersIGlob,
+    IncludeAttributesFollowersFiltersNotIGlob,
+    IncludeAttributesFollowersFiltersRegex,
+    IncludeAttributesFollowersFiltersContainsAllTokens,
+    IncludeAttributesFollowersFiltersEq,
+    IncludeAttributesFollowersFiltersNotEq,
+    IncludeAttributesFollowersFiltersIn,
+    IncludeAttributesFollowersFiltersNotIn,
+    IncludeAttributesFollowersFiltersLt,
+    IncludeAttributesFollowersFiltersLte,
+    IncludeAttributesFollowersFiltersGt,
+    IncludeAttributesFollowersFiltersGte,
+    IncludeAttributesFollowersFiltersGlob,
+    IncludeAttributesFollowersFiltersNotGlob,
+    IncludeAttributesFollowersFiltersIGlob,
+    IncludeAttributesFollowersFiltersNotIGlob,
+    IncludeAttributesFollowersFiltersRegex,
+    IncludeAttributesFollowersFiltersContainsAllTokens,
     IncludeAttributesFollowersFiltersUnionMember139,
     IncludeAttributesFollowersFiltersUnionMember140,
 ]
@@ -19233,7 +15358,7 @@ class IncludeAttributesFollowers(TypedDict, total=False):
     """
 
 
-class IncludeAttributesFollowingFiltersUnionMember0(TypedDict, total=False):
+class IncludeAttributesFollowingFiltersEq(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Eq"]]
@@ -19241,7 +15366,7 @@ class IncludeAttributesFollowingFiltersUnionMember0(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesFollowingFiltersUnionMember1(TypedDict, total=False):
+class IncludeAttributesFollowingFiltersNotEq(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["NotEq"]]
@@ -19249,7 +15374,7 @@ class IncludeAttributesFollowingFiltersUnionMember1(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesFollowingFiltersUnionMember2(TypedDict, total=False):
+class IncludeAttributesFollowingFiltersIn(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["In"]]
@@ -19257,7 +15382,7 @@ class IncludeAttributesFollowingFiltersUnionMember2(TypedDict, total=False):
     value: Required[SequenceNotStr[str]]
 
 
-class IncludeAttributesFollowingFiltersUnionMember3(TypedDict, total=False):
+class IncludeAttributesFollowingFiltersNotIn(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["NotIn"]]
@@ -19265,7 +15390,7 @@ class IncludeAttributesFollowingFiltersUnionMember3(TypedDict, total=False):
     value: Required[SequenceNotStr[str]]
 
 
-class IncludeAttributesFollowingFiltersUnionMember4(TypedDict, total=False):
+class IncludeAttributesFollowingFiltersLt(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Lt"]]
@@ -19273,7 +15398,7 @@ class IncludeAttributesFollowingFiltersUnionMember4(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesFollowingFiltersUnionMember5(TypedDict, total=False):
+class IncludeAttributesFollowingFiltersLte(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Lte"]]
@@ -19281,7 +15406,7 @@ class IncludeAttributesFollowingFiltersUnionMember5(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesFollowingFiltersUnionMember6(TypedDict, total=False):
+class IncludeAttributesFollowingFiltersGt(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Gt"]]
@@ -19289,7 +15414,7 @@ class IncludeAttributesFollowingFiltersUnionMember6(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesFollowingFiltersUnionMember7(TypedDict, total=False):
+class IncludeAttributesFollowingFiltersGte(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Gte"]]
@@ -19297,7 +15422,7 @@ class IncludeAttributesFollowingFiltersUnionMember7(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesFollowingFiltersUnionMember8(TypedDict, total=False):
+class IncludeAttributesFollowingFiltersGlob(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Glob"]]
@@ -19305,7 +15430,7 @@ class IncludeAttributesFollowingFiltersUnionMember8(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesFollowingFiltersUnionMember9(TypedDict, total=False):
+class IncludeAttributesFollowingFiltersNotGlob(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["NotGlob"]]
@@ -19313,7 +15438,7 @@ class IncludeAttributesFollowingFiltersUnionMember9(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesFollowingFiltersUnionMember10(TypedDict, total=False):
+class IncludeAttributesFollowingFiltersIGlob(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["IGlob"]]
@@ -19321,7 +15446,7 @@ class IncludeAttributesFollowingFiltersUnionMember10(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesFollowingFiltersUnionMember11(TypedDict, total=False):
+class IncludeAttributesFollowingFiltersNotIGlob(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["NotIGlob"]]
@@ -19329,7 +15454,7 @@ class IncludeAttributesFollowingFiltersUnionMember11(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesFollowingFiltersUnionMember12(TypedDict, total=False):
+class IncludeAttributesFollowingFiltersRegex(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Regex"]]
@@ -19337,1008 +15462,8 @@ class IncludeAttributesFollowingFiltersUnionMember12(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesFollowingFiltersUnionMember13(TypedDict, total=False):
+class IncludeAttributesFollowingFiltersContainsAllTokens(TypedDict, total=False):
     field: Required[Literal["login"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember14(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember15(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesFollowingFiltersUnionMember16(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesFollowingFiltersUnionMember17(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember18(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember19(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember20(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember21(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember22(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember23(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember24(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember25(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember26(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember27(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember28(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember29(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesFollowingFiltersUnionMember30(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesFollowingFiltersUnionMember31(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember32(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember33(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember34(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember35(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember36(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember37(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember38(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember39(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember40(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember41(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember42(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember43(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesFollowingFiltersUnionMember44(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesFollowingFiltersUnionMember45(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember46(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember47(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember48(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember49(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember50(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember51(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember52(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember53(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember54(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember55(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember56(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember57(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesFollowingFiltersUnionMember58(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesFollowingFiltersUnionMember59(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember60(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember61(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember62(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember63(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember64(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember65(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember66(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember67(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember68(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember69(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember70(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember71(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesFollowingFiltersUnionMember72(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesFollowingFiltersUnionMember73(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember74(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember75(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember76(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember77(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember78(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember79(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember80(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember81(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember82(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember83(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember84(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember85(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesFollowingFiltersUnionMember86(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesFollowingFiltersUnionMember87(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember88(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember89(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember90(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember91(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember92(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember93(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember94(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember95(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember96(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember97(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember98(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember99(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesFollowingFiltersUnionMember100(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesFollowingFiltersUnionMember101(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember102(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember103(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember104(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember105(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember106(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember107(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember108(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember109(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember110(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember111(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember112(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember113(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesFollowingFiltersUnionMember114(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesFollowingFiltersUnionMember115(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember116(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember117(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember118(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember119(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember120(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember121(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember122(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember123(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember124(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember125(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember126(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember127(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesFollowingFiltersUnionMember128(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesFollowingFiltersUnionMember129(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember130(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember131(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember132(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember133(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember134(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember135(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember136(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember137(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesFollowingFiltersUnionMember138(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
 
     op: Required[Literal["ContainsAllTokens"]]
 
@@ -24130,145 +19255,145 @@ class IncludeAttributesFollowingFiltersUnionMember140(TypedDict, total=False):
 
 
 IncludeAttributesFollowingFilters: TypeAlias = Union[
-    IncludeAttributesFollowingFiltersUnionMember0,
-    IncludeAttributesFollowingFiltersUnionMember1,
-    IncludeAttributesFollowingFiltersUnionMember2,
-    IncludeAttributesFollowingFiltersUnionMember3,
-    IncludeAttributesFollowingFiltersUnionMember4,
-    IncludeAttributesFollowingFiltersUnionMember5,
-    IncludeAttributesFollowingFiltersUnionMember6,
-    IncludeAttributesFollowingFiltersUnionMember7,
-    IncludeAttributesFollowingFiltersUnionMember8,
-    IncludeAttributesFollowingFiltersUnionMember9,
-    IncludeAttributesFollowingFiltersUnionMember10,
-    IncludeAttributesFollowingFiltersUnionMember11,
-    IncludeAttributesFollowingFiltersUnionMember12,
-    IncludeAttributesFollowingFiltersUnionMember13,
-    IncludeAttributesFollowingFiltersUnionMember14,
-    IncludeAttributesFollowingFiltersUnionMember15,
-    IncludeAttributesFollowingFiltersUnionMember16,
-    IncludeAttributesFollowingFiltersUnionMember17,
-    IncludeAttributesFollowingFiltersUnionMember18,
-    IncludeAttributesFollowingFiltersUnionMember19,
-    IncludeAttributesFollowingFiltersUnionMember20,
-    IncludeAttributesFollowingFiltersUnionMember21,
-    IncludeAttributesFollowingFiltersUnionMember22,
-    IncludeAttributesFollowingFiltersUnionMember23,
-    IncludeAttributesFollowingFiltersUnionMember24,
-    IncludeAttributesFollowingFiltersUnionMember25,
-    IncludeAttributesFollowingFiltersUnionMember26,
-    IncludeAttributesFollowingFiltersUnionMember27,
-    IncludeAttributesFollowingFiltersUnionMember28,
-    IncludeAttributesFollowingFiltersUnionMember29,
-    IncludeAttributesFollowingFiltersUnionMember30,
-    IncludeAttributesFollowingFiltersUnionMember31,
-    IncludeAttributesFollowingFiltersUnionMember32,
-    IncludeAttributesFollowingFiltersUnionMember33,
-    IncludeAttributesFollowingFiltersUnionMember34,
-    IncludeAttributesFollowingFiltersUnionMember35,
-    IncludeAttributesFollowingFiltersUnionMember36,
-    IncludeAttributesFollowingFiltersUnionMember37,
-    IncludeAttributesFollowingFiltersUnionMember38,
-    IncludeAttributesFollowingFiltersUnionMember39,
-    IncludeAttributesFollowingFiltersUnionMember40,
-    IncludeAttributesFollowingFiltersUnionMember41,
-    IncludeAttributesFollowingFiltersUnionMember42,
-    IncludeAttributesFollowingFiltersUnionMember43,
-    IncludeAttributesFollowingFiltersUnionMember44,
-    IncludeAttributesFollowingFiltersUnionMember45,
-    IncludeAttributesFollowingFiltersUnionMember46,
-    IncludeAttributesFollowingFiltersUnionMember47,
-    IncludeAttributesFollowingFiltersUnionMember48,
-    IncludeAttributesFollowingFiltersUnionMember49,
-    IncludeAttributesFollowingFiltersUnionMember50,
-    IncludeAttributesFollowingFiltersUnionMember51,
-    IncludeAttributesFollowingFiltersUnionMember52,
-    IncludeAttributesFollowingFiltersUnionMember53,
-    IncludeAttributesFollowingFiltersUnionMember54,
-    IncludeAttributesFollowingFiltersUnionMember55,
-    IncludeAttributesFollowingFiltersUnionMember56,
-    IncludeAttributesFollowingFiltersUnionMember57,
-    IncludeAttributesFollowingFiltersUnionMember58,
-    IncludeAttributesFollowingFiltersUnionMember59,
-    IncludeAttributesFollowingFiltersUnionMember60,
-    IncludeAttributesFollowingFiltersUnionMember61,
-    IncludeAttributesFollowingFiltersUnionMember62,
-    IncludeAttributesFollowingFiltersUnionMember63,
-    IncludeAttributesFollowingFiltersUnionMember64,
-    IncludeAttributesFollowingFiltersUnionMember65,
-    IncludeAttributesFollowingFiltersUnionMember66,
-    IncludeAttributesFollowingFiltersUnionMember67,
-    IncludeAttributesFollowingFiltersUnionMember68,
-    IncludeAttributesFollowingFiltersUnionMember69,
-    IncludeAttributesFollowingFiltersUnionMember70,
-    IncludeAttributesFollowingFiltersUnionMember71,
-    IncludeAttributesFollowingFiltersUnionMember72,
-    IncludeAttributesFollowingFiltersUnionMember73,
-    IncludeAttributesFollowingFiltersUnionMember74,
-    IncludeAttributesFollowingFiltersUnionMember75,
-    IncludeAttributesFollowingFiltersUnionMember76,
-    IncludeAttributesFollowingFiltersUnionMember77,
-    IncludeAttributesFollowingFiltersUnionMember78,
-    IncludeAttributesFollowingFiltersUnionMember79,
-    IncludeAttributesFollowingFiltersUnionMember80,
-    IncludeAttributesFollowingFiltersUnionMember81,
-    IncludeAttributesFollowingFiltersUnionMember82,
-    IncludeAttributesFollowingFiltersUnionMember83,
-    IncludeAttributesFollowingFiltersUnionMember84,
-    IncludeAttributesFollowingFiltersUnionMember85,
-    IncludeAttributesFollowingFiltersUnionMember86,
-    IncludeAttributesFollowingFiltersUnionMember87,
-    IncludeAttributesFollowingFiltersUnionMember88,
-    IncludeAttributesFollowingFiltersUnionMember89,
-    IncludeAttributesFollowingFiltersUnionMember90,
-    IncludeAttributesFollowingFiltersUnionMember91,
-    IncludeAttributesFollowingFiltersUnionMember92,
-    IncludeAttributesFollowingFiltersUnionMember93,
-    IncludeAttributesFollowingFiltersUnionMember94,
-    IncludeAttributesFollowingFiltersUnionMember95,
-    IncludeAttributesFollowingFiltersUnionMember96,
-    IncludeAttributesFollowingFiltersUnionMember97,
-    IncludeAttributesFollowingFiltersUnionMember98,
-    IncludeAttributesFollowingFiltersUnionMember99,
-    IncludeAttributesFollowingFiltersUnionMember100,
-    IncludeAttributesFollowingFiltersUnionMember101,
-    IncludeAttributesFollowingFiltersUnionMember102,
-    IncludeAttributesFollowingFiltersUnionMember103,
-    IncludeAttributesFollowingFiltersUnionMember104,
-    IncludeAttributesFollowingFiltersUnionMember105,
-    IncludeAttributesFollowingFiltersUnionMember106,
-    IncludeAttributesFollowingFiltersUnionMember107,
-    IncludeAttributesFollowingFiltersUnionMember108,
-    IncludeAttributesFollowingFiltersUnionMember109,
-    IncludeAttributesFollowingFiltersUnionMember110,
-    IncludeAttributesFollowingFiltersUnionMember111,
-    IncludeAttributesFollowingFiltersUnionMember112,
-    IncludeAttributesFollowingFiltersUnionMember113,
-    IncludeAttributesFollowingFiltersUnionMember114,
-    IncludeAttributesFollowingFiltersUnionMember115,
-    IncludeAttributesFollowingFiltersUnionMember116,
-    IncludeAttributesFollowingFiltersUnionMember117,
-    IncludeAttributesFollowingFiltersUnionMember118,
-    IncludeAttributesFollowingFiltersUnionMember119,
-    IncludeAttributesFollowingFiltersUnionMember120,
-    IncludeAttributesFollowingFiltersUnionMember121,
-    IncludeAttributesFollowingFiltersUnionMember122,
-    IncludeAttributesFollowingFiltersUnionMember123,
-    IncludeAttributesFollowingFiltersUnionMember124,
-    IncludeAttributesFollowingFiltersUnionMember125,
-    IncludeAttributesFollowingFiltersUnionMember126,
-    IncludeAttributesFollowingFiltersUnionMember127,
-    IncludeAttributesFollowingFiltersUnionMember128,
-    IncludeAttributesFollowingFiltersUnionMember129,
-    IncludeAttributesFollowingFiltersUnionMember130,
-    IncludeAttributesFollowingFiltersUnionMember131,
-    IncludeAttributesFollowingFiltersUnionMember132,
-    IncludeAttributesFollowingFiltersUnionMember133,
-    IncludeAttributesFollowingFiltersUnionMember134,
-    IncludeAttributesFollowingFiltersUnionMember135,
-    IncludeAttributesFollowingFiltersUnionMember136,
-    IncludeAttributesFollowingFiltersUnionMember137,
-    IncludeAttributesFollowingFiltersUnionMember138,
+    IncludeAttributesFollowingFiltersEq,
+    IncludeAttributesFollowingFiltersNotEq,
+    IncludeAttributesFollowingFiltersIn,
+    IncludeAttributesFollowingFiltersNotIn,
+    IncludeAttributesFollowingFiltersLt,
+    IncludeAttributesFollowingFiltersLte,
+    IncludeAttributesFollowingFiltersGt,
+    IncludeAttributesFollowingFiltersGte,
+    IncludeAttributesFollowingFiltersGlob,
+    IncludeAttributesFollowingFiltersNotGlob,
+    IncludeAttributesFollowingFiltersIGlob,
+    IncludeAttributesFollowingFiltersNotIGlob,
+    IncludeAttributesFollowingFiltersRegex,
+    IncludeAttributesFollowingFiltersEq,
+    IncludeAttributesFollowingFiltersNotEq,
+    IncludeAttributesFollowingFiltersIn,
+    IncludeAttributesFollowingFiltersNotIn,
+    IncludeAttributesFollowingFiltersLt,
+    IncludeAttributesFollowingFiltersLte,
+    IncludeAttributesFollowingFiltersGt,
+    IncludeAttributesFollowingFiltersGte,
+    IncludeAttributesFollowingFiltersGlob,
+    IncludeAttributesFollowingFiltersNotGlob,
+    IncludeAttributesFollowingFiltersIGlob,
+    IncludeAttributesFollowingFiltersNotIGlob,
+    IncludeAttributesFollowingFiltersRegex,
+    IncludeAttributesFollowingFiltersContainsAllTokens,
+    IncludeAttributesFollowingFiltersEq,
+    IncludeAttributesFollowingFiltersNotEq,
+    IncludeAttributesFollowingFiltersIn,
+    IncludeAttributesFollowingFiltersNotIn,
+    IncludeAttributesFollowingFiltersLt,
+    IncludeAttributesFollowingFiltersLte,
+    IncludeAttributesFollowingFiltersGt,
+    IncludeAttributesFollowingFiltersGte,
+    IncludeAttributesFollowingFiltersGlob,
+    IncludeAttributesFollowingFiltersNotGlob,
+    IncludeAttributesFollowingFiltersIGlob,
+    IncludeAttributesFollowingFiltersNotIGlob,
+    IncludeAttributesFollowingFiltersRegex,
+    IncludeAttributesFollowingFiltersContainsAllTokens,
+    IncludeAttributesFollowingFiltersEq,
+    IncludeAttributesFollowingFiltersNotEq,
+    IncludeAttributesFollowingFiltersIn,
+    IncludeAttributesFollowingFiltersNotIn,
+    IncludeAttributesFollowingFiltersLt,
+    IncludeAttributesFollowingFiltersLte,
+    IncludeAttributesFollowingFiltersGt,
+    IncludeAttributesFollowingFiltersGte,
+    IncludeAttributesFollowingFiltersGlob,
+    IncludeAttributesFollowingFiltersNotGlob,
+    IncludeAttributesFollowingFiltersIGlob,
+    IncludeAttributesFollowingFiltersNotIGlob,
+    IncludeAttributesFollowingFiltersRegex,
+    IncludeAttributesFollowingFiltersContainsAllTokens,
+    IncludeAttributesFollowingFiltersEq,
+    IncludeAttributesFollowingFiltersNotEq,
+    IncludeAttributesFollowingFiltersIn,
+    IncludeAttributesFollowingFiltersNotIn,
+    IncludeAttributesFollowingFiltersLt,
+    IncludeAttributesFollowingFiltersLte,
+    IncludeAttributesFollowingFiltersGt,
+    IncludeAttributesFollowingFiltersGte,
+    IncludeAttributesFollowingFiltersGlob,
+    IncludeAttributesFollowingFiltersNotGlob,
+    IncludeAttributesFollowingFiltersIGlob,
+    IncludeAttributesFollowingFiltersNotIGlob,
+    IncludeAttributesFollowingFiltersRegex,
+    IncludeAttributesFollowingFiltersContainsAllTokens,
+    IncludeAttributesFollowingFiltersEq,
+    IncludeAttributesFollowingFiltersNotEq,
+    IncludeAttributesFollowingFiltersIn,
+    IncludeAttributesFollowingFiltersNotIn,
+    IncludeAttributesFollowingFiltersLt,
+    IncludeAttributesFollowingFiltersLte,
+    IncludeAttributesFollowingFiltersGt,
+    IncludeAttributesFollowingFiltersGte,
+    IncludeAttributesFollowingFiltersGlob,
+    IncludeAttributesFollowingFiltersNotGlob,
+    IncludeAttributesFollowingFiltersIGlob,
+    IncludeAttributesFollowingFiltersNotIGlob,
+    IncludeAttributesFollowingFiltersRegex,
+    IncludeAttributesFollowingFiltersContainsAllTokens,
+    IncludeAttributesFollowingFiltersEq,
+    IncludeAttributesFollowingFiltersNotEq,
+    IncludeAttributesFollowingFiltersIn,
+    IncludeAttributesFollowingFiltersNotIn,
+    IncludeAttributesFollowingFiltersLt,
+    IncludeAttributesFollowingFiltersLte,
+    IncludeAttributesFollowingFiltersGt,
+    IncludeAttributesFollowingFiltersGte,
+    IncludeAttributesFollowingFiltersGlob,
+    IncludeAttributesFollowingFiltersNotGlob,
+    IncludeAttributesFollowingFiltersIGlob,
+    IncludeAttributesFollowingFiltersNotIGlob,
+    IncludeAttributesFollowingFiltersRegex,
+    IncludeAttributesFollowingFiltersContainsAllTokens,
+    IncludeAttributesFollowingFiltersEq,
+    IncludeAttributesFollowingFiltersNotEq,
+    IncludeAttributesFollowingFiltersIn,
+    IncludeAttributesFollowingFiltersNotIn,
+    IncludeAttributesFollowingFiltersLt,
+    IncludeAttributesFollowingFiltersLte,
+    IncludeAttributesFollowingFiltersGt,
+    IncludeAttributesFollowingFiltersGte,
+    IncludeAttributesFollowingFiltersGlob,
+    IncludeAttributesFollowingFiltersNotGlob,
+    IncludeAttributesFollowingFiltersIGlob,
+    IncludeAttributesFollowingFiltersNotIGlob,
+    IncludeAttributesFollowingFiltersRegex,
+    IncludeAttributesFollowingFiltersContainsAllTokens,
+    IncludeAttributesFollowingFiltersEq,
+    IncludeAttributesFollowingFiltersNotEq,
+    IncludeAttributesFollowingFiltersIn,
+    IncludeAttributesFollowingFiltersNotIn,
+    IncludeAttributesFollowingFiltersLt,
+    IncludeAttributesFollowingFiltersLte,
+    IncludeAttributesFollowingFiltersGt,
+    IncludeAttributesFollowingFiltersGte,
+    IncludeAttributesFollowingFiltersGlob,
+    IncludeAttributesFollowingFiltersNotGlob,
+    IncludeAttributesFollowingFiltersIGlob,
+    IncludeAttributesFollowingFiltersNotIGlob,
+    IncludeAttributesFollowingFiltersRegex,
+    IncludeAttributesFollowingFiltersContainsAllTokens,
+    IncludeAttributesFollowingFiltersEq,
+    IncludeAttributesFollowingFiltersNotEq,
+    IncludeAttributesFollowingFiltersIn,
+    IncludeAttributesFollowingFiltersNotIn,
+    IncludeAttributesFollowingFiltersLt,
+    IncludeAttributesFollowingFiltersLte,
+    IncludeAttributesFollowingFiltersGt,
+    IncludeAttributesFollowingFiltersGte,
+    IncludeAttributesFollowingFiltersGlob,
+    IncludeAttributesFollowingFiltersNotGlob,
+    IncludeAttributesFollowingFiltersIGlob,
+    IncludeAttributesFollowingFiltersNotIGlob,
+    IncludeAttributesFollowingFiltersRegex,
+    IncludeAttributesFollowingFiltersContainsAllTokens,
     IncludeAttributesFollowingFiltersUnionMember139,
     IncludeAttributesFollowingFiltersUnionMember140,
 ]
@@ -24291,7 +19416,7 @@ class IncludeAttributesFollowing(TypedDict, total=False):
     """
 
 
-class IncludeAttributesOwnsFiltersUnionMember0(TypedDict, total=False):
+class IncludeAttributesOwnsFiltersEq(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Eq"]]
@@ -24299,7 +19424,7 @@ class IncludeAttributesOwnsFiltersUnionMember0(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesOwnsFiltersUnionMember1(TypedDict, total=False):
+class IncludeAttributesOwnsFiltersNotEq(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["NotEq"]]
@@ -24307,7 +19432,7 @@ class IncludeAttributesOwnsFiltersUnionMember1(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesOwnsFiltersUnionMember2(TypedDict, total=False):
+class IncludeAttributesOwnsFiltersIn(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["In"]]
@@ -24315,7 +19440,7 @@ class IncludeAttributesOwnsFiltersUnionMember2(TypedDict, total=False):
     value: Required[SequenceNotStr[str]]
 
 
-class IncludeAttributesOwnsFiltersUnionMember3(TypedDict, total=False):
+class IncludeAttributesOwnsFiltersNotIn(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["NotIn"]]
@@ -24323,7 +19448,7 @@ class IncludeAttributesOwnsFiltersUnionMember3(TypedDict, total=False):
     value: Required[SequenceNotStr[str]]
 
 
-class IncludeAttributesOwnsFiltersUnionMember4(TypedDict, total=False):
+class IncludeAttributesOwnsFiltersLt(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Lt"]]
@@ -24331,7 +19456,7 @@ class IncludeAttributesOwnsFiltersUnionMember4(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesOwnsFiltersUnionMember5(TypedDict, total=False):
+class IncludeAttributesOwnsFiltersLte(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Lte"]]
@@ -24339,7 +19464,7 @@ class IncludeAttributesOwnsFiltersUnionMember5(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesOwnsFiltersUnionMember6(TypedDict, total=False):
+class IncludeAttributesOwnsFiltersGt(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Gt"]]
@@ -24347,7 +19472,7 @@ class IncludeAttributesOwnsFiltersUnionMember6(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesOwnsFiltersUnionMember7(TypedDict, total=False):
+class IncludeAttributesOwnsFiltersGte(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Gte"]]
@@ -24355,7 +19480,7 @@ class IncludeAttributesOwnsFiltersUnionMember7(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesOwnsFiltersUnionMember8(TypedDict, total=False):
+class IncludeAttributesOwnsFiltersGlob(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Glob"]]
@@ -24363,7 +19488,7 @@ class IncludeAttributesOwnsFiltersUnionMember8(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesOwnsFiltersUnionMember9(TypedDict, total=False):
+class IncludeAttributesOwnsFiltersNotGlob(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["NotGlob"]]
@@ -24371,7 +19496,7 @@ class IncludeAttributesOwnsFiltersUnionMember9(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesOwnsFiltersUnionMember10(TypedDict, total=False):
+class IncludeAttributesOwnsFiltersIGlob(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["IGlob"]]
@@ -24379,7 +19504,7 @@ class IncludeAttributesOwnsFiltersUnionMember10(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesOwnsFiltersUnionMember11(TypedDict, total=False):
+class IncludeAttributesOwnsFiltersNotIGlob(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["NotIGlob"]]
@@ -24387,7 +19512,7 @@ class IncludeAttributesOwnsFiltersUnionMember11(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesOwnsFiltersUnionMember12(TypedDict, total=False):
+class IncludeAttributesOwnsFiltersRegex(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Regex"]]
@@ -24395,1008 +19520,8 @@ class IncludeAttributesOwnsFiltersUnionMember12(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesOwnsFiltersUnionMember13(TypedDict, total=False):
+class IncludeAttributesOwnsFiltersContainsAllTokens(TypedDict, total=False):
     field: Required[Literal["login"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember14(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember15(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesOwnsFiltersUnionMember16(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesOwnsFiltersUnionMember17(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember18(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember19(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember20(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember21(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember22(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember23(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember24(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember25(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember26(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember27(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember28(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember29(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesOwnsFiltersUnionMember30(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesOwnsFiltersUnionMember31(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember32(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember33(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember34(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember35(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember36(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember37(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember38(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember39(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember40(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember41(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember42(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember43(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesOwnsFiltersUnionMember44(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesOwnsFiltersUnionMember45(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember46(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember47(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember48(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember49(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember50(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember51(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember52(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember53(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember54(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember55(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember56(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember57(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesOwnsFiltersUnionMember58(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesOwnsFiltersUnionMember59(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember60(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember61(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember62(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember63(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember64(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember65(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember66(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember67(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember68(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember69(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember70(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember71(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesOwnsFiltersUnionMember72(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesOwnsFiltersUnionMember73(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember74(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember75(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember76(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember77(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember78(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember79(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember80(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember81(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember82(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember83(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember84(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember85(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesOwnsFiltersUnionMember86(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesOwnsFiltersUnionMember87(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember88(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember89(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember90(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember91(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember92(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember93(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember94(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember95(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember96(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember97(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember98(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember99(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesOwnsFiltersUnionMember100(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesOwnsFiltersUnionMember101(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember102(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember103(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember104(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember105(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember106(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember107(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember108(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember109(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember110(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember111(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember112(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember113(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesOwnsFiltersUnionMember114(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesOwnsFiltersUnionMember115(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember116(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember117(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember118(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember119(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember120(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember121(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember122(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember123(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember124(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember125(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember126(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember127(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesOwnsFiltersUnionMember128(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesOwnsFiltersUnionMember129(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember130(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember131(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember132(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember133(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember134(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember135(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember136(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember137(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesOwnsFiltersUnionMember138(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
 
     op: Required[Literal["ContainsAllTokens"]]
 
@@ -29188,145 +23313,145 @@ class IncludeAttributesOwnsFiltersUnionMember140(TypedDict, total=False):
 
 
 IncludeAttributesOwnsFilters: TypeAlias = Union[
-    IncludeAttributesOwnsFiltersUnionMember0,
-    IncludeAttributesOwnsFiltersUnionMember1,
-    IncludeAttributesOwnsFiltersUnionMember2,
-    IncludeAttributesOwnsFiltersUnionMember3,
-    IncludeAttributesOwnsFiltersUnionMember4,
-    IncludeAttributesOwnsFiltersUnionMember5,
-    IncludeAttributesOwnsFiltersUnionMember6,
-    IncludeAttributesOwnsFiltersUnionMember7,
-    IncludeAttributesOwnsFiltersUnionMember8,
-    IncludeAttributesOwnsFiltersUnionMember9,
-    IncludeAttributesOwnsFiltersUnionMember10,
-    IncludeAttributesOwnsFiltersUnionMember11,
-    IncludeAttributesOwnsFiltersUnionMember12,
-    IncludeAttributesOwnsFiltersUnionMember13,
-    IncludeAttributesOwnsFiltersUnionMember14,
-    IncludeAttributesOwnsFiltersUnionMember15,
-    IncludeAttributesOwnsFiltersUnionMember16,
-    IncludeAttributesOwnsFiltersUnionMember17,
-    IncludeAttributesOwnsFiltersUnionMember18,
-    IncludeAttributesOwnsFiltersUnionMember19,
-    IncludeAttributesOwnsFiltersUnionMember20,
-    IncludeAttributesOwnsFiltersUnionMember21,
-    IncludeAttributesOwnsFiltersUnionMember22,
-    IncludeAttributesOwnsFiltersUnionMember23,
-    IncludeAttributesOwnsFiltersUnionMember24,
-    IncludeAttributesOwnsFiltersUnionMember25,
-    IncludeAttributesOwnsFiltersUnionMember26,
-    IncludeAttributesOwnsFiltersUnionMember27,
-    IncludeAttributesOwnsFiltersUnionMember28,
-    IncludeAttributesOwnsFiltersUnionMember29,
-    IncludeAttributesOwnsFiltersUnionMember30,
-    IncludeAttributesOwnsFiltersUnionMember31,
-    IncludeAttributesOwnsFiltersUnionMember32,
-    IncludeAttributesOwnsFiltersUnionMember33,
-    IncludeAttributesOwnsFiltersUnionMember34,
-    IncludeAttributesOwnsFiltersUnionMember35,
-    IncludeAttributesOwnsFiltersUnionMember36,
-    IncludeAttributesOwnsFiltersUnionMember37,
-    IncludeAttributesOwnsFiltersUnionMember38,
-    IncludeAttributesOwnsFiltersUnionMember39,
-    IncludeAttributesOwnsFiltersUnionMember40,
-    IncludeAttributesOwnsFiltersUnionMember41,
-    IncludeAttributesOwnsFiltersUnionMember42,
-    IncludeAttributesOwnsFiltersUnionMember43,
-    IncludeAttributesOwnsFiltersUnionMember44,
-    IncludeAttributesOwnsFiltersUnionMember45,
-    IncludeAttributesOwnsFiltersUnionMember46,
-    IncludeAttributesOwnsFiltersUnionMember47,
-    IncludeAttributesOwnsFiltersUnionMember48,
-    IncludeAttributesOwnsFiltersUnionMember49,
-    IncludeAttributesOwnsFiltersUnionMember50,
-    IncludeAttributesOwnsFiltersUnionMember51,
-    IncludeAttributesOwnsFiltersUnionMember52,
-    IncludeAttributesOwnsFiltersUnionMember53,
-    IncludeAttributesOwnsFiltersUnionMember54,
-    IncludeAttributesOwnsFiltersUnionMember55,
-    IncludeAttributesOwnsFiltersUnionMember56,
-    IncludeAttributesOwnsFiltersUnionMember57,
-    IncludeAttributesOwnsFiltersUnionMember58,
-    IncludeAttributesOwnsFiltersUnionMember59,
-    IncludeAttributesOwnsFiltersUnionMember60,
-    IncludeAttributesOwnsFiltersUnionMember61,
-    IncludeAttributesOwnsFiltersUnionMember62,
-    IncludeAttributesOwnsFiltersUnionMember63,
-    IncludeAttributesOwnsFiltersUnionMember64,
-    IncludeAttributesOwnsFiltersUnionMember65,
-    IncludeAttributesOwnsFiltersUnionMember66,
-    IncludeAttributesOwnsFiltersUnionMember67,
-    IncludeAttributesOwnsFiltersUnionMember68,
-    IncludeAttributesOwnsFiltersUnionMember69,
-    IncludeAttributesOwnsFiltersUnionMember70,
-    IncludeAttributesOwnsFiltersUnionMember71,
-    IncludeAttributesOwnsFiltersUnionMember72,
-    IncludeAttributesOwnsFiltersUnionMember73,
-    IncludeAttributesOwnsFiltersUnionMember74,
-    IncludeAttributesOwnsFiltersUnionMember75,
-    IncludeAttributesOwnsFiltersUnionMember76,
-    IncludeAttributesOwnsFiltersUnionMember77,
-    IncludeAttributesOwnsFiltersUnionMember78,
-    IncludeAttributesOwnsFiltersUnionMember79,
-    IncludeAttributesOwnsFiltersUnionMember80,
-    IncludeAttributesOwnsFiltersUnionMember81,
-    IncludeAttributesOwnsFiltersUnionMember82,
-    IncludeAttributesOwnsFiltersUnionMember83,
-    IncludeAttributesOwnsFiltersUnionMember84,
-    IncludeAttributesOwnsFiltersUnionMember85,
-    IncludeAttributesOwnsFiltersUnionMember86,
-    IncludeAttributesOwnsFiltersUnionMember87,
-    IncludeAttributesOwnsFiltersUnionMember88,
-    IncludeAttributesOwnsFiltersUnionMember89,
-    IncludeAttributesOwnsFiltersUnionMember90,
-    IncludeAttributesOwnsFiltersUnionMember91,
-    IncludeAttributesOwnsFiltersUnionMember92,
-    IncludeAttributesOwnsFiltersUnionMember93,
-    IncludeAttributesOwnsFiltersUnionMember94,
-    IncludeAttributesOwnsFiltersUnionMember95,
-    IncludeAttributesOwnsFiltersUnionMember96,
-    IncludeAttributesOwnsFiltersUnionMember97,
-    IncludeAttributesOwnsFiltersUnionMember98,
-    IncludeAttributesOwnsFiltersUnionMember99,
-    IncludeAttributesOwnsFiltersUnionMember100,
-    IncludeAttributesOwnsFiltersUnionMember101,
-    IncludeAttributesOwnsFiltersUnionMember102,
-    IncludeAttributesOwnsFiltersUnionMember103,
-    IncludeAttributesOwnsFiltersUnionMember104,
-    IncludeAttributesOwnsFiltersUnionMember105,
-    IncludeAttributesOwnsFiltersUnionMember106,
-    IncludeAttributesOwnsFiltersUnionMember107,
-    IncludeAttributesOwnsFiltersUnionMember108,
-    IncludeAttributesOwnsFiltersUnionMember109,
-    IncludeAttributesOwnsFiltersUnionMember110,
-    IncludeAttributesOwnsFiltersUnionMember111,
-    IncludeAttributesOwnsFiltersUnionMember112,
-    IncludeAttributesOwnsFiltersUnionMember113,
-    IncludeAttributesOwnsFiltersUnionMember114,
-    IncludeAttributesOwnsFiltersUnionMember115,
-    IncludeAttributesOwnsFiltersUnionMember116,
-    IncludeAttributesOwnsFiltersUnionMember117,
-    IncludeAttributesOwnsFiltersUnionMember118,
-    IncludeAttributesOwnsFiltersUnionMember119,
-    IncludeAttributesOwnsFiltersUnionMember120,
-    IncludeAttributesOwnsFiltersUnionMember121,
-    IncludeAttributesOwnsFiltersUnionMember122,
-    IncludeAttributesOwnsFiltersUnionMember123,
-    IncludeAttributesOwnsFiltersUnionMember124,
-    IncludeAttributesOwnsFiltersUnionMember125,
-    IncludeAttributesOwnsFiltersUnionMember126,
-    IncludeAttributesOwnsFiltersUnionMember127,
-    IncludeAttributesOwnsFiltersUnionMember128,
-    IncludeAttributesOwnsFiltersUnionMember129,
-    IncludeAttributesOwnsFiltersUnionMember130,
-    IncludeAttributesOwnsFiltersUnionMember131,
-    IncludeAttributesOwnsFiltersUnionMember132,
-    IncludeAttributesOwnsFiltersUnionMember133,
-    IncludeAttributesOwnsFiltersUnionMember134,
-    IncludeAttributesOwnsFiltersUnionMember135,
-    IncludeAttributesOwnsFiltersUnionMember136,
-    IncludeAttributesOwnsFiltersUnionMember137,
-    IncludeAttributesOwnsFiltersUnionMember138,
+    IncludeAttributesOwnsFiltersEq,
+    IncludeAttributesOwnsFiltersNotEq,
+    IncludeAttributesOwnsFiltersIn,
+    IncludeAttributesOwnsFiltersNotIn,
+    IncludeAttributesOwnsFiltersLt,
+    IncludeAttributesOwnsFiltersLte,
+    IncludeAttributesOwnsFiltersGt,
+    IncludeAttributesOwnsFiltersGte,
+    IncludeAttributesOwnsFiltersGlob,
+    IncludeAttributesOwnsFiltersNotGlob,
+    IncludeAttributesOwnsFiltersIGlob,
+    IncludeAttributesOwnsFiltersNotIGlob,
+    IncludeAttributesOwnsFiltersRegex,
+    IncludeAttributesOwnsFiltersEq,
+    IncludeAttributesOwnsFiltersNotEq,
+    IncludeAttributesOwnsFiltersIn,
+    IncludeAttributesOwnsFiltersNotIn,
+    IncludeAttributesOwnsFiltersLt,
+    IncludeAttributesOwnsFiltersLte,
+    IncludeAttributesOwnsFiltersGt,
+    IncludeAttributesOwnsFiltersGte,
+    IncludeAttributesOwnsFiltersGlob,
+    IncludeAttributesOwnsFiltersNotGlob,
+    IncludeAttributesOwnsFiltersIGlob,
+    IncludeAttributesOwnsFiltersNotIGlob,
+    IncludeAttributesOwnsFiltersRegex,
+    IncludeAttributesOwnsFiltersContainsAllTokens,
+    IncludeAttributesOwnsFiltersEq,
+    IncludeAttributesOwnsFiltersNotEq,
+    IncludeAttributesOwnsFiltersIn,
+    IncludeAttributesOwnsFiltersNotIn,
+    IncludeAttributesOwnsFiltersLt,
+    IncludeAttributesOwnsFiltersLte,
+    IncludeAttributesOwnsFiltersGt,
+    IncludeAttributesOwnsFiltersGte,
+    IncludeAttributesOwnsFiltersGlob,
+    IncludeAttributesOwnsFiltersNotGlob,
+    IncludeAttributesOwnsFiltersIGlob,
+    IncludeAttributesOwnsFiltersNotIGlob,
+    IncludeAttributesOwnsFiltersRegex,
+    IncludeAttributesOwnsFiltersContainsAllTokens,
+    IncludeAttributesOwnsFiltersEq,
+    IncludeAttributesOwnsFiltersNotEq,
+    IncludeAttributesOwnsFiltersIn,
+    IncludeAttributesOwnsFiltersNotIn,
+    IncludeAttributesOwnsFiltersLt,
+    IncludeAttributesOwnsFiltersLte,
+    IncludeAttributesOwnsFiltersGt,
+    IncludeAttributesOwnsFiltersGte,
+    IncludeAttributesOwnsFiltersGlob,
+    IncludeAttributesOwnsFiltersNotGlob,
+    IncludeAttributesOwnsFiltersIGlob,
+    IncludeAttributesOwnsFiltersNotIGlob,
+    IncludeAttributesOwnsFiltersRegex,
+    IncludeAttributesOwnsFiltersContainsAllTokens,
+    IncludeAttributesOwnsFiltersEq,
+    IncludeAttributesOwnsFiltersNotEq,
+    IncludeAttributesOwnsFiltersIn,
+    IncludeAttributesOwnsFiltersNotIn,
+    IncludeAttributesOwnsFiltersLt,
+    IncludeAttributesOwnsFiltersLte,
+    IncludeAttributesOwnsFiltersGt,
+    IncludeAttributesOwnsFiltersGte,
+    IncludeAttributesOwnsFiltersGlob,
+    IncludeAttributesOwnsFiltersNotGlob,
+    IncludeAttributesOwnsFiltersIGlob,
+    IncludeAttributesOwnsFiltersNotIGlob,
+    IncludeAttributesOwnsFiltersRegex,
+    IncludeAttributesOwnsFiltersContainsAllTokens,
+    IncludeAttributesOwnsFiltersEq,
+    IncludeAttributesOwnsFiltersNotEq,
+    IncludeAttributesOwnsFiltersIn,
+    IncludeAttributesOwnsFiltersNotIn,
+    IncludeAttributesOwnsFiltersLt,
+    IncludeAttributesOwnsFiltersLte,
+    IncludeAttributesOwnsFiltersGt,
+    IncludeAttributesOwnsFiltersGte,
+    IncludeAttributesOwnsFiltersGlob,
+    IncludeAttributesOwnsFiltersNotGlob,
+    IncludeAttributesOwnsFiltersIGlob,
+    IncludeAttributesOwnsFiltersNotIGlob,
+    IncludeAttributesOwnsFiltersRegex,
+    IncludeAttributesOwnsFiltersContainsAllTokens,
+    IncludeAttributesOwnsFiltersEq,
+    IncludeAttributesOwnsFiltersNotEq,
+    IncludeAttributesOwnsFiltersIn,
+    IncludeAttributesOwnsFiltersNotIn,
+    IncludeAttributesOwnsFiltersLt,
+    IncludeAttributesOwnsFiltersLte,
+    IncludeAttributesOwnsFiltersGt,
+    IncludeAttributesOwnsFiltersGte,
+    IncludeAttributesOwnsFiltersGlob,
+    IncludeAttributesOwnsFiltersNotGlob,
+    IncludeAttributesOwnsFiltersIGlob,
+    IncludeAttributesOwnsFiltersNotIGlob,
+    IncludeAttributesOwnsFiltersRegex,
+    IncludeAttributesOwnsFiltersContainsAllTokens,
+    IncludeAttributesOwnsFiltersEq,
+    IncludeAttributesOwnsFiltersNotEq,
+    IncludeAttributesOwnsFiltersIn,
+    IncludeAttributesOwnsFiltersNotIn,
+    IncludeAttributesOwnsFiltersLt,
+    IncludeAttributesOwnsFiltersLte,
+    IncludeAttributesOwnsFiltersGt,
+    IncludeAttributesOwnsFiltersGte,
+    IncludeAttributesOwnsFiltersGlob,
+    IncludeAttributesOwnsFiltersNotGlob,
+    IncludeAttributesOwnsFiltersIGlob,
+    IncludeAttributesOwnsFiltersNotIGlob,
+    IncludeAttributesOwnsFiltersRegex,
+    IncludeAttributesOwnsFiltersContainsAllTokens,
+    IncludeAttributesOwnsFiltersEq,
+    IncludeAttributesOwnsFiltersNotEq,
+    IncludeAttributesOwnsFiltersIn,
+    IncludeAttributesOwnsFiltersNotIn,
+    IncludeAttributesOwnsFiltersLt,
+    IncludeAttributesOwnsFiltersLte,
+    IncludeAttributesOwnsFiltersGt,
+    IncludeAttributesOwnsFiltersGte,
+    IncludeAttributesOwnsFiltersGlob,
+    IncludeAttributesOwnsFiltersNotGlob,
+    IncludeAttributesOwnsFiltersIGlob,
+    IncludeAttributesOwnsFiltersNotIGlob,
+    IncludeAttributesOwnsFiltersRegex,
+    IncludeAttributesOwnsFiltersContainsAllTokens,
+    IncludeAttributesOwnsFiltersEq,
+    IncludeAttributesOwnsFiltersNotEq,
+    IncludeAttributesOwnsFiltersIn,
+    IncludeAttributesOwnsFiltersNotIn,
+    IncludeAttributesOwnsFiltersLt,
+    IncludeAttributesOwnsFiltersLte,
+    IncludeAttributesOwnsFiltersGt,
+    IncludeAttributesOwnsFiltersGte,
+    IncludeAttributesOwnsFiltersGlob,
+    IncludeAttributesOwnsFiltersNotGlob,
+    IncludeAttributesOwnsFiltersIGlob,
+    IncludeAttributesOwnsFiltersNotIGlob,
+    IncludeAttributesOwnsFiltersRegex,
+    IncludeAttributesOwnsFiltersContainsAllTokens,
     IncludeAttributesOwnsFiltersUnionMember139,
     IncludeAttributesOwnsFiltersUnionMember140,
 ]
@@ -29349,7 +23474,7 @@ class IncludeAttributesOwns(TypedDict, total=False):
     """
 
 
-class IncludeAttributesStarrersFiltersUnionMember0(TypedDict, total=False):
+class IncludeAttributesStarrersFiltersEq(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Eq"]]
@@ -29357,7 +23482,7 @@ class IncludeAttributesStarrersFiltersUnionMember0(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesStarrersFiltersUnionMember1(TypedDict, total=False):
+class IncludeAttributesStarrersFiltersNotEq(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["NotEq"]]
@@ -29365,7 +23490,7 @@ class IncludeAttributesStarrersFiltersUnionMember1(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesStarrersFiltersUnionMember2(TypedDict, total=False):
+class IncludeAttributesStarrersFiltersIn(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["In"]]
@@ -29373,7 +23498,7 @@ class IncludeAttributesStarrersFiltersUnionMember2(TypedDict, total=False):
     value: Required[SequenceNotStr[str]]
 
 
-class IncludeAttributesStarrersFiltersUnionMember3(TypedDict, total=False):
+class IncludeAttributesStarrersFiltersNotIn(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["NotIn"]]
@@ -29381,7 +23506,7 @@ class IncludeAttributesStarrersFiltersUnionMember3(TypedDict, total=False):
     value: Required[SequenceNotStr[str]]
 
 
-class IncludeAttributesStarrersFiltersUnionMember4(TypedDict, total=False):
+class IncludeAttributesStarrersFiltersLt(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Lt"]]
@@ -29389,7 +23514,7 @@ class IncludeAttributesStarrersFiltersUnionMember4(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesStarrersFiltersUnionMember5(TypedDict, total=False):
+class IncludeAttributesStarrersFiltersLte(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Lte"]]
@@ -29397,7 +23522,7 @@ class IncludeAttributesStarrersFiltersUnionMember5(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesStarrersFiltersUnionMember6(TypedDict, total=False):
+class IncludeAttributesStarrersFiltersGt(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Gt"]]
@@ -29405,7 +23530,7 @@ class IncludeAttributesStarrersFiltersUnionMember6(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesStarrersFiltersUnionMember7(TypedDict, total=False):
+class IncludeAttributesStarrersFiltersGte(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Gte"]]
@@ -29413,7 +23538,7 @@ class IncludeAttributesStarrersFiltersUnionMember7(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesStarrersFiltersUnionMember8(TypedDict, total=False):
+class IncludeAttributesStarrersFiltersGlob(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Glob"]]
@@ -29421,7 +23546,7 @@ class IncludeAttributesStarrersFiltersUnionMember8(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesStarrersFiltersUnionMember9(TypedDict, total=False):
+class IncludeAttributesStarrersFiltersNotGlob(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["NotGlob"]]
@@ -29429,7 +23554,7 @@ class IncludeAttributesStarrersFiltersUnionMember9(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesStarrersFiltersUnionMember10(TypedDict, total=False):
+class IncludeAttributesStarrersFiltersIGlob(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["IGlob"]]
@@ -29437,7 +23562,7 @@ class IncludeAttributesStarrersFiltersUnionMember10(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesStarrersFiltersUnionMember11(TypedDict, total=False):
+class IncludeAttributesStarrersFiltersNotIGlob(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["NotIGlob"]]
@@ -29445,7 +23570,7 @@ class IncludeAttributesStarrersFiltersUnionMember11(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesStarrersFiltersUnionMember12(TypedDict, total=False):
+class IncludeAttributesStarrersFiltersRegex(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Regex"]]
@@ -29453,1008 +23578,8 @@ class IncludeAttributesStarrersFiltersUnionMember12(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesStarrersFiltersUnionMember13(TypedDict, total=False):
+class IncludeAttributesStarrersFiltersContainsAllTokens(TypedDict, total=False):
     field: Required[Literal["login"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember14(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember15(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesStarrersFiltersUnionMember16(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesStarrersFiltersUnionMember17(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember18(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember19(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember20(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember21(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember22(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember23(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember24(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember25(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember26(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember27(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember28(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember29(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesStarrersFiltersUnionMember30(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesStarrersFiltersUnionMember31(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember32(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember33(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember34(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember35(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember36(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember37(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember38(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember39(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember40(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember41(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember42(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember43(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesStarrersFiltersUnionMember44(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesStarrersFiltersUnionMember45(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember46(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember47(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember48(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember49(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember50(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember51(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember52(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember53(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember54(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember55(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember56(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember57(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesStarrersFiltersUnionMember58(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesStarrersFiltersUnionMember59(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember60(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember61(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember62(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember63(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember64(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember65(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember66(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember67(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember68(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember69(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember70(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember71(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesStarrersFiltersUnionMember72(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesStarrersFiltersUnionMember73(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember74(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember75(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember76(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember77(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember78(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember79(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember80(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember81(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember82(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember83(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember84(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember85(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesStarrersFiltersUnionMember86(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesStarrersFiltersUnionMember87(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember88(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember89(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember90(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember91(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember92(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember93(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember94(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember95(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember96(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember97(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember98(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember99(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesStarrersFiltersUnionMember100(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesStarrersFiltersUnionMember101(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember102(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember103(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember104(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember105(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember106(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember107(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember108(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember109(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember110(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember111(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember112(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember113(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesStarrersFiltersUnionMember114(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesStarrersFiltersUnionMember115(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember116(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember117(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember118(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember119(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember120(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember121(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember122(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember123(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember124(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember125(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember126(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember127(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesStarrersFiltersUnionMember128(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesStarrersFiltersUnionMember129(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember130(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember131(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember132(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember133(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember134(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember135(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember136(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember137(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember138(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
 
     op: Required[Literal["ContainsAllTokens"]]
 
@@ -34246,145 +27371,145 @@ class IncludeAttributesStarrersFiltersUnionMember140(TypedDict, total=False):
 
 
 IncludeAttributesStarrersFilters: TypeAlias = Union[
-    IncludeAttributesStarrersFiltersUnionMember0,
-    IncludeAttributesStarrersFiltersUnionMember1,
-    IncludeAttributesStarrersFiltersUnionMember2,
-    IncludeAttributesStarrersFiltersUnionMember3,
-    IncludeAttributesStarrersFiltersUnionMember4,
-    IncludeAttributesStarrersFiltersUnionMember5,
-    IncludeAttributesStarrersFiltersUnionMember6,
-    IncludeAttributesStarrersFiltersUnionMember7,
-    IncludeAttributesStarrersFiltersUnionMember8,
-    IncludeAttributesStarrersFiltersUnionMember9,
-    IncludeAttributesStarrersFiltersUnionMember10,
-    IncludeAttributesStarrersFiltersUnionMember11,
-    IncludeAttributesStarrersFiltersUnionMember12,
-    IncludeAttributesStarrersFiltersUnionMember13,
-    IncludeAttributesStarrersFiltersUnionMember14,
-    IncludeAttributesStarrersFiltersUnionMember15,
-    IncludeAttributesStarrersFiltersUnionMember16,
-    IncludeAttributesStarrersFiltersUnionMember17,
-    IncludeAttributesStarrersFiltersUnionMember18,
-    IncludeAttributesStarrersFiltersUnionMember19,
-    IncludeAttributesStarrersFiltersUnionMember20,
-    IncludeAttributesStarrersFiltersUnionMember21,
-    IncludeAttributesStarrersFiltersUnionMember22,
-    IncludeAttributesStarrersFiltersUnionMember23,
-    IncludeAttributesStarrersFiltersUnionMember24,
-    IncludeAttributesStarrersFiltersUnionMember25,
-    IncludeAttributesStarrersFiltersUnionMember26,
-    IncludeAttributesStarrersFiltersUnionMember27,
-    IncludeAttributesStarrersFiltersUnionMember28,
-    IncludeAttributesStarrersFiltersUnionMember29,
-    IncludeAttributesStarrersFiltersUnionMember30,
-    IncludeAttributesStarrersFiltersUnionMember31,
-    IncludeAttributesStarrersFiltersUnionMember32,
-    IncludeAttributesStarrersFiltersUnionMember33,
-    IncludeAttributesStarrersFiltersUnionMember34,
-    IncludeAttributesStarrersFiltersUnionMember35,
-    IncludeAttributesStarrersFiltersUnionMember36,
-    IncludeAttributesStarrersFiltersUnionMember37,
-    IncludeAttributesStarrersFiltersUnionMember38,
-    IncludeAttributesStarrersFiltersUnionMember39,
-    IncludeAttributesStarrersFiltersUnionMember40,
-    IncludeAttributesStarrersFiltersUnionMember41,
-    IncludeAttributesStarrersFiltersUnionMember42,
-    IncludeAttributesStarrersFiltersUnionMember43,
-    IncludeAttributesStarrersFiltersUnionMember44,
-    IncludeAttributesStarrersFiltersUnionMember45,
-    IncludeAttributesStarrersFiltersUnionMember46,
-    IncludeAttributesStarrersFiltersUnionMember47,
-    IncludeAttributesStarrersFiltersUnionMember48,
-    IncludeAttributesStarrersFiltersUnionMember49,
-    IncludeAttributesStarrersFiltersUnionMember50,
-    IncludeAttributesStarrersFiltersUnionMember51,
-    IncludeAttributesStarrersFiltersUnionMember52,
-    IncludeAttributesStarrersFiltersUnionMember53,
-    IncludeAttributesStarrersFiltersUnionMember54,
-    IncludeAttributesStarrersFiltersUnionMember55,
-    IncludeAttributesStarrersFiltersUnionMember56,
-    IncludeAttributesStarrersFiltersUnionMember57,
-    IncludeAttributesStarrersFiltersUnionMember58,
-    IncludeAttributesStarrersFiltersUnionMember59,
-    IncludeAttributesStarrersFiltersUnionMember60,
-    IncludeAttributesStarrersFiltersUnionMember61,
-    IncludeAttributesStarrersFiltersUnionMember62,
-    IncludeAttributesStarrersFiltersUnionMember63,
-    IncludeAttributesStarrersFiltersUnionMember64,
-    IncludeAttributesStarrersFiltersUnionMember65,
-    IncludeAttributesStarrersFiltersUnionMember66,
-    IncludeAttributesStarrersFiltersUnionMember67,
-    IncludeAttributesStarrersFiltersUnionMember68,
-    IncludeAttributesStarrersFiltersUnionMember69,
-    IncludeAttributesStarrersFiltersUnionMember70,
-    IncludeAttributesStarrersFiltersUnionMember71,
-    IncludeAttributesStarrersFiltersUnionMember72,
-    IncludeAttributesStarrersFiltersUnionMember73,
-    IncludeAttributesStarrersFiltersUnionMember74,
-    IncludeAttributesStarrersFiltersUnionMember75,
-    IncludeAttributesStarrersFiltersUnionMember76,
-    IncludeAttributesStarrersFiltersUnionMember77,
-    IncludeAttributesStarrersFiltersUnionMember78,
-    IncludeAttributesStarrersFiltersUnionMember79,
-    IncludeAttributesStarrersFiltersUnionMember80,
-    IncludeAttributesStarrersFiltersUnionMember81,
-    IncludeAttributesStarrersFiltersUnionMember82,
-    IncludeAttributesStarrersFiltersUnionMember83,
-    IncludeAttributesStarrersFiltersUnionMember84,
-    IncludeAttributesStarrersFiltersUnionMember85,
-    IncludeAttributesStarrersFiltersUnionMember86,
-    IncludeAttributesStarrersFiltersUnionMember87,
-    IncludeAttributesStarrersFiltersUnionMember88,
-    IncludeAttributesStarrersFiltersUnionMember89,
-    IncludeAttributesStarrersFiltersUnionMember90,
-    IncludeAttributesStarrersFiltersUnionMember91,
-    IncludeAttributesStarrersFiltersUnionMember92,
-    IncludeAttributesStarrersFiltersUnionMember93,
-    IncludeAttributesStarrersFiltersUnionMember94,
-    IncludeAttributesStarrersFiltersUnionMember95,
-    IncludeAttributesStarrersFiltersUnionMember96,
-    IncludeAttributesStarrersFiltersUnionMember97,
-    IncludeAttributesStarrersFiltersUnionMember98,
-    IncludeAttributesStarrersFiltersUnionMember99,
-    IncludeAttributesStarrersFiltersUnionMember100,
-    IncludeAttributesStarrersFiltersUnionMember101,
-    IncludeAttributesStarrersFiltersUnionMember102,
-    IncludeAttributesStarrersFiltersUnionMember103,
-    IncludeAttributesStarrersFiltersUnionMember104,
-    IncludeAttributesStarrersFiltersUnionMember105,
-    IncludeAttributesStarrersFiltersUnionMember106,
-    IncludeAttributesStarrersFiltersUnionMember107,
-    IncludeAttributesStarrersFiltersUnionMember108,
-    IncludeAttributesStarrersFiltersUnionMember109,
-    IncludeAttributesStarrersFiltersUnionMember110,
-    IncludeAttributesStarrersFiltersUnionMember111,
-    IncludeAttributesStarrersFiltersUnionMember112,
-    IncludeAttributesStarrersFiltersUnionMember113,
-    IncludeAttributesStarrersFiltersUnionMember114,
-    IncludeAttributesStarrersFiltersUnionMember115,
-    IncludeAttributesStarrersFiltersUnionMember116,
-    IncludeAttributesStarrersFiltersUnionMember117,
-    IncludeAttributesStarrersFiltersUnionMember118,
-    IncludeAttributesStarrersFiltersUnionMember119,
-    IncludeAttributesStarrersFiltersUnionMember120,
-    IncludeAttributesStarrersFiltersUnionMember121,
-    IncludeAttributesStarrersFiltersUnionMember122,
-    IncludeAttributesStarrersFiltersUnionMember123,
-    IncludeAttributesStarrersFiltersUnionMember124,
-    IncludeAttributesStarrersFiltersUnionMember125,
-    IncludeAttributesStarrersFiltersUnionMember126,
-    IncludeAttributesStarrersFiltersUnionMember127,
-    IncludeAttributesStarrersFiltersUnionMember128,
-    IncludeAttributesStarrersFiltersUnionMember129,
-    IncludeAttributesStarrersFiltersUnionMember130,
-    IncludeAttributesStarrersFiltersUnionMember131,
-    IncludeAttributesStarrersFiltersUnionMember132,
-    IncludeAttributesStarrersFiltersUnionMember133,
-    IncludeAttributesStarrersFiltersUnionMember134,
-    IncludeAttributesStarrersFiltersUnionMember135,
-    IncludeAttributesStarrersFiltersUnionMember136,
-    IncludeAttributesStarrersFiltersUnionMember137,
-    IncludeAttributesStarrersFiltersUnionMember138,
+    IncludeAttributesStarrersFiltersEq,
+    IncludeAttributesStarrersFiltersNotEq,
+    IncludeAttributesStarrersFiltersIn,
+    IncludeAttributesStarrersFiltersNotIn,
+    IncludeAttributesStarrersFiltersLt,
+    IncludeAttributesStarrersFiltersLte,
+    IncludeAttributesStarrersFiltersGt,
+    IncludeAttributesStarrersFiltersGte,
+    IncludeAttributesStarrersFiltersGlob,
+    IncludeAttributesStarrersFiltersNotGlob,
+    IncludeAttributesStarrersFiltersIGlob,
+    IncludeAttributesStarrersFiltersNotIGlob,
+    IncludeAttributesStarrersFiltersRegex,
+    IncludeAttributesStarrersFiltersEq,
+    IncludeAttributesStarrersFiltersNotEq,
+    IncludeAttributesStarrersFiltersIn,
+    IncludeAttributesStarrersFiltersNotIn,
+    IncludeAttributesStarrersFiltersLt,
+    IncludeAttributesStarrersFiltersLte,
+    IncludeAttributesStarrersFiltersGt,
+    IncludeAttributesStarrersFiltersGte,
+    IncludeAttributesStarrersFiltersGlob,
+    IncludeAttributesStarrersFiltersNotGlob,
+    IncludeAttributesStarrersFiltersIGlob,
+    IncludeAttributesStarrersFiltersNotIGlob,
+    IncludeAttributesStarrersFiltersRegex,
+    IncludeAttributesStarrersFiltersContainsAllTokens,
+    IncludeAttributesStarrersFiltersEq,
+    IncludeAttributesStarrersFiltersNotEq,
+    IncludeAttributesStarrersFiltersIn,
+    IncludeAttributesStarrersFiltersNotIn,
+    IncludeAttributesStarrersFiltersLt,
+    IncludeAttributesStarrersFiltersLte,
+    IncludeAttributesStarrersFiltersGt,
+    IncludeAttributesStarrersFiltersGte,
+    IncludeAttributesStarrersFiltersGlob,
+    IncludeAttributesStarrersFiltersNotGlob,
+    IncludeAttributesStarrersFiltersIGlob,
+    IncludeAttributesStarrersFiltersNotIGlob,
+    IncludeAttributesStarrersFiltersRegex,
+    IncludeAttributesStarrersFiltersContainsAllTokens,
+    IncludeAttributesStarrersFiltersEq,
+    IncludeAttributesStarrersFiltersNotEq,
+    IncludeAttributesStarrersFiltersIn,
+    IncludeAttributesStarrersFiltersNotIn,
+    IncludeAttributesStarrersFiltersLt,
+    IncludeAttributesStarrersFiltersLte,
+    IncludeAttributesStarrersFiltersGt,
+    IncludeAttributesStarrersFiltersGte,
+    IncludeAttributesStarrersFiltersGlob,
+    IncludeAttributesStarrersFiltersNotGlob,
+    IncludeAttributesStarrersFiltersIGlob,
+    IncludeAttributesStarrersFiltersNotIGlob,
+    IncludeAttributesStarrersFiltersRegex,
+    IncludeAttributesStarrersFiltersContainsAllTokens,
+    IncludeAttributesStarrersFiltersEq,
+    IncludeAttributesStarrersFiltersNotEq,
+    IncludeAttributesStarrersFiltersIn,
+    IncludeAttributesStarrersFiltersNotIn,
+    IncludeAttributesStarrersFiltersLt,
+    IncludeAttributesStarrersFiltersLte,
+    IncludeAttributesStarrersFiltersGt,
+    IncludeAttributesStarrersFiltersGte,
+    IncludeAttributesStarrersFiltersGlob,
+    IncludeAttributesStarrersFiltersNotGlob,
+    IncludeAttributesStarrersFiltersIGlob,
+    IncludeAttributesStarrersFiltersNotIGlob,
+    IncludeAttributesStarrersFiltersRegex,
+    IncludeAttributesStarrersFiltersContainsAllTokens,
+    IncludeAttributesStarrersFiltersEq,
+    IncludeAttributesStarrersFiltersNotEq,
+    IncludeAttributesStarrersFiltersIn,
+    IncludeAttributesStarrersFiltersNotIn,
+    IncludeAttributesStarrersFiltersLt,
+    IncludeAttributesStarrersFiltersLte,
+    IncludeAttributesStarrersFiltersGt,
+    IncludeAttributesStarrersFiltersGte,
+    IncludeAttributesStarrersFiltersGlob,
+    IncludeAttributesStarrersFiltersNotGlob,
+    IncludeAttributesStarrersFiltersIGlob,
+    IncludeAttributesStarrersFiltersNotIGlob,
+    IncludeAttributesStarrersFiltersRegex,
+    IncludeAttributesStarrersFiltersContainsAllTokens,
+    IncludeAttributesStarrersFiltersEq,
+    IncludeAttributesStarrersFiltersNotEq,
+    IncludeAttributesStarrersFiltersIn,
+    IncludeAttributesStarrersFiltersNotIn,
+    IncludeAttributesStarrersFiltersLt,
+    IncludeAttributesStarrersFiltersLte,
+    IncludeAttributesStarrersFiltersGt,
+    IncludeAttributesStarrersFiltersGte,
+    IncludeAttributesStarrersFiltersGlob,
+    IncludeAttributesStarrersFiltersNotGlob,
+    IncludeAttributesStarrersFiltersIGlob,
+    IncludeAttributesStarrersFiltersNotIGlob,
+    IncludeAttributesStarrersFiltersRegex,
+    IncludeAttributesStarrersFiltersContainsAllTokens,
+    IncludeAttributesStarrersFiltersEq,
+    IncludeAttributesStarrersFiltersNotEq,
+    IncludeAttributesStarrersFiltersIn,
+    IncludeAttributesStarrersFiltersNotIn,
+    IncludeAttributesStarrersFiltersLt,
+    IncludeAttributesStarrersFiltersLte,
+    IncludeAttributesStarrersFiltersGt,
+    IncludeAttributesStarrersFiltersGte,
+    IncludeAttributesStarrersFiltersGlob,
+    IncludeAttributesStarrersFiltersNotGlob,
+    IncludeAttributesStarrersFiltersIGlob,
+    IncludeAttributesStarrersFiltersNotIGlob,
+    IncludeAttributesStarrersFiltersRegex,
+    IncludeAttributesStarrersFiltersContainsAllTokens,
+    IncludeAttributesStarrersFiltersEq,
+    IncludeAttributesStarrersFiltersNotEq,
+    IncludeAttributesStarrersFiltersIn,
+    IncludeAttributesStarrersFiltersNotIn,
+    IncludeAttributesStarrersFiltersLt,
+    IncludeAttributesStarrersFiltersLte,
+    IncludeAttributesStarrersFiltersGt,
+    IncludeAttributesStarrersFiltersGte,
+    IncludeAttributesStarrersFiltersGlob,
+    IncludeAttributesStarrersFiltersNotGlob,
+    IncludeAttributesStarrersFiltersIGlob,
+    IncludeAttributesStarrersFiltersNotIGlob,
+    IncludeAttributesStarrersFiltersRegex,
+    IncludeAttributesStarrersFiltersContainsAllTokens,
+    IncludeAttributesStarrersFiltersEq,
+    IncludeAttributesStarrersFiltersNotEq,
+    IncludeAttributesStarrersFiltersIn,
+    IncludeAttributesStarrersFiltersNotIn,
+    IncludeAttributesStarrersFiltersLt,
+    IncludeAttributesStarrersFiltersLte,
+    IncludeAttributesStarrersFiltersGt,
+    IncludeAttributesStarrersFiltersGte,
+    IncludeAttributesStarrersFiltersGlob,
+    IncludeAttributesStarrersFiltersNotGlob,
+    IncludeAttributesStarrersFiltersIGlob,
+    IncludeAttributesStarrersFiltersNotIGlob,
+    IncludeAttributesStarrersFiltersRegex,
+    IncludeAttributesStarrersFiltersContainsAllTokens,
     IncludeAttributesStarrersFiltersUnionMember139,
     IncludeAttributesStarrersFiltersUnionMember140,
 ]
@@ -34407,7 +27532,7 @@ class IncludeAttributesStarrers(TypedDict, total=False):
     """
 
 
-class IncludeAttributesStarsFiltersUnionMember0(TypedDict, total=False):
+class IncludeAttributesStarsFiltersEq(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Eq"]]
@@ -34415,7 +27540,7 @@ class IncludeAttributesStarsFiltersUnionMember0(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesStarsFiltersUnionMember1(TypedDict, total=False):
+class IncludeAttributesStarsFiltersNotEq(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["NotEq"]]
@@ -34423,7 +27548,7 @@ class IncludeAttributesStarsFiltersUnionMember1(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesStarsFiltersUnionMember2(TypedDict, total=False):
+class IncludeAttributesStarsFiltersIn(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["In"]]
@@ -34431,7 +27556,7 @@ class IncludeAttributesStarsFiltersUnionMember2(TypedDict, total=False):
     value: Required[SequenceNotStr[str]]
 
 
-class IncludeAttributesStarsFiltersUnionMember3(TypedDict, total=False):
+class IncludeAttributesStarsFiltersNotIn(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["NotIn"]]
@@ -34439,7 +27564,7 @@ class IncludeAttributesStarsFiltersUnionMember3(TypedDict, total=False):
     value: Required[SequenceNotStr[str]]
 
 
-class IncludeAttributesStarsFiltersUnionMember4(TypedDict, total=False):
+class IncludeAttributesStarsFiltersLt(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Lt"]]
@@ -34447,7 +27572,7 @@ class IncludeAttributesStarsFiltersUnionMember4(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesStarsFiltersUnionMember5(TypedDict, total=False):
+class IncludeAttributesStarsFiltersLte(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Lte"]]
@@ -34455,7 +27580,7 @@ class IncludeAttributesStarsFiltersUnionMember5(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesStarsFiltersUnionMember6(TypedDict, total=False):
+class IncludeAttributesStarsFiltersGt(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Gt"]]
@@ -34463,7 +27588,7 @@ class IncludeAttributesStarsFiltersUnionMember6(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesStarsFiltersUnionMember7(TypedDict, total=False):
+class IncludeAttributesStarsFiltersGte(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Gte"]]
@@ -34471,7 +27596,7 @@ class IncludeAttributesStarsFiltersUnionMember7(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesStarsFiltersUnionMember8(TypedDict, total=False):
+class IncludeAttributesStarsFiltersGlob(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Glob"]]
@@ -34479,7 +27604,7 @@ class IncludeAttributesStarsFiltersUnionMember8(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesStarsFiltersUnionMember9(TypedDict, total=False):
+class IncludeAttributesStarsFiltersNotGlob(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["NotGlob"]]
@@ -34487,7 +27612,7 @@ class IncludeAttributesStarsFiltersUnionMember9(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesStarsFiltersUnionMember10(TypedDict, total=False):
+class IncludeAttributesStarsFiltersIGlob(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["IGlob"]]
@@ -34495,7 +27620,7 @@ class IncludeAttributesStarsFiltersUnionMember10(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesStarsFiltersUnionMember11(TypedDict, total=False):
+class IncludeAttributesStarsFiltersNotIGlob(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["NotIGlob"]]
@@ -34503,7 +27628,7 @@ class IncludeAttributesStarsFiltersUnionMember11(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesStarsFiltersUnionMember12(TypedDict, total=False):
+class IncludeAttributesStarsFiltersRegex(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Regex"]]
@@ -34511,1008 +27636,8 @@ class IncludeAttributesStarsFiltersUnionMember12(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesStarsFiltersUnionMember13(TypedDict, total=False):
+class IncludeAttributesStarsFiltersContainsAllTokens(TypedDict, total=False):
     field: Required[Literal["login"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember14(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember15(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesStarsFiltersUnionMember16(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesStarsFiltersUnionMember17(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember18(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember19(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember20(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember21(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember22(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember23(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember24(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember25(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember26(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember27(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember28(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember29(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesStarsFiltersUnionMember30(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesStarsFiltersUnionMember31(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember32(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember33(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember34(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember35(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember36(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember37(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember38(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember39(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember40(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember41(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember42(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember43(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesStarsFiltersUnionMember44(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesStarsFiltersUnionMember45(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember46(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember47(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember48(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember49(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember50(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember51(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember52(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember53(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember54(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember55(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember56(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember57(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesStarsFiltersUnionMember58(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesStarsFiltersUnionMember59(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember60(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember61(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember62(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember63(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember64(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember65(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember66(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember67(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember68(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember69(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember70(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember71(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesStarsFiltersUnionMember72(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesStarsFiltersUnionMember73(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember74(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember75(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember76(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember77(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember78(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember79(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember80(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember81(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember82(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember83(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember84(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember85(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesStarsFiltersUnionMember86(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesStarsFiltersUnionMember87(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember88(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember89(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember90(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember91(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember92(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember93(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember94(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember95(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember96(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember97(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember98(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember99(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesStarsFiltersUnionMember100(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesStarsFiltersUnionMember101(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember102(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember103(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember104(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember105(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember106(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember107(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember108(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember109(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember110(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember111(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember112(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember113(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesStarsFiltersUnionMember114(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesStarsFiltersUnionMember115(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember116(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember117(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember118(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember119(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember120(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember121(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember122(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember123(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember124(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember125(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember126(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember127(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesStarsFiltersUnionMember128(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesStarsFiltersUnionMember129(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember130(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember131(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember132(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember133(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember134(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember135(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember136(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember137(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarsFiltersUnionMember138(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
 
     op: Required[Literal["ContainsAllTokens"]]
 
@@ -39304,145 +31429,145 @@ class IncludeAttributesStarsFiltersUnionMember140(TypedDict, total=False):
 
 
 IncludeAttributesStarsFilters: TypeAlias = Union[
-    IncludeAttributesStarsFiltersUnionMember0,
-    IncludeAttributesStarsFiltersUnionMember1,
-    IncludeAttributesStarsFiltersUnionMember2,
-    IncludeAttributesStarsFiltersUnionMember3,
-    IncludeAttributesStarsFiltersUnionMember4,
-    IncludeAttributesStarsFiltersUnionMember5,
-    IncludeAttributesStarsFiltersUnionMember6,
-    IncludeAttributesStarsFiltersUnionMember7,
-    IncludeAttributesStarsFiltersUnionMember8,
-    IncludeAttributesStarsFiltersUnionMember9,
-    IncludeAttributesStarsFiltersUnionMember10,
-    IncludeAttributesStarsFiltersUnionMember11,
-    IncludeAttributesStarsFiltersUnionMember12,
-    IncludeAttributesStarsFiltersUnionMember13,
-    IncludeAttributesStarsFiltersUnionMember14,
-    IncludeAttributesStarsFiltersUnionMember15,
-    IncludeAttributesStarsFiltersUnionMember16,
-    IncludeAttributesStarsFiltersUnionMember17,
-    IncludeAttributesStarsFiltersUnionMember18,
-    IncludeAttributesStarsFiltersUnionMember19,
-    IncludeAttributesStarsFiltersUnionMember20,
-    IncludeAttributesStarsFiltersUnionMember21,
-    IncludeAttributesStarsFiltersUnionMember22,
-    IncludeAttributesStarsFiltersUnionMember23,
-    IncludeAttributesStarsFiltersUnionMember24,
-    IncludeAttributesStarsFiltersUnionMember25,
-    IncludeAttributesStarsFiltersUnionMember26,
-    IncludeAttributesStarsFiltersUnionMember27,
-    IncludeAttributesStarsFiltersUnionMember28,
-    IncludeAttributesStarsFiltersUnionMember29,
-    IncludeAttributesStarsFiltersUnionMember30,
-    IncludeAttributesStarsFiltersUnionMember31,
-    IncludeAttributesStarsFiltersUnionMember32,
-    IncludeAttributesStarsFiltersUnionMember33,
-    IncludeAttributesStarsFiltersUnionMember34,
-    IncludeAttributesStarsFiltersUnionMember35,
-    IncludeAttributesStarsFiltersUnionMember36,
-    IncludeAttributesStarsFiltersUnionMember37,
-    IncludeAttributesStarsFiltersUnionMember38,
-    IncludeAttributesStarsFiltersUnionMember39,
-    IncludeAttributesStarsFiltersUnionMember40,
-    IncludeAttributesStarsFiltersUnionMember41,
-    IncludeAttributesStarsFiltersUnionMember42,
-    IncludeAttributesStarsFiltersUnionMember43,
-    IncludeAttributesStarsFiltersUnionMember44,
-    IncludeAttributesStarsFiltersUnionMember45,
-    IncludeAttributesStarsFiltersUnionMember46,
-    IncludeAttributesStarsFiltersUnionMember47,
-    IncludeAttributesStarsFiltersUnionMember48,
-    IncludeAttributesStarsFiltersUnionMember49,
-    IncludeAttributesStarsFiltersUnionMember50,
-    IncludeAttributesStarsFiltersUnionMember51,
-    IncludeAttributesStarsFiltersUnionMember52,
-    IncludeAttributesStarsFiltersUnionMember53,
-    IncludeAttributesStarsFiltersUnionMember54,
-    IncludeAttributesStarsFiltersUnionMember55,
-    IncludeAttributesStarsFiltersUnionMember56,
-    IncludeAttributesStarsFiltersUnionMember57,
-    IncludeAttributesStarsFiltersUnionMember58,
-    IncludeAttributesStarsFiltersUnionMember59,
-    IncludeAttributesStarsFiltersUnionMember60,
-    IncludeAttributesStarsFiltersUnionMember61,
-    IncludeAttributesStarsFiltersUnionMember62,
-    IncludeAttributesStarsFiltersUnionMember63,
-    IncludeAttributesStarsFiltersUnionMember64,
-    IncludeAttributesStarsFiltersUnionMember65,
-    IncludeAttributesStarsFiltersUnionMember66,
-    IncludeAttributesStarsFiltersUnionMember67,
-    IncludeAttributesStarsFiltersUnionMember68,
-    IncludeAttributesStarsFiltersUnionMember69,
-    IncludeAttributesStarsFiltersUnionMember70,
-    IncludeAttributesStarsFiltersUnionMember71,
-    IncludeAttributesStarsFiltersUnionMember72,
-    IncludeAttributesStarsFiltersUnionMember73,
-    IncludeAttributesStarsFiltersUnionMember74,
-    IncludeAttributesStarsFiltersUnionMember75,
-    IncludeAttributesStarsFiltersUnionMember76,
-    IncludeAttributesStarsFiltersUnionMember77,
-    IncludeAttributesStarsFiltersUnionMember78,
-    IncludeAttributesStarsFiltersUnionMember79,
-    IncludeAttributesStarsFiltersUnionMember80,
-    IncludeAttributesStarsFiltersUnionMember81,
-    IncludeAttributesStarsFiltersUnionMember82,
-    IncludeAttributesStarsFiltersUnionMember83,
-    IncludeAttributesStarsFiltersUnionMember84,
-    IncludeAttributesStarsFiltersUnionMember85,
-    IncludeAttributesStarsFiltersUnionMember86,
-    IncludeAttributesStarsFiltersUnionMember87,
-    IncludeAttributesStarsFiltersUnionMember88,
-    IncludeAttributesStarsFiltersUnionMember89,
-    IncludeAttributesStarsFiltersUnionMember90,
-    IncludeAttributesStarsFiltersUnionMember91,
-    IncludeAttributesStarsFiltersUnionMember92,
-    IncludeAttributesStarsFiltersUnionMember93,
-    IncludeAttributesStarsFiltersUnionMember94,
-    IncludeAttributesStarsFiltersUnionMember95,
-    IncludeAttributesStarsFiltersUnionMember96,
-    IncludeAttributesStarsFiltersUnionMember97,
-    IncludeAttributesStarsFiltersUnionMember98,
-    IncludeAttributesStarsFiltersUnionMember99,
-    IncludeAttributesStarsFiltersUnionMember100,
-    IncludeAttributesStarsFiltersUnionMember101,
-    IncludeAttributesStarsFiltersUnionMember102,
-    IncludeAttributesStarsFiltersUnionMember103,
-    IncludeAttributesStarsFiltersUnionMember104,
-    IncludeAttributesStarsFiltersUnionMember105,
-    IncludeAttributesStarsFiltersUnionMember106,
-    IncludeAttributesStarsFiltersUnionMember107,
-    IncludeAttributesStarsFiltersUnionMember108,
-    IncludeAttributesStarsFiltersUnionMember109,
-    IncludeAttributesStarsFiltersUnionMember110,
-    IncludeAttributesStarsFiltersUnionMember111,
-    IncludeAttributesStarsFiltersUnionMember112,
-    IncludeAttributesStarsFiltersUnionMember113,
-    IncludeAttributesStarsFiltersUnionMember114,
-    IncludeAttributesStarsFiltersUnionMember115,
-    IncludeAttributesStarsFiltersUnionMember116,
-    IncludeAttributesStarsFiltersUnionMember117,
-    IncludeAttributesStarsFiltersUnionMember118,
-    IncludeAttributesStarsFiltersUnionMember119,
-    IncludeAttributesStarsFiltersUnionMember120,
-    IncludeAttributesStarsFiltersUnionMember121,
-    IncludeAttributesStarsFiltersUnionMember122,
-    IncludeAttributesStarsFiltersUnionMember123,
-    IncludeAttributesStarsFiltersUnionMember124,
-    IncludeAttributesStarsFiltersUnionMember125,
-    IncludeAttributesStarsFiltersUnionMember126,
-    IncludeAttributesStarsFiltersUnionMember127,
-    IncludeAttributesStarsFiltersUnionMember128,
-    IncludeAttributesStarsFiltersUnionMember129,
-    IncludeAttributesStarsFiltersUnionMember130,
-    IncludeAttributesStarsFiltersUnionMember131,
-    IncludeAttributesStarsFiltersUnionMember132,
-    IncludeAttributesStarsFiltersUnionMember133,
-    IncludeAttributesStarsFiltersUnionMember134,
-    IncludeAttributesStarsFiltersUnionMember135,
-    IncludeAttributesStarsFiltersUnionMember136,
-    IncludeAttributesStarsFiltersUnionMember137,
-    IncludeAttributesStarsFiltersUnionMember138,
+    IncludeAttributesStarsFiltersEq,
+    IncludeAttributesStarsFiltersNotEq,
+    IncludeAttributesStarsFiltersIn,
+    IncludeAttributesStarsFiltersNotIn,
+    IncludeAttributesStarsFiltersLt,
+    IncludeAttributesStarsFiltersLte,
+    IncludeAttributesStarsFiltersGt,
+    IncludeAttributesStarsFiltersGte,
+    IncludeAttributesStarsFiltersGlob,
+    IncludeAttributesStarsFiltersNotGlob,
+    IncludeAttributesStarsFiltersIGlob,
+    IncludeAttributesStarsFiltersNotIGlob,
+    IncludeAttributesStarsFiltersRegex,
+    IncludeAttributesStarsFiltersEq,
+    IncludeAttributesStarsFiltersNotEq,
+    IncludeAttributesStarsFiltersIn,
+    IncludeAttributesStarsFiltersNotIn,
+    IncludeAttributesStarsFiltersLt,
+    IncludeAttributesStarsFiltersLte,
+    IncludeAttributesStarsFiltersGt,
+    IncludeAttributesStarsFiltersGte,
+    IncludeAttributesStarsFiltersGlob,
+    IncludeAttributesStarsFiltersNotGlob,
+    IncludeAttributesStarsFiltersIGlob,
+    IncludeAttributesStarsFiltersNotIGlob,
+    IncludeAttributesStarsFiltersRegex,
+    IncludeAttributesStarsFiltersContainsAllTokens,
+    IncludeAttributesStarsFiltersEq,
+    IncludeAttributesStarsFiltersNotEq,
+    IncludeAttributesStarsFiltersIn,
+    IncludeAttributesStarsFiltersNotIn,
+    IncludeAttributesStarsFiltersLt,
+    IncludeAttributesStarsFiltersLte,
+    IncludeAttributesStarsFiltersGt,
+    IncludeAttributesStarsFiltersGte,
+    IncludeAttributesStarsFiltersGlob,
+    IncludeAttributesStarsFiltersNotGlob,
+    IncludeAttributesStarsFiltersIGlob,
+    IncludeAttributesStarsFiltersNotIGlob,
+    IncludeAttributesStarsFiltersRegex,
+    IncludeAttributesStarsFiltersContainsAllTokens,
+    IncludeAttributesStarsFiltersEq,
+    IncludeAttributesStarsFiltersNotEq,
+    IncludeAttributesStarsFiltersIn,
+    IncludeAttributesStarsFiltersNotIn,
+    IncludeAttributesStarsFiltersLt,
+    IncludeAttributesStarsFiltersLte,
+    IncludeAttributesStarsFiltersGt,
+    IncludeAttributesStarsFiltersGte,
+    IncludeAttributesStarsFiltersGlob,
+    IncludeAttributesStarsFiltersNotGlob,
+    IncludeAttributesStarsFiltersIGlob,
+    IncludeAttributesStarsFiltersNotIGlob,
+    IncludeAttributesStarsFiltersRegex,
+    IncludeAttributesStarsFiltersContainsAllTokens,
+    IncludeAttributesStarsFiltersEq,
+    IncludeAttributesStarsFiltersNotEq,
+    IncludeAttributesStarsFiltersIn,
+    IncludeAttributesStarsFiltersNotIn,
+    IncludeAttributesStarsFiltersLt,
+    IncludeAttributesStarsFiltersLte,
+    IncludeAttributesStarsFiltersGt,
+    IncludeAttributesStarsFiltersGte,
+    IncludeAttributesStarsFiltersGlob,
+    IncludeAttributesStarsFiltersNotGlob,
+    IncludeAttributesStarsFiltersIGlob,
+    IncludeAttributesStarsFiltersNotIGlob,
+    IncludeAttributesStarsFiltersRegex,
+    IncludeAttributesStarsFiltersContainsAllTokens,
+    IncludeAttributesStarsFiltersEq,
+    IncludeAttributesStarsFiltersNotEq,
+    IncludeAttributesStarsFiltersIn,
+    IncludeAttributesStarsFiltersNotIn,
+    IncludeAttributesStarsFiltersLt,
+    IncludeAttributesStarsFiltersLte,
+    IncludeAttributesStarsFiltersGt,
+    IncludeAttributesStarsFiltersGte,
+    IncludeAttributesStarsFiltersGlob,
+    IncludeAttributesStarsFiltersNotGlob,
+    IncludeAttributesStarsFiltersIGlob,
+    IncludeAttributesStarsFiltersNotIGlob,
+    IncludeAttributesStarsFiltersRegex,
+    IncludeAttributesStarsFiltersContainsAllTokens,
+    IncludeAttributesStarsFiltersEq,
+    IncludeAttributesStarsFiltersNotEq,
+    IncludeAttributesStarsFiltersIn,
+    IncludeAttributesStarsFiltersNotIn,
+    IncludeAttributesStarsFiltersLt,
+    IncludeAttributesStarsFiltersLte,
+    IncludeAttributesStarsFiltersGt,
+    IncludeAttributesStarsFiltersGte,
+    IncludeAttributesStarsFiltersGlob,
+    IncludeAttributesStarsFiltersNotGlob,
+    IncludeAttributesStarsFiltersIGlob,
+    IncludeAttributesStarsFiltersNotIGlob,
+    IncludeAttributesStarsFiltersRegex,
+    IncludeAttributesStarsFiltersContainsAllTokens,
+    IncludeAttributesStarsFiltersEq,
+    IncludeAttributesStarsFiltersNotEq,
+    IncludeAttributesStarsFiltersIn,
+    IncludeAttributesStarsFiltersNotIn,
+    IncludeAttributesStarsFiltersLt,
+    IncludeAttributesStarsFiltersLte,
+    IncludeAttributesStarsFiltersGt,
+    IncludeAttributesStarsFiltersGte,
+    IncludeAttributesStarsFiltersGlob,
+    IncludeAttributesStarsFiltersNotGlob,
+    IncludeAttributesStarsFiltersIGlob,
+    IncludeAttributesStarsFiltersNotIGlob,
+    IncludeAttributesStarsFiltersRegex,
+    IncludeAttributesStarsFiltersContainsAllTokens,
+    IncludeAttributesStarsFiltersEq,
+    IncludeAttributesStarsFiltersNotEq,
+    IncludeAttributesStarsFiltersIn,
+    IncludeAttributesStarsFiltersNotIn,
+    IncludeAttributesStarsFiltersLt,
+    IncludeAttributesStarsFiltersLte,
+    IncludeAttributesStarsFiltersGt,
+    IncludeAttributesStarsFiltersGte,
+    IncludeAttributesStarsFiltersGlob,
+    IncludeAttributesStarsFiltersNotGlob,
+    IncludeAttributesStarsFiltersIGlob,
+    IncludeAttributesStarsFiltersNotIGlob,
+    IncludeAttributesStarsFiltersRegex,
+    IncludeAttributesStarsFiltersContainsAllTokens,
+    IncludeAttributesStarsFiltersEq,
+    IncludeAttributesStarsFiltersNotEq,
+    IncludeAttributesStarsFiltersIn,
+    IncludeAttributesStarsFiltersNotIn,
+    IncludeAttributesStarsFiltersLt,
+    IncludeAttributesStarsFiltersLte,
+    IncludeAttributesStarsFiltersGt,
+    IncludeAttributesStarsFiltersGte,
+    IncludeAttributesStarsFiltersGlob,
+    IncludeAttributesStarsFiltersNotGlob,
+    IncludeAttributesStarsFiltersIGlob,
+    IncludeAttributesStarsFiltersNotIGlob,
+    IncludeAttributesStarsFiltersRegex,
+    IncludeAttributesStarsFiltersContainsAllTokens,
     IncludeAttributesStarsFiltersUnionMember139,
     IncludeAttributesStarsFiltersUnionMember140,
 ]

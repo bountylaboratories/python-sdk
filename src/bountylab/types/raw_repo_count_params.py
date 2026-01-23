@@ -10,113 +10,28 @@ from .._types import SequenceNotStr
 __all__ = [
     "RawRepoCountParams",
     "Filters",
-    "FiltersUnionMember0",
-    "FiltersUnionMember1",
-    "FiltersUnionMember2",
-    "FiltersUnionMember3",
-    "FiltersUnionMember4",
-    "FiltersUnionMember5",
-    "FiltersUnionMember6",
-    "FiltersUnionMember7",
-    "FiltersUnionMember8",
-    "FiltersUnionMember9",
-    "FiltersUnionMember10",
-    "FiltersUnionMember11",
-    "FiltersUnionMember12",
-    "FiltersUnionMember13",
-    "FiltersUnionMember14",
-    "FiltersUnionMember15",
-    "FiltersUnionMember16",
-    "FiltersUnionMember17",
-    "FiltersUnionMember18",
-    "FiltersUnionMember19",
-    "FiltersUnionMember20",
-    "FiltersUnionMember21",
-    "FiltersUnionMember22",
-    "FiltersUnionMember23",
-    "FiltersUnionMember24",
-    "FiltersUnionMember25",
-    "FiltersUnionMember26",
-    "FiltersUnionMember27",
-    "FiltersUnionMember28",
-    "FiltersUnionMember29",
-    "FiltersUnionMember30",
-    "FiltersUnionMember31",
-    "FiltersUnionMember32",
-    "FiltersUnionMember33",
-    "FiltersUnionMember34",
-    "FiltersUnionMember35",
-    "FiltersUnionMember36",
-    "FiltersUnionMember37",
-    "FiltersUnionMember38",
-    "FiltersUnionMember39",
-    "FiltersUnionMember40",
-    "FiltersUnionMember41",
-    "FiltersUnionMember42",
-    "FiltersUnionMember43",
-    "FiltersUnionMember44",
-    "FiltersUnionMember45",
-    "FiltersUnionMember46",
-    "FiltersUnionMember47",
-    "FiltersUnionMember48",
-    "FiltersUnionMember49",
-    "FiltersUnionMember50",
-    "FiltersUnionMember51",
-    "FiltersUnionMember52",
-    "FiltersUnionMember53",
-    "FiltersUnionMember54",
-    "FiltersUnionMember55",
-    "FiltersUnionMember56",
-    "FiltersUnionMember57",
-    "FiltersUnionMember58",
-    "FiltersUnionMember59",
-    "FiltersUnionMember60",
-    "FiltersUnionMember61",
-    "FiltersUnionMember62",
-    "FiltersUnionMember63",
-    "FiltersUnionMember64",
-    "FiltersUnionMember65",
-    "FiltersUnionMember66",
-    "FiltersUnionMember67",
-    "FiltersUnionMember68",
-    "FiltersUnionMember69",
-    "FiltersUnionMember70",
-    "FiltersUnionMember71",
-    "FiltersUnionMember72",
-    "FiltersUnionMember73",
-    "FiltersUnionMember74",
-    "FiltersUnionMember75",
-    "FiltersUnionMember76",
-    "FiltersUnionMember77",
-    "FiltersUnionMember78",
-    "FiltersUnionMember79",
-    "FiltersUnionMember80",
-    "FiltersUnionMember81",
-    "FiltersUnionMember82",
-    "FiltersUnionMember83",
-    "FiltersUnionMember84",
-    "FiltersUnionMember85",
-    "FiltersUnionMember86",
-    "FiltersUnionMember87",
-    "FiltersUnionMember88",
-    "FiltersUnionMember89",
-    "FiltersUnionMember90",
-    "FiltersUnionMember91",
-    "FiltersUnionMember92",
-    "FiltersUnionMember93",
-    "FiltersUnionMember94",
-    "FiltersUnionMember95",
-    "FiltersUnionMember96",
-    "FiltersUnionMember97",
-    "FiltersUnionMember98",
-    "FiltersUnionMember99",
-    "FiltersUnionMember100",
-    "FiltersUnionMember101",
-    "FiltersUnionMember102",
-    "FiltersUnionMember103",
-    "FiltersUnionMember104",
-    "FiltersUnionMember105",
-    "FiltersUnionMember106",
+    "FiltersEq",
+    "FiltersNotEq",
+    "FiltersIn",
+    "FiltersNotIn",
+    "FiltersLt",
+    "FiltersLte",
+    "FiltersGt",
+    "FiltersGte",
+    "FiltersGlob",
+    "FiltersNotGlob",
+    "FiltersIGlob",
+    "FiltersNotIGlob",
+    "FiltersRegex",
+    "FiltersContainsAllTokens",
+    "FiltersContains",
+    "FiltersNotContains",
+    "FiltersContainsAny",
+    "FiltersNotContainsAny",
+    "FiltersAnyLt",
+    "FiltersAnyLte",
+    "FiltersAnyGt",
+    "FiltersAnyGte",
     "FiltersUnionMember107",
     "FiltersUnionMember107Filter",
     "FiltersUnionMember107FilterUnionMember0",
@@ -452,7 +367,7 @@ class RawRepoCountParams(TypedDict, total=False):
     """Filters to apply (required)"""
 
 
-class FiltersUnionMember0(TypedDict, total=False):
+class FiltersEq(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Eq"]]
@@ -460,7 +375,7 @@ class FiltersUnionMember0(TypedDict, total=False):
     value: Required[str]
 
 
-class FiltersUnionMember1(TypedDict, total=False):
+class FiltersNotEq(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["NotEq"]]
@@ -468,7 +383,7 @@ class FiltersUnionMember1(TypedDict, total=False):
     value: Required[str]
 
 
-class FiltersUnionMember2(TypedDict, total=False):
+class FiltersIn(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["In"]]
@@ -476,7 +391,7 @@ class FiltersUnionMember2(TypedDict, total=False):
     value: Required[SequenceNotStr[str]]
 
 
-class FiltersUnionMember3(TypedDict, total=False):
+class FiltersNotIn(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["NotIn"]]
@@ -484,7 +399,7 @@ class FiltersUnionMember3(TypedDict, total=False):
     value: Required[SequenceNotStr[str]]
 
 
-class FiltersUnionMember4(TypedDict, total=False):
+class FiltersLt(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Lt"]]
@@ -492,7 +407,7 @@ class FiltersUnionMember4(TypedDict, total=False):
     value: Required[str]
 
 
-class FiltersUnionMember5(TypedDict, total=False):
+class FiltersLte(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Lte"]]
@@ -500,7 +415,7 @@ class FiltersUnionMember5(TypedDict, total=False):
     value: Required[str]
 
 
-class FiltersUnionMember6(TypedDict, total=False):
+class FiltersGt(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Gt"]]
@@ -508,7 +423,7 @@ class FiltersUnionMember6(TypedDict, total=False):
     value: Required[str]
 
 
-class FiltersUnionMember7(TypedDict, total=False):
+class FiltersGte(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Gte"]]
@@ -516,7 +431,7 @@ class FiltersUnionMember7(TypedDict, total=False):
     value: Required[str]
 
 
-class FiltersUnionMember8(TypedDict, total=False):
+class FiltersGlob(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Glob"]]
@@ -524,7 +439,7 @@ class FiltersUnionMember8(TypedDict, total=False):
     value: Required[str]
 
 
-class FiltersUnionMember9(TypedDict, total=False):
+class FiltersNotGlob(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["NotGlob"]]
@@ -532,7 +447,7 @@ class FiltersUnionMember9(TypedDict, total=False):
     value: Required[str]
 
 
-class FiltersUnionMember10(TypedDict, total=False):
+class FiltersIGlob(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["IGlob"]]
@@ -540,7 +455,7 @@ class FiltersUnionMember10(TypedDict, total=False):
     value: Required[str]
 
 
-class FiltersUnionMember11(TypedDict, total=False):
+class FiltersNotIGlob(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["NotIGlob"]]
@@ -548,7 +463,7 @@ class FiltersUnionMember11(TypedDict, total=False):
     value: Required[str]
 
 
-class FiltersUnionMember12(TypedDict, total=False):
+class FiltersRegex(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Regex"]]
@@ -556,215 +471,7 @@ class FiltersUnionMember12(TypedDict, total=False):
     value: Required[str]
 
 
-class FiltersUnionMember13(TypedDict, total=False):
-    field: Required[Literal["ownerLogin"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember14(TypedDict, total=False):
-    field: Required[Literal["ownerLogin"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember15(TypedDict, total=False):
-    field: Required[Literal["ownerLogin"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class FiltersUnionMember16(TypedDict, total=False):
-    field: Required[Literal["ownerLogin"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class FiltersUnionMember17(TypedDict, total=False):
-    field: Required[Literal["ownerLogin"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember18(TypedDict, total=False):
-    field: Required[Literal["ownerLogin"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember19(TypedDict, total=False):
-    field: Required[Literal["ownerLogin"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember20(TypedDict, total=False):
-    field: Required[Literal["ownerLogin"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember21(TypedDict, total=False):
-    field: Required[Literal["ownerLogin"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember22(TypedDict, total=False):
-    field: Required[Literal["ownerLogin"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember23(TypedDict, total=False):
-    field: Required[Literal["ownerLogin"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember24(TypedDict, total=False):
-    field: Required[Literal["ownerLogin"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember25(TypedDict, total=False):
-    field: Required[Literal["ownerLogin"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember26(TypedDict, total=False):
-    field: Required[Literal["ownerLocation"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember27(TypedDict, total=False):
-    field: Required[Literal["ownerLocation"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember28(TypedDict, total=False):
-    field: Required[Literal["ownerLocation"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class FiltersUnionMember29(TypedDict, total=False):
-    field: Required[Literal["ownerLocation"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class FiltersUnionMember30(TypedDict, total=False):
-    field: Required[Literal["ownerLocation"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember31(TypedDict, total=False):
-    field: Required[Literal["ownerLocation"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember32(TypedDict, total=False):
-    field: Required[Literal["ownerLocation"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember33(TypedDict, total=False):
-    field: Required[Literal["ownerLocation"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember34(TypedDict, total=False):
-    field: Required[Literal["ownerLocation"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember35(TypedDict, total=False):
-    field: Required[Literal["ownerLocation"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember36(TypedDict, total=False):
-    field: Required[Literal["ownerLocation"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember37(TypedDict, total=False):
-    field: Required[Literal["ownerLocation"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember38(TypedDict, total=False):
-    field: Required[Literal["ownerLocation"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember39(TypedDict, total=False):
+class FiltersContainsAllTokens(TypedDict, total=False):
     field: Required[Literal["ownerLocation"]]
 
     op: Required[Literal["ContainsAllTokens"]]
@@ -772,471 +479,7 @@ class FiltersUnionMember39(TypedDict, total=False):
     value: Required[str]
 
 
-class FiltersUnionMember40(TypedDict, total=False):
-    field: Required[Literal["name"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember41(TypedDict, total=False):
-    field: Required[Literal["name"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember42(TypedDict, total=False):
-    field: Required[Literal["name"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class FiltersUnionMember43(TypedDict, total=False):
-    field: Required[Literal["name"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class FiltersUnionMember44(TypedDict, total=False):
-    field: Required[Literal["name"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember45(TypedDict, total=False):
-    field: Required[Literal["name"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember46(TypedDict, total=False):
-    field: Required[Literal["name"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember47(TypedDict, total=False):
-    field: Required[Literal["name"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember48(TypedDict, total=False):
-    field: Required[Literal["name"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember49(TypedDict, total=False):
-    field: Required[Literal["name"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember50(TypedDict, total=False):
-    field: Required[Literal["name"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember51(TypedDict, total=False):
-    field: Required[Literal["name"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember52(TypedDict, total=False):
-    field: Required[Literal["name"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember53(TypedDict, total=False):
-    field: Required[Literal["stargazerCount"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[float]
-
-
-class FiltersUnionMember54(TypedDict, total=False):
-    field: Required[Literal["stargazerCount"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[float]
-
-
-class FiltersUnionMember55(TypedDict, total=False):
-    field: Required[Literal["stargazerCount"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[Iterable[float]]
-
-
-class FiltersUnionMember56(TypedDict, total=False):
-    field: Required[Literal["stargazerCount"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[Iterable[float]]
-
-
-class FiltersUnionMember57(TypedDict, total=False):
-    field: Required[Literal["stargazerCount"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[float]
-
-
-class FiltersUnionMember58(TypedDict, total=False):
-    field: Required[Literal["stargazerCount"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[float]
-
-
-class FiltersUnionMember59(TypedDict, total=False):
-    field: Required[Literal["stargazerCount"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[float]
-
-
-class FiltersUnionMember60(TypedDict, total=False):
-    field: Required[Literal["stargazerCount"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[float]
-
-
-class FiltersUnionMember61(TypedDict, total=False):
-    field: Required[Literal["language"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember62(TypedDict, total=False):
-    field: Required[Literal["language"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember63(TypedDict, total=False):
-    field: Required[Literal["language"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class FiltersUnionMember64(TypedDict, total=False):
-    field: Required[Literal["language"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class FiltersUnionMember65(TypedDict, total=False):
-    field: Required[Literal["language"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember66(TypedDict, total=False):
-    field: Required[Literal["language"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember67(TypedDict, total=False):
-    field: Required[Literal["language"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember68(TypedDict, total=False):
-    field: Required[Literal["language"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember69(TypedDict, total=False):
-    field: Required[Literal["language"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember70(TypedDict, total=False):
-    field: Required[Literal["language"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember71(TypedDict, total=False):
-    field: Required[Literal["language"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember72(TypedDict, total=False):
-    field: Required[Literal["language"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember73(TypedDict, total=False):
-    field: Required[Literal["language"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember74(TypedDict, total=False):
-    field: Required[Literal["totalIssuesCount"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[float]
-
-
-class FiltersUnionMember75(TypedDict, total=False):
-    field: Required[Literal["totalIssuesCount"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[float]
-
-
-class FiltersUnionMember76(TypedDict, total=False):
-    field: Required[Literal["totalIssuesCount"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[Iterable[float]]
-
-
-class FiltersUnionMember77(TypedDict, total=False):
-    field: Required[Literal["totalIssuesCount"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[Iterable[float]]
-
-
-class FiltersUnionMember78(TypedDict, total=False):
-    field: Required[Literal["totalIssuesCount"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[float]
-
-
-class FiltersUnionMember79(TypedDict, total=False):
-    field: Required[Literal["totalIssuesCount"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[float]
-
-
-class FiltersUnionMember80(TypedDict, total=False):
-    field: Required[Literal["totalIssuesCount"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[float]
-
-
-class FiltersUnionMember81(TypedDict, total=False):
-    field: Required[Literal["totalIssuesCount"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[float]
-
-
-class FiltersUnionMember82(TypedDict, total=False):
-    field: Required[Literal["totalIssuesOpen"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[float]
-
-
-class FiltersUnionMember83(TypedDict, total=False):
-    field: Required[Literal["totalIssuesOpen"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[float]
-
-
-class FiltersUnionMember84(TypedDict, total=False):
-    field: Required[Literal["totalIssuesOpen"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[Iterable[float]]
-
-
-class FiltersUnionMember85(TypedDict, total=False):
-    field: Required[Literal["totalIssuesOpen"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[Iterable[float]]
-
-
-class FiltersUnionMember86(TypedDict, total=False):
-    field: Required[Literal["totalIssuesOpen"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[float]
-
-
-class FiltersUnionMember87(TypedDict, total=False):
-    field: Required[Literal["totalIssuesOpen"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[float]
-
-
-class FiltersUnionMember88(TypedDict, total=False):
-    field: Required[Literal["totalIssuesOpen"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[float]
-
-
-class FiltersUnionMember89(TypedDict, total=False):
-    field: Required[Literal["totalIssuesOpen"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[float]
-
-
-class FiltersUnionMember90(TypedDict, total=False):
-    field: Required[Literal["totalIssuesClosed"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[float]
-
-
-class FiltersUnionMember91(TypedDict, total=False):
-    field: Required[Literal["totalIssuesClosed"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[float]
-
-
-class FiltersUnionMember92(TypedDict, total=False):
-    field: Required[Literal["totalIssuesClosed"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[Iterable[float]]
-
-
-class FiltersUnionMember93(TypedDict, total=False):
-    field: Required[Literal["totalIssuesClosed"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[Iterable[float]]
-
-
-class FiltersUnionMember94(TypedDict, total=False):
-    field: Required[Literal["totalIssuesClosed"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[float]
-
-
-class FiltersUnionMember95(TypedDict, total=False):
-    field: Required[Literal["totalIssuesClosed"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[float]
-
-
-class FiltersUnionMember96(TypedDict, total=False):
-    field: Required[Literal["totalIssuesClosed"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[float]
-
-
-class FiltersUnionMember97(TypedDict, total=False):
-    field: Required[Literal["totalIssuesClosed"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[float]
-
-
-class FiltersUnionMember98(TypedDict, total=False):
+class FiltersContains(TypedDict, total=False):
     field: Required[Literal["lastContributorLocations"]]
 
     op: Required[Literal["Contains"]]
@@ -1244,7 +487,7 @@ class FiltersUnionMember98(TypedDict, total=False):
     value: Required[str]
 
 
-class FiltersUnionMember99(TypedDict, total=False):
+class FiltersNotContains(TypedDict, total=False):
     field: Required[Literal["lastContributorLocations"]]
 
     op: Required[Literal["NotContains"]]
@@ -1252,7 +495,7 @@ class FiltersUnionMember99(TypedDict, total=False):
     value: Required[str]
 
 
-class FiltersUnionMember100(TypedDict, total=False):
+class FiltersContainsAny(TypedDict, total=False):
     field: Required[Literal["lastContributorLocations"]]
 
     op: Required[Literal["ContainsAny"]]
@@ -1260,7 +503,7 @@ class FiltersUnionMember100(TypedDict, total=False):
     value: Required[SequenceNotStr[str]]
 
 
-class FiltersUnionMember101(TypedDict, total=False):
+class FiltersNotContainsAny(TypedDict, total=False):
     field: Required[Literal["lastContributorLocations"]]
 
     op: Required[Literal["NotContainsAny"]]
@@ -1268,7 +511,7 @@ class FiltersUnionMember101(TypedDict, total=False):
     value: Required[SequenceNotStr[str]]
 
 
-class FiltersUnionMember102(TypedDict, total=False):
+class FiltersAnyLt(TypedDict, total=False):
     field: Required[Literal["lastContributorLocations"]]
 
     op: Required[Literal["AnyLt"]]
@@ -1276,7 +519,7 @@ class FiltersUnionMember102(TypedDict, total=False):
     value: Required[str]
 
 
-class FiltersUnionMember103(TypedDict, total=False):
+class FiltersAnyLte(TypedDict, total=False):
     field: Required[Literal["lastContributorLocations"]]
 
     op: Required[Literal["AnyLte"]]
@@ -1284,7 +527,7 @@ class FiltersUnionMember103(TypedDict, total=False):
     value: Required[str]
 
 
-class FiltersUnionMember104(TypedDict, total=False):
+class FiltersAnyGt(TypedDict, total=False):
     field: Required[Literal["lastContributorLocations"]]
 
     op: Required[Literal["AnyGt"]]
@@ -1292,18 +535,10 @@ class FiltersUnionMember104(TypedDict, total=False):
     value: Required[str]
 
 
-class FiltersUnionMember105(TypedDict, total=False):
+class FiltersAnyGte(TypedDict, total=False):
     field: Required[Literal["lastContributorLocations"]]
 
     op: Required[Literal["AnyGte"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember106(TypedDict, total=False):
-    field: Required[Literal["lastContributorLocations"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
 
     value: Required[str]
 
@@ -4229,113 +3464,113 @@ class FiltersUnionMember108(TypedDict, total=False):
 
 
 Filters: TypeAlias = Union[
-    FiltersUnionMember0,
-    FiltersUnionMember1,
-    FiltersUnionMember2,
-    FiltersUnionMember3,
-    FiltersUnionMember4,
-    FiltersUnionMember5,
-    FiltersUnionMember6,
-    FiltersUnionMember7,
-    FiltersUnionMember8,
-    FiltersUnionMember9,
-    FiltersUnionMember10,
-    FiltersUnionMember11,
-    FiltersUnionMember12,
-    FiltersUnionMember13,
-    FiltersUnionMember14,
-    FiltersUnionMember15,
-    FiltersUnionMember16,
-    FiltersUnionMember17,
-    FiltersUnionMember18,
-    FiltersUnionMember19,
-    FiltersUnionMember20,
-    FiltersUnionMember21,
-    FiltersUnionMember22,
-    FiltersUnionMember23,
-    FiltersUnionMember24,
-    FiltersUnionMember25,
-    FiltersUnionMember26,
-    FiltersUnionMember27,
-    FiltersUnionMember28,
-    FiltersUnionMember29,
-    FiltersUnionMember30,
-    FiltersUnionMember31,
-    FiltersUnionMember32,
-    FiltersUnionMember33,
-    FiltersUnionMember34,
-    FiltersUnionMember35,
-    FiltersUnionMember36,
-    FiltersUnionMember37,
-    FiltersUnionMember38,
-    FiltersUnionMember39,
-    FiltersUnionMember40,
-    FiltersUnionMember41,
-    FiltersUnionMember42,
-    FiltersUnionMember43,
-    FiltersUnionMember44,
-    FiltersUnionMember45,
-    FiltersUnionMember46,
-    FiltersUnionMember47,
-    FiltersUnionMember48,
-    FiltersUnionMember49,
-    FiltersUnionMember50,
-    FiltersUnionMember51,
-    FiltersUnionMember52,
-    FiltersUnionMember53,
-    FiltersUnionMember54,
-    FiltersUnionMember55,
-    FiltersUnionMember56,
-    FiltersUnionMember57,
-    FiltersUnionMember58,
-    FiltersUnionMember59,
-    FiltersUnionMember60,
-    FiltersUnionMember61,
-    FiltersUnionMember62,
-    FiltersUnionMember63,
-    FiltersUnionMember64,
-    FiltersUnionMember65,
-    FiltersUnionMember66,
-    FiltersUnionMember67,
-    FiltersUnionMember68,
-    FiltersUnionMember69,
-    FiltersUnionMember70,
-    FiltersUnionMember71,
-    FiltersUnionMember72,
-    FiltersUnionMember73,
-    FiltersUnionMember74,
-    FiltersUnionMember75,
-    FiltersUnionMember76,
-    FiltersUnionMember77,
-    FiltersUnionMember78,
-    FiltersUnionMember79,
-    FiltersUnionMember80,
-    FiltersUnionMember81,
-    FiltersUnionMember82,
-    FiltersUnionMember83,
-    FiltersUnionMember84,
-    FiltersUnionMember85,
-    FiltersUnionMember86,
-    FiltersUnionMember87,
-    FiltersUnionMember88,
-    FiltersUnionMember89,
-    FiltersUnionMember90,
-    FiltersUnionMember91,
-    FiltersUnionMember92,
-    FiltersUnionMember93,
-    FiltersUnionMember94,
-    FiltersUnionMember95,
-    FiltersUnionMember96,
-    FiltersUnionMember97,
-    FiltersUnionMember98,
-    FiltersUnionMember99,
-    FiltersUnionMember100,
-    FiltersUnionMember101,
-    FiltersUnionMember102,
-    FiltersUnionMember103,
-    FiltersUnionMember104,
-    FiltersUnionMember105,
-    FiltersUnionMember106,
+    FiltersEq,
+    FiltersNotEq,
+    FiltersIn,
+    FiltersNotIn,
+    FiltersLt,
+    FiltersLte,
+    FiltersGt,
+    FiltersGte,
+    FiltersGlob,
+    FiltersNotGlob,
+    FiltersIGlob,
+    FiltersNotIGlob,
+    FiltersRegex,
+    FiltersEq,
+    FiltersNotEq,
+    FiltersIn,
+    FiltersNotIn,
+    FiltersLt,
+    FiltersLte,
+    FiltersGt,
+    FiltersGte,
+    FiltersGlob,
+    FiltersNotGlob,
+    FiltersIGlob,
+    FiltersNotIGlob,
+    FiltersRegex,
+    FiltersEq,
+    FiltersNotEq,
+    FiltersIn,
+    FiltersNotIn,
+    FiltersLt,
+    FiltersLte,
+    FiltersGt,
+    FiltersGte,
+    FiltersGlob,
+    FiltersNotGlob,
+    FiltersIGlob,
+    FiltersNotIGlob,
+    FiltersRegex,
+    FiltersContainsAllTokens,
+    FiltersEq,
+    FiltersNotEq,
+    FiltersIn,
+    FiltersNotIn,
+    FiltersLt,
+    FiltersLte,
+    FiltersGt,
+    FiltersGte,
+    FiltersGlob,
+    FiltersNotGlob,
+    FiltersIGlob,
+    FiltersNotIGlob,
+    FiltersRegex,
+    FiltersEq,
+    FiltersNotEq,
+    FiltersIn,
+    FiltersNotIn,
+    FiltersLt,
+    FiltersLte,
+    FiltersGt,
+    FiltersGte,
+    FiltersEq,
+    FiltersNotEq,
+    FiltersIn,
+    FiltersNotIn,
+    FiltersLt,
+    FiltersLte,
+    FiltersGt,
+    FiltersGte,
+    FiltersGlob,
+    FiltersNotGlob,
+    FiltersIGlob,
+    FiltersNotIGlob,
+    FiltersRegex,
+    FiltersEq,
+    FiltersNotEq,
+    FiltersIn,
+    FiltersNotIn,
+    FiltersLt,
+    FiltersLte,
+    FiltersGt,
+    FiltersGte,
+    FiltersEq,
+    FiltersNotEq,
+    FiltersIn,
+    FiltersNotIn,
+    FiltersLt,
+    FiltersLte,
+    FiltersGt,
+    FiltersGte,
+    FiltersEq,
+    FiltersNotEq,
+    FiltersIn,
+    FiltersNotIn,
+    FiltersLt,
+    FiltersLte,
+    FiltersGt,
+    FiltersGte,
+    FiltersContains,
+    FiltersNotContains,
+    FiltersContainsAny,
+    FiltersNotContainsAny,
+    FiltersAnyLt,
+    FiltersAnyLte,
+    FiltersAnyGt,
+    FiltersAnyGte,
+    FiltersContainsAllTokens,
     FiltersUnionMember107,
     FiltersUnionMember108,
 ]

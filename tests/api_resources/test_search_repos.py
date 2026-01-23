@@ -62,7 +62,7 @@ class TestSearchRepos:
             max_results=50,
             rank_by={
                 "name": "ann",
-                "op": "Attr",
+                "type": "Attr",
             },
         )
         assert_matches_type(SearchRepoNaturalLanguageResponse, search_repo, path=["response"])
@@ -139,7 +139,7 @@ class TestSearchRepos:
             max_results=50,
             rank_by={
                 "name": "ann",
-                "op": "Attr",
+                "type": "Attr",
             },
         )
         assert_matches_type(SearchRepoSearchResponse, search_repo, path=["response"])
@@ -218,7 +218,7 @@ class TestAsyncSearchRepos:
             max_results=50,
             rank_by={
                 "name": "ann",
-                "op": "Attr",
+                "type": "Attr",
             },
         )
         assert_matches_type(SearchRepoNaturalLanguageResponse, search_repo, path=["response"])
@@ -295,7 +295,7 @@ class TestAsyncSearchRepos:
             max_results=50,
             rank_by={
                 "name": "ann",
-                "op": "Attr",
+                "type": "Attr",
             },
         )
         assert_matches_type(SearchRepoSearchResponse, search_repo, path=["response"])
