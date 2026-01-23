@@ -77,7 +77,7 @@ class UserEmailsResource(SyncAPIResource):
           timeout: Override the client-level default timeout for this request, in seconds
         """
         return self._post(
-            "/api/users/best-email",
+            "/users/best-email",
             body=maybe_transform(
                 {
                     "github_ids": github_ids,
@@ -125,7 +125,7 @@ class UserEmailsResource(SyncAPIResource):
           timeout: Override the client-level default timeout for this request, in seconds
         """
         return self._post(
-            "/api/users/best-email/by-login",
+            "/users/best-email/by-login",
             body=maybe_transform(
                 {
                     "logins": logins,
@@ -170,7 +170,7 @@ class UserEmailsResource(SyncAPIResource):
           timeout: Override the client-level default timeout for this request, in seconds
         """
         return self._post(
-            "/api/users/best-email/signal/reply",
+            "/users/best-email/signal/reply",
             body=maybe_transform(
                 {
                     "github_ids": github_ids,
@@ -239,7 +239,7 @@ class AsyncUserEmailsResource(AsyncAPIResource):
           timeout: Override the client-level default timeout for this request, in seconds
         """
         return await self._post(
-            "/api/users/best-email",
+            "/users/best-email",
             body=await async_maybe_transform(
                 {
                     "github_ids": github_ids,
@@ -287,7 +287,7 @@ class AsyncUserEmailsResource(AsyncAPIResource):
           timeout: Override the client-level default timeout for this request, in seconds
         """
         return await self._post(
-            "/api/users/best-email/by-login",
+            "/users/best-email/by-login",
             body=await async_maybe_transform(
                 {
                     "logins": logins,
@@ -332,7 +332,7 @@ class AsyncUserEmailsResource(AsyncAPIResource):
           timeout: Override the client-level default timeout for this request, in seconds
         """
         return await self._post(
-            "/api/users/best-email/signal/reply",
+            "/users/best-email/signal/reply",
             body=await async_maybe_transform(
                 {
                     "github_ids": github_ids,
