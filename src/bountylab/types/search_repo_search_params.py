@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from typing import Union, Iterable, Optional
+from typing import Union, Iterable
 from typing_extensions import Literal, Required, Annotated, TypeAlias, TypedDict
 
 from .._types import SequenceNotStr
@@ -2626,25 +2626,8 @@ class SearchRepoSearchParams(TypedDict, total=False):
     enable_pagination: Annotated[bool, PropertyInfo(alias="enablePagination")]
     """Enable cursor-based pagination to fetch results across multiple requests"""
 
-    filters: Optional[Filters]
-    """Optional filters for narrowing search results.
-
-    Supports filtering on: githubId, ownerLogin, ownerLocation, name,
-    stargazerCount, language, totalIssuesCount, totalIssuesOpen, totalIssuesClosed,
-    lastContributorLocations.
-
-    Filter structure:
-
-    - Field filters: { field: "fieldName", op: "Eq"|"In"|"Gte"|"Lte", value:
-      string|number|array }
-    - Composite filters: { op: "And"|"Or", filters: [...] }
-
-    Supported operators:
-
-    - String fields: Eq (exact match), In (one of array)
-    - Number fields: Eq (exact), In (one of array), Gte (>=), Lte (<=)
-    - Use And/Or to combine multiple filters
-    """
+    filters: Filters
+    """Filters to apply (required)"""
 
     first: int
     """Alias for maxResults (takes precedence if both provided)"""

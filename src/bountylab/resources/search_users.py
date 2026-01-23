@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from typing import Union, Optional
+from typing import Union
 
 import httpx
 
@@ -113,7 +113,7 @@ class SearchUsersResource(SyncAPIResource):
         query: Union[str, SequenceNotStr[str], None],
         after: str | Omit = omit,
         enable_pagination: bool | Omit = omit,
-        filters: Optional[search_user_search_params.Filters] | Omit = omit,
+        filters: search_user_search_params.Filters | Omit = omit,
         first: int | Omit = omit,
         include_attributes: search_user_search_params.IncludeAttributes | Omit = omit,
         max_results: int | Omit = omit,
@@ -140,22 +140,9 @@ class SearchUsersResource(SyncAPIResource):
 
           enable_pagination: Enable cursor-based pagination to fetch results across multiple requests
 
-          filters: Optional filters for narrowing search results. Supports filtering on: githubId,
-              login, displayName, bio, company, location, emails, resolvedCountry,
-              resolvedState, resolvedCity.
-
-              Full-text searchable fields (automatically searched): login, displayName, bio,
-              company, location, emails, resolvedCountry, resolvedState, resolvedCity.
-
-              Filter structure:
-
-              - Field filters: { field: "fieldName", op: "Eq"|"In", value: string|string[] }
-              - Composite filters: { op: "And"|"Or", filters: [...] }
-
-              Supported operators:
-
-              - String fields: Eq (exact match), In (one of array)
-              - Use And/Or to combine multiple filters
+          filters: Optional filters for users. Supports fields like login, company, location,
+              resolvedCountry, resolvedState, resolvedCity. Operators: Eq, NotEq, In, NotIn,
+              Lt, Lte, Gt, Gte.
 
           first: Alias for maxResults (takes precedence if both provided)
 
@@ -282,7 +269,7 @@ class AsyncSearchUsersResource(AsyncAPIResource):
         query: Union[str, SequenceNotStr[str], None],
         after: str | Omit = omit,
         enable_pagination: bool | Omit = omit,
-        filters: Optional[search_user_search_params.Filters] | Omit = omit,
+        filters: search_user_search_params.Filters | Omit = omit,
         first: int | Omit = omit,
         include_attributes: search_user_search_params.IncludeAttributes | Omit = omit,
         max_results: int | Omit = omit,
@@ -309,22 +296,9 @@ class AsyncSearchUsersResource(AsyncAPIResource):
 
           enable_pagination: Enable cursor-based pagination to fetch results across multiple requests
 
-          filters: Optional filters for narrowing search results. Supports filtering on: githubId,
-              login, displayName, bio, company, location, emails, resolvedCountry,
-              resolvedState, resolvedCity.
-
-              Full-text searchable fields (automatically searched): login, displayName, bio,
-              company, location, emails, resolvedCountry, resolvedState, resolvedCity.
-
-              Filter structure:
-
-              - Field filters: { field: "fieldName", op: "Eq"|"In", value: string|string[] }
-              - Composite filters: { op: "And"|"Or", filters: [...] }
-
-              Supported operators:
-
-              - String fields: Eq (exact match), In (one of array)
-              - Use And/Or to combine multiple filters
+          filters: Optional filters for users. Supports fields like login, company, location,
+              resolvedCountry, resolvedState, resolvedCity. Operators: Eq, NotEq, In, NotIn,
+              Lt, Lte, Gt, Gte.
 
           first: Alias for maxResults (takes precedence if both provided)
 
