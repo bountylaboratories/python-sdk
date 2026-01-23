@@ -109,9 +109,9 @@ class TestSearchRepos:
             after="Y3Vyc29yOjEyMzQ1",
             enable_pagination=True,
             filters={
-                "field": "language",
+                "field": "githubId",
                 "op": "Eq",
-                "value": "TypeScript",
+                "value": "value",
             },
             first=50,
             include_attributes={
@@ -265,9 +265,9 @@ class TestAsyncSearchRepos:
             after="Y3Vyc29yOjEyMzQ1",
             enable_pagination=True,
             filters={
-                "field": "language",
+                "field": "githubId",
                 "op": "Eq",
-                "value": "TypeScript",
+                "value": "value",
             },
             first=50,
             include_attributes={

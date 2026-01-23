@@ -577,7 +577,11 @@ __all__ = [
 
 class RawUserCountParams(TypedDict, total=False):
     filters: Required[Filters]
-    """Filters to apply (required)"""
+    """Optional filters for users.
+
+    Supports fields like login, company, location, resolvedCountry, resolvedState,
+    resolvedCity. Operators: Eq, NotEq, In, NotIn, Lt, Lte, Gt, Gte.
+    """
 
 
 class FiltersUnionMember0(TypedDict, total=False):
