@@ -79,7 +79,7 @@ class RawReposResource(SyncAPIResource):
           timeout: Override the client-level default timeout for this request, in seconds
         """
         return self._post(
-            "/api/raw/repos",
+            "/raw/repos",
             body=maybe_transform(
                 {
                     "github_ids": github_ids,
@@ -125,7 +125,7 @@ class RawReposResource(SyncAPIResource):
           timeout: Override the client-level default timeout for this request, in seconds
         """
         return self._post(
-            "/api/raw/repos/by-fullname",
+            "/raw/repos/by-fullname",
             body=maybe_transform(
                 {
                     "full_names": full_names,
@@ -167,7 +167,7 @@ class RawReposResource(SyncAPIResource):
           timeout: Override the client-level default timeout for this request, in seconds
         """
         return self._post(
-            "/api/raw/repos/count",
+            "/raw/repos/count",
             body=maybe_transform({"filters": filters}, raw_repo_count_params.RawRepoCountParams),
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
@@ -224,7 +224,7 @@ class RawReposResource(SyncAPIResource):
         return cast(
             RawRepoGraphResponse,
             self._post(
-                f"/api/raw/repos/{id}/graph/{relationship}",
+                f"/raw/repos/{id}/graph/{relationship}",
                 body=maybe_transform(
                     {
                         "after": after,
@@ -295,7 +295,7 @@ class AsyncRawReposResource(AsyncAPIResource):
           timeout: Override the client-level default timeout for this request, in seconds
         """
         return await self._post(
-            "/api/raw/repos",
+            "/raw/repos",
             body=await async_maybe_transform(
                 {
                     "github_ids": github_ids,
@@ -341,7 +341,7 @@ class AsyncRawReposResource(AsyncAPIResource):
           timeout: Override the client-level default timeout for this request, in seconds
         """
         return await self._post(
-            "/api/raw/repos/by-fullname",
+            "/raw/repos/by-fullname",
             body=await async_maybe_transform(
                 {
                     "full_names": full_names,
@@ -383,7 +383,7 @@ class AsyncRawReposResource(AsyncAPIResource):
           timeout: Override the client-level default timeout for this request, in seconds
         """
         return await self._post(
-            "/api/raw/repos/count",
+            "/raw/repos/count",
             body=await async_maybe_transform({"filters": filters}, raw_repo_count_params.RawRepoCountParams),
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
@@ -440,7 +440,7 @@ class AsyncRawReposResource(AsyncAPIResource):
         return cast(
             RawRepoGraphResponse,
             await self._post(
-                f"/api/raw/repos/{id}/graph/{relationship}",
+                f"/raw/repos/{id}/graph/{relationship}",
                 body=await async_maybe_transform(
                     {
                         "after": after,

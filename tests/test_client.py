@@ -851,7 +851,7 @@ class TestBountylab:
     @mock.patch("bountylab._base_client.BaseClient._calculate_retry_timeout", _low_retry_timeout)
     @pytest.mark.respx(base_url=base_url)
     def test_retrying_timeout_errors_doesnt_leak(self, respx_mock: MockRouter, client: Bountylab) -> None:
-        respx_mock.post("/api/search/users").mock(side_effect=httpx.TimeoutException("Test timeout error"))
+        respx_mock.post("/search/users").mock(side_effect=httpx.TimeoutException("Test timeout error"))
 
         with pytest.raises(APITimeoutError):
             client.search_users.with_streaming_response.search(
@@ -863,7 +863,7 @@ class TestBountylab:
     @mock.patch("bountylab._base_client.BaseClient._calculate_retry_timeout", _low_retry_timeout)
     @pytest.mark.respx(base_url=base_url)
     def test_retrying_status_errors_doesnt_leak(self, respx_mock: MockRouter, client: Bountylab) -> None:
-        respx_mock.post("/api/search/users").mock(return_value=httpx.Response(500))
+        respx_mock.post("/search/users").mock(return_value=httpx.Response(500))
 
         with pytest.raises(APIStatusError):
             client.search_users.with_streaming_response.search(
@@ -895,7 +895,7 @@ class TestBountylab:
                 return httpx.Response(500)
             return httpx.Response(200)
 
-        respx_mock.post("/api/search/users").mock(side_effect=retry_handler)
+        respx_mock.post("/search/users").mock(side_effect=retry_handler)
 
         response = client.search_users.with_raw_response.search(query="machine learning engineer san francisco")
 
@@ -919,7 +919,7 @@ class TestBountylab:
                 return httpx.Response(500)
             return httpx.Response(200)
 
-        respx_mock.post("/api/search/users").mock(side_effect=retry_handler)
+        respx_mock.post("/search/users").mock(side_effect=retry_handler)
 
         response = client.search_users.with_raw_response.search(
             query="machine learning engineer san francisco", extra_headers={"x-stainless-retry-count": Omit()}
@@ -944,7 +944,7 @@ class TestBountylab:
                 return httpx.Response(500)
             return httpx.Response(200)
 
-        respx_mock.post("/api/search/users").mock(side_effect=retry_handler)
+        respx_mock.post("/search/users").mock(side_effect=retry_handler)
 
         response = client.search_users.with_raw_response.search(
             query="machine learning engineer san francisco", extra_headers={"x-stainless-retry-count": "42"}
@@ -1759,7 +1759,7 @@ class TestAsyncBountylab:
     async def test_retrying_timeout_errors_doesnt_leak(
         self, respx_mock: MockRouter, async_client: AsyncBountylab
     ) -> None:
-        respx_mock.post("/api/search/users").mock(side_effect=httpx.TimeoutException("Test timeout error"))
+        respx_mock.post("/search/users").mock(side_effect=httpx.TimeoutException("Test timeout error"))
 
         with pytest.raises(APITimeoutError):
             await async_client.search_users.with_streaming_response.search(
@@ -1773,7 +1773,7 @@ class TestAsyncBountylab:
     async def test_retrying_status_errors_doesnt_leak(
         self, respx_mock: MockRouter, async_client: AsyncBountylab
     ) -> None:
-        respx_mock.post("/api/search/users").mock(return_value=httpx.Response(500))
+        respx_mock.post("/search/users").mock(return_value=httpx.Response(500))
 
         with pytest.raises(APIStatusError):
             await async_client.search_users.with_streaming_response.search(
@@ -1805,7 +1805,7 @@ class TestAsyncBountylab:
                 return httpx.Response(500)
             return httpx.Response(200)
 
-        respx_mock.post("/api/search/users").mock(side_effect=retry_handler)
+        respx_mock.post("/search/users").mock(side_effect=retry_handler)
 
         response = await client.search_users.with_raw_response.search(query="machine learning engineer san francisco")
 
@@ -1829,7 +1829,7 @@ class TestAsyncBountylab:
                 return httpx.Response(500)
             return httpx.Response(200)
 
-        respx_mock.post("/api/search/users").mock(side_effect=retry_handler)
+        respx_mock.post("/search/users").mock(side_effect=retry_handler)
 
         response = await client.search_users.with_raw_response.search(
             query="machine learning engineer san francisco", extra_headers={"x-stainless-retry-count": Omit()}
@@ -1854,7 +1854,7 @@ class TestAsyncBountylab:
                 return httpx.Response(500)
             return httpx.Response(200)
 
-        respx_mock.post("/api/search/users").mock(side_effect=retry_handler)
+        respx_mock.post("/search/users").mock(side_effect=retry_handler)
 
         response = await client.search_users.with_raw_response.search(
             query="machine learning engineer san francisco", extra_headers={"x-stainless-retry-count": "42"}

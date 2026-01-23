@@ -80,7 +80,7 @@ class RawUsersResource(SyncAPIResource):
           timeout: Override the client-level default timeout for this request, in seconds
         """
         return self._post(
-            "/api/raw/users",
+            "/raw/users",
             body=maybe_transform(
                 {
                     "github_ids": github_ids,
@@ -126,7 +126,7 @@ class RawUsersResource(SyncAPIResource):
           timeout: Override the client-level default timeout for this request, in seconds
         """
         return self._post(
-            "/api/raw/users/by-login",
+            "/raw/users/by-login",
             body=maybe_transform(
                 {
                     "logins": logins,
@@ -170,7 +170,7 @@ class RawUsersResource(SyncAPIResource):
           timeout: Override the client-level default timeout for this request, in seconds
         """
         return self._post(
-            "/api/raw/users/count",
+            "/raw/users/count",
             body=maybe_transform({"filters": filters}, raw_user_count_params.RawUserCountParams),
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
@@ -227,7 +227,7 @@ class RawUsersResource(SyncAPIResource):
         return cast(
             RawUserGraphResponse,
             self._post(
-                f"/api/raw/users/{id}/graph/{relationship}",
+                f"/raw/users/{id}/graph/{relationship}",
                 body=maybe_transform(
                     {
                         "after": after,
@@ -299,7 +299,7 @@ class AsyncRawUsersResource(AsyncAPIResource):
           timeout: Override the client-level default timeout for this request, in seconds
         """
         return await self._post(
-            "/api/raw/users",
+            "/raw/users",
             body=await async_maybe_transform(
                 {
                     "github_ids": github_ids,
@@ -345,7 +345,7 @@ class AsyncRawUsersResource(AsyncAPIResource):
           timeout: Override the client-level default timeout for this request, in seconds
         """
         return await self._post(
-            "/api/raw/users/by-login",
+            "/raw/users/by-login",
             body=await async_maybe_transform(
                 {
                     "logins": logins,
@@ -389,7 +389,7 @@ class AsyncRawUsersResource(AsyncAPIResource):
           timeout: Override the client-level default timeout for this request, in seconds
         """
         return await self._post(
-            "/api/raw/users/count",
+            "/raw/users/count",
             body=await async_maybe_transform({"filters": filters}, raw_user_count_params.RawUserCountParams),
             options=make_request_options(
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
@@ -446,7 +446,7 @@ class AsyncRawUsersResource(AsyncAPIResource):
         return cast(
             RawUserGraphResponse,
             await self._post(
-                f"/api/raw/users/{id}/graph/{relationship}",
+                f"/raw/users/{id}/graph/{relationship}",
                 body=await async_maybe_transform(
                     {
                         "after": after,
