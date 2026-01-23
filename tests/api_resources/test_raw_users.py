@@ -40,9 +40,9 @@ class TestRawUsers:
                     "first": 1,
                     "after": "after",
                     "filters": {
-                        "field": "githubId",
+                        "field": "field",
                         "op": "Eq",
-                        "value": "value",
+                        "value": "string",
                     },
                 },
                 "devrank": True,
@@ -50,36 +50,36 @@ class TestRawUsers:
                     "first": 10,
                     "after": "after",
                     "filters": {
-                        "field": "githubId",
+                        "field": "field",
                         "op": "Eq",
-                        "value": "value",
+                        "value": "string",
                     },
                 },
                 "following": {
                     "first": 1,
                     "after": "after",
                     "filters": {
-                        "field": "githubId",
+                        "field": "field",
                         "op": "Eq",
-                        "value": "value",
+                        "value": "string",
                     },
                 },
                 "owns": {
                     "first": 1,
                     "after": "after",
                     "filters": {
-                        "field": "githubId",
+                        "field": "field",
                         "op": "Eq",
-                        "value": "value",
+                        "value": "string",
                     },
                 },
                 "stars": {
                     "first": 10,
                     "after": "after",
                     "filters": {
-                        "field": "githubId",
+                        "field": "field",
                         "op": "Eq",
-                        "value": "value",
+                        "value": "string",
                     },
                 },
             },
@@ -130,9 +130,9 @@ class TestRawUsers:
                     "first": 1,
                     "after": "after",
                     "filters": {
-                        "field": "githubId",
+                        "field": "field",
                         "op": "Eq",
-                        "value": "value",
+                        "value": "string",
                     },
                 },
                 "devrank": True,
@@ -140,36 +140,36 @@ class TestRawUsers:
                     "first": 10,
                     "after": "after",
                     "filters": {
-                        "field": "githubId",
+                        "field": "field",
                         "op": "Eq",
-                        "value": "value",
+                        "value": "string",
                     },
                 },
                 "following": {
                     "first": 1,
                     "after": "after",
                     "filters": {
-                        "field": "githubId",
+                        "field": "field",
                         "op": "Eq",
-                        "value": "value",
+                        "value": "string",
                     },
                 },
                 "owns": {
                     "first": 1,
                     "after": "after",
                     "filters": {
-                        "field": "githubId",
+                        "field": "field",
                         "op": "Eq",
-                        "value": "value",
+                        "value": "string",
                     },
                 },
                 "stars": {
                     "first": 10,
                     "after": "after",
                     "filters": {
-                        "field": "githubId",
+                        "field": "field",
                         "op": "Eq",
-                        "value": "value",
+                        "value": "string",
                     },
                 },
             },
@@ -207,9 +207,9 @@ class TestRawUsers:
     def test_method_count(self, client: Bountylab) -> None:
         raw_user = client.raw_users.count(
             filters={
-                "field": "githubId",
+                "field": "field",
                 "op": "Eq",
-                "value": "value",
+                "value": "string",
             },
         )
         assert_matches_type(RawUserCountResponse, raw_user, path=["response"])
@@ -219,9 +219,9 @@ class TestRawUsers:
     def test_raw_response_count(self, client: Bountylab) -> None:
         response = client.raw_users.with_raw_response.count(
             filters={
-                "field": "githubId",
+                "field": "field",
                 "op": "Eq",
-                "value": "value",
+                "value": "string",
             },
         )
 
@@ -235,9 +235,9 @@ class TestRawUsers:
     def test_streaming_response_count(self, client: Bountylab) -> None:
         with client.raw_users.with_streaming_response.count(
             filters={
-                "field": "githubId",
+                "field": "field",
                 "op": "Eq",
-                "value": "value",
+                "value": "string",
             },
         ) as response:
             assert not response.is_closed
@@ -270,18 +270,18 @@ class TestRawUsers:
                     "first": 1,
                     "after": "after",
                     "filters": {
-                        "field": "githubId",
+                        "field": "field",
                         "op": "Eq",
-                        "value": "value",
+                        "value": "string",
                     },
                 },
                 "contributors": {
                     "first": 1,
                     "after": "after",
                     "filters": {
-                        "field": "githubId",
+                        "field": "field",
                         "op": "Eq",
-                        "value": "value",
+                        "value": "string",
                     },
                 },
                 "devrank": True,
@@ -289,18 +289,18 @@ class TestRawUsers:
                     "first": 1,
                     "after": "after",
                     "filters": {
-                        "field": "githubId",
+                        "field": "field",
                         "op": "Eq",
-                        "value": "value",
+                        "value": "string",
                     },
                 },
                 "following": {
                     "first": 1,
                     "after": "after",
                     "filters": {
-                        "field": "githubId",
+                        "field": "field",
                         "op": "Eq",
-                        "value": "value",
+                        "value": "string",
                     },
                 },
                 "owner": True,
@@ -309,27 +309,27 @@ class TestRawUsers:
                     "first": 1,
                     "after": "after",
                     "filters": {
-                        "field": "githubId",
+                        "field": "field",
                         "op": "Eq",
-                        "value": "value",
+                        "value": "string",
                     },
                 },
                 "starrers": {
                     "first": 1,
                     "after": "after",
                     "filters": {
-                        "field": "githubId",
+                        "field": "field",
                         "op": "Eq",
-                        "value": "value",
+                        "value": "string",
                     },
                 },
                 "stars": {
                     "first": 1,
                     "after": "after",
                     "filters": {
-                        "field": "githubId",
+                        "field": "field",
                         "op": "Eq",
-                        "value": "value",
+                        "value": "string",
                     },
                 },
             },
@@ -397,9 +397,9 @@ class TestAsyncRawUsers:
                     "first": 1,
                     "after": "after",
                     "filters": {
-                        "field": "githubId",
+                        "field": "field",
                         "op": "Eq",
-                        "value": "value",
+                        "value": "string",
                     },
                 },
                 "devrank": True,
@@ -407,36 +407,36 @@ class TestAsyncRawUsers:
                     "first": 10,
                     "after": "after",
                     "filters": {
-                        "field": "githubId",
+                        "field": "field",
                         "op": "Eq",
-                        "value": "value",
+                        "value": "string",
                     },
                 },
                 "following": {
                     "first": 1,
                     "after": "after",
                     "filters": {
-                        "field": "githubId",
+                        "field": "field",
                         "op": "Eq",
-                        "value": "value",
+                        "value": "string",
                     },
                 },
                 "owns": {
                     "first": 1,
                     "after": "after",
                     "filters": {
-                        "field": "githubId",
+                        "field": "field",
                         "op": "Eq",
-                        "value": "value",
+                        "value": "string",
                     },
                 },
                 "stars": {
                     "first": 10,
                     "after": "after",
                     "filters": {
-                        "field": "githubId",
+                        "field": "field",
                         "op": "Eq",
-                        "value": "value",
+                        "value": "string",
                     },
                 },
             },
@@ -487,9 +487,9 @@ class TestAsyncRawUsers:
                     "first": 1,
                     "after": "after",
                     "filters": {
-                        "field": "githubId",
+                        "field": "field",
                         "op": "Eq",
-                        "value": "value",
+                        "value": "string",
                     },
                 },
                 "devrank": True,
@@ -497,36 +497,36 @@ class TestAsyncRawUsers:
                     "first": 10,
                     "after": "after",
                     "filters": {
-                        "field": "githubId",
+                        "field": "field",
                         "op": "Eq",
-                        "value": "value",
+                        "value": "string",
                     },
                 },
                 "following": {
                     "first": 1,
                     "after": "after",
                     "filters": {
-                        "field": "githubId",
+                        "field": "field",
                         "op": "Eq",
-                        "value": "value",
+                        "value": "string",
                     },
                 },
                 "owns": {
                     "first": 1,
                     "after": "after",
                     "filters": {
-                        "field": "githubId",
+                        "field": "field",
                         "op": "Eq",
-                        "value": "value",
+                        "value": "string",
                     },
                 },
                 "stars": {
                     "first": 10,
                     "after": "after",
                     "filters": {
-                        "field": "githubId",
+                        "field": "field",
                         "op": "Eq",
-                        "value": "value",
+                        "value": "string",
                     },
                 },
             },
@@ -564,9 +564,9 @@ class TestAsyncRawUsers:
     async def test_method_count(self, async_client: AsyncBountylab) -> None:
         raw_user = await async_client.raw_users.count(
             filters={
-                "field": "githubId",
+                "field": "field",
                 "op": "Eq",
-                "value": "value",
+                "value": "string",
             },
         )
         assert_matches_type(RawUserCountResponse, raw_user, path=["response"])
@@ -576,9 +576,9 @@ class TestAsyncRawUsers:
     async def test_raw_response_count(self, async_client: AsyncBountylab) -> None:
         response = await async_client.raw_users.with_raw_response.count(
             filters={
-                "field": "githubId",
+                "field": "field",
                 "op": "Eq",
-                "value": "value",
+                "value": "string",
             },
         )
 
@@ -592,9 +592,9 @@ class TestAsyncRawUsers:
     async def test_streaming_response_count(self, async_client: AsyncBountylab) -> None:
         async with async_client.raw_users.with_streaming_response.count(
             filters={
-                "field": "githubId",
+                "field": "field",
                 "op": "Eq",
-                "value": "value",
+                "value": "string",
             },
         ) as response:
             assert not response.is_closed
@@ -627,18 +627,18 @@ class TestAsyncRawUsers:
                     "first": 1,
                     "after": "after",
                     "filters": {
-                        "field": "githubId",
+                        "field": "field",
                         "op": "Eq",
-                        "value": "value",
+                        "value": "string",
                     },
                 },
                 "contributors": {
                     "first": 1,
                     "after": "after",
                     "filters": {
-                        "field": "githubId",
+                        "field": "field",
                         "op": "Eq",
-                        "value": "value",
+                        "value": "string",
                     },
                 },
                 "devrank": True,
@@ -646,18 +646,18 @@ class TestAsyncRawUsers:
                     "first": 1,
                     "after": "after",
                     "filters": {
-                        "field": "githubId",
+                        "field": "field",
                         "op": "Eq",
-                        "value": "value",
+                        "value": "string",
                     },
                 },
                 "following": {
                     "first": 1,
                     "after": "after",
                     "filters": {
-                        "field": "githubId",
+                        "field": "field",
                         "op": "Eq",
-                        "value": "value",
+                        "value": "string",
                     },
                 },
                 "owner": True,
@@ -666,27 +666,27 @@ class TestAsyncRawUsers:
                     "first": 1,
                     "after": "after",
                     "filters": {
-                        "field": "githubId",
+                        "field": "field",
                         "op": "Eq",
-                        "value": "value",
+                        "value": "string",
                     },
                 },
                 "starrers": {
                     "first": 1,
                     "after": "after",
                     "filters": {
-                        "field": "githubId",
+                        "field": "field",
                         "op": "Eq",
-                        "value": "value",
+                        "value": "string",
                     },
                 },
                 "stars": {
                     "first": 1,
                     "after": "after",
                     "filters": {
-                        "field": "githubId",
+                        "field": "field",
                         "op": "Eq",
-                        "value": "value",
+                        "value": "string",
                     },
                 },
             },

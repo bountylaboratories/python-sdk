@@ -40,9 +40,9 @@ class TestRawRepos:
                     "first": 10,
                     "after": "after",
                     "filters": {
-                        "field": "githubId",
+                        "field": "field",
                         "op": "Eq",
-                        "value": "value",
+                        "value": "string",
                     },
                 },
                 "owner": True,
@@ -51,9 +51,9 @@ class TestRawRepos:
                     "first": 1,
                     "after": "after",
                     "filters": {
-                        "field": "githubId",
+                        "field": "field",
                         "op": "Eq",
-                        "value": "value",
+                        "value": "string",
                     },
                 },
             },
@@ -104,9 +104,9 @@ class TestRawRepos:
                     "first": 10,
                     "after": "after",
                     "filters": {
-                        "field": "githubId",
+                        "field": "field",
                         "op": "Eq",
-                        "value": "value",
+                        "value": "string",
                     },
                 },
                 "owner": True,
@@ -115,9 +115,9 @@ class TestRawRepos:
                     "first": 1,
                     "after": "after",
                     "filters": {
-                        "field": "githubId",
+                        "field": "field",
                         "op": "Eq",
-                        "value": "value",
+                        "value": "string",
                     },
                 },
             },
@@ -155,9 +155,9 @@ class TestRawRepos:
     def test_method_count(self, client: Bountylab) -> None:
         raw_repo = client.raw_repos.count(
             filters={
-                "field": "githubId",
+                "field": "field",
                 "op": "Eq",
-                "value": "value",
+                "value": "string",
             },
         )
         assert_matches_type(RawRepoCountResponse, raw_repo, path=["response"])
@@ -167,9 +167,9 @@ class TestRawRepos:
     def test_raw_response_count(self, client: Bountylab) -> None:
         response = client.raw_repos.with_raw_response.count(
             filters={
-                "field": "githubId",
+                "field": "field",
                 "op": "Eq",
-                "value": "value",
+                "value": "string",
             },
         )
 
@@ -183,9 +183,9 @@ class TestRawRepos:
     def test_streaming_response_count(self, client: Bountylab) -> None:
         with client.raw_repos.with_streaming_response.count(
             filters={
-                "field": "githubId",
+                "field": "field",
                 "op": "Eq",
-                "value": "value",
+                "value": "string",
             },
         ) as response:
             assert not response.is_closed
@@ -218,18 +218,18 @@ class TestRawRepos:
                     "first": 1,
                     "after": "after",
                     "filters": {
-                        "field": "githubId",
+                        "field": "field",
                         "op": "Eq",
-                        "value": "value",
+                        "value": "string",
                     },
                 },
                 "contributors": {
                     "first": 1,
                     "after": "after",
                     "filters": {
-                        "field": "githubId",
+                        "field": "field",
                         "op": "Eq",
-                        "value": "value",
+                        "value": "string",
                     },
                 },
                 "devrank": True,
@@ -237,18 +237,18 @@ class TestRawRepos:
                     "first": 1,
                     "after": "after",
                     "filters": {
-                        "field": "githubId",
+                        "field": "field",
                         "op": "Eq",
-                        "value": "value",
+                        "value": "string",
                     },
                 },
                 "following": {
                     "first": 1,
                     "after": "after",
                     "filters": {
-                        "field": "githubId",
+                        "field": "field",
                         "op": "Eq",
-                        "value": "value",
+                        "value": "string",
                     },
                 },
                 "owner": True,
@@ -257,27 +257,27 @@ class TestRawRepos:
                     "first": 1,
                     "after": "after",
                     "filters": {
-                        "field": "githubId",
+                        "field": "field",
                         "op": "Eq",
-                        "value": "value",
+                        "value": "string",
                     },
                 },
                 "starrers": {
                     "first": 1,
                     "after": "after",
                     "filters": {
-                        "field": "githubId",
+                        "field": "field",
                         "op": "Eq",
-                        "value": "value",
+                        "value": "string",
                     },
                 },
                 "stars": {
                     "first": 1,
                     "after": "after",
                     "filters": {
-                        "field": "githubId",
+                        "field": "field",
                         "op": "Eq",
-                        "value": "value",
+                        "value": "string",
                     },
                 },
             },
@@ -345,9 +345,9 @@ class TestAsyncRawRepos:
                     "first": 10,
                     "after": "after",
                     "filters": {
-                        "field": "githubId",
+                        "field": "field",
                         "op": "Eq",
-                        "value": "value",
+                        "value": "string",
                     },
                 },
                 "owner": True,
@@ -356,9 +356,9 @@ class TestAsyncRawRepos:
                     "first": 1,
                     "after": "after",
                     "filters": {
-                        "field": "githubId",
+                        "field": "field",
                         "op": "Eq",
-                        "value": "value",
+                        "value": "string",
                     },
                 },
             },
@@ -409,9 +409,9 @@ class TestAsyncRawRepos:
                     "first": 10,
                     "after": "after",
                     "filters": {
-                        "field": "githubId",
+                        "field": "field",
                         "op": "Eq",
-                        "value": "value",
+                        "value": "string",
                     },
                 },
                 "owner": True,
@@ -420,9 +420,9 @@ class TestAsyncRawRepos:
                     "first": 1,
                     "after": "after",
                     "filters": {
-                        "field": "githubId",
+                        "field": "field",
                         "op": "Eq",
-                        "value": "value",
+                        "value": "string",
                     },
                 },
             },
@@ -460,9 +460,9 @@ class TestAsyncRawRepos:
     async def test_method_count(self, async_client: AsyncBountylab) -> None:
         raw_repo = await async_client.raw_repos.count(
             filters={
-                "field": "githubId",
+                "field": "field",
                 "op": "Eq",
-                "value": "value",
+                "value": "string",
             },
         )
         assert_matches_type(RawRepoCountResponse, raw_repo, path=["response"])
@@ -472,9 +472,9 @@ class TestAsyncRawRepos:
     async def test_raw_response_count(self, async_client: AsyncBountylab) -> None:
         response = await async_client.raw_repos.with_raw_response.count(
             filters={
-                "field": "githubId",
+                "field": "field",
                 "op": "Eq",
-                "value": "value",
+                "value": "string",
             },
         )
 
@@ -488,9 +488,9 @@ class TestAsyncRawRepos:
     async def test_streaming_response_count(self, async_client: AsyncBountylab) -> None:
         async with async_client.raw_repos.with_streaming_response.count(
             filters={
-                "field": "githubId",
+                "field": "field",
                 "op": "Eq",
-                "value": "value",
+                "value": "string",
             },
         ) as response:
             assert not response.is_closed
@@ -523,18 +523,18 @@ class TestAsyncRawRepos:
                     "first": 1,
                     "after": "after",
                     "filters": {
-                        "field": "githubId",
+                        "field": "field",
                         "op": "Eq",
-                        "value": "value",
+                        "value": "string",
                     },
                 },
                 "contributors": {
                     "first": 1,
                     "after": "after",
                     "filters": {
-                        "field": "githubId",
+                        "field": "field",
                         "op": "Eq",
-                        "value": "value",
+                        "value": "string",
                     },
                 },
                 "devrank": True,
@@ -542,18 +542,18 @@ class TestAsyncRawRepos:
                     "first": 1,
                     "after": "after",
                     "filters": {
-                        "field": "githubId",
+                        "field": "field",
                         "op": "Eq",
-                        "value": "value",
+                        "value": "string",
                     },
                 },
                 "following": {
                     "first": 1,
                     "after": "after",
                     "filters": {
-                        "field": "githubId",
+                        "field": "field",
                         "op": "Eq",
-                        "value": "value",
+                        "value": "string",
                     },
                 },
                 "owner": True,
@@ -562,27 +562,27 @@ class TestAsyncRawRepos:
                     "first": 1,
                     "after": "after",
                     "filters": {
-                        "field": "githubId",
+                        "field": "field",
                         "op": "Eq",
-                        "value": "value",
+                        "value": "string",
                     },
                 },
                 "starrers": {
                     "first": 1,
                     "after": "after",
                     "filters": {
-                        "field": "githubId",
+                        "field": "field",
                         "op": "Eq",
-                        "value": "value",
+                        "value": "string",
                     },
                 },
                 "stars": {
                     "first": 1,
                     "after": "after",
                     "filters": {
-                        "field": "githubId",
+                        "field": "field",
                         "op": "Eq",
-                        "value": "value",
+                        "value": "string",
                     },
                 },
             },
