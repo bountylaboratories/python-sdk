@@ -3,13 +3,19 @@
 Types:
 
 ```python
-from bountylab.types import RawUserRetrieveResponse, RawUserByLoginResponse, RawUserGraphResponse
+from bountylab.types import (
+    RawUserRetrieveResponse,
+    RawUserByLoginResponse,
+    RawUserCountResponse,
+    RawUserGraphResponse,
+)
 ```
 
 Methods:
 
 - <code title="post /api/raw/users">client.raw_users.<a href="./src/bountylab/resources/raw_users.py">retrieve</a>(\*\*<a href="src/bountylab/types/raw_user_retrieve_params.py">params</a>) -> <a href="./src/bountylab/types/raw_user_retrieve_response.py">RawUserRetrieveResponse</a></code>
 - <code title="post /api/raw/users/by-login">client.raw_users.<a href="./src/bountylab/resources/raw_users.py">by_login</a>(\*\*<a href="src/bountylab/types/raw_user_by_login_params.py">params</a>) -> <a href="./src/bountylab/types/raw_user_by_login_response.py">RawUserByLoginResponse</a></code>
+- <code title="post /api/raw/users/count">client.raw_users.<a href="./src/bountylab/resources/raw_users.py">count</a>(\*\*<a href="src/bountylab/types/raw_user_count_params.py">params</a>) -> <a href="./src/bountylab/types/raw_user_count_response.py">RawUserCountResponse</a></code>
 - <code title="post /api/raw/users/{id}/graph/{relationship}">client.raw_users.<a href="./src/bountylab/resources/raw_users.py">graph</a>(relationship, \*, id, \*\*<a href="src/bountylab/types/raw_user_graph_params.py">params</a>) -> <a href="./src/bountylab/types/raw_user_graph_response.py">RawUserGraphResponse</a></code>
 
 # RawRepos
@@ -17,13 +23,19 @@ Methods:
 Types:
 
 ```python
-from bountylab.types import RawRepoRetrieveResponse, RawRepoByFullnameResponse, RawRepoGraphResponse
+from bountylab.types import (
+    RawRepoRetrieveResponse,
+    RawRepoByFullnameResponse,
+    RawRepoCountResponse,
+    RawRepoGraphResponse,
+)
 ```
 
 Methods:
 
 - <code title="post /api/raw/repos">client.raw_repos.<a href="./src/bountylab/resources/raw_repos.py">retrieve</a>(\*\*<a href="src/bountylab/types/raw_repo_retrieve_params.py">params</a>) -> <a href="./src/bountylab/types/raw_repo_retrieve_response.py">RawRepoRetrieveResponse</a></code>
 - <code title="post /api/raw/repos/by-fullname">client.raw_repos.<a href="./src/bountylab/resources/raw_repos.py">by_fullname</a>(\*\*<a href="src/bountylab/types/raw_repo_by_fullname_params.py">params</a>) -> <a href="./src/bountylab/types/raw_repo_by_fullname_response.py">RawRepoByFullnameResponse</a></code>
+- <code title="post /api/raw/repos/count">client.raw_repos.<a href="./src/bountylab/resources/raw_repos.py">count</a>(\*\*<a href="src/bountylab/types/raw_repo_count_params.py">params</a>) -> <a href="./src/bountylab/types/raw_repo_count_response.py">RawRepoCountResponse</a></code>
 - <code title="post /api/raw/repos/{id}/graph/{relationship}">client.raw_repos.<a href="./src/bountylab/resources/raw_repos.py">graph</a>(relationship, \*, id, \*\*<a href="src/bountylab/types/raw_repo_graph_params.py">params</a>) -> <a href="./src/bountylab/types/raw_repo_graph_response.py">RawRepoGraphResponse</a></code>
 
 # UserEmails
