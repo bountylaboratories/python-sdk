@@ -7,7 +7,7 @@ from typing_extensions import Literal
 
 import httpx
 
-from ..types import raw_user_graph_params, raw_user_by_login_params, raw_user_retrieve_params
+from ..types import raw_user_count_params, raw_user_graph_params, raw_user_by_login_params, raw_user_retrieve_params
 from .._types import Body, Omit, Query, Headers, NotGiven, SequenceNotStr, omit, not_given
 from .._utils import maybe_transform, async_maybe_transform
 from .._compat import cached_property
@@ -19,6 +19,7 @@ from .._response import (
     async_to_streamed_response_wrapper,
 )
 from .._base_client import make_request_options
+from ..types.raw_user_count_response import RawUserCountResponse
 from ..types.raw_user_graph_response import RawUserGraphResponse
 from ..types.raw_user_by_login_response import RawUserByLoginResponse
 from ..types.raw_user_retrieve_response import RawUserRetrieveResponse
@@ -137,6 +138,42 @@ class RawUsersResource(SyncAPIResource):
                 extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
             ),
             cast_to=RawUserByLoginResponse,
+        )
+
+    def count(
+        self,
+        *,
+        filters: raw_user_count_params.Filters,
+        # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
+        # The extra values given here take precedence over values defined on the client or passed to this method.
+        extra_headers: Headers | None = None,
+        extra_query: Query | None = None,
+        extra_body: Body | None = None,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
+    ) -> RawUserCountResponse:
+        """Count users in the database matching filters.
+
+        Counts are capped at minimum (10k)
+        and maximum (1M). Requires RAW service. Credits: 1 per request.
+
+        Args:
+          filters: Filters to apply (required)
+
+          extra_headers: Send extra headers
+
+          extra_query: Add additional query parameters to the request
+
+          extra_body: Add additional JSON properties to the request
+
+          timeout: Override the client-level default timeout for this request, in seconds
+        """
+        return self._post(
+            "/api/raw/users/count",
+            body=maybe_transform({"filters": filters}, raw_user_count_params.RawUserCountParams),
+            options=make_request_options(
+                extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
+            ),
+            cast_to=RawUserCountResponse,
         )
 
     def graph(
@@ -320,6 +357,42 @@ class AsyncRawUsersResource(AsyncAPIResource):
             cast_to=RawUserByLoginResponse,
         )
 
+    async def count(
+        self,
+        *,
+        filters: raw_user_count_params.Filters,
+        # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
+        # The extra values given here take precedence over values defined on the client or passed to this method.
+        extra_headers: Headers | None = None,
+        extra_query: Query | None = None,
+        extra_body: Body | None = None,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
+    ) -> RawUserCountResponse:
+        """Count users in the database matching filters.
+
+        Counts are capped at minimum (10k)
+        and maximum (1M). Requires RAW service. Credits: 1 per request.
+
+        Args:
+          filters: Filters to apply (required)
+
+          extra_headers: Send extra headers
+
+          extra_query: Add additional query parameters to the request
+
+          extra_body: Add additional JSON properties to the request
+
+          timeout: Override the client-level default timeout for this request, in seconds
+        """
+        return await self._post(
+            "/api/raw/users/count",
+            body=await async_maybe_transform({"filters": filters}, raw_user_count_params.RawUserCountParams),
+            options=make_request_options(
+                extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
+            ),
+            cast_to=RawUserCountResponse,
+        )
+
     async def graph(
         self,
         relationship: Literal["followers", "following", "owns", "stars", "contributes"],
@@ -398,6 +471,9 @@ class RawUsersResourceWithRawResponse:
         self.by_login = to_raw_response_wrapper(
             raw_users.by_login,
         )
+        self.count = to_raw_response_wrapper(
+            raw_users.count,
+        )
         self.graph = to_raw_response_wrapper(
             raw_users.graph,
         )
@@ -412,6 +488,9 @@ class AsyncRawUsersResourceWithRawResponse:
         )
         self.by_login = async_to_raw_response_wrapper(
             raw_users.by_login,
+        )
+        self.count = async_to_raw_response_wrapper(
+            raw_users.count,
         )
         self.graph = async_to_raw_response_wrapper(
             raw_users.graph,
@@ -428,6 +507,9 @@ class RawUsersResourceWithStreamingResponse:
         self.by_login = to_streamed_response_wrapper(
             raw_users.by_login,
         )
+        self.count = to_streamed_response_wrapper(
+            raw_users.count,
+        )
         self.graph = to_streamed_response_wrapper(
             raw_users.graph,
         )
@@ -442,6 +524,9 @@ class AsyncRawUsersResourceWithStreamingResponse:
         )
         self.by_login = async_to_streamed_response_wrapper(
             raw_users.by_login,
+        )
+        self.count = async_to_streamed_response_wrapper(
+            raw_users.count,
         )
         self.graph = async_to_streamed_response_wrapper(
             raw_users.graph,

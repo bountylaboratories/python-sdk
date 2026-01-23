@@ -10,6 +10,7 @@ import pytest
 from bountylab import Bountylab, AsyncBountylab
 from tests.utils import assert_matches_type
 from bountylab.types import (
+    RawRepoCountResponse,
     RawRepoGraphResponse,
     RawRepoRetrieveResponse,
     RawRepoByFullnameResponse,
@@ -146,6 +147,52 @@ class TestRawRepos:
 
             raw_repo = response.parse()
             assert_matches_type(RawRepoByFullnameResponse, raw_repo, path=["response"])
+
+        assert cast(Any, response.is_closed) is True
+
+    @pytest.mark.skip(reason="Prism tests are disabled")
+    @parametrize
+    def test_method_count(self, client: Bountylab) -> None:
+        raw_repo = client.raw_repos.count(
+            filters={
+                "field": "githubId",
+                "op": "Eq",
+                "value": "value",
+            },
+        )
+        assert_matches_type(RawRepoCountResponse, raw_repo, path=["response"])
+
+    @pytest.mark.skip(reason="Prism tests are disabled")
+    @parametrize
+    def test_raw_response_count(self, client: Bountylab) -> None:
+        response = client.raw_repos.with_raw_response.count(
+            filters={
+                "field": "githubId",
+                "op": "Eq",
+                "value": "value",
+            },
+        )
+
+        assert response.is_closed is True
+        assert response.http_request.headers.get("X-Stainless-Lang") == "python"
+        raw_repo = response.parse()
+        assert_matches_type(RawRepoCountResponse, raw_repo, path=["response"])
+
+    @pytest.mark.skip(reason="Prism tests are disabled")
+    @parametrize
+    def test_streaming_response_count(self, client: Bountylab) -> None:
+        with client.raw_repos.with_streaming_response.count(
+            filters={
+                "field": "githubId",
+                "op": "Eq",
+                "value": "value",
+            },
+        ) as response:
+            assert not response.is_closed
+            assert response.http_request.headers.get("X-Stainless-Lang") == "python"
+
+            raw_repo = response.parse()
+            assert_matches_type(RawRepoCountResponse, raw_repo, path=["response"])
 
         assert cast(Any, response.is_closed) is True
 
@@ -405,6 +452,52 @@ class TestAsyncRawRepos:
 
             raw_repo = await response.parse()
             assert_matches_type(RawRepoByFullnameResponse, raw_repo, path=["response"])
+
+        assert cast(Any, response.is_closed) is True
+
+    @pytest.mark.skip(reason="Prism tests are disabled")
+    @parametrize
+    async def test_method_count(self, async_client: AsyncBountylab) -> None:
+        raw_repo = await async_client.raw_repos.count(
+            filters={
+                "field": "githubId",
+                "op": "Eq",
+                "value": "value",
+            },
+        )
+        assert_matches_type(RawRepoCountResponse, raw_repo, path=["response"])
+
+    @pytest.mark.skip(reason="Prism tests are disabled")
+    @parametrize
+    async def test_raw_response_count(self, async_client: AsyncBountylab) -> None:
+        response = await async_client.raw_repos.with_raw_response.count(
+            filters={
+                "field": "githubId",
+                "op": "Eq",
+                "value": "value",
+            },
+        )
+
+        assert response.is_closed is True
+        assert response.http_request.headers.get("X-Stainless-Lang") == "python"
+        raw_repo = await response.parse()
+        assert_matches_type(RawRepoCountResponse, raw_repo, path=["response"])
+
+    @pytest.mark.skip(reason="Prism tests are disabled")
+    @parametrize
+    async def test_streaming_response_count(self, async_client: AsyncBountylab) -> None:
+        async with async_client.raw_repos.with_streaming_response.count(
+            filters={
+                "field": "githubId",
+                "op": "Eq",
+                "value": "value",
+            },
+        ) as response:
+            assert not response.is_closed
+            assert response.http_request.headers.get("X-Stainless-Lang") == "python"
+
+            raw_repo = await response.parse()
+            assert_matches_type(RawRepoCountResponse, raw_repo, path=["response"])
 
         assert cast(Any, response.is_closed) is True
 

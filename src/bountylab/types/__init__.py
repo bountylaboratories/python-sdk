@@ -2,9 +2,13 @@
 
 from __future__ import annotations
 
+from .raw_repo_count_params import RawRepoCountParams as RawRepoCountParams
 from .raw_repo_graph_params import RawRepoGraphParams as RawRepoGraphParams
+from .raw_user_count_params import RawUserCountParams as RawUserCountParams
 from .raw_user_graph_params import RawUserGraphParams as RawUserGraphParams
+from .raw_repo_count_response import RawRepoCountResponse as RawRepoCountResponse
 from .raw_repo_graph_response import RawRepoGraphResponse as RawRepoGraphResponse
+from .raw_user_count_response import RawUserCountResponse as RawUserCountResponse
 from .raw_user_graph_response import RawUserGraphResponse as RawUserGraphResponse
 from .raw_repo_retrieve_params import RawRepoRetrieveParams as RawRepoRetrieveParams
 from .raw_user_by_login_params import RawUserByLoginParams as RawUserByLoginParams
