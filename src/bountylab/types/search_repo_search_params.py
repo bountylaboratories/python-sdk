@@ -1089,6 +1089,13 @@ class SearchRepoSearchParams(TypedDict, total=False):
     after: str
     """Cursor for pagination (from previous response pageInfo.endCursor)"""
 
+    apply_filters_to_include_attributes: Annotated[bool, PropertyInfo(alias="applyFiltersToIncludeAttributes")]
+    """
+    When true, applies the search filter to all user-returning includeAttributes
+    (contributors, starrers). This filters the returned users to match the same
+    criteria.
+    """
+
     enable_pagination: Annotated[bool, PropertyInfo(alias="enablePagination")]
     """Enable cursor-based pagination to fetch results across multiple requests"""
 
