@@ -1076,14 +1076,21 @@ class SearchRepoNaturalLanguageParams(TypedDict, total=False):
     after: str
     """Cursor for pagination (from previous response pageInfo.endCursor)"""
 
+    apply_filters_to_include_attributes: Annotated[bool, PropertyInfo(alias="applyFiltersToIncludeAttributes")]
+    """
+    When true, applies the LLM-generated filter to all user-returning
+    includeAttributes (contributors, starrers). Alias for
+    filterUserIncludeAttributes.
+    """
+
     enable_pagination: Annotated[bool, PropertyInfo(alias="enablePagination")]
     """Enable cursor-based pagination to fetch results across multiple requests"""
 
     filter_user_include_attributes: Annotated[bool, PropertyInfo(alias="filterUserIncludeAttributes")]
     """
-    When true, the AI will generate a user location filter and apply it to ALL
-    user-returning includeAttributes (contributors, starrers). This filter will
-    override any manually-specified filters.
+    [Deprecated: Use applyFiltersToIncludeAttributes] When true, applies the
+    LLM-generated filter to all user-returning includeAttributes (contributors,
+    starrers).
     """
 
     first: int
