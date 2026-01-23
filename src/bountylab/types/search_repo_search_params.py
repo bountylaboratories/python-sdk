@@ -11,113 +11,28 @@ from .._utils import PropertyInfo
 __all__ = [
     "SearchRepoSearchParams",
     "Filters",
-    "FiltersUnionMember0",
-    "FiltersUnionMember1",
-    "FiltersUnionMember2",
-    "FiltersUnionMember3",
-    "FiltersUnionMember4",
-    "FiltersUnionMember5",
-    "FiltersUnionMember6",
-    "FiltersUnionMember7",
-    "FiltersUnionMember8",
-    "FiltersUnionMember9",
-    "FiltersUnionMember10",
-    "FiltersUnionMember11",
-    "FiltersUnionMember12",
-    "FiltersUnionMember13",
-    "FiltersUnionMember14",
-    "FiltersUnionMember15",
-    "FiltersUnionMember16",
-    "FiltersUnionMember17",
-    "FiltersUnionMember18",
-    "FiltersUnionMember19",
-    "FiltersUnionMember20",
-    "FiltersUnionMember21",
-    "FiltersUnionMember22",
-    "FiltersUnionMember23",
-    "FiltersUnionMember24",
-    "FiltersUnionMember25",
-    "FiltersUnionMember26",
-    "FiltersUnionMember27",
-    "FiltersUnionMember28",
-    "FiltersUnionMember29",
-    "FiltersUnionMember30",
-    "FiltersUnionMember31",
-    "FiltersUnionMember32",
-    "FiltersUnionMember33",
-    "FiltersUnionMember34",
-    "FiltersUnionMember35",
-    "FiltersUnionMember36",
-    "FiltersUnionMember37",
-    "FiltersUnionMember38",
-    "FiltersUnionMember39",
-    "FiltersUnionMember40",
-    "FiltersUnionMember41",
-    "FiltersUnionMember42",
-    "FiltersUnionMember43",
-    "FiltersUnionMember44",
-    "FiltersUnionMember45",
-    "FiltersUnionMember46",
-    "FiltersUnionMember47",
-    "FiltersUnionMember48",
-    "FiltersUnionMember49",
-    "FiltersUnionMember50",
-    "FiltersUnionMember51",
-    "FiltersUnionMember52",
-    "FiltersUnionMember53",
-    "FiltersUnionMember54",
-    "FiltersUnionMember55",
-    "FiltersUnionMember56",
-    "FiltersUnionMember57",
-    "FiltersUnionMember58",
-    "FiltersUnionMember59",
-    "FiltersUnionMember60",
-    "FiltersUnionMember61",
-    "FiltersUnionMember62",
-    "FiltersUnionMember63",
-    "FiltersUnionMember64",
-    "FiltersUnionMember65",
-    "FiltersUnionMember66",
-    "FiltersUnionMember67",
-    "FiltersUnionMember68",
-    "FiltersUnionMember69",
-    "FiltersUnionMember70",
-    "FiltersUnionMember71",
-    "FiltersUnionMember72",
-    "FiltersUnionMember73",
-    "FiltersUnionMember74",
-    "FiltersUnionMember75",
-    "FiltersUnionMember76",
-    "FiltersUnionMember77",
-    "FiltersUnionMember78",
-    "FiltersUnionMember79",
-    "FiltersUnionMember80",
-    "FiltersUnionMember81",
-    "FiltersUnionMember82",
-    "FiltersUnionMember83",
-    "FiltersUnionMember84",
-    "FiltersUnionMember85",
-    "FiltersUnionMember86",
-    "FiltersUnionMember87",
-    "FiltersUnionMember88",
-    "FiltersUnionMember89",
-    "FiltersUnionMember90",
-    "FiltersUnionMember91",
-    "FiltersUnionMember92",
-    "FiltersUnionMember93",
-    "FiltersUnionMember94",
-    "FiltersUnionMember95",
-    "FiltersUnionMember96",
-    "FiltersUnionMember97",
-    "FiltersUnionMember98",
-    "FiltersUnionMember99",
-    "FiltersUnionMember100",
-    "FiltersUnionMember101",
-    "FiltersUnionMember102",
-    "FiltersUnionMember103",
-    "FiltersUnionMember104",
-    "FiltersUnionMember105",
-    "FiltersUnionMember106",
+    "FiltersEq",
+    "FiltersNotEq",
+    "FiltersIn",
+    "FiltersNotIn",
+    "FiltersLt",
+    "FiltersLte",
+    "FiltersGt",
+    "FiltersGte",
+    "FiltersGlob",
+    "FiltersNotGlob",
+    "FiltersIGlob",
+    "FiltersNotIGlob",
+    "FiltersRegex",
+    "FiltersContainsAllTokens",
+    "FiltersContains",
+    "FiltersNotContains",
+    "FiltersContainsAny",
+    "FiltersNotContainsAny",
+    "FiltersAnyLt",
+    "FiltersAnyLte",
+    "FiltersAnyGt",
+    "FiltersAnyGte",
     "FiltersUnionMember107",
     "FiltersUnionMember107Filter",
     "FiltersUnionMember107FilterUnionMember0",
@@ -448,145 +363,20 @@ __all__ = [
     "IncludeAttributes",
     "IncludeAttributesContributors",
     "IncludeAttributesContributorsFilters",
-    "IncludeAttributesContributorsFiltersUnionMember0",
-    "IncludeAttributesContributorsFiltersUnionMember1",
-    "IncludeAttributesContributorsFiltersUnionMember2",
-    "IncludeAttributesContributorsFiltersUnionMember3",
-    "IncludeAttributesContributorsFiltersUnionMember4",
-    "IncludeAttributesContributorsFiltersUnionMember5",
-    "IncludeAttributesContributorsFiltersUnionMember6",
-    "IncludeAttributesContributorsFiltersUnionMember7",
-    "IncludeAttributesContributorsFiltersUnionMember8",
-    "IncludeAttributesContributorsFiltersUnionMember9",
-    "IncludeAttributesContributorsFiltersUnionMember10",
-    "IncludeAttributesContributorsFiltersUnionMember11",
-    "IncludeAttributesContributorsFiltersUnionMember12",
-    "IncludeAttributesContributorsFiltersUnionMember13",
-    "IncludeAttributesContributorsFiltersUnionMember14",
-    "IncludeAttributesContributorsFiltersUnionMember15",
-    "IncludeAttributesContributorsFiltersUnionMember16",
-    "IncludeAttributesContributorsFiltersUnionMember17",
-    "IncludeAttributesContributorsFiltersUnionMember18",
-    "IncludeAttributesContributorsFiltersUnionMember19",
-    "IncludeAttributesContributorsFiltersUnionMember20",
-    "IncludeAttributesContributorsFiltersUnionMember21",
-    "IncludeAttributesContributorsFiltersUnionMember22",
-    "IncludeAttributesContributorsFiltersUnionMember23",
-    "IncludeAttributesContributorsFiltersUnionMember24",
-    "IncludeAttributesContributorsFiltersUnionMember25",
-    "IncludeAttributesContributorsFiltersUnionMember26",
-    "IncludeAttributesContributorsFiltersUnionMember27",
-    "IncludeAttributesContributorsFiltersUnionMember28",
-    "IncludeAttributesContributorsFiltersUnionMember29",
-    "IncludeAttributesContributorsFiltersUnionMember30",
-    "IncludeAttributesContributorsFiltersUnionMember31",
-    "IncludeAttributesContributorsFiltersUnionMember32",
-    "IncludeAttributesContributorsFiltersUnionMember33",
-    "IncludeAttributesContributorsFiltersUnionMember34",
-    "IncludeAttributesContributorsFiltersUnionMember35",
-    "IncludeAttributesContributorsFiltersUnionMember36",
-    "IncludeAttributesContributorsFiltersUnionMember37",
-    "IncludeAttributesContributorsFiltersUnionMember38",
-    "IncludeAttributesContributorsFiltersUnionMember39",
-    "IncludeAttributesContributorsFiltersUnionMember40",
-    "IncludeAttributesContributorsFiltersUnionMember41",
-    "IncludeAttributesContributorsFiltersUnionMember42",
-    "IncludeAttributesContributorsFiltersUnionMember43",
-    "IncludeAttributesContributorsFiltersUnionMember44",
-    "IncludeAttributesContributorsFiltersUnionMember45",
-    "IncludeAttributesContributorsFiltersUnionMember46",
-    "IncludeAttributesContributorsFiltersUnionMember47",
-    "IncludeAttributesContributorsFiltersUnionMember48",
-    "IncludeAttributesContributorsFiltersUnionMember49",
-    "IncludeAttributesContributorsFiltersUnionMember50",
-    "IncludeAttributesContributorsFiltersUnionMember51",
-    "IncludeAttributesContributorsFiltersUnionMember52",
-    "IncludeAttributesContributorsFiltersUnionMember53",
-    "IncludeAttributesContributorsFiltersUnionMember54",
-    "IncludeAttributesContributorsFiltersUnionMember55",
-    "IncludeAttributesContributorsFiltersUnionMember56",
-    "IncludeAttributesContributorsFiltersUnionMember57",
-    "IncludeAttributesContributorsFiltersUnionMember58",
-    "IncludeAttributesContributorsFiltersUnionMember59",
-    "IncludeAttributesContributorsFiltersUnionMember60",
-    "IncludeAttributesContributorsFiltersUnionMember61",
-    "IncludeAttributesContributorsFiltersUnionMember62",
-    "IncludeAttributesContributorsFiltersUnionMember63",
-    "IncludeAttributesContributorsFiltersUnionMember64",
-    "IncludeAttributesContributorsFiltersUnionMember65",
-    "IncludeAttributesContributorsFiltersUnionMember66",
-    "IncludeAttributesContributorsFiltersUnionMember67",
-    "IncludeAttributesContributorsFiltersUnionMember68",
-    "IncludeAttributesContributorsFiltersUnionMember69",
-    "IncludeAttributesContributorsFiltersUnionMember70",
-    "IncludeAttributesContributorsFiltersUnionMember71",
-    "IncludeAttributesContributorsFiltersUnionMember72",
-    "IncludeAttributesContributorsFiltersUnionMember73",
-    "IncludeAttributesContributorsFiltersUnionMember74",
-    "IncludeAttributesContributorsFiltersUnionMember75",
-    "IncludeAttributesContributorsFiltersUnionMember76",
-    "IncludeAttributesContributorsFiltersUnionMember77",
-    "IncludeAttributesContributorsFiltersUnionMember78",
-    "IncludeAttributesContributorsFiltersUnionMember79",
-    "IncludeAttributesContributorsFiltersUnionMember80",
-    "IncludeAttributesContributorsFiltersUnionMember81",
-    "IncludeAttributesContributorsFiltersUnionMember82",
-    "IncludeAttributesContributorsFiltersUnionMember83",
-    "IncludeAttributesContributorsFiltersUnionMember84",
-    "IncludeAttributesContributorsFiltersUnionMember85",
-    "IncludeAttributesContributorsFiltersUnionMember86",
-    "IncludeAttributesContributorsFiltersUnionMember87",
-    "IncludeAttributesContributorsFiltersUnionMember88",
-    "IncludeAttributesContributorsFiltersUnionMember89",
-    "IncludeAttributesContributorsFiltersUnionMember90",
-    "IncludeAttributesContributorsFiltersUnionMember91",
-    "IncludeAttributesContributorsFiltersUnionMember92",
-    "IncludeAttributesContributorsFiltersUnionMember93",
-    "IncludeAttributesContributorsFiltersUnionMember94",
-    "IncludeAttributesContributorsFiltersUnionMember95",
-    "IncludeAttributesContributorsFiltersUnionMember96",
-    "IncludeAttributesContributorsFiltersUnionMember97",
-    "IncludeAttributesContributorsFiltersUnionMember98",
-    "IncludeAttributesContributorsFiltersUnionMember99",
-    "IncludeAttributesContributorsFiltersUnionMember100",
-    "IncludeAttributesContributorsFiltersUnionMember101",
-    "IncludeAttributesContributorsFiltersUnionMember102",
-    "IncludeAttributesContributorsFiltersUnionMember103",
-    "IncludeAttributesContributorsFiltersUnionMember104",
-    "IncludeAttributesContributorsFiltersUnionMember105",
-    "IncludeAttributesContributorsFiltersUnionMember106",
-    "IncludeAttributesContributorsFiltersUnionMember107",
-    "IncludeAttributesContributorsFiltersUnionMember108",
-    "IncludeAttributesContributorsFiltersUnionMember109",
-    "IncludeAttributesContributorsFiltersUnionMember110",
-    "IncludeAttributesContributorsFiltersUnionMember111",
-    "IncludeAttributesContributorsFiltersUnionMember112",
-    "IncludeAttributesContributorsFiltersUnionMember113",
-    "IncludeAttributesContributorsFiltersUnionMember114",
-    "IncludeAttributesContributorsFiltersUnionMember115",
-    "IncludeAttributesContributorsFiltersUnionMember116",
-    "IncludeAttributesContributorsFiltersUnionMember117",
-    "IncludeAttributesContributorsFiltersUnionMember118",
-    "IncludeAttributesContributorsFiltersUnionMember119",
-    "IncludeAttributesContributorsFiltersUnionMember120",
-    "IncludeAttributesContributorsFiltersUnionMember121",
-    "IncludeAttributesContributorsFiltersUnionMember122",
-    "IncludeAttributesContributorsFiltersUnionMember123",
-    "IncludeAttributesContributorsFiltersUnionMember124",
-    "IncludeAttributesContributorsFiltersUnionMember125",
-    "IncludeAttributesContributorsFiltersUnionMember126",
-    "IncludeAttributesContributorsFiltersUnionMember127",
-    "IncludeAttributesContributorsFiltersUnionMember128",
-    "IncludeAttributesContributorsFiltersUnionMember129",
-    "IncludeAttributesContributorsFiltersUnionMember130",
-    "IncludeAttributesContributorsFiltersUnionMember131",
-    "IncludeAttributesContributorsFiltersUnionMember132",
-    "IncludeAttributesContributorsFiltersUnionMember133",
-    "IncludeAttributesContributorsFiltersUnionMember134",
-    "IncludeAttributesContributorsFiltersUnionMember135",
-    "IncludeAttributesContributorsFiltersUnionMember136",
-    "IncludeAttributesContributorsFiltersUnionMember137",
-    "IncludeAttributesContributorsFiltersUnionMember138",
+    "IncludeAttributesContributorsFiltersEq",
+    "IncludeAttributesContributorsFiltersNotEq",
+    "IncludeAttributesContributorsFiltersIn",
+    "IncludeAttributesContributorsFiltersNotIn",
+    "IncludeAttributesContributorsFiltersLt",
+    "IncludeAttributesContributorsFiltersLte",
+    "IncludeAttributesContributorsFiltersGt",
+    "IncludeAttributesContributorsFiltersGte",
+    "IncludeAttributesContributorsFiltersGlob",
+    "IncludeAttributesContributorsFiltersNotGlob",
+    "IncludeAttributesContributorsFiltersIGlob",
+    "IncludeAttributesContributorsFiltersNotIGlob",
+    "IncludeAttributesContributorsFiltersRegex",
+    "IncludeAttributesContributorsFiltersContainsAllTokens",
     "IncludeAttributesContributorsFiltersUnionMember139",
     "IncludeAttributesContributorsFiltersUnionMember139Filter",
     "IncludeAttributesContributorsFiltersUnionMember139FilterUnionMember0",
@@ -1012,145 +802,20 @@ __all__ = [
     "IncludeAttributesContributorsFiltersUnionMember140FilterUnionMember139FilterUnionMember138",
     "IncludeAttributesStarrers",
     "IncludeAttributesStarrersFilters",
-    "IncludeAttributesStarrersFiltersUnionMember0",
-    "IncludeAttributesStarrersFiltersUnionMember1",
-    "IncludeAttributesStarrersFiltersUnionMember2",
-    "IncludeAttributesStarrersFiltersUnionMember3",
-    "IncludeAttributesStarrersFiltersUnionMember4",
-    "IncludeAttributesStarrersFiltersUnionMember5",
-    "IncludeAttributesStarrersFiltersUnionMember6",
-    "IncludeAttributesStarrersFiltersUnionMember7",
-    "IncludeAttributesStarrersFiltersUnionMember8",
-    "IncludeAttributesStarrersFiltersUnionMember9",
-    "IncludeAttributesStarrersFiltersUnionMember10",
-    "IncludeAttributesStarrersFiltersUnionMember11",
-    "IncludeAttributesStarrersFiltersUnionMember12",
-    "IncludeAttributesStarrersFiltersUnionMember13",
-    "IncludeAttributesStarrersFiltersUnionMember14",
-    "IncludeAttributesStarrersFiltersUnionMember15",
-    "IncludeAttributesStarrersFiltersUnionMember16",
-    "IncludeAttributesStarrersFiltersUnionMember17",
-    "IncludeAttributesStarrersFiltersUnionMember18",
-    "IncludeAttributesStarrersFiltersUnionMember19",
-    "IncludeAttributesStarrersFiltersUnionMember20",
-    "IncludeAttributesStarrersFiltersUnionMember21",
-    "IncludeAttributesStarrersFiltersUnionMember22",
-    "IncludeAttributesStarrersFiltersUnionMember23",
-    "IncludeAttributesStarrersFiltersUnionMember24",
-    "IncludeAttributesStarrersFiltersUnionMember25",
-    "IncludeAttributesStarrersFiltersUnionMember26",
-    "IncludeAttributesStarrersFiltersUnionMember27",
-    "IncludeAttributesStarrersFiltersUnionMember28",
-    "IncludeAttributesStarrersFiltersUnionMember29",
-    "IncludeAttributesStarrersFiltersUnionMember30",
-    "IncludeAttributesStarrersFiltersUnionMember31",
-    "IncludeAttributesStarrersFiltersUnionMember32",
-    "IncludeAttributesStarrersFiltersUnionMember33",
-    "IncludeAttributesStarrersFiltersUnionMember34",
-    "IncludeAttributesStarrersFiltersUnionMember35",
-    "IncludeAttributesStarrersFiltersUnionMember36",
-    "IncludeAttributesStarrersFiltersUnionMember37",
-    "IncludeAttributesStarrersFiltersUnionMember38",
-    "IncludeAttributesStarrersFiltersUnionMember39",
-    "IncludeAttributesStarrersFiltersUnionMember40",
-    "IncludeAttributesStarrersFiltersUnionMember41",
-    "IncludeAttributesStarrersFiltersUnionMember42",
-    "IncludeAttributesStarrersFiltersUnionMember43",
-    "IncludeAttributesStarrersFiltersUnionMember44",
-    "IncludeAttributesStarrersFiltersUnionMember45",
-    "IncludeAttributesStarrersFiltersUnionMember46",
-    "IncludeAttributesStarrersFiltersUnionMember47",
-    "IncludeAttributesStarrersFiltersUnionMember48",
-    "IncludeAttributesStarrersFiltersUnionMember49",
-    "IncludeAttributesStarrersFiltersUnionMember50",
-    "IncludeAttributesStarrersFiltersUnionMember51",
-    "IncludeAttributesStarrersFiltersUnionMember52",
-    "IncludeAttributesStarrersFiltersUnionMember53",
-    "IncludeAttributesStarrersFiltersUnionMember54",
-    "IncludeAttributesStarrersFiltersUnionMember55",
-    "IncludeAttributesStarrersFiltersUnionMember56",
-    "IncludeAttributesStarrersFiltersUnionMember57",
-    "IncludeAttributesStarrersFiltersUnionMember58",
-    "IncludeAttributesStarrersFiltersUnionMember59",
-    "IncludeAttributesStarrersFiltersUnionMember60",
-    "IncludeAttributesStarrersFiltersUnionMember61",
-    "IncludeAttributesStarrersFiltersUnionMember62",
-    "IncludeAttributesStarrersFiltersUnionMember63",
-    "IncludeAttributesStarrersFiltersUnionMember64",
-    "IncludeAttributesStarrersFiltersUnionMember65",
-    "IncludeAttributesStarrersFiltersUnionMember66",
-    "IncludeAttributesStarrersFiltersUnionMember67",
-    "IncludeAttributesStarrersFiltersUnionMember68",
-    "IncludeAttributesStarrersFiltersUnionMember69",
-    "IncludeAttributesStarrersFiltersUnionMember70",
-    "IncludeAttributesStarrersFiltersUnionMember71",
-    "IncludeAttributesStarrersFiltersUnionMember72",
-    "IncludeAttributesStarrersFiltersUnionMember73",
-    "IncludeAttributesStarrersFiltersUnionMember74",
-    "IncludeAttributesStarrersFiltersUnionMember75",
-    "IncludeAttributesStarrersFiltersUnionMember76",
-    "IncludeAttributesStarrersFiltersUnionMember77",
-    "IncludeAttributesStarrersFiltersUnionMember78",
-    "IncludeAttributesStarrersFiltersUnionMember79",
-    "IncludeAttributesStarrersFiltersUnionMember80",
-    "IncludeAttributesStarrersFiltersUnionMember81",
-    "IncludeAttributesStarrersFiltersUnionMember82",
-    "IncludeAttributesStarrersFiltersUnionMember83",
-    "IncludeAttributesStarrersFiltersUnionMember84",
-    "IncludeAttributesStarrersFiltersUnionMember85",
-    "IncludeAttributesStarrersFiltersUnionMember86",
-    "IncludeAttributesStarrersFiltersUnionMember87",
-    "IncludeAttributesStarrersFiltersUnionMember88",
-    "IncludeAttributesStarrersFiltersUnionMember89",
-    "IncludeAttributesStarrersFiltersUnionMember90",
-    "IncludeAttributesStarrersFiltersUnionMember91",
-    "IncludeAttributesStarrersFiltersUnionMember92",
-    "IncludeAttributesStarrersFiltersUnionMember93",
-    "IncludeAttributesStarrersFiltersUnionMember94",
-    "IncludeAttributesStarrersFiltersUnionMember95",
-    "IncludeAttributesStarrersFiltersUnionMember96",
-    "IncludeAttributesStarrersFiltersUnionMember97",
-    "IncludeAttributesStarrersFiltersUnionMember98",
-    "IncludeAttributesStarrersFiltersUnionMember99",
-    "IncludeAttributesStarrersFiltersUnionMember100",
-    "IncludeAttributesStarrersFiltersUnionMember101",
-    "IncludeAttributesStarrersFiltersUnionMember102",
-    "IncludeAttributesStarrersFiltersUnionMember103",
-    "IncludeAttributesStarrersFiltersUnionMember104",
-    "IncludeAttributesStarrersFiltersUnionMember105",
-    "IncludeAttributesStarrersFiltersUnionMember106",
-    "IncludeAttributesStarrersFiltersUnionMember107",
-    "IncludeAttributesStarrersFiltersUnionMember108",
-    "IncludeAttributesStarrersFiltersUnionMember109",
-    "IncludeAttributesStarrersFiltersUnionMember110",
-    "IncludeAttributesStarrersFiltersUnionMember111",
-    "IncludeAttributesStarrersFiltersUnionMember112",
-    "IncludeAttributesStarrersFiltersUnionMember113",
-    "IncludeAttributesStarrersFiltersUnionMember114",
-    "IncludeAttributesStarrersFiltersUnionMember115",
-    "IncludeAttributesStarrersFiltersUnionMember116",
-    "IncludeAttributesStarrersFiltersUnionMember117",
-    "IncludeAttributesStarrersFiltersUnionMember118",
-    "IncludeAttributesStarrersFiltersUnionMember119",
-    "IncludeAttributesStarrersFiltersUnionMember120",
-    "IncludeAttributesStarrersFiltersUnionMember121",
-    "IncludeAttributesStarrersFiltersUnionMember122",
-    "IncludeAttributesStarrersFiltersUnionMember123",
-    "IncludeAttributesStarrersFiltersUnionMember124",
-    "IncludeAttributesStarrersFiltersUnionMember125",
-    "IncludeAttributesStarrersFiltersUnionMember126",
-    "IncludeAttributesStarrersFiltersUnionMember127",
-    "IncludeAttributesStarrersFiltersUnionMember128",
-    "IncludeAttributesStarrersFiltersUnionMember129",
-    "IncludeAttributesStarrersFiltersUnionMember130",
-    "IncludeAttributesStarrersFiltersUnionMember131",
-    "IncludeAttributesStarrersFiltersUnionMember132",
-    "IncludeAttributesStarrersFiltersUnionMember133",
-    "IncludeAttributesStarrersFiltersUnionMember134",
-    "IncludeAttributesStarrersFiltersUnionMember135",
-    "IncludeAttributesStarrersFiltersUnionMember136",
-    "IncludeAttributesStarrersFiltersUnionMember137",
-    "IncludeAttributesStarrersFiltersUnionMember138",
+    "IncludeAttributesStarrersFiltersEq",
+    "IncludeAttributesStarrersFiltersNotEq",
+    "IncludeAttributesStarrersFiltersIn",
+    "IncludeAttributesStarrersFiltersNotIn",
+    "IncludeAttributesStarrersFiltersLt",
+    "IncludeAttributesStarrersFiltersLte",
+    "IncludeAttributesStarrersFiltersGt",
+    "IncludeAttributesStarrersFiltersGte",
+    "IncludeAttributesStarrersFiltersGlob",
+    "IncludeAttributesStarrersFiltersNotGlob",
+    "IncludeAttributesStarrersFiltersIGlob",
+    "IncludeAttributesStarrersFiltersNotIGlob",
+    "IncludeAttributesStarrersFiltersRegex",
+    "IncludeAttributesStarrersFiltersContainsAllTokens",
     "IncludeAttributesStarrersFiltersUnionMember139",
     "IncludeAttributesStarrersFiltersUnionMember139Filter",
     "IncludeAttributesStarrersFiltersUnionMember139FilterUnionMember0",
@@ -1575,1040 +1240,1040 @@ __all__ = [
     "IncludeAttributesStarrersFiltersUnionMember140FilterUnionMember139FilterUnionMember137",
     "IncludeAttributesStarrersFiltersUnionMember140FilterUnionMember139FilterUnionMember138",
     "RankBy",
-    "RankByUnionMember0",
-    "RankByUnionMember1",
-    "RankByUnionMember2",
-    "RankByUnionMember2Expr",
-    "RankByUnionMember2ExprUnionMember0",
-    "RankByUnionMember2ExprUnionMember1",
-    "RankByUnionMember2ExprUnionMember2",
-    "RankByUnionMember2ExprUnionMember2Expr",
-    "RankByUnionMember2ExprUnionMember2ExprUnionMember0",
-    "RankByUnionMember2ExprUnionMember2ExprUnionMember1",
-    "RankByUnionMember2ExprUnionMember2ExprUnionMember2",
-    "RankByUnionMember2ExprUnionMember2ExprUnionMember2Expr",
-    "RankByUnionMember2ExprUnionMember2ExprUnionMember2ExprUnionMember0",
-    "RankByUnionMember2ExprUnionMember2ExprUnionMember2ExprUnionMember1",
-    "RankByUnionMember2ExprUnionMember2ExprUnionMember3",
-    "RankByUnionMember2ExprUnionMember2ExprUnionMember3Expr",
-    "RankByUnionMember2ExprUnionMember2ExprUnionMember3ExprUnionMember0",
-    "RankByUnionMember2ExprUnionMember2ExprUnionMember3ExprUnionMember1",
-    "RankByUnionMember2ExprUnionMember2ExprUnionMember4",
-    "RankByUnionMember2ExprUnionMember2ExprUnionMember4Expr",
-    "RankByUnionMember2ExprUnionMember2ExprUnionMember4ExprUnionMember0",
-    "RankByUnionMember2ExprUnionMember2ExprUnionMember4ExprUnionMember1",
-    "RankByUnionMember2ExprUnionMember2ExprUnionMember5",
-    "RankByUnionMember2ExprUnionMember2ExprUnionMember5Expr",
-    "RankByUnionMember2ExprUnionMember2ExprUnionMember5ExprUnionMember0",
-    "RankByUnionMember2ExprUnionMember2ExprUnionMember5ExprUnionMember1",
-    "RankByUnionMember2ExprUnionMember2ExprUnionMember6",
-    "RankByUnionMember2ExprUnionMember2ExprUnionMember6Expr",
-    "RankByUnionMember2ExprUnionMember2ExprUnionMember6ExprUnionMember0",
-    "RankByUnionMember2ExprUnionMember2ExprUnionMember6ExprUnionMember1",
-    "RankByUnionMember2ExprUnionMember2ExprUnionMember7",
-    "RankByUnionMember2ExprUnionMember2ExprUnionMember7Expr",
-    "RankByUnionMember2ExprUnionMember2ExprUnionMember7ExprUnionMember0",
-    "RankByUnionMember2ExprUnionMember2ExprUnionMember7ExprUnionMember1",
-    "RankByUnionMember2ExprUnionMember3",
-    "RankByUnionMember2ExprUnionMember3Expr",
-    "RankByUnionMember2ExprUnionMember3ExprUnionMember0",
-    "RankByUnionMember2ExprUnionMember3ExprUnionMember1",
-    "RankByUnionMember2ExprUnionMember3ExprUnionMember2",
-    "RankByUnionMember2ExprUnionMember3ExprUnionMember2Expr",
-    "RankByUnionMember2ExprUnionMember3ExprUnionMember2ExprUnionMember0",
-    "RankByUnionMember2ExprUnionMember3ExprUnionMember2ExprUnionMember1",
-    "RankByUnionMember2ExprUnionMember3ExprUnionMember3",
-    "RankByUnionMember2ExprUnionMember3ExprUnionMember3Expr",
-    "RankByUnionMember2ExprUnionMember3ExprUnionMember3ExprUnionMember0",
-    "RankByUnionMember2ExprUnionMember3ExprUnionMember3ExprUnionMember1",
-    "RankByUnionMember2ExprUnionMember3ExprUnionMember4",
-    "RankByUnionMember2ExprUnionMember3ExprUnionMember4Expr",
-    "RankByUnionMember2ExprUnionMember3ExprUnionMember4ExprUnionMember0",
-    "RankByUnionMember2ExprUnionMember3ExprUnionMember4ExprUnionMember1",
-    "RankByUnionMember2ExprUnionMember3ExprUnionMember5",
-    "RankByUnionMember2ExprUnionMember3ExprUnionMember5Expr",
-    "RankByUnionMember2ExprUnionMember3ExprUnionMember5ExprUnionMember0",
-    "RankByUnionMember2ExprUnionMember3ExprUnionMember5ExprUnionMember1",
-    "RankByUnionMember2ExprUnionMember3ExprUnionMember6",
-    "RankByUnionMember2ExprUnionMember3ExprUnionMember6Expr",
-    "RankByUnionMember2ExprUnionMember3ExprUnionMember6ExprUnionMember0",
-    "RankByUnionMember2ExprUnionMember3ExprUnionMember6ExprUnionMember1",
-    "RankByUnionMember2ExprUnionMember3ExprUnionMember7",
-    "RankByUnionMember2ExprUnionMember3ExprUnionMember7Expr",
-    "RankByUnionMember2ExprUnionMember3ExprUnionMember7ExprUnionMember0",
-    "RankByUnionMember2ExprUnionMember3ExprUnionMember7ExprUnionMember1",
-    "RankByUnionMember2ExprUnionMember4",
-    "RankByUnionMember2ExprUnionMember4Expr",
-    "RankByUnionMember2ExprUnionMember4ExprUnionMember0",
-    "RankByUnionMember2ExprUnionMember4ExprUnionMember1",
-    "RankByUnionMember2ExprUnionMember4ExprUnionMember2",
-    "RankByUnionMember2ExprUnionMember4ExprUnionMember2Expr",
-    "RankByUnionMember2ExprUnionMember4ExprUnionMember2ExprUnionMember0",
-    "RankByUnionMember2ExprUnionMember4ExprUnionMember2ExprUnionMember1",
-    "RankByUnionMember2ExprUnionMember4ExprUnionMember3",
-    "RankByUnionMember2ExprUnionMember4ExprUnionMember3Expr",
-    "RankByUnionMember2ExprUnionMember4ExprUnionMember3ExprUnionMember0",
-    "RankByUnionMember2ExprUnionMember4ExprUnionMember3ExprUnionMember1",
-    "RankByUnionMember2ExprUnionMember4ExprUnionMember4",
-    "RankByUnionMember2ExprUnionMember4ExprUnionMember4Expr",
-    "RankByUnionMember2ExprUnionMember4ExprUnionMember4ExprUnionMember0",
-    "RankByUnionMember2ExprUnionMember4ExprUnionMember4ExprUnionMember1",
-    "RankByUnionMember2ExprUnionMember4ExprUnionMember5",
-    "RankByUnionMember2ExprUnionMember4ExprUnionMember5Expr",
-    "RankByUnionMember2ExprUnionMember4ExprUnionMember5ExprUnionMember0",
-    "RankByUnionMember2ExprUnionMember4ExprUnionMember5ExprUnionMember1",
-    "RankByUnionMember2ExprUnionMember4ExprUnionMember6",
-    "RankByUnionMember2ExprUnionMember4ExprUnionMember6Expr",
-    "RankByUnionMember2ExprUnionMember4ExprUnionMember6ExprUnionMember0",
-    "RankByUnionMember2ExprUnionMember4ExprUnionMember6ExprUnionMember1",
-    "RankByUnionMember2ExprUnionMember4ExprUnionMember7",
-    "RankByUnionMember2ExprUnionMember4ExprUnionMember7Expr",
-    "RankByUnionMember2ExprUnionMember4ExprUnionMember7ExprUnionMember0",
-    "RankByUnionMember2ExprUnionMember4ExprUnionMember7ExprUnionMember1",
-    "RankByUnionMember2ExprUnionMember5",
-    "RankByUnionMember2ExprUnionMember5Expr",
-    "RankByUnionMember2ExprUnionMember5ExprUnionMember0",
-    "RankByUnionMember2ExprUnionMember5ExprUnionMember1",
-    "RankByUnionMember2ExprUnionMember5ExprUnionMember2",
-    "RankByUnionMember2ExprUnionMember5ExprUnionMember2Expr",
-    "RankByUnionMember2ExprUnionMember5ExprUnionMember2ExprUnionMember0",
-    "RankByUnionMember2ExprUnionMember5ExprUnionMember2ExprUnionMember1",
-    "RankByUnionMember2ExprUnionMember5ExprUnionMember3",
-    "RankByUnionMember2ExprUnionMember5ExprUnionMember3Expr",
-    "RankByUnionMember2ExprUnionMember5ExprUnionMember3ExprUnionMember0",
-    "RankByUnionMember2ExprUnionMember5ExprUnionMember3ExprUnionMember1",
-    "RankByUnionMember2ExprUnionMember5ExprUnionMember4",
-    "RankByUnionMember2ExprUnionMember5ExprUnionMember4Expr",
-    "RankByUnionMember2ExprUnionMember5ExprUnionMember4ExprUnionMember0",
-    "RankByUnionMember2ExprUnionMember5ExprUnionMember4ExprUnionMember1",
-    "RankByUnionMember2ExprUnionMember5ExprUnionMember5",
-    "RankByUnionMember2ExprUnionMember5ExprUnionMember5Expr",
-    "RankByUnionMember2ExprUnionMember5ExprUnionMember5ExprUnionMember0",
-    "RankByUnionMember2ExprUnionMember5ExprUnionMember5ExprUnionMember1",
-    "RankByUnionMember2ExprUnionMember5ExprUnionMember6",
-    "RankByUnionMember2ExprUnionMember5ExprUnionMember6Expr",
-    "RankByUnionMember2ExprUnionMember5ExprUnionMember6ExprUnionMember0",
-    "RankByUnionMember2ExprUnionMember5ExprUnionMember6ExprUnionMember1",
-    "RankByUnionMember2ExprUnionMember5ExprUnionMember7",
-    "RankByUnionMember2ExprUnionMember5ExprUnionMember7Expr",
-    "RankByUnionMember2ExprUnionMember5ExprUnionMember7ExprUnionMember0",
-    "RankByUnionMember2ExprUnionMember5ExprUnionMember7ExprUnionMember1",
-    "RankByUnionMember2ExprUnionMember6",
-    "RankByUnionMember2ExprUnionMember6Expr",
-    "RankByUnionMember2ExprUnionMember6ExprUnionMember0",
-    "RankByUnionMember2ExprUnionMember6ExprUnionMember1",
-    "RankByUnionMember2ExprUnionMember6ExprUnionMember2",
-    "RankByUnionMember2ExprUnionMember6ExprUnionMember2Expr",
-    "RankByUnionMember2ExprUnionMember6ExprUnionMember2ExprUnionMember0",
-    "RankByUnionMember2ExprUnionMember6ExprUnionMember2ExprUnionMember1",
-    "RankByUnionMember2ExprUnionMember6ExprUnionMember3",
-    "RankByUnionMember2ExprUnionMember6ExprUnionMember3Expr",
-    "RankByUnionMember2ExprUnionMember6ExprUnionMember3ExprUnionMember0",
-    "RankByUnionMember2ExprUnionMember6ExprUnionMember3ExprUnionMember1",
-    "RankByUnionMember2ExprUnionMember6ExprUnionMember4",
-    "RankByUnionMember2ExprUnionMember6ExprUnionMember4Expr",
-    "RankByUnionMember2ExprUnionMember6ExprUnionMember4ExprUnionMember0",
-    "RankByUnionMember2ExprUnionMember6ExprUnionMember4ExprUnionMember1",
-    "RankByUnionMember2ExprUnionMember6ExprUnionMember5",
-    "RankByUnionMember2ExprUnionMember6ExprUnionMember5Expr",
-    "RankByUnionMember2ExprUnionMember6ExprUnionMember5ExprUnionMember0",
-    "RankByUnionMember2ExprUnionMember6ExprUnionMember5ExprUnionMember1",
-    "RankByUnionMember2ExprUnionMember6ExprUnionMember6",
-    "RankByUnionMember2ExprUnionMember6ExprUnionMember6Expr",
-    "RankByUnionMember2ExprUnionMember6ExprUnionMember6ExprUnionMember0",
-    "RankByUnionMember2ExprUnionMember6ExprUnionMember6ExprUnionMember1",
-    "RankByUnionMember2ExprUnionMember6ExprUnionMember7",
-    "RankByUnionMember2ExprUnionMember6ExprUnionMember7Expr",
-    "RankByUnionMember2ExprUnionMember6ExprUnionMember7ExprUnionMember0",
-    "RankByUnionMember2ExprUnionMember6ExprUnionMember7ExprUnionMember1",
-    "RankByUnionMember2ExprUnionMember7",
-    "RankByUnionMember2ExprUnionMember7Expr",
-    "RankByUnionMember2ExprUnionMember7ExprUnionMember0",
-    "RankByUnionMember2ExprUnionMember7ExprUnionMember1",
-    "RankByUnionMember2ExprUnionMember7ExprUnionMember2",
-    "RankByUnionMember2ExprUnionMember7ExprUnionMember2Expr",
-    "RankByUnionMember2ExprUnionMember7ExprUnionMember2ExprUnionMember0",
-    "RankByUnionMember2ExprUnionMember7ExprUnionMember2ExprUnionMember1",
-    "RankByUnionMember2ExprUnionMember7ExprUnionMember3",
-    "RankByUnionMember2ExprUnionMember7ExprUnionMember3Expr",
-    "RankByUnionMember2ExprUnionMember7ExprUnionMember3ExprUnionMember0",
-    "RankByUnionMember2ExprUnionMember7ExprUnionMember3ExprUnionMember1",
-    "RankByUnionMember2ExprUnionMember7ExprUnionMember4",
-    "RankByUnionMember2ExprUnionMember7ExprUnionMember4Expr",
-    "RankByUnionMember2ExprUnionMember7ExprUnionMember4ExprUnionMember0",
-    "RankByUnionMember2ExprUnionMember7ExprUnionMember4ExprUnionMember1",
-    "RankByUnionMember2ExprUnionMember7ExprUnionMember5",
-    "RankByUnionMember2ExprUnionMember7ExprUnionMember5Expr",
-    "RankByUnionMember2ExprUnionMember7ExprUnionMember5ExprUnionMember0",
-    "RankByUnionMember2ExprUnionMember7ExprUnionMember5ExprUnionMember1",
-    "RankByUnionMember2ExprUnionMember7ExprUnionMember6",
-    "RankByUnionMember2ExprUnionMember7ExprUnionMember6Expr",
-    "RankByUnionMember2ExprUnionMember7ExprUnionMember6ExprUnionMember0",
-    "RankByUnionMember2ExprUnionMember7ExprUnionMember6ExprUnionMember1",
-    "RankByUnionMember2ExprUnionMember7ExprUnionMember7",
-    "RankByUnionMember2ExprUnionMember7ExprUnionMember7Expr",
-    "RankByUnionMember2ExprUnionMember7ExprUnionMember7ExprUnionMember0",
-    "RankByUnionMember2ExprUnionMember7ExprUnionMember7ExprUnionMember1",
-    "RankByUnionMember3",
-    "RankByUnionMember3Expr",
-    "RankByUnionMember3ExprUnionMember0",
-    "RankByUnionMember3ExprUnionMember1",
-    "RankByUnionMember3ExprUnionMember2",
-    "RankByUnionMember3ExprUnionMember2Expr",
-    "RankByUnionMember3ExprUnionMember2ExprUnionMember0",
-    "RankByUnionMember3ExprUnionMember2ExprUnionMember1",
-    "RankByUnionMember3ExprUnionMember2ExprUnionMember2",
-    "RankByUnionMember3ExprUnionMember2ExprUnionMember2Expr",
-    "RankByUnionMember3ExprUnionMember2ExprUnionMember2ExprUnionMember0",
-    "RankByUnionMember3ExprUnionMember2ExprUnionMember2ExprUnionMember1",
-    "RankByUnionMember3ExprUnionMember2ExprUnionMember3",
-    "RankByUnionMember3ExprUnionMember2ExprUnionMember3Expr",
-    "RankByUnionMember3ExprUnionMember2ExprUnionMember3ExprUnionMember0",
-    "RankByUnionMember3ExprUnionMember2ExprUnionMember3ExprUnionMember1",
-    "RankByUnionMember3ExprUnionMember2ExprUnionMember4",
-    "RankByUnionMember3ExprUnionMember2ExprUnionMember4Expr",
-    "RankByUnionMember3ExprUnionMember2ExprUnionMember4ExprUnionMember0",
-    "RankByUnionMember3ExprUnionMember2ExprUnionMember4ExprUnionMember1",
-    "RankByUnionMember3ExprUnionMember2ExprUnionMember5",
-    "RankByUnionMember3ExprUnionMember2ExprUnionMember5Expr",
-    "RankByUnionMember3ExprUnionMember2ExprUnionMember5ExprUnionMember0",
-    "RankByUnionMember3ExprUnionMember2ExprUnionMember5ExprUnionMember1",
-    "RankByUnionMember3ExprUnionMember2ExprUnionMember6",
-    "RankByUnionMember3ExprUnionMember2ExprUnionMember6Expr",
-    "RankByUnionMember3ExprUnionMember2ExprUnionMember6ExprUnionMember0",
-    "RankByUnionMember3ExprUnionMember2ExprUnionMember6ExprUnionMember1",
-    "RankByUnionMember3ExprUnionMember2ExprUnionMember7",
-    "RankByUnionMember3ExprUnionMember2ExprUnionMember7Expr",
-    "RankByUnionMember3ExprUnionMember2ExprUnionMember7ExprUnionMember0",
-    "RankByUnionMember3ExprUnionMember2ExprUnionMember7ExprUnionMember1",
-    "RankByUnionMember3ExprUnionMember3",
-    "RankByUnionMember3ExprUnionMember3Expr",
-    "RankByUnionMember3ExprUnionMember3ExprUnionMember0",
-    "RankByUnionMember3ExprUnionMember3ExprUnionMember1",
-    "RankByUnionMember3ExprUnionMember3ExprUnionMember2",
-    "RankByUnionMember3ExprUnionMember3ExprUnionMember2Expr",
-    "RankByUnionMember3ExprUnionMember3ExprUnionMember2ExprUnionMember0",
-    "RankByUnionMember3ExprUnionMember3ExprUnionMember2ExprUnionMember1",
-    "RankByUnionMember3ExprUnionMember3ExprUnionMember3",
-    "RankByUnionMember3ExprUnionMember3ExprUnionMember3Expr",
-    "RankByUnionMember3ExprUnionMember3ExprUnionMember3ExprUnionMember0",
-    "RankByUnionMember3ExprUnionMember3ExprUnionMember3ExprUnionMember1",
-    "RankByUnionMember3ExprUnionMember3ExprUnionMember4",
-    "RankByUnionMember3ExprUnionMember3ExprUnionMember4Expr",
-    "RankByUnionMember3ExprUnionMember3ExprUnionMember4ExprUnionMember0",
-    "RankByUnionMember3ExprUnionMember3ExprUnionMember4ExprUnionMember1",
-    "RankByUnionMember3ExprUnionMember3ExprUnionMember5",
-    "RankByUnionMember3ExprUnionMember3ExprUnionMember5Expr",
-    "RankByUnionMember3ExprUnionMember3ExprUnionMember5ExprUnionMember0",
-    "RankByUnionMember3ExprUnionMember3ExprUnionMember5ExprUnionMember1",
-    "RankByUnionMember3ExprUnionMember3ExprUnionMember6",
-    "RankByUnionMember3ExprUnionMember3ExprUnionMember6Expr",
-    "RankByUnionMember3ExprUnionMember3ExprUnionMember6ExprUnionMember0",
-    "RankByUnionMember3ExprUnionMember3ExprUnionMember6ExprUnionMember1",
-    "RankByUnionMember3ExprUnionMember3ExprUnionMember7",
-    "RankByUnionMember3ExprUnionMember3ExprUnionMember7Expr",
-    "RankByUnionMember3ExprUnionMember3ExprUnionMember7ExprUnionMember0",
-    "RankByUnionMember3ExprUnionMember3ExprUnionMember7ExprUnionMember1",
-    "RankByUnionMember3ExprUnionMember4",
-    "RankByUnionMember3ExprUnionMember4Expr",
-    "RankByUnionMember3ExprUnionMember4ExprUnionMember0",
-    "RankByUnionMember3ExprUnionMember4ExprUnionMember1",
-    "RankByUnionMember3ExprUnionMember4ExprUnionMember2",
-    "RankByUnionMember3ExprUnionMember4ExprUnionMember2Expr",
-    "RankByUnionMember3ExprUnionMember4ExprUnionMember2ExprUnionMember0",
-    "RankByUnionMember3ExprUnionMember4ExprUnionMember2ExprUnionMember1",
-    "RankByUnionMember3ExprUnionMember4ExprUnionMember3",
-    "RankByUnionMember3ExprUnionMember4ExprUnionMember3Expr",
-    "RankByUnionMember3ExprUnionMember4ExprUnionMember3ExprUnionMember0",
-    "RankByUnionMember3ExprUnionMember4ExprUnionMember3ExprUnionMember1",
-    "RankByUnionMember3ExprUnionMember4ExprUnionMember4",
-    "RankByUnionMember3ExprUnionMember4ExprUnionMember4Expr",
-    "RankByUnionMember3ExprUnionMember4ExprUnionMember4ExprUnionMember0",
-    "RankByUnionMember3ExprUnionMember4ExprUnionMember4ExprUnionMember1",
-    "RankByUnionMember3ExprUnionMember4ExprUnionMember5",
-    "RankByUnionMember3ExprUnionMember4ExprUnionMember5Expr",
-    "RankByUnionMember3ExprUnionMember4ExprUnionMember5ExprUnionMember0",
-    "RankByUnionMember3ExprUnionMember4ExprUnionMember5ExprUnionMember1",
-    "RankByUnionMember3ExprUnionMember4ExprUnionMember6",
-    "RankByUnionMember3ExprUnionMember4ExprUnionMember6Expr",
-    "RankByUnionMember3ExprUnionMember4ExprUnionMember6ExprUnionMember0",
-    "RankByUnionMember3ExprUnionMember4ExprUnionMember6ExprUnionMember1",
-    "RankByUnionMember3ExprUnionMember4ExprUnionMember7",
-    "RankByUnionMember3ExprUnionMember4ExprUnionMember7Expr",
-    "RankByUnionMember3ExprUnionMember4ExprUnionMember7ExprUnionMember0",
-    "RankByUnionMember3ExprUnionMember4ExprUnionMember7ExprUnionMember1",
-    "RankByUnionMember3ExprUnionMember5",
-    "RankByUnionMember3ExprUnionMember5Expr",
-    "RankByUnionMember3ExprUnionMember5ExprUnionMember0",
-    "RankByUnionMember3ExprUnionMember5ExprUnionMember1",
-    "RankByUnionMember3ExprUnionMember5ExprUnionMember2",
-    "RankByUnionMember3ExprUnionMember5ExprUnionMember2Expr",
-    "RankByUnionMember3ExprUnionMember5ExprUnionMember2ExprUnionMember0",
-    "RankByUnionMember3ExprUnionMember5ExprUnionMember2ExprUnionMember1",
-    "RankByUnionMember3ExprUnionMember5ExprUnionMember3",
-    "RankByUnionMember3ExprUnionMember5ExprUnionMember3Expr",
-    "RankByUnionMember3ExprUnionMember5ExprUnionMember3ExprUnionMember0",
-    "RankByUnionMember3ExprUnionMember5ExprUnionMember3ExprUnionMember1",
-    "RankByUnionMember3ExprUnionMember5ExprUnionMember4",
-    "RankByUnionMember3ExprUnionMember5ExprUnionMember4Expr",
-    "RankByUnionMember3ExprUnionMember5ExprUnionMember4ExprUnionMember0",
-    "RankByUnionMember3ExprUnionMember5ExprUnionMember4ExprUnionMember1",
-    "RankByUnionMember3ExprUnionMember5ExprUnionMember5",
-    "RankByUnionMember3ExprUnionMember5ExprUnionMember5Expr",
-    "RankByUnionMember3ExprUnionMember5ExprUnionMember5ExprUnionMember0",
-    "RankByUnionMember3ExprUnionMember5ExprUnionMember5ExprUnionMember1",
-    "RankByUnionMember3ExprUnionMember5ExprUnionMember6",
-    "RankByUnionMember3ExprUnionMember5ExprUnionMember6Expr",
-    "RankByUnionMember3ExprUnionMember5ExprUnionMember6ExprUnionMember0",
-    "RankByUnionMember3ExprUnionMember5ExprUnionMember6ExprUnionMember1",
-    "RankByUnionMember3ExprUnionMember5ExprUnionMember7",
-    "RankByUnionMember3ExprUnionMember5ExprUnionMember7Expr",
-    "RankByUnionMember3ExprUnionMember5ExprUnionMember7ExprUnionMember0",
-    "RankByUnionMember3ExprUnionMember5ExprUnionMember7ExprUnionMember1",
-    "RankByUnionMember3ExprUnionMember6",
-    "RankByUnionMember3ExprUnionMember6Expr",
-    "RankByUnionMember3ExprUnionMember6ExprUnionMember0",
-    "RankByUnionMember3ExprUnionMember6ExprUnionMember1",
-    "RankByUnionMember3ExprUnionMember6ExprUnionMember2",
-    "RankByUnionMember3ExprUnionMember6ExprUnionMember2Expr",
-    "RankByUnionMember3ExprUnionMember6ExprUnionMember2ExprUnionMember0",
-    "RankByUnionMember3ExprUnionMember6ExprUnionMember2ExprUnionMember1",
-    "RankByUnionMember3ExprUnionMember6ExprUnionMember3",
-    "RankByUnionMember3ExprUnionMember6ExprUnionMember3Expr",
-    "RankByUnionMember3ExprUnionMember6ExprUnionMember3ExprUnionMember0",
-    "RankByUnionMember3ExprUnionMember6ExprUnionMember3ExprUnionMember1",
-    "RankByUnionMember3ExprUnionMember6ExprUnionMember4",
-    "RankByUnionMember3ExprUnionMember6ExprUnionMember4Expr",
-    "RankByUnionMember3ExprUnionMember6ExprUnionMember4ExprUnionMember0",
-    "RankByUnionMember3ExprUnionMember6ExprUnionMember4ExprUnionMember1",
-    "RankByUnionMember3ExprUnionMember6ExprUnionMember5",
-    "RankByUnionMember3ExprUnionMember6ExprUnionMember5Expr",
-    "RankByUnionMember3ExprUnionMember6ExprUnionMember5ExprUnionMember0",
-    "RankByUnionMember3ExprUnionMember6ExprUnionMember5ExprUnionMember1",
-    "RankByUnionMember3ExprUnionMember6ExprUnionMember6",
-    "RankByUnionMember3ExprUnionMember6ExprUnionMember6Expr",
-    "RankByUnionMember3ExprUnionMember6ExprUnionMember6ExprUnionMember0",
-    "RankByUnionMember3ExprUnionMember6ExprUnionMember6ExprUnionMember1",
-    "RankByUnionMember3ExprUnionMember6ExprUnionMember7",
-    "RankByUnionMember3ExprUnionMember6ExprUnionMember7Expr",
-    "RankByUnionMember3ExprUnionMember6ExprUnionMember7ExprUnionMember0",
-    "RankByUnionMember3ExprUnionMember6ExprUnionMember7ExprUnionMember1",
-    "RankByUnionMember3ExprUnionMember7",
-    "RankByUnionMember3ExprUnionMember7Expr",
-    "RankByUnionMember3ExprUnionMember7ExprUnionMember0",
-    "RankByUnionMember3ExprUnionMember7ExprUnionMember1",
-    "RankByUnionMember3ExprUnionMember7ExprUnionMember2",
-    "RankByUnionMember3ExprUnionMember7ExprUnionMember2Expr",
-    "RankByUnionMember3ExprUnionMember7ExprUnionMember2ExprUnionMember0",
-    "RankByUnionMember3ExprUnionMember7ExprUnionMember2ExprUnionMember1",
-    "RankByUnionMember3ExprUnionMember7ExprUnionMember3",
-    "RankByUnionMember3ExprUnionMember7ExprUnionMember3Expr",
-    "RankByUnionMember3ExprUnionMember7ExprUnionMember3ExprUnionMember0",
-    "RankByUnionMember3ExprUnionMember7ExprUnionMember3ExprUnionMember1",
-    "RankByUnionMember3ExprUnionMember7ExprUnionMember4",
-    "RankByUnionMember3ExprUnionMember7ExprUnionMember4Expr",
-    "RankByUnionMember3ExprUnionMember7ExprUnionMember4ExprUnionMember0",
-    "RankByUnionMember3ExprUnionMember7ExprUnionMember4ExprUnionMember1",
-    "RankByUnionMember3ExprUnionMember7ExprUnionMember5",
-    "RankByUnionMember3ExprUnionMember7ExprUnionMember5Expr",
-    "RankByUnionMember3ExprUnionMember7ExprUnionMember5ExprUnionMember0",
-    "RankByUnionMember3ExprUnionMember7ExprUnionMember5ExprUnionMember1",
-    "RankByUnionMember3ExprUnionMember7ExprUnionMember6",
-    "RankByUnionMember3ExprUnionMember7ExprUnionMember6Expr",
-    "RankByUnionMember3ExprUnionMember7ExprUnionMember6ExprUnionMember0",
-    "RankByUnionMember3ExprUnionMember7ExprUnionMember6ExprUnionMember1",
-    "RankByUnionMember3ExprUnionMember7ExprUnionMember7",
-    "RankByUnionMember3ExprUnionMember7ExprUnionMember7Expr",
-    "RankByUnionMember3ExprUnionMember7ExprUnionMember7ExprUnionMember0",
-    "RankByUnionMember3ExprUnionMember7ExprUnionMember7ExprUnionMember1",
-    "RankByUnionMember4",
-    "RankByUnionMember4Expr",
-    "RankByUnionMember4ExprUnionMember0",
-    "RankByUnionMember4ExprUnionMember1",
-    "RankByUnionMember4ExprUnionMember2",
-    "RankByUnionMember4ExprUnionMember2Expr",
-    "RankByUnionMember4ExprUnionMember2ExprUnionMember0",
-    "RankByUnionMember4ExprUnionMember2ExprUnionMember1",
-    "RankByUnionMember4ExprUnionMember2ExprUnionMember2",
-    "RankByUnionMember4ExprUnionMember2ExprUnionMember2Expr",
-    "RankByUnionMember4ExprUnionMember2ExprUnionMember2ExprUnionMember0",
-    "RankByUnionMember4ExprUnionMember2ExprUnionMember2ExprUnionMember1",
-    "RankByUnionMember4ExprUnionMember2ExprUnionMember3",
-    "RankByUnionMember4ExprUnionMember2ExprUnionMember3Expr",
-    "RankByUnionMember4ExprUnionMember2ExprUnionMember3ExprUnionMember0",
-    "RankByUnionMember4ExprUnionMember2ExprUnionMember3ExprUnionMember1",
-    "RankByUnionMember4ExprUnionMember2ExprUnionMember4",
-    "RankByUnionMember4ExprUnionMember2ExprUnionMember4Expr",
-    "RankByUnionMember4ExprUnionMember2ExprUnionMember4ExprUnionMember0",
-    "RankByUnionMember4ExprUnionMember2ExprUnionMember4ExprUnionMember1",
-    "RankByUnionMember4ExprUnionMember2ExprUnionMember5",
-    "RankByUnionMember4ExprUnionMember2ExprUnionMember5Expr",
-    "RankByUnionMember4ExprUnionMember2ExprUnionMember5ExprUnionMember0",
-    "RankByUnionMember4ExprUnionMember2ExprUnionMember5ExprUnionMember1",
-    "RankByUnionMember4ExprUnionMember2ExprUnionMember6",
-    "RankByUnionMember4ExprUnionMember2ExprUnionMember6Expr",
-    "RankByUnionMember4ExprUnionMember2ExprUnionMember6ExprUnionMember0",
-    "RankByUnionMember4ExprUnionMember2ExprUnionMember6ExprUnionMember1",
-    "RankByUnionMember4ExprUnionMember2ExprUnionMember7",
-    "RankByUnionMember4ExprUnionMember2ExprUnionMember7Expr",
-    "RankByUnionMember4ExprUnionMember2ExprUnionMember7ExprUnionMember0",
-    "RankByUnionMember4ExprUnionMember2ExprUnionMember7ExprUnionMember1",
-    "RankByUnionMember4ExprUnionMember3",
-    "RankByUnionMember4ExprUnionMember3Expr",
-    "RankByUnionMember4ExprUnionMember3ExprUnionMember0",
-    "RankByUnionMember4ExprUnionMember3ExprUnionMember1",
-    "RankByUnionMember4ExprUnionMember3ExprUnionMember2",
-    "RankByUnionMember4ExprUnionMember3ExprUnionMember2Expr",
-    "RankByUnionMember4ExprUnionMember3ExprUnionMember2ExprUnionMember0",
-    "RankByUnionMember4ExprUnionMember3ExprUnionMember2ExprUnionMember1",
-    "RankByUnionMember4ExprUnionMember3ExprUnionMember3",
-    "RankByUnionMember4ExprUnionMember3ExprUnionMember3Expr",
-    "RankByUnionMember4ExprUnionMember3ExprUnionMember3ExprUnionMember0",
-    "RankByUnionMember4ExprUnionMember3ExprUnionMember3ExprUnionMember1",
-    "RankByUnionMember4ExprUnionMember3ExprUnionMember4",
-    "RankByUnionMember4ExprUnionMember3ExprUnionMember4Expr",
-    "RankByUnionMember4ExprUnionMember3ExprUnionMember4ExprUnionMember0",
-    "RankByUnionMember4ExprUnionMember3ExprUnionMember4ExprUnionMember1",
-    "RankByUnionMember4ExprUnionMember3ExprUnionMember5",
-    "RankByUnionMember4ExprUnionMember3ExprUnionMember5Expr",
-    "RankByUnionMember4ExprUnionMember3ExprUnionMember5ExprUnionMember0",
-    "RankByUnionMember4ExprUnionMember3ExprUnionMember5ExprUnionMember1",
-    "RankByUnionMember4ExprUnionMember3ExprUnionMember6",
-    "RankByUnionMember4ExprUnionMember3ExprUnionMember6Expr",
-    "RankByUnionMember4ExprUnionMember3ExprUnionMember6ExprUnionMember0",
-    "RankByUnionMember4ExprUnionMember3ExprUnionMember6ExprUnionMember1",
-    "RankByUnionMember4ExprUnionMember3ExprUnionMember7",
-    "RankByUnionMember4ExprUnionMember3ExprUnionMember7Expr",
-    "RankByUnionMember4ExprUnionMember3ExprUnionMember7ExprUnionMember0",
-    "RankByUnionMember4ExprUnionMember3ExprUnionMember7ExprUnionMember1",
-    "RankByUnionMember4ExprUnionMember4",
-    "RankByUnionMember4ExprUnionMember4Expr",
-    "RankByUnionMember4ExprUnionMember4ExprUnionMember0",
-    "RankByUnionMember4ExprUnionMember4ExprUnionMember1",
-    "RankByUnionMember4ExprUnionMember4ExprUnionMember2",
-    "RankByUnionMember4ExprUnionMember4ExprUnionMember2Expr",
-    "RankByUnionMember4ExprUnionMember4ExprUnionMember2ExprUnionMember0",
-    "RankByUnionMember4ExprUnionMember4ExprUnionMember2ExprUnionMember1",
-    "RankByUnionMember4ExprUnionMember4ExprUnionMember3",
-    "RankByUnionMember4ExprUnionMember4ExprUnionMember3Expr",
-    "RankByUnionMember4ExprUnionMember4ExprUnionMember3ExprUnionMember0",
-    "RankByUnionMember4ExprUnionMember4ExprUnionMember3ExprUnionMember1",
-    "RankByUnionMember4ExprUnionMember4ExprUnionMember4",
-    "RankByUnionMember4ExprUnionMember4ExprUnionMember4Expr",
-    "RankByUnionMember4ExprUnionMember4ExprUnionMember4ExprUnionMember0",
-    "RankByUnionMember4ExprUnionMember4ExprUnionMember4ExprUnionMember1",
-    "RankByUnionMember4ExprUnionMember4ExprUnionMember5",
-    "RankByUnionMember4ExprUnionMember4ExprUnionMember5Expr",
-    "RankByUnionMember4ExprUnionMember4ExprUnionMember5ExprUnionMember0",
-    "RankByUnionMember4ExprUnionMember4ExprUnionMember5ExprUnionMember1",
-    "RankByUnionMember4ExprUnionMember4ExprUnionMember6",
-    "RankByUnionMember4ExprUnionMember4ExprUnionMember6Expr",
-    "RankByUnionMember4ExprUnionMember4ExprUnionMember6ExprUnionMember0",
-    "RankByUnionMember4ExprUnionMember4ExprUnionMember6ExprUnionMember1",
-    "RankByUnionMember4ExprUnionMember4ExprUnionMember7",
-    "RankByUnionMember4ExprUnionMember4ExprUnionMember7Expr",
-    "RankByUnionMember4ExprUnionMember4ExprUnionMember7ExprUnionMember0",
-    "RankByUnionMember4ExprUnionMember4ExprUnionMember7ExprUnionMember1",
-    "RankByUnionMember4ExprUnionMember5",
-    "RankByUnionMember4ExprUnionMember5Expr",
-    "RankByUnionMember4ExprUnionMember5ExprUnionMember0",
-    "RankByUnionMember4ExprUnionMember5ExprUnionMember1",
-    "RankByUnionMember4ExprUnionMember5ExprUnionMember2",
-    "RankByUnionMember4ExprUnionMember5ExprUnionMember2Expr",
-    "RankByUnionMember4ExprUnionMember5ExprUnionMember2ExprUnionMember0",
-    "RankByUnionMember4ExprUnionMember5ExprUnionMember2ExprUnionMember1",
-    "RankByUnionMember4ExprUnionMember5ExprUnionMember3",
-    "RankByUnionMember4ExprUnionMember5ExprUnionMember3Expr",
-    "RankByUnionMember4ExprUnionMember5ExprUnionMember3ExprUnionMember0",
-    "RankByUnionMember4ExprUnionMember5ExprUnionMember3ExprUnionMember1",
-    "RankByUnionMember4ExprUnionMember5ExprUnionMember4",
-    "RankByUnionMember4ExprUnionMember5ExprUnionMember4Expr",
-    "RankByUnionMember4ExprUnionMember5ExprUnionMember4ExprUnionMember0",
-    "RankByUnionMember4ExprUnionMember5ExprUnionMember4ExprUnionMember1",
-    "RankByUnionMember4ExprUnionMember5ExprUnionMember5",
-    "RankByUnionMember4ExprUnionMember5ExprUnionMember5Expr",
-    "RankByUnionMember4ExprUnionMember5ExprUnionMember5ExprUnionMember0",
-    "RankByUnionMember4ExprUnionMember5ExprUnionMember5ExprUnionMember1",
-    "RankByUnionMember4ExprUnionMember5ExprUnionMember6",
-    "RankByUnionMember4ExprUnionMember5ExprUnionMember6Expr",
-    "RankByUnionMember4ExprUnionMember5ExprUnionMember6ExprUnionMember0",
-    "RankByUnionMember4ExprUnionMember5ExprUnionMember6ExprUnionMember1",
-    "RankByUnionMember4ExprUnionMember5ExprUnionMember7",
-    "RankByUnionMember4ExprUnionMember5ExprUnionMember7Expr",
-    "RankByUnionMember4ExprUnionMember5ExprUnionMember7ExprUnionMember0",
-    "RankByUnionMember4ExprUnionMember5ExprUnionMember7ExprUnionMember1",
-    "RankByUnionMember4ExprUnionMember6",
-    "RankByUnionMember4ExprUnionMember6Expr",
-    "RankByUnionMember4ExprUnionMember6ExprUnionMember0",
-    "RankByUnionMember4ExprUnionMember6ExprUnionMember1",
-    "RankByUnionMember4ExprUnionMember6ExprUnionMember2",
-    "RankByUnionMember4ExprUnionMember6ExprUnionMember2Expr",
-    "RankByUnionMember4ExprUnionMember6ExprUnionMember2ExprUnionMember0",
-    "RankByUnionMember4ExprUnionMember6ExprUnionMember2ExprUnionMember1",
-    "RankByUnionMember4ExprUnionMember6ExprUnionMember3",
-    "RankByUnionMember4ExprUnionMember6ExprUnionMember3Expr",
-    "RankByUnionMember4ExprUnionMember6ExprUnionMember3ExprUnionMember0",
-    "RankByUnionMember4ExprUnionMember6ExprUnionMember3ExprUnionMember1",
-    "RankByUnionMember4ExprUnionMember6ExprUnionMember4",
-    "RankByUnionMember4ExprUnionMember6ExprUnionMember4Expr",
-    "RankByUnionMember4ExprUnionMember6ExprUnionMember4ExprUnionMember0",
-    "RankByUnionMember4ExprUnionMember6ExprUnionMember4ExprUnionMember1",
-    "RankByUnionMember4ExprUnionMember6ExprUnionMember5",
-    "RankByUnionMember4ExprUnionMember6ExprUnionMember5Expr",
-    "RankByUnionMember4ExprUnionMember6ExprUnionMember5ExprUnionMember0",
-    "RankByUnionMember4ExprUnionMember6ExprUnionMember5ExprUnionMember1",
-    "RankByUnionMember4ExprUnionMember6ExprUnionMember6",
-    "RankByUnionMember4ExprUnionMember6ExprUnionMember6Expr",
-    "RankByUnionMember4ExprUnionMember6ExprUnionMember6ExprUnionMember0",
-    "RankByUnionMember4ExprUnionMember6ExprUnionMember6ExprUnionMember1",
-    "RankByUnionMember4ExprUnionMember6ExprUnionMember7",
-    "RankByUnionMember4ExprUnionMember6ExprUnionMember7Expr",
-    "RankByUnionMember4ExprUnionMember6ExprUnionMember7ExprUnionMember0",
-    "RankByUnionMember4ExprUnionMember6ExprUnionMember7ExprUnionMember1",
-    "RankByUnionMember4ExprUnionMember7",
-    "RankByUnionMember4ExprUnionMember7Expr",
-    "RankByUnionMember4ExprUnionMember7ExprUnionMember0",
-    "RankByUnionMember4ExprUnionMember7ExprUnionMember1",
-    "RankByUnionMember4ExprUnionMember7ExprUnionMember2",
-    "RankByUnionMember4ExprUnionMember7ExprUnionMember2Expr",
-    "RankByUnionMember4ExprUnionMember7ExprUnionMember2ExprUnionMember0",
-    "RankByUnionMember4ExprUnionMember7ExprUnionMember2ExprUnionMember1",
-    "RankByUnionMember4ExprUnionMember7ExprUnionMember3",
-    "RankByUnionMember4ExprUnionMember7ExprUnionMember3Expr",
-    "RankByUnionMember4ExprUnionMember7ExprUnionMember3ExprUnionMember0",
-    "RankByUnionMember4ExprUnionMember7ExprUnionMember3ExprUnionMember1",
-    "RankByUnionMember4ExprUnionMember7ExprUnionMember4",
-    "RankByUnionMember4ExprUnionMember7ExprUnionMember4Expr",
-    "RankByUnionMember4ExprUnionMember7ExprUnionMember4ExprUnionMember0",
-    "RankByUnionMember4ExprUnionMember7ExprUnionMember4ExprUnionMember1",
-    "RankByUnionMember4ExprUnionMember7ExprUnionMember5",
-    "RankByUnionMember4ExprUnionMember7ExprUnionMember5Expr",
-    "RankByUnionMember4ExprUnionMember7ExprUnionMember5ExprUnionMember0",
-    "RankByUnionMember4ExprUnionMember7ExprUnionMember5ExprUnionMember1",
-    "RankByUnionMember4ExprUnionMember7ExprUnionMember6",
-    "RankByUnionMember4ExprUnionMember7ExprUnionMember6Expr",
-    "RankByUnionMember4ExprUnionMember7ExprUnionMember6ExprUnionMember0",
-    "RankByUnionMember4ExprUnionMember7ExprUnionMember6ExprUnionMember1",
-    "RankByUnionMember4ExprUnionMember7ExprUnionMember7",
-    "RankByUnionMember4ExprUnionMember7ExprUnionMember7Expr",
-    "RankByUnionMember4ExprUnionMember7ExprUnionMember7ExprUnionMember0",
-    "RankByUnionMember4ExprUnionMember7ExprUnionMember7ExprUnionMember1",
-    "RankByUnionMember5",
-    "RankByUnionMember5Expr",
-    "RankByUnionMember5ExprUnionMember0",
-    "RankByUnionMember5ExprUnionMember1",
-    "RankByUnionMember5ExprUnionMember2",
-    "RankByUnionMember5ExprUnionMember2Expr",
-    "RankByUnionMember5ExprUnionMember2ExprUnionMember0",
-    "RankByUnionMember5ExprUnionMember2ExprUnionMember1",
-    "RankByUnionMember5ExprUnionMember2ExprUnionMember2",
-    "RankByUnionMember5ExprUnionMember2ExprUnionMember2Expr",
-    "RankByUnionMember5ExprUnionMember2ExprUnionMember2ExprUnionMember0",
-    "RankByUnionMember5ExprUnionMember2ExprUnionMember2ExprUnionMember1",
-    "RankByUnionMember5ExprUnionMember2ExprUnionMember3",
-    "RankByUnionMember5ExprUnionMember2ExprUnionMember3Expr",
-    "RankByUnionMember5ExprUnionMember2ExprUnionMember3ExprUnionMember0",
-    "RankByUnionMember5ExprUnionMember2ExprUnionMember3ExprUnionMember1",
-    "RankByUnionMember5ExprUnionMember2ExprUnionMember4",
-    "RankByUnionMember5ExprUnionMember2ExprUnionMember4Expr",
-    "RankByUnionMember5ExprUnionMember2ExprUnionMember4ExprUnionMember0",
-    "RankByUnionMember5ExprUnionMember2ExprUnionMember4ExprUnionMember1",
-    "RankByUnionMember5ExprUnionMember2ExprUnionMember5",
-    "RankByUnionMember5ExprUnionMember2ExprUnionMember5Expr",
-    "RankByUnionMember5ExprUnionMember2ExprUnionMember5ExprUnionMember0",
-    "RankByUnionMember5ExprUnionMember2ExprUnionMember5ExprUnionMember1",
-    "RankByUnionMember5ExprUnionMember2ExprUnionMember6",
-    "RankByUnionMember5ExprUnionMember2ExprUnionMember6Expr",
-    "RankByUnionMember5ExprUnionMember2ExprUnionMember6ExprUnionMember0",
-    "RankByUnionMember5ExprUnionMember2ExprUnionMember6ExprUnionMember1",
-    "RankByUnionMember5ExprUnionMember2ExprUnionMember7",
-    "RankByUnionMember5ExprUnionMember2ExprUnionMember7Expr",
-    "RankByUnionMember5ExprUnionMember2ExprUnionMember7ExprUnionMember0",
-    "RankByUnionMember5ExprUnionMember2ExprUnionMember7ExprUnionMember1",
-    "RankByUnionMember5ExprUnionMember3",
-    "RankByUnionMember5ExprUnionMember3Expr",
-    "RankByUnionMember5ExprUnionMember3ExprUnionMember0",
-    "RankByUnionMember5ExprUnionMember3ExprUnionMember1",
-    "RankByUnionMember5ExprUnionMember3ExprUnionMember2",
-    "RankByUnionMember5ExprUnionMember3ExprUnionMember2Expr",
-    "RankByUnionMember5ExprUnionMember3ExprUnionMember2ExprUnionMember0",
-    "RankByUnionMember5ExprUnionMember3ExprUnionMember2ExprUnionMember1",
-    "RankByUnionMember5ExprUnionMember3ExprUnionMember3",
-    "RankByUnionMember5ExprUnionMember3ExprUnionMember3Expr",
-    "RankByUnionMember5ExprUnionMember3ExprUnionMember3ExprUnionMember0",
-    "RankByUnionMember5ExprUnionMember3ExprUnionMember3ExprUnionMember1",
-    "RankByUnionMember5ExprUnionMember3ExprUnionMember4",
-    "RankByUnionMember5ExprUnionMember3ExprUnionMember4Expr",
-    "RankByUnionMember5ExprUnionMember3ExprUnionMember4ExprUnionMember0",
-    "RankByUnionMember5ExprUnionMember3ExprUnionMember4ExprUnionMember1",
-    "RankByUnionMember5ExprUnionMember3ExprUnionMember5",
-    "RankByUnionMember5ExprUnionMember3ExprUnionMember5Expr",
-    "RankByUnionMember5ExprUnionMember3ExprUnionMember5ExprUnionMember0",
-    "RankByUnionMember5ExprUnionMember3ExprUnionMember5ExprUnionMember1",
-    "RankByUnionMember5ExprUnionMember3ExprUnionMember6",
-    "RankByUnionMember5ExprUnionMember3ExprUnionMember6Expr",
-    "RankByUnionMember5ExprUnionMember3ExprUnionMember6ExprUnionMember0",
-    "RankByUnionMember5ExprUnionMember3ExprUnionMember6ExprUnionMember1",
-    "RankByUnionMember5ExprUnionMember3ExprUnionMember7",
-    "RankByUnionMember5ExprUnionMember3ExprUnionMember7Expr",
-    "RankByUnionMember5ExprUnionMember3ExprUnionMember7ExprUnionMember0",
-    "RankByUnionMember5ExprUnionMember3ExprUnionMember7ExprUnionMember1",
-    "RankByUnionMember5ExprUnionMember4",
-    "RankByUnionMember5ExprUnionMember4Expr",
-    "RankByUnionMember5ExprUnionMember4ExprUnionMember0",
-    "RankByUnionMember5ExprUnionMember4ExprUnionMember1",
-    "RankByUnionMember5ExprUnionMember4ExprUnionMember2",
-    "RankByUnionMember5ExprUnionMember4ExprUnionMember2Expr",
-    "RankByUnionMember5ExprUnionMember4ExprUnionMember2ExprUnionMember0",
-    "RankByUnionMember5ExprUnionMember4ExprUnionMember2ExprUnionMember1",
-    "RankByUnionMember5ExprUnionMember4ExprUnionMember3",
-    "RankByUnionMember5ExprUnionMember4ExprUnionMember3Expr",
-    "RankByUnionMember5ExprUnionMember4ExprUnionMember3ExprUnionMember0",
-    "RankByUnionMember5ExprUnionMember4ExprUnionMember3ExprUnionMember1",
-    "RankByUnionMember5ExprUnionMember4ExprUnionMember4",
-    "RankByUnionMember5ExprUnionMember4ExprUnionMember4Expr",
-    "RankByUnionMember5ExprUnionMember4ExprUnionMember4ExprUnionMember0",
-    "RankByUnionMember5ExprUnionMember4ExprUnionMember4ExprUnionMember1",
-    "RankByUnionMember5ExprUnionMember4ExprUnionMember5",
-    "RankByUnionMember5ExprUnionMember4ExprUnionMember5Expr",
-    "RankByUnionMember5ExprUnionMember4ExprUnionMember5ExprUnionMember0",
-    "RankByUnionMember5ExprUnionMember4ExprUnionMember5ExprUnionMember1",
-    "RankByUnionMember5ExprUnionMember4ExprUnionMember6",
-    "RankByUnionMember5ExprUnionMember4ExprUnionMember6Expr",
-    "RankByUnionMember5ExprUnionMember4ExprUnionMember6ExprUnionMember0",
-    "RankByUnionMember5ExprUnionMember4ExprUnionMember6ExprUnionMember1",
-    "RankByUnionMember5ExprUnionMember4ExprUnionMember7",
-    "RankByUnionMember5ExprUnionMember4ExprUnionMember7Expr",
-    "RankByUnionMember5ExprUnionMember4ExprUnionMember7ExprUnionMember0",
-    "RankByUnionMember5ExprUnionMember4ExprUnionMember7ExprUnionMember1",
-    "RankByUnionMember5ExprUnionMember5",
-    "RankByUnionMember5ExprUnionMember5Expr",
-    "RankByUnionMember5ExprUnionMember5ExprUnionMember0",
-    "RankByUnionMember5ExprUnionMember5ExprUnionMember1",
-    "RankByUnionMember5ExprUnionMember5ExprUnionMember2",
-    "RankByUnionMember5ExprUnionMember5ExprUnionMember2Expr",
-    "RankByUnionMember5ExprUnionMember5ExprUnionMember2ExprUnionMember0",
-    "RankByUnionMember5ExprUnionMember5ExprUnionMember2ExprUnionMember1",
-    "RankByUnionMember5ExprUnionMember5ExprUnionMember3",
-    "RankByUnionMember5ExprUnionMember5ExprUnionMember3Expr",
-    "RankByUnionMember5ExprUnionMember5ExprUnionMember3ExprUnionMember0",
-    "RankByUnionMember5ExprUnionMember5ExprUnionMember3ExprUnionMember1",
-    "RankByUnionMember5ExprUnionMember5ExprUnionMember4",
-    "RankByUnionMember5ExprUnionMember5ExprUnionMember4Expr",
-    "RankByUnionMember5ExprUnionMember5ExprUnionMember4ExprUnionMember0",
-    "RankByUnionMember5ExprUnionMember5ExprUnionMember4ExprUnionMember1",
-    "RankByUnionMember5ExprUnionMember5ExprUnionMember5",
-    "RankByUnionMember5ExprUnionMember5ExprUnionMember5Expr",
-    "RankByUnionMember5ExprUnionMember5ExprUnionMember5ExprUnionMember0",
-    "RankByUnionMember5ExprUnionMember5ExprUnionMember5ExprUnionMember1",
-    "RankByUnionMember5ExprUnionMember5ExprUnionMember6",
-    "RankByUnionMember5ExprUnionMember5ExprUnionMember6Expr",
-    "RankByUnionMember5ExprUnionMember5ExprUnionMember6ExprUnionMember0",
-    "RankByUnionMember5ExprUnionMember5ExprUnionMember6ExprUnionMember1",
-    "RankByUnionMember5ExprUnionMember5ExprUnionMember7",
-    "RankByUnionMember5ExprUnionMember5ExprUnionMember7Expr",
-    "RankByUnionMember5ExprUnionMember5ExprUnionMember7ExprUnionMember0",
-    "RankByUnionMember5ExprUnionMember5ExprUnionMember7ExprUnionMember1",
-    "RankByUnionMember5ExprUnionMember6",
-    "RankByUnionMember5ExprUnionMember6Expr",
-    "RankByUnionMember5ExprUnionMember6ExprUnionMember0",
-    "RankByUnionMember5ExprUnionMember6ExprUnionMember1",
-    "RankByUnionMember5ExprUnionMember6ExprUnionMember2",
-    "RankByUnionMember5ExprUnionMember6ExprUnionMember2Expr",
-    "RankByUnionMember5ExprUnionMember6ExprUnionMember2ExprUnionMember0",
-    "RankByUnionMember5ExprUnionMember6ExprUnionMember2ExprUnionMember1",
-    "RankByUnionMember5ExprUnionMember6ExprUnionMember3",
-    "RankByUnionMember5ExprUnionMember6ExprUnionMember3Expr",
-    "RankByUnionMember5ExprUnionMember6ExprUnionMember3ExprUnionMember0",
-    "RankByUnionMember5ExprUnionMember6ExprUnionMember3ExprUnionMember1",
-    "RankByUnionMember5ExprUnionMember6ExprUnionMember4",
-    "RankByUnionMember5ExprUnionMember6ExprUnionMember4Expr",
-    "RankByUnionMember5ExprUnionMember6ExprUnionMember4ExprUnionMember0",
-    "RankByUnionMember5ExprUnionMember6ExprUnionMember4ExprUnionMember1",
-    "RankByUnionMember5ExprUnionMember6ExprUnionMember5",
-    "RankByUnionMember5ExprUnionMember6ExprUnionMember5Expr",
-    "RankByUnionMember5ExprUnionMember6ExprUnionMember5ExprUnionMember0",
-    "RankByUnionMember5ExprUnionMember6ExprUnionMember5ExprUnionMember1",
-    "RankByUnionMember5ExprUnionMember6ExprUnionMember6",
-    "RankByUnionMember5ExprUnionMember6ExprUnionMember6Expr",
-    "RankByUnionMember5ExprUnionMember6ExprUnionMember6ExprUnionMember0",
-    "RankByUnionMember5ExprUnionMember6ExprUnionMember6ExprUnionMember1",
-    "RankByUnionMember5ExprUnionMember6ExprUnionMember7",
-    "RankByUnionMember5ExprUnionMember6ExprUnionMember7Expr",
-    "RankByUnionMember5ExprUnionMember6ExprUnionMember7ExprUnionMember0",
-    "RankByUnionMember5ExprUnionMember6ExprUnionMember7ExprUnionMember1",
-    "RankByUnionMember5ExprUnionMember7",
-    "RankByUnionMember5ExprUnionMember7Expr",
-    "RankByUnionMember5ExprUnionMember7ExprUnionMember0",
-    "RankByUnionMember5ExprUnionMember7ExprUnionMember1",
-    "RankByUnionMember5ExprUnionMember7ExprUnionMember2",
-    "RankByUnionMember5ExprUnionMember7ExprUnionMember2Expr",
-    "RankByUnionMember5ExprUnionMember7ExprUnionMember2ExprUnionMember0",
-    "RankByUnionMember5ExprUnionMember7ExprUnionMember2ExprUnionMember1",
-    "RankByUnionMember5ExprUnionMember7ExprUnionMember3",
-    "RankByUnionMember5ExprUnionMember7ExprUnionMember3Expr",
-    "RankByUnionMember5ExprUnionMember7ExprUnionMember3ExprUnionMember0",
-    "RankByUnionMember5ExprUnionMember7ExprUnionMember3ExprUnionMember1",
-    "RankByUnionMember5ExprUnionMember7ExprUnionMember4",
-    "RankByUnionMember5ExprUnionMember7ExprUnionMember4Expr",
-    "RankByUnionMember5ExprUnionMember7ExprUnionMember4ExprUnionMember0",
-    "RankByUnionMember5ExprUnionMember7ExprUnionMember4ExprUnionMember1",
-    "RankByUnionMember5ExprUnionMember7ExprUnionMember5",
-    "RankByUnionMember5ExprUnionMember7ExprUnionMember5Expr",
-    "RankByUnionMember5ExprUnionMember7ExprUnionMember5ExprUnionMember0",
-    "RankByUnionMember5ExprUnionMember7ExprUnionMember5ExprUnionMember1",
-    "RankByUnionMember5ExprUnionMember7ExprUnionMember6",
-    "RankByUnionMember5ExprUnionMember7ExprUnionMember6Expr",
-    "RankByUnionMember5ExprUnionMember7ExprUnionMember6ExprUnionMember0",
-    "RankByUnionMember5ExprUnionMember7ExprUnionMember6ExprUnionMember1",
-    "RankByUnionMember5ExprUnionMember7ExprUnionMember7",
-    "RankByUnionMember5ExprUnionMember7ExprUnionMember7Expr",
-    "RankByUnionMember5ExprUnionMember7ExprUnionMember7ExprUnionMember0",
-    "RankByUnionMember5ExprUnionMember7ExprUnionMember7ExprUnionMember1",
-    "RankByUnionMember6",
-    "RankByUnionMember6Expr",
-    "RankByUnionMember6ExprUnionMember0",
-    "RankByUnionMember6ExprUnionMember1",
-    "RankByUnionMember6ExprUnionMember2",
-    "RankByUnionMember6ExprUnionMember2Expr",
-    "RankByUnionMember6ExprUnionMember2ExprUnionMember0",
-    "RankByUnionMember6ExprUnionMember2ExprUnionMember1",
-    "RankByUnionMember6ExprUnionMember2ExprUnionMember2",
-    "RankByUnionMember6ExprUnionMember2ExprUnionMember2Expr",
-    "RankByUnionMember6ExprUnionMember2ExprUnionMember2ExprUnionMember0",
-    "RankByUnionMember6ExprUnionMember2ExprUnionMember2ExprUnionMember1",
-    "RankByUnionMember6ExprUnionMember2ExprUnionMember3",
-    "RankByUnionMember6ExprUnionMember2ExprUnionMember3Expr",
-    "RankByUnionMember6ExprUnionMember2ExprUnionMember3ExprUnionMember0",
-    "RankByUnionMember6ExprUnionMember2ExprUnionMember3ExprUnionMember1",
-    "RankByUnionMember6ExprUnionMember2ExprUnionMember4",
-    "RankByUnionMember6ExprUnionMember2ExprUnionMember4Expr",
-    "RankByUnionMember6ExprUnionMember2ExprUnionMember4ExprUnionMember0",
-    "RankByUnionMember6ExprUnionMember2ExprUnionMember4ExprUnionMember1",
-    "RankByUnionMember6ExprUnionMember2ExprUnionMember5",
-    "RankByUnionMember6ExprUnionMember2ExprUnionMember5Expr",
-    "RankByUnionMember6ExprUnionMember2ExprUnionMember5ExprUnionMember0",
-    "RankByUnionMember6ExprUnionMember2ExprUnionMember5ExprUnionMember1",
-    "RankByUnionMember6ExprUnionMember2ExprUnionMember6",
-    "RankByUnionMember6ExprUnionMember2ExprUnionMember6Expr",
-    "RankByUnionMember6ExprUnionMember2ExprUnionMember6ExprUnionMember0",
-    "RankByUnionMember6ExprUnionMember2ExprUnionMember6ExprUnionMember1",
-    "RankByUnionMember6ExprUnionMember2ExprUnionMember7",
-    "RankByUnionMember6ExprUnionMember2ExprUnionMember7Expr",
-    "RankByUnionMember6ExprUnionMember2ExprUnionMember7ExprUnionMember0",
-    "RankByUnionMember6ExprUnionMember2ExprUnionMember7ExprUnionMember1",
-    "RankByUnionMember6ExprUnionMember3",
-    "RankByUnionMember6ExprUnionMember3Expr",
-    "RankByUnionMember6ExprUnionMember3ExprUnionMember0",
-    "RankByUnionMember6ExprUnionMember3ExprUnionMember1",
-    "RankByUnionMember6ExprUnionMember3ExprUnionMember2",
-    "RankByUnionMember6ExprUnionMember3ExprUnionMember2Expr",
-    "RankByUnionMember6ExprUnionMember3ExprUnionMember2ExprUnionMember0",
-    "RankByUnionMember6ExprUnionMember3ExprUnionMember2ExprUnionMember1",
-    "RankByUnionMember6ExprUnionMember3ExprUnionMember3",
-    "RankByUnionMember6ExprUnionMember3ExprUnionMember3Expr",
-    "RankByUnionMember6ExprUnionMember3ExprUnionMember3ExprUnionMember0",
-    "RankByUnionMember6ExprUnionMember3ExprUnionMember3ExprUnionMember1",
-    "RankByUnionMember6ExprUnionMember3ExprUnionMember4",
-    "RankByUnionMember6ExprUnionMember3ExprUnionMember4Expr",
-    "RankByUnionMember6ExprUnionMember3ExprUnionMember4ExprUnionMember0",
-    "RankByUnionMember6ExprUnionMember3ExprUnionMember4ExprUnionMember1",
-    "RankByUnionMember6ExprUnionMember3ExprUnionMember5",
-    "RankByUnionMember6ExprUnionMember3ExprUnionMember5Expr",
-    "RankByUnionMember6ExprUnionMember3ExprUnionMember5ExprUnionMember0",
-    "RankByUnionMember6ExprUnionMember3ExprUnionMember5ExprUnionMember1",
-    "RankByUnionMember6ExprUnionMember3ExprUnionMember6",
-    "RankByUnionMember6ExprUnionMember3ExprUnionMember6Expr",
-    "RankByUnionMember6ExprUnionMember3ExprUnionMember6ExprUnionMember0",
-    "RankByUnionMember6ExprUnionMember3ExprUnionMember6ExprUnionMember1",
-    "RankByUnionMember6ExprUnionMember3ExprUnionMember7",
-    "RankByUnionMember6ExprUnionMember3ExprUnionMember7Expr",
-    "RankByUnionMember6ExprUnionMember3ExprUnionMember7ExprUnionMember0",
-    "RankByUnionMember6ExprUnionMember3ExprUnionMember7ExprUnionMember1",
-    "RankByUnionMember6ExprUnionMember4",
-    "RankByUnionMember6ExprUnionMember4Expr",
-    "RankByUnionMember6ExprUnionMember4ExprUnionMember0",
-    "RankByUnionMember6ExprUnionMember4ExprUnionMember1",
-    "RankByUnionMember6ExprUnionMember4ExprUnionMember2",
-    "RankByUnionMember6ExprUnionMember4ExprUnionMember2Expr",
-    "RankByUnionMember6ExprUnionMember4ExprUnionMember2ExprUnionMember0",
-    "RankByUnionMember6ExprUnionMember4ExprUnionMember2ExprUnionMember1",
-    "RankByUnionMember6ExprUnionMember4ExprUnionMember3",
-    "RankByUnionMember6ExprUnionMember4ExprUnionMember3Expr",
-    "RankByUnionMember6ExprUnionMember4ExprUnionMember3ExprUnionMember0",
-    "RankByUnionMember6ExprUnionMember4ExprUnionMember3ExprUnionMember1",
-    "RankByUnionMember6ExprUnionMember4ExprUnionMember4",
-    "RankByUnionMember6ExprUnionMember4ExprUnionMember4Expr",
-    "RankByUnionMember6ExprUnionMember4ExprUnionMember4ExprUnionMember0",
-    "RankByUnionMember6ExprUnionMember4ExprUnionMember4ExprUnionMember1",
-    "RankByUnionMember6ExprUnionMember4ExprUnionMember5",
-    "RankByUnionMember6ExprUnionMember4ExprUnionMember5Expr",
-    "RankByUnionMember6ExprUnionMember4ExprUnionMember5ExprUnionMember0",
-    "RankByUnionMember6ExprUnionMember4ExprUnionMember5ExprUnionMember1",
-    "RankByUnionMember6ExprUnionMember4ExprUnionMember6",
-    "RankByUnionMember6ExprUnionMember4ExprUnionMember6Expr",
-    "RankByUnionMember6ExprUnionMember4ExprUnionMember6ExprUnionMember0",
-    "RankByUnionMember6ExprUnionMember4ExprUnionMember6ExprUnionMember1",
-    "RankByUnionMember6ExprUnionMember4ExprUnionMember7",
-    "RankByUnionMember6ExprUnionMember4ExprUnionMember7Expr",
-    "RankByUnionMember6ExprUnionMember4ExprUnionMember7ExprUnionMember0",
-    "RankByUnionMember6ExprUnionMember4ExprUnionMember7ExprUnionMember1",
-    "RankByUnionMember6ExprUnionMember5",
-    "RankByUnionMember6ExprUnionMember5Expr",
-    "RankByUnionMember6ExprUnionMember5ExprUnionMember0",
-    "RankByUnionMember6ExprUnionMember5ExprUnionMember1",
-    "RankByUnionMember6ExprUnionMember5ExprUnionMember2",
-    "RankByUnionMember6ExprUnionMember5ExprUnionMember2Expr",
-    "RankByUnionMember6ExprUnionMember5ExprUnionMember2ExprUnionMember0",
-    "RankByUnionMember6ExprUnionMember5ExprUnionMember2ExprUnionMember1",
-    "RankByUnionMember6ExprUnionMember5ExprUnionMember3",
-    "RankByUnionMember6ExprUnionMember5ExprUnionMember3Expr",
-    "RankByUnionMember6ExprUnionMember5ExprUnionMember3ExprUnionMember0",
-    "RankByUnionMember6ExprUnionMember5ExprUnionMember3ExprUnionMember1",
-    "RankByUnionMember6ExprUnionMember5ExprUnionMember4",
-    "RankByUnionMember6ExprUnionMember5ExprUnionMember4Expr",
-    "RankByUnionMember6ExprUnionMember5ExprUnionMember4ExprUnionMember0",
-    "RankByUnionMember6ExprUnionMember5ExprUnionMember4ExprUnionMember1",
-    "RankByUnionMember6ExprUnionMember5ExprUnionMember5",
-    "RankByUnionMember6ExprUnionMember5ExprUnionMember5Expr",
-    "RankByUnionMember6ExprUnionMember5ExprUnionMember5ExprUnionMember0",
-    "RankByUnionMember6ExprUnionMember5ExprUnionMember5ExprUnionMember1",
-    "RankByUnionMember6ExprUnionMember5ExprUnionMember6",
-    "RankByUnionMember6ExprUnionMember5ExprUnionMember6Expr",
-    "RankByUnionMember6ExprUnionMember5ExprUnionMember6ExprUnionMember0",
-    "RankByUnionMember6ExprUnionMember5ExprUnionMember6ExprUnionMember1",
-    "RankByUnionMember6ExprUnionMember5ExprUnionMember7",
-    "RankByUnionMember6ExprUnionMember5ExprUnionMember7Expr",
-    "RankByUnionMember6ExprUnionMember5ExprUnionMember7ExprUnionMember0",
-    "RankByUnionMember6ExprUnionMember5ExprUnionMember7ExprUnionMember1",
-    "RankByUnionMember6ExprUnionMember6",
-    "RankByUnionMember6ExprUnionMember6Expr",
-    "RankByUnionMember6ExprUnionMember6ExprUnionMember0",
-    "RankByUnionMember6ExprUnionMember6ExprUnionMember1",
-    "RankByUnionMember6ExprUnionMember6ExprUnionMember2",
-    "RankByUnionMember6ExprUnionMember6ExprUnionMember2Expr",
-    "RankByUnionMember6ExprUnionMember6ExprUnionMember2ExprUnionMember0",
-    "RankByUnionMember6ExprUnionMember6ExprUnionMember2ExprUnionMember1",
-    "RankByUnionMember6ExprUnionMember6ExprUnionMember3",
-    "RankByUnionMember6ExprUnionMember6ExprUnionMember3Expr",
-    "RankByUnionMember6ExprUnionMember6ExprUnionMember3ExprUnionMember0",
-    "RankByUnionMember6ExprUnionMember6ExprUnionMember3ExprUnionMember1",
-    "RankByUnionMember6ExprUnionMember6ExprUnionMember4",
-    "RankByUnionMember6ExprUnionMember6ExprUnionMember4Expr",
-    "RankByUnionMember6ExprUnionMember6ExprUnionMember4ExprUnionMember0",
-    "RankByUnionMember6ExprUnionMember6ExprUnionMember4ExprUnionMember1",
-    "RankByUnionMember6ExprUnionMember6ExprUnionMember5",
-    "RankByUnionMember6ExprUnionMember6ExprUnionMember5Expr",
-    "RankByUnionMember6ExprUnionMember6ExprUnionMember5ExprUnionMember0",
-    "RankByUnionMember6ExprUnionMember6ExprUnionMember5ExprUnionMember1",
-    "RankByUnionMember6ExprUnionMember6ExprUnionMember6",
-    "RankByUnionMember6ExprUnionMember6ExprUnionMember6Expr",
-    "RankByUnionMember6ExprUnionMember6ExprUnionMember6ExprUnionMember0",
-    "RankByUnionMember6ExprUnionMember6ExprUnionMember6ExprUnionMember1",
-    "RankByUnionMember6ExprUnionMember6ExprUnionMember7",
-    "RankByUnionMember6ExprUnionMember6ExprUnionMember7Expr",
-    "RankByUnionMember6ExprUnionMember6ExprUnionMember7ExprUnionMember0",
-    "RankByUnionMember6ExprUnionMember6ExprUnionMember7ExprUnionMember1",
-    "RankByUnionMember6ExprUnionMember7",
-    "RankByUnionMember6ExprUnionMember7Expr",
-    "RankByUnionMember6ExprUnionMember7ExprUnionMember0",
-    "RankByUnionMember6ExprUnionMember7ExprUnionMember1",
-    "RankByUnionMember6ExprUnionMember7ExprUnionMember2",
-    "RankByUnionMember6ExprUnionMember7ExprUnionMember2Expr",
-    "RankByUnionMember6ExprUnionMember7ExprUnionMember2ExprUnionMember0",
-    "RankByUnionMember6ExprUnionMember7ExprUnionMember2ExprUnionMember1",
-    "RankByUnionMember6ExprUnionMember7ExprUnionMember3",
-    "RankByUnionMember6ExprUnionMember7ExprUnionMember3Expr",
-    "RankByUnionMember6ExprUnionMember7ExprUnionMember3ExprUnionMember0",
-    "RankByUnionMember6ExprUnionMember7ExprUnionMember3ExprUnionMember1",
-    "RankByUnionMember6ExprUnionMember7ExprUnionMember4",
-    "RankByUnionMember6ExprUnionMember7ExprUnionMember4Expr",
-    "RankByUnionMember6ExprUnionMember7ExprUnionMember4ExprUnionMember0",
-    "RankByUnionMember6ExprUnionMember7ExprUnionMember4ExprUnionMember1",
-    "RankByUnionMember6ExprUnionMember7ExprUnionMember5",
-    "RankByUnionMember6ExprUnionMember7ExprUnionMember5Expr",
-    "RankByUnionMember6ExprUnionMember7ExprUnionMember5ExprUnionMember0",
-    "RankByUnionMember6ExprUnionMember7ExprUnionMember5ExprUnionMember1",
-    "RankByUnionMember6ExprUnionMember7ExprUnionMember6",
-    "RankByUnionMember6ExprUnionMember7ExprUnionMember6Expr",
-    "RankByUnionMember6ExprUnionMember7ExprUnionMember6ExprUnionMember0",
-    "RankByUnionMember6ExprUnionMember7ExprUnionMember6ExprUnionMember1",
-    "RankByUnionMember6ExprUnionMember7ExprUnionMember7",
-    "RankByUnionMember6ExprUnionMember7ExprUnionMember7Expr",
-    "RankByUnionMember6ExprUnionMember7ExprUnionMember7ExprUnionMember0",
-    "RankByUnionMember6ExprUnionMember7ExprUnionMember7ExprUnionMember1",
-    "RankByUnionMember7",
-    "RankByUnionMember7Expr",
-    "RankByUnionMember7ExprUnionMember0",
-    "RankByUnionMember7ExprUnionMember1",
-    "RankByUnionMember7ExprUnionMember2",
-    "RankByUnionMember7ExprUnionMember2Expr",
-    "RankByUnionMember7ExprUnionMember2ExprUnionMember0",
-    "RankByUnionMember7ExprUnionMember2ExprUnionMember1",
-    "RankByUnionMember7ExprUnionMember2ExprUnionMember2",
-    "RankByUnionMember7ExprUnionMember2ExprUnionMember2Expr",
-    "RankByUnionMember7ExprUnionMember2ExprUnionMember2ExprUnionMember0",
-    "RankByUnionMember7ExprUnionMember2ExprUnionMember2ExprUnionMember1",
-    "RankByUnionMember7ExprUnionMember2ExprUnionMember3",
-    "RankByUnionMember7ExprUnionMember2ExprUnionMember3Expr",
-    "RankByUnionMember7ExprUnionMember2ExprUnionMember3ExprUnionMember0",
-    "RankByUnionMember7ExprUnionMember2ExprUnionMember3ExprUnionMember1",
-    "RankByUnionMember7ExprUnionMember2ExprUnionMember4",
-    "RankByUnionMember7ExprUnionMember2ExprUnionMember4Expr",
-    "RankByUnionMember7ExprUnionMember2ExprUnionMember4ExprUnionMember0",
-    "RankByUnionMember7ExprUnionMember2ExprUnionMember4ExprUnionMember1",
-    "RankByUnionMember7ExprUnionMember2ExprUnionMember5",
-    "RankByUnionMember7ExprUnionMember2ExprUnionMember5Expr",
-    "RankByUnionMember7ExprUnionMember2ExprUnionMember5ExprUnionMember0",
-    "RankByUnionMember7ExprUnionMember2ExprUnionMember5ExprUnionMember1",
-    "RankByUnionMember7ExprUnionMember2ExprUnionMember6",
-    "RankByUnionMember7ExprUnionMember2ExprUnionMember6Expr",
-    "RankByUnionMember7ExprUnionMember2ExprUnionMember6ExprUnionMember0",
-    "RankByUnionMember7ExprUnionMember2ExprUnionMember6ExprUnionMember1",
-    "RankByUnionMember7ExprUnionMember2ExprUnionMember7",
-    "RankByUnionMember7ExprUnionMember2ExprUnionMember7Expr",
-    "RankByUnionMember7ExprUnionMember2ExprUnionMember7ExprUnionMember0",
-    "RankByUnionMember7ExprUnionMember2ExprUnionMember7ExprUnionMember1",
-    "RankByUnionMember7ExprUnionMember3",
-    "RankByUnionMember7ExprUnionMember3Expr",
-    "RankByUnionMember7ExprUnionMember3ExprUnionMember0",
-    "RankByUnionMember7ExprUnionMember3ExprUnionMember1",
-    "RankByUnionMember7ExprUnionMember3ExprUnionMember2",
-    "RankByUnionMember7ExprUnionMember3ExprUnionMember2Expr",
-    "RankByUnionMember7ExprUnionMember3ExprUnionMember2ExprUnionMember0",
-    "RankByUnionMember7ExprUnionMember3ExprUnionMember2ExprUnionMember1",
-    "RankByUnionMember7ExprUnionMember3ExprUnionMember3",
-    "RankByUnionMember7ExprUnionMember3ExprUnionMember3Expr",
-    "RankByUnionMember7ExprUnionMember3ExprUnionMember3ExprUnionMember0",
-    "RankByUnionMember7ExprUnionMember3ExprUnionMember3ExprUnionMember1",
-    "RankByUnionMember7ExprUnionMember3ExprUnionMember4",
-    "RankByUnionMember7ExprUnionMember3ExprUnionMember4Expr",
-    "RankByUnionMember7ExprUnionMember3ExprUnionMember4ExprUnionMember0",
-    "RankByUnionMember7ExprUnionMember3ExprUnionMember4ExprUnionMember1",
-    "RankByUnionMember7ExprUnionMember3ExprUnionMember5",
-    "RankByUnionMember7ExprUnionMember3ExprUnionMember5Expr",
-    "RankByUnionMember7ExprUnionMember3ExprUnionMember5ExprUnionMember0",
-    "RankByUnionMember7ExprUnionMember3ExprUnionMember5ExprUnionMember1",
-    "RankByUnionMember7ExprUnionMember3ExprUnionMember6",
-    "RankByUnionMember7ExprUnionMember3ExprUnionMember6Expr",
-    "RankByUnionMember7ExprUnionMember3ExprUnionMember6ExprUnionMember0",
-    "RankByUnionMember7ExprUnionMember3ExprUnionMember6ExprUnionMember1",
-    "RankByUnionMember7ExprUnionMember3ExprUnionMember7",
-    "RankByUnionMember7ExprUnionMember3ExprUnionMember7Expr",
-    "RankByUnionMember7ExprUnionMember3ExprUnionMember7ExprUnionMember0",
-    "RankByUnionMember7ExprUnionMember3ExprUnionMember7ExprUnionMember1",
-    "RankByUnionMember7ExprUnionMember4",
-    "RankByUnionMember7ExprUnionMember4Expr",
-    "RankByUnionMember7ExprUnionMember4ExprUnionMember0",
-    "RankByUnionMember7ExprUnionMember4ExprUnionMember1",
-    "RankByUnionMember7ExprUnionMember4ExprUnionMember2",
-    "RankByUnionMember7ExprUnionMember4ExprUnionMember2Expr",
-    "RankByUnionMember7ExprUnionMember4ExprUnionMember2ExprUnionMember0",
-    "RankByUnionMember7ExprUnionMember4ExprUnionMember2ExprUnionMember1",
-    "RankByUnionMember7ExprUnionMember4ExprUnionMember3",
-    "RankByUnionMember7ExprUnionMember4ExprUnionMember3Expr",
-    "RankByUnionMember7ExprUnionMember4ExprUnionMember3ExprUnionMember0",
-    "RankByUnionMember7ExprUnionMember4ExprUnionMember3ExprUnionMember1",
-    "RankByUnionMember7ExprUnionMember4ExprUnionMember4",
-    "RankByUnionMember7ExprUnionMember4ExprUnionMember4Expr",
-    "RankByUnionMember7ExprUnionMember4ExprUnionMember4ExprUnionMember0",
-    "RankByUnionMember7ExprUnionMember4ExprUnionMember4ExprUnionMember1",
-    "RankByUnionMember7ExprUnionMember4ExprUnionMember5",
-    "RankByUnionMember7ExprUnionMember4ExprUnionMember5Expr",
-    "RankByUnionMember7ExprUnionMember4ExprUnionMember5ExprUnionMember0",
-    "RankByUnionMember7ExprUnionMember4ExprUnionMember5ExprUnionMember1",
-    "RankByUnionMember7ExprUnionMember4ExprUnionMember6",
-    "RankByUnionMember7ExprUnionMember4ExprUnionMember6Expr",
-    "RankByUnionMember7ExprUnionMember4ExprUnionMember6ExprUnionMember0",
-    "RankByUnionMember7ExprUnionMember4ExprUnionMember6ExprUnionMember1",
-    "RankByUnionMember7ExprUnionMember4ExprUnionMember7",
-    "RankByUnionMember7ExprUnionMember4ExprUnionMember7Expr",
-    "RankByUnionMember7ExprUnionMember4ExprUnionMember7ExprUnionMember0",
-    "RankByUnionMember7ExprUnionMember4ExprUnionMember7ExprUnionMember1",
-    "RankByUnionMember7ExprUnionMember5",
-    "RankByUnionMember7ExprUnionMember5Expr",
-    "RankByUnionMember7ExprUnionMember5ExprUnionMember0",
-    "RankByUnionMember7ExprUnionMember5ExprUnionMember1",
-    "RankByUnionMember7ExprUnionMember5ExprUnionMember2",
-    "RankByUnionMember7ExprUnionMember5ExprUnionMember2Expr",
-    "RankByUnionMember7ExprUnionMember5ExprUnionMember2ExprUnionMember0",
-    "RankByUnionMember7ExprUnionMember5ExprUnionMember2ExprUnionMember1",
-    "RankByUnionMember7ExprUnionMember5ExprUnionMember3",
-    "RankByUnionMember7ExprUnionMember5ExprUnionMember3Expr",
-    "RankByUnionMember7ExprUnionMember5ExprUnionMember3ExprUnionMember0",
-    "RankByUnionMember7ExprUnionMember5ExprUnionMember3ExprUnionMember1",
-    "RankByUnionMember7ExprUnionMember5ExprUnionMember4",
-    "RankByUnionMember7ExprUnionMember5ExprUnionMember4Expr",
-    "RankByUnionMember7ExprUnionMember5ExprUnionMember4ExprUnionMember0",
-    "RankByUnionMember7ExprUnionMember5ExprUnionMember4ExprUnionMember1",
-    "RankByUnionMember7ExprUnionMember5ExprUnionMember5",
-    "RankByUnionMember7ExprUnionMember5ExprUnionMember5Expr",
-    "RankByUnionMember7ExprUnionMember5ExprUnionMember5ExprUnionMember0",
-    "RankByUnionMember7ExprUnionMember5ExprUnionMember5ExprUnionMember1",
-    "RankByUnionMember7ExprUnionMember5ExprUnionMember6",
-    "RankByUnionMember7ExprUnionMember5ExprUnionMember6Expr",
-    "RankByUnionMember7ExprUnionMember5ExprUnionMember6ExprUnionMember0",
-    "RankByUnionMember7ExprUnionMember5ExprUnionMember6ExprUnionMember1",
-    "RankByUnionMember7ExprUnionMember5ExprUnionMember7",
-    "RankByUnionMember7ExprUnionMember5ExprUnionMember7Expr",
-    "RankByUnionMember7ExprUnionMember5ExprUnionMember7ExprUnionMember0",
-    "RankByUnionMember7ExprUnionMember5ExprUnionMember7ExprUnionMember1",
-    "RankByUnionMember7ExprUnionMember6",
-    "RankByUnionMember7ExprUnionMember6Expr",
-    "RankByUnionMember7ExprUnionMember6ExprUnionMember0",
-    "RankByUnionMember7ExprUnionMember6ExprUnionMember1",
-    "RankByUnionMember7ExprUnionMember6ExprUnionMember2",
-    "RankByUnionMember7ExprUnionMember6ExprUnionMember2Expr",
-    "RankByUnionMember7ExprUnionMember6ExprUnionMember2ExprUnionMember0",
-    "RankByUnionMember7ExprUnionMember6ExprUnionMember2ExprUnionMember1",
-    "RankByUnionMember7ExprUnionMember6ExprUnionMember3",
-    "RankByUnionMember7ExprUnionMember6ExprUnionMember3Expr",
-    "RankByUnionMember7ExprUnionMember6ExprUnionMember3ExprUnionMember0",
-    "RankByUnionMember7ExprUnionMember6ExprUnionMember3ExprUnionMember1",
-    "RankByUnionMember7ExprUnionMember6ExprUnionMember4",
-    "RankByUnionMember7ExprUnionMember6ExprUnionMember4Expr",
-    "RankByUnionMember7ExprUnionMember6ExprUnionMember4ExprUnionMember0",
-    "RankByUnionMember7ExprUnionMember6ExprUnionMember4ExprUnionMember1",
-    "RankByUnionMember7ExprUnionMember6ExprUnionMember5",
-    "RankByUnionMember7ExprUnionMember6ExprUnionMember5Expr",
-    "RankByUnionMember7ExprUnionMember6ExprUnionMember5ExprUnionMember0",
-    "RankByUnionMember7ExprUnionMember6ExprUnionMember5ExprUnionMember1",
-    "RankByUnionMember7ExprUnionMember6ExprUnionMember6",
-    "RankByUnionMember7ExprUnionMember6ExprUnionMember6Expr",
-    "RankByUnionMember7ExprUnionMember6ExprUnionMember6ExprUnionMember0",
-    "RankByUnionMember7ExprUnionMember6ExprUnionMember6ExprUnionMember1",
-    "RankByUnionMember7ExprUnionMember6ExprUnionMember7",
-    "RankByUnionMember7ExprUnionMember6ExprUnionMember7Expr",
-    "RankByUnionMember7ExprUnionMember6ExprUnionMember7ExprUnionMember0",
-    "RankByUnionMember7ExprUnionMember6ExprUnionMember7ExprUnionMember1",
-    "RankByUnionMember7ExprUnionMember7",
-    "RankByUnionMember7ExprUnionMember7Expr",
-    "RankByUnionMember7ExprUnionMember7ExprUnionMember0",
-    "RankByUnionMember7ExprUnionMember7ExprUnionMember1",
-    "RankByUnionMember7ExprUnionMember7ExprUnionMember2",
-    "RankByUnionMember7ExprUnionMember7ExprUnionMember2Expr",
-    "RankByUnionMember7ExprUnionMember7ExprUnionMember2ExprUnionMember0",
-    "RankByUnionMember7ExprUnionMember7ExprUnionMember2ExprUnionMember1",
-    "RankByUnionMember7ExprUnionMember7ExprUnionMember3",
-    "RankByUnionMember7ExprUnionMember7ExprUnionMember3Expr",
-    "RankByUnionMember7ExprUnionMember7ExprUnionMember3ExprUnionMember0",
-    "RankByUnionMember7ExprUnionMember7ExprUnionMember3ExprUnionMember1",
-    "RankByUnionMember7ExprUnionMember7ExprUnionMember4",
-    "RankByUnionMember7ExprUnionMember7ExprUnionMember4Expr",
-    "RankByUnionMember7ExprUnionMember7ExprUnionMember4ExprUnionMember0",
-    "RankByUnionMember7ExprUnionMember7ExprUnionMember4ExprUnionMember1",
-    "RankByUnionMember7ExprUnionMember7ExprUnionMember5",
-    "RankByUnionMember7ExprUnionMember7ExprUnionMember5Expr",
-    "RankByUnionMember7ExprUnionMember7ExprUnionMember5ExprUnionMember0",
-    "RankByUnionMember7ExprUnionMember7ExprUnionMember5ExprUnionMember1",
-    "RankByUnionMember7ExprUnionMember7ExprUnionMember6",
-    "RankByUnionMember7ExprUnionMember7ExprUnionMember6Expr",
-    "RankByUnionMember7ExprUnionMember7ExprUnionMember6ExprUnionMember0",
-    "RankByUnionMember7ExprUnionMember7ExprUnionMember6ExprUnionMember1",
-    "RankByUnionMember7ExprUnionMember7ExprUnionMember7",
-    "RankByUnionMember7ExprUnionMember7ExprUnionMember7Expr",
-    "RankByUnionMember7ExprUnionMember7ExprUnionMember7ExprUnionMember0",
-    "RankByUnionMember7ExprUnionMember7ExprUnionMember7ExprUnionMember1",
+    "RankByAttr",
+    "RankByConst",
+    "RankBySum",
+    "RankBySumExpr",
+    "RankBySumExprUnionMember0",
+    "RankBySumExprUnionMember1",
+    "RankBySumExprUnionMember2",
+    "RankBySumExprUnionMember2Expr",
+    "RankBySumExprUnionMember2ExprUnionMember0",
+    "RankBySumExprUnionMember2ExprUnionMember1",
+    "RankBySumExprUnionMember2ExprUnionMember2",
+    "RankBySumExprUnionMember2ExprUnionMember2Expr",
+    "RankBySumExprUnionMember2ExprUnionMember2ExprUnionMember0",
+    "RankBySumExprUnionMember2ExprUnionMember2ExprUnionMember1",
+    "RankBySumExprUnionMember2ExprUnionMember3",
+    "RankBySumExprUnionMember2ExprUnionMember3Expr",
+    "RankBySumExprUnionMember2ExprUnionMember3ExprUnionMember0",
+    "RankBySumExprUnionMember2ExprUnionMember3ExprUnionMember1",
+    "RankBySumExprUnionMember2ExprUnionMember4",
+    "RankBySumExprUnionMember2ExprUnionMember4Expr",
+    "RankBySumExprUnionMember2ExprUnionMember4ExprUnionMember0",
+    "RankBySumExprUnionMember2ExprUnionMember4ExprUnionMember1",
+    "RankBySumExprUnionMember2ExprUnionMember5",
+    "RankBySumExprUnionMember2ExprUnionMember5Expr",
+    "RankBySumExprUnionMember2ExprUnionMember5ExprUnionMember0",
+    "RankBySumExprUnionMember2ExprUnionMember5ExprUnionMember1",
+    "RankBySumExprUnionMember2ExprUnionMember6",
+    "RankBySumExprUnionMember2ExprUnionMember6Expr",
+    "RankBySumExprUnionMember2ExprUnionMember6ExprUnionMember0",
+    "RankBySumExprUnionMember2ExprUnionMember6ExprUnionMember1",
+    "RankBySumExprUnionMember2ExprUnionMember7",
+    "RankBySumExprUnionMember2ExprUnionMember7Expr",
+    "RankBySumExprUnionMember2ExprUnionMember7ExprUnionMember0",
+    "RankBySumExprUnionMember2ExprUnionMember7ExprUnionMember1",
+    "RankBySumExprUnionMember3",
+    "RankBySumExprUnionMember3Expr",
+    "RankBySumExprUnionMember3ExprUnionMember0",
+    "RankBySumExprUnionMember3ExprUnionMember1",
+    "RankBySumExprUnionMember3ExprUnionMember2",
+    "RankBySumExprUnionMember3ExprUnionMember2Expr",
+    "RankBySumExprUnionMember3ExprUnionMember2ExprUnionMember0",
+    "RankBySumExprUnionMember3ExprUnionMember2ExprUnionMember1",
+    "RankBySumExprUnionMember3ExprUnionMember3",
+    "RankBySumExprUnionMember3ExprUnionMember3Expr",
+    "RankBySumExprUnionMember3ExprUnionMember3ExprUnionMember0",
+    "RankBySumExprUnionMember3ExprUnionMember3ExprUnionMember1",
+    "RankBySumExprUnionMember3ExprUnionMember4",
+    "RankBySumExprUnionMember3ExprUnionMember4Expr",
+    "RankBySumExprUnionMember3ExprUnionMember4ExprUnionMember0",
+    "RankBySumExprUnionMember3ExprUnionMember4ExprUnionMember1",
+    "RankBySumExprUnionMember3ExprUnionMember5",
+    "RankBySumExprUnionMember3ExprUnionMember5Expr",
+    "RankBySumExprUnionMember3ExprUnionMember5ExprUnionMember0",
+    "RankBySumExprUnionMember3ExprUnionMember5ExprUnionMember1",
+    "RankBySumExprUnionMember3ExprUnionMember6",
+    "RankBySumExprUnionMember3ExprUnionMember6Expr",
+    "RankBySumExprUnionMember3ExprUnionMember6ExprUnionMember0",
+    "RankBySumExprUnionMember3ExprUnionMember6ExprUnionMember1",
+    "RankBySumExprUnionMember3ExprUnionMember7",
+    "RankBySumExprUnionMember3ExprUnionMember7Expr",
+    "RankBySumExprUnionMember3ExprUnionMember7ExprUnionMember0",
+    "RankBySumExprUnionMember3ExprUnionMember7ExprUnionMember1",
+    "RankBySumExprUnionMember4",
+    "RankBySumExprUnionMember4Expr",
+    "RankBySumExprUnionMember4ExprUnionMember0",
+    "RankBySumExprUnionMember4ExprUnionMember1",
+    "RankBySumExprUnionMember4ExprUnionMember2",
+    "RankBySumExprUnionMember4ExprUnionMember2Expr",
+    "RankBySumExprUnionMember4ExprUnionMember2ExprUnionMember0",
+    "RankBySumExprUnionMember4ExprUnionMember2ExprUnionMember1",
+    "RankBySumExprUnionMember4ExprUnionMember3",
+    "RankBySumExprUnionMember4ExprUnionMember3Expr",
+    "RankBySumExprUnionMember4ExprUnionMember3ExprUnionMember0",
+    "RankBySumExprUnionMember4ExprUnionMember3ExprUnionMember1",
+    "RankBySumExprUnionMember4ExprUnionMember4",
+    "RankBySumExprUnionMember4ExprUnionMember4Expr",
+    "RankBySumExprUnionMember4ExprUnionMember4ExprUnionMember0",
+    "RankBySumExprUnionMember4ExprUnionMember4ExprUnionMember1",
+    "RankBySumExprUnionMember4ExprUnionMember5",
+    "RankBySumExprUnionMember4ExprUnionMember5Expr",
+    "RankBySumExprUnionMember4ExprUnionMember5ExprUnionMember0",
+    "RankBySumExprUnionMember4ExprUnionMember5ExprUnionMember1",
+    "RankBySumExprUnionMember4ExprUnionMember6",
+    "RankBySumExprUnionMember4ExprUnionMember6Expr",
+    "RankBySumExprUnionMember4ExprUnionMember6ExprUnionMember0",
+    "RankBySumExprUnionMember4ExprUnionMember6ExprUnionMember1",
+    "RankBySumExprUnionMember4ExprUnionMember7",
+    "RankBySumExprUnionMember4ExprUnionMember7Expr",
+    "RankBySumExprUnionMember4ExprUnionMember7ExprUnionMember0",
+    "RankBySumExprUnionMember4ExprUnionMember7ExprUnionMember1",
+    "RankBySumExprUnionMember5",
+    "RankBySumExprUnionMember5Expr",
+    "RankBySumExprUnionMember5ExprUnionMember0",
+    "RankBySumExprUnionMember5ExprUnionMember1",
+    "RankBySumExprUnionMember5ExprUnionMember2",
+    "RankBySumExprUnionMember5ExprUnionMember2Expr",
+    "RankBySumExprUnionMember5ExprUnionMember2ExprUnionMember0",
+    "RankBySumExprUnionMember5ExprUnionMember2ExprUnionMember1",
+    "RankBySumExprUnionMember5ExprUnionMember3",
+    "RankBySumExprUnionMember5ExprUnionMember3Expr",
+    "RankBySumExprUnionMember5ExprUnionMember3ExprUnionMember0",
+    "RankBySumExprUnionMember5ExprUnionMember3ExprUnionMember1",
+    "RankBySumExprUnionMember5ExprUnionMember4",
+    "RankBySumExprUnionMember5ExprUnionMember4Expr",
+    "RankBySumExprUnionMember5ExprUnionMember4ExprUnionMember0",
+    "RankBySumExprUnionMember5ExprUnionMember4ExprUnionMember1",
+    "RankBySumExprUnionMember5ExprUnionMember5",
+    "RankBySumExprUnionMember5ExprUnionMember5Expr",
+    "RankBySumExprUnionMember5ExprUnionMember5ExprUnionMember0",
+    "RankBySumExprUnionMember5ExprUnionMember5ExprUnionMember1",
+    "RankBySumExprUnionMember5ExprUnionMember6",
+    "RankBySumExprUnionMember5ExprUnionMember6Expr",
+    "RankBySumExprUnionMember5ExprUnionMember6ExprUnionMember0",
+    "RankBySumExprUnionMember5ExprUnionMember6ExprUnionMember1",
+    "RankBySumExprUnionMember5ExprUnionMember7",
+    "RankBySumExprUnionMember5ExprUnionMember7Expr",
+    "RankBySumExprUnionMember5ExprUnionMember7ExprUnionMember0",
+    "RankBySumExprUnionMember5ExprUnionMember7ExprUnionMember1",
+    "RankBySumExprUnionMember6",
+    "RankBySumExprUnionMember6Expr",
+    "RankBySumExprUnionMember6ExprUnionMember0",
+    "RankBySumExprUnionMember6ExprUnionMember1",
+    "RankBySumExprUnionMember6ExprUnionMember2",
+    "RankBySumExprUnionMember6ExprUnionMember2Expr",
+    "RankBySumExprUnionMember6ExprUnionMember2ExprUnionMember0",
+    "RankBySumExprUnionMember6ExprUnionMember2ExprUnionMember1",
+    "RankBySumExprUnionMember6ExprUnionMember3",
+    "RankBySumExprUnionMember6ExprUnionMember3Expr",
+    "RankBySumExprUnionMember6ExprUnionMember3ExprUnionMember0",
+    "RankBySumExprUnionMember6ExprUnionMember3ExprUnionMember1",
+    "RankBySumExprUnionMember6ExprUnionMember4",
+    "RankBySumExprUnionMember6ExprUnionMember4Expr",
+    "RankBySumExprUnionMember6ExprUnionMember4ExprUnionMember0",
+    "RankBySumExprUnionMember6ExprUnionMember4ExprUnionMember1",
+    "RankBySumExprUnionMember6ExprUnionMember5",
+    "RankBySumExprUnionMember6ExprUnionMember5Expr",
+    "RankBySumExprUnionMember6ExprUnionMember5ExprUnionMember0",
+    "RankBySumExprUnionMember6ExprUnionMember5ExprUnionMember1",
+    "RankBySumExprUnionMember6ExprUnionMember6",
+    "RankBySumExprUnionMember6ExprUnionMember6Expr",
+    "RankBySumExprUnionMember6ExprUnionMember6ExprUnionMember0",
+    "RankBySumExprUnionMember6ExprUnionMember6ExprUnionMember1",
+    "RankBySumExprUnionMember6ExprUnionMember7",
+    "RankBySumExprUnionMember6ExprUnionMember7Expr",
+    "RankBySumExprUnionMember6ExprUnionMember7ExprUnionMember0",
+    "RankBySumExprUnionMember6ExprUnionMember7ExprUnionMember1",
+    "RankBySumExprUnionMember7",
+    "RankBySumExprUnionMember7Expr",
+    "RankBySumExprUnionMember7ExprUnionMember0",
+    "RankBySumExprUnionMember7ExprUnionMember1",
+    "RankBySumExprUnionMember7ExprUnionMember2",
+    "RankBySumExprUnionMember7ExprUnionMember2Expr",
+    "RankBySumExprUnionMember7ExprUnionMember2ExprUnionMember0",
+    "RankBySumExprUnionMember7ExprUnionMember2ExprUnionMember1",
+    "RankBySumExprUnionMember7ExprUnionMember3",
+    "RankBySumExprUnionMember7ExprUnionMember3Expr",
+    "RankBySumExprUnionMember7ExprUnionMember3ExprUnionMember0",
+    "RankBySumExprUnionMember7ExprUnionMember3ExprUnionMember1",
+    "RankBySumExprUnionMember7ExprUnionMember4",
+    "RankBySumExprUnionMember7ExprUnionMember4Expr",
+    "RankBySumExprUnionMember7ExprUnionMember4ExprUnionMember0",
+    "RankBySumExprUnionMember7ExprUnionMember4ExprUnionMember1",
+    "RankBySumExprUnionMember7ExprUnionMember5",
+    "RankBySumExprUnionMember7ExprUnionMember5Expr",
+    "RankBySumExprUnionMember7ExprUnionMember5ExprUnionMember0",
+    "RankBySumExprUnionMember7ExprUnionMember5ExprUnionMember1",
+    "RankBySumExprUnionMember7ExprUnionMember6",
+    "RankBySumExprUnionMember7ExprUnionMember6Expr",
+    "RankBySumExprUnionMember7ExprUnionMember6ExprUnionMember0",
+    "RankBySumExprUnionMember7ExprUnionMember6ExprUnionMember1",
+    "RankBySumExprUnionMember7ExprUnionMember7",
+    "RankBySumExprUnionMember7ExprUnionMember7Expr",
+    "RankBySumExprUnionMember7ExprUnionMember7ExprUnionMember0",
+    "RankBySumExprUnionMember7ExprUnionMember7ExprUnionMember1",
+    "RankByMult",
+    "RankByMultExpr",
+    "RankByMultExprUnionMember0",
+    "RankByMultExprUnionMember1",
+    "RankByMultExprUnionMember2",
+    "RankByMultExprUnionMember2Expr",
+    "RankByMultExprUnionMember2ExprUnionMember0",
+    "RankByMultExprUnionMember2ExprUnionMember1",
+    "RankByMultExprUnionMember2ExprUnionMember2",
+    "RankByMultExprUnionMember2ExprUnionMember2Expr",
+    "RankByMultExprUnionMember2ExprUnionMember2ExprUnionMember0",
+    "RankByMultExprUnionMember2ExprUnionMember2ExprUnionMember1",
+    "RankByMultExprUnionMember2ExprUnionMember3",
+    "RankByMultExprUnionMember2ExprUnionMember3Expr",
+    "RankByMultExprUnionMember2ExprUnionMember3ExprUnionMember0",
+    "RankByMultExprUnionMember2ExprUnionMember3ExprUnionMember1",
+    "RankByMultExprUnionMember2ExprUnionMember4",
+    "RankByMultExprUnionMember2ExprUnionMember4Expr",
+    "RankByMultExprUnionMember2ExprUnionMember4ExprUnionMember0",
+    "RankByMultExprUnionMember2ExprUnionMember4ExprUnionMember1",
+    "RankByMultExprUnionMember2ExprUnionMember5",
+    "RankByMultExprUnionMember2ExprUnionMember5Expr",
+    "RankByMultExprUnionMember2ExprUnionMember5ExprUnionMember0",
+    "RankByMultExprUnionMember2ExprUnionMember5ExprUnionMember1",
+    "RankByMultExprUnionMember2ExprUnionMember6",
+    "RankByMultExprUnionMember2ExprUnionMember6Expr",
+    "RankByMultExprUnionMember2ExprUnionMember6ExprUnionMember0",
+    "RankByMultExprUnionMember2ExprUnionMember6ExprUnionMember1",
+    "RankByMultExprUnionMember2ExprUnionMember7",
+    "RankByMultExprUnionMember2ExprUnionMember7Expr",
+    "RankByMultExprUnionMember2ExprUnionMember7ExprUnionMember0",
+    "RankByMultExprUnionMember2ExprUnionMember7ExprUnionMember1",
+    "RankByMultExprUnionMember3",
+    "RankByMultExprUnionMember3Expr",
+    "RankByMultExprUnionMember3ExprUnionMember0",
+    "RankByMultExprUnionMember3ExprUnionMember1",
+    "RankByMultExprUnionMember3ExprUnionMember2",
+    "RankByMultExprUnionMember3ExprUnionMember2Expr",
+    "RankByMultExprUnionMember3ExprUnionMember2ExprUnionMember0",
+    "RankByMultExprUnionMember3ExprUnionMember2ExprUnionMember1",
+    "RankByMultExprUnionMember3ExprUnionMember3",
+    "RankByMultExprUnionMember3ExprUnionMember3Expr",
+    "RankByMultExprUnionMember3ExprUnionMember3ExprUnionMember0",
+    "RankByMultExprUnionMember3ExprUnionMember3ExprUnionMember1",
+    "RankByMultExprUnionMember3ExprUnionMember4",
+    "RankByMultExprUnionMember3ExprUnionMember4Expr",
+    "RankByMultExprUnionMember3ExprUnionMember4ExprUnionMember0",
+    "RankByMultExprUnionMember3ExprUnionMember4ExprUnionMember1",
+    "RankByMultExprUnionMember3ExprUnionMember5",
+    "RankByMultExprUnionMember3ExprUnionMember5Expr",
+    "RankByMultExprUnionMember3ExprUnionMember5ExprUnionMember0",
+    "RankByMultExprUnionMember3ExprUnionMember5ExprUnionMember1",
+    "RankByMultExprUnionMember3ExprUnionMember6",
+    "RankByMultExprUnionMember3ExprUnionMember6Expr",
+    "RankByMultExprUnionMember3ExprUnionMember6ExprUnionMember0",
+    "RankByMultExprUnionMember3ExprUnionMember6ExprUnionMember1",
+    "RankByMultExprUnionMember3ExprUnionMember7",
+    "RankByMultExprUnionMember3ExprUnionMember7Expr",
+    "RankByMultExprUnionMember3ExprUnionMember7ExprUnionMember0",
+    "RankByMultExprUnionMember3ExprUnionMember7ExprUnionMember1",
+    "RankByMultExprUnionMember4",
+    "RankByMultExprUnionMember4Expr",
+    "RankByMultExprUnionMember4ExprUnionMember0",
+    "RankByMultExprUnionMember4ExprUnionMember1",
+    "RankByMultExprUnionMember4ExprUnionMember2",
+    "RankByMultExprUnionMember4ExprUnionMember2Expr",
+    "RankByMultExprUnionMember4ExprUnionMember2ExprUnionMember0",
+    "RankByMultExprUnionMember4ExprUnionMember2ExprUnionMember1",
+    "RankByMultExprUnionMember4ExprUnionMember3",
+    "RankByMultExprUnionMember4ExprUnionMember3Expr",
+    "RankByMultExprUnionMember4ExprUnionMember3ExprUnionMember0",
+    "RankByMultExprUnionMember4ExprUnionMember3ExprUnionMember1",
+    "RankByMultExprUnionMember4ExprUnionMember4",
+    "RankByMultExprUnionMember4ExprUnionMember4Expr",
+    "RankByMultExprUnionMember4ExprUnionMember4ExprUnionMember0",
+    "RankByMultExprUnionMember4ExprUnionMember4ExprUnionMember1",
+    "RankByMultExprUnionMember4ExprUnionMember5",
+    "RankByMultExprUnionMember4ExprUnionMember5Expr",
+    "RankByMultExprUnionMember4ExprUnionMember5ExprUnionMember0",
+    "RankByMultExprUnionMember4ExprUnionMember5ExprUnionMember1",
+    "RankByMultExprUnionMember4ExprUnionMember6",
+    "RankByMultExprUnionMember4ExprUnionMember6Expr",
+    "RankByMultExprUnionMember4ExprUnionMember6ExprUnionMember0",
+    "RankByMultExprUnionMember4ExprUnionMember6ExprUnionMember1",
+    "RankByMultExprUnionMember4ExprUnionMember7",
+    "RankByMultExprUnionMember4ExprUnionMember7Expr",
+    "RankByMultExprUnionMember4ExprUnionMember7ExprUnionMember0",
+    "RankByMultExprUnionMember4ExprUnionMember7ExprUnionMember1",
+    "RankByMultExprUnionMember5",
+    "RankByMultExprUnionMember5Expr",
+    "RankByMultExprUnionMember5ExprUnionMember0",
+    "RankByMultExprUnionMember5ExprUnionMember1",
+    "RankByMultExprUnionMember5ExprUnionMember2",
+    "RankByMultExprUnionMember5ExprUnionMember2Expr",
+    "RankByMultExprUnionMember5ExprUnionMember2ExprUnionMember0",
+    "RankByMultExprUnionMember5ExprUnionMember2ExprUnionMember1",
+    "RankByMultExprUnionMember5ExprUnionMember3",
+    "RankByMultExprUnionMember5ExprUnionMember3Expr",
+    "RankByMultExprUnionMember5ExprUnionMember3ExprUnionMember0",
+    "RankByMultExprUnionMember5ExprUnionMember3ExprUnionMember1",
+    "RankByMultExprUnionMember5ExprUnionMember4",
+    "RankByMultExprUnionMember5ExprUnionMember4Expr",
+    "RankByMultExprUnionMember5ExprUnionMember4ExprUnionMember0",
+    "RankByMultExprUnionMember5ExprUnionMember4ExprUnionMember1",
+    "RankByMultExprUnionMember5ExprUnionMember5",
+    "RankByMultExprUnionMember5ExprUnionMember5Expr",
+    "RankByMultExprUnionMember5ExprUnionMember5ExprUnionMember0",
+    "RankByMultExprUnionMember5ExprUnionMember5ExprUnionMember1",
+    "RankByMultExprUnionMember5ExprUnionMember6",
+    "RankByMultExprUnionMember5ExprUnionMember6Expr",
+    "RankByMultExprUnionMember5ExprUnionMember6ExprUnionMember0",
+    "RankByMultExprUnionMember5ExprUnionMember6ExprUnionMember1",
+    "RankByMultExprUnionMember5ExprUnionMember7",
+    "RankByMultExprUnionMember5ExprUnionMember7Expr",
+    "RankByMultExprUnionMember5ExprUnionMember7ExprUnionMember0",
+    "RankByMultExprUnionMember5ExprUnionMember7ExprUnionMember1",
+    "RankByMultExprUnionMember6",
+    "RankByMultExprUnionMember6Expr",
+    "RankByMultExprUnionMember6ExprUnionMember0",
+    "RankByMultExprUnionMember6ExprUnionMember1",
+    "RankByMultExprUnionMember6ExprUnionMember2",
+    "RankByMultExprUnionMember6ExprUnionMember2Expr",
+    "RankByMultExprUnionMember6ExprUnionMember2ExprUnionMember0",
+    "RankByMultExprUnionMember6ExprUnionMember2ExprUnionMember1",
+    "RankByMultExprUnionMember6ExprUnionMember3",
+    "RankByMultExprUnionMember6ExprUnionMember3Expr",
+    "RankByMultExprUnionMember6ExprUnionMember3ExprUnionMember0",
+    "RankByMultExprUnionMember6ExprUnionMember3ExprUnionMember1",
+    "RankByMultExprUnionMember6ExprUnionMember4",
+    "RankByMultExprUnionMember6ExprUnionMember4Expr",
+    "RankByMultExprUnionMember6ExprUnionMember4ExprUnionMember0",
+    "RankByMultExprUnionMember6ExprUnionMember4ExprUnionMember1",
+    "RankByMultExprUnionMember6ExprUnionMember5",
+    "RankByMultExprUnionMember6ExprUnionMember5Expr",
+    "RankByMultExprUnionMember6ExprUnionMember5ExprUnionMember0",
+    "RankByMultExprUnionMember6ExprUnionMember5ExprUnionMember1",
+    "RankByMultExprUnionMember6ExprUnionMember6",
+    "RankByMultExprUnionMember6ExprUnionMember6Expr",
+    "RankByMultExprUnionMember6ExprUnionMember6ExprUnionMember0",
+    "RankByMultExprUnionMember6ExprUnionMember6ExprUnionMember1",
+    "RankByMultExprUnionMember6ExprUnionMember7",
+    "RankByMultExprUnionMember6ExprUnionMember7Expr",
+    "RankByMultExprUnionMember6ExprUnionMember7ExprUnionMember0",
+    "RankByMultExprUnionMember6ExprUnionMember7ExprUnionMember1",
+    "RankByMultExprUnionMember7",
+    "RankByMultExprUnionMember7Expr",
+    "RankByMultExprUnionMember7ExprUnionMember0",
+    "RankByMultExprUnionMember7ExprUnionMember1",
+    "RankByMultExprUnionMember7ExprUnionMember2",
+    "RankByMultExprUnionMember7ExprUnionMember2Expr",
+    "RankByMultExprUnionMember7ExprUnionMember2ExprUnionMember0",
+    "RankByMultExprUnionMember7ExprUnionMember2ExprUnionMember1",
+    "RankByMultExprUnionMember7ExprUnionMember3",
+    "RankByMultExprUnionMember7ExprUnionMember3Expr",
+    "RankByMultExprUnionMember7ExprUnionMember3ExprUnionMember0",
+    "RankByMultExprUnionMember7ExprUnionMember3ExprUnionMember1",
+    "RankByMultExprUnionMember7ExprUnionMember4",
+    "RankByMultExprUnionMember7ExprUnionMember4Expr",
+    "RankByMultExprUnionMember7ExprUnionMember4ExprUnionMember0",
+    "RankByMultExprUnionMember7ExprUnionMember4ExprUnionMember1",
+    "RankByMultExprUnionMember7ExprUnionMember5",
+    "RankByMultExprUnionMember7ExprUnionMember5Expr",
+    "RankByMultExprUnionMember7ExprUnionMember5ExprUnionMember0",
+    "RankByMultExprUnionMember7ExprUnionMember5ExprUnionMember1",
+    "RankByMultExprUnionMember7ExprUnionMember6",
+    "RankByMultExprUnionMember7ExprUnionMember6Expr",
+    "RankByMultExprUnionMember7ExprUnionMember6ExprUnionMember0",
+    "RankByMultExprUnionMember7ExprUnionMember6ExprUnionMember1",
+    "RankByMultExprUnionMember7ExprUnionMember7",
+    "RankByMultExprUnionMember7ExprUnionMember7Expr",
+    "RankByMultExprUnionMember7ExprUnionMember7ExprUnionMember0",
+    "RankByMultExprUnionMember7ExprUnionMember7ExprUnionMember1",
+    "RankByDiv",
+    "RankByDivExpr",
+    "RankByDivExprUnionMember0",
+    "RankByDivExprUnionMember1",
+    "RankByDivExprUnionMember2",
+    "RankByDivExprUnionMember2Expr",
+    "RankByDivExprUnionMember2ExprUnionMember0",
+    "RankByDivExprUnionMember2ExprUnionMember1",
+    "RankByDivExprUnionMember2ExprUnionMember2",
+    "RankByDivExprUnionMember2ExprUnionMember2Expr",
+    "RankByDivExprUnionMember2ExprUnionMember2ExprUnionMember0",
+    "RankByDivExprUnionMember2ExprUnionMember2ExprUnionMember1",
+    "RankByDivExprUnionMember2ExprUnionMember3",
+    "RankByDivExprUnionMember2ExprUnionMember3Expr",
+    "RankByDivExprUnionMember2ExprUnionMember3ExprUnionMember0",
+    "RankByDivExprUnionMember2ExprUnionMember3ExprUnionMember1",
+    "RankByDivExprUnionMember2ExprUnionMember4",
+    "RankByDivExprUnionMember2ExprUnionMember4Expr",
+    "RankByDivExprUnionMember2ExprUnionMember4ExprUnionMember0",
+    "RankByDivExprUnionMember2ExprUnionMember4ExprUnionMember1",
+    "RankByDivExprUnionMember2ExprUnionMember5",
+    "RankByDivExprUnionMember2ExprUnionMember5Expr",
+    "RankByDivExprUnionMember2ExprUnionMember5ExprUnionMember0",
+    "RankByDivExprUnionMember2ExprUnionMember5ExprUnionMember1",
+    "RankByDivExprUnionMember2ExprUnionMember6",
+    "RankByDivExprUnionMember2ExprUnionMember6Expr",
+    "RankByDivExprUnionMember2ExprUnionMember6ExprUnionMember0",
+    "RankByDivExprUnionMember2ExprUnionMember6ExprUnionMember1",
+    "RankByDivExprUnionMember2ExprUnionMember7",
+    "RankByDivExprUnionMember2ExprUnionMember7Expr",
+    "RankByDivExprUnionMember2ExprUnionMember7ExprUnionMember0",
+    "RankByDivExprUnionMember2ExprUnionMember7ExprUnionMember1",
+    "RankByDivExprUnionMember3",
+    "RankByDivExprUnionMember3Expr",
+    "RankByDivExprUnionMember3ExprUnionMember0",
+    "RankByDivExprUnionMember3ExprUnionMember1",
+    "RankByDivExprUnionMember3ExprUnionMember2",
+    "RankByDivExprUnionMember3ExprUnionMember2Expr",
+    "RankByDivExprUnionMember3ExprUnionMember2ExprUnionMember0",
+    "RankByDivExprUnionMember3ExprUnionMember2ExprUnionMember1",
+    "RankByDivExprUnionMember3ExprUnionMember3",
+    "RankByDivExprUnionMember3ExprUnionMember3Expr",
+    "RankByDivExprUnionMember3ExprUnionMember3ExprUnionMember0",
+    "RankByDivExprUnionMember3ExprUnionMember3ExprUnionMember1",
+    "RankByDivExprUnionMember3ExprUnionMember4",
+    "RankByDivExprUnionMember3ExprUnionMember4Expr",
+    "RankByDivExprUnionMember3ExprUnionMember4ExprUnionMember0",
+    "RankByDivExprUnionMember3ExprUnionMember4ExprUnionMember1",
+    "RankByDivExprUnionMember3ExprUnionMember5",
+    "RankByDivExprUnionMember3ExprUnionMember5Expr",
+    "RankByDivExprUnionMember3ExprUnionMember5ExprUnionMember0",
+    "RankByDivExprUnionMember3ExprUnionMember5ExprUnionMember1",
+    "RankByDivExprUnionMember3ExprUnionMember6",
+    "RankByDivExprUnionMember3ExprUnionMember6Expr",
+    "RankByDivExprUnionMember3ExprUnionMember6ExprUnionMember0",
+    "RankByDivExprUnionMember3ExprUnionMember6ExprUnionMember1",
+    "RankByDivExprUnionMember3ExprUnionMember7",
+    "RankByDivExprUnionMember3ExprUnionMember7Expr",
+    "RankByDivExprUnionMember3ExprUnionMember7ExprUnionMember0",
+    "RankByDivExprUnionMember3ExprUnionMember7ExprUnionMember1",
+    "RankByDivExprUnionMember4",
+    "RankByDivExprUnionMember4Expr",
+    "RankByDivExprUnionMember4ExprUnionMember0",
+    "RankByDivExprUnionMember4ExprUnionMember1",
+    "RankByDivExprUnionMember4ExprUnionMember2",
+    "RankByDivExprUnionMember4ExprUnionMember2Expr",
+    "RankByDivExprUnionMember4ExprUnionMember2ExprUnionMember0",
+    "RankByDivExprUnionMember4ExprUnionMember2ExprUnionMember1",
+    "RankByDivExprUnionMember4ExprUnionMember3",
+    "RankByDivExprUnionMember4ExprUnionMember3Expr",
+    "RankByDivExprUnionMember4ExprUnionMember3ExprUnionMember0",
+    "RankByDivExprUnionMember4ExprUnionMember3ExprUnionMember1",
+    "RankByDivExprUnionMember4ExprUnionMember4",
+    "RankByDivExprUnionMember4ExprUnionMember4Expr",
+    "RankByDivExprUnionMember4ExprUnionMember4ExprUnionMember0",
+    "RankByDivExprUnionMember4ExprUnionMember4ExprUnionMember1",
+    "RankByDivExprUnionMember4ExprUnionMember5",
+    "RankByDivExprUnionMember4ExprUnionMember5Expr",
+    "RankByDivExprUnionMember4ExprUnionMember5ExprUnionMember0",
+    "RankByDivExprUnionMember4ExprUnionMember5ExprUnionMember1",
+    "RankByDivExprUnionMember4ExprUnionMember6",
+    "RankByDivExprUnionMember4ExprUnionMember6Expr",
+    "RankByDivExprUnionMember4ExprUnionMember6ExprUnionMember0",
+    "RankByDivExprUnionMember4ExprUnionMember6ExprUnionMember1",
+    "RankByDivExprUnionMember4ExprUnionMember7",
+    "RankByDivExprUnionMember4ExprUnionMember7Expr",
+    "RankByDivExprUnionMember4ExprUnionMember7ExprUnionMember0",
+    "RankByDivExprUnionMember4ExprUnionMember7ExprUnionMember1",
+    "RankByDivExprUnionMember5",
+    "RankByDivExprUnionMember5Expr",
+    "RankByDivExprUnionMember5ExprUnionMember0",
+    "RankByDivExprUnionMember5ExprUnionMember1",
+    "RankByDivExprUnionMember5ExprUnionMember2",
+    "RankByDivExprUnionMember5ExprUnionMember2Expr",
+    "RankByDivExprUnionMember5ExprUnionMember2ExprUnionMember0",
+    "RankByDivExprUnionMember5ExprUnionMember2ExprUnionMember1",
+    "RankByDivExprUnionMember5ExprUnionMember3",
+    "RankByDivExprUnionMember5ExprUnionMember3Expr",
+    "RankByDivExprUnionMember5ExprUnionMember3ExprUnionMember0",
+    "RankByDivExprUnionMember5ExprUnionMember3ExprUnionMember1",
+    "RankByDivExprUnionMember5ExprUnionMember4",
+    "RankByDivExprUnionMember5ExprUnionMember4Expr",
+    "RankByDivExprUnionMember5ExprUnionMember4ExprUnionMember0",
+    "RankByDivExprUnionMember5ExprUnionMember4ExprUnionMember1",
+    "RankByDivExprUnionMember5ExprUnionMember5",
+    "RankByDivExprUnionMember5ExprUnionMember5Expr",
+    "RankByDivExprUnionMember5ExprUnionMember5ExprUnionMember0",
+    "RankByDivExprUnionMember5ExprUnionMember5ExprUnionMember1",
+    "RankByDivExprUnionMember5ExprUnionMember6",
+    "RankByDivExprUnionMember5ExprUnionMember6Expr",
+    "RankByDivExprUnionMember5ExprUnionMember6ExprUnionMember0",
+    "RankByDivExprUnionMember5ExprUnionMember6ExprUnionMember1",
+    "RankByDivExprUnionMember5ExprUnionMember7",
+    "RankByDivExprUnionMember5ExprUnionMember7Expr",
+    "RankByDivExprUnionMember5ExprUnionMember7ExprUnionMember0",
+    "RankByDivExprUnionMember5ExprUnionMember7ExprUnionMember1",
+    "RankByDivExprUnionMember6",
+    "RankByDivExprUnionMember6Expr",
+    "RankByDivExprUnionMember6ExprUnionMember0",
+    "RankByDivExprUnionMember6ExprUnionMember1",
+    "RankByDivExprUnionMember6ExprUnionMember2",
+    "RankByDivExprUnionMember6ExprUnionMember2Expr",
+    "RankByDivExprUnionMember6ExprUnionMember2ExprUnionMember0",
+    "RankByDivExprUnionMember6ExprUnionMember2ExprUnionMember1",
+    "RankByDivExprUnionMember6ExprUnionMember3",
+    "RankByDivExprUnionMember6ExprUnionMember3Expr",
+    "RankByDivExprUnionMember6ExprUnionMember3ExprUnionMember0",
+    "RankByDivExprUnionMember6ExprUnionMember3ExprUnionMember1",
+    "RankByDivExprUnionMember6ExprUnionMember4",
+    "RankByDivExprUnionMember6ExprUnionMember4Expr",
+    "RankByDivExprUnionMember6ExprUnionMember4ExprUnionMember0",
+    "RankByDivExprUnionMember6ExprUnionMember4ExprUnionMember1",
+    "RankByDivExprUnionMember6ExprUnionMember5",
+    "RankByDivExprUnionMember6ExprUnionMember5Expr",
+    "RankByDivExprUnionMember6ExprUnionMember5ExprUnionMember0",
+    "RankByDivExprUnionMember6ExprUnionMember5ExprUnionMember1",
+    "RankByDivExprUnionMember6ExprUnionMember6",
+    "RankByDivExprUnionMember6ExprUnionMember6Expr",
+    "RankByDivExprUnionMember6ExprUnionMember6ExprUnionMember0",
+    "RankByDivExprUnionMember6ExprUnionMember6ExprUnionMember1",
+    "RankByDivExprUnionMember6ExprUnionMember7",
+    "RankByDivExprUnionMember6ExprUnionMember7Expr",
+    "RankByDivExprUnionMember6ExprUnionMember7ExprUnionMember0",
+    "RankByDivExprUnionMember6ExprUnionMember7ExprUnionMember1",
+    "RankByDivExprUnionMember7",
+    "RankByDivExprUnionMember7Expr",
+    "RankByDivExprUnionMember7ExprUnionMember0",
+    "RankByDivExprUnionMember7ExprUnionMember1",
+    "RankByDivExprUnionMember7ExprUnionMember2",
+    "RankByDivExprUnionMember7ExprUnionMember2Expr",
+    "RankByDivExprUnionMember7ExprUnionMember2ExprUnionMember0",
+    "RankByDivExprUnionMember7ExprUnionMember2ExprUnionMember1",
+    "RankByDivExprUnionMember7ExprUnionMember3",
+    "RankByDivExprUnionMember7ExprUnionMember3Expr",
+    "RankByDivExprUnionMember7ExprUnionMember3ExprUnionMember0",
+    "RankByDivExprUnionMember7ExprUnionMember3ExprUnionMember1",
+    "RankByDivExprUnionMember7ExprUnionMember4",
+    "RankByDivExprUnionMember7ExprUnionMember4Expr",
+    "RankByDivExprUnionMember7ExprUnionMember4ExprUnionMember0",
+    "RankByDivExprUnionMember7ExprUnionMember4ExprUnionMember1",
+    "RankByDivExprUnionMember7ExprUnionMember5",
+    "RankByDivExprUnionMember7ExprUnionMember5Expr",
+    "RankByDivExprUnionMember7ExprUnionMember5ExprUnionMember0",
+    "RankByDivExprUnionMember7ExprUnionMember5ExprUnionMember1",
+    "RankByDivExprUnionMember7ExprUnionMember6",
+    "RankByDivExprUnionMember7ExprUnionMember6Expr",
+    "RankByDivExprUnionMember7ExprUnionMember6ExprUnionMember0",
+    "RankByDivExprUnionMember7ExprUnionMember6ExprUnionMember1",
+    "RankByDivExprUnionMember7ExprUnionMember7",
+    "RankByDivExprUnionMember7ExprUnionMember7Expr",
+    "RankByDivExprUnionMember7ExprUnionMember7ExprUnionMember0",
+    "RankByDivExprUnionMember7ExprUnionMember7ExprUnionMember1",
+    "RankByMax",
+    "RankByMaxExpr",
+    "RankByMaxExprUnionMember0",
+    "RankByMaxExprUnionMember1",
+    "RankByMaxExprUnionMember2",
+    "RankByMaxExprUnionMember2Expr",
+    "RankByMaxExprUnionMember2ExprUnionMember0",
+    "RankByMaxExprUnionMember2ExprUnionMember1",
+    "RankByMaxExprUnionMember2ExprUnionMember2",
+    "RankByMaxExprUnionMember2ExprUnionMember2Expr",
+    "RankByMaxExprUnionMember2ExprUnionMember2ExprUnionMember0",
+    "RankByMaxExprUnionMember2ExprUnionMember2ExprUnionMember1",
+    "RankByMaxExprUnionMember2ExprUnionMember3",
+    "RankByMaxExprUnionMember2ExprUnionMember3Expr",
+    "RankByMaxExprUnionMember2ExprUnionMember3ExprUnionMember0",
+    "RankByMaxExprUnionMember2ExprUnionMember3ExprUnionMember1",
+    "RankByMaxExprUnionMember2ExprUnionMember4",
+    "RankByMaxExprUnionMember2ExprUnionMember4Expr",
+    "RankByMaxExprUnionMember2ExprUnionMember4ExprUnionMember0",
+    "RankByMaxExprUnionMember2ExprUnionMember4ExprUnionMember1",
+    "RankByMaxExprUnionMember2ExprUnionMember5",
+    "RankByMaxExprUnionMember2ExprUnionMember5Expr",
+    "RankByMaxExprUnionMember2ExprUnionMember5ExprUnionMember0",
+    "RankByMaxExprUnionMember2ExprUnionMember5ExprUnionMember1",
+    "RankByMaxExprUnionMember2ExprUnionMember6",
+    "RankByMaxExprUnionMember2ExprUnionMember6Expr",
+    "RankByMaxExprUnionMember2ExprUnionMember6ExprUnionMember0",
+    "RankByMaxExprUnionMember2ExprUnionMember6ExprUnionMember1",
+    "RankByMaxExprUnionMember2ExprUnionMember7",
+    "RankByMaxExprUnionMember2ExprUnionMember7Expr",
+    "RankByMaxExprUnionMember2ExprUnionMember7ExprUnionMember0",
+    "RankByMaxExprUnionMember2ExprUnionMember7ExprUnionMember1",
+    "RankByMaxExprUnionMember3",
+    "RankByMaxExprUnionMember3Expr",
+    "RankByMaxExprUnionMember3ExprUnionMember0",
+    "RankByMaxExprUnionMember3ExprUnionMember1",
+    "RankByMaxExprUnionMember3ExprUnionMember2",
+    "RankByMaxExprUnionMember3ExprUnionMember2Expr",
+    "RankByMaxExprUnionMember3ExprUnionMember2ExprUnionMember0",
+    "RankByMaxExprUnionMember3ExprUnionMember2ExprUnionMember1",
+    "RankByMaxExprUnionMember3ExprUnionMember3",
+    "RankByMaxExprUnionMember3ExprUnionMember3Expr",
+    "RankByMaxExprUnionMember3ExprUnionMember3ExprUnionMember0",
+    "RankByMaxExprUnionMember3ExprUnionMember3ExprUnionMember1",
+    "RankByMaxExprUnionMember3ExprUnionMember4",
+    "RankByMaxExprUnionMember3ExprUnionMember4Expr",
+    "RankByMaxExprUnionMember3ExprUnionMember4ExprUnionMember0",
+    "RankByMaxExprUnionMember3ExprUnionMember4ExprUnionMember1",
+    "RankByMaxExprUnionMember3ExprUnionMember5",
+    "RankByMaxExprUnionMember3ExprUnionMember5Expr",
+    "RankByMaxExprUnionMember3ExprUnionMember5ExprUnionMember0",
+    "RankByMaxExprUnionMember3ExprUnionMember5ExprUnionMember1",
+    "RankByMaxExprUnionMember3ExprUnionMember6",
+    "RankByMaxExprUnionMember3ExprUnionMember6Expr",
+    "RankByMaxExprUnionMember3ExprUnionMember6ExprUnionMember0",
+    "RankByMaxExprUnionMember3ExprUnionMember6ExprUnionMember1",
+    "RankByMaxExprUnionMember3ExprUnionMember7",
+    "RankByMaxExprUnionMember3ExprUnionMember7Expr",
+    "RankByMaxExprUnionMember3ExprUnionMember7ExprUnionMember0",
+    "RankByMaxExprUnionMember3ExprUnionMember7ExprUnionMember1",
+    "RankByMaxExprUnionMember4",
+    "RankByMaxExprUnionMember4Expr",
+    "RankByMaxExprUnionMember4ExprUnionMember0",
+    "RankByMaxExprUnionMember4ExprUnionMember1",
+    "RankByMaxExprUnionMember4ExprUnionMember2",
+    "RankByMaxExprUnionMember4ExprUnionMember2Expr",
+    "RankByMaxExprUnionMember4ExprUnionMember2ExprUnionMember0",
+    "RankByMaxExprUnionMember4ExprUnionMember2ExprUnionMember1",
+    "RankByMaxExprUnionMember4ExprUnionMember3",
+    "RankByMaxExprUnionMember4ExprUnionMember3Expr",
+    "RankByMaxExprUnionMember4ExprUnionMember3ExprUnionMember0",
+    "RankByMaxExprUnionMember4ExprUnionMember3ExprUnionMember1",
+    "RankByMaxExprUnionMember4ExprUnionMember4",
+    "RankByMaxExprUnionMember4ExprUnionMember4Expr",
+    "RankByMaxExprUnionMember4ExprUnionMember4ExprUnionMember0",
+    "RankByMaxExprUnionMember4ExprUnionMember4ExprUnionMember1",
+    "RankByMaxExprUnionMember4ExprUnionMember5",
+    "RankByMaxExprUnionMember4ExprUnionMember5Expr",
+    "RankByMaxExprUnionMember4ExprUnionMember5ExprUnionMember0",
+    "RankByMaxExprUnionMember4ExprUnionMember5ExprUnionMember1",
+    "RankByMaxExprUnionMember4ExprUnionMember6",
+    "RankByMaxExprUnionMember4ExprUnionMember6Expr",
+    "RankByMaxExprUnionMember4ExprUnionMember6ExprUnionMember0",
+    "RankByMaxExprUnionMember4ExprUnionMember6ExprUnionMember1",
+    "RankByMaxExprUnionMember4ExprUnionMember7",
+    "RankByMaxExprUnionMember4ExprUnionMember7Expr",
+    "RankByMaxExprUnionMember4ExprUnionMember7ExprUnionMember0",
+    "RankByMaxExprUnionMember4ExprUnionMember7ExprUnionMember1",
+    "RankByMaxExprUnionMember5",
+    "RankByMaxExprUnionMember5Expr",
+    "RankByMaxExprUnionMember5ExprUnionMember0",
+    "RankByMaxExprUnionMember5ExprUnionMember1",
+    "RankByMaxExprUnionMember5ExprUnionMember2",
+    "RankByMaxExprUnionMember5ExprUnionMember2Expr",
+    "RankByMaxExprUnionMember5ExprUnionMember2ExprUnionMember0",
+    "RankByMaxExprUnionMember5ExprUnionMember2ExprUnionMember1",
+    "RankByMaxExprUnionMember5ExprUnionMember3",
+    "RankByMaxExprUnionMember5ExprUnionMember3Expr",
+    "RankByMaxExprUnionMember5ExprUnionMember3ExprUnionMember0",
+    "RankByMaxExprUnionMember5ExprUnionMember3ExprUnionMember1",
+    "RankByMaxExprUnionMember5ExprUnionMember4",
+    "RankByMaxExprUnionMember5ExprUnionMember4Expr",
+    "RankByMaxExprUnionMember5ExprUnionMember4ExprUnionMember0",
+    "RankByMaxExprUnionMember5ExprUnionMember4ExprUnionMember1",
+    "RankByMaxExprUnionMember5ExprUnionMember5",
+    "RankByMaxExprUnionMember5ExprUnionMember5Expr",
+    "RankByMaxExprUnionMember5ExprUnionMember5ExprUnionMember0",
+    "RankByMaxExprUnionMember5ExprUnionMember5ExprUnionMember1",
+    "RankByMaxExprUnionMember5ExprUnionMember6",
+    "RankByMaxExprUnionMember5ExprUnionMember6Expr",
+    "RankByMaxExprUnionMember5ExprUnionMember6ExprUnionMember0",
+    "RankByMaxExprUnionMember5ExprUnionMember6ExprUnionMember1",
+    "RankByMaxExprUnionMember5ExprUnionMember7",
+    "RankByMaxExprUnionMember5ExprUnionMember7Expr",
+    "RankByMaxExprUnionMember5ExprUnionMember7ExprUnionMember0",
+    "RankByMaxExprUnionMember5ExprUnionMember7ExprUnionMember1",
+    "RankByMaxExprUnionMember6",
+    "RankByMaxExprUnionMember6Expr",
+    "RankByMaxExprUnionMember6ExprUnionMember0",
+    "RankByMaxExprUnionMember6ExprUnionMember1",
+    "RankByMaxExprUnionMember6ExprUnionMember2",
+    "RankByMaxExprUnionMember6ExprUnionMember2Expr",
+    "RankByMaxExprUnionMember6ExprUnionMember2ExprUnionMember0",
+    "RankByMaxExprUnionMember6ExprUnionMember2ExprUnionMember1",
+    "RankByMaxExprUnionMember6ExprUnionMember3",
+    "RankByMaxExprUnionMember6ExprUnionMember3Expr",
+    "RankByMaxExprUnionMember6ExprUnionMember3ExprUnionMember0",
+    "RankByMaxExprUnionMember6ExprUnionMember3ExprUnionMember1",
+    "RankByMaxExprUnionMember6ExprUnionMember4",
+    "RankByMaxExprUnionMember6ExprUnionMember4Expr",
+    "RankByMaxExprUnionMember6ExprUnionMember4ExprUnionMember0",
+    "RankByMaxExprUnionMember6ExprUnionMember4ExprUnionMember1",
+    "RankByMaxExprUnionMember6ExprUnionMember5",
+    "RankByMaxExprUnionMember6ExprUnionMember5Expr",
+    "RankByMaxExprUnionMember6ExprUnionMember5ExprUnionMember0",
+    "RankByMaxExprUnionMember6ExprUnionMember5ExprUnionMember1",
+    "RankByMaxExprUnionMember6ExprUnionMember6",
+    "RankByMaxExprUnionMember6ExprUnionMember6Expr",
+    "RankByMaxExprUnionMember6ExprUnionMember6ExprUnionMember0",
+    "RankByMaxExprUnionMember6ExprUnionMember6ExprUnionMember1",
+    "RankByMaxExprUnionMember6ExprUnionMember7",
+    "RankByMaxExprUnionMember6ExprUnionMember7Expr",
+    "RankByMaxExprUnionMember6ExprUnionMember7ExprUnionMember0",
+    "RankByMaxExprUnionMember6ExprUnionMember7ExprUnionMember1",
+    "RankByMaxExprUnionMember7",
+    "RankByMaxExprUnionMember7Expr",
+    "RankByMaxExprUnionMember7ExprUnionMember0",
+    "RankByMaxExprUnionMember7ExprUnionMember1",
+    "RankByMaxExprUnionMember7ExprUnionMember2",
+    "RankByMaxExprUnionMember7ExprUnionMember2Expr",
+    "RankByMaxExprUnionMember7ExprUnionMember2ExprUnionMember0",
+    "RankByMaxExprUnionMember7ExprUnionMember2ExprUnionMember1",
+    "RankByMaxExprUnionMember7ExprUnionMember3",
+    "RankByMaxExprUnionMember7ExprUnionMember3Expr",
+    "RankByMaxExprUnionMember7ExprUnionMember3ExprUnionMember0",
+    "RankByMaxExprUnionMember7ExprUnionMember3ExprUnionMember1",
+    "RankByMaxExprUnionMember7ExprUnionMember4",
+    "RankByMaxExprUnionMember7ExprUnionMember4Expr",
+    "RankByMaxExprUnionMember7ExprUnionMember4ExprUnionMember0",
+    "RankByMaxExprUnionMember7ExprUnionMember4ExprUnionMember1",
+    "RankByMaxExprUnionMember7ExprUnionMember5",
+    "RankByMaxExprUnionMember7ExprUnionMember5Expr",
+    "RankByMaxExprUnionMember7ExprUnionMember5ExprUnionMember0",
+    "RankByMaxExprUnionMember7ExprUnionMember5ExprUnionMember1",
+    "RankByMaxExprUnionMember7ExprUnionMember6",
+    "RankByMaxExprUnionMember7ExprUnionMember6Expr",
+    "RankByMaxExprUnionMember7ExprUnionMember6ExprUnionMember0",
+    "RankByMaxExprUnionMember7ExprUnionMember6ExprUnionMember1",
+    "RankByMaxExprUnionMember7ExprUnionMember7",
+    "RankByMaxExprUnionMember7ExprUnionMember7Expr",
+    "RankByMaxExprUnionMember7ExprUnionMember7ExprUnionMember0",
+    "RankByMaxExprUnionMember7ExprUnionMember7ExprUnionMember1",
+    "RankByMin",
+    "RankByMinExpr",
+    "RankByMinExprUnionMember0",
+    "RankByMinExprUnionMember1",
+    "RankByMinExprUnionMember2",
+    "RankByMinExprUnionMember2Expr",
+    "RankByMinExprUnionMember2ExprUnionMember0",
+    "RankByMinExprUnionMember2ExprUnionMember1",
+    "RankByMinExprUnionMember2ExprUnionMember2",
+    "RankByMinExprUnionMember2ExprUnionMember2Expr",
+    "RankByMinExprUnionMember2ExprUnionMember2ExprUnionMember0",
+    "RankByMinExprUnionMember2ExprUnionMember2ExprUnionMember1",
+    "RankByMinExprUnionMember2ExprUnionMember3",
+    "RankByMinExprUnionMember2ExprUnionMember3Expr",
+    "RankByMinExprUnionMember2ExprUnionMember3ExprUnionMember0",
+    "RankByMinExprUnionMember2ExprUnionMember3ExprUnionMember1",
+    "RankByMinExprUnionMember2ExprUnionMember4",
+    "RankByMinExprUnionMember2ExprUnionMember4Expr",
+    "RankByMinExprUnionMember2ExprUnionMember4ExprUnionMember0",
+    "RankByMinExprUnionMember2ExprUnionMember4ExprUnionMember1",
+    "RankByMinExprUnionMember2ExprUnionMember5",
+    "RankByMinExprUnionMember2ExprUnionMember5Expr",
+    "RankByMinExprUnionMember2ExprUnionMember5ExprUnionMember0",
+    "RankByMinExprUnionMember2ExprUnionMember5ExprUnionMember1",
+    "RankByMinExprUnionMember2ExprUnionMember6",
+    "RankByMinExprUnionMember2ExprUnionMember6Expr",
+    "RankByMinExprUnionMember2ExprUnionMember6ExprUnionMember0",
+    "RankByMinExprUnionMember2ExprUnionMember6ExprUnionMember1",
+    "RankByMinExprUnionMember2ExprUnionMember7",
+    "RankByMinExprUnionMember2ExprUnionMember7Expr",
+    "RankByMinExprUnionMember2ExprUnionMember7ExprUnionMember0",
+    "RankByMinExprUnionMember2ExprUnionMember7ExprUnionMember1",
+    "RankByMinExprUnionMember3",
+    "RankByMinExprUnionMember3Expr",
+    "RankByMinExprUnionMember3ExprUnionMember0",
+    "RankByMinExprUnionMember3ExprUnionMember1",
+    "RankByMinExprUnionMember3ExprUnionMember2",
+    "RankByMinExprUnionMember3ExprUnionMember2Expr",
+    "RankByMinExprUnionMember3ExprUnionMember2ExprUnionMember0",
+    "RankByMinExprUnionMember3ExprUnionMember2ExprUnionMember1",
+    "RankByMinExprUnionMember3ExprUnionMember3",
+    "RankByMinExprUnionMember3ExprUnionMember3Expr",
+    "RankByMinExprUnionMember3ExprUnionMember3ExprUnionMember0",
+    "RankByMinExprUnionMember3ExprUnionMember3ExprUnionMember1",
+    "RankByMinExprUnionMember3ExprUnionMember4",
+    "RankByMinExprUnionMember3ExprUnionMember4Expr",
+    "RankByMinExprUnionMember3ExprUnionMember4ExprUnionMember0",
+    "RankByMinExprUnionMember3ExprUnionMember4ExprUnionMember1",
+    "RankByMinExprUnionMember3ExprUnionMember5",
+    "RankByMinExprUnionMember3ExprUnionMember5Expr",
+    "RankByMinExprUnionMember3ExprUnionMember5ExprUnionMember0",
+    "RankByMinExprUnionMember3ExprUnionMember5ExprUnionMember1",
+    "RankByMinExprUnionMember3ExprUnionMember6",
+    "RankByMinExprUnionMember3ExprUnionMember6Expr",
+    "RankByMinExprUnionMember3ExprUnionMember6ExprUnionMember0",
+    "RankByMinExprUnionMember3ExprUnionMember6ExprUnionMember1",
+    "RankByMinExprUnionMember3ExprUnionMember7",
+    "RankByMinExprUnionMember3ExprUnionMember7Expr",
+    "RankByMinExprUnionMember3ExprUnionMember7ExprUnionMember0",
+    "RankByMinExprUnionMember3ExprUnionMember7ExprUnionMember1",
+    "RankByMinExprUnionMember4",
+    "RankByMinExprUnionMember4Expr",
+    "RankByMinExprUnionMember4ExprUnionMember0",
+    "RankByMinExprUnionMember4ExprUnionMember1",
+    "RankByMinExprUnionMember4ExprUnionMember2",
+    "RankByMinExprUnionMember4ExprUnionMember2Expr",
+    "RankByMinExprUnionMember4ExprUnionMember2ExprUnionMember0",
+    "RankByMinExprUnionMember4ExprUnionMember2ExprUnionMember1",
+    "RankByMinExprUnionMember4ExprUnionMember3",
+    "RankByMinExprUnionMember4ExprUnionMember3Expr",
+    "RankByMinExprUnionMember4ExprUnionMember3ExprUnionMember0",
+    "RankByMinExprUnionMember4ExprUnionMember3ExprUnionMember1",
+    "RankByMinExprUnionMember4ExprUnionMember4",
+    "RankByMinExprUnionMember4ExprUnionMember4Expr",
+    "RankByMinExprUnionMember4ExprUnionMember4ExprUnionMember0",
+    "RankByMinExprUnionMember4ExprUnionMember4ExprUnionMember1",
+    "RankByMinExprUnionMember4ExprUnionMember5",
+    "RankByMinExprUnionMember4ExprUnionMember5Expr",
+    "RankByMinExprUnionMember4ExprUnionMember5ExprUnionMember0",
+    "RankByMinExprUnionMember4ExprUnionMember5ExprUnionMember1",
+    "RankByMinExprUnionMember4ExprUnionMember6",
+    "RankByMinExprUnionMember4ExprUnionMember6Expr",
+    "RankByMinExprUnionMember4ExprUnionMember6ExprUnionMember0",
+    "RankByMinExprUnionMember4ExprUnionMember6ExprUnionMember1",
+    "RankByMinExprUnionMember4ExprUnionMember7",
+    "RankByMinExprUnionMember4ExprUnionMember7Expr",
+    "RankByMinExprUnionMember4ExprUnionMember7ExprUnionMember0",
+    "RankByMinExprUnionMember4ExprUnionMember7ExprUnionMember1",
+    "RankByMinExprUnionMember5",
+    "RankByMinExprUnionMember5Expr",
+    "RankByMinExprUnionMember5ExprUnionMember0",
+    "RankByMinExprUnionMember5ExprUnionMember1",
+    "RankByMinExprUnionMember5ExprUnionMember2",
+    "RankByMinExprUnionMember5ExprUnionMember2Expr",
+    "RankByMinExprUnionMember5ExprUnionMember2ExprUnionMember0",
+    "RankByMinExprUnionMember5ExprUnionMember2ExprUnionMember1",
+    "RankByMinExprUnionMember5ExprUnionMember3",
+    "RankByMinExprUnionMember5ExprUnionMember3Expr",
+    "RankByMinExprUnionMember5ExprUnionMember3ExprUnionMember0",
+    "RankByMinExprUnionMember5ExprUnionMember3ExprUnionMember1",
+    "RankByMinExprUnionMember5ExprUnionMember4",
+    "RankByMinExprUnionMember5ExprUnionMember4Expr",
+    "RankByMinExprUnionMember5ExprUnionMember4ExprUnionMember0",
+    "RankByMinExprUnionMember5ExprUnionMember4ExprUnionMember1",
+    "RankByMinExprUnionMember5ExprUnionMember5",
+    "RankByMinExprUnionMember5ExprUnionMember5Expr",
+    "RankByMinExprUnionMember5ExprUnionMember5ExprUnionMember0",
+    "RankByMinExprUnionMember5ExprUnionMember5ExprUnionMember1",
+    "RankByMinExprUnionMember5ExprUnionMember6",
+    "RankByMinExprUnionMember5ExprUnionMember6Expr",
+    "RankByMinExprUnionMember5ExprUnionMember6ExprUnionMember0",
+    "RankByMinExprUnionMember5ExprUnionMember6ExprUnionMember1",
+    "RankByMinExprUnionMember5ExprUnionMember7",
+    "RankByMinExprUnionMember5ExprUnionMember7Expr",
+    "RankByMinExprUnionMember5ExprUnionMember7ExprUnionMember0",
+    "RankByMinExprUnionMember5ExprUnionMember7ExprUnionMember1",
+    "RankByMinExprUnionMember6",
+    "RankByMinExprUnionMember6Expr",
+    "RankByMinExprUnionMember6ExprUnionMember0",
+    "RankByMinExprUnionMember6ExprUnionMember1",
+    "RankByMinExprUnionMember6ExprUnionMember2",
+    "RankByMinExprUnionMember6ExprUnionMember2Expr",
+    "RankByMinExprUnionMember6ExprUnionMember2ExprUnionMember0",
+    "RankByMinExprUnionMember6ExprUnionMember2ExprUnionMember1",
+    "RankByMinExprUnionMember6ExprUnionMember3",
+    "RankByMinExprUnionMember6ExprUnionMember3Expr",
+    "RankByMinExprUnionMember6ExprUnionMember3ExprUnionMember0",
+    "RankByMinExprUnionMember6ExprUnionMember3ExprUnionMember1",
+    "RankByMinExprUnionMember6ExprUnionMember4",
+    "RankByMinExprUnionMember6ExprUnionMember4Expr",
+    "RankByMinExprUnionMember6ExprUnionMember4ExprUnionMember0",
+    "RankByMinExprUnionMember6ExprUnionMember4ExprUnionMember1",
+    "RankByMinExprUnionMember6ExprUnionMember5",
+    "RankByMinExprUnionMember6ExprUnionMember5Expr",
+    "RankByMinExprUnionMember6ExprUnionMember5ExprUnionMember0",
+    "RankByMinExprUnionMember6ExprUnionMember5ExprUnionMember1",
+    "RankByMinExprUnionMember6ExprUnionMember6",
+    "RankByMinExprUnionMember6ExprUnionMember6Expr",
+    "RankByMinExprUnionMember6ExprUnionMember6ExprUnionMember0",
+    "RankByMinExprUnionMember6ExprUnionMember6ExprUnionMember1",
+    "RankByMinExprUnionMember6ExprUnionMember7",
+    "RankByMinExprUnionMember6ExprUnionMember7Expr",
+    "RankByMinExprUnionMember6ExprUnionMember7ExprUnionMember0",
+    "RankByMinExprUnionMember6ExprUnionMember7ExprUnionMember1",
+    "RankByMinExprUnionMember7",
+    "RankByMinExprUnionMember7Expr",
+    "RankByMinExprUnionMember7ExprUnionMember0",
+    "RankByMinExprUnionMember7ExprUnionMember1",
+    "RankByMinExprUnionMember7ExprUnionMember2",
+    "RankByMinExprUnionMember7ExprUnionMember2Expr",
+    "RankByMinExprUnionMember7ExprUnionMember2ExprUnionMember0",
+    "RankByMinExprUnionMember7ExprUnionMember2ExprUnionMember1",
+    "RankByMinExprUnionMember7ExprUnionMember3",
+    "RankByMinExprUnionMember7ExprUnionMember3Expr",
+    "RankByMinExprUnionMember7ExprUnionMember3ExprUnionMember0",
+    "RankByMinExprUnionMember7ExprUnionMember3ExprUnionMember1",
+    "RankByMinExprUnionMember7ExprUnionMember4",
+    "RankByMinExprUnionMember7ExprUnionMember4Expr",
+    "RankByMinExprUnionMember7ExprUnionMember4ExprUnionMember0",
+    "RankByMinExprUnionMember7ExprUnionMember4ExprUnionMember1",
+    "RankByMinExprUnionMember7ExprUnionMember5",
+    "RankByMinExprUnionMember7ExprUnionMember5Expr",
+    "RankByMinExprUnionMember7ExprUnionMember5ExprUnionMember0",
+    "RankByMinExprUnionMember7ExprUnionMember5ExprUnionMember1",
+    "RankByMinExprUnionMember7ExprUnionMember6",
+    "RankByMinExprUnionMember7ExprUnionMember6Expr",
+    "RankByMinExprUnionMember7ExprUnionMember6ExprUnionMember0",
+    "RankByMinExprUnionMember7ExprUnionMember6ExprUnionMember1",
+    "RankByMinExprUnionMember7ExprUnionMember7",
+    "RankByMinExprUnionMember7ExprUnionMember7Expr",
+    "RankByMinExprUnionMember7ExprUnionMember7ExprUnionMember0",
+    "RankByMinExprUnionMember7ExprUnionMember7ExprUnionMember1",
+    "RankByLog",
+    "RankByLogExpr",
+    "RankByLogExprUnionMember0",
+    "RankByLogExprUnionMember1",
+    "RankByLogExprUnionMember2",
+    "RankByLogExprUnionMember2Expr",
+    "RankByLogExprUnionMember2ExprUnionMember0",
+    "RankByLogExprUnionMember2ExprUnionMember1",
+    "RankByLogExprUnionMember2ExprUnionMember2",
+    "RankByLogExprUnionMember2ExprUnionMember2Expr",
+    "RankByLogExprUnionMember2ExprUnionMember2ExprUnionMember0",
+    "RankByLogExprUnionMember2ExprUnionMember2ExprUnionMember1",
+    "RankByLogExprUnionMember2ExprUnionMember3",
+    "RankByLogExprUnionMember2ExprUnionMember3Expr",
+    "RankByLogExprUnionMember2ExprUnionMember3ExprUnionMember0",
+    "RankByLogExprUnionMember2ExprUnionMember3ExprUnionMember1",
+    "RankByLogExprUnionMember2ExprUnionMember4",
+    "RankByLogExprUnionMember2ExprUnionMember4Expr",
+    "RankByLogExprUnionMember2ExprUnionMember4ExprUnionMember0",
+    "RankByLogExprUnionMember2ExprUnionMember4ExprUnionMember1",
+    "RankByLogExprUnionMember2ExprUnionMember5",
+    "RankByLogExprUnionMember2ExprUnionMember5Expr",
+    "RankByLogExprUnionMember2ExprUnionMember5ExprUnionMember0",
+    "RankByLogExprUnionMember2ExprUnionMember5ExprUnionMember1",
+    "RankByLogExprUnionMember2ExprUnionMember6",
+    "RankByLogExprUnionMember2ExprUnionMember6Expr",
+    "RankByLogExprUnionMember2ExprUnionMember6ExprUnionMember0",
+    "RankByLogExprUnionMember2ExprUnionMember6ExprUnionMember1",
+    "RankByLogExprUnionMember2ExprUnionMember7",
+    "RankByLogExprUnionMember2ExprUnionMember7Expr",
+    "RankByLogExprUnionMember2ExprUnionMember7ExprUnionMember0",
+    "RankByLogExprUnionMember2ExprUnionMember7ExprUnionMember1",
+    "RankByLogExprUnionMember3",
+    "RankByLogExprUnionMember3Expr",
+    "RankByLogExprUnionMember3ExprUnionMember0",
+    "RankByLogExprUnionMember3ExprUnionMember1",
+    "RankByLogExprUnionMember3ExprUnionMember2",
+    "RankByLogExprUnionMember3ExprUnionMember2Expr",
+    "RankByLogExprUnionMember3ExprUnionMember2ExprUnionMember0",
+    "RankByLogExprUnionMember3ExprUnionMember2ExprUnionMember1",
+    "RankByLogExprUnionMember3ExprUnionMember3",
+    "RankByLogExprUnionMember3ExprUnionMember3Expr",
+    "RankByLogExprUnionMember3ExprUnionMember3ExprUnionMember0",
+    "RankByLogExprUnionMember3ExprUnionMember3ExprUnionMember1",
+    "RankByLogExprUnionMember3ExprUnionMember4",
+    "RankByLogExprUnionMember3ExprUnionMember4Expr",
+    "RankByLogExprUnionMember3ExprUnionMember4ExprUnionMember0",
+    "RankByLogExprUnionMember3ExprUnionMember4ExprUnionMember1",
+    "RankByLogExprUnionMember3ExprUnionMember5",
+    "RankByLogExprUnionMember3ExprUnionMember5Expr",
+    "RankByLogExprUnionMember3ExprUnionMember5ExprUnionMember0",
+    "RankByLogExprUnionMember3ExprUnionMember5ExprUnionMember1",
+    "RankByLogExprUnionMember3ExprUnionMember6",
+    "RankByLogExprUnionMember3ExprUnionMember6Expr",
+    "RankByLogExprUnionMember3ExprUnionMember6ExprUnionMember0",
+    "RankByLogExprUnionMember3ExprUnionMember6ExprUnionMember1",
+    "RankByLogExprUnionMember3ExprUnionMember7",
+    "RankByLogExprUnionMember3ExprUnionMember7Expr",
+    "RankByLogExprUnionMember3ExprUnionMember7ExprUnionMember0",
+    "RankByLogExprUnionMember3ExprUnionMember7ExprUnionMember1",
+    "RankByLogExprUnionMember4",
+    "RankByLogExprUnionMember4Expr",
+    "RankByLogExprUnionMember4ExprUnionMember0",
+    "RankByLogExprUnionMember4ExprUnionMember1",
+    "RankByLogExprUnionMember4ExprUnionMember2",
+    "RankByLogExprUnionMember4ExprUnionMember2Expr",
+    "RankByLogExprUnionMember4ExprUnionMember2ExprUnionMember0",
+    "RankByLogExprUnionMember4ExprUnionMember2ExprUnionMember1",
+    "RankByLogExprUnionMember4ExprUnionMember3",
+    "RankByLogExprUnionMember4ExprUnionMember3Expr",
+    "RankByLogExprUnionMember4ExprUnionMember3ExprUnionMember0",
+    "RankByLogExprUnionMember4ExprUnionMember3ExprUnionMember1",
+    "RankByLogExprUnionMember4ExprUnionMember4",
+    "RankByLogExprUnionMember4ExprUnionMember4Expr",
+    "RankByLogExprUnionMember4ExprUnionMember4ExprUnionMember0",
+    "RankByLogExprUnionMember4ExprUnionMember4ExprUnionMember1",
+    "RankByLogExprUnionMember4ExprUnionMember5",
+    "RankByLogExprUnionMember4ExprUnionMember5Expr",
+    "RankByLogExprUnionMember4ExprUnionMember5ExprUnionMember0",
+    "RankByLogExprUnionMember4ExprUnionMember5ExprUnionMember1",
+    "RankByLogExprUnionMember4ExprUnionMember6",
+    "RankByLogExprUnionMember4ExprUnionMember6Expr",
+    "RankByLogExprUnionMember4ExprUnionMember6ExprUnionMember0",
+    "RankByLogExprUnionMember4ExprUnionMember6ExprUnionMember1",
+    "RankByLogExprUnionMember4ExprUnionMember7",
+    "RankByLogExprUnionMember4ExprUnionMember7Expr",
+    "RankByLogExprUnionMember4ExprUnionMember7ExprUnionMember0",
+    "RankByLogExprUnionMember4ExprUnionMember7ExprUnionMember1",
+    "RankByLogExprUnionMember5",
+    "RankByLogExprUnionMember5Expr",
+    "RankByLogExprUnionMember5ExprUnionMember0",
+    "RankByLogExprUnionMember5ExprUnionMember1",
+    "RankByLogExprUnionMember5ExprUnionMember2",
+    "RankByLogExprUnionMember5ExprUnionMember2Expr",
+    "RankByLogExprUnionMember5ExprUnionMember2ExprUnionMember0",
+    "RankByLogExprUnionMember5ExprUnionMember2ExprUnionMember1",
+    "RankByLogExprUnionMember5ExprUnionMember3",
+    "RankByLogExprUnionMember5ExprUnionMember3Expr",
+    "RankByLogExprUnionMember5ExprUnionMember3ExprUnionMember0",
+    "RankByLogExprUnionMember5ExprUnionMember3ExprUnionMember1",
+    "RankByLogExprUnionMember5ExprUnionMember4",
+    "RankByLogExprUnionMember5ExprUnionMember4Expr",
+    "RankByLogExprUnionMember5ExprUnionMember4ExprUnionMember0",
+    "RankByLogExprUnionMember5ExprUnionMember4ExprUnionMember1",
+    "RankByLogExprUnionMember5ExprUnionMember5",
+    "RankByLogExprUnionMember5ExprUnionMember5Expr",
+    "RankByLogExprUnionMember5ExprUnionMember5ExprUnionMember0",
+    "RankByLogExprUnionMember5ExprUnionMember5ExprUnionMember1",
+    "RankByLogExprUnionMember5ExprUnionMember6",
+    "RankByLogExprUnionMember5ExprUnionMember6Expr",
+    "RankByLogExprUnionMember5ExprUnionMember6ExprUnionMember0",
+    "RankByLogExprUnionMember5ExprUnionMember6ExprUnionMember1",
+    "RankByLogExprUnionMember5ExprUnionMember7",
+    "RankByLogExprUnionMember5ExprUnionMember7Expr",
+    "RankByLogExprUnionMember5ExprUnionMember7ExprUnionMember0",
+    "RankByLogExprUnionMember5ExprUnionMember7ExprUnionMember1",
+    "RankByLogExprUnionMember6",
+    "RankByLogExprUnionMember6Expr",
+    "RankByLogExprUnionMember6ExprUnionMember0",
+    "RankByLogExprUnionMember6ExprUnionMember1",
+    "RankByLogExprUnionMember6ExprUnionMember2",
+    "RankByLogExprUnionMember6ExprUnionMember2Expr",
+    "RankByLogExprUnionMember6ExprUnionMember2ExprUnionMember0",
+    "RankByLogExprUnionMember6ExprUnionMember2ExprUnionMember1",
+    "RankByLogExprUnionMember6ExprUnionMember3",
+    "RankByLogExprUnionMember6ExprUnionMember3Expr",
+    "RankByLogExprUnionMember6ExprUnionMember3ExprUnionMember0",
+    "RankByLogExprUnionMember6ExprUnionMember3ExprUnionMember1",
+    "RankByLogExprUnionMember6ExprUnionMember4",
+    "RankByLogExprUnionMember6ExprUnionMember4Expr",
+    "RankByLogExprUnionMember6ExprUnionMember4ExprUnionMember0",
+    "RankByLogExprUnionMember6ExprUnionMember4ExprUnionMember1",
+    "RankByLogExprUnionMember6ExprUnionMember5",
+    "RankByLogExprUnionMember6ExprUnionMember5Expr",
+    "RankByLogExprUnionMember6ExprUnionMember5ExprUnionMember0",
+    "RankByLogExprUnionMember6ExprUnionMember5ExprUnionMember1",
+    "RankByLogExprUnionMember6ExprUnionMember6",
+    "RankByLogExprUnionMember6ExprUnionMember6Expr",
+    "RankByLogExprUnionMember6ExprUnionMember6ExprUnionMember0",
+    "RankByLogExprUnionMember6ExprUnionMember6ExprUnionMember1",
+    "RankByLogExprUnionMember6ExprUnionMember7",
+    "RankByLogExprUnionMember6ExprUnionMember7Expr",
+    "RankByLogExprUnionMember6ExprUnionMember7ExprUnionMember0",
+    "RankByLogExprUnionMember6ExprUnionMember7ExprUnionMember1",
+    "RankByLogExprUnionMember7",
+    "RankByLogExprUnionMember7Expr",
+    "RankByLogExprUnionMember7ExprUnionMember0",
+    "RankByLogExprUnionMember7ExprUnionMember1",
+    "RankByLogExprUnionMember7ExprUnionMember2",
+    "RankByLogExprUnionMember7ExprUnionMember2Expr",
+    "RankByLogExprUnionMember7ExprUnionMember2ExprUnionMember0",
+    "RankByLogExprUnionMember7ExprUnionMember2ExprUnionMember1",
+    "RankByLogExprUnionMember7ExprUnionMember3",
+    "RankByLogExprUnionMember7ExprUnionMember3Expr",
+    "RankByLogExprUnionMember7ExprUnionMember3ExprUnionMember0",
+    "RankByLogExprUnionMember7ExprUnionMember3ExprUnionMember1",
+    "RankByLogExprUnionMember7ExprUnionMember4",
+    "RankByLogExprUnionMember7ExprUnionMember4Expr",
+    "RankByLogExprUnionMember7ExprUnionMember4ExprUnionMember0",
+    "RankByLogExprUnionMember7ExprUnionMember4ExprUnionMember1",
+    "RankByLogExprUnionMember7ExprUnionMember5",
+    "RankByLogExprUnionMember7ExprUnionMember5Expr",
+    "RankByLogExprUnionMember7ExprUnionMember5ExprUnionMember0",
+    "RankByLogExprUnionMember7ExprUnionMember5ExprUnionMember1",
+    "RankByLogExprUnionMember7ExprUnionMember6",
+    "RankByLogExprUnionMember7ExprUnionMember6Expr",
+    "RankByLogExprUnionMember7ExprUnionMember6ExprUnionMember0",
+    "RankByLogExprUnionMember7ExprUnionMember6ExprUnionMember1",
+    "RankByLogExprUnionMember7ExprUnionMember7",
+    "RankByLogExprUnionMember7ExprUnionMember7Expr",
+    "RankByLogExprUnionMember7ExprUnionMember7ExprUnionMember0",
+    "RankByLogExprUnionMember7ExprUnionMember7ExprUnionMember1",
 ]
 
 
@@ -2646,7 +2311,7 @@ class SearchRepoSearchParams(TypedDict, total=False):
     """
 
 
-class FiltersUnionMember0(TypedDict, total=False):
+class FiltersEq(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Eq"]]
@@ -2654,7 +2319,7 @@ class FiltersUnionMember0(TypedDict, total=False):
     value: Required[str]
 
 
-class FiltersUnionMember1(TypedDict, total=False):
+class FiltersNotEq(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["NotEq"]]
@@ -2662,7 +2327,7 @@ class FiltersUnionMember1(TypedDict, total=False):
     value: Required[str]
 
 
-class FiltersUnionMember2(TypedDict, total=False):
+class FiltersIn(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["In"]]
@@ -2670,7 +2335,7 @@ class FiltersUnionMember2(TypedDict, total=False):
     value: Required[SequenceNotStr[str]]
 
 
-class FiltersUnionMember3(TypedDict, total=False):
+class FiltersNotIn(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["NotIn"]]
@@ -2678,7 +2343,7 @@ class FiltersUnionMember3(TypedDict, total=False):
     value: Required[SequenceNotStr[str]]
 
 
-class FiltersUnionMember4(TypedDict, total=False):
+class FiltersLt(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Lt"]]
@@ -2686,7 +2351,7 @@ class FiltersUnionMember4(TypedDict, total=False):
     value: Required[str]
 
 
-class FiltersUnionMember5(TypedDict, total=False):
+class FiltersLte(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Lte"]]
@@ -2694,7 +2359,7 @@ class FiltersUnionMember5(TypedDict, total=False):
     value: Required[str]
 
 
-class FiltersUnionMember6(TypedDict, total=False):
+class FiltersGt(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Gt"]]
@@ -2702,7 +2367,7 @@ class FiltersUnionMember6(TypedDict, total=False):
     value: Required[str]
 
 
-class FiltersUnionMember7(TypedDict, total=False):
+class FiltersGte(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Gte"]]
@@ -2710,7 +2375,7 @@ class FiltersUnionMember7(TypedDict, total=False):
     value: Required[str]
 
 
-class FiltersUnionMember8(TypedDict, total=False):
+class FiltersGlob(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Glob"]]
@@ -2718,7 +2383,7 @@ class FiltersUnionMember8(TypedDict, total=False):
     value: Required[str]
 
 
-class FiltersUnionMember9(TypedDict, total=False):
+class FiltersNotGlob(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["NotGlob"]]
@@ -2726,7 +2391,7 @@ class FiltersUnionMember9(TypedDict, total=False):
     value: Required[str]
 
 
-class FiltersUnionMember10(TypedDict, total=False):
+class FiltersIGlob(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["IGlob"]]
@@ -2734,7 +2399,7 @@ class FiltersUnionMember10(TypedDict, total=False):
     value: Required[str]
 
 
-class FiltersUnionMember11(TypedDict, total=False):
+class FiltersNotIGlob(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["NotIGlob"]]
@@ -2742,7 +2407,7 @@ class FiltersUnionMember11(TypedDict, total=False):
     value: Required[str]
 
 
-class FiltersUnionMember12(TypedDict, total=False):
+class FiltersRegex(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Regex"]]
@@ -2750,215 +2415,7 @@ class FiltersUnionMember12(TypedDict, total=False):
     value: Required[str]
 
 
-class FiltersUnionMember13(TypedDict, total=False):
-    field: Required[Literal["ownerLogin"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember14(TypedDict, total=False):
-    field: Required[Literal["ownerLogin"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember15(TypedDict, total=False):
-    field: Required[Literal["ownerLogin"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class FiltersUnionMember16(TypedDict, total=False):
-    field: Required[Literal["ownerLogin"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class FiltersUnionMember17(TypedDict, total=False):
-    field: Required[Literal["ownerLogin"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember18(TypedDict, total=False):
-    field: Required[Literal["ownerLogin"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember19(TypedDict, total=False):
-    field: Required[Literal["ownerLogin"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember20(TypedDict, total=False):
-    field: Required[Literal["ownerLogin"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember21(TypedDict, total=False):
-    field: Required[Literal["ownerLogin"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember22(TypedDict, total=False):
-    field: Required[Literal["ownerLogin"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember23(TypedDict, total=False):
-    field: Required[Literal["ownerLogin"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember24(TypedDict, total=False):
-    field: Required[Literal["ownerLogin"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember25(TypedDict, total=False):
-    field: Required[Literal["ownerLogin"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember26(TypedDict, total=False):
-    field: Required[Literal["ownerLocation"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember27(TypedDict, total=False):
-    field: Required[Literal["ownerLocation"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember28(TypedDict, total=False):
-    field: Required[Literal["ownerLocation"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class FiltersUnionMember29(TypedDict, total=False):
-    field: Required[Literal["ownerLocation"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class FiltersUnionMember30(TypedDict, total=False):
-    field: Required[Literal["ownerLocation"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember31(TypedDict, total=False):
-    field: Required[Literal["ownerLocation"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember32(TypedDict, total=False):
-    field: Required[Literal["ownerLocation"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember33(TypedDict, total=False):
-    field: Required[Literal["ownerLocation"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember34(TypedDict, total=False):
-    field: Required[Literal["ownerLocation"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember35(TypedDict, total=False):
-    field: Required[Literal["ownerLocation"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember36(TypedDict, total=False):
-    field: Required[Literal["ownerLocation"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember37(TypedDict, total=False):
-    field: Required[Literal["ownerLocation"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember38(TypedDict, total=False):
-    field: Required[Literal["ownerLocation"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember39(TypedDict, total=False):
+class FiltersContainsAllTokens(TypedDict, total=False):
     field: Required[Literal["ownerLocation"]]
 
     op: Required[Literal["ContainsAllTokens"]]
@@ -2966,471 +2423,7 @@ class FiltersUnionMember39(TypedDict, total=False):
     value: Required[str]
 
 
-class FiltersUnionMember40(TypedDict, total=False):
-    field: Required[Literal["name"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember41(TypedDict, total=False):
-    field: Required[Literal["name"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember42(TypedDict, total=False):
-    field: Required[Literal["name"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class FiltersUnionMember43(TypedDict, total=False):
-    field: Required[Literal["name"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class FiltersUnionMember44(TypedDict, total=False):
-    field: Required[Literal["name"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember45(TypedDict, total=False):
-    field: Required[Literal["name"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember46(TypedDict, total=False):
-    field: Required[Literal["name"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember47(TypedDict, total=False):
-    field: Required[Literal["name"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember48(TypedDict, total=False):
-    field: Required[Literal["name"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember49(TypedDict, total=False):
-    field: Required[Literal["name"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember50(TypedDict, total=False):
-    field: Required[Literal["name"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember51(TypedDict, total=False):
-    field: Required[Literal["name"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember52(TypedDict, total=False):
-    field: Required[Literal["name"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember53(TypedDict, total=False):
-    field: Required[Literal["stargazerCount"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[float]
-
-
-class FiltersUnionMember54(TypedDict, total=False):
-    field: Required[Literal["stargazerCount"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[float]
-
-
-class FiltersUnionMember55(TypedDict, total=False):
-    field: Required[Literal["stargazerCount"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[Iterable[float]]
-
-
-class FiltersUnionMember56(TypedDict, total=False):
-    field: Required[Literal["stargazerCount"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[Iterable[float]]
-
-
-class FiltersUnionMember57(TypedDict, total=False):
-    field: Required[Literal["stargazerCount"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[float]
-
-
-class FiltersUnionMember58(TypedDict, total=False):
-    field: Required[Literal["stargazerCount"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[float]
-
-
-class FiltersUnionMember59(TypedDict, total=False):
-    field: Required[Literal["stargazerCount"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[float]
-
-
-class FiltersUnionMember60(TypedDict, total=False):
-    field: Required[Literal["stargazerCount"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[float]
-
-
-class FiltersUnionMember61(TypedDict, total=False):
-    field: Required[Literal["language"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember62(TypedDict, total=False):
-    field: Required[Literal["language"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember63(TypedDict, total=False):
-    field: Required[Literal["language"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class FiltersUnionMember64(TypedDict, total=False):
-    field: Required[Literal["language"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class FiltersUnionMember65(TypedDict, total=False):
-    field: Required[Literal["language"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember66(TypedDict, total=False):
-    field: Required[Literal["language"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember67(TypedDict, total=False):
-    field: Required[Literal["language"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember68(TypedDict, total=False):
-    field: Required[Literal["language"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember69(TypedDict, total=False):
-    field: Required[Literal["language"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember70(TypedDict, total=False):
-    field: Required[Literal["language"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember71(TypedDict, total=False):
-    field: Required[Literal["language"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember72(TypedDict, total=False):
-    field: Required[Literal["language"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember73(TypedDict, total=False):
-    field: Required[Literal["language"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember74(TypedDict, total=False):
-    field: Required[Literal["totalIssuesCount"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[float]
-
-
-class FiltersUnionMember75(TypedDict, total=False):
-    field: Required[Literal["totalIssuesCount"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[float]
-
-
-class FiltersUnionMember76(TypedDict, total=False):
-    field: Required[Literal["totalIssuesCount"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[Iterable[float]]
-
-
-class FiltersUnionMember77(TypedDict, total=False):
-    field: Required[Literal["totalIssuesCount"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[Iterable[float]]
-
-
-class FiltersUnionMember78(TypedDict, total=False):
-    field: Required[Literal["totalIssuesCount"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[float]
-
-
-class FiltersUnionMember79(TypedDict, total=False):
-    field: Required[Literal["totalIssuesCount"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[float]
-
-
-class FiltersUnionMember80(TypedDict, total=False):
-    field: Required[Literal["totalIssuesCount"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[float]
-
-
-class FiltersUnionMember81(TypedDict, total=False):
-    field: Required[Literal["totalIssuesCount"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[float]
-
-
-class FiltersUnionMember82(TypedDict, total=False):
-    field: Required[Literal["totalIssuesOpen"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[float]
-
-
-class FiltersUnionMember83(TypedDict, total=False):
-    field: Required[Literal["totalIssuesOpen"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[float]
-
-
-class FiltersUnionMember84(TypedDict, total=False):
-    field: Required[Literal["totalIssuesOpen"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[Iterable[float]]
-
-
-class FiltersUnionMember85(TypedDict, total=False):
-    field: Required[Literal["totalIssuesOpen"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[Iterable[float]]
-
-
-class FiltersUnionMember86(TypedDict, total=False):
-    field: Required[Literal["totalIssuesOpen"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[float]
-
-
-class FiltersUnionMember87(TypedDict, total=False):
-    field: Required[Literal["totalIssuesOpen"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[float]
-
-
-class FiltersUnionMember88(TypedDict, total=False):
-    field: Required[Literal["totalIssuesOpen"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[float]
-
-
-class FiltersUnionMember89(TypedDict, total=False):
-    field: Required[Literal["totalIssuesOpen"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[float]
-
-
-class FiltersUnionMember90(TypedDict, total=False):
-    field: Required[Literal["totalIssuesClosed"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[float]
-
-
-class FiltersUnionMember91(TypedDict, total=False):
-    field: Required[Literal["totalIssuesClosed"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[float]
-
-
-class FiltersUnionMember92(TypedDict, total=False):
-    field: Required[Literal["totalIssuesClosed"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[Iterable[float]]
-
-
-class FiltersUnionMember93(TypedDict, total=False):
-    field: Required[Literal["totalIssuesClosed"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[Iterable[float]]
-
-
-class FiltersUnionMember94(TypedDict, total=False):
-    field: Required[Literal["totalIssuesClosed"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[float]
-
-
-class FiltersUnionMember95(TypedDict, total=False):
-    field: Required[Literal["totalIssuesClosed"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[float]
-
-
-class FiltersUnionMember96(TypedDict, total=False):
-    field: Required[Literal["totalIssuesClosed"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[float]
-
-
-class FiltersUnionMember97(TypedDict, total=False):
-    field: Required[Literal["totalIssuesClosed"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[float]
-
-
-class FiltersUnionMember98(TypedDict, total=False):
+class FiltersContains(TypedDict, total=False):
     field: Required[Literal["lastContributorLocations"]]
 
     op: Required[Literal["Contains"]]
@@ -3438,7 +2431,7 @@ class FiltersUnionMember98(TypedDict, total=False):
     value: Required[str]
 
 
-class FiltersUnionMember99(TypedDict, total=False):
+class FiltersNotContains(TypedDict, total=False):
     field: Required[Literal["lastContributorLocations"]]
 
     op: Required[Literal["NotContains"]]
@@ -3446,7 +2439,7 @@ class FiltersUnionMember99(TypedDict, total=False):
     value: Required[str]
 
 
-class FiltersUnionMember100(TypedDict, total=False):
+class FiltersContainsAny(TypedDict, total=False):
     field: Required[Literal["lastContributorLocations"]]
 
     op: Required[Literal["ContainsAny"]]
@@ -3454,7 +2447,7 @@ class FiltersUnionMember100(TypedDict, total=False):
     value: Required[SequenceNotStr[str]]
 
 
-class FiltersUnionMember101(TypedDict, total=False):
+class FiltersNotContainsAny(TypedDict, total=False):
     field: Required[Literal["lastContributorLocations"]]
 
     op: Required[Literal["NotContainsAny"]]
@@ -3462,7 +2455,7 @@ class FiltersUnionMember101(TypedDict, total=False):
     value: Required[SequenceNotStr[str]]
 
 
-class FiltersUnionMember102(TypedDict, total=False):
+class FiltersAnyLt(TypedDict, total=False):
     field: Required[Literal["lastContributorLocations"]]
 
     op: Required[Literal["AnyLt"]]
@@ -3470,7 +2463,7 @@ class FiltersUnionMember102(TypedDict, total=False):
     value: Required[str]
 
 
-class FiltersUnionMember103(TypedDict, total=False):
+class FiltersAnyLte(TypedDict, total=False):
     field: Required[Literal["lastContributorLocations"]]
 
     op: Required[Literal["AnyLte"]]
@@ -3478,7 +2471,7 @@ class FiltersUnionMember103(TypedDict, total=False):
     value: Required[str]
 
 
-class FiltersUnionMember104(TypedDict, total=False):
+class FiltersAnyGt(TypedDict, total=False):
     field: Required[Literal["lastContributorLocations"]]
 
     op: Required[Literal["AnyGt"]]
@@ -3486,18 +2479,10 @@ class FiltersUnionMember104(TypedDict, total=False):
     value: Required[str]
 
 
-class FiltersUnionMember105(TypedDict, total=False):
+class FiltersAnyGte(TypedDict, total=False):
     field: Required[Literal["lastContributorLocations"]]
 
     op: Required[Literal["AnyGte"]]
-
-    value: Required[str]
-
-
-class FiltersUnionMember106(TypedDict, total=False):
-    field: Required[Literal["lastContributorLocations"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
 
     value: Required[str]
 
@@ -6423,119 +5408,119 @@ class FiltersUnionMember108(TypedDict, total=False):
 
 
 Filters: TypeAlias = Union[
-    FiltersUnionMember0,
-    FiltersUnionMember1,
-    FiltersUnionMember2,
-    FiltersUnionMember3,
-    FiltersUnionMember4,
-    FiltersUnionMember5,
-    FiltersUnionMember6,
-    FiltersUnionMember7,
-    FiltersUnionMember8,
-    FiltersUnionMember9,
-    FiltersUnionMember10,
-    FiltersUnionMember11,
-    FiltersUnionMember12,
-    FiltersUnionMember13,
-    FiltersUnionMember14,
-    FiltersUnionMember15,
-    FiltersUnionMember16,
-    FiltersUnionMember17,
-    FiltersUnionMember18,
-    FiltersUnionMember19,
-    FiltersUnionMember20,
-    FiltersUnionMember21,
-    FiltersUnionMember22,
-    FiltersUnionMember23,
-    FiltersUnionMember24,
-    FiltersUnionMember25,
-    FiltersUnionMember26,
-    FiltersUnionMember27,
-    FiltersUnionMember28,
-    FiltersUnionMember29,
-    FiltersUnionMember30,
-    FiltersUnionMember31,
-    FiltersUnionMember32,
-    FiltersUnionMember33,
-    FiltersUnionMember34,
-    FiltersUnionMember35,
-    FiltersUnionMember36,
-    FiltersUnionMember37,
-    FiltersUnionMember38,
-    FiltersUnionMember39,
-    FiltersUnionMember40,
-    FiltersUnionMember41,
-    FiltersUnionMember42,
-    FiltersUnionMember43,
-    FiltersUnionMember44,
-    FiltersUnionMember45,
-    FiltersUnionMember46,
-    FiltersUnionMember47,
-    FiltersUnionMember48,
-    FiltersUnionMember49,
-    FiltersUnionMember50,
-    FiltersUnionMember51,
-    FiltersUnionMember52,
-    FiltersUnionMember53,
-    FiltersUnionMember54,
-    FiltersUnionMember55,
-    FiltersUnionMember56,
-    FiltersUnionMember57,
-    FiltersUnionMember58,
-    FiltersUnionMember59,
-    FiltersUnionMember60,
-    FiltersUnionMember61,
-    FiltersUnionMember62,
-    FiltersUnionMember63,
-    FiltersUnionMember64,
-    FiltersUnionMember65,
-    FiltersUnionMember66,
-    FiltersUnionMember67,
-    FiltersUnionMember68,
-    FiltersUnionMember69,
-    FiltersUnionMember70,
-    FiltersUnionMember71,
-    FiltersUnionMember72,
-    FiltersUnionMember73,
-    FiltersUnionMember74,
-    FiltersUnionMember75,
-    FiltersUnionMember76,
-    FiltersUnionMember77,
-    FiltersUnionMember78,
-    FiltersUnionMember79,
-    FiltersUnionMember80,
-    FiltersUnionMember81,
-    FiltersUnionMember82,
-    FiltersUnionMember83,
-    FiltersUnionMember84,
-    FiltersUnionMember85,
-    FiltersUnionMember86,
-    FiltersUnionMember87,
-    FiltersUnionMember88,
-    FiltersUnionMember89,
-    FiltersUnionMember90,
-    FiltersUnionMember91,
-    FiltersUnionMember92,
-    FiltersUnionMember93,
-    FiltersUnionMember94,
-    FiltersUnionMember95,
-    FiltersUnionMember96,
-    FiltersUnionMember97,
-    FiltersUnionMember98,
-    FiltersUnionMember99,
-    FiltersUnionMember100,
-    FiltersUnionMember101,
-    FiltersUnionMember102,
-    FiltersUnionMember103,
-    FiltersUnionMember104,
-    FiltersUnionMember105,
-    FiltersUnionMember106,
+    FiltersEq,
+    FiltersNotEq,
+    FiltersIn,
+    FiltersNotIn,
+    FiltersLt,
+    FiltersLte,
+    FiltersGt,
+    FiltersGte,
+    FiltersGlob,
+    FiltersNotGlob,
+    FiltersIGlob,
+    FiltersNotIGlob,
+    FiltersRegex,
+    FiltersEq,
+    FiltersNotEq,
+    FiltersIn,
+    FiltersNotIn,
+    FiltersLt,
+    FiltersLte,
+    FiltersGt,
+    FiltersGte,
+    FiltersGlob,
+    FiltersNotGlob,
+    FiltersIGlob,
+    FiltersNotIGlob,
+    FiltersRegex,
+    FiltersEq,
+    FiltersNotEq,
+    FiltersIn,
+    FiltersNotIn,
+    FiltersLt,
+    FiltersLte,
+    FiltersGt,
+    FiltersGte,
+    FiltersGlob,
+    FiltersNotGlob,
+    FiltersIGlob,
+    FiltersNotIGlob,
+    FiltersRegex,
+    FiltersContainsAllTokens,
+    FiltersEq,
+    FiltersNotEq,
+    FiltersIn,
+    FiltersNotIn,
+    FiltersLt,
+    FiltersLte,
+    FiltersGt,
+    FiltersGte,
+    FiltersGlob,
+    FiltersNotGlob,
+    FiltersIGlob,
+    FiltersNotIGlob,
+    FiltersRegex,
+    FiltersEq,
+    FiltersNotEq,
+    FiltersIn,
+    FiltersNotIn,
+    FiltersLt,
+    FiltersLte,
+    FiltersGt,
+    FiltersGte,
+    FiltersEq,
+    FiltersNotEq,
+    FiltersIn,
+    FiltersNotIn,
+    FiltersLt,
+    FiltersLte,
+    FiltersGt,
+    FiltersGte,
+    FiltersGlob,
+    FiltersNotGlob,
+    FiltersIGlob,
+    FiltersNotIGlob,
+    FiltersRegex,
+    FiltersEq,
+    FiltersNotEq,
+    FiltersIn,
+    FiltersNotIn,
+    FiltersLt,
+    FiltersLte,
+    FiltersGt,
+    FiltersGte,
+    FiltersEq,
+    FiltersNotEq,
+    FiltersIn,
+    FiltersNotIn,
+    FiltersLt,
+    FiltersLte,
+    FiltersGt,
+    FiltersGte,
+    FiltersEq,
+    FiltersNotEq,
+    FiltersIn,
+    FiltersNotIn,
+    FiltersLt,
+    FiltersLte,
+    FiltersGt,
+    FiltersGte,
+    FiltersContains,
+    FiltersNotContains,
+    FiltersContainsAny,
+    FiltersNotContainsAny,
+    FiltersAnyLt,
+    FiltersAnyLte,
+    FiltersAnyGt,
+    FiltersAnyGte,
+    FiltersContainsAllTokens,
     FiltersUnionMember107,
     FiltersUnionMember108,
 ]
 
 
-class IncludeAttributesContributorsFiltersUnionMember0(TypedDict, total=False):
+class IncludeAttributesContributorsFiltersEq(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Eq"]]
@@ -6543,7 +5528,7 @@ class IncludeAttributesContributorsFiltersUnionMember0(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesContributorsFiltersUnionMember1(TypedDict, total=False):
+class IncludeAttributesContributorsFiltersNotEq(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["NotEq"]]
@@ -6551,7 +5536,7 @@ class IncludeAttributesContributorsFiltersUnionMember1(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesContributorsFiltersUnionMember2(TypedDict, total=False):
+class IncludeAttributesContributorsFiltersIn(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["In"]]
@@ -6559,7 +5544,7 @@ class IncludeAttributesContributorsFiltersUnionMember2(TypedDict, total=False):
     value: Required[SequenceNotStr[str]]
 
 
-class IncludeAttributesContributorsFiltersUnionMember3(TypedDict, total=False):
+class IncludeAttributesContributorsFiltersNotIn(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["NotIn"]]
@@ -6567,7 +5552,7 @@ class IncludeAttributesContributorsFiltersUnionMember3(TypedDict, total=False):
     value: Required[SequenceNotStr[str]]
 
 
-class IncludeAttributesContributorsFiltersUnionMember4(TypedDict, total=False):
+class IncludeAttributesContributorsFiltersLt(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Lt"]]
@@ -6575,7 +5560,7 @@ class IncludeAttributesContributorsFiltersUnionMember4(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesContributorsFiltersUnionMember5(TypedDict, total=False):
+class IncludeAttributesContributorsFiltersLte(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Lte"]]
@@ -6583,7 +5568,7 @@ class IncludeAttributesContributorsFiltersUnionMember5(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesContributorsFiltersUnionMember6(TypedDict, total=False):
+class IncludeAttributesContributorsFiltersGt(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Gt"]]
@@ -6591,7 +5576,7 @@ class IncludeAttributesContributorsFiltersUnionMember6(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesContributorsFiltersUnionMember7(TypedDict, total=False):
+class IncludeAttributesContributorsFiltersGte(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Gte"]]
@@ -6599,7 +5584,7 @@ class IncludeAttributesContributorsFiltersUnionMember7(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesContributorsFiltersUnionMember8(TypedDict, total=False):
+class IncludeAttributesContributorsFiltersGlob(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Glob"]]
@@ -6607,7 +5592,7 @@ class IncludeAttributesContributorsFiltersUnionMember8(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesContributorsFiltersUnionMember9(TypedDict, total=False):
+class IncludeAttributesContributorsFiltersNotGlob(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["NotGlob"]]
@@ -6615,7 +5600,7 @@ class IncludeAttributesContributorsFiltersUnionMember9(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesContributorsFiltersUnionMember10(TypedDict, total=False):
+class IncludeAttributesContributorsFiltersIGlob(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["IGlob"]]
@@ -6623,7 +5608,7 @@ class IncludeAttributesContributorsFiltersUnionMember10(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesContributorsFiltersUnionMember11(TypedDict, total=False):
+class IncludeAttributesContributorsFiltersNotIGlob(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["NotIGlob"]]
@@ -6631,7 +5616,7 @@ class IncludeAttributesContributorsFiltersUnionMember11(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesContributorsFiltersUnionMember12(TypedDict, total=False):
+class IncludeAttributesContributorsFiltersRegex(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Regex"]]
@@ -6639,1008 +5624,8 @@ class IncludeAttributesContributorsFiltersUnionMember12(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesContributorsFiltersUnionMember13(TypedDict, total=False):
+class IncludeAttributesContributorsFiltersContainsAllTokens(TypedDict, total=False):
     field: Required[Literal["login"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember14(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember15(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesContributorsFiltersUnionMember16(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesContributorsFiltersUnionMember17(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember18(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember19(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember20(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember21(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember22(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember23(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember24(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember25(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember26(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember27(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember28(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember29(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesContributorsFiltersUnionMember30(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesContributorsFiltersUnionMember31(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember32(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember33(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember34(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember35(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember36(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember37(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember38(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember39(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember40(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember41(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember42(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember43(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesContributorsFiltersUnionMember44(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesContributorsFiltersUnionMember45(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember46(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember47(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember48(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember49(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember50(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember51(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember52(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember53(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember54(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember55(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember56(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember57(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesContributorsFiltersUnionMember58(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesContributorsFiltersUnionMember59(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember60(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember61(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember62(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember63(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember64(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember65(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember66(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember67(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember68(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember69(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember70(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember71(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesContributorsFiltersUnionMember72(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesContributorsFiltersUnionMember73(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember74(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember75(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember76(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember77(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember78(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember79(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember80(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember81(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember82(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember83(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember84(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember85(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesContributorsFiltersUnionMember86(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesContributorsFiltersUnionMember87(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember88(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember89(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember90(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember91(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember92(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember93(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember94(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember95(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember96(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember97(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember98(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember99(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesContributorsFiltersUnionMember100(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesContributorsFiltersUnionMember101(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember102(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember103(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember104(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember105(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember106(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember107(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember108(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember109(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember110(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember111(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember112(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember113(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesContributorsFiltersUnionMember114(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesContributorsFiltersUnionMember115(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember116(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember117(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember118(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember119(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember120(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember121(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember122(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember123(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember124(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember125(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember126(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember127(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesContributorsFiltersUnionMember128(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesContributorsFiltersUnionMember129(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember130(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember131(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember132(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember133(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember134(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember135(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember136(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember137(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesContributorsFiltersUnionMember138(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
 
     op: Required[Literal["ContainsAllTokens"]]
 
@@ -11510,145 +9495,145 @@ class IncludeAttributesContributorsFiltersUnionMember140(TypedDict, total=False)
 
 
 IncludeAttributesContributorsFilters: TypeAlias = Union[
-    IncludeAttributesContributorsFiltersUnionMember0,
-    IncludeAttributesContributorsFiltersUnionMember1,
-    IncludeAttributesContributorsFiltersUnionMember2,
-    IncludeAttributesContributorsFiltersUnionMember3,
-    IncludeAttributesContributorsFiltersUnionMember4,
-    IncludeAttributesContributorsFiltersUnionMember5,
-    IncludeAttributesContributorsFiltersUnionMember6,
-    IncludeAttributesContributorsFiltersUnionMember7,
-    IncludeAttributesContributorsFiltersUnionMember8,
-    IncludeAttributesContributorsFiltersUnionMember9,
-    IncludeAttributesContributorsFiltersUnionMember10,
-    IncludeAttributesContributorsFiltersUnionMember11,
-    IncludeAttributesContributorsFiltersUnionMember12,
-    IncludeAttributesContributorsFiltersUnionMember13,
-    IncludeAttributesContributorsFiltersUnionMember14,
-    IncludeAttributesContributorsFiltersUnionMember15,
-    IncludeAttributesContributorsFiltersUnionMember16,
-    IncludeAttributesContributorsFiltersUnionMember17,
-    IncludeAttributesContributorsFiltersUnionMember18,
-    IncludeAttributesContributorsFiltersUnionMember19,
-    IncludeAttributesContributorsFiltersUnionMember20,
-    IncludeAttributesContributorsFiltersUnionMember21,
-    IncludeAttributesContributorsFiltersUnionMember22,
-    IncludeAttributesContributorsFiltersUnionMember23,
-    IncludeAttributesContributorsFiltersUnionMember24,
-    IncludeAttributesContributorsFiltersUnionMember25,
-    IncludeAttributesContributorsFiltersUnionMember26,
-    IncludeAttributesContributorsFiltersUnionMember27,
-    IncludeAttributesContributorsFiltersUnionMember28,
-    IncludeAttributesContributorsFiltersUnionMember29,
-    IncludeAttributesContributorsFiltersUnionMember30,
-    IncludeAttributesContributorsFiltersUnionMember31,
-    IncludeAttributesContributorsFiltersUnionMember32,
-    IncludeAttributesContributorsFiltersUnionMember33,
-    IncludeAttributesContributorsFiltersUnionMember34,
-    IncludeAttributesContributorsFiltersUnionMember35,
-    IncludeAttributesContributorsFiltersUnionMember36,
-    IncludeAttributesContributorsFiltersUnionMember37,
-    IncludeAttributesContributorsFiltersUnionMember38,
-    IncludeAttributesContributorsFiltersUnionMember39,
-    IncludeAttributesContributorsFiltersUnionMember40,
-    IncludeAttributesContributorsFiltersUnionMember41,
-    IncludeAttributesContributorsFiltersUnionMember42,
-    IncludeAttributesContributorsFiltersUnionMember43,
-    IncludeAttributesContributorsFiltersUnionMember44,
-    IncludeAttributesContributorsFiltersUnionMember45,
-    IncludeAttributesContributorsFiltersUnionMember46,
-    IncludeAttributesContributorsFiltersUnionMember47,
-    IncludeAttributesContributorsFiltersUnionMember48,
-    IncludeAttributesContributorsFiltersUnionMember49,
-    IncludeAttributesContributorsFiltersUnionMember50,
-    IncludeAttributesContributorsFiltersUnionMember51,
-    IncludeAttributesContributorsFiltersUnionMember52,
-    IncludeAttributesContributorsFiltersUnionMember53,
-    IncludeAttributesContributorsFiltersUnionMember54,
-    IncludeAttributesContributorsFiltersUnionMember55,
-    IncludeAttributesContributorsFiltersUnionMember56,
-    IncludeAttributesContributorsFiltersUnionMember57,
-    IncludeAttributesContributorsFiltersUnionMember58,
-    IncludeAttributesContributorsFiltersUnionMember59,
-    IncludeAttributesContributorsFiltersUnionMember60,
-    IncludeAttributesContributorsFiltersUnionMember61,
-    IncludeAttributesContributorsFiltersUnionMember62,
-    IncludeAttributesContributorsFiltersUnionMember63,
-    IncludeAttributesContributorsFiltersUnionMember64,
-    IncludeAttributesContributorsFiltersUnionMember65,
-    IncludeAttributesContributorsFiltersUnionMember66,
-    IncludeAttributesContributorsFiltersUnionMember67,
-    IncludeAttributesContributorsFiltersUnionMember68,
-    IncludeAttributesContributorsFiltersUnionMember69,
-    IncludeAttributesContributorsFiltersUnionMember70,
-    IncludeAttributesContributorsFiltersUnionMember71,
-    IncludeAttributesContributorsFiltersUnionMember72,
-    IncludeAttributesContributorsFiltersUnionMember73,
-    IncludeAttributesContributorsFiltersUnionMember74,
-    IncludeAttributesContributorsFiltersUnionMember75,
-    IncludeAttributesContributorsFiltersUnionMember76,
-    IncludeAttributesContributorsFiltersUnionMember77,
-    IncludeAttributesContributorsFiltersUnionMember78,
-    IncludeAttributesContributorsFiltersUnionMember79,
-    IncludeAttributesContributorsFiltersUnionMember80,
-    IncludeAttributesContributorsFiltersUnionMember81,
-    IncludeAttributesContributorsFiltersUnionMember82,
-    IncludeAttributesContributorsFiltersUnionMember83,
-    IncludeAttributesContributorsFiltersUnionMember84,
-    IncludeAttributesContributorsFiltersUnionMember85,
-    IncludeAttributesContributorsFiltersUnionMember86,
-    IncludeAttributesContributorsFiltersUnionMember87,
-    IncludeAttributesContributorsFiltersUnionMember88,
-    IncludeAttributesContributorsFiltersUnionMember89,
-    IncludeAttributesContributorsFiltersUnionMember90,
-    IncludeAttributesContributorsFiltersUnionMember91,
-    IncludeAttributesContributorsFiltersUnionMember92,
-    IncludeAttributesContributorsFiltersUnionMember93,
-    IncludeAttributesContributorsFiltersUnionMember94,
-    IncludeAttributesContributorsFiltersUnionMember95,
-    IncludeAttributesContributorsFiltersUnionMember96,
-    IncludeAttributesContributorsFiltersUnionMember97,
-    IncludeAttributesContributorsFiltersUnionMember98,
-    IncludeAttributesContributorsFiltersUnionMember99,
-    IncludeAttributesContributorsFiltersUnionMember100,
-    IncludeAttributesContributorsFiltersUnionMember101,
-    IncludeAttributesContributorsFiltersUnionMember102,
-    IncludeAttributesContributorsFiltersUnionMember103,
-    IncludeAttributesContributorsFiltersUnionMember104,
-    IncludeAttributesContributorsFiltersUnionMember105,
-    IncludeAttributesContributorsFiltersUnionMember106,
-    IncludeAttributesContributorsFiltersUnionMember107,
-    IncludeAttributesContributorsFiltersUnionMember108,
-    IncludeAttributesContributorsFiltersUnionMember109,
-    IncludeAttributesContributorsFiltersUnionMember110,
-    IncludeAttributesContributorsFiltersUnionMember111,
-    IncludeAttributesContributorsFiltersUnionMember112,
-    IncludeAttributesContributorsFiltersUnionMember113,
-    IncludeAttributesContributorsFiltersUnionMember114,
-    IncludeAttributesContributorsFiltersUnionMember115,
-    IncludeAttributesContributorsFiltersUnionMember116,
-    IncludeAttributesContributorsFiltersUnionMember117,
-    IncludeAttributesContributorsFiltersUnionMember118,
-    IncludeAttributesContributorsFiltersUnionMember119,
-    IncludeAttributesContributorsFiltersUnionMember120,
-    IncludeAttributesContributorsFiltersUnionMember121,
-    IncludeAttributesContributorsFiltersUnionMember122,
-    IncludeAttributesContributorsFiltersUnionMember123,
-    IncludeAttributesContributorsFiltersUnionMember124,
-    IncludeAttributesContributorsFiltersUnionMember125,
-    IncludeAttributesContributorsFiltersUnionMember126,
-    IncludeAttributesContributorsFiltersUnionMember127,
-    IncludeAttributesContributorsFiltersUnionMember128,
-    IncludeAttributesContributorsFiltersUnionMember129,
-    IncludeAttributesContributorsFiltersUnionMember130,
-    IncludeAttributesContributorsFiltersUnionMember131,
-    IncludeAttributesContributorsFiltersUnionMember132,
-    IncludeAttributesContributorsFiltersUnionMember133,
-    IncludeAttributesContributorsFiltersUnionMember134,
-    IncludeAttributesContributorsFiltersUnionMember135,
-    IncludeAttributesContributorsFiltersUnionMember136,
-    IncludeAttributesContributorsFiltersUnionMember137,
-    IncludeAttributesContributorsFiltersUnionMember138,
+    IncludeAttributesContributorsFiltersEq,
+    IncludeAttributesContributorsFiltersNotEq,
+    IncludeAttributesContributorsFiltersIn,
+    IncludeAttributesContributorsFiltersNotIn,
+    IncludeAttributesContributorsFiltersLt,
+    IncludeAttributesContributorsFiltersLte,
+    IncludeAttributesContributorsFiltersGt,
+    IncludeAttributesContributorsFiltersGte,
+    IncludeAttributesContributorsFiltersGlob,
+    IncludeAttributesContributorsFiltersNotGlob,
+    IncludeAttributesContributorsFiltersIGlob,
+    IncludeAttributesContributorsFiltersNotIGlob,
+    IncludeAttributesContributorsFiltersRegex,
+    IncludeAttributesContributorsFiltersEq,
+    IncludeAttributesContributorsFiltersNotEq,
+    IncludeAttributesContributorsFiltersIn,
+    IncludeAttributesContributorsFiltersNotIn,
+    IncludeAttributesContributorsFiltersLt,
+    IncludeAttributesContributorsFiltersLte,
+    IncludeAttributesContributorsFiltersGt,
+    IncludeAttributesContributorsFiltersGte,
+    IncludeAttributesContributorsFiltersGlob,
+    IncludeAttributesContributorsFiltersNotGlob,
+    IncludeAttributesContributorsFiltersIGlob,
+    IncludeAttributesContributorsFiltersNotIGlob,
+    IncludeAttributesContributorsFiltersRegex,
+    IncludeAttributesContributorsFiltersContainsAllTokens,
+    IncludeAttributesContributorsFiltersEq,
+    IncludeAttributesContributorsFiltersNotEq,
+    IncludeAttributesContributorsFiltersIn,
+    IncludeAttributesContributorsFiltersNotIn,
+    IncludeAttributesContributorsFiltersLt,
+    IncludeAttributesContributorsFiltersLte,
+    IncludeAttributesContributorsFiltersGt,
+    IncludeAttributesContributorsFiltersGte,
+    IncludeAttributesContributorsFiltersGlob,
+    IncludeAttributesContributorsFiltersNotGlob,
+    IncludeAttributesContributorsFiltersIGlob,
+    IncludeAttributesContributorsFiltersNotIGlob,
+    IncludeAttributesContributorsFiltersRegex,
+    IncludeAttributesContributorsFiltersContainsAllTokens,
+    IncludeAttributesContributorsFiltersEq,
+    IncludeAttributesContributorsFiltersNotEq,
+    IncludeAttributesContributorsFiltersIn,
+    IncludeAttributesContributorsFiltersNotIn,
+    IncludeAttributesContributorsFiltersLt,
+    IncludeAttributesContributorsFiltersLte,
+    IncludeAttributesContributorsFiltersGt,
+    IncludeAttributesContributorsFiltersGte,
+    IncludeAttributesContributorsFiltersGlob,
+    IncludeAttributesContributorsFiltersNotGlob,
+    IncludeAttributesContributorsFiltersIGlob,
+    IncludeAttributesContributorsFiltersNotIGlob,
+    IncludeAttributesContributorsFiltersRegex,
+    IncludeAttributesContributorsFiltersContainsAllTokens,
+    IncludeAttributesContributorsFiltersEq,
+    IncludeAttributesContributorsFiltersNotEq,
+    IncludeAttributesContributorsFiltersIn,
+    IncludeAttributesContributorsFiltersNotIn,
+    IncludeAttributesContributorsFiltersLt,
+    IncludeAttributesContributorsFiltersLte,
+    IncludeAttributesContributorsFiltersGt,
+    IncludeAttributesContributorsFiltersGte,
+    IncludeAttributesContributorsFiltersGlob,
+    IncludeAttributesContributorsFiltersNotGlob,
+    IncludeAttributesContributorsFiltersIGlob,
+    IncludeAttributesContributorsFiltersNotIGlob,
+    IncludeAttributesContributorsFiltersRegex,
+    IncludeAttributesContributorsFiltersContainsAllTokens,
+    IncludeAttributesContributorsFiltersEq,
+    IncludeAttributesContributorsFiltersNotEq,
+    IncludeAttributesContributorsFiltersIn,
+    IncludeAttributesContributorsFiltersNotIn,
+    IncludeAttributesContributorsFiltersLt,
+    IncludeAttributesContributorsFiltersLte,
+    IncludeAttributesContributorsFiltersGt,
+    IncludeAttributesContributorsFiltersGte,
+    IncludeAttributesContributorsFiltersGlob,
+    IncludeAttributesContributorsFiltersNotGlob,
+    IncludeAttributesContributorsFiltersIGlob,
+    IncludeAttributesContributorsFiltersNotIGlob,
+    IncludeAttributesContributorsFiltersRegex,
+    IncludeAttributesContributorsFiltersContainsAllTokens,
+    IncludeAttributesContributorsFiltersEq,
+    IncludeAttributesContributorsFiltersNotEq,
+    IncludeAttributesContributorsFiltersIn,
+    IncludeAttributesContributorsFiltersNotIn,
+    IncludeAttributesContributorsFiltersLt,
+    IncludeAttributesContributorsFiltersLte,
+    IncludeAttributesContributorsFiltersGt,
+    IncludeAttributesContributorsFiltersGte,
+    IncludeAttributesContributorsFiltersGlob,
+    IncludeAttributesContributorsFiltersNotGlob,
+    IncludeAttributesContributorsFiltersIGlob,
+    IncludeAttributesContributorsFiltersNotIGlob,
+    IncludeAttributesContributorsFiltersRegex,
+    IncludeAttributesContributorsFiltersContainsAllTokens,
+    IncludeAttributesContributorsFiltersEq,
+    IncludeAttributesContributorsFiltersNotEq,
+    IncludeAttributesContributorsFiltersIn,
+    IncludeAttributesContributorsFiltersNotIn,
+    IncludeAttributesContributorsFiltersLt,
+    IncludeAttributesContributorsFiltersLte,
+    IncludeAttributesContributorsFiltersGt,
+    IncludeAttributesContributorsFiltersGte,
+    IncludeAttributesContributorsFiltersGlob,
+    IncludeAttributesContributorsFiltersNotGlob,
+    IncludeAttributesContributorsFiltersIGlob,
+    IncludeAttributesContributorsFiltersNotIGlob,
+    IncludeAttributesContributorsFiltersRegex,
+    IncludeAttributesContributorsFiltersContainsAllTokens,
+    IncludeAttributesContributorsFiltersEq,
+    IncludeAttributesContributorsFiltersNotEq,
+    IncludeAttributesContributorsFiltersIn,
+    IncludeAttributesContributorsFiltersNotIn,
+    IncludeAttributesContributorsFiltersLt,
+    IncludeAttributesContributorsFiltersLte,
+    IncludeAttributesContributorsFiltersGt,
+    IncludeAttributesContributorsFiltersGte,
+    IncludeAttributesContributorsFiltersGlob,
+    IncludeAttributesContributorsFiltersNotGlob,
+    IncludeAttributesContributorsFiltersIGlob,
+    IncludeAttributesContributorsFiltersNotIGlob,
+    IncludeAttributesContributorsFiltersRegex,
+    IncludeAttributesContributorsFiltersContainsAllTokens,
+    IncludeAttributesContributorsFiltersEq,
+    IncludeAttributesContributorsFiltersNotEq,
+    IncludeAttributesContributorsFiltersIn,
+    IncludeAttributesContributorsFiltersNotIn,
+    IncludeAttributesContributorsFiltersLt,
+    IncludeAttributesContributorsFiltersLte,
+    IncludeAttributesContributorsFiltersGt,
+    IncludeAttributesContributorsFiltersGte,
+    IncludeAttributesContributorsFiltersGlob,
+    IncludeAttributesContributorsFiltersNotGlob,
+    IncludeAttributesContributorsFiltersIGlob,
+    IncludeAttributesContributorsFiltersNotIGlob,
+    IncludeAttributesContributorsFiltersRegex,
+    IncludeAttributesContributorsFiltersContainsAllTokens,
     IncludeAttributesContributorsFiltersUnionMember139,
     IncludeAttributesContributorsFiltersUnionMember140,
 ]
@@ -11671,7 +9656,7 @@ class IncludeAttributesContributors(TypedDict, total=False):
     """
 
 
-class IncludeAttributesStarrersFiltersUnionMember0(TypedDict, total=False):
+class IncludeAttributesStarrersFiltersEq(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Eq"]]
@@ -11679,7 +9664,7 @@ class IncludeAttributesStarrersFiltersUnionMember0(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesStarrersFiltersUnionMember1(TypedDict, total=False):
+class IncludeAttributesStarrersFiltersNotEq(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["NotEq"]]
@@ -11687,7 +9672,7 @@ class IncludeAttributesStarrersFiltersUnionMember1(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesStarrersFiltersUnionMember2(TypedDict, total=False):
+class IncludeAttributesStarrersFiltersIn(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["In"]]
@@ -11695,7 +9680,7 @@ class IncludeAttributesStarrersFiltersUnionMember2(TypedDict, total=False):
     value: Required[SequenceNotStr[str]]
 
 
-class IncludeAttributesStarrersFiltersUnionMember3(TypedDict, total=False):
+class IncludeAttributesStarrersFiltersNotIn(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["NotIn"]]
@@ -11703,7 +9688,7 @@ class IncludeAttributesStarrersFiltersUnionMember3(TypedDict, total=False):
     value: Required[SequenceNotStr[str]]
 
 
-class IncludeAttributesStarrersFiltersUnionMember4(TypedDict, total=False):
+class IncludeAttributesStarrersFiltersLt(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Lt"]]
@@ -11711,7 +9696,7 @@ class IncludeAttributesStarrersFiltersUnionMember4(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesStarrersFiltersUnionMember5(TypedDict, total=False):
+class IncludeAttributesStarrersFiltersLte(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Lte"]]
@@ -11719,7 +9704,7 @@ class IncludeAttributesStarrersFiltersUnionMember5(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesStarrersFiltersUnionMember6(TypedDict, total=False):
+class IncludeAttributesStarrersFiltersGt(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Gt"]]
@@ -11727,7 +9712,7 @@ class IncludeAttributesStarrersFiltersUnionMember6(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesStarrersFiltersUnionMember7(TypedDict, total=False):
+class IncludeAttributesStarrersFiltersGte(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Gte"]]
@@ -11735,7 +9720,7 @@ class IncludeAttributesStarrersFiltersUnionMember7(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesStarrersFiltersUnionMember8(TypedDict, total=False):
+class IncludeAttributesStarrersFiltersGlob(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Glob"]]
@@ -11743,7 +9728,7 @@ class IncludeAttributesStarrersFiltersUnionMember8(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesStarrersFiltersUnionMember9(TypedDict, total=False):
+class IncludeAttributesStarrersFiltersNotGlob(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["NotGlob"]]
@@ -11751,7 +9736,7 @@ class IncludeAttributesStarrersFiltersUnionMember9(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesStarrersFiltersUnionMember10(TypedDict, total=False):
+class IncludeAttributesStarrersFiltersIGlob(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["IGlob"]]
@@ -11759,7 +9744,7 @@ class IncludeAttributesStarrersFiltersUnionMember10(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesStarrersFiltersUnionMember11(TypedDict, total=False):
+class IncludeAttributesStarrersFiltersNotIGlob(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["NotIGlob"]]
@@ -11767,7 +9752,7 @@ class IncludeAttributesStarrersFiltersUnionMember11(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesStarrersFiltersUnionMember12(TypedDict, total=False):
+class IncludeAttributesStarrersFiltersRegex(TypedDict, total=False):
     field: Required[Literal["githubId"]]
 
     op: Required[Literal["Regex"]]
@@ -11775,1008 +9760,8 @@ class IncludeAttributesStarrersFiltersUnionMember12(TypedDict, total=False):
     value: Required[str]
 
 
-class IncludeAttributesStarrersFiltersUnionMember13(TypedDict, total=False):
+class IncludeAttributesStarrersFiltersContainsAllTokens(TypedDict, total=False):
     field: Required[Literal["login"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember14(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember15(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesStarrersFiltersUnionMember16(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesStarrersFiltersUnionMember17(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember18(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember19(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember20(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember21(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember22(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember23(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember24(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember25(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember26(TypedDict, total=False):
-    field: Required[Literal["login"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember27(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember28(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember29(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesStarrersFiltersUnionMember30(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesStarrersFiltersUnionMember31(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember32(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember33(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember34(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember35(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember36(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember37(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember38(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember39(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember40(TypedDict, total=False):
-    field: Required[Literal["displayName"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember41(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember42(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember43(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesStarrersFiltersUnionMember44(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesStarrersFiltersUnionMember45(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember46(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember47(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember48(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember49(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember50(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember51(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember52(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember53(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember54(TypedDict, total=False):
-    field: Required[Literal["bio"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember55(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember56(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember57(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesStarrersFiltersUnionMember58(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesStarrersFiltersUnionMember59(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember60(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember61(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember62(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember63(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember64(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember65(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember66(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember67(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember68(TypedDict, total=False):
-    field: Required[Literal["company"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember69(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember70(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember71(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesStarrersFiltersUnionMember72(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesStarrersFiltersUnionMember73(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember74(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember75(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember76(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember77(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember78(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember79(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember80(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember81(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember82(TypedDict, total=False):
-    field: Required[Literal["location"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember83(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember84(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember85(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesStarrersFiltersUnionMember86(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesStarrersFiltersUnionMember87(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember88(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember89(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember90(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember91(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember92(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember93(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember94(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember95(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember96(TypedDict, total=False):
-    field: Required[Literal["emails"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember97(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember98(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember99(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesStarrersFiltersUnionMember100(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesStarrersFiltersUnionMember101(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember102(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember103(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember104(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember105(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember106(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember107(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember108(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember109(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember110(TypedDict, total=False):
-    field: Required[Literal["resolvedCountry"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember111(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember112(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember113(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesStarrersFiltersUnionMember114(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesStarrersFiltersUnionMember115(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember116(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember117(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember118(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember119(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember120(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember121(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember122(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember123(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember124(TypedDict, total=False):
-    field: Required[Literal["resolvedState"]]
-
-    op: Required[Literal["ContainsAllTokens"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember125(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["Eq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember126(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["NotEq"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember127(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["In"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesStarrersFiltersUnionMember128(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["NotIn"]]
-
-    value: Required[SequenceNotStr[str]]
-
-
-class IncludeAttributesStarrersFiltersUnionMember129(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["Lt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember130(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["Lte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember131(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["Gt"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember132(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["Gte"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember133(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["Glob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember134(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["NotGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember135(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["IGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember136(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["NotIGlob"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember137(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
-
-    op: Required[Literal["Regex"]]
-
-    value: Required[str]
-
-
-class IncludeAttributesStarrersFiltersUnionMember138(TypedDict, total=False):
-    field: Required[Literal["resolvedCity"]]
 
     op: Required[Literal["ContainsAllTokens"]]
 
@@ -16568,145 +13553,145 @@ class IncludeAttributesStarrersFiltersUnionMember140(TypedDict, total=False):
 
 
 IncludeAttributesStarrersFilters: TypeAlias = Union[
-    IncludeAttributesStarrersFiltersUnionMember0,
-    IncludeAttributesStarrersFiltersUnionMember1,
-    IncludeAttributesStarrersFiltersUnionMember2,
-    IncludeAttributesStarrersFiltersUnionMember3,
-    IncludeAttributesStarrersFiltersUnionMember4,
-    IncludeAttributesStarrersFiltersUnionMember5,
-    IncludeAttributesStarrersFiltersUnionMember6,
-    IncludeAttributesStarrersFiltersUnionMember7,
-    IncludeAttributesStarrersFiltersUnionMember8,
-    IncludeAttributesStarrersFiltersUnionMember9,
-    IncludeAttributesStarrersFiltersUnionMember10,
-    IncludeAttributesStarrersFiltersUnionMember11,
-    IncludeAttributesStarrersFiltersUnionMember12,
-    IncludeAttributesStarrersFiltersUnionMember13,
-    IncludeAttributesStarrersFiltersUnionMember14,
-    IncludeAttributesStarrersFiltersUnionMember15,
-    IncludeAttributesStarrersFiltersUnionMember16,
-    IncludeAttributesStarrersFiltersUnionMember17,
-    IncludeAttributesStarrersFiltersUnionMember18,
-    IncludeAttributesStarrersFiltersUnionMember19,
-    IncludeAttributesStarrersFiltersUnionMember20,
-    IncludeAttributesStarrersFiltersUnionMember21,
-    IncludeAttributesStarrersFiltersUnionMember22,
-    IncludeAttributesStarrersFiltersUnionMember23,
-    IncludeAttributesStarrersFiltersUnionMember24,
-    IncludeAttributesStarrersFiltersUnionMember25,
-    IncludeAttributesStarrersFiltersUnionMember26,
-    IncludeAttributesStarrersFiltersUnionMember27,
-    IncludeAttributesStarrersFiltersUnionMember28,
-    IncludeAttributesStarrersFiltersUnionMember29,
-    IncludeAttributesStarrersFiltersUnionMember30,
-    IncludeAttributesStarrersFiltersUnionMember31,
-    IncludeAttributesStarrersFiltersUnionMember32,
-    IncludeAttributesStarrersFiltersUnionMember33,
-    IncludeAttributesStarrersFiltersUnionMember34,
-    IncludeAttributesStarrersFiltersUnionMember35,
-    IncludeAttributesStarrersFiltersUnionMember36,
-    IncludeAttributesStarrersFiltersUnionMember37,
-    IncludeAttributesStarrersFiltersUnionMember38,
-    IncludeAttributesStarrersFiltersUnionMember39,
-    IncludeAttributesStarrersFiltersUnionMember40,
-    IncludeAttributesStarrersFiltersUnionMember41,
-    IncludeAttributesStarrersFiltersUnionMember42,
-    IncludeAttributesStarrersFiltersUnionMember43,
-    IncludeAttributesStarrersFiltersUnionMember44,
-    IncludeAttributesStarrersFiltersUnionMember45,
-    IncludeAttributesStarrersFiltersUnionMember46,
-    IncludeAttributesStarrersFiltersUnionMember47,
-    IncludeAttributesStarrersFiltersUnionMember48,
-    IncludeAttributesStarrersFiltersUnionMember49,
-    IncludeAttributesStarrersFiltersUnionMember50,
-    IncludeAttributesStarrersFiltersUnionMember51,
-    IncludeAttributesStarrersFiltersUnionMember52,
-    IncludeAttributesStarrersFiltersUnionMember53,
-    IncludeAttributesStarrersFiltersUnionMember54,
-    IncludeAttributesStarrersFiltersUnionMember55,
-    IncludeAttributesStarrersFiltersUnionMember56,
-    IncludeAttributesStarrersFiltersUnionMember57,
-    IncludeAttributesStarrersFiltersUnionMember58,
-    IncludeAttributesStarrersFiltersUnionMember59,
-    IncludeAttributesStarrersFiltersUnionMember60,
-    IncludeAttributesStarrersFiltersUnionMember61,
-    IncludeAttributesStarrersFiltersUnionMember62,
-    IncludeAttributesStarrersFiltersUnionMember63,
-    IncludeAttributesStarrersFiltersUnionMember64,
-    IncludeAttributesStarrersFiltersUnionMember65,
-    IncludeAttributesStarrersFiltersUnionMember66,
-    IncludeAttributesStarrersFiltersUnionMember67,
-    IncludeAttributesStarrersFiltersUnionMember68,
-    IncludeAttributesStarrersFiltersUnionMember69,
-    IncludeAttributesStarrersFiltersUnionMember70,
-    IncludeAttributesStarrersFiltersUnionMember71,
-    IncludeAttributesStarrersFiltersUnionMember72,
-    IncludeAttributesStarrersFiltersUnionMember73,
-    IncludeAttributesStarrersFiltersUnionMember74,
-    IncludeAttributesStarrersFiltersUnionMember75,
-    IncludeAttributesStarrersFiltersUnionMember76,
-    IncludeAttributesStarrersFiltersUnionMember77,
-    IncludeAttributesStarrersFiltersUnionMember78,
-    IncludeAttributesStarrersFiltersUnionMember79,
-    IncludeAttributesStarrersFiltersUnionMember80,
-    IncludeAttributesStarrersFiltersUnionMember81,
-    IncludeAttributesStarrersFiltersUnionMember82,
-    IncludeAttributesStarrersFiltersUnionMember83,
-    IncludeAttributesStarrersFiltersUnionMember84,
-    IncludeAttributesStarrersFiltersUnionMember85,
-    IncludeAttributesStarrersFiltersUnionMember86,
-    IncludeAttributesStarrersFiltersUnionMember87,
-    IncludeAttributesStarrersFiltersUnionMember88,
-    IncludeAttributesStarrersFiltersUnionMember89,
-    IncludeAttributesStarrersFiltersUnionMember90,
-    IncludeAttributesStarrersFiltersUnionMember91,
-    IncludeAttributesStarrersFiltersUnionMember92,
-    IncludeAttributesStarrersFiltersUnionMember93,
-    IncludeAttributesStarrersFiltersUnionMember94,
-    IncludeAttributesStarrersFiltersUnionMember95,
-    IncludeAttributesStarrersFiltersUnionMember96,
-    IncludeAttributesStarrersFiltersUnionMember97,
-    IncludeAttributesStarrersFiltersUnionMember98,
-    IncludeAttributesStarrersFiltersUnionMember99,
-    IncludeAttributesStarrersFiltersUnionMember100,
-    IncludeAttributesStarrersFiltersUnionMember101,
-    IncludeAttributesStarrersFiltersUnionMember102,
-    IncludeAttributesStarrersFiltersUnionMember103,
-    IncludeAttributesStarrersFiltersUnionMember104,
-    IncludeAttributesStarrersFiltersUnionMember105,
-    IncludeAttributesStarrersFiltersUnionMember106,
-    IncludeAttributesStarrersFiltersUnionMember107,
-    IncludeAttributesStarrersFiltersUnionMember108,
-    IncludeAttributesStarrersFiltersUnionMember109,
-    IncludeAttributesStarrersFiltersUnionMember110,
-    IncludeAttributesStarrersFiltersUnionMember111,
-    IncludeAttributesStarrersFiltersUnionMember112,
-    IncludeAttributesStarrersFiltersUnionMember113,
-    IncludeAttributesStarrersFiltersUnionMember114,
-    IncludeAttributesStarrersFiltersUnionMember115,
-    IncludeAttributesStarrersFiltersUnionMember116,
-    IncludeAttributesStarrersFiltersUnionMember117,
-    IncludeAttributesStarrersFiltersUnionMember118,
-    IncludeAttributesStarrersFiltersUnionMember119,
-    IncludeAttributesStarrersFiltersUnionMember120,
-    IncludeAttributesStarrersFiltersUnionMember121,
-    IncludeAttributesStarrersFiltersUnionMember122,
-    IncludeAttributesStarrersFiltersUnionMember123,
-    IncludeAttributesStarrersFiltersUnionMember124,
-    IncludeAttributesStarrersFiltersUnionMember125,
-    IncludeAttributesStarrersFiltersUnionMember126,
-    IncludeAttributesStarrersFiltersUnionMember127,
-    IncludeAttributesStarrersFiltersUnionMember128,
-    IncludeAttributesStarrersFiltersUnionMember129,
-    IncludeAttributesStarrersFiltersUnionMember130,
-    IncludeAttributesStarrersFiltersUnionMember131,
-    IncludeAttributesStarrersFiltersUnionMember132,
-    IncludeAttributesStarrersFiltersUnionMember133,
-    IncludeAttributesStarrersFiltersUnionMember134,
-    IncludeAttributesStarrersFiltersUnionMember135,
-    IncludeAttributesStarrersFiltersUnionMember136,
-    IncludeAttributesStarrersFiltersUnionMember137,
-    IncludeAttributesStarrersFiltersUnionMember138,
+    IncludeAttributesStarrersFiltersEq,
+    IncludeAttributesStarrersFiltersNotEq,
+    IncludeAttributesStarrersFiltersIn,
+    IncludeAttributesStarrersFiltersNotIn,
+    IncludeAttributesStarrersFiltersLt,
+    IncludeAttributesStarrersFiltersLte,
+    IncludeAttributesStarrersFiltersGt,
+    IncludeAttributesStarrersFiltersGte,
+    IncludeAttributesStarrersFiltersGlob,
+    IncludeAttributesStarrersFiltersNotGlob,
+    IncludeAttributesStarrersFiltersIGlob,
+    IncludeAttributesStarrersFiltersNotIGlob,
+    IncludeAttributesStarrersFiltersRegex,
+    IncludeAttributesStarrersFiltersEq,
+    IncludeAttributesStarrersFiltersNotEq,
+    IncludeAttributesStarrersFiltersIn,
+    IncludeAttributesStarrersFiltersNotIn,
+    IncludeAttributesStarrersFiltersLt,
+    IncludeAttributesStarrersFiltersLte,
+    IncludeAttributesStarrersFiltersGt,
+    IncludeAttributesStarrersFiltersGte,
+    IncludeAttributesStarrersFiltersGlob,
+    IncludeAttributesStarrersFiltersNotGlob,
+    IncludeAttributesStarrersFiltersIGlob,
+    IncludeAttributesStarrersFiltersNotIGlob,
+    IncludeAttributesStarrersFiltersRegex,
+    IncludeAttributesStarrersFiltersContainsAllTokens,
+    IncludeAttributesStarrersFiltersEq,
+    IncludeAttributesStarrersFiltersNotEq,
+    IncludeAttributesStarrersFiltersIn,
+    IncludeAttributesStarrersFiltersNotIn,
+    IncludeAttributesStarrersFiltersLt,
+    IncludeAttributesStarrersFiltersLte,
+    IncludeAttributesStarrersFiltersGt,
+    IncludeAttributesStarrersFiltersGte,
+    IncludeAttributesStarrersFiltersGlob,
+    IncludeAttributesStarrersFiltersNotGlob,
+    IncludeAttributesStarrersFiltersIGlob,
+    IncludeAttributesStarrersFiltersNotIGlob,
+    IncludeAttributesStarrersFiltersRegex,
+    IncludeAttributesStarrersFiltersContainsAllTokens,
+    IncludeAttributesStarrersFiltersEq,
+    IncludeAttributesStarrersFiltersNotEq,
+    IncludeAttributesStarrersFiltersIn,
+    IncludeAttributesStarrersFiltersNotIn,
+    IncludeAttributesStarrersFiltersLt,
+    IncludeAttributesStarrersFiltersLte,
+    IncludeAttributesStarrersFiltersGt,
+    IncludeAttributesStarrersFiltersGte,
+    IncludeAttributesStarrersFiltersGlob,
+    IncludeAttributesStarrersFiltersNotGlob,
+    IncludeAttributesStarrersFiltersIGlob,
+    IncludeAttributesStarrersFiltersNotIGlob,
+    IncludeAttributesStarrersFiltersRegex,
+    IncludeAttributesStarrersFiltersContainsAllTokens,
+    IncludeAttributesStarrersFiltersEq,
+    IncludeAttributesStarrersFiltersNotEq,
+    IncludeAttributesStarrersFiltersIn,
+    IncludeAttributesStarrersFiltersNotIn,
+    IncludeAttributesStarrersFiltersLt,
+    IncludeAttributesStarrersFiltersLte,
+    IncludeAttributesStarrersFiltersGt,
+    IncludeAttributesStarrersFiltersGte,
+    IncludeAttributesStarrersFiltersGlob,
+    IncludeAttributesStarrersFiltersNotGlob,
+    IncludeAttributesStarrersFiltersIGlob,
+    IncludeAttributesStarrersFiltersNotIGlob,
+    IncludeAttributesStarrersFiltersRegex,
+    IncludeAttributesStarrersFiltersContainsAllTokens,
+    IncludeAttributesStarrersFiltersEq,
+    IncludeAttributesStarrersFiltersNotEq,
+    IncludeAttributesStarrersFiltersIn,
+    IncludeAttributesStarrersFiltersNotIn,
+    IncludeAttributesStarrersFiltersLt,
+    IncludeAttributesStarrersFiltersLte,
+    IncludeAttributesStarrersFiltersGt,
+    IncludeAttributesStarrersFiltersGte,
+    IncludeAttributesStarrersFiltersGlob,
+    IncludeAttributesStarrersFiltersNotGlob,
+    IncludeAttributesStarrersFiltersIGlob,
+    IncludeAttributesStarrersFiltersNotIGlob,
+    IncludeAttributesStarrersFiltersRegex,
+    IncludeAttributesStarrersFiltersContainsAllTokens,
+    IncludeAttributesStarrersFiltersEq,
+    IncludeAttributesStarrersFiltersNotEq,
+    IncludeAttributesStarrersFiltersIn,
+    IncludeAttributesStarrersFiltersNotIn,
+    IncludeAttributesStarrersFiltersLt,
+    IncludeAttributesStarrersFiltersLte,
+    IncludeAttributesStarrersFiltersGt,
+    IncludeAttributesStarrersFiltersGte,
+    IncludeAttributesStarrersFiltersGlob,
+    IncludeAttributesStarrersFiltersNotGlob,
+    IncludeAttributesStarrersFiltersIGlob,
+    IncludeAttributesStarrersFiltersNotIGlob,
+    IncludeAttributesStarrersFiltersRegex,
+    IncludeAttributesStarrersFiltersContainsAllTokens,
+    IncludeAttributesStarrersFiltersEq,
+    IncludeAttributesStarrersFiltersNotEq,
+    IncludeAttributesStarrersFiltersIn,
+    IncludeAttributesStarrersFiltersNotIn,
+    IncludeAttributesStarrersFiltersLt,
+    IncludeAttributesStarrersFiltersLte,
+    IncludeAttributesStarrersFiltersGt,
+    IncludeAttributesStarrersFiltersGte,
+    IncludeAttributesStarrersFiltersGlob,
+    IncludeAttributesStarrersFiltersNotGlob,
+    IncludeAttributesStarrersFiltersIGlob,
+    IncludeAttributesStarrersFiltersNotIGlob,
+    IncludeAttributesStarrersFiltersRegex,
+    IncludeAttributesStarrersFiltersContainsAllTokens,
+    IncludeAttributesStarrersFiltersEq,
+    IncludeAttributesStarrersFiltersNotEq,
+    IncludeAttributesStarrersFiltersIn,
+    IncludeAttributesStarrersFiltersNotIn,
+    IncludeAttributesStarrersFiltersLt,
+    IncludeAttributesStarrersFiltersLte,
+    IncludeAttributesStarrersFiltersGt,
+    IncludeAttributesStarrersFiltersGte,
+    IncludeAttributesStarrersFiltersGlob,
+    IncludeAttributesStarrersFiltersNotGlob,
+    IncludeAttributesStarrersFiltersIGlob,
+    IncludeAttributesStarrersFiltersNotIGlob,
+    IncludeAttributesStarrersFiltersRegex,
+    IncludeAttributesStarrersFiltersContainsAllTokens,
+    IncludeAttributesStarrersFiltersEq,
+    IncludeAttributesStarrersFiltersNotEq,
+    IncludeAttributesStarrersFiltersIn,
+    IncludeAttributesStarrersFiltersNotIn,
+    IncludeAttributesStarrersFiltersLt,
+    IncludeAttributesStarrersFiltersLte,
+    IncludeAttributesStarrersFiltersGt,
+    IncludeAttributesStarrersFiltersGte,
+    IncludeAttributesStarrersFiltersGlob,
+    IncludeAttributesStarrersFiltersNotGlob,
+    IncludeAttributesStarrersFiltersIGlob,
+    IncludeAttributesStarrersFiltersNotIGlob,
+    IncludeAttributesStarrersFiltersRegex,
+    IncludeAttributesStarrersFiltersContainsAllTokens,
     IncludeAttributesStarrersFiltersUnionMember139,
     IncludeAttributesStarrersFiltersUnionMember140,
 ]
@@ -16745,6555 +13730,6366 @@ class IncludeAttributes(TypedDict, total=False):
     """Include users who starred the repository with cursor pagination"""
 
 
-class RankByUnionMember0(TypedDict, total=False):
+class RankByAttr(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByConst(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-class RankByUnionMember2ExprUnionMember0(TypedDict, total=False):
+class RankBySumExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember2ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankBySumExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-class RankByUnionMember2ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
+class RankBySumExprUnionMember2ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember2ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankBySumExprUnionMember2ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-class RankByUnionMember2ExprUnionMember2ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
+class RankBySumExprUnionMember2ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember2ExprUnionMember2ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankBySumExprUnionMember2ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember2ExprUnionMember2ExprUnionMember2Expr: TypeAlias = Union[
-    RankByUnionMember2ExprUnionMember2ExprUnionMember2ExprUnionMember0,
-    RankByUnionMember2ExprUnionMember2ExprUnionMember2ExprUnionMember1,
+RankBySumExprUnionMember2ExprUnionMember2Expr: TypeAlias = Union[
+    RankBySumExprUnionMember2ExprUnionMember2ExprUnionMember0, RankBySumExprUnionMember2ExprUnionMember2ExprUnionMember1
 ]
 
 
-class RankByUnionMember2ExprUnionMember2ExprUnionMember2(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember2ExprUnionMember2ExprUnionMember2Expr]]
+class RankBySumExprUnionMember2ExprUnionMember2(TypedDict, total=False):
+    exprs: Required[Iterable[RankBySumExprUnionMember2ExprUnionMember2Expr]]
 
-    op: Required[Literal["Sum"]]
+    type: Required[Literal["Sum"]]
 
 
-class RankByUnionMember2ExprUnionMember2ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
+class RankBySumExprUnionMember2ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember2ExprUnionMember2ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankBySumExprUnionMember2ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember2ExprUnionMember2ExprUnionMember3Expr: TypeAlias = Union[
-    RankByUnionMember2ExprUnionMember2ExprUnionMember3ExprUnionMember0,
-    RankByUnionMember2ExprUnionMember2ExprUnionMember3ExprUnionMember1,
+RankBySumExprUnionMember2ExprUnionMember3Expr: TypeAlias = Union[
+    RankBySumExprUnionMember2ExprUnionMember3ExprUnionMember0, RankBySumExprUnionMember2ExprUnionMember3ExprUnionMember1
 ]
 
 
-class RankByUnionMember2ExprUnionMember2ExprUnionMember3(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember2ExprUnionMember2ExprUnionMember3Expr]]
+class RankBySumExprUnionMember2ExprUnionMember3(TypedDict, total=False):
+    exprs: Required[Iterable[RankBySumExprUnionMember2ExprUnionMember3Expr]]
 
-    op: Required[Literal["Mult"]]
+    type: Required[Literal["Mult"]]
 
 
-class RankByUnionMember2ExprUnionMember2ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
+class RankBySumExprUnionMember2ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember2ExprUnionMember2ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankBySumExprUnionMember2ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember2ExprUnionMember2ExprUnionMember4Expr: TypeAlias = Union[
-    RankByUnionMember2ExprUnionMember2ExprUnionMember4ExprUnionMember0,
-    RankByUnionMember2ExprUnionMember2ExprUnionMember4ExprUnionMember1,
+RankBySumExprUnionMember2ExprUnionMember4Expr: TypeAlias = Union[
+    RankBySumExprUnionMember2ExprUnionMember4ExprUnionMember0, RankBySumExprUnionMember2ExprUnionMember4ExprUnionMember1
 ]
 
 
-class RankByUnionMember2ExprUnionMember2ExprUnionMember4(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember2ExprUnionMember2ExprUnionMember4Expr]]
+class RankBySumExprUnionMember2ExprUnionMember4(TypedDict, total=False):
+    exprs: Required[Iterable[RankBySumExprUnionMember2ExprUnionMember4Expr]]
 
-    op: Required[Literal["Div"]]
+    type: Required[Literal["Div"]]
 
 
-class RankByUnionMember2ExprUnionMember2ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
+class RankBySumExprUnionMember2ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember2ExprUnionMember2ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankBySumExprUnionMember2ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember2ExprUnionMember2ExprUnionMember5Expr: TypeAlias = Union[
-    RankByUnionMember2ExprUnionMember2ExprUnionMember5ExprUnionMember0,
-    RankByUnionMember2ExprUnionMember2ExprUnionMember5ExprUnionMember1,
+RankBySumExprUnionMember2ExprUnionMember5Expr: TypeAlias = Union[
+    RankBySumExprUnionMember2ExprUnionMember5ExprUnionMember0, RankBySumExprUnionMember2ExprUnionMember5ExprUnionMember1
 ]
 
 
-class RankByUnionMember2ExprUnionMember2ExprUnionMember5(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember2ExprUnionMember2ExprUnionMember5Expr]]
+class RankBySumExprUnionMember2ExprUnionMember5(TypedDict, total=False):
+    exprs: Required[Iterable[RankBySumExprUnionMember2ExprUnionMember5Expr]]
 
-    op: Required[Literal["Max"]]
+    type: Required[Literal["Max"]]
 
 
-class RankByUnionMember2ExprUnionMember2ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
+class RankBySumExprUnionMember2ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember2ExprUnionMember2ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankBySumExprUnionMember2ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember2ExprUnionMember2ExprUnionMember6Expr: TypeAlias = Union[
-    RankByUnionMember2ExprUnionMember2ExprUnionMember6ExprUnionMember0,
-    RankByUnionMember2ExprUnionMember2ExprUnionMember6ExprUnionMember1,
+RankBySumExprUnionMember2ExprUnionMember6Expr: TypeAlias = Union[
+    RankBySumExprUnionMember2ExprUnionMember6ExprUnionMember0, RankBySumExprUnionMember2ExprUnionMember6ExprUnionMember1
 ]
 
 
-class RankByUnionMember2ExprUnionMember2ExprUnionMember6(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember2ExprUnionMember2ExprUnionMember6Expr]]
+class RankBySumExprUnionMember2ExprUnionMember6(TypedDict, total=False):
+    exprs: Required[Iterable[RankBySumExprUnionMember2ExprUnionMember6Expr]]
 
-    op: Required[Literal["Min"]]
+    type: Required[Literal["Min"]]
 
 
-class RankByUnionMember2ExprUnionMember2ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
+class RankBySumExprUnionMember2ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember2ExprUnionMember2ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankBySumExprUnionMember2ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember2ExprUnionMember2ExprUnionMember7Expr: TypeAlias = Union[
-    RankByUnionMember2ExprUnionMember2ExprUnionMember7ExprUnionMember0,
-    RankByUnionMember2ExprUnionMember2ExprUnionMember7ExprUnionMember1,
+RankBySumExprUnionMember2ExprUnionMember7Expr: TypeAlias = Union[
+    RankBySumExprUnionMember2ExprUnionMember7ExprUnionMember0, RankBySumExprUnionMember2ExprUnionMember7ExprUnionMember1
 ]
 
 
-class RankByUnionMember2ExprUnionMember2ExprUnionMember7(TypedDict, total=False):
+class RankBySumExprUnionMember2ExprUnionMember7(TypedDict, total=False):
     base: Required[float]
 
-    expr: Required[RankByUnionMember2ExprUnionMember2ExprUnionMember7Expr]
+    expr: Required[RankBySumExprUnionMember2ExprUnionMember7Expr]
 
-    op: Required[Literal["Log"]]
+    type: Required[Literal["Log"]]
 
 
-RankByUnionMember2ExprUnionMember2Expr: TypeAlias = Union[
-    RankByUnionMember2ExprUnionMember2ExprUnionMember0,
-    RankByUnionMember2ExprUnionMember2ExprUnionMember1,
-    RankByUnionMember2ExprUnionMember2ExprUnionMember2,
-    RankByUnionMember2ExprUnionMember2ExprUnionMember3,
-    RankByUnionMember2ExprUnionMember2ExprUnionMember4,
-    RankByUnionMember2ExprUnionMember2ExprUnionMember5,
-    RankByUnionMember2ExprUnionMember2ExprUnionMember6,
-    RankByUnionMember2ExprUnionMember2ExprUnionMember7,
+RankBySumExprUnionMember2Expr: TypeAlias = Union[
+    RankBySumExprUnionMember2ExprUnionMember0,
+    RankBySumExprUnionMember2ExprUnionMember1,
+    RankBySumExprUnionMember2ExprUnionMember2,
+    RankBySumExprUnionMember2ExprUnionMember3,
+    RankBySumExprUnionMember2ExprUnionMember4,
+    RankBySumExprUnionMember2ExprUnionMember5,
+    RankBySumExprUnionMember2ExprUnionMember6,
+    RankBySumExprUnionMember2ExprUnionMember7,
 ]
 
 
-class RankByUnionMember2ExprUnionMember2(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember2ExprUnionMember2Expr]]
+class RankBySumExprUnionMember2(TypedDict, total=False):
+    exprs: Required[Iterable[RankBySumExprUnionMember2Expr]]
 
-    op: Required[Literal["Sum"]]
+    type: Required[Literal["Sum"]]
 
 
-class RankByUnionMember2ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
+class RankBySumExprUnionMember3ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember2ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankBySumExprUnionMember3ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-class RankByUnionMember2ExprUnionMember3ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
+class RankBySumExprUnionMember3ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember2ExprUnionMember3ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankBySumExprUnionMember3ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember2ExprUnionMember3ExprUnionMember2Expr: TypeAlias = Union[
-    RankByUnionMember2ExprUnionMember3ExprUnionMember2ExprUnionMember0,
-    RankByUnionMember2ExprUnionMember3ExprUnionMember2ExprUnionMember1,
+RankBySumExprUnionMember3ExprUnionMember2Expr: TypeAlias = Union[
+    RankBySumExprUnionMember3ExprUnionMember2ExprUnionMember0, RankBySumExprUnionMember3ExprUnionMember2ExprUnionMember1
 ]
 
 
-class RankByUnionMember2ExprUnionMember3ExprUnionMember2(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember2ExprUnionMember3ExprUnionMember2Expr]]
+class RankBySumExprUnionMember3ExprUnionMember2(TypedDict, total=False):
+    exprs: Required[Iterable[RankBySumExprUnionMember3ExprUnionMember2Expr]]
 
-    op: Required[Literal["Sum"]]
+    type: Required[Literal["Sum"]]
 
 
-class RankByUnionMember2ExprUnionMember3ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
+class RankBySumExprUnionMember3ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember2ExprUnionMember3ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankBySumExprUnionMember3ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember2ExprUnionMember3ExprUnionMember3Expr: TypeAlias = Union[
-    RankByUnionMember2ExprUnionMember3ExprUnionMember3ExprUnionMember0,
-    RankByUnionMember2ExprUnionMember3ExprUnionMember3ExprUnionMember1,
+RankBySumExprUnionMember3ExprUnionMember3Expr: TypeAlias = Union[
+    RankBySumExprUnionMember3ExprUnionMember3ExprUnionMember0, RankBySumExprUnionMember3ExprUnionMember3ExprUnionMember1
 ]
 
 
-class RankByUnionMember2ExprUnionMember3ExprUnionMember3(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember2ExprUnionMember3ExprUnionMember3Expr]]
+class RankBySumExprUnionMember3ExprUnionMember3(TypedDict, total=False):
+    exprs: Required[Iterable[RankBySumExprUnionMember3ExprUnionMember3Expr]]
 
-    op: Required[Literal["Mult"]]
+    type: Required[Literal["Mult"]]
 
 
-class RankByUnionMember2ExprUnionMember3ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
+class RankBySumExprUnionMember3ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember2ExprUnionMember3ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankBySumExprUnionMember3ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember2ExprUnionMember3ExprUnionMember4Expr: TypeAlias = Union[
-    RankByUnionMember2ExprUnionMember3ExprUnionMember4ExprUnionMember0,
-    RankByUnionMember2ExprUnionMember3ExprUnionMember4ExprUnionMember1,
+RankBySumExprUnionMember3ExprUnionMember4Expr: TypeAlias = Union[
+    RankBySumExprUnionMember3ExprUnionMember4ExprUnionMember0, RankBySumExprUnionMember3ExprUnionMember4ExprUnionMember1
 ]
 
 
-class RankByUnionMember2ExprUnionMember3ExprUnionMember4(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember2ExprUnionMember3ExprUnionMember4Expr]]
+class RankBySumExprUnionMember3ExprUnionMember4(TypedDict, total=False):
+    exprs: Required[Iterable[RankBySumExprUnionMember3ExprUnionMember4Expr]]
 
-    op: Required[Literal["Div"]]
+    type: Required[Literal["Div"]]
 
 
-class RankByUnionMember2ExprUnionMember3ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
+class RankBySumExprUnionMember3ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember2ExprUnionMember3ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankBySumExprUnionMember3ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember2ExprUnionMember3ExprUnionMember5Expr: TypeAlias = Union[
-    RankByUnionMember2ExprUnionMember3ExprUnionMember5ExprUnionMember0,
-    RankByUnionMember2ExprUnionMember3ExprUnionMember5ExprUnionMember1,
+RankBySumExprUnionMember3ExprUnionMember5Expr: TypeAlias = Union[
+    RankBySumExprUnionMember3ExprUnionMember5ExprUnionMember0, RankBySumExprUnionMember3ExprUnionMember5ExprUnionMember1
 ]
 
 
-class RankByUnionMember2ExprUnionMember3ExprUnionMember5(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember2ExprUnionMember3ExprUnionMember5Expr]]
+class RankBySumExprUnionMember3ExprUnionMember5(TypedDict, total=False):
+    exprs: Required[Iterable[RankBySumExprUnionMember3ExprUnionMember5Expr]]
 
-    op: Required[Literal["Max"]]
+    type: Required[Literal["Max"]]
 
 
-class RankByUnionMember2ExprUnionMember3ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
+class RankBySumExprUnionMember3ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember2ExprUnionMember3ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankBySumExprUnionMember3ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember2ExprUnionMember3ExprUnionMember6Expr: TypeAlias = Union[
-    RankByUnionMember2ExprUnionMember3ExprUnionMember6ExprUnionMember0,
-    RankByUnionMember2ExprUnionMember3ExprUnionMember6ExprUnionMember1,
+RankBySumExprUnionMember3ExprUnionMember6Expr: TypeAlias = Union[
+    RankBySumExprUnionMember3ExprUnionMember6ExprUnionMember0, RankBySumExprUnionMember3ExprUnionMember6ExprUnionMember1
 ]
 
 
-class RankByUnionMember2ExprUnionMember3ExprUnionMember6(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember2ExprUnionMember3ExprUnionMember6Expr]]
+class RankBySumExprUnionMember3ExprUnionMember6(TypedDict, total=False):
+    exprs: Required[Iterable[RankBySumExprUnionMember3ExprUnionMember6Expr]]
 
-    op: Required[Literal["Min"]]
+    type: Required[Literal["Min"]]
 
 
-class RankByUnionMember2ExprUnionMember3ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
+class RankBySumExprUnionMember3ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember2ExprUnionMember3ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankBySumExprUnionMember3ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember2ExprUnionMember3ExprUnionMember7Expr: TypeAlias = Union[
-    RankByUnionMember2ExprUnionMember3ExprUnionMember7ExprUnionMember0,
-    RankByUnionMember2ExprUnionMember3ExprUnionMember7ExprUnionMember1,
+RankBySumExprUnionMember3ExprUnionMember7Expr: TypeAlias = Union[
+    RankBySumExprUnionMember3ExprUnionMember7ExprUnionMember0, RankBySumExprUnionMember3ExprUnionMember7ExprUnionMember1
 ]
 
 
-class RankByUnionMember2ExprUnionMember3ExprUnionMember7(TypedDict, total=False):
+class RankBySumExprUnionMember3ExprUnionMember7(TypedDict, total=False):
     base: Required[float]
 
-    expr: Required[RankByUnionMember2ExprUnionMember3ExprUnionMember7Expr]
+    expr: Required[RankBySumExprUnionMember3ExprUnionMember7Expr]
 
-    op: Required[Literal["Log"]]
+    type: Required[Literal["Log"]]
 
 
-RankByUnionMember2ExprUnionMember3Expr: TypeAlias = Union[
-    RankByUnionMember2ExprUnionMember3ExprUnionMember0,
-    RankByUnionMember2ExprUnionMember3ExprUnionMember1,
-    RankByUnionMember2ExprUnionMember3ExprUnionMember2,
-    RankByUnionMember2ExprUnionMember3ExprUnionMember3,
-    RankByUnionMember2ExprUnionMember3ExprUnionMember4,
-    RankByUnionMember2ExprUnionMember3ExprUnionMember5,
-    RankByUnionMember2ExprUnionMember3ExprUnionMember6,
-    RankByUnionMember2ExprUnionMember3ExprUnionMember7,
+RankBySumExprUnionMember3Expr: TypeAlias = Union[
+    RankBySumExprUnionMember3ExprUnionMember0,
+    RankBySumExprUnionMember3ExprUnionMember1,
+    RankBySumExprUnionMember3ExprUnionMember2,
+    RankBySumExprUnionMember3ExprUnionMember3,
+    RankBySumExprUnionMember3ExprUnionMember4,
+    RankBySumExprUnionMember3ExprUnionMember5,
+    RankBySumExprUnionMember3ExprUnionMember6,
+    RankBySumExprUnionMember3ExprUnionMember7,
 ]
 
 
-class RankByUnionMember2ExprUnionMember3(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember2ExprUnionMember3Expr]]
+class RankBySumExprUnionMember3(TypedDict, total=False):
+    exprs: Required[Iterable[RankBySumExprUnionMember3Expr]]
 
-    op: Required[Literal["Mult"]]
+    type: Required[Literal["Mult"]]
 
 
-class RankByUnionMember2ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
+class RankBySumExprUnionMember4ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember2ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankBySumExprUnionMember4ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-class RankByUnionMember2ExprUnionMember4ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
+class RankBySumExprUnionMember4ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember2ExprUnionMember4ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankBySumExprUnionMember4ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember2ExprUnionMember4ExprUnionMember2Expr: TypeAlias = Union[
-    RankByUnionMember2ExprUnionMember4ExprUnionMember2ExprUnionMember0,
-    RankByUnionMember2ExprUnionMember4ExprUnionMember2ExprUnionMember1,
+RankBySumExprUnionMember4ExprUnionMember2Expr: TypeAlias = Union[
+    RankBySumExprUnionMember4ExprUnionMember2ExprUnionMember0, RankBySumExprUnionMember4ExprUnionMember2ExprUnionMember1
 ]
 
 
-class RankByUnionMember2ExprUnionMember4ExprUnionMember2(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember2ExprUnionMember4ExprUnionMember2Expr]]
+class RankBySumExprUnionMember4ExprUnionMember2(TypedDict, total=False):
+    exprs: Required[Iterable[RankBySumExprUnionMember4ExprUnionMember2Expr]]
 
-    op: Required[Literal["Sum"]]
+    type: Required[Literal["Sum"]]
 
 
-class RankByUnionMember2ExprUnionMember4ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
+class RankBySumExprUnionMember4ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember2ExprUnionMember4ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankBySumExprUnionMember4ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember2ExprUnionMember4ExprUnionMember3Expr: TypeAlias = Union[
-    RankByUnionMember2ExprUnionMember4ExprUnionMember3ExprUnionMember0,
-    RankByUnionMember2ExprUnionMember4ExprUnionMember3ExprUnionMember1,
+RankBySumExprUnionMember4ExprUnionMember3Expr: TypeAlias = Union[
+    RankBySumExprUnionMember4ExprUnionMember3ExprUnionMember0, RankBySumExprUnionMember4ExprUnionMember3ExprUnionMember1
 ]
 
 
-class RankByUnionMember2ExprUnionMember4ExprUnionMember3(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember2ExprUnionMember4ExprUnionMember3Expr]]
+class RankBySumExprUnionMember4ExprUnionMember3(TypedDict, total=False):
+    exprs: Required[Iterable[RankBySumExprUnionMember4ExprUnionMember3Expr]]
 
-    op: Required[Literal["Mult"]]
+    type: Required[Literal["Mult"]]
 
 
-class RankByUnionMember2ExprUnionMember4ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
+class RankBySumExprUnionMember4ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember2ExprUnionMember4ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankBySumExprUnionMember4ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember2ExprUnionMember4ExprUnionMember4Expr: TypeAlias = Union[
-    RankByUnionMember2ExprUnionMember4ExprUnionMember4ExprUnionMember0,
-    RankByUnionMember2ExprUnionMember4ExprUnionMember4ExprUnionMember1,
+RankBySumExprUnionMember4ExprUnionMember4Expr: TypeAlias = Union[
+    RankBySumExprUnionMember4ExprUnionMember4ExprUnionMember0, RankBySumExprUnionMember4ExprUnionMember4ExprUnionMember1
 ]
 
 
-class RankByUnionMember2ExprUnionMember4ExprUnionMember4(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember2ExprUnionMember4ExprUnionMember4Expr]]
+class RankBySumExprUnionMember4ExprUnionMember4(TypedDict, total=False):
+    exprs: Required[Iterable[RankBySumExprUnionMember4ExprUnionMember4Expr]]
 
-    op: Required[Literal["Div"]]
+    type: Required[Literal["Div"]]
 
 
-class RankByUnionMember2ExprUnionMember4ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
+class RankBySumExprUnionMember4ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember2ExprUnionMember4ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankBySumExprUnionMember4ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember2ExprUnionMember4ExprUnionMember5Expr: TypeAlias = Union[
-    RankByUnionMember2ExprUnionMember4ExprUnionMember5ExprUnionMember0,
-    RankByUnionMember2ExprUnionMember4ExprUnionMember5ExprUnionMember1,
+RankBySumExprUnionMember4ExprUnionMember5Expr: TypeAlias = Union[
+    RankBySumExprUnionMember4ExprUnionMember5ExprUnionMember0, RankBySumExprUnionMember4ExprUnionMember5ExprUnionMember1
 ]
 
 
-class RankByUnionMember2ExprUnionMember4ExprUnionMember5(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember2ExprUnionMember4ExprUnionMember5Expr]]
+class RankBySumExprUnionMember4ExprUnionMember5(TypedDict, total=False):
+    exprs: Required[Iterable[RankBySumExprUnionMember4ExprUnionMember5Expr]]
 
-    op: Required[Literal["Max"]]
+    type: Required[Literal["Max"]]
 
 
-class RankByUnionMember2ExprUnionMember4ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
+class RankBySumExprUnionMember4ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember2ExprUnionMember4ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankBySumExprUnionMember4ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember2ExprUnionMember4ExprUnionMember6Expr: TypeAlias = Union[
-    RankByUnionMember2ExprUnionMember4ExprUnionMember6ExprUnionMember0,
-    RankByUnionMember2ExprUnionMember4ExprUnionMember6ExprUnionMember1,
+RankBySumExprUnionMember4ExprUnionMember6Expr: TypeAlias = Union[
+    RankBySumExprUnionMember4ExprUnionMember6ExprUnionMember0, RankBySumExprUnionMember4ExprUnionMember6ExprUnionMember1
 ]
 
 
-class RankByUnionMember2ExprUnionMember4ExprUnionMember6(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember2ExprUnionMember4ExprUnionMember6Expr]]
+class RankBySumExprUnionMember4ExprUnionMember6(TypedDict, total=False):
+    exprs: Required[Iterable[RankBySumExprUnionMember4ExprUnionMember6Expr]]
 
-    op: Required[Literal["Min"]]
+    type: Required[Literal["Min"]]
 
 
-class RankByUnionMember2ExprUnionMember4ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
+class RankBySumExprUnionMember4ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember2ExprUnionMember4ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankBySumExprUnionMember4ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember2ExprUnionMember4ExprUnionMember7Expr: TypeAlias = Union[
-    RankByUnionMember2ExprUnionMember4ExprUnionMember7ExprUnionMember0,
-    RankByUnionMember2ExprUnionMember4ExprUnionMember7ExprUnionMember1,
+RankBySumExprUnionMember4ExprUnionMember7Expr: TypeAlias = Union[
+    RankBySumExprUnionMember4ExprUnionMember7ExprUnionMember0, RankBySumExprUnionMember4ExprUnionMember7ExprUnionMember1
 ]
 
 
-class RankByUnionMember2ExprUnionMember4ExprUnionMember7(TypedDict, total=False):
+class RankBySumExprUnionMember4ExprUnionMember7(TypedDict, total=False):
     base: Required[float]
 
-    expr: Required[RankByUnionMember2ExprUnionMember4ExprUnionMember7Expr]
+    expr: Required[RankBySumExprUnionMember4ExprUnionMember7Expr]
 
-    op: Required[Literal["Log"]]
+    type: Required[Literal["Log"]]
 
 
-RankByUnionMember2ExprUnionMember4Expr: TypeAlias = Union[
-    RankByUnionMember2ExprUnionMember4ExprUnionMember0,
-    RankByUnionMember2ExprUnionMember4ExprUnionMember1,
-    RankByUnionMember2ExprUnionMember4ExprUnionMember2,
-    RankByUnionMember2ExprUnionMember4ExprUnionMember3,
-    RankByUnionMember2ExprUnionMember4ExprUnionMember4,
-    RankByUnionMember2ExprUnionMember4ExprUnionMember5,
-    RankByUnionMember2ExprUnionMember4ExprUnionMember6,
-    RankByUnionMember2ExprUnionMember4ExprUnionMember7,
+RankBySumExprUnionMember4Expr: TypeAlias = Union[
+    RankBySumExprUnionMember4ExprUnionMember0,
+    RankBySumExprUnionMember4ExprUnionMember1,
+    RankBySumExprUnionMember4ExprUnionMember2,
+    RankBySumExprUnionMember4ExprUnionMember3,
+    RankBySumExprUnionMember4ExprUnionMember4,
+    RankBySumExprUnionMember4ExprUnionMember5,
+    RankBySumExprUnionMember4ExprUnionMember6,
+    RankBySumExprUnionMember4ExprUnionMember7,
 ]
 
 
-class RankByUnionMember2ExprUnionMember4(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember2ExprUnionMember4Expr]]
+class RankBySumExprUnionMember4(TypedDict, total=False):
+    exprs: Required[Iterable[RankBySumExprUnionMember4Expr]]
 
-    op: Required[Literal["Div"]]
+    type: Required[Literal["Div"]]
 
 
-class RankByUnionMember2ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
+class RankBySumExprUnionMember5ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember2ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankBySumExprUnionMember5ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-class RankByUnionMember2ExprUnionMember5ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
+class RankBySumExprUnionMember5ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember2ExprUnionMember5ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankBySumExprUnionMember5ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember2ExprUnionMember5ExprUnionMember2Expr: TypeAlias = Union[
-    RankByUnionMember2ExprUnionMember5ExprUnionMember2ExprUnionMember0,
-    RankByUnionMember2ExprUnionMember5ExprUnionMember2ExprUnionMember1,
+RankBySumExprUnionMember5ExprUnionMember2Expr: TypeAlias = Union[
+    RankBySumExprUnionMember5ExprUnionMember2ExprUnionMember0, RankBySumExprUnionMember5ExprUnionMember2ExprUnionMember1
 ]
 
 
-class RankByUnionMember2ExprUnionMember5ExprUnionMember2(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember2ExprUnionMember5ExprUnionMember2Expr]]
+class RankBySumExprUnionMember5ExprUnionMember2(TypedDict, total=False):
+    exprs: Required[Iterable[RankBySumExprUnionMember5ExprUnionMember2Expr]]
 
-    op: Required[Literal["Sum"]]
+    type: Required[Literal["Sum"]]
 
 
-class RankByUnionMember2ExprUnionMember5ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
+class RankBySumExprUnionMember5ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember2ExprUnionMember5ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankBySumExprUnionMember5ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember2ExprUnionMember5ExprUnionMember3Expr: TypeAlias = Union[
-    RankByUnionMember2ExprUnionMember5ExprUnionMember3ExprUnionMember0,
-    RankByUnionMember2ExprUnionMember5ExprUnionMember3ExprUnionMember1,
+RankBySumExprUnionMember5ExprUnionMember3Expr: TypeAlias = Union[
+    RankBySumExprUnionMember5ExprUnionMember3ExprUnionMember0, RankBySumExprUnionMember5ExprUnionMember3ExprUnionMember1
 ]
 
 
-class RankByUnionMember2ExprUnionMember5ExprUnionMember3(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember2ExprUnionMember5ExprUnionMember3Expr]]
+class RankBySumExprUnionMember5ExprUnionMember3(TypedDict, total=False):
+    exprs: Required[Iterable[RankBySumExprUnionMember5ExprUnionMember3Expr]]
 
-    op: Required[Literal["Mult"]]
+    type: Required[Literal["Mult"]]
 
 
-class RankByUnionMember2ExprUnionMember5ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
+class RankBySumExprUnionMember5ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember2ExprUnionMember5ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankBySumExprUnionMember5ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember2ExprUnionMember5ExprUnionMember4Expr: TypeAlias = Union[
-    RankByUnionMember2ExprUnionMember5ExprUnionMember4ExprUnionMember0,
-    RankByUnionMember2ExprUnionMember5ExprUnionMember4ExprUnionMember1,
+RankBySumExprUnionMember5ExprUnionMember4Expr: TypeAlias = Union[
+    RankBySumExprUnionMember5ExprUnionMember4ExprUnionMember0, RankBySumExprUnionMember5ExprUnionMember4ExprUnionMember1
 ]
 
 
-class RankByUnionMember2ExprUnionMember5ExprUnionMember4(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember2ExprUnionMember5ExprUnionMember4Expr]]
+class RankBySumExprUnionMember5ExprUnionMember4(TypedDict, total=False):
+    exprs: Required[Iterable[RankBySumExprUnionMember5ExprUnionMember4Expr]]
 
-    op: Required[Literal["Div"]]
+    type: Required[Literal["Div"]]
 
 
-class RankByUnionMember2ExprUnionMember5ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
+class RankBySumExprUnionMember5ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember2ExprUnionMember5ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankBySumExprUnionMember5ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember2ExprUnionMember5ExprUnionMember5Expr: TypeAlias = Union[
-    RankByUnionMember2ExprUnionMember5ExprUnionMember5ExprUnionMember0,
-    RankByUnionMember2ExprUnionMember5ExprUnionMember5ExprUnionMember1,
+RankBySumExprUnionMember5ExprUnionMember5Expr: TypeAlias = Union[
+    RankBySumExprUnionMember5ExprUnionMember5ExprUnionMember0, RankBySumExprUnionMember5ExprUnionMember5ExprUnionMember1
 ]
 
 
-class RankByUnionMember2ExprUnionMember5ExprUnionMember5(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember2ExprUnionMember5ExprUnionMember5Expr]]
+class RankBySumExprUnionMember5ExprUnionMember5(TypedDict, total=False):
+    exprs: Required[Iterable[RankBySumExprUnionMember5ExprUnionMember5Expr]]
 
-    op: Required[Literal["Max"]]
+    type: Required[Literal["Max"]]
 
 
-class RankByUnionMember2ExprUnionMember5ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
+class RankBySumExprUnionMember5ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember2ExprUnionMember5ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankBySumExprUnionMember5ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember2ExprUnionMember5ExprUnionMember6Expr: TypeAlias = Union[
-    RankByUnionMember2ExprUnionMember5ExprUnionMember6ExprUnionMember0,
-    RankByUnionMember2ExprUnionMember5ExprUnionMember6ExprUnionMember1,
+RankBySumExprUnionMember5ExprUnionMember6Expr: TypeAlias = Union[
+    RankBySumExprUnionMember5ExprUnionMember6ExprUnionMember0, RankBySumExprUnionMember5ExprUnionMember6ExprUnionMember1
 ]
 
 
-class RankByUnionMember2ExprUnionMember5ExprUnionMember6(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember2ExprUnionMember5ExprUnionMember6Expr]]
+class RankBySumExprUnionMember5ExprUnionMember6(TypedDict, total=False):
+    exprs: Required[Iterable[RankBySumExprUnionMember5ExprUnionMember6Expr]]
 
-    op: Required[Literal["Min"]]
+    type: Required[Literal["Min"]]
 
 
-class RankByUnionMember2ExprUnionMember5ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
+class RankBySumExprUnionMember5ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember2ExprUnionMember5ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankBySumExprUnionMember5ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember2ExprUnionMember5ExprUnionMember7Expr: TypeAlias = Union[
-    RankByUnionMember2ExprUnionMember5ExprUnionMember7ExprUnionMember0,
-    RankByUnionMember2ExprUnionMember5ExprUnionMember7ExprUnionMember1,
+RankBySumExprUnionMember5ExprUnionMember7Expr: TypeAlias = Union[
+    RankBySumExprUnionMember5ExprUnionMember7ExprUnionMember0, RankBySumExprUnionMember5ExprUnionMember7ExprUnionMember1
 ]
 
 
-class RankByUnionMember2ExprUnionMember5ExprUnionMember7(TypedDict, total=False):
+class RankBySumExprUnionMember5ExprUnionMember7(TypedDict, total=False):
     base: Required[float]
 
-    expr: Required[RankByUnionMember2ExprUnionMember5ExprUnionMember7Expr]
+    expr: Required[RankBySumExprUnionMember5ExprUnionMember7Expr]
 
-    op: Required[Literal["Log"]]
+    type: Required[Literal["Log"]]
 
 
-RankByUnionMember2ExprUnionMember5Expr: TypeAlias = Union[
-    RankByUnionMember2ExprUnionMember5ExprUnionMember0,
-    RankByUnionMember2ExprUnionMember5ExprUnionMember1,
-    RankByUnionMember2ExprUnionMember5ExprUnionMember2,
-    RankByUnionMember2ExprUnionMember5ExprUnionMember3,
-    RankByUnionMember2ExprUnionMember5ExprUnionMember4,
-    RankByUnionMember2ExprUnionMember5ExprUnionMember5,
-    RankByUnionMember2ExprUnionMember5ExprUnionMember6,
-    RankByUnionMember2ExprUnionMember5ExprUnionMember7,
+RankBySumExprUnionMember5Expr: TypeAlias = Union[
+    RankBySumExprUnionMember5ExprUnionMember0,
+    RankBySumExprUnionMember5ExprUnionMember1,
+    RankBySumExprUnionMember5ExprUnionMember2,
+    RankBySumExprUnionMember5ExprUnionMember3,
+    RankBySumExprUnionMember5ExprUnionMember4,
+    RankBySumExprUnionMember5ExprUnionMember5,
+    RankBySumExprUnionMember5ExprUnionMember6,
+    RankBySumExprUnionMember5ExprUnionMember7,
 ]
 
 
-class RankByUnionMember2ExprUnionMember5(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember2ExprUnionMember5Expr]]
+class RankBySumExprUnionMember5(TypedDict, total=False):
+    exprs: Required[Iterable[RankBySumExprUnionMember5Expr]]
 
-    op: Required[Literal["Max"]]
+    type: Required[Literal["Max"]]
 
 
-class RankByUnionMember2ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
+class RankBySumExprUnionMember6ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember2ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankBySumExprUnionMember6ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-class RankByUnionMember2ExprUnionMember6ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
+class RankBySumExprUnionMember6ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember2ExprUnionMember6ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankBySumExprUnionMember6ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember2ExprUnionMember6ExprUnionMember2Expr: TypeAlias = Union[
-    RankByUnionMember2ExprUnionMember6ExprUnionMember2ExprUnionMember0,
-    RankByUnionMember2ExprUnionMember6ExprUnionMember2ExprUnionMember1,
+RankBySumExprUnionMember6ExprUnionMember2Expr: TypeAlias = Union[
+    RankBySumExprUnionMember6ExprUnionMember2ExprUnionMember0, RankBySumExprUnionMember6ExprUnionMember2ExprUnionMember1
 ]
 
 
-class RankByUnionMember2ExprUnionMember6ExprUnionMember2(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember2ExprUnionMember6ExprUnionMember2Expr]]
+class RankBySumExprUnionMember6ExprUnionMember2(TypedDict, total=False):
+    exprs: Required[Iterable[RankBySumExprUnionMember6ExprUnionMember2Expr]]
 
-    op: Required[Literal["Sum"]]
+    type: Required[Literal["Sum"]]
 
 
-class RankByUnionMember2ExprUnionMember6ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
+class RankBySumExprUnionMember6ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember2ExprUnionMember6ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankBySumExprUnionMember6ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember2ExprUnionMember6ExprUnionMember3Expr: TypeAlias = Union[
-    RankByUnionMember2ExprUnionMember6ExprUnionMember3ExprUnionMember0,
-    RankByUnionMember2ExprUnionMember6ExprUnionMember3ExprUnionMember1,
+RankBySumExprUnionMember6ExprUnionMember3Expr: TypeAlias = Union[
+    RankBySumExprUnionMember6ExprUnionMember3ExprUnionMember0, RankBySumExprUnionMember6ExprUnionMember3ExprUnionMember1
 ]
 
 
-class RankByUnionMember2ExprUnionMember6ExprUnionMember3(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember2ExprUnionMember6ExprUnionMember3Expr]]
+class RankBySumExprUnionMember6ExprUnionMember3(TypedDict, total=False):
+    exprs: Required[Iterable[RankBySumExprUnionMember6ExprUnionMember3Expr]]
 
-    op: Required[Literal["Mult"]]
+    type: Required[Literal["Mult"]]
 
 
-class RankByUnionMember2ExprUnionMember6ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
+class RankBySumExprUnionMember6ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember2ExprUnionMember6ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankBySumExprUnionMember6ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember2ExprUnionMember6ExprUnionMember4Expr: TypeAlias = Union[
-    RankByUnionMember2ExprUnionMember6ExprUnionMember4ExprUnionMember0,
-    RankByUnionMember2ExprUnionMember6ExprUnionMember4ExprUnionMember1,
+RankBySumExprUnionMember6ExprUnionMember4Expr: TypeAlias = Union[
+    RankBySumExprUnionMember6ExprUnionMember4ExprUnionMember0, RankBySumExprUnionMember6ExprUnionMember4ExprUnionMember1
 ]
 
 
-class RankByUnionMember2ExprUnionMember6ExprUnionMember4(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember2ExprUnionMember6ExprUnionMember4Expr]]
+class RankBySumExprUnionMember6ExprUnionMember4(TypedDict, total=False):
+    exprs: Required[Iterable[RankBySumExprUnionMember6ExprUnionMember4Expr]]
 
-    op: Required[Literal["Div"]]
+    type: Required[Literal["Div"]]
 
 
-class RankByUnionMember2ExprUnionMember6ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
+class RankBySumExprUnionMember6ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember2ExprUnionMember6ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankBySumExprUnionMember6ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember2ExprUnionMember6ExprUnionMember5Expr: TypeAlias = Union[
-    RankByUnionMember2ExprUnionMember6ExprUnionMember5ExprUnionMember0,
-    RankByUnionMember2ExprUnionMember6ExprUnionMember5ExprUnionMember1,
+RankBySumExprUnionMember6ExprUnionMember5Expr: TypeAlias = Union[
+    RankBySumExprUnionMember6ExprUnionMember5ExprUnionMember0, RankBySumExprUnionMember6ExprUnionMember5ExprUnionMember1
 ]
 
 
-class RankByUnionMember2ExprUnionMember6ExprUnionMember5(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember2ExprUnionMember6ExprUnionMember5Expr]]
+class RankBySumExprUnionMember6ExprUnionMember5(TypedDict, total=False):
+    exprs: Required[Iterable[RankBySumExprUnionMember6ExprUnionMember5Expr]]
 
-    op: Required[Literal["Max"]]
+    type: Required[Literal["Max"]]
 
 
-class RankByUnionMember2ExprUnionMember6ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
+class RankBySumExprUnionMember6ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember2ExprUnionMember6ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankBySumExprUnionMember6ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember2ExprUnionMember6ExprUnionMember6Expr: TypeAlias = Union[
-    RankByUnionMember2ExprUnionMember6ExprUnionMember6ExprUnionMember0,
-    RankByUnionMember2ExprUnionMember6ExprUnionMember6ExprUnionMember1,
+RankBySumExprUnionMember6ExprUnionMember6Expr: TypeAlias = Union[
+    RankBySumExprUnionMember6ExprUnionMember6ExprUnionMember0, RankBySumExprUnionMember6ExprUnionMember6ExprUnionMember1
 ]
 
 
-class RankByUnionMember2ExprUnionMember6ExprUnionMember6(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember2ExprUnionMember6ExprUnionMember6Expr]]
+class RankBySumExprUnionMember6ExprUnionMember6(TypedDict, total=False):
+    exprs: Required[Iterable[RankBySumExprUnionMember6ExprUnionMember6Expr]]
 
-    op: Required[Literal["Min"]]
+    type: Required[Literal["Min"]]
 
 
-class RankByUnionMember2ExprUnionMember6ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
+class RankBySumExprUnionMember6ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember2ExprUnionMember6ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankBySumExprUnionMember6ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember2ExprUnionMember6ExprUnionMember7Expr: TypeAlias = Union[
-    RankByUnionMember2ExprUnionMember6ExprUnionMember7ExprUnionMember0,
-    RankByUnionMember2ExprUnionMember6ExprUnionMember7ExprUnionMember1,
+RankBySumExprUnionMember6ExprUnionMember7Expr: TypeAlias = Union[
+    RankBySumExprUnionMember6ExprUnionMember7ExprUnionMember0, RankBySumExprUnionMember6ExprUnionMember7ExprUnionMember1
 ]
 
 
-class RankByUnionMember2ExprUnionMember6ExprUnionMember7(TypedDict, total=False):
+class RankBySumExprUnionMember6ExprUnionMember7(TypedDict, total=False):
     base: Required[float]
 
-    expr: Required[RankByUnionMember2ExprUnionMember6ExprUnionMember7Expr]
+    expr: Required[RankBySumExprUnionMember6ExprUnionMember7Expr]
 
-    op: Required[Literal["Log"]]
+    type: Required[Literal["Log"]]
 
 
-RankByUnionMember2ExprUnionMember6Expr: TypeAlias = Union[
-    RankByUnionMember2ExprUnionMember6ExprUnionMember0,
-    RankByUnionMember2ExprUnionMember6ExprUnionMember1,
-    RankByUnionMember2ExprUnionMember6ExprUnionMember2,
-    RankByUnionMember2ExprUnionMember6ExprUnionMember3,
-    RankByUnionMember2ExprUnionMember6ExprUnionMember4,
-    RankByUnionMember2ExprUnionMember6ExprUnionMember5,
-    RankByUnionMember2ExprUnionMember6ExprUnionMember6,
-    RankByUnionMember2ExprUnionMember6ExprUnionMember7,
+RankBySumExprUnionMember6Expr: TypeAlias = Union[
+    RankBySumExprUnionMember6ExprUnionMember0,
+    RankBySumExprUnionMember6ExprUnionMember1,
+    RankBySumExprUnionMember6ExprUnionMember2,
+    RankBySumExprUnionMember6ExprUnionMember3,
+    RankBySumExprUnionMember6ExprUnionMember4,
+    RankBySumExprUnionMember6ExprUnionMember5,
+    RankBySumExprUnionMember6ExprUnionMember6,
+    RankBySumExprUnionMember6ExprUnionMember7,
 ]
 
 
-class RankByUnionMember2ExprUnionMember6(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember2ExprUnionMember6Expr]]
+class RankBySumExprUnionMember6(TypedDict, total=False):
+    exprs: Required[Iterable[RankBySumExprUnionMember6Expr]]
 
-    op: Required[Literal["Min"]]
+    type: Required[Literal["Min"]]
 
 
-class RankByUnionMember2ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
+class RankBySumExprUnionMember7ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember2ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankBySumExprUnionMember7ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-class RankByUnionMember2ExprUnionMember7ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
+class RankBySumExprUnionMember7ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember2ExprUnionMember7ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankBySumExprUnionMember7ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember2ExprUnionMember7ExprUnionMember2Expr: TypeAlias = Union[
-    RankByUnionMember2ExprUnionMember7ExprUnionMember2ExprUnionMember0,
-    RankByUnionMember2ExprUnionMember7ExprUnionMember2ExprUnionMember1,
+RankBySumExprUnionMember7ExprUnionMember2Expr: TypeAlias = Union[
+    RankBySumExprUnionMember7ExprUnionMember2ExprUnionMember0, RankBySumExprUnionMember7ExprUnionMember2ExprUnionMember1
 ]
 
 
-class RankByUnionMember2ExprUnionMember7ExprUnionMember2(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember2ExprUnionMember7ExprUnionMember2Expr]]
+class RankBySumExprUnionMember7ExprUnionMember2(TypedDict, total=False):
+    exprs: Required[Iterable[RankBySumExprUnionMember7ExprUnionMember2Expr]]
 
-    op: Required[Literal["Sum"]]
+    type: Required[Literal["Sum"]]
 
 
-class RankByUnionMember2ExprUnionMember7ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
+class RankBySumExprUnionMember7ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember2ExprUnionMember7ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankBySumExprUnionMember7ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember2ExprUnionMember7ExprUnionMember3Expr: TypeAlias = Union[
-    RankByUnionMember2ExprUnionMember7ExprUnionMember3ExprUnionMember0,
-    RankByUnionMember2ExprUnionMember7ExprUnionMember3ExprUnionMember1,
+RankBySumExprUnionMember7ExprUnionMember3Expr: TypeAlias = Union[
+    RankBySumExprUnionMember7ExprUnionMember3ExprUnionMember0, RankBySumExprUnionMember7ExprUnionMember3ExprUnionMember1
 ]
 
 
-class RankByUnionMember2ExprUnionMember7ExprUnionMember3(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember2ExprUnionMember7ExprUnionMember3Expr]]
+class RankBySumExprUnionMember7ExprUnionMember3(TypedDict, total=False):
+    exprs: Required[Iterable[RankBySumExprUnionMember7ExprUnionMember3Expr]]
 
-    op: Required[Literal["Mult"]]
+    type: Required[Literal["Mult"]]
 
 
-class RankByUnionMember2ExprUnionMember7ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
+class RankBySumExprUnionMember7ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember2ExprUnionMember7ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankBySumExprUnionMember7ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember2ExprUnionMember7ExprUnionMember4Expr: TypeAlias = Union[
-    RankByUnionMember2ExprUnionMember7ExprUnionMember4ExprUnionMember0,
-    RankByUnionMember2ExprUnionMember7ExprUnionMember4ExprUnionMember1,
+RankBySumExprUnionMember7ExprUnionMember4Expr: TypeAlias = Union[
+    RankBySumExprUnionMember7ExprUnionMember4ExprUnionMember0, RankBySumExprUnionMember7ExprUnionMember4ExprUnionMember1
 ]
 
 
-class RankByUnionMember2ExprUnionMember7ExprUnionMember4(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember2ExprUnionMember7ExprUnionMember4Expr]]
+class RankBySumExprUnionMember7ExprUnionMember4(TypedDict, total=False):
+    exprs: Required[Iterable[RankBySumExprUnionMember7ExprUnionMember4Expr]]
 
-    op: Required[Literal["Div"]]
+    type: Required[Literal["Div"]]
 
 
-class RankByUnionMember2ExprUnionMember7ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
+class RankBySumExprUnionMember7ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember2ExprUnionMember7ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankBySumExprUnionMember7ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember2ExprUnionMember7ExprUnionMember5Expr: TypeAlias = Union[
-    RankByUnionMember2ExprUnionMember7ExprUnionMember5ExprUnionMember0,
-    RankByUnionMember2ExprUnionMember7ExprUnionMember5ExprUnionMember1,
+RankBySumExprUnionMember7ExprUnionMember5Expr: TypeAlias = Union[
+    RankBySumExprUnionMember7ExprUnionMember5ExprUnionMember0, RankBySumExprUnionMember7ExprUnionMember5ExprUnionMember1
 ]
 
 
-class RankByUnionMember2ExprUnionMember7ExprUnionMember5(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember2ExprUnionMember7ExprUnionMember5Expr]]
+class RankBySumExprUnionMember7ExprUnionMember5(TypedDict, total=False):
+    exprs: Required[Iterable[RankBySumExprUnionMember7ExprUnionMember5Expr]]
 
-    op: Required[Literal["Max"]]
+    type: Required[Literal["Max"]]
 
 
-class RankByUnionMember2ExprUnionMember7ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
+class RankBySumExprUnionMember7ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember2ExprUnionMember7ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankBySumExprUnionMember7ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember2ExprUnionMember7ExprUnionMember6Expr: TypeAlias = Union[
-    RankByUnionMember2ExprUnionMember7ExprUnionMember6ExprUnionMember0,
-    RankByUnionMember2ExprUnionMember7ExprUnionMember6ExprUnionMember1,
+RankBySumExprUnionMember7ExprUnionMember6Expr: TypeAlias = Union[
+    RankBySumExprUnionMember7ExprUnionMember6ExprUnionMember0, RankBySumExprUnionMember7ExprUnionMember6ExprUnionMember1
 ]
 
 
-class RankByUnionMember2ExprUnionMember7ExprUnionMember6(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember2ExprUnionMember7ExprUnionMember6Expr]]
+class RankBySumExprUnionMember7ExprUnionMember6(TypedDict, total=False):
+    exprs: Required[Iterable[RankBySumExprUnionMember7ExprUnionMember6Expr]]
 
-    op: Required[Literal["Min"]]
+    type: Required[Literal["Min"]]
 
 
-class RankByUnionMember2ExprUnionMember7ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
+class RankBySumExprUnionMember7ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember2ExprUnionMember7ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankBySumExprUnionMember7ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember2ExprUnionMember7ExprUnionMember7Expr: TypeAlias = Union[
-    RankByUnionMember2ExprUnionMember7ExprUnionMember7ExprUnionMember0,
-    RankByUnionMember2ExprUnionMember7ExprUnionMember7ExprUnionMember1,
+RankBySumExprUnionMember7ExprUnionMember7Expr: TypeAlias = Union[
+    RankBySumExprUnionMember7ExprUnionMember7ExprUnionMember0, RankBySumExprUnionMember7ExprUnionMember7ExprUnionMember1
 ]
 
 
-class RankByUnionMember2ExprUnionMember7ExprUnionMember7(TypedDict, total=False):
+class RankBySumExprUnionMember7ExprUnionMember7(TypedDict, total=False):
     base: Required[float]
 
-    expr: Required[RankByUnionMember2ExprUnionMember7ExprUnionMember7Expr]
+    expr: Required[RankBySumExprUnionMember7ExprUnionMember7Expr]
 
-    op: Required[Literal["Log"]]
+    type: Required[Literal["Log"]]
 
 
-RankByUnionMember2ExprUnionMember7Expr: TypeAlias = Union[
-    RankByUnionMember2ExprUnionMember7ExprUnionMember0,
-    RankByUnionMember2ExprUnionMember7ExprUnionMember1,
-    RankByUnionMember2ExprUnionMember7ExprUnionMember2,
-    RankByUnionMember2ExprUnionMember7ExprUnionMember3,
-    RankByUnionMember2ExprUnionMember7ExprUnionMember4,
-    RankByUnionMember2ExprUnionMember7ExprUnionMember5,
-    RankByUnionMember2ExprUnionMember7ExprUnionMember6,
-    RankByUnionMember2ExprUnionMember7ExprUnionMember7,
+RankBySumExprUnionMember7Expr: TypeAlias = Union[
+    RankBySumExprUnionMember7ExprUnionMember0,
+    RankBySumExprUnionMember7ExprUnionMember1,
+    RankBySumExprUnionMember7ExprUnionMember2,
+    RankBySumExprUnionMember7ExprUnionMember3,
+    RankBySumExprUnionMember7ExprUnionMember4,
+    RankBySumExprUnionMember7ExprUnionMember5,
+    RankBySumExprUnionMember7ExprUnionMember6,
+    RankBySumExprUnionMember7ExprUnionMember7,
 ]
 
 
-class RankByUnionMember2ExprUnionMember7(TypedDict, total=False):
+class RankBySumExprUnionMember7(TypedDict, total=False):
     base: Required[float]
 
-    expr: Required[RankByUnionMember2ExprUnionMember7Expr]
+    expr: Required[RankBySumExprUnionMember7Expr]
 
-    op: Required[Literal["Log"]]
+    type: Required[Literal["Log"]]
 
 
-RankByUnionMember2Expr: TypeAlias = Union[
-    RankByUnionMember2ExprUnionMember0,
-    RankByUnionMember2ExprUnionMember1,
-    RankByUnionMember2ExprUnionMember2,
-    RankByUnionMember2ExprUnionMember3,
-    RankByUnionMember2ExprUnionMember4,
-    RankByUnionMember2ExprUnionMember5,
-    RankByUnionMember2ExprUnionMember6,
-    RankByUnionMember2ExprUnionMember7,
+RankBySumExpr: TypeAlias = Union[
+    RankBySumExprUnionMember0,
+    RankBySumExprUnionMember1,
+    RankBySumExprUnionMember2,
+    RankBySumExprUnionMember3,
+    RankBySumExprUnionMember4,
+    RankBySumExprUnionMember5,
+    RankBySumExprUnionMember6,
+    RankBySumExprUnionMember7,
 ]
 
 
-class RankByUnionMember2(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember2Expr]]
+class RankBySum(TypedDict, total=False):
+    exprs: Required[Iterable[RankBySumExpr]]
 
-    op: Required[Literal["Sum"]]
+    type: Required[Literal["Sum"]]
 
 
-class RankByUnionMember3ExprUnionMember0(TypedDict, total=False):
+class RankByMultExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember3ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMultExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-class RankByUnionMember3ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
+class RankByMultExprUnionMember2ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember3ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMultExprUnionMember2ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-class RankByUnionMember3ExprUnionMember2ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
+class RankByMultExprUnionMember2ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember3ExprUnionMember2ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMultExprUnionMember2ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember3ExprUnionMember2ExprUnionMember2Expr: TypeAlias = Union[
-    RankByUnionMember3ExprUnionMember2ExprUnionMember2ExprUnionMember0,
-    RankByUnionMember3ExprUnionMember2ExprUnionMember2ExprUnionMember1,
+RankByMultExprUnionMember2ExprUnionMember2Expr: TypeAlias = Union[
+    RankByMultExprUnionMember2ExprUnionMember2ExprUnionMember0,
+    RankByMultExprUnionMember2ExprUnionMember2ExprUnionMember1,
 ]
 
 
-class RankByUnionMember3ExprUnionMember2ExprUnionMember2(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember3ExprUnionMember2ExprUnionMember2Expr]]
+class RankByMultExprUnionMember2ExprUnionMember2(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMultExprUnionMember2ExprUnionMember2Expr]]
 
-    op: Required[Literal["Sum"]]
+    type: Required[Literal["Sum"]]
 
 
-class RankByUnionMember3ExprUnionMember2ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
+class RankByMultExprUnionMember2ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember3ExprUnionMember2ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMultExprUnionMember2ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember3ExprUnionMember2ExprUnionMember3Expr: TypeAlias = Union[
-    RankByUnionMember3ExprUnionMember2ExprUnionMember3ExprUnionMember0,
-    RankByUnionMember3ExprUnionMember2ExprUnionMember3ExprUnionMember1,
+RankByMultExprUnionMember2ExprUnionMember3Expr: TypeAlias = Union[
+    RankByMultExprUnionMember2ExprUnionMember3ExprUnionMember0,
+    RankByMultExprUnionMember2ExprUnionMember3ExprUnionMember1,
 ]
 
 
-class RankByUnionMember3ExprUnionMember2ExprUnionMember3(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember3ExprUnionMember2ExprUnionMember3Expr]]
+class RankByMultExprUnionMember2ExprUnionMember3(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMultExprUnionMember2ExprUnionMember3Expr]]
 
-    op: Required[Literal["Mult"]]
+    type: Required[Literal["Mult"]]
 
 
-class RankByUnionMember3ExprUnionMember2ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
+class RankByMultExprUnionMember2ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember3ExprUnionMember2ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMultExprUnionMember2ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember3ExprUnionMember2ExprUnionMember4Expr: TypeAlias = Union[
-    RankByUnionMember3ExprUnionMember2ExprUnionMember4ExprUnionMember0,
-    RankByUnionMember3ExprUnionMember2ExprUnionMember4ExprUnionMember1,
+RankByMultExprUnionMember2ExprUnionMember4Expr: TypeAlias = Union[
+    RankByMultExprUnionMember2ExprUnionMember4ExprUnionMember0,
+    RankByMultExprUnionMember2ExprUnionMember4ExprUnionMember1,
 ]
 
 
-class RankByUnionMember3ExprUnionMember2ExprUnionMember4(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember3ExprUnionMember2ExprUnionMember4Expr]]
+class RankByMultExprUnionMember2ExprUnionMember4(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMultExprUnionMember2ExprUnionMember4Expr]]
 
-    op: Required[Literal["Div"]]
+    type: Required[Literal["Div"]]
 
 
-class RankByUnionMember3ExprUnionMember2ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
+class RankByMultExprUnionMember2ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember3ExprUnionMember2ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMultExprUnionMember2ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember3ExprUnionMember2ExprUnionMember5Expr: TypeAlias = Union[
-    RankByUnionMember3ExprUnionMember2ExprUnionMember5ExprUnionMember0,
-    RankByUnionMember3ExprUnionMember2ExprUnionMember5ExprUnionMember1,
+RankByMultExprUnionMember2ExprUnionMember5Expr: TypeAlias = Union[
+    RankByMultExprUnionMember2ExprUnionMember5ExprUnionMember0,
+    RankByMultExprUnionMember2ExprUnionMember5ExprUnionMember1,
 ]
 
 
-class RankByUnionMember3ExprUnionMember2ExprUnionMember5(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember3ExprUnionMember2ExprUnionMember5Expr]]
+class RankByMultExprUnionMember2ExprUnionMember5(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMultExprUnionMember2ExprUnionMember5Expr]]
 
-    op: Required[Literal["Max"]]
+    type: Required[Literal["Max"]]
 
 
-class RankByUnionMember3ExprUnionMember2ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
+class RankByMultExprUnionMember2ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember3ExprUnionMember2ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMultExprUnionMember2ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember3ExprUnionMember2ExprUnionMember6Expr: TypeAlias = Union[
-    RankByUnionMember3ExprUnionMember2ExprUnionMember6ExprUnionMember0,
-    RankByUnionMember3ExprUnionMember2ExprUnionMember6ExprUnionMember1,
+RankByMultExprUnionMember2ExprUnionMember6Expr: TypeAlias = Union[
+    RankByMultExprUnionMember2ExprUnionMember6ExprUnionMember0,
+    RankByMultExprUnionMember2ExprUnionMember6ExprUnionMember1,
 ]
 
 
-class RankByUnionMember3ExprUnionMember2ExprUnionMember6(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember3ExprUnionMember2ExprUnionMember6Expr]]
+class RankByMultExprUnionMember2ExprUnionMember6(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMultExprUnionMember2ExprUnionMember6Expr]]
 
-    op: Required[Literal["Min"]]
+    type: Required[Literal["Min"]]
 
 
-class RankByUnionMember3ExprUnionMember2ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
+class RankByMultExprUnionMember2ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember3ExprUnionMember2ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMultExprUnionMember2ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember3ExprUnionMember2ExprUnionMember7Expr: TypeAlias = Union[
-    RankByUnionMember3ExprUnionMember2ExprUnionMember7ExprUnionMember0,
-    RankByUnionMember3ExprUnionMember2ExprUnionMember7ExprUnionMember1,
+RankByMultExprUnionMember2ExprUnionMember7Expr: TypeAlias = Union[
+    RankByMultExprUnionMember2ExprUnionMember7ExprUnionMember0,
+    RankByMultExprUnionMember2ExprUnionMember7ExprUnionMember1,
 ]
 
 
-class RankByUnionMember3ExprUnionMember2ExprUnionMember7(TypedDict, total=False):
+class RankByMultExprUnionMember2ExprUnionMember7(TypedDict, total=False):
     base: Required[float]
 
-    expr: Required[RankByUnionMember3ExprUnionMember2ExprUnionMember7Expr]
+    expr: Required[RankByMultExprUnionMember2ExprUnionMember7Expr]
 
-    op: Required[Literal["Log"]]
+    type: Required[Literal["Log"]]
 
 
-RankByUnionMember3ExprUnionMember2Expr: TypeAlias = Union[
-    RankByUnionMember3ExprUnionMember2ExprUnionMember0,
-    RankByUnionMember3ExprUnionMember2ExprUnionMember1,
-    RankByUnionMember3ExprUnionMember2ExprUnionMember2,
-    RankByUnionMember3ExprUnionMember2ExprUnionMember3,
-    RankByUnionMember3ExprUnionMember2ExprUnionMember4,
-    RankByUnionMember3ExprUnionMember2ExprUnionMember5,
-    RankByUnionMember3ExprUnionMember2ExprUnionMember6,
-    RankByUnionMember3ExprUnionMember2ExprUnionMember7,
+RankByMultExprUnionMember2Expr: TypeAlias = Union[
+    RankByMultExprUnionMember2ExprUnionMember0,
+    RankByMultExprUnionMember2ExprUnionMember1,
+    RankByMultExprUnionMember2ExprUnionMember2,
+    RankByMultExprUnionMember2ExprUnionMember3,
+    RankByMultExprUnionMember2ExprUnionMember4,
+    RankByMultExprUnionMember2ExprUnionMember5,
+    RankByMultExprUnionMember2ExprUnionMember6,
+    RankByMultExprUnionMember2ExprUnionMember7,
 ]
 
 
-class RankByUnionMember3ExprUnionMember2(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember3ExprUnionMember2Expr]]
+class RankByMultExprUnionMember2(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMultExprUnionMember2Expr]]
 
-    op: Required[Literal["Sum"]]
+    type: Required[Literal["Sum"]]
 
 
-class RankByUnionMember3ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
+class RankByMultExprUnionMember3ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember3ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMultExprUnionMember3ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-class RankByUnionMember3ExprUnionMember3ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
+class RankByMultExprUnionMember3ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember3ExprUnionMember3ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMultExprUnionMember3ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember3ExprUnionMember3ExprUnionMember2Expr: TypeAlias = Union[
-    RankByUnionMember3ExprUnionMember3ExprUnionMember2ExprUnionMember0,
-    RankByUnionMember3ExprUnionMember3ExprUnionMember2ExprUnionMember1,
+RankByMultExprUnionMember3ExprUnionMember2Expr: TypeAlias = Union[
+    RankByMultExprUnionMember3ExprUnionMember2ExprUnionMember0,
+    RankByMultExprUnionMember3ExprUnionMember2ExprUnionMember1,
 ]
 
 
-class RankByUnionMember3ExprUnionMember3ExprUnionMember2(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember3ExprUnionMember3ExprUnionMember2Expr]]
+class RankByMultExprUnionMember3ExprUnionMember2(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMultExprUnionMember3ExprUnionMember2Expr]]
 
-    op: Required[Literal["Sum"]]
+    type: Required[Literal["Sum"]]
 
 
-class RankByUnionMember3ExprUnionMember3ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
+class RankByMultExprUnionMember3ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember3ExprUnionMember3ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMultExprUnionMember3ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember3ExprUnionMember3ExprUnionMember3Expr: TypeAlias = Union[
-    RankByUnionMember3ExprUnionMember3ExprUnionMember3ExprUnionMember0,
-    RankByUnionMember3ExprUnionMember3ExprUnionMember3ExprUnionMember1,
+RankByMultExprUnionMember3ExprUnionMember3Expr: TypeAlias = Union[
+    RankByMultExprUnionMember3ExprUnionMember3ExprUnionMember0,
+    RankByMultExprUnionMember3ExprUnionMember3ExprUnionMember1,
 ]
 
 
-class RankByUnionMember3ExprUnionMember3ExprUnionMember3(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember3ExprUnionMember3ExprUnionMember3Expr]]
+class RankByMultExprUnionMember3ExprUnionMember3(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMultExprUnionMember3ExprUnionMember3Expr]]
 
-    op: Required[Literal["Mult"]]
+    type: Required[Literal["Mult"]]
 
 
-class RankByUnionMember3ExprUnionMember3ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
+class RankByMultExprUnionMember3ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember3ExprUnionMember3ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMultExprUnionMember3ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember3ExprUnionMember3ExprUnionMember4Expr: TypeAlias = Union[
-    RankByUnionMember3ExprUnionMember3ExprUnionMember4ExprUnionMember0,
-    RankByUnionMember3ExprUnionMember3ExprUnionMember4ExprUnionMember1,
+RankByMultExprUnionMember3ExprUnionMember4Expr: TypeAlias = Union[
+    RankByMultExprUnionMember3ExprUnionMember4ExprUnionMember0,
+    RankByMultExprUnionMember3ExprUnionMember4ExprUnionMember1,
 ]
 
 
-class RankByUnionMember3ExprUnionMember3ExprUnionMember4(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember3ExprUnionMember3ExprUnionMember4Expr]]
+class RankByMultExprUnionMember3ExprUnionMember4(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMultExprUnionMember3ExprUnionMember4Expr]]
 
-    op: Required[Literal["Div"]]
+    type: Required[Literal["Div"]]
 
 
-class RankByUnionMember3ExprUnionMember3ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
+class RankByMultExprUnionMember3ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember3ExprUnionMember3ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMultExprUnionMember3ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember3ExprUnionMember3ExprUnionMember5Expr: TypeAlias = Union[
-    RankByUnionMember3ExprUnionMember3ExprUnionMember5ExprUnionMember0,
-    RankByUnionMember3ExprUnionMember3ExprUnionMember5ExprUnionMember1,
+RankByMultExprUnionMember3ExprUnionMember5Expr: TypeAlias = Union[
+    RankByMultExprUnionMember3ExprUnionMember5ExprUnionMember0,
+    RankByMultExprUnionMember3ExprUnionMember5ExprUnionMember1,
 ]
 
 
-class RankByUnionMember3ExprUnionMember3ExprUnionMember5(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember3ExprUnionMember3ExprUnionMember5Expr]]
+class RankByMultExprUnionMember3ExprUnionMember5(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMultExprUnionMember3ExprUnionMember5Expr]]
 
-    op: Required[Literal["Max"]]
+    type: Required[Literal["Max"]]
 
 
-class RankByUnionMember3ExprUnionMember3ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
+class RankByMultExprUnionMember3ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember3ExprUnionMember3ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMultExprUnionMember3ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember3ExprUnionMember3ExprUnionMember6Expr: TypeAlias = Union[
-    RankByUnionMember3ExprUnionMember3ExprUnionMember6ExprUnionMember0,
-    RankByUnionMember3ExprUnionMember3ExprUnionMember6ExprUnionMember1,
+RankByMultExprUnionMember3ExprUnionMember6Expr: TypeAlias = Union[
+    RankByMultExprUnionMember3ExprUnionMember6ExprUnionMember0,
+    RankByMultExprUnionMember3ExprUnionMember6ExprUnionMember1,
 ]
 
 
-class RankByUnionMember3ExprUnionMember3ExprUnionMember6(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember3ExprUnionMember3ExprUnionMember6Expr]]
+class RankByMultExprUnionMember3ExprUnionMember6(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMultExprUnionMember3ExprUnionMember6Expr]]
 
-    op: Required[Literal["Min"]]
+    type: Required[Literal["Min"]]
 
 
-class RankByUnionMember3ExprUnionMember3ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
+class RankByMultExprUnionMember3ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember3ExprUnionMember3ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMultExprUnionMember3ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember3ExprUnionMember3ExprUnionMember7Expr: TypeAlias = Union[
-    RankByUnionMember3ExprUnionMember3ExprUnionMember7ExprUnionMember0,
-    RankByUnionMember3ExprUnionMember3ExprUnionMember7ExprUnionMember1,
+RankByMultExprUnionMember3ExprUnionMember7Expr: TypeAlias = Union[
+    RankByMultExprUnionMember3ExprUnionMember7ExprUnionMember0,
+    RankByMultExprUnionMember3ExprUnionMember7ExprUnionMember1,
 ]
 
 
-class RankByUnionMember3ExprUnionMember3ExprUnionMember7(TypedDict, total=False):
+class RankByMultExprUnionMember3ExprUnionMember7(TypedDict, total=False):
     base: Required[float]
 
-    expr: Required[RankByUnionMember3ExprUnionMember3ExprUnionMember7Expr]
+    expr: Required[RankByMultExprUnionMember3ExprUnionMember7Expr]
 
-    op: Required[Literal["Log"]]
+    type: Required[Literal["Log"]]
 
 
-RankByUnionMember3ExprUnionMember3Expr: TypeAlias = Union[
-    RankByUnionMember3ExprUnionMember3ExprUnionMember0,
-    RankByUnionMember3ExprUnionMember3ExprUnionMember1,
-    RankByUnionMember3ExprUnionMember3ExprUnionMember2,
-    RankByUnionMember3ExprUnionMember3ExprUnionMember3,
-    RankByUnionMember3ExprUnionMember3ExprUnionMember4,
-    RankByUnionMember3ExprUnionMember3ExprUnionMember5,
-    RankByUnionMember3ExprUnionMember3ExprUnionMember6,
-    RankByUnionMember3ExprUnionMember3ExprUnionMember7,
+RankByMultExprUnionMember3Expr: TypeAlias = Union[
+    RankByMultExprUnionMember3ExprUnionMember0,
+    RankByMultExprUnionMember3ExprUnionMember1,
+    RankByMultExprUnionMember3ExprUnionMember2,
+    RankByMultExprUnionMember3ExprUnionMember3,
+    RankByMultExprUnionMember3ExprUnionMember4,
+    RankByMultExprUnionMember3ExprUnionMember5,
+    RankByMultExprUnionMember3ExprUnionMember6,
+    RankByMultExprUnionMember3ExprUnionMember7,
 ]
 
 
-class RankByUnionMember3ExprUnionMember3(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember3ExprUnionMember3Expr]]
+class RankByMultExprUnionMember3(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMultExprUnionMember3Expr]]
 
-    op: Required[Literal["Mult"]]
+    type: Required[Literal["Mult"]]
 
 
-class RankByUnionMember3ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
+class RankByMultExprUnionMember4ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember3ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMultExprUnionMember4ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-class RankByUnionMember3ExprUnionMember4ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
+class RankByMultExprUnionMember4ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember3ExprUnionMember4ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMultExprUnionMember4ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember3ExprUnionMember4ExprUnionMember2Expr: TypeAlias = Union[
-    RankByUnionMember3ExprUnionMember4ExprUnionMember2ExprUnionMember0,
-    RankByUnionMember3ExprUnionMember4ExprUnionMember2ExprUnionMember1,
+RankByMultExprUnionMember4ExprUnionMember2Expr: TypeAlias = Union[
+    RankByMultExprUnionMember4ExprUnionMember2ExprUnionMember0,
+    RankByMultExprUnionMember4ExprUnionMember2ExprUnionMember1,
 ]
 
 
-class RankByUnionMember3ExprUnionMember4ExprUnionMember2(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember3ExprUnionMember4ExprUnionMember2Expr]]
+class RankByMultExprUnionMember4ExprUnionMember2(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMultExprUnionMember4ExprUnionMember2Expr]]
 
-    op: Required[Literal["Sum"]]
+    type: Required[Literal["Sum"]]
 
 
-class RankByUnionMember3ExprUnionMember4ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
+class RankByMultExprUnionMember4ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember3ExprUnionMember4ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMultExprUnionMember4ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember3ExprUnionMember4ExprUnionMember3Expr: TypeAlias = Union[
-    RankByUnionMember3ExprUnionMember4ExprUnionMember3ExprUnionMember0,
-    RankByUnionMember3ExprUnionMember4ExprUnionMember3ExprUnionMember1,
+RankByMultExprUnionMember4ExprUnionMember3Expr: TypeAlias = Union[
+    RankByMultExprUnionMember4ExprUnionMember3ExprUnionMember0,
+    RankByMultExprUnionMember4ExprUnionMember3ExprUnionMember1,
 ]
 
 
-class RankByUnionMember3ExprUnionMember4ExprUnionMember3(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember3ExprUnionMember4ExprUnionMember3Expr]]
+class RankByMultExprUnionMember4ExprUnionMember3(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMultExprUnionMember4ExprUnionMember3Expr]]
 
-    op: Required[Literal["Mult"]]
+    type: Required[Literal["Mult"]]
 
 
-class RankByUnionMember3ExprUnionMember4ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
+class RankByMultExprUnionMember4ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember3ExprUnionMember4ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMultExprUnionMember4ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember3ExprUnionMember4ExprUnionMember4Expr: TypeAlias = Union[
-    RankByUnionMember3ExprUnionMember4ExprUnionMember4ExprUnionMember0,
-    RankByUnionMember3ExprUnionMember4ExprUnionMember4ExprUnionMember1,
+RankByMultExprUnionMember4ExprUnionMember4Expr: TypeAlias = Union[
+    RankByMultExprUnionMember4ExprUnionMember4ExprUnionMember0,
+    RankByMultExprUnionMember4ExprUnionMember4ExprUnionMember1,
 ]
 
 
-class RankByUnionMember3ExprUnionMember4ExprUnionMember4(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember3ExprUnionMember4ExprUnionMember4Expr]]
+class RankByMultExprUnionMember4ExprUnionMember4(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMultExprUnionMember4ExprUnionMember4Expr]]
 
-    op: Required[Literal["Div"]]
+    type: Required[Literal["Div"]]
 
 
-class RankByUnionMember3ExprUnionMember4ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
+class RankByMultExprUnionMember4ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember3ExprUnionMember4ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMultExprUnionMember4ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember3ExprUnionMember4ExprUnionMember5Expr: TypeAlias = Union[
-    RankByUnionMember3ExprUnionMember4ExprUnionMember5ExprUnionMember0,
-    RankByUnionMember3ExprUnionMember4ExprUnionMember5ExprUnionMember1,
+RankByMultExprUnionMember4ExprUnionMember5Expr: TypeAlias = Union[
+    RankByMultExprUnionMember4ExprUnionMember5ExprUnionMember0,
+    RankByMultExprUnionMember4ExprUnionMember5ExprUnionMember1,
 ]
 
 
-class RankByUnionMember3ExprUnionMember4ExprUnionMember5(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember3ExprUnionMember4ExprUnionMember5Expr]]
+class RankByMultExprUnionMember4ExprUnionMember5(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMultExprUnionMember4ExprUnionMember5Expr]]
 
-    op: Required[Literal["Max"]]
+    type: Required[Literal["Max"]]
 
 
-class RankByUnionMember3ExprUnionMember4ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
+class RankByMultExprUnionMember4ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember3ExprUnionMember4ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMultExprUnionMember4ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember3ExprUnionMember4ExprUnionMember6Expr: TypeAlias = Union[
-    RankByUnionMember3ExprUnionMember4ExprUnionMember6ExprUnionMember0,
-    RankByUnionMember3ExprUnionMember4ExprUnionMember6ExprUnionMember1,
+RankByMultExprUnionMember4ExprUnionMember6Expr: TypeAlias = Union[
+    RankByMultExprUnionMember4ExprUnionMember6ExprUnionMember0,
+    RankByMultExprUnionMember4ExprUnionMember6ExprUnionMember1,
 ]
 
 
-class RankByUnionMember3ExprUnionMember4ExprUnionMember6(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember3ExprUnionMember4ExprUnionMember6Expr]]
+class RankByMultExprUnionMember4ExprUnionMember6(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMultExprUnionMember4ExprUnionMember6Expr]]
 
-    op: Required[Literal["Min"]]
+    type: Required[Literal["Min"]]
 
 
-class RankByUnionMember3ExprUnionMember4ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
+class RankByMultExprUnionMember4ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember3ExprUnionMember4ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMultExprUnionMember4ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember3ExprUnionMember4ExprUnionMember7Expr: TypeAlias = Union[
-    RankByUnionMember3ExprUnionMember4ExprUnionMember7ExprUnionMember0,
-    RankByUnionMember3ExprUnionMember4ExprUnionMember7ExprUnionMember1,
+RankByMultExprUnionMember4ExprUnionMember7Expr: TypeAlias = Union[
+    RankByMultExprUnionMember4ExprUnionMember7ExprUnionMember0,
+    RankByMultExprUnionMember4ExprUnionMember7ExprUnionMember1,
 ]
 
 
-class RankByUnionMember3ExprUnionMember4ExprUnionMember7(TypedDict, total=False):
+class RankByMultExprUnionMember4ExprUnionMember7(TypedDict, total=False):
     base: Required[float]
 
-    expr: Required[RankByUnionMember3ExprUnionMember4ExprUnionMember7Expr]
+    expr: Required[RankByMultExprUnionMember4ExprUnionMember7Expr]
 
-    op: Required[Literal["Log"]]
+    type: Required[Literal["Log"]]
 
 
-RankByUnionMember3ExprUnionMember4Expr: TypeAlias = Union[
-    RankByUnionMember3ExprUnionMember4ExprUnionMember0,
-    RankByUnionMember3ExprUnionMember4ExprUnionMember1,
-    RankByUnionMember3ExprUnionMember4ExprUnionMember2,
-    RankByUnionMember3ExprUnionMember4ExprUnionMember3,
-    RankByUnionMember3ExprUnionMember4ExprUnionMember4,
-    RankByUnionMember3ExprUnionMember4ExprUnionMember5,
-    RankByUnionMember3ExprUnionMember4ExprUnionMember6,
-    RankByUnionMember3ExprUnionMember4ExprUnionMember7,
+RankByMultExprUnionMember4Expr: TypeAlias = Union[
+    RankByMultExprUnionMember4ExprUnionMember0,
+    RankByMultExprUnionMember4ExprUnionMember1,
+    RankByMultExprUnionMember4ExprUnionMember2,
+    RankByMultExprUnionMember4ExprUnionMember3,
+    RankByMultExprUnionMember4ExprUnionMember4,
+    RankByMultExprUnionMember4ExprUnionMember5,
+    RankByMultExprUnionMember4ExprUnionMember6,
+    RankByMultExprUnionMember4ExprUnionMember7,
 ]
 
 
-class RankByUnionMember3ExprUnionMember4(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember3ExprUnionMember4Expr]]
+class RankByMultExprUnionMember4(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMultExprUnionMember4Expr]]
 
-    op: Required[Literal["Div"]]
+    type: Required[Literal["Div"]]
 
 
-class RankByUnionMember3ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
+class RankByMultExprUnionMember5ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember3ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMultExprUnionMember5ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-class RankByUnionMember3ExprUnionMember5ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
+class RankByMultExprUnionMember5ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember3ExprUnionMember5ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMultExprUnionMember5ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember3ExprUnionMember5ExprUnionMember2Expr: TypeAlias = Union[
-    RankByUnionMember3ExprUnionMember5ExprUnionMember2ExprUnionMember0,
-    RankByUnionMember3ExprUnionMember5ExprUnionMember2ExprUnionMember1,
+RankByMultExprUnionMember5ExprUnionMember2Expr: TypeAlias = Union[
+    RankByMultExprUnionMember5ExprUnionMember2ExprUnionMember0,
+    RankByMultExprUnionMember5ExprUnionMember2ExprUnionMember1,
 ]
 
 
-class RankByUnionMember3ExprUnionMember5ExprUnionMember2(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember3ExprUnionMember5ExprUnionMember2Expr]]
+class RankByMultExprUnionMember5ExprUnionMember2(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMultExprUnionMember5ExprUnionMember2Expr]]
 
-    op: Required[Literal["Sum"]]
+    type: Required[Literal["Sum"]]
 
 
-class RankByUnionMember3ExprUnionMember5ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
+class RankByMultExprUnionMember5ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember3ExprUnionMember5ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMultExprUnionMember5ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember3ExprUnionMember5ExprUnionMember3Expr: TypeAlias = Union[
-    RankByUnionMember3ExprUnionMember5ExprUnionMember3ExprUnionMember0,
-    RankByUnionMember3ExprUnionMember5ExprUnionMember3ExprUnionMember1,
+RankByMultExprUnionMember5ExprUnionMember3Expr: TypeAlias = Union[
+    RankByMultExprUnionMember5ExprUnionMember3ExprUnionMember0,
+    RankByMultExprUnionMember5ExprUnionMember3ExprUnionMember1,
 ]
 
 
-class RankByUnionMember3ExprUnionMember5ExprUnionMember3(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember3ExprUnionMember5ExprUnionMember3Expr]]
+class RankByMultExprUnionMember5ExprUnionMember3(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMultExprUnionMember5ExprUnionMember3Expr]]
 
-    op: Required[Literal["Mult"]]
+    type: Required[Literal["Mult"]]
 
 
-class RankByUnionMember3ExprUnionMember5ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
+class RankByMultExprUnionMember5ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember3ExprUnionMember5ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMultExprUnionMember5ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember3ExprUnionMember5ExprUnionMember4Expr: TypeAlias = Union[
-    RankByUnionMember3ExprUnionMember5ExprUnionMember4ExprUnionMember0,
-    RankByUnionMember3ExprUnionMember5ExprUnionMember4ExprUnionMember1,
+RankByMultExprUnionMember5ExprUnionMember4Expr: TypeAlias = Union[
+    RankByMultExprUnionMember5ExprUnionMember4ExprUnionMember0,
+    RankByMultExprUnionMember5ExprUnionMember4ExprUnionMember1,
 ]
 
 
-class RankByUnionMember3ExprUnionMember5ExprUnionMember4(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember3ExprUnionMember5ExprUnionMember4Expr]]
+class RankByMultExprUnionMember5ExprUnionMember4(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMultExprUnionMember5ExprUnionMember4Expr]]
 
-    op: Required[Literal["Div"]]
+    type: Required[Literal["Div"]]
 
 
-class RankByUnionMember3ExprUnionMember5ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
+class RankByMultExprUnionMember5ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember3ExprUnionMember5ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMultExprUnionMember5ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember3ExprUnionMember5ExprUnionMember5Expr: TypeAlias = Union[
-    RankByUnionMember3ExprUnionMember5ExprUnionMember5ExprUnionMember0,
-    RankByUnionMember3ExprUnionMember5ExprUnionMember5ExprUnionMember1,
+RankByMultExprUnionMember5ExprUnionMember5Expr: TypeAlias = Union[
+    RankByMultExprUnionMember5ExprUnionMember5ExprUnionMember0,
+    RankByMultExprUnionMember5ExprUnionMember5ExprUnionMember1,
 ]
 
 
-class RankByUnionMember3ExprUnionMember5ExprUnionMember5(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember3ExprUnionMember5ExprUnionMember5Expr]]
+class RankByMultExprUnionMember5ExprUnionMember5(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMultExprUnionMember5ExprUnionMember5Expr]]
 
-    op: Required[Literal["Max"]]
+    type: Required[Literal["Max"]]
 
 
-class RankByUnionMember3ExprUnionMember5ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
+class RankByMultExprUnionMember5ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember3ExprUnionMember5ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMultExprUnionMember5ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember3ExprUnionMember5ExprUnionMember6Expr: TypeAlias = Union[
-    RankByUnionMember3ExprUnionMember5ExprUnionMember6ExprUnionMember0,
-    RankByUnionMember3ExprUnionMember5ExprUnionMember6ExprUnionMember1,
+RankByMultExprUnionMember5ExprUnionMember6Expr: TypeAlias = Union[
+    RankByMultExprUnionMember5ExprUnionMember6ExprUnionMember0,
+    RankByMultExprUnionMember5ExprUnionMember6ExprUnionMember1,
 ]
 
 
-class RankByUnionMember3ExprUnionMember5ExprUnionMember6(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember3ExprUnionMember5ExprUnionMember6Expr]]
+class RankByMultExprUnionMember5ExprUnionMember6(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMultExprUnionMember5ExprUnionMember6Expr]]
 
-    op: Required[Literal["Min"]]
+    type: Required[Literal["Min"]]
 
 
-class RankByUnionMember3ExprUnionMember5ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
+class RankByMultExprUnionMember5ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember3ExprUnionMember5ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMultExprUnionMember5ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember3ExprUnionMember5ExprUnionMember7Expr: TypeAlias = Union[
-    RankByUnionMember3ExprUnionMember5ExprUnionMember7ExprUnionMember0,
-    RankByUnionMember3ExprUnionMember5ExprUnionMember7ExprUnionMember1,
+RankByMultExprUnionMember5ExprUnionMember7Expr: TypeAlias = Union[
+    RankByMultExprUnionMember5ExprUnionMember7ExprUnionMember0,
+    RankByMultExprUnionMember5ExprUnionMember7ExprUnionMember1,
 ]
 
 
-class RankByUnionMember3ExprUnionMember5ExprUnionMember7(TypedDict, total=False):
+class RankByMultExprUnionMember5ExprUnionMember7(TypedDict, total=False):
     base: Required[float]
 
-    expr: Required[RankByUnionMember3ExprUnionMember5ExprUnionMember7Expr]
+    expr: Required[RankByMultExprUnionMember5ExprUnionMember7Expr]
 
-    op: Required[Literal["Log"]]
+    type: Required[Literal["Log"]]
 
 
-RankByUnionMember3ExprUnionMember5Expr: TypeAlias = Union[
-    RankByUnionMember3ExprUnionMember5ExprUnionMember0,
-    RankByUnionMember3ExprUnionMember5ExprUnionMember1,
-    RankByUnionMember3ExprUnionMember5ExprUnionMember2,
-    RankByUnionMember3ExprUnionMember5ExprUnionMember3,
-    RankByUnionMember3ExprUnionMember5ExprUnionMember4,
-    RankByUnionMember3ExprUnionMember5ExprUnionMember5,
-    RankByUnionMember3ExprUnionMember5ExprUnionMember6,
-    RankByUnionMember3ExprUnionMember5ExprUnionMember7,
+RankByMultExprUnionMember5Expr: TypeAlias = Union[
+    RankByMultExprUnionMember5ExprUnionMember0,
+    RankByMultExprUnionMember5ExprUnionMember1,
+    RankByMultExprUnionMember5ExprUnionMember2,
+    RankByMultExprUnionMember5ExprUnionMember3,
+    RankByMultExprUnionMember5ExprUnionMember4,
+    RankByMultExprUnionMember5ExprUnionMember5,
+    RankByMultExprUnionMember5ExprUnionMember6,
+    RankByMultExprUnionMember5ExprUnionMember7,
 ]
 
 
-class RankByUnionMember3ExprUnionMember5(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember3ExprUnionMember5Expr]]
+class RankByMultExprUnionMember5(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMultExprUnionMember5Expr]]
 
-    op: Required[Literal["Max"]]
+    type: Required[Literal["Max"]]
 
 
-class RankByUnionMember3ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
+class RankByMultExprUnionMember6ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember3ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMultExprUnionMember6ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-class RankByUnionMember3ExprUnionMember6ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
+class RankByMultExprUnionMember6ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember3ExprUnionMember6ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMultExprUnionMember6ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember3ExprUnionMember6ExprUnionMember2Expr: TypeAlias = Union[
-    RankByUnionMember3ExprUnionMember6ExprUnionMember2ExprUnionMember0,
-    RankByUnionMember3ExprUnionMember6ExprUnionMember2ExprUnionMember1,
+RankByMultExprUnionMember6ExprUnionMember2Expr: TypeAlias = Union[
+    RankByMultExprUnionMember6ExprUnionMember2ExprUnionMember0,
+    RankByMultExprUnionMember6ExprUnionMember2ExprUnionMember1,
 ]
 
 
-class RankByUnionMember3ExprUnionMember6ExprUnionMember2(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember3ExprUnionMember6ExprUnionMember2Expr]]
+class RankByMultExprUnionMember6ExprUnionMember2(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMultExprUnionMember6ExprUnionMember2Expr]]
 
-    op: Required[Literal["Sum"]]
+    type: Required[Literal["Sum"]]
 
 
-class RankByUnionMember3ExprUnionMember6ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
+class RankByMultExprUnionMember6ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember3ExprUnionMember6ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMultExprUnionMember6ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember3ExprUnionMember6ExprUnionMember3Expr: TypeAlias = Union[
-    RankByUnionMember3ExprUnionMember6ExprUnionMember3ExprUnionMember0,
-    RankByUnionMember3ExprUnionMember6ExprUnionMember3ExprUnionMember1,
+RankByMultExprUnionMember6ExprUnionMember3Expr: TypeAlias = Union[
+    RankByMultExprUnionMember6ExprUnionMember3ExprUnionMember0,
+    RankByMultExprUnionMember6ExprUnionMember3ExprUnionMember1,
 ]
 
 
-class RankByUnionMember3ExprUnionMember6ExprUnionMember3(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember3ExprUnionMember6ExprUnionMember3Expr]]
+class RankByMultExprUnionMember6ExprUnionMember3(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMultExprUnionMember6ExprUnionMember3Expr]]
 
-    op: Required[Literal["Mult"]]
+    type: Required[Literal["Mult"]]
 
 
-class RankByUnionMember3ExprUnionMember6ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
+class RankByMultExprUnionMember6ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember3ExprUnionMember6ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMultExprUnionMember6ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember3ExprUnionMember6ExprUnionMember4Expr: TypeAlias = Union[
-    RankByUnionMember3ExprUnionMember6ExprUnionMember4ExprUnionMember0,
-    RankByUnionMember3ExprUnionMember6ExprUnionMember4ExprUnionMember1,
+RankByMultExprUnionMember6ExprUnionMember4Expr: TypeAlias = Union[
+    RankByMultExprUnionMember6ExprUnionMember4ExprUnionMember0,
+    RankByMultExprUnionMember6ExprUnionMember4ExprUnionMember1,
 ]
 
 
-class RankByUnionMember3ExprUnionMember6ExprUnionMember4(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember3ExprUnionMember6ExprUnionMember4Expr]]
+class RankByMultExprUnionMember6ExprUnionMember4(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMultExprUnionMember6ExprUnionMember4Expr]]
 
-    op: Required[Literal["Div"]]
+    type: Required[Literal["Div"]]
 
 
-class RankByUnionMember3ExprUnionMember6ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
+class RankByMultExprUnionMember6ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember3ExprUnionMember6ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMultExprUnionMember6ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember3ExprUnionMember6ExprUnionMember5Expr: TypeAlias = Union[
-    RankByUnionMember3ExprUnionMember6ExprUnionMember5ExprUnionMember0,
-    RankByUnionMember3ExprUnionMember6ExprUnionMember5ExprUnionMember1,
+RankByMultExprUnionMember6ExprUnionMember5Expr: TypeAlias = Union[
+    RankByMultExprUnionMember6ExprUnionMember5ExprUnionMember0,
+    RankByMultExprUnionMember6ExprUnionMember5ExprUnionMember1,
 ]
 
 
-class RankByUnionMember3ExprUnionMember6ExprUnionMember5(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember3ExprUnionMember6ExprUnionMember5Expr]]
+class RankByMultExprUnionMember6ExprUnionMember5(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMultExprUnionMember6ExprUnionMember5Expr]]
 
-    op: Required[Literal["Max"]]
+    type: Required[Literal["Max"]]
 
 
-class RankByUnionMember3ExprUnionMember6ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
+class RankByMultExprUnionMember6ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember3ExprUnionMember6ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMultExprUnionMember6ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember3ExprUnionMember6ExprUnionMember6Expr: TypeAlias = Union[
-    RankByUnionMember3ExprUnionMember6ExprUnionMember6ExprUnionMember0,
-    RankByUnionMember3ExprUnionMember6ExprUnionMember6ExprUnionMember1,
+RankByMultExprUnionMember6ExprUnionMember6Expr: TypeAlias = Union[
+    RankByMultExprUnionMember6ExprUnionMember6ExprUnionMember0,
+    RankByMultExprUnionMember6ExprUnionMember6ExprUnionMember1,
 ]
 
 
-class RankByUnionMember3ExprUnionMember6ExprUnionMember6(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember3ExprUnionMember6ExprUnionMember6Expr]]
+class RankByMultExprUnionMember6ExprUnionMember6(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMultExprUnionMember6ExprUnionMember6Expr]]
 
-    op: Required[Literal["Min"]]
+    type: Required[Literal["Min"]]
 
 
-class RankByUnionMember3ExprUnionMember6ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
+class RankByMultExprUnionMember6ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember3ExprUnionMember6ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMultExprUnionMember6ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember3ExprUnionMember6ExprUnionMember7Expr: TypeAlias = Union[
-    RankByUnionMember3ExprUnionMember6ExprUnionMember7ExprUnionMember0,
-    RankByUnionMember3ExprUnionMember6ExprUnionMember7ExprUnionMember1,
+RankByMultExprUnionMember6ExprUnionMember7Expr: TypeAlias = Union[
+    RankByMultExprUnionMember6ExprUnionMember7ExprUnionMember0,
+    RankByMultExprUnionMember6ExprUnionMember7ExprUnionMember1,
 ]
 
 
-class RankByUnionMember3ExprUnionMember6ExprUnionMember7(TypedDict, total=False):
+class RankByMultExprUnionMember6ExprUnionMember7(TypedDict, total=False):
     base: Required[float]
 
-    expr: Required[RankByUnionMember3ExprUnionMember6ExprUnionMember7Expr]
+    expr: Required[RankByMultExprUnionMember6ExprUnionMember7Expr]
 
-    op: Required[Literal["Log"]]
+    type: Required[Literal["Log"]]
 
 
-RankByUnionMember3ExprUnionMember6Expr: TypeAlias = Union[
-    RankByUnionMember3ExprUnionMember6ExprUnionMember0,
-    RankByUnionMember3ExprUnionMember6ExprUnionMember1,
-    RankByUnionMember3ExprUnionMember6ExprUnionMember2,
-    RankByUnionMember3ExprUnionMember6ExprUnionMember3,
-    RankByUnionMember3ExprUnionMember6ExprUnionMember4,
-    RankByUnionMember3ExprUnionMember6ExprUnionMember5,
-    RankByUnionMember3ExprUnionMember6ExprUnionMember6,
-    RankByUnionMember3ExprUnionMember6ExprUnionMember7,
+RankByMultExprUnionMember6Expr: TypeAlias = Union[
+    RankByMultExprUnionMember6ExprUnionMember0,
+    RankByMultExprUnionMember6ExprUnionMember1,
+    RankByMultExprUnionMember6ExprUnionMember2,
+    RankByMultExprUnionMember6ExprUnionMember3,
+    RankByMultExprUnionMember6ExprUnionMember4,
+    RankByMultExprUnionMember6ExprUnionMember5,
+    RankByMultExprUnionMember6ExprUnionMember6,
+    RankByMultExprUnionMember6ExprUnionMember7,
 ]
 
 
-class RankByUnionMember3ExprUnionMember6(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember3ExprUnionMember6Expr]]
+class RankByMultExprUnionMember6(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMultExprUnionMember6Expr]]
 
-    op: Required[Literal["Min"]]
+    type: Required[Literal["Min"]]
 
 
-class RankByUnionMember3ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
+class RankByMultExprUnionMember7ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember3ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMultExprUnionMember7ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-class RankByUnionMember3ExprUnionMember7ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
+class RankByMultExprUnionMember7ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember3ExprUnionMember7ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMultExprUnionMember7ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember3ExprUnionMember7ExprUnionMember2Expr: TypeAlias = Union[
-    RankByUnionMember3ExprUnionMember7ExprUnionMember2ExprUnionMember0,
-    RankByUnionMember3ExprUnionMember7ExprUnionMember2ExprUnionMember1,
+RankByMultExprUnionMember7ExprUnionMember2Expr: TypeAlias = Union[
+    RankByMultExprUnionMember7ExprUnionMember2ExprUnionMember0,
+    RankByMultExprUnionMember7ExprUnionMember2ExprUnionMember1,
 ]
 
 
-class RankByUnionMember3ExprUnionMember7ExprUnionMember2(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember3ExprUnionMember7ExprUnionMember2Expr]]
+class RankByMultExprUnionMember7ExprUnionMember2(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMultExprUnionMember7ExprUnionMember2Expr]]
 
-    op: Required[Literal["Sum"]]
+    type: Required[Literal["Sum"]]
 
 
-class RankByUnionMember3ExprUnionMember7ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
+class RankByMultExprUnionMember7ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember3ExprUnionMember7ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMultExprUnionMember7ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember3ExprUnionMember7ExprUnionMember3Expr: TypeAlias = Union[
-    RankByUnionMember3ExprUnionMember7ExprUnionMember3ExprUnionMember0,
-    RankByUnionMember3ExprUnionMember7ExprUnionMember3ExprUnionMember1,
+RankByMultExprUnionMember7ExprUnionMember3Expr: TypeAlias = Union[
+    RankByMultExprUnionMember7ExprUnionMember3ExprUnionMember0,
+    RankByMultExprUnionMember7ExprUnionMember3ExprUnionMember1,
 ]
 
 
-class RankByUnionMember3ExprUnionMember7ExprUnionMember3(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember3ExprUnionMember7ExprUnionMember3Expr]]
+class RankByMultExprUnionMember7ExprUnionMember3(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMultExprUnionMember7ExprUnionMember3Expr]]
 
-    op: Required[Literal["Mult"]]
+    type: Required[Literal["Mult"]]
 
 
-class RankByUnionMember3ExprUnionMember7ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
+class RankByMultExprUnionMember7ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember3ExprUnionMember7ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMultExprUnionMember7ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember3ExprUnionMember7ExprUnionMember4Expr: TypeAlias = Union[
-    RankByUnionMember3ExprUnionMember7ExprUnionMember4ExprUnionMember0,
-    RankByUnionMember3ExprUnionMember7ExprUnionMember4ExprUnionMember1,
+RankByMultExprUnionMember7ExprUnionMember4Expr: TypeAlias = Union[
+    RankByMultExprUnionMember7ExprUnionMember4ExprUnionMember0,
+    RankByMultExprUnionMember7ExprUnionMember4ExprUnionMember1,
 ]
 
 
-class RankByUnionMember3ExprUnionMember7ExprUnionMember4(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember3ExprUnionMember7ExprUnionMember4Expr]]
+class RankByMultExprUnionMember7ExprUnionMember4(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMultExprUnionMember7ExprUnionMember4Expr]]
 
-    op: Required[Literal["Div"]]
+    type: Required[Literal["Div"]]
 
 
-class RankByUnionMember3ExprUnionMember7ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
+class RankByMultExprUnionMember7ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember3ExprUnionMember7ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMultExprUnionMember7ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember3ExprUnionMember7ExprUnionMember5Expr: TypeAlias = Union[
-    RankByUnionMember3ExprUnionMember7ExprUnionMember5ExprUnionMember0,
-    RankByUnionMember3ExprUnionMember7ExprUnionMember5ExprUnionMember1,
+RankByMultExprUnionMember7ExprUnionMember5Expr: TypeAlias = Union[
+    RankByMultExprUnionMember7ExprUnionMember5ExprUnionMember0,
+    RankByMultExprUnionMember7ExprUnionMember5ExprUnionMember1,
 ]
 
 
-class RankByUnionMember3ExprUnionMember7ExprUnionMember5(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember3ExprUnionMember7ExprUnionMember5Expr]]
+class RankByMultExprUnionMember7ExprUnionMember5(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMultExprUnionMember7ExprUnionMember5Expr]]
 
-    op: Required[Literal["Max"]]
+    type: Required[Literal["Max"]]
 
 
-class RankByUnionMember3ExprUnionMember7ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
+class RankByMultExprUnionMember7ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember3ExprUnionMember7ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMultExprUnionMember7ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember3ExprUnionMember7ExprUnionMember6Expr: TypeAlias = Union[
-    RankByUnionMember3ExprUnionMember7ExprUnionMember6ExprUnionMember0,
-    RankByUnionMember3ExprUnionMember7ExprUnionMember6ExprUnionMember1,
+RankByMultExprUnionMember7ExprUnionMember6Expr: TypeAlias = Union[
+    RankByMultExprUnionMember7ExprUnionMember6ExprUnionMember0,
+    RankByMultExprUnionMember7ExprUnionMember6ExprUnionMember1,
 ]
 
 
-class RankByUnionMember3ExprUnionMember7ExprUnionMember6(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember3ExprUnionMember7ExprUnionMember6Expr]]
+class RankByMultExprUnionMember7ExprUnionMember6(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMultExprUnionMember7ExprUnionMember6Expr]]
 
-    op: Required[Literal["Min"]]
+    type: Required[Literal["Min"]]
 
 
-class RankByUnionMember3ExprUnionMember7ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
+class RankByMultExprUnionMember7ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember3ExprUnionMember7ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMultExprUnionMember7ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember3ExprUnionMember7ExprUnionMember7Expr: TypeAlias = Union[
-    RankByUnionMember3ExprUnionMember7ExprUnionMember7ExprUnionMember0,
-    RankByUnionMember3ExprUnionMember7ExprUnionMember7ExprUnionMember1,
+RankByMultExprUnionMember7ExprUnionMember7Expr: TypeAlias = Union[
+    RankByMultExprUnionMember7ExprUnionMember7ExprUnionMember0,
+    RankByMultExprUnionMember7ExprUnionMember7ExprUnionMember1,
 ]
 
 
-class RankByUnionMember3ExprUnionMember7ExprUnionMember7(TypedDict, total=False):
+class RankByMultExprUnionMember7ExprUnionMember7(TypedDict, total=False):
     base: Required[float]
 
-    expr: Required[RankByUnionMember3ExprUnionMember7ExprUnionMember7Expr]
+    expr: Required[RankByMultExprUnionMember7ExprUnionMember7Expr]
 
-    op: Required[Literal["Log"]]
+    type: Required[Literal["Log"]]
 
 
-RankByUnionMember3ExprUnionMember7Expr: TypeAlias = Union[
-    RankByUnionMember3ExprUnionMember7ExprUnionMember0,
-    RankByUnionMember3ExprUnionMember7ExprUnionMember1,
-    RankByUnionMember3ExprUnionMember7ExprUnionMember2,
-    RankByUnionMember3ExprUnionMember7ExprUnionMember3,
-    RankByUnionMember3ExprUnionMember7ExprUnionMember4,
-    RankByUnionMember3ExprUnionMember7ExprUnionMember5,
-    RankByUnionMember3ExprUnionMember7ExprUnionMember6,
-    RankByUnionMember3ExprUnionMember7ExprUnionMember7,
+RankByMultExprUnionMember7Expr: TypeAlias = Union[
+    RankByMultExprUnionMember7ExprUnionMember0,
+    RankByMultExprUnionMember7ExprUnionMember1,
+    RankByMultExprUnionMember7ExprUnionMember2,
+    RankByMultExprUnionMember7ExprUnionMember3,
+    RankByMultExprUnionMember7ExprUnionMember4,
+    RankByMultExprUnionMember7ExprUnionMember5,
+    RankByMultExprUnionMember7ExprUnionMember6,
+    RankByMultExprUnionMember7ExprUnionMember7,
 ]
 
 
-class RankByUnionMember3ExprUnionMember7(TypedDict, total=False):
+class RankByMultExprUnionMember7(TypedDict, total=False):
     base: Required[float]
 
-    expr: Required[RankByUnionMember3ExprUnionMember7Expr]
+    expr: Required[RankByMultExprUnionMember7Expr]
 
-    op: Required[Literal["Log"]]
+    type: Required[Literal["Log"]]
 
 
-RankByUnionMember3Expr: TypeAlias = Union[
-    RankByUnionMember3ExprUnionMember0,
-    RankByUnionMember3ExprUnionMember1,
-    RankByUnionMember3ExprUnionMember2,
-    RankByUnionMember3ExprUnionMember3,
-    RankByUnionMember3ExprUnionMember4,
-    RankByUnionMember3ExprUnionMember5,
-    RankByUnionMember3ExprUnionMember6,
-    RankByUnionMember3ExprUnionMember7,
+RankByMultExpr: TypeAlias = Union[
+    RankByMultExprUnionMember0,
+    RankByMultExprUnionMember1,
+    RankByMultExprUnionMember2,
+    RankByMultExprUnionMember3,
+    RankByMultExprUnionMember4,
+    RankByMultExprUnionMember5,
+    RankByMultExprUnionMember6,
+    RankByMultExprUnionMember7,
 ]
 
 
-class RankByUnionMember3(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember3Expr]]
+class RankByMult(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMultExpr]]
 
-    op: Required[Literal["Mult"]]
+    type: Required[Literal["Mult"]]
 
 
-class RankByUnionMember4ExprUnionMember0(TypedDict, total=False):
+class RankByDivExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember4ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByDivExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-class RankByUnionMember4ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
+class RankByDivExprUnionMember2ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember4ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByDivExprUnionMember2ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-class RankByUnionMember4ExprUnionMember2ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
+class RankByDivExprUnionMember2ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember4ExprUnionMember2ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByDivExprUnionMember2ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember4ExprUnionMember2ExprUnionMember2Expr: TypeAlias = Union[
-    RankByUnionMember4ExprUnionMember2ExprUnionMember2ExprUnionMember0,
-    RankByUnionMember4ExprUnionMember2ExprUnionMember2ExprUnionMember1,
+RankByDivExprUnionMember2ExprUnionMember2Expr: TypeAlias = Union[
+    RankByDivExprUnionMember2ExprUnionMember2ExprUnionMember0, RankByDivExprUnionMember2ExprUnionMember2ExprUnionMember1
 ]
 
 
-class RankByUnionMember4ExprUnionMember2ExprUnionMember2(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember4ExprUnionMember2ExprUnionMember2Expr]]
+class RankByDivExprUnionMember2ExprUnionMember2(TypedDict, total=False):
+    exprs: Required[Iterable[RankByDivExprUnionMember2ExprUnionMember2Expr]]
 
-    op: Required[Literal["Sum"]]
+    type: Required[Literal["Sum"]]
 
 
-class RankByUnionMember4ExprUnionMember2ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
+class RankByDivExprUnionMember2ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember4ExprUnionMember2ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByDivExprUnionMember2ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember4ExprUnionMember2ExprUnionMember3Expr: TypeAlias = Union[
-    RankByUnionMember4ExprUnionMember2ExprUnionMember3ExprUnionMember0,
-    RankByUnionMember4ExprUnionMember2ExprUnionMember3ExprUnionMember1,
+RankByDivExprUnionMember2ExprUnionMember3Expr: TypeAlias = Union[
+    RankByDivExprUnionMember2ExprUnionMember3ExprUnionMember0, RankByDivExprUnionMember2ExprUnionMember3ExprUnionMember1
 ]
 
 
-class RankByUnionMember4ExprUnionMember2ExprUnionMember3(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember4ExprUnionMember2ExprUnionMember3Expr]]
+class RankByDivExprUnionMember2ExprUnionMember3(TypedDict, total=False):
+    exprs: Required[Iterable[RankByDivExprUnionMember2ExprUnionMember3Expr]]
 
-    op: Required[Literal["Mult"]]
+    type: Required[Literal["Mult"]]
 
 
-class RankByUnionMember4ExprUnionMember2ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
+class RankByDivExprUnionMember2ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember4ExprUnionMember2ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByDivExprUnionMember2ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember4ExprUnionMember2ExprUnionMember4Expr: TypeAlias = Union[
-    RankByUnionMember4ExprUnionMember2ExprUnionMember4ExprUnionMember0,
-    RankByUnionMember4ExprUnionMember2ExprUnionMember4ExprUnionMember1,
+RankByDivExprUnionMember2ExprUnionMember4Expr: TypeAlias = Union[
+    RankByDivExprUnionMember2ExprUnionMember4ExprUnionMember0, RankByDivExprUnionMember2ExprUnionMember4ExprUnionMember1
 ]
 
 
-class RankByUnionMember4ExprUnionMember2ExprUnionMember4(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember4ExprUnionMember2ExprUnionMember4Expr]]
+class RankByDivExprUnionMember2ExprUnionMember4(TypedDict, total=False):
+    exprs: Required[Iterable[RankByDivExprUnionMember2ExprUnionMember4Expr]]
 
-    op: Required[Literal["Div"]]
+    type: Required[Literal["Div"]]
 
 
-class RankByUnionMember4ExprUnionMember2ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
+class RankByDivExprUnionMember2ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember4ExprUnionMember2ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByDivExprUnionMember2ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember4ExprUnionMember2ExprUnionMember5Expr: TypeAlias = Union[
-    RankByUnionMember4ExprUnionMember2ExprUnionMember5ExprUnionMember0,
-    RankByUnionMember4ExprUnionMember2ExprUnionMember5ExprUnionMember1,
+RankByDivExprUnionMember2ExprUnionMember5Expr: TypeAlias = Union[
+    RankByDivExprUnionMember2ExprUnionMember5ExprUnionMember0, RankByDivExprUnionMember2ExprUnionMember5ExprUnionMember1
 ]
 
 
-class RankByUnionMember4ExprUnionMember2ExprUnionMember5(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember4ExprUnionMember2ExprUnionMember5Expr]]
+class RankByDivExprUnionMember2ExprUnionMember5(TypedDict, total=False):
+    exprs: Required[Iterable[RankByDivExprUnionMember2ExprUnionMember5Expr]]
 
-    op: Required[Literal["Max"]]
+    type: Required[Literal["Max"]]
 
 
-class RankByUnionMember4ExprUnionMember2ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
+class RankByDivExprUnionMember2ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember4ExprUnionMember2ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByDivExprUnionMember2ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember4ExprUnionMember2ExprUnionMember6Expr: TypeAlias = Union[
-    RankByUnionMember4ExprUnionMember2ExprUnionMember6ExprUnionMember0,
-    RankByUnionMember4ExprUnionMember2ExprUnionMember6ExprUnionMember1,
+RankByDivExprUnionMember2ExprUnionMember6Expr: TypeAlias = Union[
+    RankByDivExprUnionMember2ExprUnionMember6ExprUnionMember0, RankByDivExprUnionMember2ExprUnionMember6ExprUnionMember1
 ]
 
 
-class RankByUnionMember4ExprUnionMember2ExprUnionMember6(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember4ExprUnionMember2ExprUnionMember6Expr]]
+class RankByDivExprUnionMember2ExprUnionMember6(TypedDict, total=False):
+    exprs: Required[Iterable[RankByDivExprUnionMember2ExprUnionMember6Expr]]
 
-    op: Required[Literal["Min"]]
+    type: Required[Literal["Min"]]
 
 
-class RankByUnionMember4ExprUnionMember2ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
+class RankByDivExprUnionMember2ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember4ExprUnionMember2ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByDivExprUnionMember2ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember4ExprUnionMember2ExprUnionMember7Expr: TypeAlias = Union[
-    RankByUnionMember4ExprUnionMember2ExprUnionMember7ExprUnionMember0,
-    RankByUnionMember4ExprUnionMember2ExprUnionMember7ExprUnionMember1,
+RankByDivExprUnionMember2ExprUnionMember7Expr: TypeAlias = Union[
+    RankByDivExprUnionMember2ExprUnionMember7ExprUnionMember0, RankByDivExprUnionMember2ExprUnionMember7ExprUnionMember1
 ]
 
 
-class RankByUnionMember4ExprUnionMember2ExprUnionMember7(TypedDict, total=False):
+class RankByDivExprUnionMember2ExprUnionMember7(TypedDict, total=False):
     base: Required[float]
 
-    expr: Required[RankByUnionMember4ExprUnionMember2ExprUnionMember7Expr]
+    expr: Required[RankByDivExprUnionMember2ExprUnionMember7Expr]
 
-    op: Required[Literal["Log"]]
+    type: Required[Literal["Log"]]
 
 
-RankByUnionMember4ExprUnionMember2Expr: TypeAlias = Union[
-    RankByUnionMember4ExprUnionMember2ExprUnionMember0,
-    RankByUnionMember4ExprUnionMember2ExprUnionMember1,
-    RankByUnionMember4ExprUnionMember2ExprUnionMember2,
-    RankByUnionMember4ExprUnionMember2ExprUnionMember3,
-    RankByUnionMember4ExprUnionMember2ExprUnionMember4,
-    RankByUnionMember4ExprUnionMember2ExprUnionMember5,
-    RankByUnionMember4ExprUnionMember2ExprUnionMember6,
-    RankByUnionMember4ExprUnionMember2ExprUnionMember7,
+RankByDivExprUnionMember2Expr: TypeAlias = Union[
+    RankByDivExprUnionMember2ExprUnionMember0,
+    RankByDivExprUnionMember2ExprUnionMember1,
+    RankByDivExprUnionMember2ExprUnionMember2,
+    RankByDivExprUnionMember2ExprUnionMember3,
+    RankByDivExprUnionMember2ExprUnionMember4,
+    RankByDivExprUnionMember2ExprUnionMember5,
+    RankByDivExprUnionMember2ExprUnionMember6,
+    RankByDivExprUnionMember2ExprUnionMember7,
 ]
 
 
-class RankByUnionMember4ExprUnionMember2(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember4ExprUnionMember2Expr]]
+class RankByDivExprUnionMember2(TypedDict, total=False):
+    exprs: Required[Iterable[RankByDivExprUnionMember2Expr]]
 
-    op: Required[Literal["Sum"]]
+    type: Required[Literal["Sum"]]
 
 
-class RankByUnionMember4ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
+class RankByDivExprUnionMember3ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember4ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByDivExprUnionMember3ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-class RankByUnionMember4ExprUnionMember3ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
+class RankByDivExprUnionMember3ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember4ExprUnionMember3ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByDivExprUnionMember3ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember4ExprUnionMember3ExprUnionMember2Expr: TypeAlias = Union[
-    RankByUnionMember4ExprUnionMember3ExprUnionMember2ExprUnionMember0,
-    RankByUnionMember4ExprUnionMember3ExprUnionMember2ExprUnionMember1,
+RankByDivExprUnionMember3ExprUnionMember2Expr: TypeAlias = Union[
+    RankByDivExprUnionMember3ExprUnionMember2ExprUnionMember0, RankByDivExprUnionMember3ExprUnionMember2ExprUnionMember1
 ]
 
 
-class RankByUnionMember4ExprUnionMember3ExprUnionMember2(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember4ExprUnionMember3ExprUnionMember2Expr]]
+class RankByDivExprUnionMember3ExprUnionMember2(TypedDict, total=False):
+    exprs: Required[Iterable[RankByDivExprUnionMember3ExprUnionMember2Expr]]
 
-    op: Required[Literal["Sum"]]
+    type: Required[Literal["Sum"]]
 
 
-class RankByUnionMember4ExprUnionMember3ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
+class RankByDivExprUnionMember3ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember4ExprUnionMember3ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByDivExprUnionMember3ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember4ExprUnionMember3ExprUnionMember3Expr: TypeAlias = Union[
-    RankByUnionMember4ExprUnionMember3ExprUnionMember3ExprUnionMember0,
-    RankByUnionMember4ExprUnionMember3ExprUnionMember3ExprUnionMember1,
+RankByDivExprUnionMember3ExprUnionMember3Expr: TypeAlias = Union[
+    RankByDivExprUnionMember3ExprUnionMember3ExprUnionMember0, RankByDivExprUnionMember3ExprUnionMember3ExprUnionMember1
 ]
 
 
-class RankByUnionMember4ExprUnionMember3ExprUnionMember3(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember4ExprUnionMember3ExprUnionMember3Expr]]
+class RankByDivExprUnionMember3ExprUnionMember3(TypedDict, total=False):
+    exprs: Required[Iterable[RankByDivExprUnionMember3ExprUnionMember3Expr]]
 
-    op: Required[Literal["Mult"]]
+    type: Required[Literal["Mult"]]
 
 
-class RankByUnionMember4ExprUnionMember3ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
+class RankByDivExprUnionMember3ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember4ExprUnionMember3ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByDivExprUnionMember3ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember4ExprUnionMember3ExprUnionMember4Expr: TypeAlias = Union[
-    RankByUnionMember4ExprUnionMember3ExprUnionMember4ExprUnionMember0,
-    RankByUnionMember4ExprUnionMember3ExprUnionMember4ExprUnionMember1,
+RankByDivExprUnionMember3ExprUnionMember4Expr: TypeAlias = Union[
+    RankByDivExprUnionMember3ExprUnionMember4ExprUnionMember0, RankByDivExprUnionMember3ExprUnionMember4ExprUnionMember1
 ]
 
 
-class RankByUnionMember4ExprUnionMember3ExprUnionMember4(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember4ExprUnionMember3ExprUnionMember4Expr]]
+class RankByDivExprUnionMember3ExprUnionMember4(TypedDict, total=False):
+    exprs: Required[Iterable[RankByDivExprUnionMember3ExprUnionMember4Expr]]
 
-    op: Required[Literal["Div"]]
+    type: Required[Literal["Div"]]
 
 
-class RankByUnionMember4ExprUnionMember3ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
+class RankByDivExprUnionMember3ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember4ExprUnionMember3ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByDivExprUnionMember3ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember4ExprUnionMember3ExprUnionMember5Expr: TypeAlias = Union[
-    RankByUnionMember4ExprUnionMember3ExprUnionMember5ExprUnionMember0,
-    RankByUnionMember4ExprUnionMember3ExprUnionMember5ExprUnionMember1,
+RankByDivExprUnionMember3ExprUnionMember5Expr: TypeAlias = Union[
+    RankByDivExprUnionMember3ExprUnionMember5ExprUnionMember0, RankByDivExprUnionMember3ExprUnionMember5ExprUnionMember1
 ]
 
 
-class RankByUnionMember4ExprUnionMember3ExprUnionMember5(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember4ExprUnionMember3ExprUnionMember5Expr]]
+class RankByDivExprUnionMember3ExprUnionMember5(TypedDict, total=False):
+    exprs: Required[Iterable[RankByDivExprUnionMember3ExprUnionMember5Expr]]
 
-    op: Required[Literal["Max"]]
+    type: Required[Literal["Max"]]
 
 
-class RankByUnionMember4ExprUnionMember3ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
+class RankByDivExprUnionMember3ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember4ExprUnionMember3ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByDivExprUnionMember3ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember4ExprUnionMember3ExprUnionMember6Expr: TypeAlias = Union[
-    RankByUnionMember4ExprUnionMember3ExprUnionMember6ExprUnionMember0,
-    RankByUnionMember4ExprUnionMember3ExprUnionMember6ExprUnionMember1,
+RankByDivExprUnionMember3ExprUnionMember6Expr: TypeAlias = Union[
+    RankByDivExprUnionMember3ExprUnionMember6ExprUnionMember0, RankByDivExprUnionMember3ExprUnionMember6ExprUnionMember1
 ]
 
 
-class RankByUnionMember4ExprUnionMember3ExprUnionMember6(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember4ExprUnionMember3ExprUnionMember6Expr]]
+class RankByDivExprUnionMember3ExprUnionMember6(TypedDict, total=False):
+    exprs: Required[Iterable[RankByDivExprUnionMember3ExprUnionMember6Expr]]
 
-    op: Required[Literal["Min"]]
+    type: Required[Literal["Min"]]
 
 
-class RankByUnionMember4ExprUnionMember3ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
+class RankByDivExprUnionMember3ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember4ExprUnionMember3ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByDivExprUnionMember3ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember4ExprUnionMember3ExprUnionMember7Expr: TypeAlias = Union[
-    RankByUnionMember4ExprUnionMember3ExprUnionMember7ExprUnionMember0,
-    RankByUnionMember4ExprUnionMember3ExprUnionMember7ExprUnionMember1,
+RankByDivExprUnionMember3ExprUnionMember7Expr: TypeAlias = Union[
+    RankByDivExprUnionMember3ExprUnionMember7ExprUnionMember0, RankByDivExprUnionMember3ExprUnionMember7ExprUnionMember1
 ]
 
 
-class RankByUnionMember4ExprUnionMember3ExprUnionMember7(TypedDict, total=False):
+class RankByDivExprUnionMember3ExprUnionMember7(TypedDict, total=False):
     base: Required[float]
 
-    expr: Required[RankByUnionMember4ExprUnionMember3ExprUnionMember7Expr]
+    expr: Required[RankByDivExprUnionMember3ExprUnionMember7Expr]
 
-    op: Required[Literal["Log"]]
+    type: Required[Literal["Log"]]
 
 
-RankByUnionMember4ExprUnionMember3Expr: TypeAlias = Union[
-    RankByUnionMember4ExprUnionMember3ExprUnionMember0,
-    RankByUnionMember4ExprUnionMember3ExprUnionMember1,
-    RankByUnionMember4ExprUnionMember3ExprUnionMember2,
-    RankByUnionMember4ExprUnionMember3ExprUnionMember3,
-    RankByUnionMember4ExprUnionMember3ExprUnionMember4,
-    RankByUnionMember4ExprUnionMember3ExprUnionMember5,
-    RankByUnionMember4ExprUnionMember3ExprUnionMember6,
-    RankByUnionMember4ExprUnionMember3ExprUnionMember7,
+RankByDivExprUnionMember3Expr: TypeAlias = Union[
+    RankByDivExprUnionMember3ExprUnionMember0,
+    RankByDivExprUnionMember3ExprUnionMember1,
+    RankByDivExprUnionMember3ExprUnionMember2,
+    RankByDivExprUnionMember3ExprUnionMember3,
+    RankByDivExprUnionMember3ExprUnionMember4,
+    RankByDivExprUnionMember3ExprUnionMember5,
+    RankByDivExprUnionMember3ExprUnionMember6,
+    RankByDivExprUnionMember3ExprUnionMember7,
 ]
 
 
-class RankByUnionMember4ExprUnionMember3(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember4ExprUnionMember3Expr]]
+class RankByDivExprUnionMember3(TypedDict, total=False):
+    exprs: Required[Iterable[RankByDivExprUnionMember3Expr]]
 
-    op: Required[Literal["Mult"]]
+    type: Required[Literal["Mult"]]
 
 
-class RankByUnionMember4ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
+class RankByDivExprUnionMember4ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember4ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByDivExprUnionMember4ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-class RankByUnionMember4ExprUnionMember4ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
+class RankByDivExprUnionMember4ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember4ExprUnionMember4ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByDivExprUnionMember4ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember4ExprUnionMember4ExprUnionMember2Expr: TypeAlias = Union[
-    RankByUnionMember4ExprUnionMember4ExprUnionMember2ExprUnionMember0,
-    RankByUnionMember4ExprUnionMember4ExprUnionMember2ExprUnionMember1,
+RankByDivExprUnionMember4ExprUnionMember2Expr: TypeAlias = Union[
+    RankByDivExprUnionMember4ExprUnionMember2ExprUnionMember0, RankByDivExprUnionMember4ExprUnionMember2ExprUnionMember1
 ]
 
 
-class RankByUnionMember4ExprUnionMember4ExprUnionMember2(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember4ExprUnionMember4ExprUnionMember2Expr]]
+class RankByDivExprUnionMember4ExprUnionMember2(TypedDict, total=False):
+    exprs: Required[Iterable[RankByDivExprUnionMember4ExprUnionMember2Expr]]
 
-    op: Required[Literal["Sum"]]
+    type: Required[Literal["Sum"]]
 
 
-class RankByUnionMember4ExprUnionMember4ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
+class RankByDivExprUnionMember4ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember4ExprUnionMember4ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByDivExprUnionMember4ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember4ExprUnionMember4ExprUnionMember3Expr: TypeAlias = Union[
-    RankByUnionMember4ExprUnionMember4ExprUnionMember3ExprUnionMember0,
-    RankByUnionMember4ExprUnionMember4ExprUnionMember3ExprUnionMember1,
+RankByDivExprUnionMember4ExprUnionMember3Expr: TypeAlias = Union[
+    RankByDivExprUnionMember4ExprUnionMember3ExprUnionMember0, RankByDivExprUnionMember4ExprUnionMember3ExprUnionMember1
 ]
 
 
-class RankByUnionMember4ExprUnionMember4ExprUnionMember3(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember4ExprUnionMember4ExprUnionMember3Expr]]
+class RankByDivExprUnionMember4ExprUnionMember3(TypedDict, total=False):
+    exprs: Required[Iterable[RankByDivExprUnionMember4ExprUnionMember3Expr]]
 
-    op: Required[Literal["Mult"]]
+    type: Required[Literal["Mult"]]
 
 
-class RankByUnionMember4ExprUnionMember4ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
+class RankByDivExprUnionMember4ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember4ExprUnionMember4ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByDivExprUnionMember4ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember4ExprUnionMember4ExprUnionMember4Expr: TypeAlias = Union[
-    RankByUnionMember4ExprUnionMember4ExprUnionMember4ExprUnionMember0,
-    RankByUnionMember4ExprUnionMember4ExprUnionMember4ExprUnionMember1,
+RankByDivExprUnionMember4ExprUnionMember4Expr: TypeAlias = Union[
+    RankByDivExprUnionMember4ExprUnionMember4ExprUnionMember0, RankByDivExprUnionMember4ExprUnionMember4ExprUnionMember1
 ]
 
 
-class RankByUnionMember4ExprUnionMember4ExprUnionMember4(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember4ExprUnionMember4ExprUnionMember4Expr]]
+class RankByDivExprUnionMember4ExprUnionMember4(TypedDict, total=False):
+    exprs: Required[Iterable[RankByDivExprUnionMember4ExprUnionMember4Expr]]
 
-    op: Required[Literal["Div"]]
+    type: Required[Literal["Div"]]
 
 
-class RankByUnionMember4ExprUnionMember4ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
+class RankByDivExprUnionMember4ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember4ExprUnionMember4ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByDivExprUnionMember4ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember4ExprUnionMember4ExprUnionMember5Expr: TypeAlias = Union[
-    RankByUnionMember4ExprUnionMember4ExprUnionMember5ExprUnionMember0,
-    RankByUnionMember4ExprUnionMember4ExprUnionMember5ExprUnionMember1,
+RankByDivExprUnionMember4ExprUnionMember5Expr: TypeAlias = Union[
+    RankByDivExprUnionMember4ExprUnionMember5ExprUnionMember0, RankByDivExprUnionMember4ExprUnionMember5ExprUnionMember1
 ]
 
 
-class RankByUnionMember4ExprUnionMember4ExprUnionMember5(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember4ExprUnionMember4ExprUnionMember5Expr]]
+class RankByDivExprUnionMember4ExprUnionMember5(TypedDict, total=False):
+    exprs: Required[Iterable[RankByDivExprUnionMember4ExprUnionMember5Expr]]
 
-    op: Required[Literal["Max"]]
+    type: Required[Literal["Max"]]
 
 
-class RankByUnionMember4ExprUnionMember4ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
+class RankByDivExprUnionMember4ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember4ExprUnionMember4ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByDivExprUnionMember4ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember4ExprUnionMember4ExprUnionMember6Expr: TypeAlias = Union[
-    RankByUnionMember4ExprUnionMember4ExprUnionMember6ExprUnionMember0,
-    RankByUnionMember4ExprUnionMember4ExprUnionMember6ExprUnionMember1,
+RankByDivExprUnionMember4ExprUnionMember6Expr: TypeAlias = Union[
+    RankByDivExprUnionMember4ExprUnionMember6ExprUnionMember0, RankByDivExprUnionMember4ExprUnionMember6ExprUnionMember1
 ]
 
 
-class RankByUnionMember4ExprUnionMember4ExprUnionMember6(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember4ExprUnionMember4ExprUnionMember6Expr]]
+class RankByDivExprUnionMember4ExprUnionMember6(TypedDict, total=False):
+    exprs: Required[Iterable[RankByDivExprUnionMember4ExprUnionMember6Expr]]
 
-    op: Required[Literal["Min"]]
+    type: Required[Literal["Min"]]
 
 
-class RankByUnionMember4ExprUnionMember4ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
+class RankByDivExprUnionMember4ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember4ExprUnionMember4ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByDivExprUnionMember4ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember4ExprUnionMember4ExprUnionMember7Expr: TypeAlias = Union[
-    RankByUnionMember4ExprUnionMember4ExprUnionMember7ExprUnionMember0,
-    RankByUnionMember4ExprUnionMember4ExprUnionMember7ExprUnionMember1,
+RankByDivExprUnionMember4ExprUnionMember7Expr: TypeAlias = Union[
+    RankByDivExprUnionMember4ExprUnionMember7ExprUnionMember0, RankByDivExprUnionMember4ExprUnionMember7ExprUnionMember1
 ]
 
 
-class RankByUnionMember4ExprUnionMember4ExprUnionMember7(TypedDict, total=False):
+class RankByDivExprUnionMember4ExprUnionMember7(TypedDict, total=False):
     base: Required[float]
 
-    expr: Required[RankByUnionMember4ExprUnionMember4ExprUnionMember7Expr]
+    expr: Required[RankByDivExprUnionMember4ExprUnionMember7Expr]
 
-    op: Required[Literal["Log"]]
+    type: Required[Literal["Log"]]
 
 
-RankByUnionMember4ExprUnionMember4Expr: TypeAlias = Union[
-    RankByUnionMember4ExprUnionMember4ExprUnionMember0,
-    RankByUnionMember4ExprUnionMember4ExprUnionMember1,
-    RankByUnionMember4ExprUnionMember4ExprUnionMember2,
-    RankByUnionMember4ExprUnionMember4ExprUnionMember3,
-    RankByUnionMember4ExprUnionMember4ExprUnionMember4,
-    RankByUnionMember4ExprUnionMember4ExprUnionMember5,
-    RankByUnionMember4ExprUnionMember4ExprUnionMember6,
-    RankByUnionMember4ExprUnionMember4ExprUnionMember7,
+RankByDivExprUnionMember4Expr: TypeAlias = Union[
+    RankByDivExprUnionMember4ExprUnionMember0,
+    RankByDivExprUnionMember4ExprUnionMember1,
+    RankByDivExprUnionMember4ExprUnionMember2,
+    RankByDivExprUnionMember4ExprUnionMember3,
+    RankByDivExprUnionMember4ExprUnionMember4,
+    RankByDivExprUnionMember4ExprUnionMember5,
+    RankByDivExprUnionMember4ExprUnionMember6,
+    RankByDivExprUnionMember4ExprUnionMember7,
 ]
 
 
-class RankByUnionMember4ExprUnionMember4(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember4ExprUnionMember4Expr]]
+class RankByDivExprUnionMember4(TypedDict, total=False):
+    exprs: Required[Iterable[RankByDivExprUnionMember4Expr]]
 
-    op: Required[Literal["Div"]]
+    type: Required[Literal["Div"]]
 
 
-class RankByUnionMember4ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
+class RankByDivExprUnionMember5ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember4ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByDivExprUnionMember5ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-class RankByUnionMember4ExprUnionMember5ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
+class RankByDivExprUnionMember5ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember4ExprUnionMember5ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByDivExprUnionMember5ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember4ExprUnionMember5ExprUnionMember2Expr: TypeAlias = Union[
-    RankByUnionMember4ExprUnionMember5ExprUnionMember2ExprUnionMember0,
-    RankByUnionMember4ExprUnionMember5ExprUnionMember2ExprUnionMember1,
+RankByDivExprUnionMember5ExprUnionMember2Expr: TypeAlias = Union[
+    RankByDivExprUnionMember5ExprUnionMember2ExprUnionMember0, RankByDivExprUnionMember5ExprUnionMember2ExprUnionMember1
 ]
 
 
-class RankByUnionMember4ExprUnionMember5ExprUnionMember2(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember4ExprUnionMember5ExprUnionMember2Expr]]
+class RankByDivExprUnionMember5ExprUnionMember2(TypedDict, total=False):
+    exprs: Required[Iterable[RankByDivExprUnionMember5ExprUnionMember2Expr]]
 
-    op: Required[Literal["Sum"]]
+    type: Required[Literal["Sum"]]
 
 
-class RankByUnionMember4ExprUnionMember5ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
+class RankByDivExprUnionMember5ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember4ExprUnionMember5ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByDivExprUnionMember5ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember4ExprUnionMember5ExprUnionMember3Expr: TypeAlias = Union[
-    RankByUnionMember4ExprUnionMember5ExprUnionMember3ExprUnionMember0,
-    RankByUnionMember4ExprUnionMember5ExprUnionMember3ExprUnionMember1,
+RankByDivExprUnionMember5ExprUnionMember3Expr: TypeAlias = Union[
+    RankByDivExprUnionMember5ExprUnionMember3ExprUnionMember0, RankByDivExprUnionMember5ExprUnionMember3ExprUnionMember1
 ]
 
 
-class RankByUnionMember4ExprUnionMember5ExprUnionMember3(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember4ExprUnionMember5ExprUnionMember3Expr]]
+class RankByDivExprUnionMember5ExprUnionMember3(TypedDict, total=False):
+    exprs: Required[Iterable[RankByDivExprUnionMember5ExprUnionMember3Expr]]
 
-    op: Required[Literal["Mult"]]
+    type: Required[Literal["Mult"]]
 
 
-class RankByUnionMember4ExprUnionMember5ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
+class RankByDivExprUnionMember5ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember4ExprUnionMember5ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByDivExprUnionMember5ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember4ExprUnionMember5ExprUnionMember4Expr: TypeAlias = Union[
-    RankByUnionMember4ExprUnionMember5ExprUnionMember4ExprUnionMember0,
-    RankByUnionMember4ExprUnionMember5ExprUnionMember4ExprUnionMember1,
+RankByDivExprUnionMember5ExprUnionMember4Expr: TypeAlias = Union[
+    RankByDivExprUnionMember5ExprUnionMember4ExprUnionMember0, RankByDivExprUnionMember5ExprUnionMember4ExprUnionMember1
 ]
 
 
-class RankByUnionMember4ExprUnionMember5ExprUnionMember4(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember4ExprUnionMember5ExprUnionMember4Expr]]
+class RankByDivExprUnionMember5ExprUnionMember4(TypedDict, total=False):
+    exprs: Required[Iterable[RankByDivExprUnionMember5ExprUnionMember4Expr]]
 
-    op: Required[Literal["Div"]]
+    type: Required[Literal["Div"]]
 
 
-class RankByUnionMember4ExprUnionMember5ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
+class RankByDivExprUnionMember5ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember4ExprUnionMember5ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByDivExprUnionMember5ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember4ExprUnionMember5ExprUnionMember5Expr: TypeAlias = Union[
-    RankByUnionMember4ExprUnionMember5ExprUnionMember5ExprUnionMember0,
-    RankByUnionMember4ExprUnionMember5ExprUnionMember5ExprUnionMember1,
+RankByDivExprUnionMember5ExprUnionMember5Expr: TypeAlias = Union[
+    RankByDivExprUnionMember5ExprUnionMember5ExprUnionMember0, RankByDivExprUnionMember5ExprUnionMember5ExprUnionMember1
 ]
 
 
-class RankByUnionMember4ExprUnionMember5ExprUnionMember5(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember4ExprUnionMember5ExprUnionMember5Expr]]
+class RankByDivExprUnionMember5ExprUnionMember5(TypedDict, total=False):
+    exprs: Required[Iterable[RankByDivExprUnionMember5ExprUnionMember5Expr]]
 
-    op: Required[Literal["Max"]]
+    type: Required[Literal["Max"]]
 
 
-class RankByUnionMember4ExprUnionMember5ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
+class RankByDivExprUnionMember5ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember4ExprUnionMember5ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByDivExprUnionMember5ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember4ExprUnionMember5ExprUnionMember6Expr: TypeAlias = Union[
-    RankByUnionMember4ExprUnionMember5ExprUnionMember6ExprUnionMember0,
-    RankByUnionMember4ExprUnionMember5ExprUnionMember6ExprUnionMember1,
+RankByDivExprUnionMember5ExprUnionMember6Expr: TypeAlias = Union[
+    RankByDivExprUnionMember5ExprUnionMember6ExprUnionMember0, RankByDivExprUnionMember5ExprUnionMember6ExprUnionMember1
 ]
 
 
-class RankByUnionMember4ExprUnionMember5ExprUnionMember6(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember4ExprUnionMember5ExprUnionMember6Expr]]
+class RankByDivExprUnionMember5ExprUnionMember6(TypedDict, total=False):
+    exprs: Required[Iterable[RankByDivExprUnionMember5ExprUnionMember6Expr]]
 
-    op: Required[Literal["Min"]]
+    type: Required[Literal["Min"]]
 
 
-class RankByUnionMember4ExprUnionMember5ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
+class RankByDivExprUnionMember5ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember4ExprUnionMember5ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByDivExprUnionMember5ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember4ExprUnionMember5ExprUnionMember7Expr: TypeAlias = Union[
-    RankByUnionMember4ExprUnionMember5ExprUnionMember7ExprUnionMember0,
-    RankByUnionMember4ExprUnionMember5ExprUnionMember7ExprUnionMember1,
+RankByDivExprUnionMember5ExprUnionMember7Expr: TypeAlias = Union[
+    RankByDivExprUnionMember5ExprUnionMember7ExprUnionMember0, RankByDivExprUnionMember5ExprUnionMember7ExprUnionMember1
 ]
 
 
-class RankByUnionMember4ExprUnionMember5ExprUnionMember7(TypedDict, total=False):
+class RankByDivExprUnionMember5ExprUnionMember7(TypedDict, total=False):
     base: Required[float]
 
-    expr: Required[RankByUnionMember4ExprUnionMember5ExprUnionMember7Expr]
+    expr: Required[RankByDivExprUnionMember5ExprUnionMember7Expr]
 
-    op: Required[Literal["Log"]]
+    type: Required[Literal["Log"]]
 
 
-RankByUnionMember4ExprUnionMember5Expr: TypeAlias = Union[
-    RankByUnionMember4ExprUnionMember5ExprUnionMember0,
-    RankByUnionMember4ExprUnionMember5ExprUnionMember1,
-    RankByUnionMember4ExprUnionMember5ExprUnionMember2,
-    RankByUnionMember4ExprUnionMember5ExprUnionMember3,
-    RankByUnionMember4ExprUnionMember5ExprUnionMember4,
-    RankByUnionMember4ExprUnionMember5ExprUnionMember5,
-    RankByUnionMember4ExprUnionMember5ExprUnionMember6,
-    RankByUnionMember4ExprUnionMember5ExprUnionMember7,
+RankByDivExprUnionMember5Expr: TypeAlias = Union[
+    RankByDivExprUnionMember5ExprUnionMember0,
+    RankByDivExprUnionMember5ExprUnionMember1,
+    RankByDivExprUnionMember5ExprUnionMember2,
+    RankByDivExprUnionMember5ExprUnionMember3,
+    RankByDivExprUnionMember5ExprUnionMember4,
+    RankByDivExprUnionMember5ExprUnionMember5,
+    RankByDivExprUnionMember5ExprUnionMember6,
+    RankByDivExprUnionMember5ExprUnionMember7,
 ]
 
 
-class RankByUnionMember4ExprUnionMember5(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember4ExprUnionMember5Expr]]
+class RankByDivExprUnionMember5(TypedDict, total=False):
+    exprs: Required[Iterable[RankByDivExprUnionMember5Expr]]
 
-    op: Required[Literal["Max"]]
+    type: Required[Literal["Max"]]
 
 
-class RankByUnionMember4ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
+class RankByDivExprUnionMember6ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember4ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByDivExprUnionMember6ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-class RankByUnionMember4ExprUnionMember6ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
+class RankByDivExprUnionMember6ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember4ExprUnionMember6ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByDivExprUnionMember6ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember4ExprUnionMember6ExprUnionMember2Expr: TypeAlias = Union[
-    RankByUnionMember4ExprUnionMember6ExprUnionMember2ExprUnionMember0,
-    RankByUnionMember4ExprUnionMember6ExprUnionMember2ExprUnionMember1,
+RankByDivExprUnionMember6ExprUnionMember2Expr: TypeAlias = Union[
+    RankByDivExprUnionMember6ExprUnionMember2ExprUnionMember0, RankByDivExprUnionMember6ExprUnionMember2ExprUnionMember1
 ]
 
 
-class RankByUnionMember4ExprUnionMember6ExprUnionMember2(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember4ExprUnionMember6ExprUnionMember2Expr]]
+class RankByDivExprUnionMember6ExprUnionMember2(TypedDict, total=False):
+    exprs: Required[Iterable[RankByDivExprUnionMember6ExprUnionMember2Expr]]
 
-    op: Required[Literal["Sum"]]
+    type: Required[Literal["Sum"]]
 
 
-class RankByUnionMember4ExprUnionMember6ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
+class RankByDivExprUnionMember6ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember4ExprUnionMember6ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByDivExprUnionMember6ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember4ExprUnionMember6ExprUnionMember3Expr: TypeAlias = Union[
-    RankByUnionMember4ExprUnionMember6ExprUnionMember3ExprUnionMember0,
-    RankByUnionMember4ExprUnionMember6ExprUnionMember3ExprUnionMember1,
+RankByDivExprUnionMember6ExprUnionMember3Expr: TypeAlias = Union[
+    RankByDivExprUnionMember6ExprUnionMember3ExprUnionMember0, RankByDivExprUnionMember6ExprUnionMember3ExprUnionMember1
 ]
 
 
-class RankByUnionMember4ExprUnionMember6ExprUnionMember3(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember4ExprUnionMember6ExprUnionMember3Expr]]
+class RankByDivExprUnionMember6ExprUnionMember3(TypedDict, total=False):
+    exprs: Required[Iterable[RankByDivExprUnionMember6ExprUnionMember3Expr]]
 
-    op: Required[Literal["Mult"]]
+    type: Required[Literal["Mult"]]
 
 
-class RankByUnionMember4ExprUnionMember6ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
+class RankByDivExprUnionMember6ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember4ExprUnionMember6ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByDivExprUnionMember6ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember4ExprUnionMember6ExprUnionMember4Expr: TypeAlias = Union[
-    RankByUnionMember4ExprUnionMember6ExprUnionMember4ExprUnionMember0,
-    RankByUnionMember4ExprUnionMember6ExprUnionMember4ExprUnionMember1,
+RankByDivExprUnionMember6ExprUnionMember4Expr: TypeAlias = Union[
+    RankByDivExprUnionMember6ExprUnionMember4ExprUnionMember0, RankByDivExprUnionMember6ExprUnionMember4ExprUnionMember1
 ]
 
 
-class RankByUnionMember4ExprUnionMember6ExprUnionMember4(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember4ExprUnionMember6ExprUnionMember4Expr]]
+class RankByDivExprUnionMember6ExprUnionMember4(TypedDict, total=False):
+    exprs: Required[Iterable[RankByDivExprUnionMember6ExprUnionMember4Expr]]
 
-    op: Required[Literal["Div"]]
+    type: Required[Literal["Div"]]
 
 
-class RankByUnionMember4ExprUnionMember6ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
+class RankByDivExprUnionMember6ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember4ExprUnionMember6ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByDivExprUnionMember6ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember4ExprUnionMember6ExprUnionMember5Expr: TypeAlias = Union[
-    RankByUnionMember4ExprUnionMember6ExprUnionMember5ExprUnionMember0,
-    RankByUnionMember4ExprUnionMember6ExprUnionMember5ExprUnionMember1,
+RankByDivExprUnionMember6ExprUnionMember5Expr: TypeAlias = Union[
+    RankByDivExprUnionMember6ExprUnionMember5ExprUnionMember0, RankByDivExprUnionMember6ExprUnionMember5ExprUnionMember1
 ]
 
 
-class RankByUnionMember4ExprUnionMember6ExprUnionMember5(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember4ExprUnionMember6ExprUnionMember5Expr]]
+class RankByDivExprUnionMember6ExprUnionMember5(TypedDict, total=False):
+    exprs: Required[Iterable[RankByDivExprUnionMember6ExprUnionMember5Expr]]
 
-    op: Required[Literal["Max"]]
+    type: Required[Literal["Max"]]
 
 
-class RankByUnionMember4ExprUnionMember6ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
+class RankByDivExprUnionMember6ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember4ExprUnionMember6ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByDivExprUnionMember6ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember4ExprUnionMember6ExprUnionMember6Expr: TypeAlias = Union[
-    RankByUnionMember4ExprUnionMember6ExprUnionMember6ExprUnionMember0,
-    RankByUnionMember4ExprUnionMember6ExprUnionMember6ExprUnionMember1,
+RankByDivExprUnionMember6ExprUnionMember6Expr: TypeAlias = Union[
+    RankByDivExprUnionMember6ExprUnionMember6ExprUnionMember0, RankByDivExprUnionMember6ExprUnionMember6ExprUnionMember1
 ]
 
 
-class RankByUnionMember4ExprUnionMember6ExprUnionMember6(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember4ExprUnionMember6ExprUnionMember6Expr]]
+class RankByDivExprUnionMember6ExprUnionMember6(TypedDict, total=False):
+    exprs: Required[Iterable[RankByDivExprUnionMember6ExprUnionMember6Expr]]
 
-    op: Required[Literal["Min"]]
+    type: Required[Literal["Min"]]
 
 
-class RankByUnionMember4ExprUnionMember6ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
+class RankByDivExprUnionMember6ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember4ExprUnionMember6ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByDivExprUnionMember6ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember4ExprUnionMember6ExprUnionMember7Expr: TypeAlias = Union[
-    RankByUnionMember4ExprUnionMember6ExprUnionMember7ExprUnionMember0,
-    RankByUnionMember4ExprUnionMember6ExprUnionMember7ExprUnionMember1,
+RankByDivExprUnionMember6ExprUnionMember7Expr: TypeAlias = Union[
+    RankByDivExprUnionMember6ExprUnionMember7ExprUnionMember0, RankByDivExprUnionMember6ExprUnionMember7ExprUnionMember1
 ]
 
 
-class RankByUnionMember4ExprUnionMember6ExprUnionMember7(TypedDict, total=False):
+class RankByDivExprUnionMember6ExprUnionMember7(TypedDict, total=False):
     base: Required[float]
 
-    expr: Required[RankByUnionMember4ExprUnionMember6ExprUnionMember7Expr]
+    expr: Required[RankByDivExprUnionMember6ExprUnionMember7Expr]
 
-    op: Required[Literal["Log"]]
+    type: Required[Literal["Log"]]
 
 
-RankByUnionMember4ExprUnionMember6Expr: TypeAlias = Union[
-    RankByUnionMember4ExprUnionMember6ExprUnionMember0,
-    RankByUnionMember4ExprUnionMember6ExprUnionMember1,
-    RankByUnionMember4ExprUnionMember6ExprUnionMember2,
-    RankByUnionMember4ExprUnionMember6ExprUnionMember3,
-    RankByUnionMember4ExprUnionMember6ExprUnionMember4,
-    RankByUnionMember4ExprUnionMember6ExprUnionMember5,
-    RankByUnionMember4ExprUnionMember6ExprUnionMember6,
-    RankByUnionMember4ExprUnionMember6ExprUnionMember7,
+RankByDivExprUnionMember6Expr: TypeAlias = Union[
+    RankByDivExprUnionMember6ExprUnionMember0,
+    RankByDivExprUnionMember6ExprUnionMember1,
+    RankByDivExprUnionMember6ExprUnionMember2,
+    RankByDivExprUnionMember6ExprUnionMember3,
+    RankByDivExprUnionMember6ExprUnionMember4,
+    RankByDivExprUnionMember6ExprUnionMember5,
+    RankByDivExprUnionMember6ExprUnionMember6,
+    RankByDivExprUnionMember6ExprUnionMember7,
 ]
 
 
-class RankByUnionMember4ExprUnionMember6(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember4ExprUnionMember6Expr]]
+class RankByDivExprUnionMember6(TypedDict, total=False):
+    exprs: Required[Iterable[RankByDivExprUnionMember6Expr]]
 
-    op: Required[Literal["Min"]]
+    type: Required[Literal["Min"]]
 
 
-class RankByUnionMember4ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
+class RankByDivExprUnionMember7ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember4ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByDivExprUnionMember7ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-class RankByUnionMember4ExprUnionMember7ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
+class RankByDivExprUnionMember7ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember4ExprUnionMember7ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByDivExprUnionMember7ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember4ExprUnionMember7ExprUnionMember2Expr: TypeAlias = Union[
-    RankByUnionMember4ExprUnionMember7ExprUnionMember2ExprUnionMember0,
-    RankByUnionMember4ExprUnionMember7ExprUnionMember2ExprUnionMember1,
+RankByDivExprUnionMember7ExprUnionMember2Expr: TypeAlias = Union[
+    RankByDivExprUnionMember7ExprUnionMember2ExprUnionMember0, RankByDivExprUnionMember7ExprUnionMember2ExprUnionMember1
 ]
 
 
-class RankByUnionMember4ExprUnionMember7ExprUnionMember2(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember4ExprUnionMember7ExprUnionMember2Expr]]
+class RankByDivExprUnionMember7ExprUnionMember2(TypedDict, total=False):
+    exprs: Required[Iterable[RankByDivExprUnionMember7ExprUnionMember2Expr]]
 
-    op: Required[Literal["Sum"]]
+    type: Required[Literal["Sum"]]
 
 
-class RankByUnionMember4ExprUnionMember7ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
+class RankByDivExprUnionMember7ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember4ExprUnionMember7ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByDivExprUnionMember7ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember4ExprUnionMember7ExprUnionMember3Expr: TypeAlias = Union[
-    RankByUnionMember4ExprUnionMember7ExprUnionMember3ExprUnionMember0,
-    RankByUnionMember4ExprUnionMember7ExprUnionMember3ExprUnionMember1,
+RankByDivExprUnionMember7ExprUnionMember3Expr: TypeAlias = Union[
+    RankByDivExprUnionMember7ExprUnionMember3ExprUnionMember0, RankByDivExprUnionMember7ExprUnionMember3ExprUnionMember1
 ]
 
 
-class RankByUnionMember4ExprUnionMember7ExprUnionMember3(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember4ExprUnionMember7ExprUnionMember3Expr]]
+class RankByDivExprUnionMember7ExprUnionMember3(TypedDict, total=False):
+    exprs: Required[Iterable[RankByDivExprUnionMember7ExprUnionMember3Expr]]
 
-    op: Required[Literal["Mult"]]
+    type: Required[Literal["Mult"]]
 
 
-class RankByUnionMember4ExprUnionMember7ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
+class RankByDivExprUnionMember7ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember4ExprUnionMember7ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByDivExprUnionMember7ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember4ExprUnionMember7ExprUnionMember4Expr: TypeAlias = Union[
-    RankByUnionMember4ExprUnionMember7ExprUnionMember4ExprUnionMember0,
-    RankByUnionMember4ExprUnionMember7ExprUnionMember4ExprUnionMember1,
+RankByDivExprUnionMember7ExprUnionMember4Expr: TypeAlias = Union[
+    RankByDivExprUnionMember7ExprUnionMember4ExprUnionMember0, RankByDivExprUnionMember7ExprUnionMember4ExprUnionMember1
 ]
 
 
-class RankByUnionMember4ExprUnionMember7ExprUnionMember4(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember4ExprUnionMember7ExprUnionMember4Expr]]
+class RankByDivExprUnionMember7ExprUnionMember4(TypedDict, total=False):
+    exprs: Required[Iterable[RankByDivExprUnionMember7ExprUnionMember4Expr]]
 
-    op: Required[Literal["Div"]]
+    type: Required[Literal["Div"]]
 
 
-class RankByUnionMember4ExprUnionMember7ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
+class RankByDivExprUnionMember7ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember4ExprUnionMember7ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByDivExprUnionMember7ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember4ExprUnionMember7ExprUnionMember5Expr: TypeAlias = Union[
-    RankByUnionMember4ExprUnionMember7ExprUnionMember5ExprUnionMember0,
-    RankByUnionMember4ExprUnionMember7ExprUnionMember5ExprUnionMember1,
+RankByDivExprUnionMember7ExprUnionMember5Expr: TypeAlias = Union[
+    RankByDivExprUnionMember7ExprUnionMember5ExprUnionMember0, RankByDivExprUnionMember7ExprUnionMember5ExprUnionMember1
 ]
 
 
-class RankByUnionMember4ExprUnionMember7ExprUnionMember5(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember4ExprUnionMember7ExprUnionMember5Expr]]
+class RankByDivExprUnionMember7ExprUnionMember5(TypedDict, total=False):
+    exprs: Required[Iterable[RankByDivExprUnionMember7ExprUnionMember5Expr]]
 
-    op: Required[Literal["Max"]]
+    type: Required[Literal["Max"]]
 
 
-class RankByUnionMember4ExprUnionMember7ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
+class RankByDivExprUnionMember7ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember4ExprUnionMember7ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByDivExprUnionMember7ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember4ExprUnionMember7ExprUnionMember6Expr: TypeAlias = Union[
-    RankByUnionMember4ExprUnionMember7ExprUnionMember6ExprUnionMember0,
-    RankByUnionMember4ExprUnionMember7ExprUnionMember6ExprUnionMember1,
+RankByDivExprUnionMember7ExprUnionMember6Expr: TypeAlias = Union[
+    RankByDivExprUnionMember7ExprUnionMember6ExprUnionMember0, RankByDivExprUnionMember7ExprUnionMember6ExprUnionMember1
 ]
 
 
-class RankByUnionMember4ExprUnionMember7ExprUnionMember6(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember4ExprUnionMember7ExprUnionMember6Expr]]
+class RankByDivExprUnionMember7ExprUnionMember6(TypedDict, total=False):
+    exprs: Required[Iterable[RankByDivExprUnionMember7ExprUnionMember6Expr]]
 
-    op: Required[Literal["Min"]]
+    type: Required[Literal["Min"]]
 
 
-class RankByUnionMember4ExprUnionMember7ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
+class RankByDivExprUnionMember7ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember4ExprUnionMember7ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByDivExprUnionMember7ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember4ExprUnionMember7ExprUnionMember7Expr: TypeAlias = Union[
-    RankByUnionMember4ExprUnionMember7ExprUnionMember7ExprUnionMember0,
-    RankByUnionMember4ExprUnionMember7ExprUnionMember7ExprUnionMember1,
+RankByDivExprUnionMember7ExprUnionMember7Expr: TypeAlias = Union[
+    RankByDivExprUnionMember7ExprUnionMember7ExprUnionMember0, RankByDivExprUnionMember7ExprUnionMember7ExprUnionMember1
 ]
 
 
-class RankByUnionMember4ExprUnionMember7ExprUnionMember7(TypedDict, total=False):
+class RankByDivExprUnionMember7ExprUnionMember7(TypedDict, total=False):
     base: Required[float]
 
-    expr: Required[RankByUnionMember4ExprUnionMember7ExprUnionMember7Expr]
+    expr: Required[RankByDivExprUnionMember7ExprUnionMember7Expr]
 
-    op: Required[Literal["Log"]]
+    type: Required[Literal["Log"]]
 
 
-RankByUnionMember4ExprUnionMember7Expr: TypeAlias = Union[
-    RankByUnionMember4ExprUnionMember7ExprUnionMember0,
-    RankByUnionMember4ExprUnionMember7ExprUnionMember1,
-    RankByUnionMember4ExprUnionMember7ExprUnionMember2,
-    RankByUnionMember4ExprUnionMember7ExprUnionMember3,
-    RankByUnionMember4ExprUnionMember7ExprUnionMember4,
-    RankByUnionMember4ExprUnionMember7ExprUnionMember5,
-    RankByUnionMember4ExprUnionMember7ExprUnionMember6,
-    RankByUnionMember4ExprUnionMember7ExprUnionMember7,
+RankByDivExprUnionMember7Expr: TypeAlias = Union[
+    RankByDivExprUnionMember7ExprUnionMember0,
+    RankByDivExprUnionMember7ExprUnionMember1,
+    RankByDivExprUnionMember7ExprUnionMember2,
+    RankByDivExprUnionMember7ExprUnionMember3,
+    RankByDivExprUnionMember7ExprUnionMember4,
+    RankByDivExprUnionMember7ExprUnionMember5,
+    RankByDivExprUnionMember7ExprUnionMember6,
+    RankByDivExprUnionMember7ExprUnionMember7,
 ]
 
 
-class RankByUnionMember4ExprUnionMember7(TypedDict, total=False):
+class RankByDivExprUnionMember7(TypedDict, total=False):
     base: Required[float]
 
-    expr: Required[RankByUnionMember4ExprUnionMember7Expr]
+    expr: Required[RankByDivExprUnionMember7Expr]
 
-    op: Required[Literal["Log"]]
+    type: Required[Literal["Log"]]
 
 
-RankByUnionMember4Expr: TypeAlias = Union[
-    RankByUnionMember4ExprUnionMember0,
-    RankByUnionMember4ExprUnionMember1,
-    RankByUnionMember4ExprUnionMember2,
-    RankByUnionMember4ExprUnionMember3,
-    RankByUnionMember4ExprUnionMember4,
-    RankByUnionMember4ExprUnionMember5,
-    RankByUnionMember4ExprUnionMember6,
-    RankByUnionMember4ExprUnionMember7,
+RankByDivExpr: TypeAlias = Union[
+    RankByDivExprUnionMember0,
+    RankByDivExprUnionMember1,
+    RankByDivExprUnionMember2,
+    RankByDivExprUnionMember3,
+    RankByDivExprUnionMember4,
+    RankByDivExprUnionMember5,
+    RankByDivExprUnionMember6,
+    RankByDivExprUnionMember7,
 ]
 
 
-class RankByUnionMember4(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember4Expr]]
+class RankByDiv(TypedDict, total=False):
+    exprs: Required[Iterable[RankByDivExpr]]
 
-    op: Required[Literal["Div"]]
+    type: Required[Literal["Div"]]
 
 
-class RankByUnionMember5ExprUnionMember0(TypedDict, total=False):
+class RankByMaxExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember5ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMaxExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-class RankByUnionMember5ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
+class RankByMaxExprUnionMember2ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember5ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMaxExprUnionMember2ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-class RankByUnionMember5ExprUnionMember2ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
+class RankByMaxExprUnionMember2ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember5ExprUnionMember2ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMaxExprUnionMember2ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember5ExprUnionMember2ExprUnionMember2Expr: TypeAlias = Union[
-    RankByUnionMember5ExprUnionMember2ExprUnionMember2ExprUnionMember0,
-    RankByUnionMember5ExprUnionMember2ExprUnionMember2ExprUnionMember1,
+RankByMaxExprUnionMember2ExprUnionMember2Expr: TypeAlias = Union[
+    RankByMaxExprUnionMember2ExprUnionMember2ExprUnionMember0, RankByMaxExprUnionMember2ExprUnionMember2ExprUnionMember1
 ]
 
 
-class RankByUnionMember5ExprUnionMember2ExprUnionMember2(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember5ExprUnionMember2ExprUnionMember2Expr]]
+class RankByMaxExprUnionMember2ExprUnionMember2(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMaxExprUnionMember2ExprUnionMember2Expr]]
 
-    op: Required[Literal["Sum"]]
+    type: Required[Literal["Sum"]]
 
 
-class RankByUnionMember5ExprUnionMember2ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
+class RankByMaxExprUnionMember2ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember5ExprUnionMember2ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMaxExprUnionMember2ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember5ExprUnionMember2ExprUnionMember3Expr: TypeAlias = Union[
-    RankByUnionMember5ExprUnionMember2ExprUnionMember3ExprUnionMember0,
-    RankByUnionMember5ExprUnionMember2ExprUnionMember3ExprUnionMember1,
+RankByMaxExprUnionMember2ExprUnionMember3Expr: TypeAlias = Union[
+    RankByMaxExprUnionMember2ExprUnionMember3ExprUnionMember0, RankByMaxExprUnionMember2ExprUnionMember3ExprUnionMember1
 ]
 
 
-class RankByUnionMember5ExprUnionMember2ExprUnionMember3(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember5ExprUnionMember2ExprUnionMember3Expr]]
+class RankByMaxExprUnionMember2ExprUnionMember3(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMaxExprUnionMember2ExprUnionMember3Expr]]
 
-    op: Required[Literal["Mult"]]
+    type: Required[Literal["Mult"]]
 
 
-class RankByUnionMember5ExprUnionMember2ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
+class RankByMaxExprUnionMember2ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember5ExprUnionMember2ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMaxExprUnionMember2ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember5ExprUnionMember2ExprUnionMember4Expr: TypeAlias = Union[
-    RankByUnionMember5ExprUnionMember2ExprUnionMember4ExprUnionMember0,
-    RankByUnionMember5ExprUnionMember2ExprUnionMember4ExprUnionMember1,
+RankByMaxExprUnionMember2ExprUnionMember4Expr: TypeAlias = Union[
+    RankByMaxExprUnionMember2ExprUnionMember4ExprUnionMember0, RankByMaxExprUnionMember2ExprUnionMember4ExprUnionMember1
 ]
 
 
-class RankByUnionMember5ExprUnionMember2ExprUnionMember4(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember5ExprUnionMember2ExprUnionMember4Expr]]
+class RankByMaxExprUnionMember2ExprUnionMember4(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMaxExprUnionMember2ExprUnionMember4Expr]]
 
-    op: Required[Literal["Div"]]
+    type: Required[Literal["Div"]]
 
 
-class RankByUnionMember5ExprUnionMember2ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
+class RankByMaxExprUnionMember2ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember5ExprUnionMember2ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMaxExprUnionMember2ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember5ExprUnionMember2ExprUnionMember5Expr: TypeAlias = Union[
-    RankByUnionMember5ExprUnionMember2ExprUnionMember5ExprUnionMember0,
-    RankByUnionMember5ExprUnionMember2ExprUnionMember5ExprUnionMember1,
+RankByMaxExprUnionMember2ExprUnionMember5Expr: TypeAlias = Union[
+    RankByMaxExprUnionMember2ExprUnionMember5ExprUnionMember0, RankByMaxExprUnionMember2ExprUnionMember5ExprUnionMember1
 ]
 
 
-class RankByUnionMember5ExprUnionMember2ExprUnionMember5(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember5ExprUnionMember2ExprUnionMember5Expr]]
+class RankByMaxExprUnionMember2ExprUnionMember5(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMaxExprUnionMember2ExprUnionMember5Expr]]
 
-    op: Required[Literal["Max"]]
+    type: Required[Literal["Max"]]
 
 
-class RankByUnionMember5ExprUnionMember2ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
+class RankByMaxExprUnionMember2ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember5ExprUnionMember2ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMaxExprUnionMember2ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember5ExprUnionMember2ExprUnionMember6Expr: TypeAlias = Union[
-    RankByUnionMember5ExprUnionMember2ExprUnionMember6ExprUnionMember0,
-    RankByUnionMember5ExprUnionMember2ExprUnionMember6ExprUnionMember1,
+RankByMaxExprUnionMember2ExprUnionMember6Expr: TypeAlias = Union[
+    RankByMaxExprUnionMember2ExprUnionMember6ExprUnionMember0, RankByMaxExprUnionMember2ExprUnionMember6ExprUnionMember1
 ]
 
 
-class RankByUnionMember5ExprUnionMember2ExprUnionMember6(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember5ExprUnionMember2ExprUnionMember6Expr]]
+class RankByMaxExprUnionMember2ExprUnionMember6(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMaxExprUnionMember2ExprUnionMember6Expr]]
 
-    op: Required[Literal["Min"]]
+    type: Required[Literal["Min"]]
 
 
-class RankByUnionMember5ExprUnionMember2ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
+class RankByMaxExprUnionMember2ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember5ExprUnionMember2ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMaxExprUnionMember2ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember5ExprUnionMember2ExprUnionMember7Expr: TypeAlias = Union[
-    RankByUnionMember5ExprUnionMember2ExprUnionMember7ExprUnionMember0,
-    RankByUnionMember5ExprUnionMember2ExprUnionMember7ExprUnionMember1,
+RankByMaxExprUnionMember2ExprUnionMember7Expr: TypeAlias = Union[
+    RankByMaxExprUnionMember2ExprUnionMember7ExprUnionMember0, RankByMaxExprUnionMember2ExprUnionMember7ExprUnionMember1
 ]
 
 
-class RankByUnionMember5ExprUnionMember2ExprUnionMember7(TypedDict, total=False):
+class RankByMaxExprUnionMember2ExprUnionMember7(TypedDict, total=False):
     base: Required[float]
 
-    expr: Required[RankByUnionMember5ExprUnionMember2ExprUnionMember7Expr]
+    expr: Required[RankByMaxExprUnionMember2ExprUnionMember7Expr]
 
-    op: Required[Literal["Log"]]
+    type: Required[Literal["Log"]]
 
 
-RankByUnionMember5ExprUnionMember2Expr: TypeAlias = Union[
-    RankByUnionMember5ExprUnionMember2ExprUnionMember0,
-    RankByUnionMember5ExprUnionMember2ExprUnionMember1,
-    RankByUnionMember5ExprUnionMember2ExprUnionMember2,
-    RankByUnionMember5ExprUnionMember2ExprUnionMember3,
-    RankByUnionMember5ExprUnionMember2ExprUnionMember4,
-    RankByUnionMember5ExprUnionMember2ExprUnionMember5,
-    RankByUnionMember5ExprUnionMember2ExprUnionMember6,
-    RankByUnionMember5ExprUnionMember2ExprUnionMember7,
+RankByMaxExprUnionMember2Expr: TypeAlias = Union[
+    RankByMaxExprUnionMember2ExprUnionMember0,
+    RankByMaxExprUnionMember2ExprUnionMember1,
+    RankByMaxExprUnionMember2ExprUnionMember2,
+    RankByMaxExprUnionMember2ExprUnionMember3,
+    RankByMaxExprUnionMember2ExprUnionMember4,
+    RankByMaxExprUnionMember2ExprUnionMember5,
+    RankByMaxExprUnionMember2ExprUnionMember6,
+    RankByMaxExprUnionMember2ExprUnionMember7,
 ]
 
 
-class RankByUnionMember5ExprUnionMember2(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember5ExprUnionMember2Expr]]
+class RankByMaxExprUnionMember2(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMaxExprUnionMember2Expr]]
 
-    op: Required[Literal["Sum"]]
+    type: Required[Literal["Sum"]]
 
 
-class RankByUnionMember5ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
+class RankByMaxExprUnionMember3ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember5ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMaxExprUnionMember3ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-class RankByUnionMember5ExprUnionMember3ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
+class RankByMaxExprUnionMember3ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember5ExprUnionMember3ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMaxExprUnionMember3ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember5ExprUnionMember3ExprUnionMember2Expr: TypeAlias = Union[
-    RankByUnionMember5ExprUnionMember3ExprUnionMember2ExprUnionMember0,
-    RankByUnionMember5ExprUnionMember3ExprUnionMember2ExprUnionMember1,
+RankByMaxExprUnionMember3ExprUnionMember2Expr: TypeAlias = Union[
+    RankByMaxExprUnionMember3ExprUnionMember2ExprUnionMember0, RankByMaxExprUnionMember3ExprUnionMember2ExprUnionMember1
 ]
 
 
-class RankByUnionMember5ExprUnionMember3ExprUnionMember2(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember5ExprUnionMember3ExprUnionMember2Expr]]
+class RankByMaxExprUnionMember3ExprUnionMember2(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMaxExprUnionMember3ExprUnionMember2Expr]]
 
-    op: Required[Literal["Sum"]]
+    type: Required[Literal["Sum"]]
 
 
-class RankByUnionMember5ExprUnionMember3ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
+class RankByMaxExprUnionMember3ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember5ExprUnionMember3ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMaxExprUnionMember3ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember5ExprUnionMember3ExprUnionMember3Expr: TypeAlias = Union[
-    RankByUnionMember5ExprUnionMember3ExprUnionMember3ExprUnionMember0,
-    RankByUnionMember5ExprUnionMember3ExprUnionMember3ExprUnionMember1,
+RankByMaxExprUnionMember3ExprUnionMember3Expr: TypeAlias = Union[
+    RankByMaxExprUnionMember3ExprUnionMember3ExprUnionMember0, RankByMaxExprUnionMember3ExprUnionMember3ExprUnionMember1
 ]
 
 
-class RankByUnionMember5ExprUnionMember3ExprUnionMember3(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember5ExprUnionMember3ExprUnionMember3Expr]]
+class RankByMaxExprUnionMember3ExprUnionMember3(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMaxExprUnionMember3ExprUnionMember3Expr]]
 
-    op: Required[Literal["Mult"]]
+    type: Required[Literal["Mult"]]
 
 
-class RankByUnionMember5ExprUnionMember3ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
+class RankByMaxExprUnionMember3ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember5ExprUnionMember3ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMaxExprUnionMember3ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember5ExprUnionMember3ExprUnionMember4Expr: TypeAlias = Union[
-    RankByUnionMember5ExprUnionMember3ExprUnionMember4ExprUnionMember0,
-    RankByUnionMember5ExprUnionMember3ExprUnionMember4ExprUnionMember1,
+RankByMaxExprUnionMember3ExprUnionMember4Expr: TypeAlias = Union[
+    RankByMaxExprUnionMember3ExprUnionMember4ExprUnionMember0, RankByMaxExprUnionMember3ExprUnionMember4ExprUnionMember1
 ]
 
 
-class RankByUnionMember5ExprUnionMember3ExprUnionMember4(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember5ExprUnionMember3ExprUnionMember4Expr]]
+class RankByMaxExprUnionMember3ExprUnionMember4(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMaxExprUnionMember3ExprUnionMember4Expr]]
 
-    op: Required[Literal["Div"]]
+    type: Required[Literal["Div"]]
 
 
-class RankByUnionMember5ExprUnionMember3ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
+class RankByMaxExprUnionMember3ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember5ExprUnionMember3ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMaxExprUnionMember3ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember5ExprUnionMember3ExprUnionMember5Expr: TypeAlias = Union[
-    RankByUnionMember5ExprUnionMember3ExprUnionMember5ExprUnionMember0,
-    RankByUnionMember5ExprUnionMember3ExprUnionMember5ExprUnionMember1,
+RankByMaxExprUnionMember3ExprUnionMember5Expr: TypeAlias = Union[
+    RankByMaxExprUnionMember3ExprUnionMember5ExprUnionMember0, RankByMaxExprUnionMember3ExprUnionMember5ExprUnionMember1
 ]
 
 
-class RankByUnionMember5ExprUnionMember3ExprUnionMember5(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember5ExprUnionMember3ExprUnionMember5Expr]]
+class RankByMaxExprUnionMember3ExprUnionMember5(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMaxExprUnionMember3ExprUnionMember5Expr]]
 
-    op: Required[Literal["Max"]]
+    type: Required[Literal["Max"]]
 
 
-class RankByUnionMember5ExprUnionMember3ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
+class RankByMaxExprUnionMember3ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember5ExprUnionMember3ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMaxExprUnionMember3ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember5ExprUnionMember3ExprUnionMember6Expr: TypeAlias = Union[
-    RankByUnionMember5ExprUnionMember3ExprUnionMember6ExprUnionMember0,
-    RankByUnionMember5ExprUnionMember3ExprUnionMember6ExprUnionMember1,
+RankByMaxExprUnionMember3ExprUnionMember6Expr: TypeAlias = Union[
+    RankByMaxExprUnionMember3ExprUnionMember6ExprUnionMember0, RankByMaxExprUnionMember3ExprUnionMember6ExprUnionMember1
 ]
 
 
-class RankByUnionMember5ExprUnionMember3ExprUnionMember6(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember5ExprUnionMember3ExprUnionMember6Expr]]
+class RankByMaxExprUnionMember3ExprUnionMember6(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMaxExprUnionMember3ExprUnionMember6Expr]]
 
-    op: Required[Literal["Min"]]
+    type: Required[Literal["Min"]]
 
 
-class RankByUnionMember5ExprUnionMember3ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
+class RankByMaxExprUnionMember3ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember5ExprUnionMember3ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMaxExprUnionMember3ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember5ExprUnionMember3ExprUnionMember7Expr: TypeAlias = Union[
-    RankByUnionMember5ExprUnionMember3ExprUnionMember7ExprUnionMember0,
-    RankByUnionMember5ExprUnionMember3ExprUnionMember7ExprUnionMember1,
+RankByMaxExprUnionMember3ExprUnionMember7Expr: TypeAlias = Union[
+    RankByMaxExprUnionMember3ExprUnionMember7ExprUnionMember0, RankByMaxExprUnionMember3ExprUnionMember7ExprUnionMember1
 ]
 
 
-class RankByUnionMember5ExprUnionMember3ExprUnionMember7(TypedDict, total=False):
+class RankByMaxExprUnionMember3ExprUnionMember7(TypedDict, total=False):
     base: Required[float]
 
-    expr: Required[RankByUnionMember5ExprUnionMember3ExprUnionMember7Expr]
+    expr: Required[RankByMaxExprUnionMember3ExprUnionMember7Expr]
 
-    op: Required[Literal["Log"]]
+    type: Required[Literal["Log"]]
 
 
-RankByUnionMember5ExprUnionMember3Expr: TypeAlias = Union[
-    RankByUnionMember5ExprUnionMember3ExprUnionMember0,
-    RankByUnionMember5ExprUnionMember3ExprUnionMember1,
-    RankByUnionMember5ExprUnionMember3ExprUnionMember2,
-    RankByUnionMember5ExprUnionMember3ExprUnionMember3,
-    RankByUnionMember5ExprUnionMember3ExprUnionMember4,
-    RankByUnionMember5ExprUnionMember3ExprUnionMember5,
-    RankByUnionMember5ExprUnionMember3ExprUnionMember6,
-    RankByUnionMember5ExprUnionMember3ExprUnionMember7,
+RankByMaxExprUnionMember3Expr: TypeAlias = Union[
+    RankByMaxExprUnionMember3ExprUnionMember0,
+    RankByMaxExprUnionMember3ExprUnionMember1,
+    RankByMaxExprUnionMember3ExprUnionMember2,
+    RankByMaxExprUnionMember3ExprUnionMember3,
+    RankByMaxExprUnionMember3ExprUnionMember4,
+    RankByMaxExprUnionMember3ExprUnionMember5,
+    RankByMaxExprUnionMember3ExprUnionMember6,
+    RankByMaxExprUnionMember3ExprUnionMember7,
 ]
 
 
-class RankByUnionMember5ExprUnionMember3(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember5ExprUnionMember3Expr]]
+class RankByMaxExprUnionMember3(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMaxExprUnionMember3Expr]]
 
-    op: Required[Literal["Mult"]]
+    type: Required[Literal["Mult"]]
 
 
-class RankByUnionMember5ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
+class RankByMaxExprUnionMember4ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember5ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMaxExprUnionMember4ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-class RankByUnionMember5ExprUnionMember4ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
+class RankByMaxExprUnionMember4ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember5ExprUnionMember4ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMaxExprUnionMember4ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember5ExprUnionMember4ExprUnionMember2Expr: TypeAlias = Union[
-    RankByUnionMember5ExprUnionMember4ExprUnionMember2ExprUnionMember0,
-    RankByUnionMember5ExprUnionMember4ExprUnionMember2ExprUnionMember1,
+RankByMaxExprUnionMember4ExprUnionMember2Expr: TypeAlias = Union[
+    RankByMaxExprUnionMember4ExprUnionMember2ExprUnionMember0, RankByMaxExprUnionMember4ExprUnionMember2ExprUnionMember1
 ]
 
 
-class RankByUnionMember5ExprUnionMember4ExprUnionMember2(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember5ExprUnionMember4ExprUnionMember2Expr]]
+class RankByMaxExprUnionMember4ExprUnionMember2(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMaxExprUnionMember4ExprUnionMember2Expr]]
 
-    op: Required[Literal["Sum"]]
+    type: Required[Literal["Sum"]]
 
 
-class RankByUnionMember5ExprUnionMember4ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
+class RankByMaxExprUnionMember4ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember5ExprUnionMember4ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMaxExprUnionMember4ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember5ExprUnionMember4ExprUnionMember3Expr: TypeAlias = Union[
-    RankByUnionMember5ExprUnionMember4ExprUnionMember3ExprUnionMember0,
-    RankByUnionMember5ExprUnionMember4ExprUnionMember3ExprUnionMember1,
+RankByMaxExprUnionMember4ExprUnionMember3Expr: TypeAlias = Union[
+    RankByMaxExprUnionMember4ExprUnionMember3ExprUnionMember0, RankByMaxExprUnionMember4ExprUnionMember3ExprUnionMember1
 ]
 
 
-class RankByUnionMember5ExprUnionMember4ExprUnionMember3(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember5ExprUnionMember4ExprUnionMember3Expr]]
+class RankByMaxExprUnionMember4ExprUnionMember3(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMaxExprUnionMember4ExprUnionMember3Expr]]
 
-    op: Required[Literal["Mult"]]
+    type: Required[Literal["Mult"]]
 
 
-class RankByUnionMember5ExprUnionMember4ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
+class RankByMaxExprUnionMember4ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember5ExprUnionMember4ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMaxExprUnionMember4ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember5ExprUnionMember4ExprUnionMember4Expr: TypeAlias = Union[
-    RankByUnionMember5ExprUnionMember4ExprUnionMember4ExprUnionMember0,
-    RankByUnionMember5ExprUnionMember4ExprUnionMember4ExprUnionMember1,
+RankByMaxExprUnionMember4ExprUnionMember4Expr: TypeAlias = Union[
+    RankByMaxExprUnionMember4ExprUnionMember4ExprUnionMember0, RankByMaxExprUnionMember4ExprUnionMember4ExprUnionMember1
 ]
 
 
-class RankByUnionMember5ExprUnionMember4ExprUnionMember4(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember5ExprUnionMember4ExprUnionMember4Expr]]
+class RankByMaxExprUnionMember4ExprUnionMember4(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMaxExprUnionMember4ExprUnionMember4Expr]]
 
-    op: Required[Literal["Div"]]
+    type: Required[Literal["Div"]]
 
 
-class RankByUnionMember5ExprUnionMember4ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
+class RankByMaxExprUnionMember4ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember5ExprUnionMember4ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMaxExprUnionMember4ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember5ExprUnionMember4ExprUnionMember5Expr: TypeAlias = Union[
-    RankByUnionMember5ExprUnionMember4ExprUnionMember5ExprUnionMember0,
-    RankByUnionMember5ExprUnionMember4ExprUnionMember5ExprUnionMember1,
+RankByMaxExprUnionMember4ExprUnionMember5Expr: TypeAlias = Union[
+    RankByMaxExprUnionMember4ExprUnionMember5ExprUnionMember0, RankByMaxExprUnionMember4ExprUnionMember5ExprUnionMember1
 ]
 
 
-class RankByUnionMember5ExprUnionMember4ExprUnionMember5(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember5ExprUnionMember4ExprUnionMember5Expr]]
+class RankByMaxExprUnionMember4ExprUnionMember5(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMaxExprUnionMember4ExprUnionMember5Expr]]
 
-    op: Required[Literal["Max"]]
+    type: Required[Literal["Max"]]
 
 
-class RankByUnionMember5ExprUnionMember4ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
+class RankByMaxExprUnionMember4ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember5ExprUnionMember4ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMaxExprUnionMember4ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember5ExprUnionMember4ExprUnionMember6Expr: TypeAlias = Union[
-    RankByUnionMember5ExprUnionMember4ExprUnionMember6ExprUnionMember0,
-    RankByUnionMember5ExprUnionMember4ExprUnionMember6ExprUnionMember1,
+RankByMaxExprUnionMember4ExprUnionMember6Expr: TypeAlias = Union[
+    RankByMaxExprUnionMember4ExprUnionMember6ExprUnionMember0, RankByMaxExprUnionMember4ExprUnionMember6ExprUnionMember1
 ]
 
 
-class RankByUnionMember5ExprUnionMember4ExprUnionMember6(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember5ExprUnionMember4ExprUnionMember6Expr]]
+class RankByMaxExprUnionMember4ExprUnionMember6(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMaxExprUnionMember4ExprUnionMember6Expr]]
 
-    op: Required[Literal["Min"]]
+    type: Required[Literal["Min"]]
 
 
-class RankByUnionMember5ExprUnionMember4ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
+class RankByMaxExprUnionMember4ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember5ExprUnionMember4ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMaxExprUnionMember4ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember5ExprUnionMember4ExprUnionMember7Expr: TypeAlias = Union[
-    RankByUnionMember5ExprUnionMember4ExprUnionMember7ExprUnionMember0,
-    RankByUnionMember5ExprUnionMember4ExprUnionMember7ExprUnionMember1,
+RankByMaxExprUnionMember4ExprUnionMember7Expr: TypeAlias = Union[
+    RankByMaxExprUnionMember4ExprUnionMember7ExprUnionMember0, RankByMaxExprUnionMember4ExprUnionMember7ExprUnionMember1
 ]
 
 
-class RankByUnionMember5ExprUnionMember4ExprUnionMember7(TypedDict, total=False):
+class RankByMaxExprUnionMember4ExprUnionMember7(TypedDict, total=False):
     base: Required[float]
 
-    expr: Required[RankByUnionMember5ExprUnionMember4ExprUnionMember7Expr]
+    expr: Required[RankByMaxExprUnionMember4ExprUnionMember7Expr]
 
-    op: Required[Literal["Log"]]
+    type: Required[Literal["Log"]]
 
 
-RankByUnionMember5ExprUnionMember4Expr: TypeAlias = Union[
-    RankByUnionMember5ExprUnionMember4ExprUnionMember0,
-    RankByUnionMember5ExprUnionMember4ExprUnionMember1,
-    RankByUnionMember5ExprUnionMember4ExprUnionMember2,
-    RankByUnionMember5ExprUnionMember4ExprUnionMember3,
-    RankByUnionMember5ExprUnionMember4ExprUnionMember4,
-    RankByUnionMember5ExprUnionMember4ExprUnionMember5,
-    RankByUnionMember5ExprUnionMember4ExprUnionMember6,
-    RankByUnionMember5ExprUnionMember4ExprUnionMember7,
+RankByMaxExprUnionMember4Expr: TypeAlias = Union[
+    RankByMaxExprUnionMember4ExprUnionMember0,
+    RankByMaxExprUnionMember4ExprUnionMember1,
+    RankByMaxExprUnionMember4ExprUnionMember2,
+    RankByMaxExprUnionMember4ExprUnionMember3,
+    RankByMaxExprUnionMember4ExprUnionMember4,
+    RankByMaxExprUnionMember4ExprUnionMember5,
+    RankByMaxExprUnionMember4ExprUnionMember6,
+    RankByMaxExprUnionMember4ExprUnionMember7,
 ]
 
 
-class RankByUnionMember5ExprUnionMember4(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember5ExprUnionMember4Expr]]
+class RankByMaxExprUnionMember4(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMaxExprUnionMember4Expr]]
 
-    op: Required[Literal["Div"]]
+    type: Required[Literal["Div"]]
 
 
-class RankByUnionMember5ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
+class RankByMaxExprUnionMember5ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember5ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMaxExprUnionMember5ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-class RankByUnionMember5ExprUnionMember5ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
+class RankByMaxExprUnionMember5ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember5ExprUnionMember5ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMaxExprUnionMember5ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember5ExprUnionMember5ExprUnionMember2Expr: TypeAlias = Union[
-    RankByUnionMember5ExprUnionMember5ExprUnionMember2ExprUnionMember0,
-    RankByUnionMember5ExprUnionMember5ExprUnionMember2ExprUnionMember1,
+RankByMaxExprUnionMember5ExprUnionMember2Expr: TypeAlias = Union[
+    RankByMaxExprUnionMember5ExprUnionMember2ExprUnionMember0, RankByMaxExprUnionMember5ExprUnionMember2ExprUnionMember1
 ]
 
 
-class RankByUnionMember5ExprUnionMember5ExprUnionMember2(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember5ExprUnionMember5ExprUnionMember2Expr]]
+class RankByMaxExprUnionMember5ExprUnionMember2(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMaxExprUnionMember5ExprUnionMember2Expr]]
 
-    op: Required[Literal["Sum"]]
+    type: Required[Literal["Sum"]]
 
 
-class RankByUnionMember5ExprUnionMember5ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
+class RankByMaxExprUnionMember5ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember5ExprUnionMember5ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMaxExprUnionMember5ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember5ExprUnionMember5ExprUnionMember3Expr: TypeAlias = Union[
-    RankByUnionMember5ExprUnionMember5ExprUnionMember3ExprUnionMember0,
-    RankByUnionMember5ExprUnionMember5ExprUnionMember3ExprUnionMember1,
+RankByMaxExprUnionMember5ExprUnionMember3Expr: TypeAlias = Union[
+    RankByMaxExprUnionMember5ExprUnionMember3ExprUnionMember0, RankByMaxExprUnionMember5ExprUnionMember3ExprUnionMember1
 ]
 
 
-class RankByUnionMember5ExprUnionMember5ExprUnionMember3(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember5ExprUnionMember5ExprUnionMember3Expr]]
+class RankByMaxExprUnionMember5ExprUnionMember3(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMaxExprUnionMember5ExprUnionMember3Expr]]
 
-    op: Required[Literal["Mult"]]
+    type: Required[Literal["Mult"]]
 
 
-class RankByUnionMember5ExprUnionMember5ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
+class RankByMaxExprUnionMember5ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember5ExprUnionMember5ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMaxExprUnionMember5ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember5ExprUnionMember5ExprUnionMember4Expr: TypeAlias = Union[
-    RankByUnionMember5ExprUnionMember5ExprUnionMember4ExprUnionMember0,
-    RankByUnionMember5ExprUnionMember5ExprUnionMember4ExprUnionMember1,
+RankByMaxExprUnionMember5ExprUnionMember4Expr: TypeAlias = Union[
+    RankByMaxExprUnionMember5ExprUnionMember4ExprUnionMember0, RankByMaxExprUnionMember5ExprUnionMember4ExprUnionMember1
 ]
 
 
-class RankByUnionMember5ExprUnionMember5ExprUnionMember4(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember5ExprUnionMember5ExprUnionMember4Expr]]
+class RankByMaxExprUnionMember5ExprUnionMember4(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMaxExprUnionMember5ExprUnionMember4Expr]]
 
-    op: Required[Literal["Div"]]
+    type: Required[Literal["Div"]]
 
 
-class RankByUnionMember5ExprUnionMember5ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
+class RankByMaxExprUnionMember5ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember5ExprUnionMember5ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMaxExprUnionMember5ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember5ExprUnionMember5ExprUnionMember5Expr: TypeAlias = Union[
-    RankByUnionMember5ExprUnionMember5ExprUnionMember5ExprUnionMember0,
-    RankByUnionMember5ExprUnionMember5ExprUnionMember5ExprUnionMember1,
+RankByMaxExprUnionMember5ExprUnionMember5Expr: TypeAlias = Union[
+    RankByMaxExprUnionMember5ExprUnionMember5ExprUnionMember0, RankByMaxExprUnionMember5ExprUnionMember5ExprUnionMember1
 ]
 
 
-class RankByUnionMember5ExprUnionMember5ExprUnionMember5(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember5ExprUnionMember5ExprUnionMember5Expr]]
+class RankByMaxExprUnionMember5ExprUnionMember5(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMaxExprUnionMember5ExprUnionMember5Expr]]
 
-    op: Required[Literal["Max"]]
+    type: Required[Literal["Max"]]
 
 
-class RankByUnionMember5ExprUnionMember5ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
+class RankByMaxExprUnionMember5ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember5ExprUnionMember5ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMaxExprUnionMember5ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember5ExprUnionMember5ExprUnionMember6Expr: TypeAlias = Union[
-    RankByUnionMember5ExprUnionMember5ExprUnionMember6ExprUnionMember0,
-    RankByUnionMember5ExprUnionMember5ExprUnionMember6ExprUnionMember1,
+RankByMaxExprUnionMember5ExprUnionMember6Expr: TypeAlias = Union[
+    RankByMaxExprUnionMember5ExprUnionMember6ExprUnionMember0, RankByMaxExprUnionMember5ExprUnionMember6ExprUnionMember1
 ]
 
 
-class RankByUnionMember5ExprUnionMember5ExprUnionMember6(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember5ExprUnionMember5ExprUnionMember6Expr]]
+class RankByMaxExprUnionMember5ExprUnionMember6(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMaxExprUnionMember5ExprUnionMember6Expr]]
 
-    op: Required[Literal["Min"]]
+    type: Required[Literal["Min"]]
 
 
-class RankByUnionMember5ExprUnionMember5ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
+class RankByMaxExprUnionMember5ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember5ExprUnionMember5ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMaxExprUnionMember5ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember5ExprUnionMember5ExprUnionMember7Expr: TypeAlias = Union[
-    RankByUnionMember5ExprUnionMember5ExprUnionMember7ExprUnionMember0,
-    RankByUnionMember5ExprUnionMember5ExprUnionMember7ExprUnionMember1,
+RankByMaxExprUnionMember5ExprUnionMember7Expr: TypeAlias = Union[
+    RankByMaxExprUnionMember5ExprUnionMember7ExprUnionMember0, RankByMaxExprUnionMember5ExprUnionMember7ExprUnionMember1
 ]
 
 
-class RankByUnionMember5ExprUnionMember5ExprUnionMember7(TypedDict, total=False):
+class RankByMaxExprUnionMember5ExprUnionMember7(TypedDict, total=False):
     base: Required[float]
 
-    expr: Required[RankByUnionMember5ExprUnionMember5ExprUnionMember7Expr]
+    expr: Required[RankByMaxExprUnionMember5ExprUnionMember7Expr]
 
-    op: Required[Literal["Log"]]
+    type: Required[Literal["Log"]]
 
 
-RankByUnionMember5ExprUnionMember5Expr: TypeAlias = Union[
-    RankByUnionMember5ExprUnionMember5ExprUnionMember0,
-    RankByUnionMember5ExprUnionMember5ExprUnionMember1,
-    RankByUnionMember5ExprUnionMember5ExprUnionMember2,
-    RankByUnionMember5ExprUnionMember5ExprUnionMember3,
-    RankByUnionMember5ExprUnionMember5ExprUnionMember4,
-    RankByUnionMember5ExprUnionMember5ExprUnionMember5,
-    RankByUnionMember5ExprUnionMember5ExprUnionMember6,
-    RankByUnionMember5ExprUnionMember5ExprUnionMember7,
+RankByMaxExprUnionMember5Expr: TypeAlias = Union[
+    RankByMaxExprUnionMember5ExprUnionMember0,
+    RankByMaxExprUnionMember5ExprUnionMember1,
+    RankByMaxExprUnionMember5ExprUnionMember2,
+    RankByMaxExprUnionMember5ExprUnionMember3,
+    RankByMaxExprUnionMember5ExprUnionMember4,
+    RankByMaxExprUnionMember5ExprUnionMember5,
+    RankByMaxExprUnionMember5ExprUnionMember6,
+    RankByMaxExprUnionMember5ExprUnionMember7,
 ]
 
 
-class RankByUnionMember5ExprUnionMember5(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember5ExprUnionMember5Expr]]
+class RankByMaxExprUnionMember5(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMaxExprUnionMember5Expr]]
 
-    op: Required[Literal["Max"]]
+    type: Required[Literal["Max"]]
 
 
-class RankByUnionMember5ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
+class RankByMaxExprUnionMember6ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember5ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMaxExprUnionMember6ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-class RankByUnionMember5ExprUnionMember6ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
+class RankByMaxExprUnionMember6ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember5ExprUnionMember6ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMaxExprUnionMember6ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember5ExprUnionMember6ExprUnionMember2Expr: TypeAlias = Union[
-    RankByUnionMember5ExprUnionMember6ExprUnionMember2ExprUnionMember0,
-    RankByUnionMember5ExprUnionMember6ExprUnionMember2ExprUnionMember1,
+RankByMaxExprUnionMember6ExprUnionMember2Expr: TypeAlias = Union[
+    RankByMaxExprUnionMember6ExprUnionMember2ExprUnionMember0, RankByMaxExprUnionMember6ExprUnionMember2ExprUnionMember1
 ]
 
 
-class RankByUnionMember5ExprUnionMember6ExprUnionMember2(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember5ExprUnionMember6ExprUnionMember2Expr]]
+class RankByMaxExprUnionMember6ExprUnionMember2(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMaxExprUnionMember6ExprUnionMember2Expr]]
 
-    op: Required[Literal["Sum"]]
+    type: Required[Literal["Sum"]]
 
 
-class RankByUnionMember5ExprUnionMember6ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
+class RankByMaxExprUnionMember6ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember5ExprUnionMember6ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMaxExprUnionMember6ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember5ExprUnionMember6ExprUnionMember3Expr: TypeAlias = Union[
-    RankByUnionMember5ExprUnionMember6ExprUnionMember3ExprUnionMember0,
-    RankByUnionMember5ExprUnionMember6ExprUnionMember3ExprUnionMember1,
+RankByMaxExprUnionMember6ExprUnionMember3Expr: TypeAlias = Union[
+    RankByMaxExprUnionMember6ExprUnionMember3ExprUnionMember0, RankByMaxExprUnionMember6ExprUnionMember3ExprUnionMember1
 ]
 
 
-class RankByUnionMember5ExprUnionMember6ExprUnionMember3(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember5ExprUnionMember6ExprUnionMember3Expr]]
+class RankByMaxExprUnionMember6ExprUnionMember3(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMaxExprUnionMember6ExprUnionMember3Expr]]
 
-    op: Required[Literal["Mult"]]
+    type: Required[Literal["Mult"]]
 
 
-class RankByUnionMember5ExprUnionMember6ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
+class RankByMaxExprUnionMember6ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember5ExprUnionMember6ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMaxExprUnionMember6ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember5ExprUnionMember6ExprUnionMember4Expr: TypeAlias = Union[
-    RankByUnionMember5ExprUnionMember6ExprUnionMember4ExprUnionMember0,
-    RankByUnionMember5ExprUnionMember6ExprUnionMember4ExprUnionMember1,
+RankByMaxExprUnionMember6ExprUnionMember4Expr: TypeAlias = Union[
+    RankByMaxExprUnionMember6ExprUnionMember4ExprUnionMember0, RankByMaxExprUnionMember6ExprUnionMember4ExprUnionMember1
 ]
 
 
-class RankByUnionMember5ExprUnionMember6ExprUnionMember4(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember5ExprUnionMember6ExprUnionMember4Expr]]
+class RankByMaxExprUnionMember6ExprUnionMember4(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMaxExprUnionMember6ExprUnionMember4Expr]]
 
-    op: Required[Literal["Div"]]
+    type: Required[Literal["Div"]]
 
 
-class RankByUnionMember5ExprUnionMember6ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
+class RankByMaxExprUnionMember6ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember5ExprUnionMember6ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMaxExprUnionMember6ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember5ExprUnionMember6ExprUnionMember5Expr: TypeAlias = Union[
-    RankByUnionMember5ExprUnionMember6ExprUnionMember5ExprUnionMember0,
-    RankByUnionMember5ExprUnionMember6ExprUnionMember5ExprUnionMember1,
+RankByMaxExprUnionMember6ExprUnionMember5Expr: TypeAlias = Union[
+    RankByMaxExprUnionMember6ExprUnionMember5ExprUnionMember0, RankByMaxExprUnionMember6ExprUnionMember5ExprUnionMember1
 ]
 
 
-class RankByUnionMember5ExprUnionMember6ExprUnionMember5(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember5ExprUnionMember6ExprUnionMember5Expr]]
+class RankByMaxExprUnionMember6ExprUnionMember5(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMaxExprUnionMember6ExprUnionMember5Expr]]
 
-    op: Required[Literal["Max"]]
+    type: Required[Literal["Max"]]
 
 
-class RankByUnionMember5ExprUnionMember6ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
+class RankByMaxExprUnionMember6ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember5ExprUnionMember6ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMaxExprUnionMember6ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember5ExprUnionMember6ExprUnionMember6Expr: TypeAlias = Union[
-    RankByUnionMember5ExprUnionMember6ExprUnionMember6ExprUnionMember0,
-    RankByUnionMember5ExprUnionMember6ExprUnionMember6ExprUnionMember1,
+RankByMaxExprUnionMember6ExprUnionMember6Expr: TypeAlias = Union[
+    RankByMaxExprUnionMember6ExprUnionMember6ExprUnionMember0, RankByMaxExprUnionMember6ExprUnionMember6ExprUnionMember1
 ]
 
 
-class RankByUnionMember5ExprUnionMember6ExprUnionMember6(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember5ExprUnionMember6ExprUnionMember6Expr]]
+class RankByMaxExprUnionMember6ExprUnionMember6(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMaxExprUnionMember6ExprUnionMember6Expr]]
 
-    op: Required[Literal["Min"]]
+    type: Required[Literal["Min"]]
 
 
-class RankByUnionMember5ExprUnionMember6ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
+class RankByMaxExprUnionMember6ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember5ExprUnionMember6ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMaxExprUnionMember6ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember5ExprUnionMember6ExprUnionMember7Expr: TypeAlias = Union[
-    RankByUnionMember5ExprUnionMember6ExprUnionMember7ExprUnionMember0,
-    RankByUnionMember5ExprUnionMember6ExprUnionMember7ExprUnionMember1,
+RankByMaxExprUnionMember6ExprUnionMember7Expr: TypeAlias = Union[
+    RankByMaxExprUnionMember6ExprUnionMember7ExprUnionMember0, RankByMaxExprUnionMember6ExprUnionMember7ExprUnionMember1
 ]
 
 
-class RankByUnionMember5ExprUnionMember6ExprUnionMember7(TypedDict, total=False):
+class RankByMaxExprUnionMember6ExprUnionMember7(TypedDict, total=False):
     base: Required[float]
 
-    expr: Required[RankByUnionMember5ExprUnionMember6ExprUnionMember7Expr]
+    expr: Required[RankByMaxExprUnionMember6ExprUnionMember7Expr]
 
-    op: Required[Literal["Log"]]
+    type: Required[Literal["Log"]]
 
 
-RankByUnionMember5ExprUnionMember6Expr: TypeAlias = Union[
-    RankByUnionMember5ExprUnionMember6ExprUnionMember0,
-    RankByUnionMember5ExprUnionMember6ExprUnionMember1,
-    RankByUnionMember5ExprUnionMember6ExprUnionMember2,
-    RankByUnionMember5ExprUnionMember6ExprUnionMember3,
-    RankByUnionMember5ExprUnionMember6ExprUnionMember4,
-    RankByUnionMember5ExprUnionMember6ExprUnionMember5,
-    RankByUnionMember5ExprUnionMember6ExprUnionMember6,
-    RankByUnionMember5ExprUnionMember6ExprUnionMember7,
+RankByMaxExprUnionMember6Expr: TypeAlias = Union[
+    RankByMaxExprUnionMember6ExprUnionMember0,
+    RankByMaxExprUnionMember6ExprUnionMember1,
+    RankByMaxExprUnionMember6ExprUnionMember2,
+    RankByMaxExprUnionMember6ExprUnionMember3,
+    RankByMaxExprUnionMember6ExprUnionMember4,
+    RankByMaxExprUnionMember6ExprUnionMember5,
+    RankByMaxExprUnionMember6ExprUnionMember6,
+    RankByMaxExprUnionMember6ExprUnionMember7,
 ]
 
 
-class RankByUnionMember5ExprUnionMember6(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember5ExprUnionMember6Expr]]
+class RankByMaxExprUnionMember6(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMaxExprUnionMember6Expr]]
 
-    op: Required[Literal["Min"]]
+    type: Required[Literal["Min"]]
 
 
-class RankByUnionMember5ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
+class RankByMaxExprUnionMember7ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember5ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMaxExprUnionMember7ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-class RankByUnionMember5ExprUnionMember7ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
+class RankByMaxExprUnionMember7ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember5ExprUnionMember7ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMaxExprUnionMember7ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember5ExprUnionMember7ExprUnionMember2Expr: TypeAlias = Union[
-    RankByUnionMember5ExprUnionMember7ExprUnionMember2ExprUnionMember0,
-    RankByUnionMember5ExprUnionMember7ExprUnionMember2ExprUnionMember1,
+RankByMaxExprUnionMember7ExprUnionMember2Expr: TypeAlias = Union[
+    RankByMaxExprUnionMember7ExprUnionMember2ExprUnionMember0, RankByMaxExprUnionMember7ExprUnionMember2ExprUnionMember1
 ]
 
 
-class RankByUnionMember5ExprUnionMember7ExprUnionMember2(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember5ExprUnionMember7ExprUnionMember2Expr]]
+class RankByMaxExprUnionMember7ExprUnionMember2(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMaxExprUnionMember7ExprUnionMember2Expr]]
 
-    op: Required[Literal["Sum"]]
+    type: Required[Literal["Sum"]]
 
 
-class RankByUnionMember5ExprUnionMember7ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
+class RankByMaxExprUnionMember7ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember5ExprUnionMember7ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMaxExprUnionMember7ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember5ExprUnionMember7ExprUnionMember3Expr: TypeAlias = Union[
-    RankByUnionMember5ExprUnionMember7ExprUnionMember3ExprUnionMember0,
-    RankByUnionMember5ExprUnionMember7ExprUnionMember3ExprUnionMember1,
+RankByMaxExprUnionMember7ExprUnionMember3Expr: TypeAlias = Union[
+    RankByMaxExprUnionMember7ExprUnionMember3ExprUnionMember0, RankByMaxExprUnionMember7ExprUnionMember3ExprUnionMember1
 ]
 
 
-class RankByUnionMember5ExprUnionMember7ExprUnionMember3(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember5ExprUnionMember7ExprUnionMember3Expr]]
+class RankByMaxExprUnionMember7ExprUnionMember3(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMaxExprUnionMember7ExprUnionMember3Expr]]
 
-    op: Required[Literal["Mult"]]
+    type: Required[Literal["Mult"]]
 
 
-class RankByUnionMember5ExprUnionMember7ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
+class RankByMaxExprUnionMember7ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember5ExprUnionMember7ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMaxExprUnionMember7ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember5ExprUnionMember7ExprUnionMember4Expr: TypeAlias = Union[
-    RankByUnionMember5ExprUnionMember7ExprUnionMember4ExprUnionMember0,
-    RankByUnionMember5ExprUnionMember7ExprUnionMember4ExprUnionMember1,
+RankByMaxExprUnionMember7ExprUnionMember4Expr: TypeAlias = Union[
+    RankByMaxExprUnionMember7ExprUnionMember4ExprUnionMember0, RankByMaxExprUnionMember7ExprUnionMember4ExprUnionMember1
 ]
 
 
-class RankByUnionMember5ExprUnionMember7ExprUnionMember4(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember5ExprUnionMember7ExprUnionMember4Expr]]
+class RankByMaxExprUnionMember7ExprUnionMember4(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMaxExprUnionMember7ExprUnionMember4Expr]]
 
-    op: Required[Literal["Div"]]
+    type: Required[Literal["Div"]]
 
 
-class RankByUnionMember5ExprUnionMember7ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
+class RankByMaxExprUnionMember7ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember5ExprUnionMember7ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMaxExprUnionMember7ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember5ExprUnionMember7ExprUnionMember5Expr: TypeAlias = Union[
-    RankByUnionMember5ExprUnionMember7ExprUnionMember5ExprUnionMember0,
-    RankByUnionMember5ExprUnionMember7ExprUnionMember5ExprUnionMember1,
+RankByMaxExprUnionMember7ExprUnionMember5Expr: TypeAlias = Union[
+    RankByMaxExprUnionMember7ExprUnionMember5ExprUnionMember0, RankByMaxExprUnionMember7ExprUnionMember5ExprUnionMember1
 ]
 
 
-class RankByUnionMember5ExprUnionMember7ExprUnionMember5(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember5ExprUnionMember7ExprUnionMember5Expr]]
+class RankByMaxExprUnionMember7ExprUnionMember5(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMaxExprUnionMember7ExprUnionMember5Expr]]
 
-    op: Required[Literal["Max"]]
+    type: Required[Literal["Max"]]
 
 
-class RankByUnionMember5ExprUnionMember7ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
+class RankByMaxExprUnionMember7ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember5ExprUnionMember7ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMaxExprUnionMember7ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember5ExprUnionMember7ExprUnionMember6Expr: TypeAlias = Union[
-    RankByUnionMember5ExprUnionMember7ExprUnionMember6ExprUnionMember0,
-    RankByUnionMember5ExprUnionMember7ExprUnionMember6ExprUnionMember1,
+RankByMaxExprUnionMember7ExprUnionMember6Expr: TypeAlias = Union[
+    RankByMaxExprUnionMember7ExprUnionMember6ExprUnionMember0, RankByMaxExprUnionMember7ExprUnionMember6ExprUnionMember1
 ]
 
 
-class RankByUnionMember5ExprUnionMember7ExprUnionMember6(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember5ExprUnionMember7ExprUnionMember6Expr]]
+class RankByMaxExprUnionMember7ExprUnionMember6(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMaxExprUnionMember7ExprUnionMember6Expr]]
 
-    op: Required[Literal["Min"]]
+    type: Required[Literal["Min"]]
 
 
-class RankByUnionMember5ExprUnionMember7ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
+class RankByMaxExprUnionMember7ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember5ExprUnionMember7ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMaxExprUnionMember7ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember5ExprUnionMember7ExprUnionMember7Expr: TypeAlias = Union[
-    RankByUnionMember5ExprUnionMember7ExprUnionMember7ExprUnionMember0,
-    RankByUnionMember5ExprUnionMember7ExprUnionMember7ExprUnionMember1,
+RankByMaxExprUnionMember7ExprUnionMember7Expr: TypeAlias = Union[
+    RankByMaxExprUnionMember7ExprUnionMember7ExprUnionMember0, RankByMaxExprUnionMember7ExprUnionMember7ExprUnionMember1
 ]
 
 
-class RankByUnionMember5ExprUnionMember7ExprUnionMember7(TypedDict, total=False):
+class RankByMaxExprUnionMember7ExprUnionMember7(TypedDict, total=False):
     base: Required[float]
 
-    expr: Required[RankByUnionMember5ExprUnionMember7ExprUnionMember7Expr]
+    expr: Required[RankByMaxExprUnionMember7ExprUnionMember7Expr]
 
-    op: Required[Literal["Log"]]
+    type: Required[Literal["Log"]]
 
 
-RankByUnionMember5ExprUnionMember7Expr: TypeAlias = Union[
-    RankByUnionMember5ExprUnionMember7ExprUnionMember0,
-    RankByUnionMember5ExprUnionMember7ExprUnionMember1,
-    RankByUnionMember5ExprUnionMember7ExprUnionMember2,
-    RankByUnionMember5ExprUnionMember7ExprUnionMember3,
-    RankByUnionMember5ExprUnionMember7ExprUnionMember4,
-    RankByUnionMember5ExprUnionMember7ExprUnionMember5,
-    RankByUnionMember5ExprUnionMember7ExprUnionMember6,
-    RankByUnionMember5ExprUnionMember7ExprUnionMember7,
+RankByMaxExprUnionMember7Expr: TypeAlias = Union[
+    RankByMaxExprUnionMember7ExprUnionMember0,
+    RankByMaxExprUnionMember7ExprUnionMember1,
+    RankByMaxExprUnionMember7ExprUnionMember2,
+    RankByMaxExprUnionMember7ExprUnionMember3,
+    RankByMaxExprUnionMember7ExprUnionMember4,
+    RankByMaxExprUnionMember7ExprUnionMember5,
+    RankByMaxExprUnionMember7ExprUnionMember6,
+    RankByMaxExprUnionMember7ExprUnionMember7,
 ]
 
 
-class RankByUnionMember5ExprUnionMember7(TypedDict, total=False):
+class RankByMaxExprUnionMember7(TypedDict, total=False):
     base: Required[float]
 
-    expr: Required[RankByUnionMember5ExprUnionMember7Expr]
+    expr: Required[RankByMaxExprUnionMember7Expr]
 
-    op: Required[Literal["Log"]]
+    type: Required[Literal["Log"]]
 
 
-RankByUnionMember5Expr: TypeAlias = Union[
-    RankByUnionMember5ExprUnionMember0,
-    RankByUnionMember5ExprUnionMember1,
-    RankByUnionMember5ExprUnionMember2,
-    RankByUnionMember5ExprUnionMember3,
-    RankByUnionMember5ExprUnionMember4,
-    RankByUnionMember5ExprUnionMember5,
-    RankByUnionMember5ExprUnionMember6,
-    RankByUnionMember5ExprUnionMember7,
+RankByMaxExpr: TypeAlias = Union[
+    RankByMaxExprUnionMember0,
+    RankByMaxExprUnionMember1,
+    RankByMaxExprUnionMember2,
+    RankByMaxExprUnionMember3,
+    RankByMaxExprUnionMember4,
+    RankByMaxExprUnionMember5,
+    RankByMaxExprUnionMember6,
+    RankByMaxExprUnionMember7,
 ]
 
 
-class RankByUnionMember5(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember5Expr]]
+class RankByMax(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMaxExpr]]
 
-    op: Required[Literal["Max"]]
+    type: Required[Literal["Max"]]
 
 
-class RankByUnionMember6ExprUnionMember0(TypedDict, total=False):
+class RankByMinExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember6ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMinExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-class RankByUnionMember6ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
+class RankByMinExprUnionMember2ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember6ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMinExprUnionMember2ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-class RankByUnionMember6ExprUnionMember2ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
+class RankByMinExprUnionMember2ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember6ExprUnionMember2ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMinExprUnionMember2ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember6ExprUnionMember2ExprUnionMember2Expr: TypeAlias = Union[
-    RankByUnionMember6ExprUnionMember2ExprUnionMember2ExprUnionMember0,
-    RankByUnionMember6ExprUnionMember2ExprUnionMember2ExprUnionMember1,
+RankByMinExprUnionMember2ExprUnionMember2Expr: TypeAlias = Union[
+    RankByMinExprUnionMember2ExprUnionMember2ExprUnionMember0, RankByMinExprUnionMember2ExprUnionMember2ExprUnionMember1
 ]
 
 
-class RankByUnionMember6ExprUnionMember2ExprUnionMember2(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember6ExprUnionMember2ExprUnionMember2Expr]]
+class RankByMinExprUnionMember2ExprUnionMember2(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMinExprUnionMember2ExprUnionMember2Expr]]
 
-    op: Required[Literal["Sum"]]
+    type: Required[Literal["Sum"]]
 
 
-class RankByUnionMember6ExprUnionMember2ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
+class RankByMinExprUnionMember2ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember6ExprUnionMember2ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMinExprUnionMember2ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember6ExprUnionMember2ExprUnionMember3Expr: TypeAlias = Union[
-    RankByUnionMember6ExprUnionMember2ExprUnionMember3ExprUnionMember0,
-    RankByUnionMember6ExprUnionMember2ExprUnionMember3ExprUnionMember1,
+RankByMinExprUnionMember2ExprUnionMember3Expr: TypeAlias = Union[
+    RankByMinExprUnionMember2ExprUnionMember3ExprUnionMember0, RankByMinExprUnionMember2ExprUnionMember3ExprUnionMember1
 ]
 
 
-class RankByUnionMember6ExprUnionMember2ExprUnionMember3(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember6ExprUnionMember2ExprUnionMember3Expr]]
+class RankByMinExprUnionMember2ExprUnionMember3(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMinExprUnionMember2ExprUnionMember3Expr]]
 
-    op: Required[Literal["Mult"]]
+    type: Required[Literal["Mult"]]
 
 
-class RankByUnionMember6ExprUnionMember2ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
+class RankByMinExprUnionMember2ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember6ExprUnionMember2ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMinExprUnionMember2ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember6ExprUnionMember2ExprUnionMember4Expr: TypeAlias = Union[
-    RankByUnionMember6ExprUnionMember2ExprUnionMember4ExprUnionMember0,
-    RankByUnionMember6ExprUnionMember2ExprUnionMember4ExprUnionMember1,
+RankByMinExprUnionMember2ExprUnionMember4Expr: TypeAlias = Union[
+    RankByMinExprUnionMember2ExprUnionMember4ExprUnionMember0, RankByMinExprUnionMember2ExprUnionMember4ExprUnionMember1
 ]
 
 
-class RankByUnionMember6ExprUnionMember2ExprUnionMember4(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember6ExprUnionMember2ExprUnionMember4Expr]]
+class RankByMinExprUnionMember2ExprUnionMember4(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMinExprUnionMember2ExprUnionMember4Expr]]
 
-    op: Required[Literal["Div"]]
+    type: Required[Literal["Div"]]
 
 
-class RankByUnionMember6ExprUnionMember2ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
+class RankByMinExprUnionMember2ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember6ExprUnionMember2ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMinExprUnionMember2ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember6ExprUnionMember2ExprUnionMember5Expr: TypeAlias = Union[
-    RankByUnionMember6ExprUnionMember2ExprUnionMember5ExprUnionMember0,
-    RankByUnionMember6ExprUnionMember2ExprUnionMember5ExprUnionMember1,
+RankByMinExprUnionMember2ExprUnionMember5Expr: TypeAlias = Union[
+    RankByMinExprUnionMember2ExprUnionMember5ExprUnionMember0, RankByMinExprUnionMember2ExprUnionMember5ExprUnionMember1
 ]
 
 
-class RankByUnionMember6ExprUnionMember2ExprUnionMember5(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember6ExprUnionMember2ExprUnionMember5Expr]]
+class RankByMinExprUnionMember2ExprUnionMember5(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMinExprUnionMember2ExprUnionMember5Expr]]
 
-    op: Required[Literal["Max"]]
+    type: Required[Literal["Max"]]
 
 
-class RankByUnionMember6ExprUnionMember2ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
+class RankByMinExprUnionMember2ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember6ExprUnionMember2ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMinExprUnionMember2ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember6ExprUnionMember2ExprUnionMember6Expr: TypeAlias = Union[
-    RankByUnionMember6ExprUnionMember2ExprUnionMember6ExprUnionMember0,
-    RankByUnionMember6ExprUnionMember2ExprUnionMember6ExprUnionMember1,
+RankByMinExprUnionMember2ExprUnionMember6Expr: TypeAlias = Union[
+    RankByMinExprUnionMember2ExprUnionMember6ExprUnionMember0, RankByMinExprUnionMember2ExprUnionMember6ExprUnionMember1
 ]
 
 
-class RankByUnionMember6ExprUnionMember2ExprUnionMember6(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember6ExprUnionMember2ExprUnionMember6Expr]]
+class RankByMinExprUnionMember2ExprUnionMember6(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMinExprUnionMember2ExprUnionMember6Expr]]
 
-    op: Required[Literal["Min"]]
+    type: Required[Literal["Min"]]
 
 
-class RankByUnionMember6ExprUnionMember2ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
+class RankByMinExprUnionMember2ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember6ExprUnionMember2ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMinExprUnionMember2ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember6ExprUnionMember2ExprUnionMember7Expr: TypeAlias = Union[
-    RankByUnionMember6ExprUnionMember2ExprUnionMember7ExprUnionMember0,
-    RankByUnionMember6ExprUnionMember2ExprUnionMember7ExprUnionMember1,
+RankByMinExprUnionMember2ExprUnionMember7Expr: TypeAlias = Union[
+    RankByMinExprUnionMember2ExprUnionMember7ExprUnionMember0, RankByMinExprUnionMember2ExprUnionMember7ExprUnionMember1
 ]
 
 
-class RankByUnionMember6ExprUnionMember2ExprUnionMember7(TypedDict, total=False):
+class RankByMinExprUnionMember2ExprUnionMember7(TypedDict, total=False):
     base: Required[float]
 
-    expr: Required[RankByUnionMember6ExprUnionMember2ExprUnionMember7Expr]
+    expr: Required[RankByMinExprUnionMember2ExprUnionMember7Expr]
 
-    op: Required[Literal["Log"]]
+    type: Required[Literal["Log"]]
 
 
-RankByUnionMember6ExprUnionMember2Expr: TypeAlias = Union[
-    RankByUnionMember6ExprUnionMember2ExprUnionMember0,
-    RankByUnionMember6ExprUnionMember2ExprUnionMember1,
-    RankByUnionMember6ExprUnionMember2ExprUnionMember2,
-    RankByUnionMember6ExprUnionMember2ExprUnionMember3,
-    RankByUnionMember6ExprUnionMember2ExprUnionMember4,
-    RankByUnionMember6ExprUnionMember2ExprUnionMember5,
-    RankByUnionMember6ExprUnionMember2ExprUnionMember6,
-    RankByUnionMember6ExprUnionMember2ExprUnionMember7,
+RankByMinExprUnionMember2Expr: TypeAlias = Union[
+    RankByMinExprUnionMember2ExprUnionMember0,
+    RankByMinExprUnionMember2ExprUnionMember1,
+    RankByMinExprUnionMember2ExprUnionMember2,
+    RankByMinExprUnionMember2ExprUnionMember3,
+    RankByMinExprUnionMember2ExprUnionMember4,
+    RankByMinExprUnionMember2ExprUnionMember5,
+    RankByMinExprUnionMember2ExprUnionMember6,
+    RankByMinExprUnionMember2ExprUnionMember7,
 ]
 
 
-class RankByUnionMember6ExprUnionMember2(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember6ExprUnionMember2Expr]]
+class RankByMinExprUnionMember2(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMinExprUnionMember2Expr]]
 
-    op: Required[Literal["Sum"]]
+    type: Required[Literal["Sum"]]
 
 
-class RankByUnionMember6ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
+class RankByMinExprUnionMember3ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember6ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMinExprUnionMember3ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-class RankByUnionMember6ExprUnionMember3ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
+class RankByMinExprUnionMember3ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember6ExprUnionMember3ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMinExprUnionMember3ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember6ExprUnionMember3ExprUnionMember2Expr: TypeAlias = Union[
-    RankByUnionMember6ExprUnionMember3ExprUnionMember2ExprUnionMember0,
-    RankByUnionMember6ExprUnionMember3ExprUnionMember2ExprUnionMember1,
+RankByMinExprUnionMember3ExprUnionMember2Expr: TypeAlias = Union[
+    RankByMinExprUnionMember3ExprUnionMember2ExprUnionMember0, RankByMinExprUnionMember3ExprUnionMember2ExprUnionMember1
 ]
 
 
-class RankByUnionMember6ExprUnionMember3ExprUnionMember2(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember6ExprUnionMember3ExprUnionMember2Expr]]
+class RankByMinExprUnionMember3ExprUnionMember2(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMinExprUnionMember3ExprUnionMember2Expr]]
 
-    op: Required[Literal["Sum"]]
+    type: Required[Literal["Sum"]]
 
 
-class RankByUnionMember6ExprUnionMember3ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
+class RankByMinExprUnionMember3ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember6ExprUnionMember3ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMinExprUnionMember3ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember6ExprUnionMember3ExprUnionMember3Expr: TypeAlias = Union[
-    RankByUnionMember6ExprUnionMember3ExprUnionMember3ExprUnionMember0,
-    RankByUnionMember6ExprUnionMember3ExprUnionMember3ExprUnionMember1,
+RankByMinExprUnionMember3ExprUnionMember3Expr: TypeAlias = Union[
+    RankByMinExprUnionMember3ExprUnionMember3ExprUnionMember0, RankByMinExprUnionMember3ExprUnionMember3ExprUnionMember1
 ]
 
 
-class RankByUnionMember6ExprUnionMember3ExprUnionMember3(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember6ExprUnionMember3ExprUnionMember3Expr]]
+class RankByMinExprUnionMember3ExprUnionMember3(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMinExprUnionMember3ExprUnionMember3Expr]]
 
-    op: Required[Literal["Mult"]]
+    type: Required[Literal["Mult"]]
 
 
-class RankByUnionMember6ExprUnionMember3ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
+class RankByMinExprUnionMember3ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember6ExprUnionMember3ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMinExprUnionMember3ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember6ExprUnionMember3ExprUnionMember4Expr: TypeAlias = Union[
-    RankByUnionMember6ExprUnionMember3ExprUnionMember4ExprUnionMember0,
-    RankByUnionMember6ExprUnionMember3ExprUnionMember4ExprUnionMember1,
+RankByMinExprUnionMember3ExprUnionMember4Expr: TypeAlias = Union[
+    RankByMinExprUnionMember3ExprUnionMember4ExprUnionMember0, RankByMinExprUnionMember3ExprUnionMember4ExprUnionMember1
 ]
 
 
-class RankByUnionMember6ExprUnionMember3ExprUnionMember4(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember6ExprUnionMember3ExprUnionMember4Expr]]
+class RankByMinExprUnionMember3ExprUnionMember4(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMinExprUnionMember3ExprUnionMember4Expr]]
 
-    op: Required[Literal["Div"]]
+    type: Required[Literal["Div"]]
 
 
-class RankByUnionMember6ExprUnionMember3ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
+class RankByMinExprUnionMember3ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember6ExprUnionMember3ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMinExprUnionMember3ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember6ExprUnionMember3ExprUnionMember5Expr: TypeAlias = Union[
-    RankByUnionMember6ExprUnionMember3ExprUnionMember5ExprUnionMember0,
-    RankByUnionMember6ExprUnionMember3ExprUnionMember5ExprUnionMember1,
+RankByMinExprUnionMember3ExprUnionMember5Expr: TypeAlias = Union[
+    RankByMinExprUnionMember3ExprUnionMember5ExprUnionMember0, RankByMinExprUnionMember3ExprUnionMember5ExprUnionMember1
 ]
 
 
-class RankByUnionMember6ExprUnionMember3ExprUnionMember5(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember6ExprUnionMember3ExprUnionMember5Expr]]
+class RankByMinExprUnionMember3ExprUnionMember5(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMinExprUnionMember3ExprUnionMember5Expr]]
 
-    op: Required[Literal["Max"]]
+    type: Required[Literal["Max"]]
 
 
-class RankByUnionMember6ExprUnionMember3ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
+class RankByMinExprUnionMember3ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember6ExprUnionMember3ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMinExprUnionMember3ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember6ExprUnionMember3ExprUnionMember6Expr: TypeAlias = Union[
-    RankByUnionMember6ExprUnionMember3ExprUnionMember6ExprUnionMember0,
-    RankByUnionMember6ExprUnionMember3ExprUnionMember6ExprUnionMember1,
+RankByMinExprUnionMember3ExprUnionMember6Expr: TypeAlias = Union[
+    RankByMinExprUnionMember3ExprUnionMember6ExprUnionMember0, RankByMinExprUnionMember3ExprUnionMember6ExprUnionMember1
 ]
 
 
-class RankByUnionMember6ExprUnionMember3ExprUnionMember6(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember6ExprUnionMember3ExprUnionMember6Expr]]
+class RankByMinExprUnionMember3ExprUnionMember6(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMinExprUnionMember3ExprUnionMember6Expr]]
 
-    op: Required[Literal["Min"]]
+    type: Required[Literal["Min"]]
 
 
-class RankByUnionMember6ExprUnionMember3ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
+class RankByMinExprUnionMember3ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember6ExprUnionMember3ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMinExprUnionMember3ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember6ExprUnionMember3ExprUnionMember7Expr: TypeAlias = Union[
-    RankByUnionMember6ExprUnionMember3ExprUnionMember7ExprUnionMember0,
-    RankByUnionMember6ExprUnionMember3ExprUnionMember7ExprUnionMember1,
+RankByMinExprUnionMember3ExprUnionMember7Expr: TypeAlias = Union[
+    RankByMinExprUnionMember3ExprUnionMember7ExprUnionMember0, RankByMinExprUnionMember3ExprUnionMember7ExprUnionMember1
 ]
 
 
-class RankByUnionMember6ExprUnionMember3ExprUnionMember7(TypedDict, total=False):
+class RankByMinExprUnionMember3ExprUnionMember7(TypedDict, total=False):
     base: Required[float]
 
-    expr: Required[RankByUnionMember6ExprUnionMember3ExprUnionMember7Expr]
+    expr: Required[RankByMinExprUnionMember3ExprUnionMember7Expr]
 
-    op: Required[Literal["Log"]]
+    type: Required[Literal["Log"]]
 
 
-RankByUnionMember6ExprUnionMember3Expr: TypeAlias = Union[
-    RankByUnionMember6ExprUnionMember3ExprUnionMember0,
-    RankByUnionMember6ExprUnionMember3ExprUnionMember1,
-    RankByUnionMember6ExprUnionMember3ExprUnionMember2,
-    RankByUnionMember6ExprUnionMember3ExprUnionMember3,
-    RankByUnionMember6ExprUnionMember3ExprUnionMember4,
-    RankByUnionMember6ExprUnionMember3ExprUnionMember5,
-    RankByUnionMember6ExprUnionMember3ExprUnionMember6,
-    RankByUnionMember6ExprUnionMember3ExprUnionMember7,
+RankByMinExprUnionMember3Expr: TypeAlias = Union[
+    RankByMinExprUnionMember3ExprUnionMember0,
+    RankByMinExprUnionMember3ExprUnionMember1,
+    RankByMinExprUnionMember3ExprUnionMember2,
+    RankByMinExprUnionMember3ExprUnionMember3,
+    RankByMinExprUnionMember3ExprUnionMember4,
+    RankByMinExprUnionMember3ExprUnionMember5,
+    RankByMinExprUnionMember3ExprUnionMember6,
+    RankByMinExprUnionMember3ExprUnionMember7,
 ]
 
 
-class RankByUnionMember6ExprUnionMember3(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember6ExprUnionMember3Expr]]
+class RankByMinExprUnionMember3(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMinExprUnionMember3Expr]]
 
-    op: Required[Literal["Mult"]]
+    type: Required[Literal["Mult"]]
 
 
-class RankByUnionMember6ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
+class RankByMinExprUnionMember4ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember6ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMinExprUnionMember4ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-class RankByUnionMember6ExprUnionMember4ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
+class RankByMinExprUnionMember4ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember6ExprUnionMember4ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMinExprUnionMember4ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember6ExprUnionMember4ExprUnionMember2Expr: TypeAlias = Union[
-    RankByUnionMember6ExprUnionMember4ExprUnionMember2ExprUnionMember0,
-    RankByUnionMember6ExprUnionMember4ExprUnionMember2ExprUnionMember1,
+RankByMinExprUnionMember4ExprUnionMember2Expr: TypeAlias = Union[
+    RankByMinExprUnionMember4ExprUnionMember2ExprUnionMember0, RankByMinExprUnionMember4ExprUnionMember2ExprUnionMember1
 ]
 
 
-class RankByUnionMember6ExprUnionMember4ExprUnionMember2(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember6ExprUnionMember4ExprUnionMember2Expr]]
+class RankByMinExprUnionMember4ExprUnionMember2(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMinExprUnionMember4ExprUnionMember2Expr]]
 
-    op: Required[Literal["Sum"]]
+    type: Required[Literal["Sum"]]
 
 
-class RankByUnionMember6ExprUnionMember4ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
+class RankByMinExprUnionMember4ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember6ExprUnionMember4ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMinExprUnionMember4ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember6ExprUnionMember4ExprUnionMember3Expr: TypeAlias = Union[
-    RankByUnionMember6ExprUnionMember4ExprUnionMember3ExprUnionMember0,
-    RankByUnionMember6ExprUnionMember4ExprUnionMember3ExprUnionMember1,
+RankByMinExprUnionMember4ExprUnionMember3Expr: TypeAlias = Union[
+    RankByMinExprUnionMember4ExprUnionMember3ExprUnionMember0, RankByMinExprUnionMember4ExprUnionMember3ExprUnionMember1
 ]
 
 
-class RankByUnionMember6ExprUnionMember4ExprUnionMember3(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember6ExprUnionMember4ExprUnionMember3Expr]]
+class RankByMinExprUnionMember4ExprUnionMember3(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMinExprUnionMember4ExprUnionMember3Expr]]
 
-    op: Required[Literal["Mult"]]
+    type: Required[Literal["Mult"]]
 
 
-class RankByUnionMember6ExprUnionMember4ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
+class RankByMinExprUnionMember4ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember6ExprUnionMember4ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMinExprUnionMember4ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember6ExprUnionMember4ExprUnionMember4Expr: TypeAlias = Union[
-    RankByUnionMember6ExprUnionMember4ExprUnionMember4ExprUnionMember0,
-    RankByUnionMember6ExprUnionMember4ExprUnionMember4ExprUnionMember1,
+RankByMinExprUnionMember4ExprUnionMember4Expr: TypeAlias = Union[
+    RankByMinExprUnionMember4ExprUnionMember4ExprUnionMember0, RankByMinExprUnionMember4ExprUnionMember4ExprUnionMember1
 ]
 
 
-class RankByUnionMember6ExprUnionMember4ExprUnionMember4(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember6ExprUnionMember4ExprUnionMember4Expr]]
+class RankByMinExprUnionMember4ExprUnionMember4(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMinExprUnionMember4ExprUnionMember4Expr]]
 
-    op: Required[Literal["Div"]]
+    type: Required[Literal["Div"]]
 
 
-class RankByUnionMember6ExprUnionMember4ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
+class RankByMinExprUnionMember4ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember6ExprUnionMember4ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMinExprUnionMember4ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember6ExprUnionMember4ExprUnionMember5Expr: TypeAlias = Union[
-    RankByUnionMember6ExprUnionMember4ExprUnionMember5ExprUnionMember0,
-    RankByUnionMember6ExprUnionMember4ExprUnionMember5ExprUnionMember1,
+RankByMinExprUnionMember4ExprUnionMember5Expr: TypeAlias = Union[
+    RankByMinExprUnionMember4ExprUnionMember5ExprUnionMember0, RankByMinExprUnionMember4ExprUnionMember5ExprUnionMember1
 ]
 
 
-class RankByUnionMember6ExprUnionMember4ExprUnionMember5(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember6ExprUnionMember4ExprUnionMember5Expr]]
+class RankByMinExprUnionMember4ExprUnionMember5(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMinExprUnionMember4ExprUnionMember5Expr]]
 
-    op: Required[Literal["Max"]]
+    type: Required[Literal["Max"]]
 
 
-class RankByUnionMember6ExprUnionMember4ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
+class RankByMinExprUnionMember4ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember6ExprUnionMember4ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMinExprUnionMember4ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember6ExprUnionMember4ExprUnionMember6Expr: TypeAlias = Union[
-    RankByUnionMember6ExprUnionMember4ExprUnionMember6ExprUnionMember0,
-    RankByUnionMember6ExprUnionMember4ExprUnionMember6ExprUnionMember1,
+RankByMinExprUnionMember4ExprUnionMember6Expr: TypeAlias = Union[
+    RankByMinExprUnionMember4ExprUnionMember6ExprUnionMember0, RankByMinExprUnionMember4ExprUnionMember6ExprUnionMember1
 ]
 
 
-class RankByUnionMember6ExprUnionMember4ExprUnionMember6(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember6ExprUnionMember4ExprUnionMember6Expr]]
+class RankByMinExprUnionMember4ExprUnionMember6(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMinExprUnionMember4ExprUnionMember6Expr]]
 
-    op: Required[Literal["Min"]]
+    type: Required[Literal["Min"]]
 
 
-class RankByUnionMember6ExprUnionMember4ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
+class RankByMinExprUnionMember4ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember6ExprUnionMember4ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMinExprUnionMember4ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember6ExprUnionMember4ExprUnionMember7Expr: TypeAlias = Union[
-    RankByUnionMember6ExprUnionMember4ExprUnionMember7ExprUnionMember0,
-    RankByUnionMember6ExprUnionMember4ExprUnionMember7ExprUnionMember1,
+RankByMinExprUnionMember4ExprUnionMember7Expr: TypeAlias = Union[
+    RankByMinExprUnionMember4ExprUnionMember7ExprUnionMember0, RankByMinExprUnionMember4ExprUnionMember7ExprUnionMember1
 ]
 
 
-class RankByUnionMember6ExprUnionMember4ExprUnionMember7(TypedDict, total=False):
+class RankByMinExprUnionMember4ExprUnionMember7(TypedDict, total=False):
     base: Required[float]
 
-    expr: Required[RankByUnionMember6ExprUnionMember4ExprUnionMember7Expr]
+    expr: Required[RankByMinExprUnionMember4ExprUnionMember7Expr]
 
-    op: Required[Literal["Log"]]
+    type: Required[Literal["Log"]]
 
 
-RankByUnionMember6ExprUnionMember4Expr: TypeAlias = Union[
-    RankByUnionMember6ExprUnionMember4ExprUnionMember0,
-    RankByUnionMember6ExprUnionMember4ExprUnionMember1,
-    RankByUnionMember6ExprUnionMember4ExprUnionMember2,
-    RankByUnionMember6ExprUnionMember4ExprUnionMember3,
-    RankByUnionMember6ExprUnionMember4ExprUnionMember4,
-    RankByUnionMember6ExprUnionMember4ExprUnionMember5,
-    RankByUnionMember6ExprUnionMember4ExprUnionMember6,
-    RankByUnionMember6ExprUnionMember4ExprUnionMember7,
+RankByMinExprUnionMember4Expr: TypeAlias = Union[
+    RankByMinExprUnionMember4ExprUnionMember0,
+    RankByMinExprUnionMember4ExprUnionMember1,
+    RankByMinExprUnionMember4ExprUnionMember2,
+    RankByMinExprUnionMember4ExprUnionMember3,
+    RankByMinExprUnionMember4ExprUnionMember4,
+    RankByMinExprUnionMember4ExprUnionMember5,
+    RankByMinExprUnionMember4ExprUnionMember6,
+    RankByMinExprUnionMember4ExprUnionMember7,
 ]
 
 
-class RankByUnionMember6ExprUnionMember4(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember6ExprUnionMember4Expr]]
+class RankByMinExprUnionMember4(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMinExprUnionMember4Expr]]
 
-    op: Required[Literal["Div"]]
+    type: Required[Literal["Div"]]
 
 
-class RankByUnionMember6ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
+class RankByMinExprUnionMember5ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember6ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMinExprUnionMember5ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-class RankByUnionMember6ExprUnionMember5ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
+class RankByMinExprUnionMember5ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember6ExprUnionMember5ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMinExprUnionMember5ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember6ExprUnionMember5ExprUnionMember2Expr: TypeAlias = Union[
-    RankByUnionMember6ExprUnionMember5ExprUnionMember2ExprUnionMember0,
-    RankByUnionMember6ExprUnionMember5ExprUnionMember2ExprUnionMember1,
+RankByMinExprUnionMember5ExprUnionMember2Expr: TypeAlias = Union[
+    RankByMinExprUnionMember5ExprUnionMember2ExprUnionMember0, RankByMinExprUnionMember5ExprUnionMember2ExprUnionMember1
 ]
 
 
-class RankByUnionMember6ExprUnionMember5ExprUnionMember2(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember6ExprUnionMember5ExprUnionMember2Expr]]
+class RankByMinExprUnionMember5ExprUnionMember2(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMinExprUnionMember5ExprUnionMember2Expr]]
 
-    op: Required[Literal["Sum"]]
+    type: Required[Literal["Sum"]]
 
 
-class RankByUnionMember6ExprUnionMember5ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
+class RankByMinExprUnionMember5ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember6ExprUnionMember5ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMinExprUnionMember5ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember6ExprUnionMember5ExprUnionMember3Expr: TypeAlias = Union[
-    RankByUnionMember6ExprUnionMember5ExprUnionMember3ExprUnionMember0,
-    RankByUnionMember6ExprUnionMember5ExprUnionMember3ExprUnionMember1,
+RankByMinExprUnionMember5ExprUnionMember3Expr: TypeAlias = Union[
+    RankByMinExprUnionMember5ExprUnionMember3ExprUnionMember0, RankByMinExprUnionMember5ExprUnionMember3ExprUnionMember1
 ]
 
 
-class RankByUnionMember6ExprUnionMember5ExprUnionMember3(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember6ExprUnionMember5ExprUnionMember3Expr]]
+class RankByMinExprUnionMember5ExprUnionMember3(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMinExprUnionMember5ExprUnionMember3Expr]]
 
-    op: Required[Literal["Mult"]]
+    type: Required[Literal["Mult"]]
 
 
-class RankByUnionMember6ExprUnionMember5ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
+class RankByMinExprUnionMember5ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember6ExprUnionMember5ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMinExprUnionMember5ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember6ExprUnionMember5ExprUnionMember4Expr: TypeAlias = Union[
-    RankByUnionMember6ExprUnionMember5ExprUnionMember4ExprUnionMember0,
-    RankByUnionMember6ExprUnionMember5ExprUnionMember4ExprUnionMember1,
+RankByMinExprUnionMember5ExprUnionMember4Expr: TypeAlias = Union[
+    RankByMinExprUnionMember5ExprUnionMember4ExprUnionMember0, RankByMinExprUnionMember5ExprUnionMember4ExprUnionMember1
 ]
 
 
-class RankByUnionMember6ExprUnionMember5ExprUnionMember4(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember6ExprUnionMember5ExprUnionMember4Expr]]
+class RankByMinExprUnionMember5ExprUnionMember4(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMinExprUnionMember5ExprUnionMember4Expr]]
 
-    op: Required[Literal["Div"]]
+    type: Required[Literal["Div"]]
 
 
-class RankByUnionMember6ExprUnionMember5ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
+class RankByMinExprUnionMember5ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember6ExprUnionMember5ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMinExprUnionMember5ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember6ExprUnionMember5ExprUnionMember5Expr: TypeAlias = Union[
-    RankByUnionMember6ExprUnionMember5ExprUnionMember5ExprUnionMember0,
-    RankByUnionMember6ExprUnionMember5ExprUnionMember5ExprUnionMember1,
+RankByMinExprUnionMember5ExprUnionMember5Expr: TypeAlias = Union[
+    RankByMinExprUnionMember5ExprUnionMember5ExprUnionMember0, RankByMinExprUnionMember5ExprUnionMember5ExprUnionMember1
 ]
 
 
-class RankByUnionMember6ExprUnionMember5ExprUnionMember5(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember6ExprUnionMember5ExprUnionMember5Expr]]
+class RankByMinExprUnionMember5ExprUnionMember5(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMinExprUnionMember5ExprUnionMember5Expr]]
 
-    op: Required[Literal["Max"]]
+    type: Required[Literal["Max"]]
 
 
-class RankByUnionMember6ExprUnionMember5ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
+class RankByMinExprUnionMember5ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember6ExprUnionMember5ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMinExprUnionMember5ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember6ExprUnionMember5ExprUnionMember6Expr: TypeAlias = Union[
-    RankByUnionMember6ExprUnionMember5ExprUnionMember6ExprUnionMember0,
-    RankByUnionMember6ExprUnionMember5ExprUnionMember6ExprUnionMember1,
+RankByMinExprUnionMember5ExprUnionMember6Expr: TypeAlias = Union[
+    RankByMinExprUnionMember5ExprUnionMember6ExprUnionMember0, RankByMinExprUnionMember5ExprUnionMember6ExprUnionMember1
 ]
 
 
-class RankByUnionMember6ExprUnionMember5ExprUnionMember6(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember6ExprUnionMember5ExprUnionMember6Expr]]
+class RankByMinExprUnionMember5ExprUnionMember6(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMinExprUnionMember5ExprUnionMember6Expr]]
 
-    op: Required[Literal["Min"]]
+    type: Required[Literal["Min"]]
 
 
-class RankByUnionMember6ExprUnionMember5ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
+class RankByMinExprUnionMember5ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember6ExprUnionMember5ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMinExprUnionMember5ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember6ExprUnionMember5ExprUnionMember7Expr: TypeAlias = Union[
-    RankByUnionMember6ExprUnionMember5ExprUnionMember7ExprUnionMember0,
-    RankByUnionMember6ExprUnionMember5ExprUnionMember7ExprUnionMember1,
+RankByMinExprUnionMember5ExprUnionMember7Expr: TypeAlias = Union[
+    RankByMinExprUnionMember5ExprUnionMember7ExprUnionMember0, RankByMinExprUnionMember5ExprUnionMember7ExprUnionMember1
 ]
 
 
-class RankByUnionMember6ExprUnionMember5ExprUnionMember7(TypedDict, total=False):
+class RankByMinExprUnionMember5ExprUnionMember7(TypedDict, total=False):
     base: Required[float]
 
-    expr: Required[RankByUnionMember6ExprUnionMember5ExprUnionMember7Expr]
+    expr: Required[RankByMinExprUnionMember5ExprUnionMember7Expr]
 
-    op: Required[Literal["Log"]]
+    type: Required[Literal["Log"]]
 
 
-RankByUnionMember6ExprUnionMember5Expr: TypeAlias = Union[
-    RankByUnionMember6ExprUnionMember5ExprUnionMember0,
-    RankByUnionMember6ExprUnionMember5ExprUnionMember1,
-    RankByUnionMember6ExprUnionMember5ExprUnionMember2,
-    RankByUnionMember6ExprUnionMember5ExprUnionMember3,
-    RankByUnionMember6ExprUnionMember5ExprUnionMember4,
-    RankByUnionMember6ExprUnionMember5ExprUnionMember5,
-    RankByUnionMember6ExprUnionMember5ExprUnionMember6,
-    RankByUnionMember6ExprUnionMember5ExprUnionMember7,
+RankByMinExprUnionMember5Expr: TypeAlias = Union[
+    RankByMinExprUnionMember5ExprUnionMember0,
+    RankByMinExprUnionMember5ExprUnionMember1,
+    RankByMinExprUnionMember5ExprUnionMember2,
+    RankByMinExprUnionMember5ExprUnionMember3,
+    RankByMinExprUnionMember5ExprUnionMember4,
+    RankByMinExprUnionMember5ExprUnionMember5,
+    RankByMinExprUnionMember5ExprUnionMember6,
+    RankByMinExprUnionMember5ExprUnionMember7,
 ]
 
 
-class RankByUnionMember6ExprUnionMember5(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember6ExprUnionMember5Expr]]
+class RankByMinExprUnionMember5(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMinExprUnionMember5Expr]]
 
-    op: Required[Literal["Max"]]
+    type: Required[Literal["Max"]]
 
 
-class RankByUnionMember6ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
+class RankByMinExprUnionMember6ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember6ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMinExprUnionMember6ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-class RankByUnionMember6ExprUnionMember6ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
+class RankByMinExprUnionMember6ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember6ExprUnionMember6ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMinExprUnionMember6ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember6ExprUnionMember6ExprUnionMember2Expr: TypeAlias = Union[
-    RankByUnionMember6ExprUnionMember6ExprUnionMember2ExprUnionMember0,
-    RankByUnionMember6ExprUnionMember6ExprUnionMember2ExprUnionMember1,
+RankByMinExprUnionMember6ExprUnionMember2Expr: TypeAlias = Union[
+    RankByMinExprUnionMember6ExprUnionMember2ExprUnionMember0, RankByMinExprUnionMember6ExprUnionMember2ExprUnionMember1
 ]
 
 
-class RankByUnionMember6ExprUnionMember6ExprUnionMember2(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember6ExprUnionMember6ExprUnionMember2Expr]]
+class RankByMinExprUnionMember6ExprUnionMember2(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMinExprUnionMember6ExprUnionMember2Expr]]
 
-    op: Required[Literal["Sum"]]
+    type: Required[Literal["Sum"]]
 
 
-class RankByUnionMember6ExprUnionMember6ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
+class RankByMinExprUnionMember6ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember6ExprUnionMember6ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMinExprUnionMember6ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember6ExprUnionMember6ExprUnionMember3Expr: TypeAlias = Union[
-    RankByUnionMember6ExprUnionMember6ExprUnionMember3ExprUnionMember0,
-    RankByUnionMember6ExprUnionMember6ExprUnionMember3ExprUnionMember1,
+RankByMinExprUnionMember6ExprUnionMember3Expr: TypeAlias = Union[
+    RankByMinExprUnionMember6ExprUnionMember3ExprUnionMember0, RankByMinExprUnionMember6ExprUnionMember3ExprUnionMember1
 ]
 
 
-class RankByUnionMember6ExprUnionMember6ExprUnionMember3(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember6ExprUnionMember6ExprUnionMember3Expr]]
+class RankByMinExprUnionMember6ExprUnionMember3(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMinExprUnionMember6ExprUnionMember3Expr]]
 
-    op: Required[Literal["Mult"]]
+    type: Required[Literal["Mult"]]
 
 
-class RankByUnionMember6ExprUnionMember6ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
+class RankByMinExprUnionMember6ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember6ExprUnionMember6ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMinExprUnionMember6ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember6ExprUnionMember6ExprUnionMember4Expr: TypeAlias = Union[
-    RankByUnionMember6ExprUnionMember6ExprUnionMember4ExprUnionMember0,
-    RankByUnionMember6ExprUnionMember6ExprUnionMember4ExprUnionMember1,
+RankByMinExprUnionMember6ExprUnionMember4Expr: TypeAlias = Union[
+    RankByMinExprUnionMember6ExprUnionMember4ExprUnionMember0, RankByMinExprUnionMember6ExprUnionMember4ExprUnionMember1
 ]
 
 
-class RankByUnionMember6ExprUnionMember6ExprUnionMember4(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember6ExprUnionMember6ExprUnionMember4Expr]]
+class RankByMinExprUnionMember6ExprUnionMember4(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMinExprUnionMember6ExprUnionMember4Expr]]
 
-    op: Required[Literal["Div"]]
+    type: Required[Literal["Div"]]
 
 
-class RankByUnionMember6ExprUnionMember6ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
+class RankByMinExprUnionMember6ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember6ExprUnionMember6ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMinExprUnionMember6ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember6ExprUnionMember6ExprUnionMember5Expr: TypeAlias = Union[
-    RankByUnionMember6ExprUnionMember6ExprUnionMember5ExprUnionMember0,
-    RankByUnionMember6ExprUnionMember6ExprUnionMember5ExprUnionMember1,
+RankByMinExprUnionMember6ExprUnionMember5Expr: TypeAlias = Union[
+    RankByMinExprUnionMember6ExprUnionMember5ExprUnionMember0, RankByMinExprUnionMember6ExprUnionMember5ExprUnionMember1
 ]
 
 
-class RankByUnionMember6ExprUnionMember6ExprUnionMember5(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember6ExprUnionMember6ExprUnionMember5Expr]]
+class RankByMinExprUnionMember6ExprUnionMember5(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMinExprUnionMember6ExprUnionMember5Expr]]
 
-    op: Required[Literal["Max"]]
+    type: Required[Literal["Max"]]
 
 
-class RankByUnionMember6ExprUnionMember6ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
+class RankByMinExprUnionMember6ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember6ExprUnionMember6ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMinExprUnionMember6ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember6ExprUnionMember6ExprUnionMember6Expr: TypeAlias = Union[
-    RankByUnionMember6ExprUnionMember6ExprUnionMember6ExprUnionMember0,
-    RankByUnionMember6ExprUnionMember6ExprUnionMember6ExprUnionMember1,
+RankByMinExprUnionMember6ExprUnionMember6Expr: TypeAlias = Union[
+    RankByMinExprUnionMember6ExprUnionMember6ExprUnionMember0, RankByMinExprUnionMember6ExprUnionMember6ExprUnionMember1
 ]
 
 
-class RankByUnionMember6ExprUnionMember6ExprUnionMember6(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember6ExprUnionMember6ExprUnionMember6Expr]]
+class RankByMinExprUnionMember6ExprUnionMember6(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMinExprUnionMember6ExprUnionMember6Expr]]
 
-    op: Required[Literal["Min"]]
+    type: Required[Literal["Min"]]
 
 
-class RankByUnionMember6ExprUnionMember6ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
+class RankByMinExprUnionMember6ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember6ExprUnionMember6ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMinExprUnionMember6ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember6ExprUnionMember6ExprUnionMember7Expr: TypeAlias = Union[
-    RankByUnionMember6ExprUnionMember6ExprUnionMember7ExprUnionMember0,
-    RankByUnionMember6ExprUnionMember6ExprUnionMember7ExprUnionMember1,
+RankByMinExprUnionMember6ExprUnionMember7Expr: TypeAlias = Union[
+    RankByMinExprUnionMember6ExprUnionMember7ExprUnionMember0, RankByMinExprUnionMember6ExprUnionMember7ExprUnionMember1
 ]
 
 
-class RankByUnionMember6ExprUnionMember6ExprUnionMember7(TypedDict, total=False):
+class RankByMinExprUnionMember6ExprUnionMember7(TypedDict, total=False):
     base: Required[float]
 
-    expr: Required[RankByUnionMember6ExprUnionMember6ExprUnionMember7Expr]
+    expr: Required[RankByMinExprUnionMember6ExprUnionMember7Expr]
 
-    op: Required[Literal["Log"]]
+    type: Required[Literal["Log"]]
 
 
-RankByUnionMember6ExprUnionMember6Expr: TypeAlias = Union[
-    RankByUnionMember6ExprUnionMember6ExprUnionMember0,
-    RankByUnionMember6ExprUnionMember6ExprUnionMember1,
-    RankByUnionMember6ExprUnionMember6ExprUnionMember2,
-    RankByUnionMember6ExprUnionMember6ExprUnionMember3,
-    RankByUnionMember6ExprUnionMember6ExprUnionMember4,
-    RankByUnionMember6ExprUnionMember6ExprUnionMember5,
-    RankByUnionMember6ExprUnionMember6ExprUnionMember6,
-    RankByUnionMember6ExprUnionMember6ExprUnionMember7,
+RankByMinExprUnionMember6Expr: TypeAlias = Union[
+    RankByMinExprUnionMember6ExprUnionMember0,
+    RankByMinExprUnionMember6ExprUnionMember1,
+    RankByMinExprUnionMember6ExprUnionMember2,
+    RankByMinExprUnionMember6ExprUnionMember3,
+    RankByMinExprUnionMember6ExprUnionMember4,
+    RankByMinExprUnionMember6ExprUnionMember5,
+    RankByMinExprUnionMember6ExprUnionMember6,
+    RankByMinExprUnionMember6ExprUnionMember7,
 ]
 
 
-class RankByUnionMember6ExprUnionMember6(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember6ExprUnionMember6Expr]]
+class RankByMinExprUnionMember6(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMinExprUnionMember6Expr]]
 
-    op: Required[Literal["Min"]]
+    type: Required[Literal["Min"]]
 
 
-class RankByUnionMember6ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
+class RankByMinExprUnionMember7ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember6ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMinExprUnionMember7ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-class RankByUnionMember6ExprUnionMember7ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
+class RankByMinExprUnionMember7ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember6ExprUnionMember7ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMinExprUnionMember7ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember6ExprUnionMember7ExprUnionMember2Expr: TypeAlias = Union[
-    RankByUnionMember6ExprUnionMember7ExprUnionMember2ExprUnionMember0,
-    RankByUnionMember6ExprUnionMember7ExprUnionMember2ExprUnionMember1,
+RankByMinExprUnionMember7ExprUnionMember2Expr: TypeAlias = Union[
+    RankByMinExprUnionMember7ExprUnionMember2ExprUnionMember0, RankByMinExprUnionMember7ExprUnionMember2ExprUnionMember1
 ]
 
 
-class RankByUnionMember6ExprUnionMember7ExprUnionMember2(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember6ExprUnionMember7ExprUnionMember2Expr]]
+class RankByMinExprUnionMember7ExprUnionMember2(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMinExprUnionMember7ExprUnionMember2Expr]]
 
-    op: Required[Literal["Sum"]]
+    type: Required[Literal["Sum"]]
 
 
-class RankByUnionMember6ExprUnionMember7ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
+class RankByMinExprUnionMember7ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember6ExprUnionMember7ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMinExprUnionMember7ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember6ExprUnionMember7ExprUnionMember3Expr: TypeAlias = Union[
-    RankByUnionMember6ExprUnionMember7ExprUnionMember3ExprUnionMember0,
-    RankByUnionMember6ExprUnionMember7ExprUnionMember3ExprUnionMember1,
+RankByMinExprUnionMember7ExprUnionMember3Expr: TypeAlias = Union[
+    RankByMinExprUnionMember7ExprUnionMember3ExprUnionMember0, RankByMinExprUnionMember7ExprUnionMember3ExprUnionMember1
 ]
 
 
-class RankByUnionMember6ExprUnionMember7ExprUnionMember3(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember6ExprUnionMember7ExprUnionMember3Expr]]
+class RankByMinExprUnionMember7ExprUnionMember3(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMinExprUnionMember7ExprUnionMember3Expr]]
 
-    op: Required[Literal["Mult"]]
+    type: Required[Literal["Mult"]]
 
 
-class RankByUnionMember6ExprUnionMember7ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
+class RankByMinExprUnionMember7ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember6ExprUnionMember7ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMinExprUnionMember7ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember6ExprUnionMember7ExprUnionMember4Expr: TypeAlias = Union[
-    RankByUnionMember6ExprUnionMember7ExprUnionMember4ExprUnionMember0,
-    RankByUnionMember6ExprUnionMember7ExprUnionMember4ExprUnionMember1,
+RankByMinExprUnionMember7ExprUnionMember4Expr: TypeAlias = Union[
+    RankByMinExprUnionMember7ExprUnionMember4ExprUnionMember0, RankByMinExprUnionMember7ExprUnionMember4ExprUnionMember1
 ]
 
 
-class RankByUnionMember6ExprUnionMember7ExprUnionMember4(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember6ExprUnionMember7ExprUnionMember4Expr]]
+class RankByMinExprUnionMember7ExprUnionMember4(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMinExprUnionMember7ExprUnionMember4Expr]]
 
-    op: Required[Literal["Div"]]
+    type: Required[Literal["Div"]]
 
 
-class RankByUnionMember6ExprUnionMember7ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
+class RankByMinExprUnionMember7ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember6ExprUnionMember7ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMinExprUnionMember7ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember6ExprUnionMember7ExprUnionMember5Expr: TypeAlias = Union[
-    RankByUnionMember6ExprUnionMember7ExprUnionMember5ExprUnionMember0,
-    RankByUnionMember6ExprUnionMember7ExprUnionMember5ExprUnionMember1,
+RankByMinExprUnionMember7ExprUnionMember5Expr: TypeAlias = Union[
+    RankByMinExprUnionMember7ExprUnionMember5ExprUnionMember0, RankByMinExprUnionMember7ExprUnionMember5ExprUnionMember1
 ]
 
 
-class RankByUnionMember6ExprUnionMember7ExprUnionMember5(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember6ExprUnionMember7ExprUnionMember5Expr]]
+class RankByMinExprUnionMember7ExprUnionMember5(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMinExprUnionMember7ExprUnionMember5Expr]]
 
-    op: Required[Literal["Max"]]
+    type: Required[Literal["Max"]]
 
 
-class RankByUnionMember6ExprUnionMember7ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
+class RankByMinExprUnionMember7ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember6ExprUnionMember7ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMinExprUnionMember7ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember6ExprUnionMember7ExprUnionMember6Expr: TypeAlias = Union[
-    RankByUnionMember6ExprUnionMember7ExprUnionMember6ExprUnionMember0,
-    RankByUnionMember6ExprUnionMember7ExprUnionMember6ExprUnionMember1,
+RankByMinExprUnionMember7ExprUnionMember6Expr: TypeAlias = Union[
+    RankByMinExprUnionMember7ExprUnionMember6ExprUnionMember0, RankByMinExprUnionMember7ExprUnionMember6ExprUnionMember1
 ]
 
 
-class RankByUnionMember6ExprUnionMember7ExprUnionMember6(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember6ExprUnionMember7ExprUnionMember6Expr]]
+class RankByMinExprUnionMember7ExprUnionMember6(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMinExprUnionMember7ExprUnionMember6Expr]]
 
-    op: Required[Literal["Min"]]
+    type: Required[Literal["Min"]]
 
 
-class RankByUnionMember6ExprUnionMember7ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
+class RankByMinExprUnionMember7ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember6ExprUnionMember7ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByMinExprUnionMember7ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember6ExprUnionMember7ExprUnionMember7Expr: TypeAlias = Union[
-    RankByUnionMember6ExprUnionMember7ExprUnionMember7ExprUnionMember0,
-    RankByUnionMember6ExprUnionMember7ExprUnionMember7ExprUnionMember1,
+RankByMinExprUnionMember7ExprUnionMember7Expr: TypeAlias = Union[
+    RankByMinExprUnionMember7ExprUnionMember7ExprUnionMember0, RankByMinExprUnionMember7ExprUnionMember7ExprUnionMember1
 ]
 
 
-class RankByUnionMember6ExprUnionMember7ExprUnionMember7(TypedDict, total=False):
+class RankByMinExprUnionMember7ExprUnionMember7(TypedDict, total=False):
     base: Required[float]
 
-    expr: Required[RankByUnionMember6ExprUnionMember7ExprUnionMember7Expr]
+    expr: Required[RankByMinExprUnionMember7ExprUnionMember7Expr]
 
-    op: Required[Literal["Log"]]
+    type: Required[Literal["Log"]]
 
 
-RankByUnionMember6ExprUnionMember7Expr: TypeAlias = Union[
-    RankByUnionMember6ExprUnionMember7ExprUnionMember0,
-    RankByUnionMember6ExprUnionMember7ExprUnionMember1,
-    RankByUnionMember6ExprUnionMember7ExprUnionMember2,
-    RankByUnionMember6ExprUnionMember7ExprUnionMember3,
-    RankByUnionMember6ExprUnionMember7ExprUnionMember4,
-    RankByUnionMember6ExprUnionMember7ExprUnionMember5,
-    RankByUnionMember6ExprUnionMember7ExprUnionMember6,
-    RankByUnionMember6ExprUnionMember7ExprUnionMember7,
+RankByMinExprUnionMember7Expr: TypeAlias = Union[
+    RankByMinExprUnionMember7ExprUnionMember0,
+    RankByMinExprUnionMember7ExprUnionMember1,
+    RankByMinExprUnionMember7ExprUnionMember2,
+    RankByMinExprUnionMember7ExprUnionMember3,
+    RankByMinExprUnionMember7ExprUnionMember4,
+    RankByMinExprUnionMember7ExprUnionMember5,
+    RankByMinExprUnionMember7ExprUnionMember6,
+    RankByMinExprUnionMember7ExprUnionMember7,
 ]
 
 
-class RankByUnionMember6ExprUnionMember7(TypedDict, total=False):
+class RankByMinExprUnionMember7(TypedDict, total=False):
     base: Required[float]
 
-    expr: Required[RankByUnionMember6ExprUnionMember7Expr]
+    expr: Required[RankByMinExprUnionMember7Expr]
 
-    op: Required[Literal["Log"]]
+    type: Required[Literal["Log"]]
 
 
-RankByUnionMember6Expr: TypeAlias = Union[
-    RankByUnionMember6ExprUnionMember0,
-    RankByUnionMember6ExprUnionMember1,
-    RankByUnionMember6ExprUnionMember2,
-    RankByUnionMember6ExprUnionMember3,
-    RankByUnionMember6ExprUnionMember4,
-    RankByUnionMember6ExprUnionMember5,
-    RankByUnionMember6ExprUnionMember6,
-    RankByUnionMember6ExprUnionMember7,
+RankByMinExpr: TypeAlias = Union[
+    RankByMinExprUnionMember0,
+    RankByMinExprUnionMember1,
+    RankByMinExprUnionMember2,
+    RankByMinExprUnionMember3,
+    RankByMinExprUnionMember4,
+    RankByMinExprUnionMember5,
+    RankByMinExprUnionMember6,
+    RankByMinExprUnionMember7,
 ]
 
 
-class RankByUnionMember6(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember6Expr]]
+class RankByMin(TypedDict, total=False):
+    exprs: Required[Iterable[RankByMinExpr]]
 
-    op: Required[Literal["Min"]]
+    type: Required[Literal["Min"]]
 
 
-class RankByUnionMember7ExprUnionMember0(TypedDict, total=False):
+class RankByLogExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember7ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByLogExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-class RankByUnionMember7ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
+class RankByLogExprUnionMember2ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember7ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByLogExprUnionMember2ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-class RankByUnionMember7ExprUnionMember2ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
+class RankByLogExprUnionMember2ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember7ExprUnionMember2ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByLogExprUnionMember2ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember7ExprUnionMember2ExprUnionMember2Expr: TypeAlias = Union[
-    RankByUnionMember7ExprUnionMember2ExprUnionMember2ExprUnionMember0,
-    RankByUnionMember7ExprUnionMember2ExprUnionMember2ExprUnionMember1,
+RankByLogExprUnionMember2ExprUnionMember2Expr: TypeAlias = Union[
+    RankByLogExprUnionMember2ExprUnionMember2ExprUnionMember0, RankByLogExprUnionMember2ExprUnionMember2ExprUnionMember1
 ]
 
 
-class RankByUnionMember7ExprUnionMember2ExprUnionMember2(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember7ExprUnionMember2ExprUnionMember2Expr]]
+class RankByLogExprUnionMember2ExprUnionMember2(TypedDict, total=False):
+    exprs: Required[Iterable[RankByLogExprUnionMember2ExprUnionMember2Expr]]
 
-    op: Required[Literal["Sum"]]
+    type: Required[Literal["Sum"]]
 
 
-class RankByUnionMember7ExprUnionMember2ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
+class RankByLogExprUnionMember2ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember7ExprUnionMember2ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByLogExprUnionMember2ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember7ExprUnionMember2ExprUnionMember3Expr: TypeAlias = Union[
-    RankByUnionMember7ExprUnionMember2ExprUnionMember3ExprUnionMember0,
-    RankByUnionMember7ExprUnionMember2ExprUnionMember3ExprUnionMember1,
+RankByLogExprUnionMember2ExprUnionMember3Expr: TypeAlias = Union[
+    RankByLogExprUnionMember2ExprUnionMember3ExprUnionMember0, RankByLogExprUnionMember2ExprUnionMember3ExprUnionMember1
 ]
 
 
-class RankByUnionMember7ExprUnionMember2ExprUnionMember3(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember7ExprUnionMember2ExprUnionMember3Expr]]
+class RankByLogExprUnionMember2ExprUnionMember3(TypedDict, total=False):
+    exprs: Required[Iterable[RankByLogExprUnionMember2ExprUnionMember3Expr]]
 
-    op: Required[Literal["Mult"]]
+    type: Required[Literal["Mult"]]
 
 
-class RankByUnionMember7ExprUnionMember2ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
+class RankByLogExprUnionMember2ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember7ExprUnionMember2ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByLogExprUnionMember2ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember7ExprUnionMember2ExprUnionMember4Expr: TypeAlias = Union[
-    RankByUnionMember7ExprUnionMember2ExprUnionMember4ExprUnionMember0,
-    RankByUnionMember7ExprUnionMember2ExprUnionMember4ExprUnionMember1,
+RankByLogExprUnionMember2ExprUnionMember4Expr: TypeAlias = Union[
+    RankByLogExprUnionMember2ExprUnionMember4ExprUnionMember0, RankByLogExprUnionMember2ExprUnionMember4ExprUnionMember1
 ]
 
 
-class RankByUnionMember7ExprUnionMember2ExprUnionMember4(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember7ExprUnionMember2ExprUnionMember4Expr]]
+class RankByLogExprUnionMember2ExprUnionMember4(TypedDict, total=False):
+    exprs: Required[Iterable[RankByLogExprUnionMember2ExprUnionMember4Expr]]
 
-    op: Required[Literal["Div"]]
+    type: Required[Literal["Div"]]
 
 
-class RankByUnionMember7ExprUnionMember2ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
+class RankByLogExprUnionMember2ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember7ExprUnionMember2ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByLogExprUnionMember2ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember7ExprUnionMember2ExprUnionMember5Expr: TypeAlias = Union[
-    RankByUnionMember7ExprUnionMember2ExprUnionMember5ExprUnionMember0,
-    RankByUnionMember7ExprUnionMember2ExprUnionMember5ExprUnionMember1,
+RankByLogExprUnionMember2ExprUnionMember5Expr: TypeAlias = Union[
+    RankByLogExprUnionMember2ExprUnionMember5ExprUnionMember0, RankByLogExprUnionMember2ExprUnionMember5ExprUnionMember1
 ]
 
 
-class RankByUnionMember7ExprUnionMember2ExprUnionMember5(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember7ExprUnionMember2ExprUnionMember5Expr]]
+class RankByLogExprUnionMember2ExprUnionMember5(TypedDict, total=False):
+    exprs: Required[Iterable[RankByLogExprUnionMember2ExprUnionMember5Expr]]
 
-    op: Required[Literal["Max"]]
+    type: Required[Literal["Max"]]
 
 
-class RankByUnionMember7ExprUnionMember2ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
+class RankByLogExprUnionMember2ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember7ExprUnionMember2ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByLogExprUnionMember2ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember7ExprUnionMember2ExprUnionMember6Expr: TypeAlias = Union[
-    RankByUnionMember7ExprUnionMember2ExprUnionMember6ExprUnionMember0,
-    RankByUnionMember7ExprUnionMember2ExprUnionMember6ExprUnionMember1,
+RankByLogExprUnionMember2ExprUnionMember6Expr: TypeAlias = Union[
+    RankByLogExprUnionMember2ExprUnionMember6ExprUnionMember0, RankByLogExprUnionMember2ExprUnionMember6ExprUnionMember1
 ]
 
 
-class RankByUnionMember7ExprUnionMember2ExprUnionMember6(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember7ExprUnionMember2ExprUnionMember6Expr]]
+class RankByLogExprUnionMember2ExprUnionMember6(TypedDict, total=False):
+    exprs: Required[Iterable[RankByLogExprUnionMember2ExprUnionMember6Expr]]
 
-    op: Required[Literal["Min"]]
+    type: Required[Literal["Min"]]
 
 
-class RankByUnionMember7ExprUnionMember2ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
+class RankByLogExprUnionMember2ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember7ExprUnionMember2ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByLogExprUnionMember2ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember7ExprUnionMember2ExprUnionMember7Expr: TypeAlias = Union[
-    RankByUnionMember7ExprUnionMember2ExprUnionMember7ExprUnionMember0,
-    RankByUnionMember7ExprUnionMember2ExprUnionMember7ExprUnionMember1,
+RankByLogExprUnionMember2ExprUnionMember7Expr: TypeAlias = Union[
+    RankByLogExprUnionMember2ExprUnionMember7ExprUnionMember0, RankByLogExprUnionMember2ExprUnionMember7ExprUnionMember1
 ]
 
 
-class RankByUnionMember7ExprUnionMember2ExprUnionMember7(TypedDict, total=False):
+class RankByLogExprUnionMember2ExprUnionMember7(TypedDict, total=False):
     base: Required[float]
 
-    expr: Required[RankByUnionMember7ExprUnionMember2ExprUnionMember7Expr]
+    expr: Required[RankByLogExprUnionMember2ExprUnionMember7Expr]
 
-    op: Required[Literal["Log"]]
+    type: Required[Literal["Log"]]
 
 
-RankByUnionMember7ExprUnionMember2Expr: TypeAlias = Union[
-    RankByUnionMember7ExprUnionMember2ExprUnionMember0,
-    RankByUnionMember7ExprUnionMember2ExprUnionMember1,
-    RankByUnionMember7ExprUnionMember2ExprUnionMember2,
-    RankByUnionMember7ExprUnionMember2ExprUnionMember3,
-    RankByUnionMember7ExprUnionMember2ExprUnionMember4,
-    RankByUnionMember7ExprUnionMember2ExprUnionMember5,
-    RankByUnionMember7ExprUnionMember2ExprUnionMember6,
-    RankByUnionMember7ExprUnionMember2ExprUnionMember7,
+RankByLogExprUnionMember2Expr: TypeAlias = Union[
+    RankByLogExprUnionMember2ExprUnionMember0,
+    RankByLogExprUnionMember2ExprUnionMember1,
+    RankByLogExprUnionMember2ExprUnionMember2,
+    RankByLogExprUnionMember2ExprUnionMember3,
+    RankByLogExprUnionMember2ExprUnionMember4,
+    RankByLogExprUnionMember2ExprUnionMember5,
+    RankByLogExprUnionMember2ExprUnionMember6,
+    RankByLogExprUnionMember2ExprUnionMember7,
 ]
 
 
-class RankByUnionMember7ExprUnionMember2(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember7ExprUnionMember2Expr]]
+class RankByLogExprUnionMember2(TypedDict, total=False):
+    exprs: Required[Iterable[RankByLogExprUnionMember2Expr]]
 
-    op: Required[Literal["Sum"]]
+    type: Required[Literal["Sum"]]
 
 
-class RankByUnionMember7ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
+class RankByLogExprUnionMember3ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember7ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByLogExprUnionMember3ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-class RankByUnionMember7ExprUnionMember3ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
+class RankByLogExprUnionMember3ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember7ExprUnionMember3ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByLogExprUnionMember3ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember7ExprUnionMember3ExprUnionMember2Expr: TypeAlias = Union[
-    RankByUnionMember7ExprUnionMember3ExprUnionMember2ExprUnionMember0,
-    RankByUnionMember7ExprUnionMember3ExprUnionMember2ExprUnionMember1,
+RankByLogExprUnionMember3ExprUnionMember2Expr: TypeAlias = Union[
+    RankByLogExprUnionMember3ExprUnionMember2ExprUnionMember0, RankByLogExprUnionMember3ExprUnionMember2ExprUnionMember1
 ]
 
 
-class RankByUnionMember7ExprUnionMember3ExprUnionMember2(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember7ExprUnionMember3ExprUnionMember2Expr]]
+class RankByLogExprUnionMember3ExprUnionMember2(TypedDict, total=False):
+    exprs: Required[Iterable[RankByLogExprUnionMember3ExprUnionMember2Expr]]
 
-    op: Required[Literal["Sum"]]
+    type: Required[Literal["Sum"]]
 
 
-class RankByUnionMember7ExprUnionMember3ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
+class RankByLogExprUnionMember3ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember7ExprUnionMember3ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByLogExprUnionMember3ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember7ExprUnionMember3ExprUnionMember3Expr: TypeAlias = Union[
-    RankByUnionMember7ExprUnionMember3ExprUnionMember3ExprUnionMember0,
-    RankByUnionMember7ExprUnionMember3ExprUnionMember3ExprUnionMember1,
+RankByLogExprUnionMember3ExprUnionMember3Expr: TypeAlias = Union[
+    RankByLogExprUnionMember3ExprUnionMember3ExprUnionMember0, RankByLogExprUnionMember3ExprUnionMember3ExprUnionMember1
 ]
 
 
-class RankByUnionMember7ExprUnionMember3ExprUnionMember3(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember7ExprUnionMember3ExprUnionMember3Expr]]
+class RankByLogExprUnionMember3ExprUnionMember3(TypedDict, total=False):
+    exprs: Required[Iterable[RankByLogExprUnionMember3ExprUnionMember3Expr]]
 
-    op: Required[Literal["Mult"]]
+    type: Required[Literal["Mult"]]
 
 
-class RankByUnionMember7ExprUnionMember3ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
+class RankByLogExprUnionMember3ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember7ExprUnionMember3ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByLogExprUnionMember3ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember7ExprUnionMember3ExprUnionMember4Expr: TypeAlias = Union[
-    RankByUnionMember7ExprUnionMember3ExprUnionMember4ExprUnionMember0,
-    RankByUnionMember7ExprUnionMember3ExprUnionMember4ExprUnionMember1,
+RankByLogExprUnionMember3ExprUnionMember4Expr: TypeAlias = Union[
+    RankByLogExprUnionMember3ExprUnionMember4ExprUnionMember0, RankByLogExprUnionMember3ExprUnionMember4ExprUnionMember1
 ]
 
 
-class RankByUnionMember7ExprUnionMember3ExprUnionMember4(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember7ExprUnionMember3ExprUnionMember4Expr]]
+class RankByLogExprUnionMember3ExprUnionMember4(TypedDict, total=False):
+    exprs: Required[Iterable[RankByLogExprUnionMember3ExprUnionMember4Expr]]
 
-    op: Required[Literal["Div"]]
+    type: Required[Literal["Div"]]
 
 
-class RankByUnionMember7ExprUnionMember3ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
+class RankByLogExprUnionMember3ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember7ExprUnionMember3ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByLogExprUnionMember3ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember7ExprUnionMember3ExprUnionMember5Expr: TypeAlias = Union[
-    RankByUnionMember7ExprUnionMember3ExprUnionMember5ExprUnionMember0,
-    RankByUnionMember7ExprUnionMember3ExprUnionMember5ExprUnionMember1,
+RankByLogExprUnionMember3ExprUnionMember5Expr: TypeAlias = Union[
+    RankByLogExprUnionMember3ExprUnionMember5ExprUnionMember0, RankByLogExprUnionMember3ExprUnionMember5ExprUnionMember1
 ]
 
 
-class RankByUnionMember7ExprUnionMember3ExprUnionMember5(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember7ExprUnionMember3ExprUnionMember5Expr]]
+class RankByLogExprUnionMember3ExprUnionMember5(TypedDict, total=False):
+    exprs: Required[Iterable[RankByLogExprUnionMember3ExprUnionMember5Expr]]
 
-    op: Required[Literal["Max"]]
+    type: Required[Literal["Max"]]
 
 
-class RankByUnionMember7ExprUnionMember3ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
+class RankByLogExprUnionMember3ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember7ExprUnionMember3ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByLogExprUnionMember3ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember7ExprUnionMember3ExprUnionMember6Expr: TypeAlias = Union[
-    RankByUnionMember7ExprUnionMember3ExprUnionMember6ExprUnionMember0,
-    RankByUnionMember7ExprUnionMember3ExprUnionMember6ExprUnionMember1,
+RankByLogExprUnionMember3ExprUnionMember6Expr: TypeAlias = Union[
+    RankByLogExprUnionMember3ExprUnionMember6ExprUnionMember0, RankByLogExprUnionMember3ExprUnionMember6ExprUnionMember1
 ]
 
 
-class RankByUnionMember7ExprUnionMember3ExprUnionMember6(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember7ExprUnionMember3ExprUnionMember6Expr]]
+class RankByLogExprUnionMember3ExprUnionMember6(TypedDict, total=False):
+    exprs: Required[Iterable[RankByLogExprUnionMember3ExprUnionMember6Expr]]
 
-    op: Required[Literal["Min"]]
+    type: Required[Literal["Min"]]
 
 
-class RankByUnionMember7ExprUnionMember3ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
+class RankByLogExprUnionMember3ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember7ExprUnionMember3ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByLogExprUnionMember3ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember7ExprUnionMember3ExprUnionMember7Expr: TypeAlias = Union[
-    RankByUnionMember7ExprUnionMember3ExprUnionMember7ExprUnionMember0,
-    RankByUnionMember7ExprUnionMember3ExprUnionMember7ExprUnionMember1,
+RankByLogExprUnionMember3ExprUnionMember7Expr: TypeAlias = Union[
+    RankByLogExprUnionMember3ExprUnionMember7ExprUnionMember0, RankByLogExprUnionMember3ExprUnionMember7ExprUnionMember1
 ]
 
 
-class RankByUnionMember7ExprUnionMember3ExprUnionMember7(TypedDict, total=False):
+class RankByLogExprUnionMember3ExprUnionMember7(TypedDict, total=False):
     base: Required[float]
 
-    expr: Required[RankByUnionMember7ExprUnionMember3ExprUnionMember7Expr]
+    expr: Required[RankByLogExprUnionMember3ExprUnionMember7Expr]
 
-    op: Required[Literal["Log"]]
+    type: Required[Literal["Log"]]
 
 
-RankByUnionMember7ExprUnionMember3Expr: TypeAlias = Union[
-    RankByUnionMember7ExprUnionMember3ExprUnionMember0,
-    RankByUnionMember7ExprUnionMember3ExprUnionMember1,
-    RankByUnionMember7ExprUnionMember3ExprUnionMember2,
-    RankByUnionMember7ExprUnionMember3ExprUnionMember3,
-    RankByUnionMember7ExprUnionMember3ExprUnionMember4,
-    RankByUnionMember7ExprUnionMember3ExprUnionMember5,
-    RankByUnionMember7ExprUnionMember3ExprUnionMember6,
-    RankByUnionMember7ExprUnionMember3ExprUnionMember7,
+RankByLogExprUnionMember3Expr: TypeAlias = Union[
+    RankByLogExprUnionMember3ExprUnionMember0,
+    RankByLogExprUnionMember3ExprUnionMember1,
+    RankByLogExprUnionMember3ExprUnionMember2,
+    RankByLogExprUnionMember3ExprUnionMember3,
+    RankByLogExprUnionMember3ExprUnionMember4,
+    RankByLogExprUnionMember3ExprUnionMember5,
+    RankByLogExprUnionMember3ExprUnionMember6,
+    RankByLogExprUnionMember3ExprUnionMember7,
 ]
 
 
-class RankByUnionMember7ExprUnionMember3(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember7ExprUnionMember3Expr]]
+class RankByLogExprUnionMember3(TypedDict, total=False):
+    exprs: Required[Iterable[RankByLogExprUnionMember3Expr]]
 
-    op: Required[Literal["Mult"]]
+    type: Required[Literal["Mult"]]
 
 
-class RankByUnionMember7ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
+class RankByLogExprUnionMember4ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember7ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByLogExprUnionMember4ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-class RankByUnionMember7ExprUnionMember4ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
+class RankByLogExprUnionMember4ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember7ExprUnionMember4ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByLogExprUnionMember4ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember7ExprUnionMember4ExprUnionMember2Expr: TypeAlias = Union[
-    RankByUnionMember7ExprUnionMember4ExprUnionMember2ExprUnionMember0,
-    RankByUnionMember7ExprUnionMember4ExprUnionMember2ExprUnionMember1,
+RankByLogExprUnionMember4ExprUnionMember2Expr: TypeAlias = Union[
+    RankByLogExprUnionMember4ExprUnionMember2ExprUnionMember0, RankByLogExprUnionMember4ExprUnionMember2ExprUnionMember1
 ]
 
 
-class RankByUnionMember7ExprUnionMember4ExprUnionMember2(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember7ExprUnionMember4ExprUnionMember2Expr]]
+class RankByLogExprUnionMember4ExprUnionMember2(TypedDict, total=False):
+    exprs: Required[Iterable[RankByLogExprUnionMember4ExprUnionMember2Expr]]
 
-    op: Required[Literal["Sum"]]
+    type: Required[Literal["Sum"]]
 
 
-class RankByUnionMember7ExprUnionMember4ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
+class RankByLogExprUnionMember4ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember7ExprUnionMember4ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByLogExprUnionMember4ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember7ExprUnionMember4ExprUnionMember3Expr: TypeAlias = Union[
-    RankByUnionMember7ExprUnionMember4ExprUnionMember3ExprUnionMember0,
-    RankByUnionMember7ExprUnionMember4ExprUnionMember3ExprUnionMember1,
+RankByLogExprUnionMember4ExprUnionMember3Expr: TypeAlias = Union[
+    RankByLogExprUnionMember4ExprUnionMember3ExprUnionMember0, RankByLogExprUnionMember4ExprUnionMember3ExprUnionMember1
 ]
 
 
-class RankByUnionMember7ExprUnionMember4ExprUnionMember3(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember7ExprUnionMember4ExprUnionMember3Expr]]
+class RankByLogExprUnionMember4ExprUnionMember3(TypedDict, total=False):
+    exprs: Required[Iterable[RankByLogExprUnionMember4ExprUnionMember3Expr]]
 
-    op: Required[Literal["Mult"]]
+    type: Required[Literal["Mult"]]
 
 
-class RankByUnionMember7ExprUnionMember4ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
+class RankByLogExprUnionMember4ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember7ExprUnionMember4ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByLogExprUnionMember4ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember7ExprUnionMember4ExprUnionMember4Expr: TypeAlias = Union[
-    RankByUnionMember7ExprUnionMember4ExprUnionMember4ExprUnionMember0,
-    RankByUnionMember7ExprUnionMember4ExprUnionMember4ExprUnionMember1,
+RankByLogExprUnionMember4ExprUnionMember4Expr: TypeAlias = Union[
+    RankByLogExprUnionMember4ExprUnionMember4ExprUnionMember0, RankByLogExprUnionMember4ExprUnionMember4ExprUnionMember1
 ]
 
 
-class RankByUnionMember7ExprUnionMember4ExprUnionMember4(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember7ExprUnionMember4ExprUnionMember4Expr]]
+class RankByLogExprUnionMember4ExprUnionMember4(TypedDict, total=False):
+    exprs: Required[Iterable[RankByLogExprUnionMember4ExprUnionMember4Expr]]
 
-    op: Required[Literal["Div"]]
+    type: Required[Literal["Div"]]
 
 
-class RankByUnionMember7ExprUnionMember4ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
+class RankByLogExprUnionMember4ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember7ExprUnionMember4ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByLogExprUnionMember4ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember7ExprUnionMember4ExprUnionMember5Expr: TypeAlias = Union[
-    RankByUnionMember7ExprUnionMember4ExprUnionMember5ExprUnionMember0,
-    RankByUnionMember7ExprUnionMember4ExprUnionMember5ExprUnionMember1,
+RankByLogExprUnionMember4ExprUnionMember5Expr: TypeAlias = Union[
+    RankByLogExprUnionMember4ExprUnionMember5ExprUnionMember0, RankByLogExprUnionMember4ExprUnionMember5ExprUnionMember1
 ]
 
 
-class RankByUnionMember7ExprUnionMember4ExprUnionMember5(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember7ExprUnionMember4ExprUnionMember5Expr]]
+class RankByLogExprUnionMember4ExprUnionMember5(TypedDict, total=False):
+    exprs: Required[Iterable[RankByLogExprUnionMember4ExprUnionMember5Expr]]
 
-    op: Required[Literal["Max"]]
+    type: Required[Literal["Max"]]
 
 
-class RankByUnionMember7ExprUnionMember4ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
+class RankByLogExprUnionMember4ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember7ExprUnionMember4ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByLogExprUnionMember4ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember7ExprUnionMember4ExprUnionMember6Expr: TypeAlias = Union[
-    RankByUnionMember7ExprUnionMember4ExprUnionMember6ExprUnionMember0,
-    RankByUnionMember7ExprUnionMember4ExprUnionMember6ExprUnionMember1,
+RankByLogExprUnionMember4ExprUnionMember6Expr: TypeAlias = Union[
+    RankByLogExprUnionMember4ExprUnionMember6ExprUnionMember0, RankByLogExprUnionMember4ExprUnionMember6ExprUnionMember1
 ]
 
 
-class RankByUnionMember7ExprUnionMember4ExprUnionMember6(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember7ExprUnionMember4ExprUnionMember6Expr]]
+class RankByLogExprUnionMember4ExprUnionMember6(TypedDict, total=False):
+    exprs: Required[Iterable[RankByLogExprUnionMember4ExprUnionMember6Expr]]
 
-    op: Required[Literal["Min"]]
+    type: Required[Literal["Min"]]
 
 
-class RankByUnionMember7ExprUnionMember4ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
+class RankByLogExprUnionMember4ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember7ExprUnionMember4ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByLogExprUnionMember4ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember7ExprUnionMember4ExprUnionMember7Expr: TypeAlias = Union[
-    RankByUnionMember7ExprUnionMember4ExprUnionMember7ExprUnionMember0,
-    RankByUnionMember7ExprUnionMember4ExprUnionMember7ExprUnionMember1,
+RankByLogExprUnionMember4ExprUnionMember7Expr: TypeAlias = Union[
+    RankByLogExprUnionMember4ExprUnionMember7ExprUnionMember0, RankByLogExprUnionMember4ExprUnionMember7ExprUnionMember1
 ]
 
 
-class RankByUnionMember7ExprUnionMember4ExprUnionMember7(TypedDict, total=False):
+class RankByLogExprUnionMember4ExprUnionMember7(TypedDict, total=False):
     base: Required[float]
 
-    expr: Required[RankByUnionMember7ExprUnionMember4ExprUnionMember7Expr]
+    expr: Required[RankByLogExprUnionMember4ExprUnionMember7Expr]
 
-    op: Required[Literal["Log"]]
+    type: Required[Literal["Log"]]
 
 
-RankByUnionMember7ExprUnionMember4Expr: TypeAlias = Union[
-    RankByUnionMember7ExprUnionMember4ExprUnionMember0,
-    RankByUnionMember7ExprUnionMember4ExprUnionMember1,
-    RankByUnionMember7ExprUnionMember4ExprUnionMember2,
-    RankByUnionMember7ExprUnionMember4ExprUnionMember3,
-    RankByUnionMember7ExprUnionMember4ExprUnionMember4,
-    RankByUnionMember7ExprUnionMember4ExprUnionMember5,
-    RankByUnionMember7ExprUnionMember4ExprUnionMember6,
-    RankByUnionMember7ExprUnionMember4ExprUnionMember7,
+RankByLogExprUnionMember4Expr: TypeAlias = Union[
+    RankByLogExprUnionMember4ExprUnionMember0,
+    RankByLogExprUnionMember4ExprUnionMember1,
+    RankByLogExprUnionMember4ExprUnionMember2,
+    RankByLogExprUnionMember4ExprUnionMember3,
+    RankByLogExprUnionMember4ExprUnionMember4,
+    RankByLogExprUnionMember4ExprUnionMember5,
+    RankByLogExprUnionMember4ExprUnionMember6,
+    RankByLogExprUnionMember4ExprUnionMember7,
 ]
 
 
-class RankByUnionMember7ExprUnionMember4(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember7ExprUnionMember4Expr]]
+class RankByLogExprUnionMember4(TypedDict, total=False):
+    exprs: Required[Iterable[RankByLogExprUnionMember4Expr]]
 
-    op: Required[Literal["Div"]]
+    type: Required[Literal["Div"]]
 
 
-class RankByUnionMember7ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
+class RankByLogExprUnionMember5ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember7ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByLogExprUnionMember5ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-class RankByUnionMember7ExprUnionMember5ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
+class RankByLogExprUnionMember5ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember7ExprUnionMember5ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByLogExprUnionMember5ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember7ExprUnionMember5ExprUnionMember2Expr: TypeAlias = Union[
-    RankByUnionMember7ExprUnionMember5ExprUnionMember2ExprUnionMember0,
-    RankByUnionMember7ExprUnionMember5ExprUnionMember2ExprUnionMember1,
+RankByLogExprUnionMember5ExprUnionMember2Expr: TypeAlias = Union[
+    RankByLogExprUnionMember5ExprUnionMember2ExprUnionMember0, RankByLogExprUnionMember5ExprUnionMember2ExprUnionMember1
 ]
 
 
-class RankByUnionMember7ExprUnionMember5ExprUnionMember2(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember7ExprUnionMember5ExprUnionMember2Expr]]
+class RankByLogExprUnionMember5ExprUnionMember2(TypedDict, total=False):
+    exprs: Required[Iterable[RankByLogExprUnionMember5ExprUnionMember2Expr]]
 
-    op: Required[Literal["Sum"]]
+    type: Required[Literal["Sum"]]
 
 
-class RankByUnionMember7ExprUnionMember5ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
+class RankByLogExprUnionMember5ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember7ExprUnionMember5ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByLogExprUnionMember5ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember7ExprUnionMember5ExprUnionMember3Expr: TypeAlias = Union[
-    RankByUnionMember7ExprUnionMember5ExprUnionMember3ExprUnionMember0,
-    RankByUnionMember7ExprUnionMember5ExprUnionMember3ExprUnionMember1,
+RankByLogExprUnionMember5ExprUnionMember3Expr: TypeAlias = Union[
+    RankByLogExprUnionMember5ExprUnionMember3ExprUnionMember0, RankByLogExprUnionMember5ExprUnionMember3ExprUnionMember1
 ]
 
 
-class RankByUnionMember7ExprUnionMember5ExprUnionMember3(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember7ExprUnionMember5ExprUnionMember3Expr]]
+class RankByLogExprUnionMember5ExprUnionMember3(TypedDict, total=False):
+    exprs: Required[Iterable[RankByLogExprUnionMember5ExprUnionMember3Expr]]
 
-    op: Required[Literal["Mult"]]
+    type: Required[Literal["Mult"]]
 
 
-class RankByUnionMember7ExprUnionMember5ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
+class RankByLogExprUnionMember5ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember7ExprUnionMember5ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByLogExprUnionMember5ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember7ExprUnionMember5ExprUnionMember4Expr: TypeAlias = Union[
-    RankByUnionMember7ExprUnionMember5ExprUnionMember4ExprUnionMember0,
-    RankByUnionMember7ExprUnionMember5ExprUnionMember4ExprUnionMember1,
+RankByLogExprUnionMember5ExprUnionMember4Expr: TypeAlias = Union[
+    RankByLogExprUnionMember5ExprUnionMember4ExprUnionMember0, RankByLogExprUnionMember5ExprUnionMember4ExprUnionMember1
 ]
 
 
-class RankByUnionMember7ExprUnionMember5ExprUnionMember4(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember7ExprUnionMember5ExprUnionMember4Expr]]
+class RankByLogExprUnionMember5ExprUnionMember4(TypedDict, total=False):
+    exprs: Required[Iterable[RankByLogExprUnionMember5ExprUnionMember4Expr]]
 
-    op: Required[Literal["Div"]]
+    type: Required[Literal["Div"]]
 
 
-class RankByUnionMember7ExprUnionMember5ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
+class RankByLogExprUnionMember5ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember7ExprUnionMember5ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByLogExprUnionMember5ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember7ExprUnionMember5ExprUnionMember5Expr: TypeAlias = Union[
-    RankByUnionMember7ExprUnionMember5ExprUnionMember5ExprUnionMember0,
-    RankByUnionMember7ExprUnionMember5ExprUnionMember5ExprUnionMember1,
+RankByLogExprUnionMember5ExprUnionMember5Expr: TypeAlias = Union[
+    RankByLogExprUnionMember5ExprUnionMember5ExprUnionMember0, RankByLogExprUnionMember5ExprUnionMember5ExprUnionMember1
 ]
 
 
-class RankByUnionMember7ExprUnionMember5ExprUnionMember5(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember7ExprUnionMember5ExprUnionMember5Expr]]
+class RankByLogExprUnionMember5ExprUnionMember5(TypedDict, total=False):
+    exprs: Required[Iterable[RankByLogExprUnionMember5ExprUnionMember5Expr]]
 
-    op: Required[Literal["Max"]]
+    type: Required[Literal["Max"]]
 
 
-class RankByUnionMember7ExprUnionMember5ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
+class RankByLogExprUnionMember5ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember7ExprUnionMember5ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByLogExprUnionMember5ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember7ExprUnionMember5ExprUnionMember6Expr: TypeAlias = Union[
-    RankByUnionMember7ExprUnionMember5ExprUnionMember6ExprUnionMember0,
-    RankByUnionMember7ExprUnionMember5ExprUnionMember6ExprUnionMember1,
+RankByLogExprUnionMember5ExprUnionMember6Expr: TypeAlias = Union[
+    RankByLogExprUnionMember5ExprUnionMember6ExprUnionMember0, RankByLogExprUnionMember5ExprUnionMember6ExprUnionMember1
 ]
 
 
-class RankByUnionMember7ExprUnionMember5ExprUnionMember6(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember7ExprUnionMember5ExprUnionMember6Expr]]
+class RankByLogExprUnionMember5ExprUnionMember6(TypedDict, total=False):
+    exprs: Required[Iterable[RankByLogExprUnionMember5ExprUnionMember6Expr]]
 
-    op: Required[Literal["Min"]]
+    type: Required[Literal["Min"]]
 
 
-class RankByUnionMember7ExprUnionMember5ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
+class RankByLogExprUnionMember5ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember7ExprUnionMember5ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByLogExprUnionMember5ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember7ExprUnionMember5ExprUnionMember7Expr: TypeAlias = Union[
-    RankByUnionMember7ExprUnionMember5ExprUnionMember7ExprUnionMember0,
-    RankByUnionMember7ExprUnionMember5ExprUnionMember7ExprUnionMember1,
+RankByLogExprUnionMember5ExprUnionMember7Expr: TypeAlias = Union[
+    RankByLogExprUnionMember5ExprUnionMember7ExprUnionMember0, RankByLogExprUnionMember5ExprUnionMember7ExprUnionMember1
 ]
 
 
-class RankByUnionMember7ExprUnionMember5ExprUnionMember7(TypedDict, total=False):
+class RankByLogExprUnionMember5ExprUnionMember7(TypedDict, total=False):
     base: Required[float]
 
-    expr: Required[RankByUnionMember7ExprUnionMember5ExprUnionMember7Expr]
+    expr: Required[RankByLogExprUnionMember5ExprUnionMember7Expr]
 
-    op: Required[Literal["Log"]]
+    type: Required[Literal["Log"]]
 
 
-RankByUnionMember7ExprUnionMember5Expr: TypeAlias = Union[
-    RankByUnionMember7ExprUnionMember5ExprUnionMember0,
-    RankByUnionMember7ExprUnionMember5ExprUnionMember1,
-    RankByUnionMember7ExprUnionMember5ExprUnionMember2,
-    RankByUnionMember7ExprUnionMember5ExprUnionMember3,
-    RankByUnionMember7ExprUnionMember5ExprUnionMember4,
-    RankByUnionMember7ExprUnionMember5ExprUnionMember5,
-    RankByUnionMember7ExprUnionMember5ExprUnionMember6,
-    RankByUnionMember7ExprUnionMember5ExprUnionMember7,
+RankByLogExprUnionMember5Expr: TypeAlias = Union[
+    RankByLogExprUnionMember5ExprUnionMember0,
+    RankByLogExprUnionMember5ExprUnionMember1,
+    RankByLogExprUnionMember5ExprUnionMember2,
+    RankByLogExprUnionMember5ExprUnionMember3,
+    RankByLogExprUnionMember5ExprUnionMember4,
+    RankByLogExprUnionMember5ExprUnionMember5,
+    RankByLogExprUnionMember5ExprUnionMember6,
+    RankByLogExprUnionMember5ExprUnionMember7,
 ]
 
 
-class RankByUnionMember7ExprUnionMember5(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember7ExprUnionMember5Expr]]
+class RankByLogExprUnionMember5(TypedDict, total=False):
+    exprs: Required[Iterable[RankByLogExprUnionMember5Expr]]
 
-    op: Required[Literal["Max"]]
+    type: Required[Literal["Max"]]
 
 
-class RankByUnionMember7ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
+class RankByLogExprUnionMember6ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember7ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByLogExprUnionMember6ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-class RankByUnionMember7ExprUnionMember6ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
+class RankByLogExprUnionMember6ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember7ExprUnionMember6ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByLogExprUnionMember6ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember7ExprUnionMember6ExprUnionMember2Expr: TypeAlias = Union[
-    RankByUnionMember7ExprUnionMember6ExprUnionMember2ExprUnionMember0,
-    RankByUnionMember7ExprUnionMember6ExprUnionMember2ExprUnionMember1,
+RankByLogExprUnionMember6ExprUnionMember2Expr: TypeAlias = Union[
+    RankByLogExprUnionMember6ExprUnionMember2ExprUnionMember0, RankByLogExprUnionMember6ExprUnionMember2ExprUnionMember1
 ]
 
 
-class RankByUnionMember7ExprUnionMember6ExprUnionMember2(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember7ExprUnionMember6ExprUnionMember2Expr]]
+class RankByLogExprUnionMember6ExprUnionMember2(TypedDict, total=False):
+    exprs: Required[Iterable[RankByLogExprUnionMember6ExprUnionMember2Expr]]
 
-    op: Required[Literal["Sum"]]
+    type: Required[Literal["Sum"]]
 
 
-class RankByUnionMember7ExprUnionMember6ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
+class RankByLogExprUnionMember6ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember7ExprUnionMember6ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByLogExprUnionMember6ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember7ExprUnionMember6ExprUnionMember3Expr: TypeAlias = Union[
-    RankByUnionMember7ExprUnionMember6ExprUnionMember3ExprUnionMember0,
-    RankByUnionMember7ExprUnionMember6ExprUnionMember3ExprUnionMember1,
+RankByLogExprUnionMember6ExprUnionMember3Expr: TypeAlias = Union[
+    RankByLogExprUnionMember6ExprUnionMember3ExprUnionMember0, RankByLogExprUnionMember6ExprUnionMember3ExprUnionMember1
 ]
 
 
-class RankByUnionMember7ExprUnionMember6ExprUnionMember3(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember7ExprUnionMember6ExprUnionMember3Expr]]
+class RankByLogExprUnionMember6ExprUnionMember3(TypedDict, total=False):
+    exprs: Required[Iterable[RankByLogExprUnionMember6ExprUnionMember3Expr]]
 
-    op: Required[Literal["Mult"]]
+    type: Required[Literal["Mult"]]
 
 
-class RankByUnionMember7ExprUnionMember6ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
+class RankByLogExprUnionMember6ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember7ExprUnionMember6ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByLogExprUnionMember6ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember7ExprUnionMember6ExprUnionMember4Expr: TypeAlias = Union[
-    RankByUnionMember7ExprUnionMember6ExprUnionMember4ExprUnionMember0,
-    RankByUnionMember7ExprUnionMember6ExprUnionMember4ExprUnionMember1,
+RankByLogExprUnionMember6ExprUnionMember4Expr: TypeAlias = Union[
+    RankByLogExprUnionMember6ExprUnionMember4ExprUnionMember0, RankByLogExprUnionMember6ExprUnionMember4ExprUnionMember1
 ]
 
 
-class RankByUnionMember7ExprUnionMember6ExprUnionMember4(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember7ExprUnionMember6ExprUnionMember4Expr]]
+class RankByLogExprUnionMember6ExprUnionMember4(TypedDict, total=False):
+    exprs: Required[Iterable[RankByLogExprUnionMember6ExprUnionMember4Expr]]
 
-    op: Required[Literal["Div"]]
+    type: Required[Literal["Div"]]
 
 
-class RankByUnionMember7ExprUnionMember6ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
+class RankByLogExprUnionMember6ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember7ExprUnionMember6ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByLogExprUnionMember6ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember7ExprUnionMember6ExprUnionMember5Expr: TypeAlias = Union[
-    RankByUnionMember7ExprUnionMember6ExprUnionMember5ExprUnionMember0,
-    RankByUnionMember7ExprUnionMember6ExprUnionMember5ExprUnionMember1,
+RankByLogExprUnionMember6ExprUnionMember5Expr: TypeAlias = Union[
+    RankByLogExprUnionMember6ExprUnionMember5ExprUnionMember0, RankByLogExprUnionMember6ExprUnionMember5ExprUnionMember1
 ]
 
 
-class RankByUnionMember7ExprUnionMember6ExprUnionMember5(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember7ExprUnionMember6ExprUnionMember5Expr]]
+class RankByLogExprUnionMember6ExprUnionMember5(TypedDict, total=False):
+    exprs: Required[Iterable[RankByLogExprUnionMember6ExprUnionMember5Expr]]
 
-    op: Required[Literal["Max"]]
+    type: Required[Literal["Max"]]
 
 
-class RankByUnionMember7ExprUnionMember6ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
+class RankByLogExprUnionMember6ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember7ExprUnionMember6ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByLogExprUnionMember6ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember7ExprUnionMember6ExprUnionMember6Expr: TypeAlias = Union[
-    RankByUnionMember7ExprUnionMember6ExprUnionMember6ExprUnionMember0,
-    RankByUnionMember7ExprUnionMember6ExprUnionMember6ExprUnionMember1,
+RankByLogExprUnionMember6ExprUnionMember6Expr: TypeAlias = Union[
+    RankByLogExprUnionMember6ExprUnionMember6ExprUnionMember0, RankByLogExprUnionMember6ExprUnionMember6ExprUnionMember1
 ]
 
 
-class RankByUnionMember7ExprUnionMember6ExprUnionMember6(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember7ExprUnionMember6ExprUnionMember6Expr]]
+class RankByLogExprUnionMember6ExprUnionMember6(TypedDict, total=False):
+    exprs: Required[Iterable[RankByLogExprUnionMember6ExprUnionMember6Expr]]
 
-    op: Required[Literal["Min"]]
+    type: Required[Literal["Min"]]
 
 
-class RankByUnionMember7ExprUnionMember6ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
+class RankByLogExprUnionMember6ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember7ExprUnionMember6ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByLogExprUnionMember6ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember7ExprUnionMember6ExprUnionMember7Expr: TypeAlias = Union[
-    RankByUnionMember7ExprUnionMember6ExprUnionMember7ExprUnionMember0,
-    RankByUnionMember7ExprUnionMember6ExprUnionMember7ExprUnionMember1,
+RankByLogExprUnionMember6ExprUnionMember7Expr: TypeAlias = Union[
+    RankByLogExprUnionMember6ExprUnionMember7ExprUnionMember0, RankByLogExprUnionMember6ExprUnionMember7ExprUnionMember1
 ]
 
 
-class RankByUnionMember7ExprUnionMember6ExprUnionMember7(TypedDict, total=False):
+class RankByLogExprUnionMember6ExprUnionMember7(TypedDict, total=False):
     base: Required[float]
 
-    expr: Required[RankByUnionMember7ExprUnionMember6ExprUnionMember7Expr]
+    expr: Required[RankByLogExprUnionMember6ExprUnionMember7Expr]
 
-    op: Required[Literal["Log"]]
+    type: Required[Literal["Log"]]
 
 
-RankByUnionMember7ExprUnionMember6Expr: TypeAlias = Union[
-    RankByUnionMember7ExprUnionMember6ExprUnionMember0,
-    RankByUnionMember7ExprUnionMember6ExprUnionMember1,
-    RankByUnionMember7ExprUnionMember6ExprUnionMember2,
-    RankByUnionMember7ExprUnionMember6ExprUnionMember3,
-    RankByUnionMember7ExprUnionMember6ExprUnionMember4,
-    RankByUnionMember7ExprUnionMember6ExprUnionMember5,
-    RankByUnionMember7ExprUnionMember6ExprUnionMember6,
-    RankByUnionMember7ExprUnionMember6ExprUnionMember7,
+RankByLogExprUnionMember6Expr: TypeAlias = Union[
+    RankByLogExprUnionMember6ExprUnionMember0,
+    RankByLogExprUnionMember6ExprUnionMember1,
+    RankByLogExprUnionMember6ExprUnionMember2,
+    RankByLogExprUnionMember6ExprUnionMember3,
+    RankByLogExprUnionMember6ExprUnionMember4,
+    RankByLogExprUnionMember6ExprUnionMember5,
+    RankByLogExprUnionMember6ExprUnionMember6,
+    RankByLogExprUnionMember6ExprUnionMember7,
 ]
 
 
-class RankByUnionMember7ExprUnionMember6(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember7ExprUnionMember6Expr]]
+class RankByLogExprUnionMember6(TypedDict, total=False):
+    exprs: Required[Iterable[RankByLogExprUnionMember6Expr]]
 
-    op: Required[Literal["Min"]]
+    type: Required[Literal["Min"]]
 
 
-class RankByUnionMember7ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
+class RankByLogExprUnionMember7ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember7ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByLogExprUnionMember7ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-class RankByUnionMember7ExprUnionMember7ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
+class RankByLogExprUnionMember7ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember7ExprUnionMember7ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByLogExprUnionMember7ExprUnionMember2ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember7ExprUnionMember7ExprUnionMember2Expr: TypeAlias = Union[
-    RankByUnionMember7ExprUnionMember7ExprUnionMember2ExprUnionMember0,
-    RankByUnionMember7ExprUnionMember7ExprUnionMember2ExprUnionMember1,
+RankByLogExprUnionMember7ExprUnionMember2Expr: TypeAlias = Union[
+    RankByLogExprUnionMember7ExprUnionMember2ExprUnionMember0, RankByLogExprUnionMember7ExprUnionMember2ExprUnionMember1
 ]
 
 
-class RankByUnionMember7ExprUnionMember7ExprUnionMember2(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember7ExprUnionMember7ExprUnionMember2Expr]]
+class RankByLogExprUnionMember7ExprUnionMember2(TypedDict, total=False):
+    exprs: Required[Iterable[RankByLogExprUnionMember7ExprUnionMember2Expr]]
 
-    op: Required[Literal["Sum"]]
+    type: Required[Literal["Sum"]]
 
 
-class RankByUnionMember7ExprUnionMember7ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
+class RankByLogExprUnionMember7ExprUnionMember3ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember7ExprUnionMember7ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByLogExprUnionMember7ExprUnionMember3ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember7ExprUnionMember7ExprUnionMember3Expr: TypeAlias = Union[
-    RankByUnionMember7ExprUnionMember7ExprUnionMember3ExprUnionMember0,
-    RankByUnionMember7ExprUnionMember7ExprUnionMember3ExprUnionMember1,
+RankByLogExprUnionMember7ExprUnionMember3Expr: TypeAlias = Union[
+    RankByLogExprUnionMember7ExprUnionMember3ExprUnionMember0, RankByLogExprUnionMember7ExprUnionMember3ExprUnionMember1
 ]
 
 
-class RankByUnionMember7ExprUnionMember7ExprUnionMember3(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember7ExprUnionMember7ExprUnionMember3Expr]]
+class RankByLogExprUnionMember7ExprUnionMember3(TypedDict, total=False):
+    exprs: Required[Iterable[RankByLogExprUnionMember7ExprUnionMember3Expr]]
 
-    op: Required[Literal["Mult"]]
+    type: Required[Literal["Mult"]]
 
 
-class RankByUnionMember7ExprUnionMember7ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
+class RankByLogExprUnionMember7ExprUnionMember4ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember7ExprUnionMember7ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByLogExprUnionMember7ExprUnionMember4ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember7ExprUnionMember7ExprUnionMember4Expr: TypeAlias = Union[
-    RankByUnionMember7ExprUnionMember7ExprUnionMember4ExprUnionMember0,
-    RankByUnionMember7ExprUnionMember7ExprUnionMember4ExprUnionMember1,
+RankByLogExprUnionMember7ExprUnionMember4Expr: TypeAlias = Union[
+    RankByLogExprUnionMember7ExprUnionMember4ExprUnionMember0, RankByLogExprUnionMember7ExprUnionMember4ExprUnionMember1
 ]
 
 
-class RankByUnionMember7ExprUnionMember7ExprUnionMember4(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember7ExprUnionMember7ExprUnionMember4Expr]]
+class RankByLogExprUnionMember7ExprUnionMember4(TypedDict, total=False):
+    exprs: Required[Iterable[RankByLogExprUnionMember7ExprUnionMember4Expr]]
 
-    op: Required[Literal["Div"]]
+    type: Required[Literal["Div"]]
 
 
-class RankByUnionMember7ExprUnionMember7ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
+class RankByLogExprUnionMember7ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember7ExprUnionMember7ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByLogExprUnionMember7ExprUnionMember5ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember7ExprUnionMember7ExprUnionMember5Expr: TypeAlias = Union[
-    RankByUnionMember7ExprUnionMember7ExprUnionMember5ExprUnionMember0,
-    RankByUnionMember7ExprUnionMember7ExprUnionMember5ExprUnionMember1,
+RankByLogExprUnionMember7ExprUnionMember5Expr: TypeAlias = Union[
+    RankByLogExprUnionMember7ExprUnionMember5ExprUnionMember0, RankByLogExprUnionMember7ExprUnionMember5ExprUnionMember1
 ]
 
 
-class RankByUnionMember7ExprUnionMember7ExprUnionMember5(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember7ExprUnionMember7ExprUnionMember5Expr]]
+class RankByLogExprUnionMember7ExprUnionMember5(TypedDict, total=False):
+    exprs: Required[Iterable[RankByLogExprUnionMember7ExprUnionMember5Expr]]
 
-    op: Required[Literal["Max"]]
+    type: Required[Literal["Max"]]
 
 
-class RankByUnionMember7ExprUnionMember7ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
+class RankByLogExprUnionMember7ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember7ExprUnionMember7ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByLogExprUnionMember7ExprUnionMember6ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember7ExprUnionMember7ExprUnionMember6Expr: TypeAlias = Union[
-    RankByUnionMember7ExprUnionMember7ExprUnionMember6ExprUnionMember0,
-    RankByUnionMember7ExprUnionMember7ExprUnionMember6ExprUnionMember1,
+RankByLogExprUnionMember7ExprUnionMember6Expr: TypeAlias = Union[
+    RankByLogExprUnionMember7ExprUnionMember6ExprUnionMember0, RankByLogExprUnionMember7ExprUnionMember6ExprUnionMember1
 ]
 
 
-class RankByUnionMember7ExprUnionMember7ExprUnionMember6(TypedDict, total=False):
-    exprs: Required[Iterable[RankByUnionMember7ExprUnionMember7ExprUnionMember6Expr]]
+class RankByLogExprUnionMember7ExprUnionMember6(TypedDict, total=False):
+    exprs: Required[Iterable[RankByLogExprUnionMember7ExprUnionMember6Expr]]
 
-    op: Required[Literal["Min"]]
+    type: Required[Literal["Min"]]
 
 
-class RankByUnionMember7ExprUnionMember7ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
+class RankByLogExprUnionMember7ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
     name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
 
-    op: Required[Literal["Attr"]]
+    type: Required[Literal["Attr"]]
 
 
-class RankByUnionMember7ExprUnionMember7ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
-    op: Required[Literal["Const"]]
+class RankByLogExprUnionMember7ExprUnionMember7ExprUnionMember1(TypedDict, total=False):
+    type: Required[Literal["Const"]]
 
     value: Required[float]
 
 
-RankByUnionMember7ExprUnionMember7ExprUnionMember7Expr: TypeAlias = Union[
-    RankByUnionMember7ExprUnionMember7ExprUnionMember7ExprUnionMember0,
-    RankByUnionMember7ExprUnionMember7ExprUnionMember7ExprUnionMember1,
+RankByLogExprUnionMember7ExprUnionMember7Expr: TypeAlias = Union[
+    RankByLogExprUnionMember7ExprUnionMember7ExprUnionMember0, RankByLogExprUnionMember7ExprUnionMember7ExprUnionMember1
 ]
 
 
-class RankByUnionMember7ExprUnionMember7ExprUnionMember7(TypedDict, total=False):
+class RankByLogExprUnionMember7ExprUnionMember7(TypedDict, total=False):
     base: Required[float]
 
-    expr: Required[RankByUnionMember7ExprUnionMember7ExprUnionMember7Expr]
+    expr: Required[RankByLogExprUnionMember7ExprUnionMember7Expr]
 
-    op: Required[Literal["Log"]]
+    type: Required[Literal["Log"]]
 
 
-RankByUnionMember7ExprUnionMember7Expr: TypeAlias = Union[
-    RankByUnionMember7ExprUnionMember7ExprUnionMember0,
-    RankByUnionMember7ExprUnionMember7ExprUnionMember1,
-    RankByUnionMember7ExprUnionMember7ExprUnionMember2,
-    RankByUnionMember7ExprUnionMember7ExprUnionMember3,
-    RankByUnionMember7ExprUnionMember7ExprUnionMember4,
-    RankByUnionMember7ExprUnionMember7ExprUnionMember5,
-    RankByUnionMember7ExprUnionMember7ExprUnionMember6,
-    RankByUnionMember7ExprUnionMember7ExprUnionMember7,
+RankByLogExprUnionMember7Expr: TypeAlias = Union[
+    RankByLogExprUnionMember7ExprUnionMember0,
+    RankByLogExprUnionMember7ExprUnionMember1,
+    RankByLogExprUnionMember7ExprUnionMember2,
+    RankByLogExprUnionMember7ExprUnionMember3,
+    RankByLogExprUnionMember7ExprUnionMember4,
+    RankByLogExprUnionMember7ExprUnionMember5,
+    RankByLogExprUnionMember7ExprUnionMember6,
+    RankByLogExprUnionMember7ExprUnionMember7,
 ]
 
 
-class RankByUnionMember7ExprUnionMember7(TypedDict, total=False):
+class RankByLogExprUnionMember7(TypedDict, total=False):
     base: Required[float]
 
-    expr: Required[RankByUnionMember7ExprUnionMember7Expr]
+    expr: Required[RankByLogExprUnionMember7Expr]
 
-    op: Required[Literal["Log"]]
+    type: Required[Literal["Log"]]
 
 
-RankByUnionMember7Expr: TypeAlias = Union[
-    RankByUnionMember7ExprUnionMember0,
-    RankByUnionMember7ExprUnionMember1,
-    RankByUnionMember7ExprUnionMember2,
-    RankByUnionMember7ExprUnionMember3,
-    RankByUnionMember7ExprUnionMember4,
-    RankByUnionMember7ExprUnionMember5,
-    RankByUnionMember7ExprUnionMember6,
-    RankByUnionMember7ExprUnionMember7,
+RankByLogExpr: TypeAlias = Union[
+    RankByLogExprUnionMember0,
+    RankByLogExprUnionMember1,
+    RankByLogExprUnionMember2,
+    RankByLogExprUnionMember3,
+    RankByLogExprUnionMember4,
+    RankByLogExprUnionMember5,
+    RankByLogExprUnionMember6,
+    RankByLogExprUnionMember7,
 ]
 
 
-class RankByUnionMember7(TypedDict, total=False):
+class RankByLog(TypedDict, total=False):
     base: Required[float]
 
-    expr: Required[RankByUnionMember7Expr]
+    expr: Required[RankByLogExpr]
 
-    op: Required[Literal["Log"]]
+    type: Required[Literal["Log"]]
 
 
-RankBy: TypeAlias = Union[
-    RankByUnionMember0,
-    RankByUnionMember1,
-    RankByUnionMember2,
-    RankByUnionMember3,
-    RankByUnionMember4,
-    RankByUnionMember5,
-    RankByUnionMember6,
-    RankByUnionMember7,
-]
+RankBy: TypeAlias = Union[RankByAttr, RankByConst, RankBySum, RankByMult, RankByDiv, RankByMax, RankByMin, RankByLog]
