@@ -157,7 +157,9 @@ class RawUsersResource(SyncAPIResource):
         and maximum (1M). Requires RAW service. Credits: 1 per request.
 
         Args:
-          filters: Filters to apply (required)
+          filters: Optional filters for users. Supports fields like login, company, location,
+              resolvedCountry, resolvedState, resolvedCity. Operators: Eq, NotEq, In, NotIn,
+              Lt, Lte, Gt, Gte.
 
           extra_headers: Send extra headers
 
@@ -374,7 +376,9 @@ class AsyncRawUsersResource(AsyncAPIResource):
         and maximum (1M). Requires RAW service. Credits: 1 per request.
 
         Args:
-          filters: Filters to apply (required)
+          filters: Optional filters for users. Supports fields like login, company, location,
+              resolvedCountry, resolvedState, resolvedCity. Operators: Eq, NotEq, In, NotIn,
+              Lt, Lte, Gt, Gte.
 
           extra_headers: Send extra headers
 

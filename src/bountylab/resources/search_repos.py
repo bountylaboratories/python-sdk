@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from typing import Union, Optional
+from typing import Union
 
 import httpx
 
@@ -124,7 +124,7 @@ class SearchReposResource(SyncAPIResource):
         query: Union[str, SequenceNotStr[str], None],
         after: str | Omit = omit,
         enable_pagination: bool | Omit = omit,
-        filters: Optional[search_repo_search_params.Filters] | Omit = omit,
+        filters: search_repo_search_params.Filters | Omit = omit,
         first: int | Omit = omit,
         include_attributes: search_repo_search_params.IncludeAttributes | Omit = omit,
         max_results: int | Omit = omit,
@@ -150,21 +150,7 @@ class SearchReposResource(SyncAPIResource):
 
           enable_pagination: Enable cursor-based pagination to fetch results across multiple requests
 
-          filters: Optional filters for narrowing search results. Supports filtering on: githubId,
-              ownerLogin, ownerLocation, name, stargazerCount, language, totalIssuesCount,
-              totalIssuesOpen, totalIssuesClosed, lastContributorLocations.
-
-              Filter structure:
-
-              - Field filters: { field: "fieldName", op: "Eq"|"In"|"Gte"|"Lte", value:
-                string|number|array }
-              - Composite filters: { op: "And"|"Or", filters: [...] }
-
-              Supported operators:
-
-              - String fields: Eq (exact match), In (one of array)
-              - Number fields: Eq (exact), In (one of array), Gte (>=), Lte (<=)
-              - Use And/Or to combine multiple filters
+          filters: Filters to apply (required)
 
           first: Alias for maxResults (takes precedence if both provided)
 
@@ -306,7 +292,7 @@ class AsyncSearchReposResource(AsyncAPIResource):
         query: Union[str, SequenceNotStr[str], None],
         after: str | Omit = omit,
         enable_pagination: bool | Omit = omit,
-        filters: Optional[search_repo_search_params.Filters] | Omit = omit,
+        filters: search_repo_search_params.Filters | Omit = omit,
         first: int | Omit = omit,
         include_attributes: search_repo_search_params.IncludeAttributes | Omit = omit,
         max_results: int | Omit = omit,
@@ -332,21 +318,7 @@ class AsyncSearchReposResource(AsyncAPIResource):
 
           enable_pagination: Enable cursor-based pagination to fetch results across multiple requests
 
-          filters: Optional filters for narrowing search results. Supports filtering on: githubId,
-              ownerLogin, ownerLocation, name, stargazerCount, language, totalIssuesCount,
-              totalIssuesOpen, totalIssuesClosed, lastContributorLocations.
-
-              Filter structure:
-
-              - Field filters: { field: "fieldName", op: "Eq"|"In"|"Gte"|"Lte", value:
-                string|number|array }
-              - Composite filters: { op: "And"|"Or", filters: [...] }
-
-              Supported operators:
-
-              - String fields: Eq (exact match), In (one of array)
-              - Number fields: Eq (exact), In (one of array), Gte (>=), Lte (<=)
-              - Use And/Or to combine multiple filters
+          filters: Filters to apply (required)
 
           first: Alias for maxResults (takes precedence if both provided)
 

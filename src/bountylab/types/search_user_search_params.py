@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from typing import Union, Iterable, Optional
+from typing import Union, Iterable
 from typing_extensions import Literal, Required, Annotated, TypeAlias, TypedDict
 
 from .._types import SequenceNotStr
@@ -3412,24 +3412,11 @@ class SearchUserSearchParams(TypedDict, total=False):
     enable_pagination: Annotated[bool, PropertyInfo(alias="enablePagination")]
     """Enable cursor-based pagination to fetch results across multiple requests"""
 
-    filters: Optional[Filters]
-    """Optional filters for narrowing search results.
+    filters: Filters
+    """Optional filters for users.
 
-    Supports filtering on: githubId, login, displayName, bio, company, location,
-    emails, resolvedCountry, resolvedState, resolvedCity.
-
-    Full-text searchable fields (automatically searched): login, displayName, bio,
-    company, location, emails, resolvedCountry, resolvedState, resolvedCity.
-
-    Filter structure:
-
-    - Field filters: { field: "fieldName", op: "Eq"|"In", value: string|string[] }
-    - Composite filters: { op: "And"|"Or", filters: [...] }
-
-    Supported operators:
-
-    - String fields: Eq (exact match), In (one of array)
-    - Use And/Or to combine multiple filters
+    Supports fields like login, company, location, resolvedCountry, resolvedState,
+    resolvedCity. Operators: Eq, NotEq, In, NotIn, Lt, Lte, Gt, Gte.
     """
 
     first: int
