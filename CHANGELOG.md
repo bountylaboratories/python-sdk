@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.34.0 (2026-01-27)
+
+Full Changelog: [v0.33.0...v0.34.0](https://github.com/bountylaboratories/python-sdk/compare/v0.33.0...v0.34.0)
+
+### Features
+
+* **api:** api update ([cb0a736](https://github.com/bountylaboratories/python-sdk/commit/cb0a7368be82d0ffdf7dda4dc2fd01613d21dbc7))
+
+
+### Chores
+
+* **ci:** upgrade `actions/github-script` ([7be00fe](https://github.com/bountylaboratories/python-sdk/commit/7be00feecca4de09c7197983a2726f7b6d0da089))
+
 ## 0.33.0 (2026-01-23)
 
 Full Changelog: [v0.32.0...v0.33.0](https://github.com/bountylaboratories/python-sdk/compare/v0.32.0...v0.33.0)
