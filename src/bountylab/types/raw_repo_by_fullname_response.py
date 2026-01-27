@@ -16,6 +16,9 @@ __all__ = [
     "RepositoryOwner",
     "RepositoryOwnerSocialAccount",
     "RepositoryOwnerDevrank",
+    "RepositoryOwnerProfessional",
+    "RepositoryOwnerProfessionalEducation",
+    "RepositoryOwnerProfessionalExperience",
     "RepositoryStarrers",
     "RepositoryStarrersEdge",
     "RepositoryStarrersEdgeSocialAccount",
@@ -199,6 +202,136 @@ class RepositoryOwnerDevrank(BaseModel):
     updated_at: str = FieldInfo(alias="updatedAt")
 
 
+class RepositoryOwnerProfessionalEducation(BaseModel):
+    campus: Optional[str] = None
+    """Name of the educational institution"""
+
+    end_date: Optional[str] = FieldInfo(alias="endDate", default=None)
+    """End date (YYYY-MM-DD format)"""
+
+    major: Optional[str] = None
+    """Field of study or degree program"""
+
+    specialization: Optional[str] = None
+    """Area of specialization"""
+
+    start_date: Optional[str] = FieldInfo(alias="startDate", default=None)
+    """Start date (YYYY-MM-DD format)"""
+
+
+class RepositoryOwnerProfessionalExperience(BaseModel):
+    company: Optional[str] = None
+    """Company or organization name"""
+
+    end_date: Optional[str] = FieldInfo(alias="endDate", default=None)
+    """End date (YYYY-MM-DD format, null if current)"""
+
+    industry: Optional[str] = None
+    """Industry sector"""
+
+    is_current: Optional[bool] = FieldInfo(alias="isCurrent", default=None)
+    """Whether this is the current position"""
+
+    location: Optional[str] = None
+    """Work location"""
+
+    start_date: Optional[str] = FieldInfo(alias="startDate", default=None)
+    """Start date (YYYY-MM-DD format)"""
+
+    summary: Optional[str] = None
+    """Description of role and responsibilities"""
+
+    title: Optional[str] = None
+    """Job title or position"""
+
+
+class RepositoryOwnerProfessional(BaseModel):
+    """
+    LinkedIn professional profile data (only present when includeAttributes.professional = true)
+    """
+
+    awards: Optional[List[str]] = None
+    """Professional awards"""
+
+    certifications: Optional[List[str]] = None
+    """Professional certifications"""
+
+    city: Optional[str] = None
+    """City"""
+
+    connections_count: Optional[float] = FieldInfo(alias="connectionsCount", default=None)
+    """Number of LinkedIn connections"""
+
+    country: Optional[str] = None
+    """Country"""
+
+    current_industry: Optional[str] = FieldInfo(alias="currentIndustry", default=None)
+    """Current industry sector"""
+
+    departments: Optional[List[str]] = None
+    """Departments worked in"""
+
+    education: List[RepositoryOwnerProfessionalEducation]
+    """Education history"""
+
+    experience: List[RepositoryOwnerProfessionalExperience]
+    """Work experience history"""
+
+    expertise: Optional[List[str]] = None
+    """Areas of expertise"""
+
+    first_name: Optional[str] = FieldInfo(alias="firstName", default=None)
+    """First name"""
+
+    follower_count: Optional[float] = FieldInfo(alias="followerCount", default=None)
+    """Number of LinkedIn followers"""
+
+    functional_area: Optional[str] = FieldInfo(alias="functionalArea", default=None)
+    """Functional area (e.g., Engineering, Product)"""
+
+    headline: Optional[str] = None
+    """Professional headline"""
+
+    languages: Optional[List[str]] = None
+    """Languages spoken"""
+
+    last_name: Optional[str] = FieldInfo(alias="lastName", default=None)
+    """Last name"""
+
+    linkedin_url: str = FieldInfo(alias="linkedinUrl")
+    """LinkedIn profile URL"""
+
+    location: Optional[str] = None
+    """Full location string"""
+
+    memberships: Optional[List[str]] = None
+    """Professional organization memberships"""
+
+    organization: Optional[str] = None
+    """Current organization/company"""
+
+    patents: Optional[List[str]] = None
+    """Patents held"""
+
+    prior_industries: Optional[List[str]] = FieldInfo(alias="priorIndustries", default=None)
+    """Previous industries worked in"""
+
+    publications: Optional[List[str]] = None
+    """Publications authored"""
+
+    seniority: Optional[str] = None
+    """Seniority classification"""
+
+    seniority_level: Optional[str] = FieldInfo(alias="seniorityLevel", default=None)
+    """Seniority level (e.g., Senior, Manager)"""
+
+    state: Optional[str] = None
+    """State or province"""
+
+    title: Optional[str] = None
+    """Current job title"""
+
+
 class RepositoryStarrersEdgeSocialAccount(BaseModel):
     provider: str
 
@@ -334,6 +467,12 @@ class Repository(BaseModel):
     """
     Devrank data for the repository owner (when includeAttributes.ownerDevrank =
     true)
+    """
+
+    owner_professional: Optional[RepositoryOwnerProfessional] = FieldInfo(alias="ownerProfessional", default=None)
+    """
+    LinkedIn professional profile data (only present when
+    includeAttributes.professional = true)
     """
 
     readme_preview: Optional[str] = FieldInfo(alias="readmePreview", default=None)

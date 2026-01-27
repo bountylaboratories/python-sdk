@@ -21,6 +21,9 @@ __all__ = [
     "FollowersResponseUserContributesEdgeOwner",
     "FollowersResponseUserContributesEdgeOwnerSocialAccount",
     "FollowersResponseUserContributesEdgeOwnerDevrank",
+    "FollowersResponseUserContributesEdgeOwnerProfessional",
+    "FollowersResponseUserContributesEdgeOwnerProfessionalEducation",
+    "FollowersResponseUserContributesEdgeOwnerProfessionalExperience",
     "FollowersResponseUserContributesEdgeStarrers",
     "FollowersResponseUserContributesEdgeStarrersEdge",
     "FollowersResponseUserContributesEdgeStarrersEdgeSocialAccount",
@@ -44,11 +47,17 @@ __all__ = [
     "FollowersResponseUserOwnsEdgeOwner",
     "FollowersResponseUserOwnsEdgeOwnerSocialAccount",
     "FollowersResponseUserOwnsEdgeOwnerDevrank",
+    "FollowersResponseUserOwnsEdgeOwnerProfessional",
+    "FollowersResponseUserOwnsEdgeOwnerProfessionalEducation",
+    "FollowersResponseUserOwnsEdgeOwnerProfessionalExperience",
     "FollowersResponseUserOwnsEdgeStarrers",
     "FollowersResponseUserOwnsEdgeStarrersEdge",
     "FollowersResponseUserOwnsEdgeStarrersEdgeSocialAccount",
     "FollowersResponseUserOwnsEdgeStarrersPageInfo",
     "FollowersResponseUserOwnsPageInfo",
+    "FollowersResponseUserProfessional",
+    "FollowersResponseUserProfessionalEducation",
+    "FollowersResponseUserProfessionalExperience",
     "FollowersResponseUserSocialAccount",
     "FollowersResponseUserStars",
     "FollowersResponseUserStarsEdge",
@@ -59,6 +68,9 @@ __all__ = [
     "FollowersResponseUserStarsEdgeOwner",
     "FollowersResponseUserStarsEdgeOwnerSocialAccount",
     "FollowersResponseUserStarsEdgeOwnerDevrank",
+    "FollowersResponseUserStarsEdgeOwnerProfessional",
+    "FollowersResponseUserStarsEdgeOwnerProfessionalEducation",
+    "FollowersResponseUserStarsEdgeOwnerProfessionalExperience",
     "FollowersResponseUserStarsEdgeStarrers",
     "FollowersResponseUserStarsEdgeStarrersEdge",
     "FollowersResponseUserStarsEdgeStarrersEdgeSocialAccount",
@@ -76,6 +88,9 @@ __all__ = [
     "FollowingResponseUserContributesEdgeOwner",
     "FollowingResponseUserContributesEdgeOwnerSocialAccount",
     "FollowingResponseUserContributesEdgeOwnerDevrank",
+    "FollowingResponseUserContributesEdgeOwnerProfessional",
+    "FollowingResponseUserContributesEdgeOwnerProfessionalEducation",
+    "FollowingResponseUserContributesEdgeOwnerProfessionalExperience",
     "FollowingResponseUserContributesEdgeStarrers",
     "FollowingResponseUserContributesEdgeStarrersEdge",
     "FollowingResponseUserContributesEdgeStarrersEdgeSocialAccount",
@@ -99,11 +114,17 @@ __all__ = [
     "FollowingResponseUserOwnsEdgeOwner",
     "FollowingResponseUserOwnsEdgeOwnerSocialAccount",
     "FollowingResponseUserOwnsEdgeOwnerDevrank",
+    "FollowingResponseUserOwnsEdgeOwnerProfessional",
+    "FollowingResponseUserOwnsEdgeOwnerProfessionalEducation",
+    "FollowingResponseUserOwnsEdgeOwnerProfessionalExperience",
     "FollowingResponseUserOwnsEdgeStarrers",
     "FollowingResponseUserOwnsEdgeStarrersEdge",
     "FollowingResponseUserOwnsEdgeStarrersEdgeSocialAccount",
     "FollowingResponseUserOwnsEdgeStarrersPageInfo",
     "FollowingResponseUserOwnsPageInfo",
+    "FollowingResponseUserProfessional",
+    "FollowingResponseUserProfessionalEducation",
+    "FollowingResponseUserProfessionalExperience",
     "FollowingResponseUserSocialAccount",
     "FollowingResponseUserStars",
     "FollowingResponseUserStarsEdge",
@@ -114,6 +135,9 @@ __all__ = [
     "FollowingResponseUserStarsEdgeOwner",
     "FollowingResponseUserStarsEdgeOwnerSocialAccount",
     "FollowingResponseUserStarsEdgeOwnerDevrank",
+    "FollowingResponseUserStarsEdgeOwnerProfessional",
+    "FollowingResponseUserStarsEdgeOwnerProfessionalEducation",
+    "FollowingResponseUserStarsEdgeOwnerProfessionalExperience",
     "FollowingResponseUserStarsEdgeStarrers",
     "FollowingResponseUserStarsEdgeStarrersEdge",
     "FollowingResponseUserStarsEdgeStarrersEdgeSocialAccount",
@@ -129,6 +153,9 @@ __all__ = [
     "UserOwnsResponseRepositoryOwner",
     "UserOwnsResponseRepositoryOwnerSocialAccount",
     "UserOwnsResponseRepositoryOwnerDevrank",
+    "UserOwnsResponseRepositoryOwnerProfessional",
+    "UserOwnsResponseRepositoryOwnerProfessionalEducation",
+    "UserOwnsResponseRepositoryOwnerProfessionalExperience",
     "UserOwnsResponseRepositoryStarrers",
     "UserOwnsResponseRepositoryStarrersEdge",
     "UserOwnsResponseRepositoryStarrersEdgeSocialAccount",
@@ -143,6 +170,9 @@ __all__ = [
     "UserStarsResponseRepositoryOwner",
     "UserStarsResponseRepositoryOwnerSocialAccount",
     "UserStarsResponseRepositoryOwnerDevrank",
+    "UserStarsResponseRepositoryOwnerProfessional",
+    "UserStarsResponseRepositoryOwnerProfessionalEducation",
+    "UserStarsResponseRepositoryOwnerProfessionalExperience",
     "UserStarsResponseRepositoryStarrers",
     "UserStarsResponseRepositoryStarrersEdge",
     "UserStarsResponseRepositoryStarrersEdgeSocialAccount",
@@ -157,6 +187,9 @@ __all__ = [
     "UserContributesResponseRepositoryOwner",
     "UserContributesResponseRepositoryOwnerSocialAccount",
     "UserContributesResponseRepositoryOwnerDevrank",
+    "UserContributesResponseRepositoryOwnerProfessional",
+    "UserContributesResponseRepositoryOwnerProfessionalEducation",
+    "UserContributesResponseRepositoryOwnerProfessionalExperience",
     "UserContributesResponseRepositoryStarrers",
     "UserContributesResponseRepositoryStarrersEdge",
     "UserContributesResponseRepositoryStarrersEdgeSocialAccount",
@@ -352,6 +385,136 @@ class FollowersResponseUserContributesEdgeOwnerDevrank(BaseModel):
     updated_at: str = FieldInfo(alias="updatedAt")
 
 
+class FollowersResponseUserContributesEdgeOwnerProfessionalEducation(BaseModel):
+    campus: Optional[str] = None
+    """Name of the educational institution"""
+
+    end_date: Optional[str] = FieldInfo(alias="endDate", default=None)
+    """End date (YYYY-MM-DD format)"""
+
+    major: Optional[str] = None
+    """Field of study or degree program"""
+
+    specialization: Optional[str] = None
+    """Area of specialization"""
+
+    start_date: Optional[str] = FieldInfo(alias="startDate", default=None)
+    """Start date (YYYY-MM-DD format)"""
+
+
+class FollowersResponseUserContributesEdgeOwnerProfessionalExperience(BaseModel):
+    company: Optional[str] = None
+    """Company or organization name"""
+
+    end_date: Optional[str] = FieldInfo(alias="endDate", default=None)
+    """End date (YYYY-MM-DD format, null if current)"""
+
+    industry: Optional[str] = None
+    """Industry sector"""
+
+    is_current: Optional[bool] = FieldInfo(alias="isCurrent", default=None)
+    """Whether this is the current position"""
+
+    location: Optional[str] = None
+    """Work location"""
+
+    start_date: Optional[str] = FieldInfo(alias="startDate", default=None)
+    """Start date (YYYY-MM-DD format)"""
+
+    summary: Optional[str] = None
+    """Description of role and responsibilities"""
+
+    title: Optional[str] = None
+    """Job title or position"""
+
+
+class FollowersResponseUserContributesEdgeOwnerProfessional(BaseModel):
+    """
+    LinkedIn professional profile data (only present when includeAttributes.professional = true)
+    """
+
+    awards: Optional[List[str]] = None
+    """Professional awards"""
+
+    certifications: Optional[List[str]] = None
+    """Professional certifications"""
+
+    city: Optional[str] = None
+    """City"""
+
+    connections_count: Optional[float] = FieldInfo(alias="connectionsCount", default=None)
+    """Number of LinkedIn connections"""
+
+    country: Optional[str] = None
+    """Country"""
+
+    current_industry: Optional[str] = FieldInfo(alias="currentIndustry", default=None)
+    """Current industry sector"""
+
+    departments: Optional[List[str]] = None
+    """Departments worked in"""
+
+    education: List[FollowersResponseUserContributesEdgeOwnerProfessionalEducation]
+    """Education history"""
+
+    experience: List[FollowersResponseUserContributesEdgeOwnerProfessionalExperience]
+    """Work experience history"""
+
+    expertise: Optional[List[str]] = None
+    """Areas of expertise"""
+
+    first_name: Optional[str] = FieldInfo(alias="firstName", default=None)
+    """First name"""
+
+    follower_count: Optional[float] = FieldInfo(alias="followerCount", default=None)
+    """Number of LinkedIn followers"""
+
+    functional_area: Optional[str] = FieldInfo(alias="functionalArea", default=None)
+    """Functional area (e.g., Engineering, Product)"""
+
+    headline: Optional[str] = None
+    """Professional headline"""
+
+    languages: Optional[List[str]] = None
+    """Languages spoken"""
+
+    last_name: Optional[str] = FieldInfo(alias="lastName", default=None)
+    """Last name"""
+
+    linkedin_url: str = FieldInfo(alias="linkedinUrl")
+    """LinkedIn profile URL"""
+
+    location: Optional[str] = None
+    """Full location string"""
+
+    memberships: Optional[List[str]] = None
+    """Professional organization memberships"""
+
+    organization: Optional[str] = None
+    """Current organization/company"""
+
+    patents: Optional[List[str]] = None
+    """Patents held"""
+
+    prior_industries: Optional[List[str]] = FieldInfo(alias="priorIndustries", default=None)
+    """Previous industries worked in"""
+
+    publications: Optional[List[str]] = None
+    """Publications authored"""
+
+    seniority: Optional[str] = None
+    """Seniority classification"""
+
+    seniority_level: Optional[str] = FieldInfo(alias="seniorityLevel", default=None)
+    """Seniority level (e.g., Senior, Manager)"""
+
+    state: Optional[str] = None
+    """State or province"""
+
+    title: Optional[str] = None
+    """Current job title"""
+
+
 class FollowersResponseUserContributesEdgeStarrersEdgeSocialAccount(BaseModel):
     provider: str
 
@@ -491,6 +654,14 @@ class FollowersResponseUserContributesEdge(BaseModel):
     true)
     """
 
+    owner_professional: Optional[FollowersResponseUserContributesEdgeOwnerProfessional] = FieldInfo(
+        alias="ownerProfessional", default=None
+    )
+    """
+    LinkedIn professional profile data (only present when
+    includeAttributes.professional = true)
+    """
+
     readme_preview: Optional[str] = FieldInfo(alias="readmePreview", default=None)
     """Preview of repository README (first ~500 chars)"""
 
@@ -525,7 +696,7 @@ class FollowersResponseUserContributes(BaseModel):
 
 
 class FollowersResponseUserDevrank(BaseModel):
-    """Developer ranking data (only present when fetched from devrank endpoints)"""
+    """Developer ranking data (only present when includeAttributes.devrank = true)"""
 
     community: int
 
@@ -896,6 +1067,136 @@ class FollowersResponseUserOwnsEdgeOwnerDevrank(BaseModel):
     updated_at: str = FieldInfo(alias="updatedAt")
 
 
+class FollowersResponseUserOwnsEdgeOwnerProfessionalEducation(BaseModel):
+    campus: Optional[str] = None
+    """Name of the educational institution"""
+
+    end_date: Optional[str] = FieldInfo(alias="endDate", default=None)
+    """End date (YYYY-MM-DD format)"""
+
+    major: Optional[str] = None
+    """Field of study or degree program"""
+
+    specialization: Optional[str] = None
+    """Area of specialization"""
+
+    start_date: Optional[str] = FieldInfo(alias="startDate", default=None)
+    """Start date (YYYY-MM-DD format)"""
+
+
+class FollowersResponseUserOwnsEdgeOwnerProfessionalExperience(BaseModel):
+    company: Optional[str] = None
+    """Company or organization name"""
+
+    end_date: Optional[str] = FieldInfo(alias="endDate", default=None)
+    """End date (YYYY-MM-DD format, null if current)"""
+
+    industry: Optional[str] = None
+    """Industry sector"""
+
+    is_current: Optional[bool] = FieldInfo(alias="isCurrent", default=None)
+    """Whether this is the current position"""
+
+    location: Optional[str] = None
+    """Work location"""
+
+    start_date: Optional[str] = FieldInfo(alias="startDate", default=None)
+    """Start date (YYYY-MM-DD format)"""
+
+    summary: Optional[str] = None
+    """Description of role and responsibilities"""
+
+    title: Optional[str] = None
+    """Job title or position"""
+
+
+class FollowersResponseUserOwnsEdgeOwnerProfessional(BaseModel):
+    """
+    LinkedIn professional profile data (only present when includeAttributes.professional = true)
+    """
+
+    awards: Optional[List[str]] = None
+    """Professional awards"""
+
+    certifications: Optional[List[str]] = None
+    """Professional certifications"""
+
+    city: Optional[str] = None
+    """City"""
+
+    connections_count: Optional[float] = FieldInfo(alias="connectionsCount", default=None)
+    """Number of LinkedIn connections"""
+
+    country: Optional[str] = None
+    """Country"""
+
+    current_industry: Optional[str] = FieldInfo(alias="currentIndustry", default=None)
+    """Current industry sector"""
+
+    departments: Optional[List[str]] = None
+    """Departments worked in"""
+
+    education: List[FollowersResponseUserOwnsEdgeOwnerProfessionalEducation]
+    """Education history"""
+
+    experience: List[FollowersResponseUserOwnsEdgeOwnerProfessionalExperience]
+    """Work experience history"""
+
+    expertise: Optional[List[str]] = None
+    """Areas of expertise"""
+
+    first_name: Optional[str] = FieldInfo(alias="firstName", default=None)
+    """First name"""
+
+    follower_count: Optional[float] = FieldInfo(alias="followerCount", default=None)
+    """Number of LinkedIn followers"""
+
+    functional_area: Optional[str] = FieldInfo(alias="functionalArea", default=None)
+    """Functional area (e.g., Engineering, Product)"""
+
+    headline: Optional[str] = None
+    """Professional headline"""
+
+    languages: Optional[List[str]] = None
+    """Languages spoken"""
+
+    last_name: Optional[str] = FieldInfo(alias="lastName", default=None)
+    """Last name"""
+
+    linkedin_url: str = FieldInfo(alias="linkedinUrl")
+    """LinkedIn profile URL"""
+
+    location: Optional[str] = None
+    """Full location string"""
+
+    memberships: Optional[List[str]] = None
+    """Professional organization memberships"""
+
+    organization: Optional[str] = None
+    """Current organization/company"""
+
+    patents: Optional[List[str]] = None
+    """Patents held"""
+
+    prior_industries: Optional[List[str]] = FieldInfo(alias="priorIndustries", default=None)
+    """Previous industries worked in"""
+
+    publications: Optional[List[str]] = None
+    """Publications authored"""
+
+    seniority: Optional[str] = None
+    """Seniority classification"""
+
+    seniority_level: Optional[str] = FieldInfo(alias="seniorityLevel", default=None)
+    """Seniority level (e.g., Senior, Manager)"""
+
+    state: Optional[str] = None
+    """State or province"""
+
+    title: Optional[str] = None
+    """Current job title"""
+
+
 class FollowersResponseUserOwnsEdgeStarrersEdgeSocialAccount(BaseModel):
     provider: str
 
@@ -1033,6 +1334,14 @@ class FollowersResponseUserOwnsEdge(BaseModel):
     true)
     """
 
+    owner_professional: Optional[FollowersResponseUserOwnsEdgeOwnerProfessional] = FieldInfo(
+        alias="ownerProfessional", default=None
+    )
+    """
+    LinkedIn professional profile data (only present when
+    includeAttributes.professional = true)
+    """
+
     readme_preview: Optional[str] = FieldInfo(alias="readmePreview", default=None)
     """Preview of repository README (first ~500 chars)"""
 
@@ -1064,6 +1373,136 @@ class FollowersResponseUserOwns(BaseModel):
 
     page_info: FollowersResponseUserOwnsPageInfo = FieldInfo(alias="pageInfo")
     """Pagination information"""
+
+
+class FollowersResponseUserProfessionalEducation(BaseModel):
+    campus: Optional[str] = None
+    """Name of the educational institution"""
+
+    end_date: Optional[str] = FieldInfo(alias="endDate", default=None)
+    """End date (YYYY-MM-DD format)"""
+
+    major: Optional[str] = None
+    """Field of study or degree program"""
+
+    specialization: Optional[str] = None
+    """Area of specialization"""
+
+    start_date: Optional[str] = FieldInfo(alias="startDate", default=None)
+    """Start date (YYYY-MM-DD format)"""
+
+
+class FollowersResponseUserProfessionalExperience(BaseModel):
+    company: Optional[str] = None
+    """Company or organization name"""
+
+    end_date: Optional[str] = FieldInfo(alias="endDate", default=None)
+    """End date (YYYY-MM-DD format, null if current)"""
+
+    industry: Optional[str] = None
+    """Industry sector"""
+
+    is_current: Optional[bool] = FieldInfo(alias="isCurrent", default=None)
+    """Whether this is the current position"""
+
+    location: Optional[str] = None
+    """Work location"""
+
+    start_date: Optional[str] = FieldInfo(alias="startDate", default=None)
+    """Start date (YYYY-MM-DD format)"""
+
+    summary: Optional[str] = None
+    """Description of role and responsibilities"""
+
+    title: Optional[str] = None
+    """Job title or position"""
+
+
+class FollowersResponseUserProfessional(BaseModel):
+    """
+    LinkedIn professional profile data (only present when includeAttributes.professional = true)
+    """
+
+    awards: Optional[List[str]] = None
+    """Professional awards"""
+
+    certifications: Optional[List[str]] = None
+    """Professional certifications"""
+
+    city: Optional[str] = None
+    """City"""
+
+    connections_count: Optional[float] = FieldInfo(alias="connectionsCount", default=None)
+    """Number of LinkedIn connections"""
+
+    country: Optional[str] = None
+    """Country"""
+
+    current_industry: Optional[str] = FieldInfo(alias="currentIndustry", default=None)
+    """Current industry sector"""
+
+    departments: Optional[List[str]] = None
+    """Departments worked in"""
+
+    education: List[FollowersResponseUserProfessionalEducation]
+    """Education history"""
+
+    experience: List[FollowersResponseUserProfessionalExperience]
+    """Work experience history"""
+
+    expertise: Optional[List[str]] = None
+    """Areas of expertise"""
+
+    first_name: Optional[str] = FieldInfo(alias="firstName", default=None)
+    """First name"""
+
+    follower_count: Optional[float] = FieldInfo(alias="followerCount", default=None)
+    """Number of LinkedIn followers"""
+
+    functional_area: Optional[str] = FieldInfo(alias="functionalArea", default=None)
+    """Functional area (e.g., Engineering, Product)"""
+
+    headline: Optional[str] = None
+    """Professional headline"""
+
+    languages: Optional[List[str]] = None
+    """Languages spoken"""
+
+    last_name: Optional[str] = FieldInfo(alias="lastName", default=None)
+    """Last name"""
+
+    linkedin_url: str = FieldInfo(alias="linkedinUrl")
+    """LinkedIn profile URL"""
+
+    location: Optional[str] = None
+    """Full location string"""
+
+    memberships: Optional[List[str]] = None
+    """Professional organization memberships"""
+
+    organization: Optional[str] = None
+    """Current organization/company"""
+
+    patents: Optional[List[str]] = None
+    """Patents held"""
+
+    prior_industries: Optional[List[str]] = FieldInfo(alias="priorIndustries", default=None)
+    """Previous industries worked in"""
+
+    publications: Optional[List[str]] = None
+    """Publications authored"""
+
+    seniority: Optional[str] = None
+    """Seniority classification"""
+
+    seniority_level: Optional[str] = FieldInfo(alias="seniorityLevel", default=None)
+    """Seniority level (e.g., Senior, Manager)"""
+
+    state: Optional[str] = None
+    """State or province"""
+
+    title: Optional[str] = None
+    """Current job title"""
 
 
 class FollowersResponseUserSocialAccount(BaseModel):
@@ -1250,6 +1689,136 @@ class FollowersResponseUserStarsEdgeOwnerDevrank(BaseModel):
     updated_at: str = FieldInfo(alias="updatedAt")
 
 
+class FollowersResponseUserStarsEdgeOwnerProfessionalEducation(BaseModel):
+    campus: Optional[str] = None
+    """Name of the educational institution"""
+
+    end_date: Optional[str] = FieldInfo(alias="endDate", default=None)
+    """End date (YYYY-MM-DD format)"""
+
+    major: Optional[str] = None
+    """Field of study or degree program"""
+
+    specialization: Optional[str] = None
+    """Area of specialization"""
+
+    start_date: Optional[str] = FieldInfo(alias="startDate", default=None)
+    """Start date (YYYY-MM-DD format)"""
+
+
+class FollowersResponseUserStarsEdgeOwnerProfessionalExperience(BaseModel):
+    company: Optional[str] = None
+    """Company or organization name"""
+
+    end_date: Optional[str] = FieldInfo(alias="endDate", default=None)
+    """End date (YYYY-MM-DD format, null if current)"""
+
+    industry: Optional[str] = None
+    """Industry sector"""
+
+    is_current: Optional[bool] = FieldInfo(alias="isCurrent", default=None)
+    """Whether this is the current position"""
+
+    location: Optional[str] = None
+    """Work location"""
+
+    start_date: Optional[str] = FieldInfo(alias="startDate", default=None)
+    """Start date (YYYY-MM-DD format)"""
+
+    summary: Optional[str] = None
+    """Description of role and responsibilities"""
+
+    title: Optional[str] = None
+    """Job title or position"""
+
+
+class FollowersResponseUserStarsEdgeOwnerProfessional(BaseModel):
+    """
+    LinkedIn professional profile data (only present when includeAttributes.professional = true)
+    """
+
+    awards: Optional[List[str]] = None
+    """Professional awards"""
+
+    certifications: Optional[List[str]] = None
+    """Professional certifications"""
+
+    city: Optional[str] = None
+    """City"""
+
+    connections_count: Optional[float] = FieldInfo(alias="connectionsCount", default=None)
+    """Number of LinkedIn connections"""
+
+    country: Optional[str] = None
+    """Country"""
+
+    current_industry: Optional[str] = FieldInfo(alias="currentIndustry", default=None)
+    """Current industry sector"""
+
+    departments: Optional[List[str]] = None
+    """Departments worked in"""
+
+    education: List[FollowersResponseUserStarsEdgeOwnerProfessionalEducation]
+    """Education history"""
+
+    experience: List[FollowersResponseUserStarsEdgeOwnerProfessionalExperience]
+    """Work experience history"""
+
+    expertise: Optional[List[str]] = None
+    """Areas of expertise"""
+
+    first_name: Optional[str] = FieldInfo(alias="firstName", default=None)
+    """First name"""
+
+    follower_count: Optional[float] = FieldInfo(alias="followerCount", default=None)
+    """Number of LinkedIn followers"""
+
+    functional_area: Optional[str] = FieldInfo(alias="functionalArea", default=None)
+    """Functional area (e.g., Engineering, Product)"""
+
+    headline: Optional[str] = None
+    """Professional headline"""
+
+    languages: Optional[List[str]] = None
+    """Languages spoken"""
+
+    last_name: Optional[str] = FieldInfo(alias="lastName", default=None)
+    """Last name"""
+
+    linkedin_url: str = FieldInfo(alias="linkedinUrl")
+    """LinkedIn profile URL"""
+
+    location: Optional[str] = None
+    """Full location string"""
+
+    memberships: Optional[List[str]] = None
+    """Professional organization memberships"""
+
+    organization: Optional[str] = None
+    """Current organization/company"""
+
+    patents: Optional[List[str]] = None
+    """Patents held"""
+
+    prior_industries: Optional[List[str]] = FieldInfo(alias="priorIndustries", default=None)
+    """Previous industries worked in"""
+
+    publications: Optional[List[str]] = None
+    """Publications authored"""
+
+    seniority: Optional[str] = None
+    """Seniority classification"""
+
+    seniority_level: Optional[str] = FieldInfo(alias="seniorityLevel", default=None)
+    """Seniority level (e.g., Senior, Manager)"""
+
+    state: Optional[str] = None
+    """State or province"""
+
+    title: Optional[str] = None
+    """Current job title"""
+
+
 class FollowersResponseUserStarsEdgeStarrersEdgeSocialAccount(BaseModel):
     provider: str
 
@@ -1387,6 +1956,14 @@ class FollowersResponseUserStarsEdge(BaseModel):
     true)
     """
 
+    owner_professional: Optional[FollowersResponseUserStarsEdgeOwnerProfessional] = FieldInfo(
+        alias="ownerProfessional", default=None
+    )
+    """
+    LinkedIn professional profile data (only present when
+    includeAttributes.professional = true)
+    """
+
     readme_preview: Optional[str] = FieldInfo(alias="readmePreview", default=None)
     """Preview of repository README (first ~500 chars)"""
 
@@ -1443,7 +2020,7 @@ class FollowersResponseUser(BaseModel):
     """ISO 8601 timestamp when user account was created"""
 
     devrank: Optional[FollowersResponseUserDevrank] = None
-    """Developer ranking data (only present when fetched from devrank endpoints)"""
+    """Developer ranking data (only present when includeAttributes.devrank = true)"""
 
     display_name: Optional[str] = FieldInfo(alias="displayName", default=None)
     """User display name"""
@@ -1469,6 +2046,12 @@ class FollowersResponseUser(BaseModel):
 
     owns: Optional[FollowersResponseUserOwns] = None
     """Repositories this user starred (when includeAttributes.stars is specified)"""
+
+    professional: Optional[FollowersResponseUserProfessional] = None
+    """
+    LinkedIn professional profile data (only present when
+    includeAttributes.professional = true)
+    """
 
     resolved_city: Optional[str] = FieldInfo(alias="resolvedCity", default=None)
     """Resolved city from location"""
@@ -1693,6 +2276,136 @@ class FollowingResponseUserContributesEdgeOwnerDevrank(BaseModel):
     updated_at: str = FieldInfo(alias="updatedAt")
 
 
+class FollowingResponseUserContributesEdgeOwnerProfessionalEducation(BaseModel):
+    campus: Optional[str] = None
+    """Name of the educational institution"""
+
+    end_date: Optional[str] = FieldInfo(alias="endDate", default=None)
+    """End date (YYYY-MM-DD format)"""
+
+    major: Optional[str] = None
+    """Field of study or degree program"""
+
+    specialization: Optional[str] = None
+    """Area of specialization"""
+
+    start_date: Optional[str] = FieldInfo(alias="startDate", default=None)
+    """Start date (YYYY-MM-DD format)"""
+
+
+class FollowingResponseUserContributesEdgeOwnerProfessionalExperience(BaseModel):
+    company: Optional[str] = None
+    """Company or organization name"""
+
+    end_date: Optional[str] = FieldInfo(alias="endDate", default=None)
+    """End date (YYYY-MM-DD format, null if current)"""
+
+    industry: Optional[str] = None
+    """Industry sector"""
+
+    is_current: Optional[bool] = FieldInfo(alias="isCurrent", default=None)
+    """Whether this is the current position"""
+
+    location: Optional[str] = None
+    """Work location"""
+
+    start_date: Optional[str] = FieldInfo(alias="startDate", default=None)
+    """Start date (YYYY-MM-DD format)"""
+
+    summary: Optional[str] = None
+    """Description of role and responsibilities"""
+
+    title: Optional[str] = None
+    """Job title or position"""
+
+
+class FollowingResponseUserContributesEdgeOwnerProfessional(BaseModel):
+    """
+    LinkedIn professional profile data (only present when includeAttributes.professional = true)
+    """
+
+    awards: Optional[List[str]] = None
+    """Professional awards"""
+
+    certifications: Optional[List[str]] = None
+    """Professional certifications"""
+
+    city: Optional[str] = None
+    """City"""
+
+    connections_count: Optional[float] = FieldInfo(alias="connectionsCount", default=None)
+    """Number of LinkedIn connections"""
+
+    country: Optional[str] = None
+    """Country"""
+
+    current_industry: Optional[str] = FieldInfo(alias="currentIndustry", default=None)
+    """Current industry sector"""
+
+    departments: Optional[List[str]] = None
+    """Departments worked in"""
+
+    education: List[FollowingResponseUserContributesEdgeOwnerProfessionalEducation]
+    """Education history"""
+
+    experience: List[FollowingResponseUserContributesEdgeOwnerProfessionalExperience]
+    """Work experience history"""
+
+    expertise: Optional[List[str]] = None
+    """Areas of expertise"""
+
+    first_name: Optional[str] = FieldInfo(alias="firstName", default=None)
+    """First name"""
+
+    follower_count: Optional[float] = FieldInfo(alias="followerCount", default=None)
+    """Number of LinkedIn followers"""
+
+    functional_area: Optional[str] = FieldInfo(alias="functionalArea", default=None)
+    """Functional area (e.g., Engineering, Product)"""
+
+    headline: Optional[str] = None
+    """Professional headline"""
+
+    languages: Optional[List[str]] = None
+    """Languages spoken"""
+
+    last_name: Optional[str] = FieldInfo(alias="lastName", default=None)
+    """Last name"""
+
+    linkedin_url: str = FieldInfo(alias="linkedinUrl")
+    """LinkedIn profile URL"""
+
+    location: Optional[str] = None
+    """Full location string"""
+
+    memberships: Optional[List[str]] = None
+    """Professional organization memberships"""
+
+    organization: Optional[str] = None
+    """Current organization/company"""
+
+    patents: Optional[List[str]] = None
+    """Patents held"""
+
+    prior_industries: Optional[List[str]] = FieldInfo(alias="priorIndustries", default=None)
+    """Previous industries worked in"""
+
+    publications: Optional[List[str]] = None
+    """Publications authored"""
+
+    seniority: Optional[str] = None
+    """Seniority classification"""
+
+    seniority_level: Optional[str] = FieldInfo(alias="seniorityLevel", default=None)
+    """Seniority level (e.g., Senior, Manager)"""
+
+    state: Optional[str] = None
+    """State or province"""
+
+    title: Optional[str] = None
+    """Current job title"""
+
+
 class FollowingResponseUserContributesEdgeStarrersEdgeSocialAccount(BaseModel):
     provider: str
 
@@ -1832,6 +2545,14 @@ class FollowingResponseUserContributesEdge(BaseModel):
     true)
     """
 
+    owner_professional: Optional[FollowingResponseUserContributesEdgeOwnerProfessional] = FieldInfo(
+        alias="ownerProfessional", default=None
+    )
+    """
+    LinkedIn professional profile data (only present when
+    includeAttributes.professional = true)
+    """
+
     readme_preview: Optional[str] = FieldInfo(alias="readmePreview", default=None)
     """Preview of repository README (first ~500 chars)"""
 
@@ -1866,7 +2587,7 @@ class FollowingResponseUserContributes(BaseModel):
 
 
 class FollowingResponseUserDevrank(BaseModel):
-    """Developer ranking data (only present when fetched from devrank endpoints)"""
+    """Developer ranking data (only present when includeAttributes.devrank = true)"""
 
     community: int
 
@@ -2237,6 +2958,136 @@ class FollowingResponseUserOwnsEdgeOwnerDevrank(BaseModel):
     updated_at: str = FieldInfo(alias="updatedAt")
 
 
+class FollowingResponseUserOwnsEdgeOwnerProfessionalEducation(BaseModel):
+    campus: Optional[str] = None
+    """Name of the educational institution"""
+
+    end_date: Optional[str] = FieldInfo(alias="endDate", default=None)
+    """End date (YYYY-MM-DD format)"""
+
+    major: Optional[str] = None
+    """Field of study or degree program"""
+
+    specialization: Optional[str] = None
+    """Area of specialization"""
+
+    start_date: Optional[str] = FieldInfo(alias="startDate", default=None)
+    """Start date (YYYY-MM-DD format)"""
+
+
+class FollowingResponseUserOwnsEdgeOwnerProfessionalExperience(BaseModel):
+    company: Optional[str] = None
+    """Company or organization name"""
+
+    end_date: Optional[str] = FieldInfo(alias="endDate", default=None)
+    """End date (YYYY-MM-DD format, null if current)"""
+
+    industry: Optional[str] = None
+    """Industry sector"""
+
+    is_current: Optional[bool] = FieldInfo(alias="isCurrent", default=None)
+    """Whether this is the current position"""
+
+    location: Optional[str] = None
+    """Work location"""
+
+    start_date: Optional[str] = FieldInfo(alias="startDate", default=None)
+    """Start date (YYYY-MM-DD format)"""
+
+    summary: Optional[str] = None
+    """Description of role and responsibilities"""
+
+    title: Optional[str] = None
+    """Job title or position"""
+
+
+class FollowingResponseUserOwnsEdgeOwnerProfessional(BaseModel):
+    """
+    LinkedIn professional profile data (only present when includeAttributes.professional = true)
+    """
+
+    awards: Optional[List[str]] = None
+    """Professional awards"""
+
+    certifications: Optional[List[str]] = None
+    """Professional certifications"""
+
+    city: Optional[str] = None
+    """City"""
+
+    connections_count: Optional[float] = FieldInfo(alias="connectionsCount", default=None)
+    """Number of LinkedIn connections"""
+
+    country: Optional[str] = None
+    """Country"""
+
+    current_industry: Optional[str] = FieldInfo(alias="currentIndustry", default=None)
+    """Current industry sector"""
+
+    departments: Optional[List[str]] = None
+    """Departments worked in"""
+
+    education: List[FollowingResponseUserOwnsEdgeOwnerProfessionalEducation]
+    """Education history"""
+
+    experience: List[FollowingResponseUserOwnsEdgeOwnerProfessionalExperience]
+    """Work experience history"""
+
+    expertise: Optional[List[str]] = None
+    """Areas of expertise"""
+
+    first_name: Optional[str] = FieldInfo(alias="firstName", default=None)
+    """First name"""
+
+    follower_count: Optional[float] = FieldInfo(alias="followerCount", default=None)
+    """Number of LinkedIn followers"""
+
+    functional_area: Optional[str] = FieldInfo(alias="functionalArea", default=None)
+    """Functional area (e.g., Engineering, Product)"""
+
+    headline: Optional[str] = None
+    """Professional headline"""
+
+    languages: Optional[List[str]] = None
+    """Languages spoken"""
+
+    last_name: Optional[str] = FieldInfo(alias="lastName", default=None)
+    """Last name"""
+
+    linkedin_url: str = FieldInfo(alias="linkedinUrl")
+    """LinkedIn profile URL"""
+
+    location: Optional[str] = None
+    """Full location string"""
+
+    memberships: Optional[List[str]] = None
+    """Professional organization memberships"""
+
+    organization: Optional[str] = None
+    """Current organization/company"""
+
+    patents: Optional[List[str]] = None
+    """Patents held"""
+
+    prior_industries: Optional[List[str]] = FieldInfo(alias="priorIndustries", default=None)
+    """Previous industries worked in"""
+
+    publications: Optional[List[str]] = None
+    """Publications authored"""
+
+    seniority: Optional[str] = None
+    """Seniority classification"""
+
+    seniority_level: Optional[str] = FieldInfo(alias="seniorityLevel", default=None)
+    """Seniority level (e.g., Senior, Manager)"""
+
+    state: Optional[str] = None
+    """State or province"""
+
+    title: Optional[str] = None
+    """Current job title"""
+
+
 class FollowingResponseUserOwnsEdgeStarrersEdgeSocialAccount(BaseModel):
     provider: str
 
@@ -2374,6 +3225,14 @@ class FollowingResponseUserOwnsEdge(BaseModel):
     true)
     """
 
+    owner_professional: Optional[FollowingResponseUserOwnsEdgeOwnerProfessional] = FieldInfo(
+        alias="ownerProfessional", default=None
+    )
+    """
+    LinkedIn professional profile data (only present when
+    includeAttributes.professional = true)
+    """
+
     readme_preview: Optional[str] = FieldInfo(alias="readmePreview", default=None)
     """Preview of repository README (first ~500 chars)"""
 
@@ -2405,6 +3264,136 @@ class FollowingResponseUserOwns(BaseModel):
 
     page_info: FollowingResponseUserOwnsPageInfo = FieldInfo(alias="pageInfo")
     """Pagination information"""
+
+
+class FollowingResponseUserProfessionalEducation(BaseModel):
+    campus: Optional[str] = None
+    """Name of the educational institution"""
+
+    end_date: Optional[str] = FieldInfo(alias="endDate", default=None)
+    """End date (YYYY-MM-DD format)"""
+
+    major: Optional[str] = None
+    """Field of study or degree program"""
+
+    specialization: Optional[str] = None
+    """Area of specialization"""
+
+    start_date: Optional[str] = FieldInfo(alias="startDate", default=None)
+    """Start date (YYYY-MM-DD format)"""
+
+
+class FollowingResponseUserProfessionalExperience(BaseModel):
+    company: Optional[str] = None
+    """Company or organization name"""
+
+    end_date: Optional[str] = FieldInfo(alias="endDate", default=None)
+    """End date (YYYY-MM-DD format, null if current)"""
+
+    industry: Optional[str] = None
+    """Industry sector"""
+
+    is_current: Optional[bool] = FieldInfo(alias="isCurrent", default=None)
+    """Whether this is the current position"""
+
+    location: Optional[str] = None
+    """Work location"""
+
+    start_date: Optional[str] = FieldInfo(alias="startDate", default=None)
+    """Start date (YYYY-MM-DD format)"""
+
+    summary: Optional[str] = None
+    """Description of role and responsibilities"""
+
+    title: Optional[str] = None
+    """Job title or position"""
+
+
+class FollowingResponseUserProfessional(BaseModel):
+    """
+    LinkedIn professional profile data (only present when includeAttributes.professional = true)
+    """
+
+    awards: Optional[List[str]] = None
+    """Professional awards"""
+
+    certifications: Optional[List[str]] = None
+    """Professional certifications"""
+
+    city: Optional[str] = None
+    """City"""
+
+    connections_count: Optional[float] = FieldInfo(alias="connectionsCount", default=None)
+    """Number of LinkedIn connections"""
+
+    country: Optional[str] = None
+    """Country"""
+
+    current_industry: Optional[str] = FieldInfo(alias="currentIndustry", default=None)
+    """Current industry sector"""
+
+    departments: Optional[List[str]] = None
+    """Departments worked in"""
+
+    education: List[FollowingResponseUserProfessionalEducation]
+    """Education history"""
+
+    experience: List[FollowingResponseUserProfessionalExperience]
+    """Work experience history"""
+
+    expertise: Optional[List[str]] = None
+    """Areas of expertise"""
+
+    first_name: Optional[str] = FieldInfo(alias="firstName", default=None)
+    """First name"""
+
+    follower_count: Optional[float] = FieldInfo(alias="followerCount", default=None)
+    """Number of LinkedIn followers"""
+
+    functional_area: Optional[str] = FieldInfo(alias="functionalArea", default=None)
+    """Functional area (e.g., Engineering, Product)"""
+
+    headline: Optional[str] = None
+    """Professional headline"""
+
+    languages: Optional[List[str]] = None
+    """Languages spoken"""
+
+    last_name: Optional[str] = FieldInfo(alias="lastName", default=None)
+    """Last name"""
+
+    linkedin_url: str = FieldInfo(alias="linkedinUrl")
+    """LinkedIn profile URL"""
+
+    location: Optional[str] = None
+    """Full location string"""
+
+    memberships: Optional[List[str]] = None
+    """Professional organization memberships"""
+
+    organization: Optional[str] = None
+    """Current organization/company"""
+
+    patents: Optional[List[str]] = None
+    """Patents held"""
+
+    prior_industries: Optional[List[str]] = FieldInfo(alias="priorIndustries", default=None)
+    """Previous industries worked in"""
+
+    publications: Optional[List[str]] = None
+    """Publications authored"""
+
+    seniority: Optional[str] = None
+    """Seniority classification"""
+
+    seniority_level: Optional[str] = FieldInfo(alias="seniorityLevel", default=None)
+    """Seniority level (e.g., Senior, Manager)"""
+
+    state: Optional[str] = None
+    """State or province"""
+
+    title: Optional[str] = None
+    """Current job title"""
 
 
 class FollowingResponseUserSocialAccount(BaseModel):
@@ -2591,6 +3580,136 @@ class FollowingResponseUserStarsEdgeOwnerDevrank(BaseModel):
     updated_at: str = FieldInfo(alias="updatedAt")
 
 
+class FollowingResponseUserStarsEdgeOwnerProfessionalEducation(BaseModel):
+    campus: Optional[str] = None
+    """Name of the educational institution"""
+
+    end_date: Optional[str] = FieldInfo(alias="endDate", default=None)
+    """End date (YYYY-MM-DD format)"""
+
+    major: Optional[str] = None
+    """Field of study or degree program"""
+
+    specialization: Optional[str] = None
+    """Area of specialization"""
+
+    start_date: Optional[str] = FieldInfo(alias="startDate", default=None)
+    """Start date (YYYY-MM-DD format)"""
+
+
+class FollowingResponseUserStarsEdgeOwnerProfessionalExperience(BaseModel):
+    company: Optional[str] = None
+    """Company or organization name"""
+
+    end_date: Optional[str] = FieldInfo(alias="endDate", default=None)
+    """End date (YYYY-MM-DD format, null if current)"""
+
+    industry: Optional[str] = None
+    """Industry sector"""
+
+    is_current: Optional[bool] = FieldInfo(alias="isCurrent", default=None)
+    """Whether this is the current position"""
+
+    location: Optional[str] = None
+    """Work location"""
+
+    start_date: Optional[str] = FieldInfo(alias="startDate", default=None)
+    """Start date (YYYY-MM-DD format)"""
+
+    summary: Optional[str] = None
+    """Description of role and responsibilities"""
+
+    title: Optional[str] = None
+    """Job title or position"""
+
+
+class FollowingResponseUserStarsEdgeOwnerProfessional(BaseModel):
+    """
+    LinkedIn professional profile data (only present when includeAttributes.professional = true)
+    """
+
+    awards: Optional[List[str]] = None
+    """Professional awards"""
+
+    certifications: Optional[List[str]] = None
+    """Professional certifications"""
+
+    city: Optional[str] = None
+    """City"""
+
+    connections_count: Optional[float] = FieldInfo(alias="connectionsCount", default=None)
+    """Number of LinkedIn connections"""
+
+    country: Optional[str] = None
+    """Country"""
+
+    current_industry: Optional[str] = FieldInfo(alias="currentIndustry", default=None)
+    """Current industry sector"""
+
+    departments: Optional[List[str]] = None
+    """Departments worked in"""
+
+    education: List[FollowingResponseUserStarsEdgeOwnerProfessionalEducation]
+    """Education history"""
+
+    experience: List[FollowingResponseUserStarsEdgeOwnerProfessionalExperience]
+    """Work experience history"""
+
+    expertise: Optional[List[str]] = None
+    """Areas of expertise"""
+
+    first_name: Optional[str] = FieldInfo(alias="firstName", default=None)
+    """First name"""
+
+    follower_count: Optional[float] = FieldInfo(alias="followerCount", default=None)
+    """Number of LinkedIn followers"""
+
+    functional_area: Optional[str] = FieldInfo(alias="functionalArea", default=None)
+    """Functional area (e.g., Engineering, Product)"""
+
+    headline: Optional[str] = None
+    """Professional headline"""
+
+    languages: Optional[List[str]] = None
+    """Languages spoken"""
+
+    last_name: Optional[str] = FieldInfo(alias="lastName", default=None)
+    """Last name"""
+
+    linkedin_url: str = FieldInfo(alias="linkedinUrl")
+    """LinkedIn profile URL"""
+
+    location: Optional[str] = None
+    """Full location string"""
+
+    memberships: Optional[List[str]] = None
+    """Professional organization memberships"""
+
+    organization: Optional[str] = None
+    """Current organization/company"""
+
+    patents: Optional[List[str]] = None
+    """Patents held"""
+
+    prior_industries: Optional[List[str]] = FieldInfo(alias="priorIndustries", default=None)
+    """Previous industries worked in"""
+
+    publications: Optional[List[str]] = None
+    """Publications authored"""
+
+    seniority: Optional[str] = None
+    """Seniority classification"""
+
+    seniority_level: Optional[str] = FieldInfo(alias="seniorityLevel", default=None)
+    """Seniority level (e.g., Senior, Manager)"""
+
+    state: Optional[str] = None
+    """State or province"""
+
+    title: Optional[str] = None
+    """Current job title"""
+
+
 class FollowingResponseUserStarsEdgeStarrersEdgeSocialAccount(BaseModel):
     provider: str
 
@@ -2728,6 +3847,14 @@ class FollowingResponseUserStarsEdge(BaseModel):
     true)
     """
 
+    owner_professional: Optional[FollowingResponseUserStarsEdgeOwnerProfessional] = FieldInfo(
+        alias="ownerProfessional", default=None
+    )
+    """
+    LinkedIn professional profile data (only present when
+    includeAttributes.professional = true)
+    """
+
     readme_preview: Optional[str] = FieldInfo(alias="readmePreview", default=None)
     """Preview of repository README (first ~500 chars)"""
 
@@ -2784,7 +3911,7 @@ class FollowingResponseUser(BaseModel):
     """ISO 8601 timestamp when user account was created"""
 
     devrank: Optional[FollowingResponseUserDevrank] = None
-    """Developer ranking data (only present when fetched from devrank endpoints)"""
+    """Developer ranking data (only present when includeAttributes.devrank = true)"""
 
     display_name: Optional[str] = FieldInfo(alias="displayName", default=None)
     """User display name"""
@@ -2810,6 +3937,12 @@ class FollowingResponseUser(BaseModel):
 
     owns: Optional[FollowingResponseUserOwns] = None
     """Repositories this user starred (when includeAttributes.stars is specified)"""
+
+    professional: Optional[FollowingResponseUserProfessional] = None
+    """
+    LinkedIn professional profile data (only present when
+    includeAttributes.professional = true)
+    """
 
     resolved_city: Optional[str] = FieldInfo(alias="resolvedCity", default=None)
     """Resolved city from location"""
@@ -3034,6 +4167,136 @@ class UserOwnsResponseRepositoryOwnerDevrank(BaseModel):
     updated_at: str = FieldInfo(alias="updatedAt")
 
 
+class UserOwnsResponseRepositoryOwnerProfessionalEducation(BaseModel):
+    campus: Optional[str] = None
+    """Name of the educational institution"""
+
+    end_date: Optional[str] = FieldInfo(alias="endDate", default=None)
+    """End date (YYYY-MM-DD format)"""
+
+    major: Optional[str] = None
+    """Field of study or degree program"""
+
+    specialization: Optional[str] = None
+    """Area of specialization"""
+
+    start_date: Optional[str] = FieldInfo(alias="startDate", default=None)
+    """Start date (YYYY-MM-DD format)"""
+
+
+class UserOwnsResponseRepositoryOwnerProfessionalExperience(BaseModel):
+    company: Optional[str] = None
+    """Company or organization name"""
+
+    end_date: Optional[str] = FieldInfo(alias="endDate", default=None)
+    """End date (YYYY-MM-DD format, null if current)"""
+
+    industry: Optional[str] = None
+    """Industry sector"""
+
+    is_current: Optional[bool] = FieldInfo(alias="isCurrent", default=None)
+    """Whether this is the current position"""
+
+    location: Optional[str] = None
+    """Work location"""
+
+    start_date: Optional[str] = FieldInfo(alias="startDate", default=None)
+    """Start date (YYYY-MM-DD format)"""
+
+    summary: Optional[str] = None
+    """Description of role and responsibilities"""
+
+    title: Optional[str] = None
+    """Job title or position"""
+
+
+class UserOwnsResponseRepositoryOwnerProfessional(BaseModel):
+    """
+    LinkedIn professional profile data (only present when includeAttributes.professional = true)
+    """
+
+    awards: Optional[List[str]] = None
+    """Professional awards"""
+
+    certifications: Optional[List[str]] = None
+    """Professional certifications"""
+
+    city: Optional[str] = None
+    """City"""
+
+    connections_count: Optional[float] = FieldInfo(alias="connectionsCount", default=None)
+    """Number of LinkedIn connections"""
+
+    country: Optional[str] = None
+    """Country"""
+
+    current_industry: Optional[str] = FieldInfo(alias="currentIndustry", default=None)
+    """Current industry sector"""
+
+    departments: Optional[List[str]] = None
+    """Departments worked in"""
+
+    education: List[UserOwnsResponseRepositoryOwnerProfessionalEducation]
+    """Education history"""
+
+    experience: List[UserOwnsResponseRepositoryOwnerProfessionalExperience]
+    """Work experience history"""
+
+    expertise: Optional[List[str]] = None
+    """Areas of expertise"""
+
+    first_name: Optional[str] = FieldInfo(alias="firstName", default=None)
+    """First name"""
+
+    follower_count: Optional[float] = FieldInfo(alias="followerCount", default=None)
+    """Number of LinkedIn followers"""
+
+    functional_area: Optional[str] = FieldInfo(alias="functionalArea", default=None)
+    """Functional area (e.g., Engineering, Product)"""
+
+    headline: Optional[str] = None
+    """Professional headline"""
+
+    languages: Optional[List[str]] = None
+    """Languages spoken"""
+
+    last_name: Optional[str] = FieldInfo(alias="lastName", default=None)
+    """Last name"""
+
+    linkedin_url: str = FieldInfo(alias="linkedinUrl")
+    """LinkedIn profile URL"""
+
+    location: Optional[str] = None
+    """Full location string"""
+
+    memberships: Optional[List[str]] = None
+    """Professional organization memberships"""
+
+    organization: Optional[str] = None
+    """Current organization/company"""
+
+    patents: Optional[List[str]] = None
+    """Patents held"""
+
+    prior_industries: Optional[List[str]] = FieldInfo(alias="priorIndustries", default=None)
+    """Previous industries worked in"""
+
+    publications: Optional[List[str]] = None
+    """Publications authored"""
+
+    seniority: Optional[str] = None
+    """Seniority classification"""
+
+    seniority_level: Optional[str] = FieldInfo(alias="seniorityLevel", default=None)
+    """Seniority level (e.g., Senior, Manager)"""
+
+    state: Optional[str] = None
+    """State or province"""
+
+    title: Optional[str] = None
+    """Current job title"""
+
+
 class UserOwnsResponseRepositoryStarrersEdgeSocialAccount(BaseModel):
     provider: str
 
@@ -3169,6 +4432,14 @@ class UserOwnsResponseRepository(BaseModel):
     """
     Devrank data for the repository owner (when includeAttributes.ownerDevrank =
     true)
+    """
+
+    owner_professional: Optional[UserOwnsResponseRepositoryOwnerProfessional] = FieldInfo(
+        alias="ownerProfessional", default=None
+    )
+    """
+    LinkedIn professional profile data (only present when
+    includeAttributes.professional = true)
     """
 
     readme_preview: Optional[str] = FieldInfo(alias="readmePreview", default=None)
@@ -3380,6 +4651,136 @@ class UserStarsResponseRepositoryOwnerDevrank(BaseModel):
     updated_at: str = FieldInfo(alias="updatedAt")
 
 
+class UserStarsResponseRepositoryOwnerProfessionalEducation(BaseModel):
+    campus: Optional[str] = None
+    """Name of the educational institution"""
+
+    end_date: Optional[str] = FieldInfo(alias="endDate", default=None)
+    """End date (YYYY-MM-DD format)"""
+
+    major: Optional[str] = None
+    """Field of study or degree program"""
+
+    specialization: Optional[str] = None
+    """Area of specialization"""
+
+    start_date: Optional[str] = FieldInfo(alias="startDate", default=None)
+    """Start date (YYYY-MM-DD format)"""
+
+
+class UserStarsResponseRepositoryOwnerProfessionalExperience(BaseModel):
+    company: Optional[str] = None
+    """Company or organization name"""
+
+    end_date: Optional[str] = FieldInfo(alias="endDate", default=None)
+    """End date (YYYY-MM-DD format, null if current)"""
+
+    industry: Optional[str] = None
+    """Industry sector"""
+
+    is_current: Optional[bool] = FieldInfo(alias="isCurrent", default=None)
+    """Whether this is the current position"""
+
+    location: Optional[str] = None
+    """Work location"""
+
+    start_date: Optional[str] = FieldInfo(alias="startDate", default=None)
+    """Start date (YYYY-MM-DD format)"""
+
+    summary: Optional[str] = None
+    """Description of role and responsibilities"""
+
+    title: Optional[str] = None
+    """Job title or position"""
+
+
+class UserStarsResponseRepositoryOwnerProfessional(BaseModel):
+    """
+    LinkedIn professional profile data (only present when includeAttributes.professional = true)
+    """
+
+    awards: Optional[List[str]] = None
+    """Professional awards"""
+
+    certifications: Optional[List[str]] = None
+    """Professional certifications"""
+
+    city: Optional[str] = None
+    """City"""
+
+    connections_count: Optional[float] = FieldInfo(alias="connectionsCount", default=None)
+    """Number of LinkedIn connections"""
+
+    country: Optional[str] = None
+    """Country"""
+
+    current_industry: Optional[str] = FieldInfo(alias="currentIndustry", default=None)
+    """Current industry sector"""
+
+    departments: Optional[List[str]] = None
+    """Departments worked in"""
+
+    education: List[UserStarsResponseRepositoryOwnerProfessionalEducation]
+    """Education history"""
+
+    experience: List[UserStarsResponseRepositoryOwnerProfessionalExperience]
+    """Work experience history"""
+
+    expertise: Optional[List[str]] = None
+    """Areas of expertise"""
+
+    first_name: Optional[str] = FieldInfo(alias="firstName", default=None)
+    """First name"""
+
+    follower_count: Optional[float] = FieldInfo(alias="followerCount", default=None)
+    """Number of LinkedIn followers"""
+
+    functional_area: Optional[str] = FieldInfo(alias="functionalArea", default=None)
+    """Functional area (e.g., Engineering, Product)"""
+
+    headline: Optional[str] = None
+    """Professional headline"""
+
+    languages: Optional[List[str]] = None
+    """Languages spoken"""
+
+    last_name: Optional[str] = FieldInfo(alias="lastName", default=None)
+    """Last name"""
+
+    linkedin_url: str = FieldInfo(alias="linkedinUrl")
+    """LinkedIn profile URL"""
+
+    location: Optional[str] = None
+    """Full location string"""
+
+    memberships: Optional[List[str]] = None
+    """Professional organization memberships"""
+
+    organization: Optional[str] = None
+    """Current organization/company"""
+
+    patents: Optional[List[str]] = None
+    """Patents held"""
+
+    prior_industries: Optional[List[str]] = FieldInfo(alias="priorIndustries", default=None)
+    """Previous industries worked in"""
+
+    publications: Optional[List[str]] = None
+    """Publications authored"""
+
+    seniority: Optional[str] = None
+    """Seniority classification"""
+
+    seniority_level: Optional[str] = FieldInfo(alias="seniorityLevel", default=None)
+    """Seniority level (e.g., Senior, Manager)"""
+
+    state: Optional[str] = None
+    """State or province"""
+
+    title: Optional[str] = None
+    """Current job title"""
+
+
 class UserStarsResponseRepositoryStarrersEdgeSocialAccount(BaseModel):
     provider: str
 
@@ -3515,6 +4916,14 @@ class UserStarsResponseRepository(BaseModel):
     """
     Devrank data for the repository owner (when includeAttributes.ownerDevrank =
     true)
+    """
+
+    owner_professional: Optional[UserStarsResponseRepositoryOwnerProfessional] = FieldInfo(
+        alias="ownerProfessional", default=None
+    )
+    """
+    LinkedIn professional profile data (only present when
+    includeAttributes.professional = true)
     """
 
     readme_preview: Optional[str] = FieldInfo(alias="readmePreview", default=None)
@@ -3726,6 +5135,136 @@ class UserContributesResponseRepositoryOwnerDevrank(BaseModel):
     updated_at: str = FieldInfo(alias="updatedAt")
 
 
+class UserContributesResponseRepositoryOwnerProfessionalEducation(BaseModel):
+    campus: Optional[str] = None
+    """Name of the educational institution"""
+
+    end_date: Optional[str] = FieldInfo(alias="endDate", default=None)
+    """End date (YYYY-MM-DD format)"""
+
+    major: Optional[str] = None
+    """Field of study or degree program"""
+
+    specialization: Optional[str] = None
+    """Area of specialization"""
+
+    start_date: Optional[str] = FieldInfo(alias="startDate", default=None)
+    """Start date (YYYY-MM-DD format)"""
+
+
+class UserContributesResponseRepositoryOwnerProfessionalExperience(BaseModel):
+    company: Optional[str] = None
+    """Company or organization name"""
+
+    end_date: Optional[str] = FieldInfo(alias="endDate", default=None)
+    """End date (YYYY-MM-DD format, null if current)"""
+
+    industry: Optional[str] = None
+    """Industry sector"""
+
+    is_current: Optional[bool] = FieldInfo(alias="isCurrent", default=None)
+    """Whether this is the current position"""
+
+    location: Optional[str] = None
+    """Work location"""
+
+    start_date: Optional[str] = FieldInfo(alias="startDate", default=None)
+    """Start date (YYYY-MM-DD format)"""
+
+    summary: Optional[str] = None
+    """Description of role and responsibilities"""
+
+    title: Optional[str] = None
+    """Job title or position"""
+
+
+class UserContributesResponseRepositoryOwnerProfessional(BaseModel):
+    """
+    LinkedIn professional profile data (only present when includeAttributes.professional = true)
+    """
+
+    awards: Optional[List[str]] = None
+    """Professional awards"""
+
+    certifications: Optional[List[str]] = None
+    """Professional certifications"""
+
+    city: Optional[str] = None
+    """City"""
+
+    connections_count: Optional[float] = FieldInfo(alias="connectionsCount", default=None)
+    """Number of LinkedIn connections"""
+
+    country: Optional[str] = None
+    """Country"""
+
+    current_industry: Optional[str] = FieldInfo(alias="currentIndustry", default=None)
+    """Current industry sector"""
+
+    departments: Optional[List[str]] = None
+    """Departments worked in"""
+
+    education: List[UserContributesResponseRepositoryOwnerProfessionalEducation]
+    """Education history"""
+
+    experience: List[UserContributesResponseRepositoryOwnerProfessionalExperience]
+    """Work experience history"""
+
+    expertise: Optional[List[str]] = None
+    """Areas of expertise"""
+
+    first_name: Optional[str] = FieldInfo(alias="firstName", default=None)
+    """First name"""
+
+    follower_count: Optional[float] = FieldInfo(alias="followerCount", default=None)
+    """Number of LinkedIn followers"""
+
+    functional_area: Optional[str] = FieldInfo(alias="functionalArea", default=None)
+    """Functional area (e.g., Engineering, Product)"""
+
+    headline: Optional[str] = None
+    """Professional headline"""
+
+    languages: Optional[List[str]] = None
+    """Languages spoken"""
+
+    last_name: Optional[str] = FieldInfo(alias="lastName", default=None)
+    """Last name"""
+
+    linkedin_url: str = FieldInfo(alias="linkedinUrl")
+    """LinkedIn profile URL"""
+
+    location: Optional[str] = None
+    """Full location string"""
+
+    memberships: Optional[List[str]] = None
+    """Professional organization memberships"""
+
+    organization: Optional[str] = None
+    """Current organization/company"""
+
+    patents: Optional[List[str]] = None
+    """Patents held"""
+
+    prior_industries: Optional[List[str]] = FieldInfo(alias="priorIndustries", default=None)
+    """Previous industries worked in"""
+
+    publications: Optional[List[str]] = None
+    """Publications authored"""
+
+    seniority: Optional[str] = None
+    """Seniority classification"""
+
+    seniority_level: Optional[str] = FieldInfo(alias="seniorityLevel", default=None)
+    """Seniority level (e.g., Senior, Manager)"""
+
+    state: Optional[str] = None
+    """State or province"""
+
+    title: Optional[str] = None
+    """Current job title"""
+
+
 class UserContributesResponseRepositoryStarrersEdgeSocialAccount(BaseModel):
     provider: str
 
@@ -3863,6 +5402,14 @@ class UserContributesResponseRepository(BaseModel):
     """
     Devrank data for the repository owner (when includeAttributes.ownerDevrank =
     true)
+    """
+
+    owner_professional: Optional[UserContributesResponseRepositoryOwnerProfessional] = FieldInfo(
+        alias="ownerProfessional", default=None
+    )
+    """
+    LinkedIn professional profile data (only present when
+    includeAttributes.professional = true)
     """
 
     readme_preview: Optional[str] = FieldInfo(alias="readmePreview", default=None)

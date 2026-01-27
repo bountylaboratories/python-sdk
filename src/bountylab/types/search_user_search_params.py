@@ -1294,5 +1294,8 @@ class IncludeAttributes(TypedDict, total=False):
     owns: IncludeAttributesOwns
     """Include owned repositories with cursor pagination"""
 
+    professional: bool
+    """Include LinkedIn professional profile data (requires PROFESSIONAL service)"""
+
     stars: IncludeAttributesStars
     """Include starred repositories with cursor pagination"""
