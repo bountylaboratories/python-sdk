@@ -73,6 +73,7 @@ class TestRawUsers:
                         "value": "string",
                     },
                 },
+                "professional": True,
                 "stars": {
                     "first": 10,
                     "after": "after",
@@ -163,6 +164,7 @@ class TestRawUsers:
                         "value": "string",
                     },
                 },
+                "professional": True,
                 "stars": {
                     "first": 10,
                     "after": "after",
@@ -305,6 +307,7 @@ class TestRawUsers:
                 },
                 "owner": True,
                 "owner_devrank": True,
+                "owner_professional": True,
                 "owns": {
                     "first": 1,
                     "after": "after",
@@ -314,6 +317,7 @@ class TestRawUsers:
                         "value": "string",
                     },
                 },
+                "professional": True,
                 "starrers": {
                     "first": 1,
                     "after": "after",
@@ -430,6 +434,7 @@ class TestAsyncRawUsers:
                         "value": "string",
                     },
                 },
+                "professional": True,
                 "stars": {
                     "first": 10,
                     "after": "after",
@@ -520,6 +525,7 @@ class TestAsyncRawUsers:
                         "value": "string",
                     },
                 },
+                "professional": True,
                 "stars": {
                     "first": 10,
                     "after": "after",
@@ -662,6 +668,7 @@ class TestAsyncRawUsers:
                 },
                 "owner": True,
                 "owner_devrank": True,
+                "owner_professional": True,
                 "owns": {
                     "first": 1,
                     "after": "after",
@@ -671,6 +678,7 @@ class TestAsyncRawUsers:
                         "value": "string",
                     },
                 },
+                "professional": True,
                 "starrers": {
                     "first": 1,
                     "after": "after",
