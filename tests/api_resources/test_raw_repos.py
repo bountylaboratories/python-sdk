@@ -47,6 +47,7 @@ class TestRawRepos:
                 },
                 "owner": True,
                 "owner_devrank": True,
+                "owner_professional": True,
                 "starrers": {
                     "first": 1,
                     "after": "after",
@@ -111,6 +112,7 @@ class TestRawRepos:
                 },
                 "owner": True,
                 "owner_devrank": True,
+                "owner_professional": True,
                 "starrers": {
                     "first": 1,
                     "after": "after",
@@ -253,6 +255,7 @@ class TestRawRepos:
                 },
                 "owner": True,
                 "owner_devrank": True,
+                "owner_professional": True,
                 "owns": {
                     "first": 1,
                     "after": "after",
@@ -262,6 +265,7 @@ class TestRawRepos:
                         "value": "string",
                     },
                 },
+                "professional": True,
                 "starrers": {
                     "first": 1,
                     "after": "after",
@@ -352,6 +356,7 @@ class TestAsyncRawRepos:
                 },
                 "owner": True,
                 "owner_devrank": True,
+                "owner_professional": True,
                 "starrers": {
                     "first": 1,
                     "after": "after",
@@ -416,6 +421,7 @@ class TestAsyncRawRepos:
                 },
                 "owner": True,
                 "owner_devrank": True,
+                "owner_professional": True,
                 "starrers": {
                     "first": 1,
                     "after": "after",
@@ -558,6 +564,7 @@ class TestAsyncRawRepos:
                 },
                 "owner": True,
                 "owner_devrank": True,
+                "owner_professional": True,
                 "owns": {
                     "first": 1,
                     "after": "after",
@@ -567,6 +574,7 @@ class TestAsyncRawRepos:
                         "value": "string",
                     },
                 },
+                "professional": True,
                 "starrers": {
                     "first": 1,
                     "after": "after",

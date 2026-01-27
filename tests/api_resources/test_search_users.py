@@ -74,6 +74,7 @@ class TestSearchUsers:
                         "value": "string",
                     },
                 },
+                "professional": True,
                 "stars": {
                     "first": 10,
                     "after": "after",
@@ -173,6 +174,7 @@ class TestSearchUsers:
                         "value": "string",
                     },
                 },
+                "professional": True,
                 "stars": {
                     "first": 10,
                     "after": "after",
@@ -273,6 +275,7 @@ class TestAsyncSearchUsers:
                         "value": "string",
                     },
                 },
+                "professional": True,
                 "stars": {
                     "first": 10,
                     "after": "after",
@@ -372,6 +375,7 @@ class TestAsyncSearchUsers:
                         "value": "string",
                     },
                 },
+                "professional": True,
                 "stars": {
                     "first": 10,
                     "after": "after",

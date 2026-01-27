@@ -1049,6 +1049,12 @@ class IncludeAttributes(TypedDict, total=False):
     owner_devrank: Annotated[bool, PropertyInfo(alias="ownerDevrank")]
     """Include devrank data for the repository owner"""
 
+    owner_professional: Annotated[bool, PropertyInfo(alias="ownerProfessional")]
+    """
+    Include LinkedIn professional profile for the repository owner (requires
+    PROFESSIONAL service)
+    """
+
     starrers: IncludeAttributesStarrers
     """Include users who starred the repository with cursor pagination"""
 
