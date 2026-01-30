@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.35.0 (2026-01-30)
+
+Full Changelog: [v0.34.0...v0.35.0](https://github.com/bountylaboratories/python-sdk/compare/v0.34.0...v0.35.0)
+
+### Features
+
+* **client:** add custom JSON encoder for extended type support ([187e8a7](https://github.com/bountylaboratories/python-sdk/commit/187e8a7b82377f04f2923cd847025cd1696a4b74))
+
 ## 0.34.0 (2026-01-27)
 
 Full Changelog: [v0.33.0...v0.34.0](https://github.com/bountylaboratories/python-sdk/compare/v0.33.0...v0.34.0)
