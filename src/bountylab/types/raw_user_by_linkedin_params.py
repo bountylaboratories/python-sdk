@@ -9,7 +9,7 @@ from .._types import SequenceNotStr
 from .._utils import PropertyInfo
 
 __all__ = [
-    "RawUserByLoginParams",
+    "RawUserByLinkedinParams",
     "IncludeAttributes",
     "IncludeAttributesContributes",
     "IncludeAttributesContributesFilters",
@@ -64,9 +64,9 @@ __all__ = [
 ]
 
 
-class RawUserByLoginParams(TypedDict, total=False):
-    logins: Required[SequenceNotStr[str]]
-    """Array of GitHub usernames (1-100)"""
+class RawUserByLinkedinParams(TypedDict, total=False):
+    linkedin_urls: Required[Annotated[SequenceNotStr[str], PropertyInfo(alias="linkedinUrls")]]
+    """Array of LinkedIn profile URLs (1-100)"""
 
     include_attributes: Annotated[IncludeAttributes, PropertyInfo(alias="includeAttributes")]
     """Optional graph relationships and enrichment attributes"""

@@ -14,6 +14,7 @@ from bountylab.types import (
     RawUserGraphResponse,
     RawUserByLoginResponse,
     RawUserRetrieveResponse,
+    RawUserByLinkedinResponse,
 )
 
 base_url = os.environ.get("TEST_API_BASE_URL", "http://127.0.0.1:4010")
@@ -36,6 +37,7 @@ class TestRawUsers:
         raw_user = client.raw_users.retrieve(
             github_ids=["MDQ6VXNlcjU4MzIzMQ==", "MDQ6VXNlcjE="],
             include_attributes={
+                "aggregates": True,
                 "contributes": {
                     "first": 1,
                     "after": "after",
@@ -47,7 +49,7 @@ class TestRawUsers:
                 },
                 "devrank": True,
                 "followers": {
-                    "first": 10,
+                    "first": 1,
                     "after": "after",
                     "filters": {
                         "field": "field",
@@ -75,7 +77,7 @@ class TestRawUsers:
                 },
                 "professional": True,
                 "stars": {
-                    "first": 10,
+                    "first": 1,
                     "after": "after",
                     "filters": {
                         "field": "field",
@@ -115,18 +117,19 @@ class TestRawUsers:
 
     @pytest.mark.skip(reason="Prism tests are disabled")
     @parametrize
-    def test_method_by_login(self, client: Bountylab) -> None:
-        raw_user = client.raw_users.by_login(
-            logins=["octocat", "torvalds"],
+    def test_method_by_linkedin(self, client: Bountylab) -> None:
+        raw_user = client.raw_users.by_linkedin(
+            linkedin_urls=["https://www.linkedin.com/in/octocat", "https://www.linkedin.com/in/torvalds"],
         )
-        assert_matches_type(RawUserByLoginResponse, raw_user, path=["response"])
+        assert_matches_type(RawUserByLinkedinResponse, raw_user, path=["response"])
 
     @pytest.mark.skip(reason="Prism tests are disabled")
     @parametrize
-    def test_method_by_login_with_all_params(self, client: Bountylab) -> None:
-        raw_user = client.raw_users.by_login(
-            logins=["octocat", "torvalds"],
+    def test_method_by_linkedin_with_all_params(self, client: Bountylab) -> None:
+        raw_user = client.raw_users.by_linkedin(
+            linkedin_urls=["https://www.linkedin.com/in/octocat", "https://www.linkedin.com/in/torvalds"],
             include_attributes={
+                "aggregates": True,
                 "contributes": {
                     "first": 1,
                     "after": "after",
@@ -138,7 +141,7 @@ class TestRawUsers:
                 },
                 "devrank": True,
                 "followers": {
-                    "first": 10,
+                    "first": 1,
                     "after": "after",
                     "filters": {
                         "field": "field",
@@ -166,7 +169,99 @@ class TestRawUsers:
                 },
                 "professional": True,
                 "stars": {
-                    "first": 10,
+                    "first": 1,
+                    "after": "after",
+                    "filters": {
+                        "field": "field",
+                        "op": "Eq",
+                        "value": "string",
+                    },
+                },
+            },
+        )
+        assert_matches_type(RawUserByLinkedinResponse, raw_user, path=["response"])
+
+    @pytest.mark.skip(reason="Prism tests are disabled")
+    @parametrize
+    def test_raw_response_by_linkedin(self, client: Bountylab) -> None:
+        response = client.raw_users.with_raw_response.by_linkedin(
+            linkedin_urls=["https://www.linkedin.com/in/octocat", "https://www.linkedin.com/in/torvalds"],
+        )
+
+        assert response.is_closed is True
+        assert response.http_request.headers.get("X-Stainless-Lang") == "python"
+        raw_user = response.parse()
+        assert_matches_type(RawUserByLinkedinResponse, raw_user, path=["response"])
+
+    @pytest.mark.skip(reason="Prism tests are disabled")
+    @parametrize
+    def test_streaming_response_by_linkedin(self, client: Bountylab) -> None:
+        with client.raw_users.with_streaming_response.by_linkedin(
+            linkedin_urls=["https://www.linkedin.com/in/octocat", "https://www.linkedin.com/in/torvalds"],
+        ) as response:
+            assert not response.is_closed
+            assert response.http_request.headers.get("X-Stainless-Lang") == "python"
+
+            raw_user = response.parse()
+            assert_matches_type(RawUserByLinkedinResponse, raw_user, path=["response"])
+
+        assert cast(Any, response.is_closed) is True
+
+    @pytest.mark.skip(reason="Prism tests are disabled")
+    @parametrize
+    def test_method_by_login(self, client: Bountylab) -> None:
+        raw_user = client.raw_users.by_login(
+            logins=["octocat", "torvalds"],
+        )
+        assert_matches_type(RawUserByLoginResponse, raw_user, path=["response"])
+
+    @pytest.mark.skip(reason="Prism tests are disabled")
+    @parametrize
+    def test_method_by_login_with_all_params(self, client: Bountylab) -> None:
+        raw_user = client.raw_users.by_login(
+            logins=["octocat", "torvalds"],
+            include_attributes={
+                "aggregates": True,
+                "contributes": {
+                    "first": 1,
+                    "after": "after",
+                    "filters": {
+                        "field": "field",
+                        "op": "Eq",
+                        "value": "string",
+                    },
+                },
+                "devrank": True,
+                "followers": {
+                    "first": 1,
+                    "after": "after",
+                    "filters": {
+                        "field": "field",
+                        "op": "Eq",
+                        "value": "string",
+                    },
+                },
+                "following": {
+                    "first": 1,
+                    "after": "after",
+                    "filters": {
+                        "field": "field",
+                        "op": "Eq",
+                        "value": "string",
+                    },
+                },
+                "owns": {
+                    "first": 1,
+                    "after": "after",
+                    "filters": {
+                        "field": "field",
+                        "op": "Eq",
+                        "value": "string",
+                    },
+                },
+                "professional": True,
+                "stars": {
+                    "first": 1,
                     "after": "after",
                     "filters": {
                         "field": "field",
@@ -268,6 +363,7 @@ class TestRawUsers:
             after="eyJvZmZzZXQiOjEwMH0=",
             first=100,
             include_attributes={
+                "aggregates": True,
                 "contributes": {
                     "first": 1,
                     "after": "after",
@@ -397,6 +493,7 @@ class TestAsyncRawUsers:
         raw_user = await async_client.raw_users.retrieve(
             github_ids=["MDQ6VXNlcjU4MzIzMQ==", "MDQ6VXNlcjE="],
             include_attributes={
+                "aggregates": True,
                 "contributes": {
                     "first": 1,
                     "after": "after",
@@ -408,7 +505,7 @@ class TestAsyncRawUsers:
                 },
                 "devrank": True,
                 "followers": {
-                    "first": 10,
+                    "first": 1,
                     "after": "after",
                     "filters": {
                         "field": "field",
@@ -436,7 +533,7 @@ class TestAsyncRawUsers:
                 },
                 "professional": True,
                 "stars": {
-                    "first": 10,
+                    "first": 1,
                     "after": "after",
                     "filters": {
                         "field": "field",
@@ -476,18 +573,19 @@ class TestAsyncRawUsers:
 
     @pytest.mark.skip(reason="Prism tests are disabled")
     @parametrize
-    async def test_method_by_login(self, async_client: AsyncBountylab) -> None:
-        raw_user = await async_client.raw_users.by_login(
-            logins=["octocat", "torvalds"],
+    async def test_method_by_linkedin(self, async_client: AsyncBountylab) -> None:
+        raw_user = await async_client.raw_users.by_linkedin(
+            linkedin_urls=["https://www.linkedin.com/in/octocat", "https://www.linkedin.com/in/torvalds"],
         )
-        assert_matches_type(RawUserByLoginResponse, raw_user, path=["response"])
+        assert_matches_type(RawUserByLinkedinResponse, raw_user, path=["response"])
 
     @pytest.mark.skip(reason="Prism tests are disabled")
     @parametrize
-    async def test_method_by_login_with_all_params(self, async_client: AsyncBountylab) -> None:
-        raw_user = await async_client.raw_users.by_login(
-            logins=["octocat", "torvalds"],
+    async def test_method_by_linkedin_with_all_params(self, async_client: AsyncBountylab) -> None:
+        raw_user = await async_client.raw_users.by_linkedin(
+            linkedin_urls=["https://www.linkedin.com/in/octocat", "https://www.linkedin.com/in/torvalds"],
             include_attributes={
+                "aggregates": True,
                 "contributes": {
                     "first": 1,
                     "after": "after",
@@ -499,7 +597,7 @@ class TestAsyncRawUsers:
                 },
                 "devrank": True,
                 "followers": {
-                    "first": 10,
+                    "first": 1,
                     "after": "after",
                     "filters": {
                         "field": "field",
@@ -527,7 +625,99 @@ class TestAsyncRawUsers:
                 },
                 "professional": True,
                 "stars": {
-                    "first": 10,
+                    "first": 1,
+                    "after": "after",
+                    "filters": {
+                        "field": "field",
+                        "op": "Eq",
+                        "value": "string",
+                    },
+                },
+            },
+        )
+        assert_matches_type(RawUserByLinkedinResponse, raw_user, path=["response"])
+
+    @pytest.mark.skip(reason="Prism tests are disabled")
+    @parametrize
+    async def test_raw_response_by_linkedin(self, async_client: AsyncBountylab) -> None:
+        response = await async_client.raw_users.with_raw_response.by_linkedin(
+            linkedin_urls=["https://www.linkedin.com/in/octocat", "https://www.linkedin.com/in/torvalds"],
+        )
+
+        assert response.is_closed is True
+        assert response.http_request.headers.get("X-Stainless-Lang") == "python"
+        raw_user = await response.parse()
+        assert_matches_type(RawUserByLinkedinResponse, raw_user, path=["response"])
+
+    @pytest.mark.skip(reason="Prism tests are disabled")
+    @parametrize
+    async def test_streaming_response_by_linkedin(self, async_client: AsyncBountylab) -> None:
+        async with async_client.raw_users.with_streaming_response.by_linkedin(
+            linkedin_urls=["https://www.linkedin.com/in/octocat", "https://www.linkedin.com/in/torvalds"],
+        ) as response:
+            assert not response.is_closed
+            assert response.http_request.headers.get("X-Stainless-Lang") == "python"
+
+            raw_user = await response.parse()
+            assert_matches_type(RawUserByLinkedinResponse, raw_user, path=["response"])
+
+        assert cast(Any, response.is_closed) is True
+
+    @pytest.mark.skip(reason="Prism tests are disabled")
+    @parametrize
+    async def test_method_by_login(self, async_client: AsyncBountylab) -> None:
+        raw_user = await async_client.raw_users.by_login(
+            logins=["octocat", "torvalds"],
+        )
+        assert_matches_type(RawUserByLoginResponse, raw_user, path=["response"])
+
+    @pytest.mark.skip(reason="Prism tests are disabled")
+    @parametrize
+    async def test_method_by_login_with_all_params(self, async_client: AsyncBountylab) -> None:
+        raw_user = await async_client.raw_users.by_login(
+            logins=["octocat", "torvalds"],
+            include_attributes={
+                "aggregates": True,
+                "contributes": {
+                    "first": 1,
+                    "after": "after",
+                    "filters": {
+                        "field": "field",
+                        "op": "Eq",
+                        "value": "string",
+                    },
+                },
+                "devrank": True,
+                "followers": {
+                    "first": 1,
+                    "after": "after",
+                    "filters": {
+                        "field": "field",
+                        "op": "Eq",
+                        "value": "string",
+                    },
+                },
+                "following": {
+                    "first": 1,
+                    "after": "after",
+                    "filters": {
+                        "field": "field",
+                        "op": "Eq",
+                        "value": "string",
+                    },
+                },
+                "owns": {
+                    "first": 1,
+                    "after": "after",
+                    "filters": {
+                        "field": "field",
+                        "op": "Eq",
+                        "value": "string",
+                    },
+                },
+                "professional": True,
+                "stars": {
+                    "first": 1,
                     "after": "after",
                     "filters": {
                         "field": "field",
@@ -629,6 +819,7 @@ class TestAsyncRawUsers:
             after="eyJvZmZzZXQiOjEwMH0=",
             first=100,
             include_attributes={
+                "aggregates": True,
                 "contributes": {
                     "first": 1,
                     "after": "after",

@@ -12,6 +12,7 @@ __all__ = [
     "RepoStarsResponse",
     "RepoStarsResponsePageInfo",
     "RepoStarsResponseUser",
+    "RepoStarsResponseUserAggregates",
     "RepoStarsResponseUserContributes",
     "RepoStarsResponseUserContributesEdge",
     "RepoStarsResponseUserContributesEdgeContributors",
@@ -79,6 +80,7 @@ __all__ = [
     "RepoContributesResponse",
     "RepoContributesResponsePageInfo",
     "RepoContributesResponseUser",
+    "RepoContributesResponseUserAggregates",
     "RepoContributesResponseUserContributes",
     "RepoContributesResponseUserContributesEdge",
     "RepoContributesResponseUserContributesEdgeContributors",
@@ -146,6 +148,7 @@ __all__ = [
     "RepoOwnsResponse",
     "RepoOwnsResponsePageInfo",
     "RepoOwnsResponseUser",
+    "RepoOwnsResponseUserAggregates",
     "RepoOwnsResponseUserContributes",
     "RepoOwnsResponseUserContributesEdge",
     "RepoOwnsResponseUserContributesEdgeContributors",
@@ -221,6 +224,13 @@ class RepoStarsResponsePageInfo(BaseModel):
 
     has_next_page: bool = FieldInfo(alias="hasNextPage")
     """Whether there are more items available"""
+
+
+class RepoStarsResponseUserAggregates(BaseModel):
+    """Aggregate metrics (only present when includeAttributes.aggregates = true)"""
+
+    total_stars: float = FieldInfo(alias="totalStars")
+    """Total stars received across all owned repositories"""
 
 
 class RepoStarsResponseUserContributesEdgeContributorsEdgeSocialAccount(BaseModel):
@@ -2023,6 +2033,9 @@ class RepoStarsResponseUser(BaseModel):
     login: str
     """GitHub username"""
 
+    aggregates: Optional[RepoStarsResponseUserAggregates] = None
+    """Aggregate metrics (only present when includeAttributes.aggregates = true)"""
+
     bio: Optional[str] = None
     """User biography"""
 
@@ -2100,7 +2113,7 @@ class RepoStarsResponse(BaseModel):
     page_info: RepoStarsResponsePageInfo = FieldInfo(alias="pageInfo")
     """Pagination information"""
 
-    users: List[RepoStarsResponseUser]
+    users: List[Optional[RepoStarsResponseUser]]
     """Array of users who starred this repository (with optional graph relationships)"""
 
 
@@ -2112,6 +2125,13 @@ class RepoContributesResponsePageInfo(BaseModel):
 
     has_next_page: bool = FieldInfo(alias="hasNextPage")
     """Whether there are more items available"""
+
+
+class RepoContributesResponseUserAggregates(BaseModel):
+    """Aggregate metrics (only present when includeAttributes.aggregates = true)"""
+
+    total_stars: float = FieldInfo(alias="totalStars")
+    """Total stars received across all owned repositories"""
 
 
 class RepoContributesResponseUserContributesEdgeContributorsEdgeSocialAccount(BaseModel):
@@ -3918,6 +3938,9 @@ class RepoContributesResponseUser(BaseModel):
     login: str
     """GitHub username"""
 
+    aggregates: Optional[RepoContributesResponseUserAggregates] = None
+    """Aggregate metrics (only present when includeAttributes.aggregates = true)"""
+
     bio: Optional[str] = None
     """User biography"""
 
@@ -3995,7 +4018,7 @@ class RepoContributesResponse(BaseModel):
     page_info: RepoContributesResponsePageInfo = FieldInfo(alias="pageInfo")
     """Pagination information"""
 
-    users: List[RepoContributesResponseUser]
+    users: List[Optional[RepoContributesResponseUser]]
     """
     Array of users who contribute to this repository (with optional graph
     relationships)
@@ -4010,6 +4033,13 @@ class RepoOwnsResponsePageInfo(BaseModel):
 
     has_next_page: bool = FieldInfo(alias="hasNextPage")
     """Whether there are more items available"""
+
+
+class RepoOwnsResponseUserAggregates(BaseModel):
+    """Aggregate metrics (only present when includeAttributes.aggregates = true)"""
+
+    total_stars: float = FieldInfo(alias="totalStars")
+    """Total stars received across all owned repositories"""
 
 
 class RepoOwnsResponseUserContributesEdgeContributorsEdgeSocialAccount(BaseModel):
@@ -5812,6 +5842,9 @@ class RepoOwnsResponseUser(BaseModel):
     login: str
     """GitHub username"""
 
+    aggregates: Optional[RepoOwnsResponseUserAggregates] = None
+    """Aggregate metrics (only present when includeAttributes.aggregates = true)"""
+
     bio: Optional[str] = None
     """User biography"""
 
@@ -5887,7 +5920,7 @@ class RepoOwnsResponse(BaseModel):
     page_info: RepoOwnsResponsePageInfo = FieldInfo(alias="pageInfo")
     """Pagination information"""
 
-    users: List[RepoOwnsResponseUser]
+    users: List[Optional[RepoOwnsResponseUser]]
     """
     Array of users who own this repository (typically 1, with optional graph
     relationships)

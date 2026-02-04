@@ -443,7 +443,7 @@ class SearchRepoNaturalLanguageParams(TypedDict, total=False):
     """Alias for maxResults (takes precedence if both provided)"""
 
     include_attributes: Annotated[IncludeAttributes, PropertyInfo(alias="includeAttributes")]
-    """Optional graph relationships to include (owner, contributors, starrers)"""
+    """Optional graph relationships and enrichment attributes"""
 
     max_results: Annotated[int, PropertyInfo(alias="maxResults")]
     """Maximum number of results to return (default: 100, max: 1000)"""
@@ -853,7 +853,7 @@ class IncludeAttributesStarrers(TypedDict, total=False):
 
 
 class IncludeAttributes(TypedDict, total=False):
-    """Optional graph relationships to include (owner, contributors, starrers)"""
+    """Optional graph relationships and enrichment attributes"""
 
     contributors: IncludeAttributesContributors
     """Include repository contributors with cursor pagination"""

@@ -9,6 +9,7 @@ from .._models import BaseModel
 __all__ = [
     "SearchUserNaturalLanguageResponse",
     "User",
+    "UserAggregates",
     "UserContributes",
     "UserContributesEdge",
     "UserContributesEdgeContributors",
@@ -75,6 +76,13 @@ __all__ = [
     "UserStarsPageInfo",
     "PageInfo",
 ]
+
+
+class UserAggregates(BaseModel):
+    """Aggregate metrics (only present when includeAttributes.aggregates = true)"""
+
+    total_stars: float = FieldInfo(alias="totalStars")
+    """Total stars received across all owned repositories"""
 
 
 class UserContributesEdgeContributorsEdgeSocialAccount(BaseModel):
@@ -1863,6 +1871,9 @@ class User(BaseModel):
     login: str
     """GitHub username"""
 
+    aggregates: Optional[UserAggregates] = None
+    """Aggregate metrics (only present when includeAttributes.aggregates = true)"""
+
     bio: Optional[str] = None
     """User biography"""
 
@@ -1951,7 +1962,7 @@ class SearchUserNaturalLanguageResponse(BaseModel):
     search_query: str = FieldInfo(alias="searchQuery")
     """The generated search query used for the search"""
 
-    users: List[User]
+    users: List[Optional[User]]
     """Array of user search results with relevance scores"""
 
     page_info: Optional[PageInfo] = FieldInfo(alias="pageInfo", default=None)
