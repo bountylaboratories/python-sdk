@@ -131,7 +131,7 @@ class TestSearchRepos:
                 "owner_devrank": True,
                 "owner_professional": True,
                 "starrers": {
-                    "first": 1,
+                    "first": 10,
                     "after": "after",
                     "filters": {
                         "field": "field",
@@ -291,7 +291,7 @@ class TestAsyncSearchRepos:
                 "owner_devrank": True,
                 "owner_professional": True,
                 "starrers": {
-                    "first": 1,
+                    "first": 10,
                     "after": "after",
                     "filters": {
                         "field": "field",

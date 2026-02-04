@@ -1495,6 +1495,9 @@ class IncludeAttributes(TypedDict, total=False):
     Use user attributes (followers, following, owns, stars, contributes) for user-returning relationships, or repo attributes (owner, contributors, starrers) for repo-returning relationships.
     """
 
+    aggregates: bool
+    """Include aggregate metrics (e.g. totalStars) for the user"""
+
     contributes: IncludeAttributesContributes
     """Include contributed repositories with cursor pagination"""
 

@@ -39,7 +39,7 @@ class RawRepoByFullnameParams(TypedDict, total=False):
     """Array of repository full names in "owner/name" format (1-100)"""
 
     include_attributes: Annotated[IncludeAttributes, PropertyInfo(alias="includeAttributes")]
-    """Optional graph relationships to include (owner, contributors, starrers)"""
+    """Optional graph relationships and enrichment attributes"""
 
 
 class IncludeAttributesContributorsFiltersUnionMember0(TypedDict, total=False):
@@ -439,7 +439,7 @@ class IncludeAttributesStarrers(TypedDict, total=False):
 
 
 class IncludeAttributes(TypedDict, total=False):
-    """Optional graph relationships to include (owner, contributors, starrers)"""
+    """Optional graph relationships and enrichment attributes"""
 
     contributors: IncludeAttributesContributors
     """Include repository contributors with cursor pagination"""

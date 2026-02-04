@@ -75,8 +75,7 @@ class SearchUsersResource(SyncAPIResource):
 
           first: Alias for maxResults (takes precedence if both provided)
 
-          include_attributes: Optional graph relationships to include (followers, following, stars, owns,
-              contributes)
+          include_attributes: Optional graph relationships and enrichment attributes
 
           max_results: Maximum number of results to return (default: 100, max: 1000)
 
@@ -146,8 +145,7 @@ class SearchUsersResource(SyncAPIResource):
 
           first: Alias for maxResults (takes precedence if both provided)
 
-          include_attributes: Optional graph relationships to include (followers, following, stars, owns,
-              contributes)
+          include_attributes: Optional graph relationships and enrichment attributes
 
           max_results: Maximum number of results to return (default: 100, max: 1000)
 
@@ -231,8 +229,7 @@ class AsyncSearchUsersResource(AsyncAPIResource):
 
           first: Alias for maxResults (takes precedence if both provided)
 
-          include_attributes: Optional graph relationships to include (followers, following, stars, owns,
-              contributes)
+          include_attributes: Optional graph relationships and enrichment attributes
 
           max_results: Maximum number of results to return (default: 100, max: 1000)
 
@@ -302,8 +299,7 @@ class AsyncSearchUsersResource(AsyncAPIResource):
 
           first: Alias for maxResults (takes precedence if both provided)
 
-          include_attributes: Optional graph relationships to include (followers, following, stars, owns,
-              contributes)
+          include_attributes: Optional graph relationships and enrichment attributes
 
           max_results: Maximum number of results to return (default: 100, max: 1000)
 

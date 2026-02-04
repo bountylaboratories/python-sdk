@@ -7,7 +7,13 @@ from typing_extensions import Literal
 
 import httpx
 
-from ..types import raw_user_count_params, raw_user_graph_params, raw_user_by_login_params, raw_user_retrieve_params
+from ..types import (
+    raw_user_count_params,
+    raw_user_graph_params,
+    raw_user_by_login_params,
+    raw_user_retrieve_params,
+    raw_user_by_linkedin_params,
+)
 from .._types import Body, Omit, Query, Headers, NotGiven, SequenceNotStr, omit, not_given
 from .._utils import maybe_transform, async_maybe_transform
 from .._compat import cached_property
@@ -23,6 +29,7 @@ from ..types.raw_user_count_response import RawUserCountResponse
 from ..types.raw_user_graph_response import RawUserGraphResponse
 from ..types.raw_user_by_login_response import RawUserByLoginResponse
 from ..types.raw_user_retrieve_response import RawUserRetrieveResponse
+from ..types.raw_user_by_linkedin_response import RawUserByLinkedinResponse
 
 __all__ = ["RawUsersResource", "AsyncRawUsersResource"]
 
@@ -61,15 +68,14 @@ class RawUsersResource(SyncAPIResource):
     ) -> RawUserRetrieveResponse:
         """Fetch GitHub users by their node IDs.
 
-        Supports batch requests (1-100 IDs).
-        Requires RAW service. Credits: 1 per result returned + graph relationship
-        credits if includeAttributes is specified.
+        Returns a positional array matching input
+        order (null for unmatched IDs). Supports batch requests (1-100 IDs). Credits: 1
+        per non-null result + graph credits.
 
         Args:
           github_ids: Array of GitHub node IDs (1-100)
 
-          include_attributes: Optional graph relationships to include (followers, following, stars, owns,
-              contributes)
+          include_attributes: Optional graph relationships and enrichment attributes
 
           extra_headers: Send extra headers
 
@@ -94,6 +100,53 @@ class RawUsersResource(SyncAPIResource):
             cast_to=RawUserRetrieveResponse,
         )
 
+    def by_linkedin(
+        self,
+        *,
+        linkedin_urls: SequenceNotStr[str],
+        include_attributes: raw_user_by_linkedin_params.IncludeAttributes | Omit = omit,
+        # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
+        # The extra values given here take precedence over values defined on the client or passed to this method.
+        extra_headers: Headers | None = None,
+        extra_query: Query | None = None,
+        extra_body: Body | None = None,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
+    ) -> RawUserByLinkedinResponse:
+        """Fetch GitHub users by their linked LinkedIn profile URLs.
+
+        Returns a positional
+        array matching input order (null for unmatched URLs). URLs are normalized to
+        canonical format before lookup. Supports batch requests (1-100). Credits: 1 per
+        non-null result + graph credits.
+
+        Args:
+          linkedin_urls: Array of LinkedIn profile URLs (1-100)
+
+          include_attributes: Optional graph relationships and enrichment attributes
+
+          extra_headers: Send extra headers
+
+          extra_query: Add additional query parameters to the request
+
+          extra_body: Add additional JSON properties to the request
+
+          timeout: Override the client-level default timeout for this request, in seconds
+        """
+        return self._post(
+            "/raw/users/by-linkedin",
+            body=maybe_transform(
+                {
+                    "linkedin_urls": linkedin_urls,
+                    "include_attributes": include_attributes,
+                },
+                raw_user_by_linkedin_params.RawUserByLinkedinParams,
+            ),
+            options=make_request_options(
+                extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
+            ),
+            cast_to=RawUserByLinkedinResponse,
+        )
+
     def by_login(
         self,
         *,
@@ -106,16 +159,16 @@ class RawUsersResource(SyncAPIResource):
         extra_body: Body | None = None,
         timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> RawUserByLoginResponse:
-        """Fetch GitHub users by their usernames (login).
+        """Fetch GitHub users by their usernames.
 
-        Supports batch requests (1-100
-        logins). Requires RAW service. Credits: 1 per result returned.
+        Returns a positional array matching input
+        order (null for unmatched logins). Supports batch requests (1-100). Credits: 1
+        per non-null result + graph credits.
 
         Args:
           logins: Array of GitHub usernames (1-100)
 
-          include_attributes: Optional graph relationships to include (followers, following, stars, owns,
-              contributes)
+          include_attributes: Optional graph relationships and enrichment attributes
 
           extra_headers: Send extra headers
 
@@ -154,7 +207,7 @@ class RawUsersResource(SyncAPIResource):
         """Count users in the database matching filters.
 
         Counts are capped at minimum (10k)
-        and maximum (1M). Requires RAW service. Credits: 1 per request.
+        and maximum (1M). Credits: 1 per request.
 
         Args:
           filters: Optional filters for users. Supports fields like login, company, location,
@@ -280,15 +333,14 @@ class AsyncRawUsersResource(AsyncAPIResource):
     ) -> RawUserRetrieveResponse:
         """Fetch GitHub users by their node IDs.
 
-        Supports batch requests (1-100 IDs).
-        Requires RAW service. Credits: 1 per result returned + graph relationship
-        credits if includeAttributes is specified.
+        Returns a positional array matching input
+        order (null for unmatched IDs). Supports batch requests (1-100 IDs). Credits: 1
+        per non-null result + graph credits.
 
         Args:
           github_ids: Array of GitHub node IDs (1-100)
 
-          include_attributes: Optional graph relationships to include (followers, following, stars, owns,
-              contributes)
+          include_attributes: Optional graph relationships and enrichment attributes
 
           extra_headers: Send extra headers
 
@@ -313,6 +365,53 @@ class AsyncRawUsersResource(AsyncAPIResource):
             cast_to=RawUserRetrieveResponse,
         )
 
+    async def by_linkedin(
+        self,
+        *,
+        linkedin_urls: SequenceNotStr[str],
+        include_attributes: raw_user_by_linkedin_params.IncludeAttributes | Omit = omit,
+        # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
+        # The extra values given here take precedence over values defined on the client or passed to this method.
+        extra_headers: Headers | None = None,
+        extra_query: Query | None = None,
+        extra_body: Body | None = None,
+        timeout: float | httpx.Timeout | None | NotGiven = not_given,
+    ) -> RawUserByLinkedinResponse:
+        """Fetch GitHub users by their linked LinkedIn profile URLs.
+
+        Returns a positional
+        array matching input order (null for unmatched URLs). URLs are normalized to
+        canonical format before lookup. Supports batch requests (1-100). Credits: 1 per
+        non-null result + graph credits.
+
+        Args:
+          linkedin_urls: Array of LinkedIn profile URLs (1-100)
+
+          include_attributes: Optional graph relationships and enrichment attributes
+
+          extra_headers: Send extra headers
+
+          extra_query: Add additional query parameters to the request
+
+          extra_body: Add additional JSON properties to the request
+
+          timeout: Override the client-level default timeout for this request, in seconds
+        """
+        return await self._post(
+            "/raw/users/by-linkedin",
+            body=await async_maybe_transform(
+                {
+                    "linkedin_urls": linkedin_urls,
+                    "include_attributes": include_attributes,
+                },
+                raw_user_by_linkedin_params.RawUserByLinkedinParams,
+            ),
+            options=make_request_options(
+                extra_headers=extra_headers, extra_query=extra_query, extra_body=extra_body, timeout=timeout
+            ),
+            cast_to=RawUserByLinkedinResponse,
+        )
+
     async def by_login(
         self,
         *,
@@ -325,16 +424,16 @@ class AsyncRawUsersResource(AsyncAPIResource):
         extra_body: Body | None = None,
         timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> RawUserByLoginResponse:
-        """Fetch GitHub users by their usernames (login).
+        """Fetch GitHub users by their usernames.
 
-        Supports batch requests (1-100
-        logins). Requires RAW service. Credits: 1 per result returned.
+        Returns a positional array matching input
+        order (null for unmatched logins). Supports batch requests (1-100). Credits: 1
+        per non-null result + graph credits.
 
         Args:
           logins: Array of GitHub usernames (1-100)
 
-          include_attributes: Optional graph relationships to include (followers, following, stars, owns,
-              contributes)
+          include_attributes: Optional graph relationships and enrichment attributes
 
           extra_headers: Send extra headers
 
@@ -373,7 +472,7 @@ class AsyncRawUsersResource(AsyncAPIResource):
         """Count users in the database matching filters.
 
         Counts are capped at minimum (10k)
-        and maximum (1M). Requires RAW service. Credits: 1 per request.
+        and maximum (1M). Credits: 1 per request.
 
         Args:
           filters: Optional filters for users. Supports fields like login, company, location,
@@ -472,6 +571,9 @@ class RawUsersResourceWithRawResponse:
         self.retrieve = to_raw_response_wrapper(
             raw_users.retrieve,
         )
+        self.by_linkedin = to_raw_response_wrapper(
+            raw_users.by_linkedin,
+        )
         self.by_login = to_raw_response_wrapper(
             raw_users.by_login,
         )
@@ -489,6 +591,9 @@ class AsyncRawUsersResourceWithRawResponse:
 
         self.retrieve = async_to_raw_response_wrapper(
             raw_users.retrieve,
+        )
+        self.by_linkedin = async_to_raw_response_wrapper(
+            raw_users.by_linkedin,
         )
         self.by_login = async_to_raw_response_wrapper(
             raw_users.by_login,
@@ -508,6 +613,9 @@ class RawUsersResourceWithStreamingResponse:
         self.retrieve = to_streamed_response_wrapper(
             raw_users.retrieve,
         )
+        self.by_linkedin = to_streamed_response_wrapper(
+            raw_users.by_linkedin,
+        )
         self.by_login = to_streamed_response_wrapper(
             raw_users.by_login,
         )
@@ -525,6 +633,9 @@ class AsyncRawUsersResourceWithStreamingResponse:
 
         self.retrieve = async_to_streamed_response_wrapper(
             raw_users.retrieve,
+        )
+        self.by_linkedin = async_to_streamed_response_wrapper(
+            raw_users.by_linkedin,
         )
         self.by_login = async_to_streamed_response_wrapper(
             raw_users.by_login,
