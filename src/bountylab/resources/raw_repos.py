@@ -61,14 +61,14 @@ class RawReposResource(SyncAPIResource):
     ) -> RawRepoRetrieveResponse:
         """Fetch GitHub repositories by their node IDs.
 
-        Supports batch requests (1-100
-        IDs). Requires RAW service. Credits: 1 per result returned + graph relationship
-        credits if includeAttributes is specified.
+        Returns a positional array matching
+        input order (null for unmatched IDs). Supports batch requests (1-100). Credits:
+        1 per non-null result + graph credits.
 
         Args:
           github_ids: Array of GitHub node IDs (1-100)
 
-          include_attributes: Optional graph relationships to include (owner, contributors, starrers)
+          include_attributes: Optional graph relationships and enrichment attributes
 
           extra_headers: Send extra headers
 
@@ -105,16 +105,16 @@ class RawReposResource(SyncAPIResource):
         extra_body: Body | None = None,
         timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> RawRepoByFullnameResponse:
-        """Fetch GitHub repositories by their full names (owner/repo format).
+        """Fetch GitHub repositories by their full names (owner/repo).
 
-        Supports
-        batch requests (1-100 repos). Requires RAW service. Credits: 1 per result
-        returned.
+        Returns a positional
+        array matching input order (null for unmatched names). Supports batch requests
+        (1-100). Credits: 1 per non-null result + graph credits.
 
         Args:
           full_names: Array of repository full names in "owner/name" format (1-100)
 
-          include_attributes: Optional graph relationships to include (owner, contributors, starrers)
+          include_attributes: Optional graph relationships and enrichment attributes
 
           extra_headers: Send extra headers
 
@@ -153,7 +153,7 @@ class RawReposResource(SyncAPIResource):
         """Count repositories in the database matching filters.
 
         Counts are capped at
-        minimum (10k) and maximum (1M). Requires RAW service. Credits: 1 per request.
+        minimum (10k) and maximum (1M). Credits: 1 per request.
 
         Args:
           filters: Filters to apply (required)
@@ -277,14 +277,14 @@ class AsyncRawReposResource(AsyncAPIResource):
     ) -> RawRepoRetrieveResponse:
         """Fetch GitHub repositories by their node IDs.
 
-        Supports batch requests (1-100
-        IDs). Requires RAW service. Credits: 1 per result returned + graph relationship
-        credits if includeAttributes is specified.
+        Returns a positional array matching
+        input order (null for unmatched IDs). Supports batch requests (1-100). Credits:
+        1 per non-null result + graph credits.
 
         Args:
           github_ids: Array of GitHub node IDs (1-100)
 
-          include_attributes: Optional graph relationships to include (owner, contributors, starrers)
+          include_attributes: Optional graph relationships and enrichment attributes
 
           extra_headers: Send extra headers
 
@@ -321,16 +321,16 @@ class AsyncRawReposResource(AsyncAPIResource):
         extra_body: Body | None = None,
         timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> RawRepoByFullnameResponse:
-        """Fetch GitHub repositories by their full names (owner/repo format).
+        """Fetch GitHub repositories by their full names (owner/repo).
 
-        Supports
-        batch requests (1-100 repos). Requires RAW service. Credits: 1 per result
-        returned.
+        Returns a positional
+        array matching input order (null for unmatched names). Supports batch requests
+        (1-100). Credits: 1 per non-null result + graph credits.
 
         Args:
           full_names: Array of repository full names in "owner/name" format (1-100)
 
-          include_attributes: Optional graph relationships to include (owner, contributors, starrers)
+          include_attributes: Optional graph relationships and enrichment attributes
 
           extra_headers: Send extra headers
 
@@ -369,7 +369,7 @@ class AsyncRawReposResource(AsyncAPIResource):
         """Count repositories in the database matching filters.
 
         Counts are capped at
-        minimum (10k) and maximum (1M). Requires RAW service. Credits: 1 per request.
+        minimum (10k) and maximum (1M). Credits: 1 per request.
 
         Args:
           filters: Filters to apply (required)

@@ -37,6 +37,7 @@ class TestSearchUsers:
             enable_pagination=True,
             first=50,
             include_attributes={
+                "aggregates": True,
                 "contributes": {
                     "first": 1,
                     "after": "after",
@@ -48,7 +49,7 @@ class TestSearchUsers:
                 },
                 "devrank": True,
                 "followers": {
-                    "first": 10,
+                    "first": 1,
                     "after": "after",
                     "filters": {
                         "field": "field",
@@ -76,7 +77,7 @@ class TestSearchUsers:
                 },
                 "professional": True,
                 "stars": {
-                    "first": 10,
+                    "first": 1,
                     "after": "after",
                     "filters": {
                         "field": "field",
@@ -137,6 +138,7 @@ class TestSearchUsers:
             },
             first=50,
             include_attributes={
+                "aggregates": True,
                 "contributes": {
                     "first": 1,
                     "after": "after",
@@ -148,7 +150,7 @@ class TestSearchUsers:
                 },
                 "devrank": True,
                 "followers": {
-                    "first": 10,
+                    "first": 1,
                     "after": "after",
                     "filters": {
                         "field": "field",
@@ -176,7 +178,7 @@ class TestSearchUsers:
                 },
                 "professional": True,
                 "stars": {
-                    "first": 10,
+                    "first": 1,
                     "after": "after",
                     "filters": {
                         "field": "field",
@@ -238,6 +240,7 @@ class TestAsyncSearchUsers:
             enable_pagination=True,
             first=50,
             include_attributes={
+                "aggregates": True,
                 "contributes": {
                     "first": 1,
                     "after": "after",
@@ -249,7 +252,7 @@ class TestAsyncSearchUsers:
                 },
                 "devrank": True,
                 "followers": {
-                    "first": 10,
+                    "first": 1,
                     "after": "after",
                     "filters": {
                         "field": "field",
@@ -277,7 +280,7 @@ class TestAsyncSearchUsers:
                 },
                 "professional": True,
                 "stars": {
-                    "first": 10,
+                    "first": 1,
                     "after": "after",
                     "filters": {
                         "field": "field",
@@ -338,6 +341,7 @@ class TestAsyncSearchUsers:
             },
             first=50,
             include_attributes={
+                "aggregates": True,
                 "contributes": {
                     "first": 1,
                     "after": "after",
@@ -349,7 +353,7 @@ class TestAsyncSearchUsers:
                 },
                 "devrank": True,
                 "followers": {
-                    "first": 10,
+                    "first": 1,
                     "after": "after",
                     "filters": {
                         "field": "field",
@@ -377,7 +381,7 @@ class TestAsyncSearchUsers:
                 },
                 "professional": True,
                 "stars": {
-                    "first": 10,
+                    "first": 1,
                     "after": "after",
                     "filters": {
                         "field": "field",

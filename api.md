@@ -5,6 +5,7 @@ Types:
 ```python
 from bountylab.types import (
     RawUserRetrieveResponse,
+    RawUserByLinkedinResponse,
     RawUserByLoginResponse,
     RawUserCountResponse,
     RawUserGraphResponse,
@@ -14,6 +15,7 @@ from bountylab.types import (
 Methods:
 
 - <code title="post /raw/users">client.raw_users.<a href="./src/bountylab/resources/raw_users.py">retrieve</a>(\*\*<a href="src/bountylab/types/raw_user_retrieve_params.py">params</a>) -> <a href="./src/bountylab/types/raw_user_retrieve_response.py">RawUserRetrieveResponse</a></code>
+- <code title="post /raw/users/by-linkedin">client.raw_users.<a href="./src/bountylab/resources/raw_users.py">by_linkedin</a>(\*\*<a href="src/bountylab/types/raw_user_by_linkedin_params.py">params</a>) -> <a href="./src/bountylab/types/raw_user_by_linkedin_response.py">RawUserByLinkedinResponse</a></code>
 - <code title="post /raw/users/by-login">client.raw_users.<a href="./src/bountylab/resources/raw_users.py">by_login</a>(\*\*<a href="src/bountylab/types/raw_user_by_login_params.py">params</a>) -> <a href="./src/bountylab/types/raw_user_by_login_response.py">RawUserByLoginResponse</a></code>
 - <code title="post /raw/users/count">client.raw_users.<a href="./src/bountylab/resources/raw_users.py">count</a>(\*\*<a href="src/bountylab/types/raw_user_count_params.py">params</a>) -> <a href="./src/bountylab/types/raw_user_count_response.py">RawUserCountResponse</a></code>
 - <code title="post /raw/users/{id}/graph/{relationship}">client.raw_users.<a href="./src/bountylab/resources/raw_users.py">graph</a>(relationship, \*, id, \*\*<a href="src/bountylab/types/raw_user_graph_params.py">params</a>) -> <a href="./src/bountylab/types/raw_user_graph_response.py">RawUserGraphResponse</a></code>

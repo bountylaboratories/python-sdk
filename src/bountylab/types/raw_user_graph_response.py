@@ -12,6 +12,7 @@ __all__ = [
     "FollowersResponse",
     "FollowersResponsePageInfo",
     "FollowersResponseUser",
+    "FollowersResponseUserAggregates",
     "FollowersResponseUserContributes",
     "FollowersResponseUserContributesEdge",
     "FollowersResponseUserContributesEdgeContributors",
@@ -79,6 +80,7 @@ __all__ = [
     "FollowingResponse",
     "FollowingResponsePageInfo",
     "FollowingResponseUser",
+    "FollowingResponseUserAggregates",
     "FollowingResponseUserContributes",
     "FollowingResponseUserContributesEdge",
     "FollowingResponseUserContributesEdgeContributors",
@@ -205,6 +207,13 @@ class FollowersResponsePageInfo(BaseModel):
 
     has_next_page: bool = FieldInfo(alias="hasNextPage")
     """Whether there are more items available"""
+
+
+class FollowersResponseUserAggregates(BaseModel):
+    """Aggregate metrics (only present when includeAttributes.aggregates = true)"""
+
+    total_stars: float = FieldInfo(alias="totalStars")
+    """Total stars received across all owned repositories"""
 
 
 class FollowersResponseUserContributesEdgeContributorsEdgeSocialAccount(BaseModel):
@@ -2007,6 +2016,9 @@ class FollowersResponseUser(BaseModel):
     login: str
     """GitHub username"""
 
+    aggregates: Optional[FollowersResponseUserAggregates] = None
+    """Aggregate metrics (only present when includeAttributes.aggregates = true)"""
+
     bio: Optional[str] = None
     """User biography"""
 
@@ -2084,7 +2096,7 @@ class FollowersResponse(BaseModel):
     page_info: FollowersResponsePageInfo = FieldInfo(alias="pageInfo")
     """Pagination information"""
 
-    users: List[FollowersResponseUser]
+    users: List[Optional[FollowersResponseUser]]
     """Array of users who follow this user (with optional graph relationships)"""
 
 
@@ -2096,6 +2108,13 @@ class FollowingResponsePageInfo(BaseModel):
 
     has_next_page: bool = FieldInfo(alias="hasNextPage")
     """Whether there are more items available"""
+
+
+class FollowingResponseUserAggregates(BaseModel):
+    """Aggregate metrics (only present when includeAttributes.aggregates = true)"""
+
+    total_stars: float = FieldInfo(alias="totalStars")
+    """Total stars received across all owned repositories"""
 
 
 class FollowingResponseUserContributesEdgeContributorsEdgeSocialAccount(BaseModel):
@@ -3898,6 +3917,9 @@ class FollowingResponseUser(BaseModel):
     login: str
     """GitHub username"""
 
+    aggregates: Optional[FollowingResponseUserAggregates] = None
+    """Aggregate metrics (only present when includeAttributes.aggregates = true)"""
+
     bio: Optional[str] = None
     """User biography"""
 
@@ -3975,7 +3997,7 @@ class FollowingResponse(BaseModel):
     page_info: FollowingResponsePageInfo = FieldInfo(alias="pageInfo")
     """Pagination information"""
 
-    users: List[FollowingResponseUser]
+    users: List[Optional[FollowingResponseUser]]
     """Array of users this user follows (with optional graph relationships)"""
 
 

@@ -9,6 +9,7 @@ from .._models import BaseModel
 __all__ = [
     "RawUserByLoginResponse",
     "User",
+    "UserAggregates",
     "UserContributes",
     "UserContributesEdge",
     "UserContributesEdgeContributors",
@@ -74,6 +75,13 @@ __all__ = [
     "UserStarsEdgeStarrersPageInfo",
     "UserStarsPageInfo",
 ]
+
+
+class UserAggregates(BaseModel):
+    """Aggregate metrics (only present when includeAttributes.aggregates = true)"""
+
+    total_stars: float = FieldInfo(alias="totalStars")
+    """Total stars received across all owned repositories"""
 
 
 class UserContributesEdgeContributorsEdgeSocialAccount(BaseModel):
@@ -1862,6 +1870,9 @@ class User(BaseModel):
     login: str
     """GitHub username"""
 
+    aggregates: Optional[UserAggregates] = None
+    """Aggregate metrics (only present when includeAttributes.aggregates = true)"""
+
     bio: Optional[str] = None
     """User biography"""
 
@@ -1935,7 +1946,7 @@ class User(BaseModel):
 
 class RawUserByLoginResponse(BaseModel):
     count: float
-    """Number of users returned"""
+    """Number of non-null users returned"""
 
-    users: List[User]
-    """Array of user objects"""
+    users: List[Optional[User]]
+    """Positional array of users (null for unmatched input entries)"""

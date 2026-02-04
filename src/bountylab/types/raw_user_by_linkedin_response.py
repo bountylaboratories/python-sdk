@@ -7,7 +7,7 @@ from pydantic import Field as FieldInfo
 from .._models import BaseModel
 
 __all__ = [
-    "SearchUserSearchResponse",
+    "RawUserByLinkedinResponse",
     "User",
     "UserAggregates",
     "UserContributes",
@@ -74,7 +74,6 @@ __all__ = [
     "UserStarsEdgeStarrersEdgeSocialAccount",
     "UserStarsEdgeStarrersPageInfo",
     "UserStarsPageInfo",
-    "PageInfo",
 ]
 
 
@@ -1945,22 +1944,9 @@ class User(BaseModel):
     """User website URL"""
 
 
-class PageInfo(BaseModel):
-    """Pagination information"""
-
-    end_cursor: Optional[str] = FieldInfo(alias="endCursor", default=None)
-    """Cursor to fetch next page (null if no more items)"""
-
-    has_next_page: bool = FieldInfo(alias="hasNextPage")
-    """Whether there are more items available"""
-
-
-class SearchUserSearchResponse(BaseModel):
+class RawUserByLinkedinResponse(BaseModel):
     count: float
-    """Number of users returned"""
+    """Number of non-null users returned"""
 
     users: List[Optional[User]]
-    """Array of user search results with relevance scores"""
-
-    page_info: Optional[PageInfo] = FieldInfo(alias="pageInfo", default=None)
-    """Pagination information"""
+    """Positional array of users (null for unmatched input entries)"""

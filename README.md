@@ -126,10 +126,7 @@ client = Bountylab()
 
 response = client.search_users.natural_language(
     query="Find machine learning engineers at Google who work on AI infrastructure",
-    include_attributes={
-        "followers": {"first": 10},
-        "stars": {"first": 10},
-    },
+    include_attributes={},
 )
 print(response.include_attributes)
 ```

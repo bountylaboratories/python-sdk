@@ -37,7 +37,7 @@ class TestRawRepos:
             github_ids=["MDEwOlJlcG9zaXRvcnkxMjk2MjY5", "MDEwOlJlcG9zaXRvcnkxMDI3"],
             include_attributes={
                 "contributors": {
-                    "first": 10,
+                    "first": 1,
                     "after": "after",
                     "filters": {
                         "field": "field",
@@ -102,7 +102,7 @@ class TestRawRepos:
             full_names=["octocat/Hello-World", "torvalds/linux"],
             include_attributes={
                 "contributors": {
-                    "first": 10,
+                    "first": 1,
                     "after": "after",
                     "filters": {
                         "field": "field",
@@ -216,6 +216,7 @@ class TestRawRepos:
             after="eyJvZmZzZXQiOjEwMH0=",
             first=100,
             include_attributes={
+                "aggregates": True,
                 "contributes": {
                     "first": 1,
                     "after": "after",
@@ -346,7 +347,7 @@ class TestAsyncRawRepos:
             github_ids=["MDEwOlJlcG9zaXRvcnkxMjk2MjY5", "MDEwOlJlcG9zaXRvcnkxMDI3"],
             include_attributes={
                 "contributors": {
-                    "first": 10,
+                    "first": 1,
                     "after": "after",
                     "filters": {
                         "field": "field",
@@ -411,7 +412,7 @@ class TestAsyncRawRepos:
             full_names=["octocat/Hello-World", "torvalds/linux"],
             include_attributes={
                 "contributors": {
-                    "first": 10,
+                    "first": 1,
                     "after": "after",
                     "filters": {
                         "field": "field",
@@ -525,6 +526,7 @@ class TestAsyncRawRepos:
             after="eyJvZmZzZXQiOjEwMH0=",
             first=100,
             include_attributes={
+                "aggregates": True,
                 "contributes": {
                     "first": 1,
                     "after": "after",

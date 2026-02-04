@@ -490,7 +490,7 @@ class Repository(BaseModel):
 
 class RawRepoByFullnameResponse(BaseModel):
     count: float
-    """Number of repositories returned"""
+    """Number of non-null repositories returned"""
 
     repositories: List[Repository]
-    """Array of repository objects"""
+    """Positional array of repositories (null for unmatched input entries)"""
