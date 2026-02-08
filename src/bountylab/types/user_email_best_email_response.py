@@ -1,6 +1,7 @@
 # File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
 from typing import List, Optional
+from typing_extensions import Literal
 
 from pydantic import Field as FieldInfo
 
@@ -20,7 +21,10 @@ class Result(BaseModel):
     """GitHub username"""
 
     other_candidates: List[str] = FieldInfo(alias="otherCandidates")
-    """Other email addresses that were not selected as the best email"""
+    """Deprecated. Always returns an empty array."""
+
+    profile: Optional[Literal["WORK", "PERSONAL"]] = None
+    """Whether the email is a work or personal address"""
 
 
 class UserEmailBestEmailResponse(BaseModel):
