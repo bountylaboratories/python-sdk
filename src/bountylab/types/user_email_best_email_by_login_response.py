@@ -23,7 +23,7 @@ class Result(BaseModel):
     other_candidates: List[str] = FieldInfo(alias="otherCandidates")
     """Deprecated. Always returns an empty array."""
 
-    profile: Optional[Literal["WORK", "PERSONAL"]] = None
+    profile: Optional[Literal["WORK", "PERSONAL", "SCHOOL"]] = None
     """Whether the email is a work or personal address"""
 
 
