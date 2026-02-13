@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.38.1 (2026-02-13)
+
+Full Changelog: [v0.38.0...v0.38.1](https://github.com/bountylaboratories/python-sdk/compare/v0.38.0...v0.38.1)
+
+### Chores
+
+* format all `api.md` files ([e8f0b63](https://github.com/bountylaboratories/python-sdk/commit/e8f0b63661d90fc9dbe36fb1e5eb21937283cd1e))
+* **internal:** bump dependencies ([8d866e9](https://github.com/bountylaboratories/python-sdk/commit/8d866e924bcfc8d15472dafb8878d6ba1d33306e))
+* **internal:** fix lint error on Python 3.14 ([9cfe445](https://github.com/bountylaboratories/python-sdk/commit/9cfe445476acdf9d80bbcb561780ac479155d5e9))
+
 ## 0.38.0 (2026-02-10)
 
 Full Changelog: [v0.37.0...v0.38.0](https://github.com/bountylaboratories/python-sdk/compare/v0.37.0...v0.38.0)
