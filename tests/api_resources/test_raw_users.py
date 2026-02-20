@@ -23,7 +23,7 @@ base_url = os.environ.get("TEST_API_BASE_URL", "http://127.0.0.1:4010")
 class TestRawUsers:
     parametrize = pytest.mark.parametrize("client", [False, True], indirect=True, ids=["loose", "strict"])
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     def test_method_retrieve(self, client: Bountylab) -> None:
         raw_user = client.raw_users.retrieve(
@@ -31,7 +31,7 @@ class TestRawUsers:
         )
         assert_matches_type(RawUserRetrieveResponse, raw_user, path=["response"])
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     def test_method_retrieve_with_all_params(self, client: Bountylab) -> None:
         raw_user = client.raw_users.retrieve(
@@ -89,7 +89,7 @@ class TestRawUsers:
         )
         assert_matches_type(RawUserRetrieveResponse, raw_user, path=["response"])
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     def test_raw_response_retrieve(self, client: Bountylab) -> None:
         response = client.raw_users.with_raw_response.retrieve(
@@ -101,7 +101,7 @@ class TestRawUsers:
         raw_user = response.parse()
         assert_matches_type(RawUserRetrieveResponse, raw_user, path=["response"])
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     def test_streaming_response_retrieve(self, client: Bountylab) -> None:
         with client.raw_users.with_streaming_response.retrieve(
@@ -115,7 +115,7 @@ class TestRawUsers:
 
         assert cast(Any, response.is_closed) is True
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     def test_method_by_linkedin(self, client: Bountylab) -> None:
         raw_user = client.raw_users.by_linkedin(
@@ -123,7 +123,7 @@ class TestRawUsers:
         )
         assert_matches_type(RawUserByLinkedinResponse, raw_user, path=["response"])
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     def test_method_by_linkedin_with_all_params(self, client: Bountylab) -> None:
         raw_user = client.raw_users.by_linkedin(
@@ -181,7 +181,7 @@ class TestRawUsers:
         )
         assert_matches_type(RawUserByLinkedinResponse, raw_user, path=["response"])
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     def test_raw_response_by_linkedin(self, client: Bountylab) -> None:
         response = client.raw_users.with_raw_response.by_linkedin(
@@ -193,7 +193,7 @@ class TestRawUsers:
         raw_user = response.parse()
         assert_matches_type(RawUserByLinkedinResponse, raw_user, path=["response"])
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     def test_streaming_response_by_linkedin(self, client: Bountylab) -> None:
         with client.raw_users.with_streaming_response.by_linkedin(
@@ -207,7 +207,7 @@ class TestRawUsers:
 
         assert cast(Any, response.is_closed) is True
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     def test_method_by_login(self, client: Bountylab) -> None:
         raw_user = client.raw_users.by_login(
@@ -215,7 +215,7 @@ class TestRawUsers:
         )
         assert_matches_type(RawUserByLoginResponse, raw_user, path=["response"])
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     def test_method_by_login_with_all_params(self, client: Bountylab) -> None:
         raw_user = client.raw_users.by_login(
@@ -273,7 +273,7 @@ class TestRawUsers:
         )
         assert_matches_type(RawUserByLoginResponse, raw_user, path=["response"])
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     def test_raw_response_by_login(self, client: Bountylab) -> None:
         response = client.raw_users.with_raw_response.by_login(
@@ -285,7 +285,7 @@ class TestRawUsers:
         raw_user = response.parse()
         assert_matches_type(RawUserByLoginResponse, raw_user, path=["response"])
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     def test_streaming_response_by_login(self, client: Bountylab) -> None:
         with client.raw_users.with_streaming_response.by_login(
@@ -299,7 +299,7 @@ class TestRawUsers:
 
         assert cast(Any, response.is_closed) is True
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     def test_method_count(self, client: Bountylab) -> None:
         raw_user = client.raw_users.count(
@@ -311,7 +311,7 @@ class TestRawUsers:
         )
         assert_matches_type(RawUserCountResponse, raw_user, path=["response"])
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     def test_raw_response_count(self, client: Bountylab) -> None:
         response = client.raw_users.with_raw_response.count(
@@ -327,7 +327,7 @@ class TestRawUsers:
         raw_user = response.parse()
         assert_matches_type(RawUserCountResponse, raw_user, path=["response"])
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     def test_streaming_response_count(self, client: Bountylab) -> None:
         with client.raw_users.with_streaming_response.count(
@@ -345,7 +345,7 @@ class TestRawUsers:
 
         assert cast(Any, response.is_closed) is True
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     def test_method_graph(self, client: Bountylab) -> None:
         raw_user = client.raw_users.graph(
@@ -354,7 +354,7 @@ class TestRawUsers:
         )
         assert_matches_type(RawUserGraphResponse, raw_user, path=["response"])
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     def test_method_graph_with_all_params(self, client: Bountylab) -> None:
         raw_user = client.raw_users.graph(
@@ -436,7 +436,7 @@ class TestRawUsers:
         )
         assert_matches_type(RawUserGraphResponse, raw_user, path=["response"])
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     def test_raw_response_graph(self, client: Bountylab) -> None:
         response = client.raw_users.with_raw_response.graph(
@@ -449,7 +449,7 @@ class TestRawUsers:
         raw_user = response.parse()
         assert_matches_type(RawUserGraphResponse, raw_user, path=["response"])
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     def test_streaming_response_graph(self, client: Bountylab) -> None:
         with client.raw_users.with_streaming_response.graph(
@@ -464,7 +464,7 @@ class TestRawUsers:
 
         assert cast(Any, response.is_closed) is True
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     def test_path_params_graph(self, client: Bountylab) -> None:
         with pytest.raises(ValueError, match=r"Expected a non-empty value for `id` but received ''"):
@@ -479,7 +479,7 @@ class TestAsyncRawUsers:
         "async_client", [False, True, {"http_client": "aiohttp"}], indirect=True, ids=["loose", "strict", "aiohttp"]
     )
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     async def test_method_retrieve(self, async_client: AsyncBountylab) -> None:
         raw_user = await async_client.raw_users.retrieve(
@@ -487,7 +487,7 @@ class TestAsyncRawUsers:
         )
         assert_matches_type(RawUserRetrieveResponse, raw_user, path=["response"])
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     async def test_method_retrieve_with_all_params(self, async_client: AsyncBountylab) -> None:
         raw_user = await async_client.raw_users.retrieve(
@@ -545,7 +545,7 @@ class TestAsyncRawUsers:
         )
         assert_matches_type(RawUserRetrieveResponse, raw_user, path=["response"])
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     async def test_raw_response_retrieve(self, async_client: AsyncBountylab) -> None:
         response = await async_client.raw_users.with_raw_response.retrieve(
@@ -557,7 +557,7 @@ class TestAsyncRawUsers:
         raw_user = await response.parse()
         assert_matches_type(RawUserRetrieveResponse, raw_user, path=["response"])
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     async def test_streaming_response_retrieve(self, async_client: AsyncBountylab) -> None:
         async with async_client.raw_users.with_streaming_response.retrieve(
@@ -571,7 +571,7 @@ class TestAsyncRawUsers:
 
         assert cast(Any, response.is_closed) is True
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     async def test_method_by_linkedin(self, async_client: AsyncBountylab) -> None:
         raw_user = await async_client.raw_users.by_linkedin(
@@ -579,7 +579,7 @@ class TestAsyncRawUsers:
         )
         assert_matches_type(RawUserByLinkedinResponse, raw_user, path=["response"])
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     async def test_method_by_linkedin_with_all_params(self, async_client: AsyncBountylab) -> None:
         raw_user = await async_client.raw_users.by_linkedin(
@@ -637,7 +637,7 @@ class TestAsyncRawUsers:
         )
         assert_matches_type(RawUserByLinkedinResponse, raw_user, path=["response"])
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     async def test_raw_response_by_linkedin(self, async_client: AsyncBountylab) -> None:
         response = await async_client.raw_users.with_raw_response.by_linkedin(
@@ -649,7 +649,7 @@ class TestAsyncRawUsers:
         raw_user = await response.parse()
         assert_matches_type(RawUserByLinkedinResponse, raw_user, path=["response"])
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     async def test_streaming_response_by_linkedin(self, async_client: AsyncBountylab) -> None:
         async with async_client.raw_users.with_streaming_response.by_linkedin(
@@ -663,7 +663,7 @@ class TestAsyncRawUsers:
 
         assert cast(Any, response.is_closed) is True
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     async def test_method_by_login(self, async_client: AsyncBountylab) -> None:
         raw_user = await async_client.raw_users.by_login(
@@ -671,7 +671,7 @@ class TestAsyncRawUsers:
         )
         assert_matches_type(RawUserByLoginResponse, raw_user, path=["response"])
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     async def test_method_by_login_with_all_params(self, async_client: AsyncBountylab) -> None:
         raw_user = await async_client.raw_users.by_login(
@@ -729,7 +729,7 @@ class TestAsyncRawUsers:
         )
         assert_matches_type(RawUserByLoginResponse, raw_user, path=["response"])
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     async def test_raw_response_by_login(self, async_client: AsyncBountylab) -> None:
         response = await async_client.raw_users.with_raw_response.by_login(
@@ -741,7 +741,7 @@ class TestAsyncRawUsers:
         raw_user = await response.parse()
         assert_matches_type(RawUserByLoginResponse, raw_user, path=["response"])
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     async def test_streaming_response_by_login(self, async_client: AsyncBountylab) -> None:
         async with async_client.raw_users.with_streaming_response.by_login(
@@ -755,7 +755,7 @@ class TestAsyncRawUsers:
 
         assert cast(Any, response.is_closed) is True
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     async def test_method_count(self, async_client: AsyncBountylab) -> None:
         raw_user = await async_client.raw_users.count(
@@ -767,7 +767,7 @@ class TestAsyncRawUsers:
         )
         assert_matches_type(RawUserCountResponse, raw_user, path=["response"])
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     async def test_raw_response_count(self, async_client: AsyncBountylab) -> None:
         response = await async_client.raw_users.with_raw_response.count(
@@ -783,7 +783,7 @@ class TestAsyncRawUsers:
         raw_user = await response.parse()
         assert_matches_type(RawUserCountResponse, raw_user, path=["response"])
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     async def test_streaming_response_count(self, async_client: AsyncBountylab) -> None:
         async with async_client.raw_users.with_streaming_response.count(
@@ -801,7 +801,7 @@ class TestAsyncRawUsers:
 
         assert cast(Any, response.is_closed) is True
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     async def test_method_graph(self, async_client: AsyncBountylab) -> None:
         raw_user = await async_client.raw_users.graph(
@@ -810,7 +810,7 @@ class TestAsyncRawUsers:
         )
         assert_matches_type(RawUserGraphResponse, raw_user, path=["response"])
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     async def test_method_graph_with_all_params(self, async_client: AsyncBountylab) -> None:
         raw_user = await async_client.raw_users.graph(
@@ -892,7 +892,7 @@ class TestAsyncRawUsers:
         )
         assert_matches_type(RawUserGraphResponse, raw_user, path=["response"])
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     async def test_raw_response_graph(self, async_client: AsyncBountylab) -> None:
         response = await async_client.raw_users.with_raw_response.graph(
@@ -905,7 +905,7 @@ class TestAsyncRawUsers:
         raw_user = await response.parse()
         assert_matches_type(RawUserGraphResponse, raw_user, path=["response"])
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     async def test_streaming_response_graph(self, async_client: AsyncBountylab) -> None:
         async with async_client.raw_users.with_streaming_response.graph(
@@ -920,7 +920,7 @@ class TestAsyncRawUsers:
 
         assert cast(Any, response.is_closed) is True
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     async def test_path_params_graph(self, async_client: AsyncBountylab) -> None:
         with pytest.raises(ValueError, match=r"Expected a non-empty value for `id` but received ''"):

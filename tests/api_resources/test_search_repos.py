@@ -20,7 +20,7 @@ base_url = os.environ.get("TEST_API_BASE_URL", "http://127.0.0.1:4010")
 class TestSearchRepos:
     parametrize = pytest.mark.parametrize("client", [False, True], indirect=True, ids=["loose", "strict"])
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     def test_method_natural_language(self, client: Bountylab) -> None:
         search_repo = client.search_repos.natural_language(
@@ -28,7 +28,7 @@ class TestSearchRepos:
         )
         assert_matches_type(SearchRepoNaturalLanguageResponse, search_repo, path=["response"])
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     def test_method_natural_language_with_all_params(self, client: Bountylab) -> None:
         search_repo = client.search_repos.natural_language(
@@ -69,7 +69,7 @@ class TestSearchRepos:
         )
         assert_matches_type(SearchRepoNaturalLanguageResponse, search_repo, path=["response"])
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     def test_raw_response_natural_language(self, client: Bountylab) -> None:
         response = client.search_repos.with_raw_response.natural_language(
@@ -81,7 +81,7 @@ class TestSearchRepos:
         search_repo = response.parse()
         assert_matches_type(SearchRepoNaturalLanguageResponse, search_repo, path=["response"])
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     def test_streaming_response_natural_language(self, client: Bountylab) -> None:
         with client.search_repos.with_streaming_response.natural_language(
@@ -95,7 +95,7 @@ class TestSearchRepos:
 
         assert cast(Any, response.is_closed) is True
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     def test_method_search(self, client: Bountylab) -> None:
         search_repo = client.search_repos.search(
@@ -103,7 +103,7 @@ class TestSearchRepos:
         )
         assert_matches_type(SearchRepoSearchResponse, search_repo, path=["response"])
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     def test_method_search_with_all_params(self, client: Bountylab) -> None:
         search_repo = client.search_repos.search(
@@ -148,7 +148,7 @@ class TestSearchRepos:
         )
         assert_matches_type(SearchRepoSearchResponse, search_repo, path=["response"])
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     def test_raw_response_search(self, client: Bountylab) -> None:
         response = client.search_repos.with_raw_response.search(
@@ -160,7 +160,7 @@ class TestSearchRepos:
         search_repo = response.parse()
         assert_matches_type(SearchRepoSearchResponse, search_repo, path=["response"])
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     def test_streaming_response_search(self, client: Bountylab) -> None:
         with client.search_repos.with_streaming_response.search(
@@ -180,7 +180,7 @@ class TestAsyncSearchRepos:
         "async_client", [False, True, {"http_client": "aiohttp"}], indirect=True, ids=["loose", "strict", "aiohttp"]
     )
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     async def test_method_natural_language(self, async_client: AsyncBountylab) -> None:
         search_repo = await async_client.search_repos.natural_language(
@@ -188,7 +188,7 @@ class TestAsyncSearchRepos:
         )
         assert_matches_type(SearchRepoNaturalLanguageResponse, search_repo, path=["response"])
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     async def test_method_natural_language_with_all_params(self, async_client: AsyncBountylab) -> None:
         search_repo = await async_client.search_repos.natural_language(
@@ -229,7 +229,7 @@ class TestAsyncSearchRepos:
         )
         assert_matches_type(SearchRepoNaturalLanguageResponse, search_repo, path=["response"])
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     async def test_raw_response_natural_language(self, async_client: AsyncBountylab) -> None:
         response = await async_client.search_repos.with_raw_response.natural_language(
@@ -241,7 +241,7 @@ class TestAsyncSearchRepos:
         search_repo = await response.parse()
         assert_matches_type(SearchRepoNaturalLanguageResponse, search_repo, path=["response"])
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     async def test_streaming_response_natural_language(self, async_client: AsyncBountylab) -> None:
         async with async_client.search_repos.with_streaming_response.natural_language(
@@ -255,7 +255,7 @@ class TestAsyncSearchRepos:
 
         assert cast(Any, response.is_closed) is True
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     async def test_method_search(self, async_client: AsyncBountylab) -> None:
         search_repo = await async_client.search_repos.search(
@@ -263,7 +263,7 @@ class TestAsyncSearchRepos:
         )
         assert_matches_type(SearchRepoSearchResponse, search_repo, path=["response"])
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     async def test_method_search_with_all_params(self, async_client: AsyncBountylab) -> None:
         search_repo = await async_client.search_repos.search(
@@ -308,7 +308,7 @@ class TestAsyncSearchRepos:
         )
         assert_matches_type(SearchRepoSearchResponse, search_repo, path=["response"])
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     async def test_raw_response_search(self, async_client: AsyncBountylab) -> None:
         response = await async_client.search_repos.with_raw_response.search(
@@ -320,7 +320,7 @@ class TestAsyncSearchRepos:
         search_repo = await response.parse()
         assert_matches_type(SearchRepoSearchResponse, search_repo, path=["response"])
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     async def test_streaming_response_search(self, async_client: AsyncBountylab) -> None:
         async with async_client.search_repos.with_streaming_response.search(
