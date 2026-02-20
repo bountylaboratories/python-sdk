@@ -21,7 +21,7 @@ base_url = os.environ.get("TEST_API_BASE_URL", "http://127.0.0.1:4010")
 class TestUserEmails:
     parametrize = pytest.mark.parametrize("client", [False, True], indirect=True, ids=["loose", "strict"])
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     def test_method_best_email(self, client: Bountylab) -> None:
         user_email = client.user_emails.best_email(
@@ -29,7 +29,7 @@ class TestUserEmails:
         )
         assert_matches_type(UserEmailBestEmailResponse, user_email, path=["response"])
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     def test_method_best_email_with_all_params(self, client: Bountylab) -> None:
         user_email = client.user_emails.best_email(
@@ -44,7 +44,7 @@ class TestUserEmails:
         )
         assert_matches_type(UserEmailBestEmailResponse, user_email, path=["response"])
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     def test_raw_response_best_email(self, client: Bountylab) -> None:
         response = client.user_emails.with_raw_response.best_email(
@@ -56,7 +56,7 @@ class TestUserEmails:
         user_email = response.parse()
         assert_matches_type(UserEmailBestEmailResponse, user_email, path=["response"])
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     def test_streaming_response_best_email(self, client: Bountylab) -> None:
         with client.user_emails.with_streaming_response.best_email(
@@ -70,7 +70,7 @@ class TestUserEmails:
 
         assert cast(Any, response.is_closed) is True
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     def test_method_best_email_by_login(self, client: Bountylab) -> None:
         user_email = client.user_emails.best_email_by_login(
@@ -78,7 +78,7 @@ class TestUserEmails:
         )
         assert_matches_type(UserEmailBestEmailByLoginResponse, user_email, path=["response"])
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     def test_method_best_email_by_login_with_all_params(self, client: Bountylab) -> None:
         user_email = client.user_emails.best_email_by_login(
@@ -93,7 +93,7 @@ class TestUserEmails:
         )
         assert_matches_type(UserEmailBestEmailByLoginResponse, user_email, path=["response"])
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     def test_raw_response_best_email_by_login(self, client: Bountylab) -> None:
         response = client.user_emails.with_raw_response.best_email_by_login(
@@ -105,7 +105,7 @@ class TestUserEmails:
         user_email = response.parse()
         assert_matches_type(UserEmailBestEmailByLoginResponse, user_email, path=["response"])
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     def test_streaming_response_best_email_by_login(self, client: Bountylab) -> None:
         with client.user_emails.with_streaming_response.best_email_by_login(
@@ -119,7 +119,7 @@ class TestUserEmails:
 
         assert cast(Any, response.is_closed) is True
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     def test_method_reply_signal(self, client: Bountylab) -> None:
         user_email = client.user_emails.reply_signal(
@@ -127,7 +127,7 @@ class TestUserEmails:
         )
         assert_matches_type(UserEmailReplySignalResponse, user_email, path=["response"])
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     def test_method_reply_signal_with_all_params(self, client: Bountylab) -> None:
         user_email = client.user_emails.reply_signal(
@@ -136,7 +136,7 @@ class TestUserEmails:
         )
         assert_matches_type(UserEmailReplySignalResponse, user_email, path=["response"])
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     def test_raw_response_reply_signal(self, client: Bountylab) -> None:
         response = client.user_emails.with_raw_response.reply_signal(
@@ -148,7 +148,7 @@ class TestUserEmails:
         user_email = response.parse()
         assert_matches_type(UserEmailReplySignalResponse, user_email, path=["response"])
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     def test_streaming_response_reply_signal(self, client: Bountylab) -> None:
         with client.user_emails.with_streaming_response.reply_signal(
@@ -168,7 +168,7 @@ class TestAsyncUserEmails:
         "async_client", [False, True, {"http_client": "aiohttp"}], indirect=True, ids=["loose", "strict", "aiohttp"]
     )
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     async def test_method_best_email(self, async_client: AsyncBountylab) -> None:
         user_email = await async_client.user_emails.best_email(
@@ -176,7 +176,7 @@ class TestAsyncUserEmails:
         )
         assert_matches_type(UserEmailBestEmailResponse, user_email, path=["response"])
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     async def test_method_best_email_with_all_params(self, async_client: AsyncBountylab) -> None:
         user_email = await async_client.user_emails.best_email(
@@ -191,7 +191,7 @@ class TestAsyncUserEmails:
         )
         assert_matches_type(UserEmailBestEmailResponse, user_email, path=["response"])
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     async def test_raw_response_best_email(self, async_client: AsyncBountylab) -> None:
         response = await async_client.user_emails.with_raw_response.best_email(
@@ -203,7 +203,7 @@ class TestAsyncUserEmails:
         user_email = await response.parse()
         assert_matches_type(UserEmailBestEmailResponse, user_email, path=["response"])
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     async def test_streaming_response_best_email(self, async_client: AsyncBountylab) -> None:
         async with async_client.user_emails.with_streaming_response.best_email(
@@ -217,7 +217,7 @@ class TestAsyncUserEmails:
 
         assert cast(Any, response.is_closed) is True
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     async def test_method_best_email_by_login(self, async_client: AsyncBountylab) -> None:
         user_email = await async_client.user_emails.best_email_by_login(
@@ -225,7 +225,7 @@ class TestAsyncUserEmails:
         )
         assert_matches_type(UserEmailBestEmailByLoginResponse, user_email, path=["response"])
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     async def test_method_best_email_by_login_with_all_params(self, async_client: AsyncBountylab) -> None:
         user_email = await async_client.user_emails.best_email_by_login(
@@ -240,7 +240,7 @@ class TestAsyncUserEmails:
         )
         assert_matches_type(UserEmailBestEmailByLoginResponse, user_email, path=["response"])
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     async def test_raw_response_best_email_by_login(self, async_client: AsyncBountylab) -> None:
         response = await async_client.user_emails.with_raw_response.best_email_by_login(
@@ -252,7 +252,7 @@ class TestAsyncUserEmails:
         user_email = await response.parse()
         assert_matches_type(UserEmailBestEmailByLoginResponse, user_email, path=["response"])
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     async def test_streaming_response_best_email_by_login(self, async_client: AsyncBountylab) -> None:
         async with async_client.user_emails.with_streaming_response.best_email_by_login(
@@ -266,7 +266,7 @@ class TestAsyncUserEmails:
 
         assert cast(Any, response.is_closed) is True
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     async def test_method_reply_signal(self, async_client: AsyncBountylab) -> None:
         user_email = await async_client.user_emails.reply_signal(
@@ -274,7 +274,7 @@ class TestAsyncUserEmails:
         )
         assert_matches_type(UserEmailReplySignalResponse, user_email, path=["response"])
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     async def test_method_reply_signal_with_all_params(self, async_client: AsyncBountylab) -> None:
         user_email = await async_client.user_emails.reply_signal(
@@ -283,7 +283,7 @@ class TestAsyncUserEmails:
         )
         assert_matches_type(UserEmailReplySignalResponse, user_email, path=["response"])
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     async def test_raw_response_reply_signal(self, async_client: AsyncBountylab) -> None:
         response = await async_client.user_emails.with_raw_response.reply_signal(
@@ -295,7 +295,7 @@ class TestAsyncUserEmails:
         user_email = await response.parse()
         assert_matches_type(UserEmailReplySignalResponse, user_email, path=["response"])
 
-    @pytest.mark.skip(reason="Prism tests are disabled")
+    @pytest.mark.skip(reason="Mock server tests are disabled")
     @parametrize
     async def test_streaming_response_reply_signal(self, async_client: AsyncBountylab) -> None:
         async with async_client.user_emails.with_streaming_response.reply_signal(
