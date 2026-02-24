@@ -1,5 +1,24 @@
 # Changelog
 
+## 0.39.0 (2026-02-24)
+
+Full Changelog: [v0.38.0...v0.39.0](https://github.com/bountylaboratories/python-sdk/compare/v0.38.0...v0.39.0)
+
+### Features
+
+* **api:** api update ([67d13a1](https://github.com/bountylaboratories/python-sdk/commit/67d13a1883b339c619b5f82aa2b1eff200cdb94a))
+
+
+### Chores
+
+* format all `api.md` files ([e8f0b63](https://github.com/bountylaboratories/python-sdk/commit/e8f0b63661d90fc9dbe36fb1e5eb21937283cd1e))
+* **internal:** add request options to SSE classes ([86045f7](https://github.com/bountylaboratories/python-sdk/commit/86045f7cfe01db0ef6af5783c28599a11cc39d33))
+* **internal:** bump dependencies ([8d866e9](https://github.com/bountylaboratories/python-sdk/commit/8d866e924bcfc8d15472dafb8878d6ba1d33306e))
+* **internal:** fix lint error on Python 3.14 ([9cfe445](https://github.com/bountylaboratories/python-sdk/commit/9cfe445476acdf9d80bbcb561780ac479155d5e9))
+* **internal:** make `test_proxy_environment_variables` more resilient ([046e68d](https://github.com/bountylaboratories/python-sdk/commit/046e68d5d8a7a5bea245710d1cca9f34065a25b6))
+* **internal:** remove mock server code ([cff7202](https://github.com/bountylaboratories/python-sdk/commit/cff7202a8c0795ec77ccf62ce1ad8f267cf4d9e0))
+* update mock server docs ([e7817e8](https://github.com/bountylaboratories/python-sdk/commit/e7817e888a4020c8c5d9e569ee9729bce74ee150))
+
 ## 0.38.0 (2026-02-10)
 
 Full Changelog: [v0.37.0...v0.38.0](https://github.com/bountylaboratories/python-sdk/compare/v0.37.0...v0.38.0)
