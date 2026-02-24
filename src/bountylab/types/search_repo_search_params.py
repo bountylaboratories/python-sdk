@@ -1364,7 +1364,7 @@ class IncludeAttributes(TypedDict, total=False):
 
 
 class RankByAttr(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -1376,7 +1376,7 @@ class RankByConst(TypedDict, total=False):
 
 
 class RankBySumExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -1388,7 +1388,7 @@ class RankBySumExprUnionMember1(TypedDict, total=False):
 
 
 class RankBySumExprUnionMember2ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -1400,7 +1400,7 @@ class RankBySumExprUnionMember2ExprUnionMember1(TypedDict, total=False):
 
 
 class RankBySumExprUnionMember2ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -1435,7 +1435,7 @@ class RankBySumExprUnionMember2ExprUnionMember4(TypedDict, total=False):
 
 
 class RankBySumExprUnionMember2ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -1458,7 +1458,7 @@ class RankBySumExprUnionMember2ExprUnionMember5(TypedDict, total=False):
 
 
 class RankBySumExprUnionMember2ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -1481,7 +1481,7 @@ class RankBySumExprUnionMember2ExprUnionMember6(TypedDict, total=False):
 
 
 class RankBySumExprUnionMember2ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -1506,7 +1506,7 @@ class RankBySumExprUnionMember2ExprUnionMember7(TypedDict, total=False):
 
 
 class RankBySumExprUnionMember2ExprUnionMember8ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -1564,7 +1564,7 @@ class RankBySumExprUnionMember4(TypedDict, total=False):
 
 
 class RankBySumExprUnionMember5ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -1576,7 +1576,7 @@ class RankBySumExprUnionMember5ExprUnionMember1(TypedDict, total=False):
 
 
 class RankBySumExprUnionMember5ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -1611,7 +1611,7 @@ class RankBySumExprUnionMember5ExprUnionMember4(TypedDict, total=False):
 
 
 class RankBySumExprUnionMember5ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -1634,7 +1634,7 @@ class RankBySumExprUnionMember5ExprUnionMember5(TypedDict, total=False):
 
 
 class RankBySumExprUnionMember5ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -1657,7 +1657,7 @@ class RankBySumExprUnionMember5ExprUnionMember6(TypedDict, total=False):
 
 
 class RankBySumExprUnionMember5ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -1682,7 +1682,7 @@ class RankBySumExprUnionMember5ExprUnionMember7(TypedDict, total=False):
 
 
 class RankBySumExprUnionMember5ExprUnionMember8ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -1728,7 +1728,7 @@ class RankBySumExprUnionMember5(TypedDict, total=False):
 
 
 class RankBySumExprUnionMember6ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -1740,7 +1740,7 @@ class RankBySumExprUnionMember6ExprUnionMember1(TypedDict, total=False):
 
 
 class RankBySumExprUnionMember6ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -1775,7 +1775,7 @@ class RankBySumExprUnionMember6ExprUnionMember4(TypedDict, total=False):
 
 
 class RankBySumExprUnionMember6ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -1798,7 +1798,7 @@ class RankBySumExprUnionMember6ExprUnionMember5(TypedDict, total=False):
 
 
 class RankBySumExprUnionMember6ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -1821,7 +1821,7 @@ class RankBySumExprUnionMember6ExprUnionMember6(TypedDict, total=False):
 
 
 class RankBySumExprUnionMember6ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -1846,7 +1846,7 @@ class RankBySumExprUnionMember6ExprUnionMember7(TypedDict, total=False):
 
 
 class RankBySumExprUnionMember6ExprUnionMember8ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -1892,7 +1892,7 @@ class RankBySumExprUnionMember6(TypedDict, total=False):
 
 
 class RankBySumExprUnionMember7ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -1904,7 +1904,7 @@ class RankBySumExprUnionMember7ExprUnionMember1(TypedDict, total=False):
 
 
 class RankBySumExprUnionMember7ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -1939,7 +1939,7 @@ class RankBySumExprUnionMember7ExprUnionMember4(TypedDict, total=False):
 
 
 class RankBySumExprUnionMember7ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -1962,7 +1962,7 @@ class RankBySumExprUnionMember7ExprUnionMember5(TypedDict, total=False):
 
 
 class RankBySumExprUnionMember7ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -1985,7 +1985,7 @@ class RankBySumExprUnionMember7ExprUnionMember6(TypedDict, total=False):
 
 
 class RankBySumExprUnionMember7ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -2010,7 +2010,7 @@ class RankBySumExprUnionMember7ExprUnionMember7(TypedDict, total=False):
 
 
 class RankBySumExprUnionMember7ExprUnionMember8ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -2058,7 +2058,7 @@ class RankBySumExprUnionMember7(TypedDict, total=False):
 
 
 class RankBySumExprUnionMember8ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -2070,7 +2070,7 @@ class RankBySumExprUnionMember8ExprUnionMember1(TypedDict, total=False):
 
 
 class RankBySumExprUnionMember8ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -2105,7 +2105,7 @@ class RankBySumExprUnionMember8ExprUnionMember4(TypedDict, total=False):
 
 
 class RankBySumExprUnionMember8ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -2128,7 +2128,7 @@ class RankBySumExprUnionMember8ExprUnionMember5(TypedDict, total=False):
 
 
 class RankBySumExprUnionMember8ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -2151,7 +2151,7 @@ class RankBySumExprUnionMember8ExprUnionMember6(TypedDict, total=False):
 
 
 class RankBySumExprUnionMember8ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -2176,7 +2176,7 @@ class RankBySumExprUnionMember8ExprUnionMember7(TypedDict, total=False):
 
 
 class RankBySumExprUnionMember8ExprUnionMember8ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -2257,7 +2257,7 @@ class RankByDiv(TypedDict, total=False):
 
 
 class RankByMaxExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -2269,7 +2269,7 @@ class RankByMaxExprUnionMember1(TypedDict, total=False):
 
 
 class RankByMaxExprUnionMember2ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -2281,7 +2281,7 @@ class RankByMaxExprUnionMember2ExprUnionMember1(TypedDict, total=False):
 
 
 class RankByMaxExprUnionMember2ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -2316,7 +2316,7 @@ class RankByMaxExprUnionMember2ExprUnionMember4(TypedDict, total=False):
 
 
 class RankByMaxExprUnionMember2ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -2339,7 +2339,7 @@ class RankByMaxExprUnionMember2ExprUnionMember5(TypedDict, total=False):
 
 
 class RankByMaxExprUnionMember2ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -2362,7 +2362,7 @@ class RankByMaxExprUnionMember2ExprUnionMember6(TypedDict, total=False):
 
 
 class RankByMaxExprUnionMember2ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -2387,7 +2387,7 @@ class RankByMaxExprUnionMember2ExprUnionMember7(TypedDict, total=False):
 
 
 class RankByMaxExprUnionMember2ExprUnionMember8ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -2445,7 +2445,7 @@ class RankByMaxExprUnionMember4(TypedDict, total=False):
 
 
 class RankByMaxExprUnionMember5ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -2457,7 +2457,7 @@ class RankByMaxExprUnionMember5ExprUnionMember1(TypedDict, total=False):
 
 
 class RankByMaxExprUnionMember5ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -2492,7 +2492,7 @@ class RankByMaxExprUnionMember5ExprUnionMember4(TypedDict, total=False):
 
 
 class RankByMaxExprUnionMember5ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -2515,7 +2515,7 @@ class RankByMaxExprUnionMember5ExprUnionMember5(TypedDict, total=False):
 
 
 class RankByMaxExprUnionMember5ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -2538,7 +2538,7 @@ class RankByMaxExprUnionMember5ExprUnionMember6(TypedDict, total=False):
 
 
 class RankByMaxExprUnionMember5ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -2563,7 +2563,7 @@ class RankByMaxExprUnionMember5ExprUnionMember7(TypedDict, total=False):
 
 
 class RankByMaxExprUnionMember5ExprUnionMember8ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -2609,7 +2609,7 @@ class RankByMaxExprUnionMember5(TypedDict, total=False):
 
 
 class RankByMaxExprUnionMember6ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -2621,7 +2621,7 @@ class RankByMaxExprUnionMember6ExprUnionMember1(TypedDict, total=False):
 
 
 class RankByMaxExprUnionMember6ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -2656,7 +2656,7 @@ class RankByMaxExprUnionMember6ExprUnionMember4(TypedDict, total=False):
 
 
 class RankByMaxExprUnionMember6ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -2679,7 +2679,7 @@ class RankByMaxExprUnionMember6ExprUnionMember5(TypedDict, total=False):
 
 
 class RankByMaxExprUnionMember6ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -2702,7 +2702,7 @@ class RankByMaxExprUnionMember6ExprUnionMember6(TypedDict, total=False):
 
 
 class RankByMaxExprUnionMember6ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -2727,7 +2727,7 @@ class RankByMaxExprUnionMember6ExprUnionMember7(TypedDict, total=False):
 
 
 class RankByMaxExprUnionMember6ExprUnionMember8ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -2773,7 +2773,7 @@ class RankByMaxExprUnionMember6(TypedDict, total=False):
 
 
 class RankByMaxExprUnionMember7ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -2785,7 +2785,7 @@ class RankByMaxExprUnionMember7ExprUnionMember1(TypedDict, total=False):
 
 
 class RankByMaxExprUnionMember7ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -2820,7 +2820,7 @@ class RankByMaxExprUnionMember7ExprUnionMember4(TypedDict, total=False):
 
 
 class RankByMaxExprUnionMember7ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -2843,7 +2843,7 @@ class RankByMaxExprUnionMember7ExprUnionMember5(TypedDict, total=False):
 
 
 class RankByMaxExprUnionMember7ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -2866,7 +2866,7 @@ class RankByMaxExprUnionMember7ExprUnionMember6(TypedDict, total=False):
 
 
 class RankByMaxExprUnionMember7ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -2891,7 +2891,7 @@ class RankByMaxExprUnionMember7ExprUnionMember7(TypedDict, total=False):
 
 
 class RankByMaxExprUnionMember7ExprUnionMember8ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -2939,7 +2939,7 @@ class RankByMaxExprUnionMember7(TypedDict, total=False):
 
 
 class RankByMaxExprUnionMember8ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -2951,7 +2951,7 @@ class RankByMaxExprUnionMember8ExprUnionMember1(TypedDict, total=False):
 
 
 class RankByMaxExprUnionMember8ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -2986,7 +2986,7 @@ class RankByMaxExprUnionMember8ExprUnionMember4(TypedDict, total=False):
 
 
 class RankByMaxExprUnionMember8ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -3009,7 +3009,7 @@ class RankByMaxExprUnionMember8ExprUnionMember5(TypedDict, total=False):
 
 
 class RankByMaxExprUnionMember8ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -3032,7 +3032,7 @@ class RankByMaxExprUnionMember8ExprUnionMember6(TypedDict, total=False):
 
 
 class RankByMaxExprUnionMember8ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -3057,7 +3057,7 @@ class RankByMaxExprUnionMember8ExprUnionMember7(TypedDict, total=False):
 
 
 class RankByMaxExprUnionMember8ExprUnionMember8ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -3126,7 +3126,7 @@ class RankByMax(TypedDict, total=False):
 
 
 class RankByMinExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -3138,7 +3138,7 @@ class RankByMinExprUnionMember1(TypedDict, total=False):
 
 
 class RankByMinExprUnionMember2ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -3150,7 +3150,7 @@ class RankByMinExprUnionMember2ExprUnionMember1(TypedDict, total=False):
 
 
 class RankByMinExprUnionMember2ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -3185,7 +3185,7 @@ class RankByMinExprUnionMember2ExprUnionMember4(TypedDict, total=False):
 
 
 class RankByMinExprUnionMember2ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -3208,7 +3208,7 @@ class RankByMinExprUnionMember2ExprUnionMember5(TypedDict, total=False):
 
 
 class RankByMinExprUnionMember2ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -3231,7 +3231,7 @@ class RankByMinExprUnionMember2ExprUnionMember6(TypedDict, total=False):
 
 
 class RankByMinExprUnionMember2ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -3256,7 +3256,7 @@ class RankByMinExprUnionMember2ExprUnionMember7(TypedDict, total=False):
 
 
 class RankByMinExprUnionMember2ExprUnionMember8ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -3314,7 +3314,7 @@ class RankByMinExprUnionMember4(TypedDict, total=False):
 
 
 class RankByMinExprUnionMember5ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -3326,7 +3326,7 @@ class RankByMinExprUnionMember5ExprUnionMember1(TypedDict, total=False):
 
 
 class RankByMinExprUnionMember5ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -3361,7 +3361,7 @@ class RankByMinExprUnionMember5ExprUnionMember4(TypedDict, total=False):
 
 
 class RankByMinExprUnionMember5ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -3384,7 +3384,7 @@ class RankByMinExprUnionMember5ExprUnionMember5(TypedDict, total=False):
 
 
 class RankByMinExprUnionMember5ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -3407,7 +3407,7 @@ class RankByMinExprUnionMember5ExprUnionMember6(TypedDict, total=False):
 
 
 class RankByMinExprUnionMember5ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -3432,7 +3432,7 @@ class RankByMinExprUnionMember5ExprUnionMember7(TypedDict, total=False):
 
 
 class RankByMinExprUnionMember5ExprUnionMember8ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -3478,7 +3478,7 @@ class RankByMinExprUnionMember5(TypedDict, total=False):
 
 
 class RankByMinExprUnionMember6ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -3490,7 +3490,7 @@ class RankByMinExprUnionMember6ExprUnionMember1(TypedDict, total=False):
 
 
 class RankByMinExprUnionMember6ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -3525,7 +3525,7 @@ class RankByMinExprUnionMember6ExprUnionMember4(TypedDict, total=False):
 
 
 class RankByMinExprUnionMember6ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -3548,7 +3548,7 @@ class RankByMinExprUnionMember6ExprUnionMember5(TypedDict, total=False):
 
 
 class RankByMinExprUnionMember6ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -3571,7 +3571,7 @@ class RankByMinExprUnionMember6ExprUnionMember6(TypedDict, total=False):
 
 
 class RankByMinExprUnionMember6ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -3596,7 +3596,7 @@ class RankByMinExprUnionMember6ExprUnionMember7(TypedDict, total=False):
 
 
 class RankByMinExprUnionMember6ExprUnionMember8ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -3642,7 +3642,7 @@ class RankByMinExprUnionMember6(TypedDict, total=False):
 
 
 class RankByMinExprUnionMember7ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -3654,7 +3654,7 @@ class RankByMinExprUnionMember7ExprUnionMember1(TypedDict, total=False):
 
 
 class RankByMinExprUnionMember7ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -3689,7 +3689,7 @@ class RankByMinExprUnionMember7ExprUnionMember4(TypedDict, total=False):
 
 
 class RankByMinExprUnionMember7ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -3712,7 +3712,7 @@ class RankByMinExprUnionMember7ExprUnionMember5(TypedDict, total=False):
 
 
 class RankByMinExprUnionMember7ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -3735,7 +3735,7 @@ class RankByMinExprUnionMember7ExprUnionMember6(TypedDict, total=False):
 
 
 class RankByMinExprUnionMember7ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -3760,7 +3760,7 @@ class RankByMinExprUnionMember7ExprUnionMember7(TypedDict, total=False):
 
 
 class RankByMinExprUnionMember7ExprUnionMember8ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -3808,7 +3808,7 @@ class RankByMinExprUnionMember7(TypedDict, total=False):
 
 
 class RankByMinExprUnionMember8ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -3820,7 +3820,7 @@ class RankByMinExprUnionMember8ExprUnionMember1(TypedDict, total=False):
 
 
 class RankByMinExprUnionMember8ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -3855,7 +3855,7 @@ class RankByMinExprUnionMember8ExprUnionMember4(TypedDict, total=False):
 
 
 class RankByMinExprUnionMember8ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -3878,7 +3878,7 @@ class RankByMinExprUnionMember8ExprUnionMember5(TypedDict, total=False):
 
 
 class RankByMinExprUnionMember8ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -3901,7 +3901,7 @@ class RankByMinExprUnionMember8ExprUnionMember6(TypedDict, total=False):
 
 
 class RankByMinExprUnionMember8ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -3926,7 +3926,7 @@ class RankByMinExprUnionMember8ExprUnionMember7(TypedDict, total=False):
 
 
 class RankByMinExprUnionMember8ExprUnionMember8ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -3995,7 +3995,7 @@ class RankByMin(TypedDict, total=False):
 
 
 class RankByLogExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -4007,7 +4007,7 @@ class RankByLogExprUnionMember1(TypedDict, total=False):
 
 
 class RankByLogExprUnionMember2ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -4019,7 +4019,7 @@ class RankByLogExprUnionMember2ExprUnionMember1(TypedDict, total=False):
 
 
 class RankByLogExprUnionMember2ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -4054,7 +4054,7 @@ class RankByLogExprUnionMember2ExprUnionMember4(TypedDict, total=False):
 
 
 class RankByLogExprUnionMember2ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -4077,7 +4077,7 @@ class RankByLogExprUnionMember2ExprUnionMember5(TypedDict, total=False):
 
 
 class RankByLogExprUnionMember2ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -4100,7 +4100,7 @@ class RankByLogExprUnionMember2ExprUnionMember6(TypedDict, total=False):
 
 
 class RankByLogExprUnionMember2ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -4125,7 +4125,7 @@ class RankByLogExprUnionMember2ExprUnionMember7(TypedDict, total=False):
 
 
 class RankByLogExprUnionMember2ExprUnionMember8ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -4183,7 +4183,7 @@ class RankByLogExprUnionMember4(TypedDict, total=False):
 
 
 class RankByLogExprUnionMember5ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -4195,7 +4195,7 @@ class RankByLogExprUnionMember5ExprUnionMember1(TypedDict, total=False):
 
 
 class RankByLogExprUnionMember5ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -4230,7 +4230,7 @@ class RankByLogExprUnionMember5ExprUnionMember4(TypedDict, total=False):
 
 
 class RankByLogExprUnionMember5ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -4253,7 +4253,7 @@ class RankByLogExprUnionMember5ExprUnionMember5(TypedDict, total=False):
 
 
 class RankByLogExprUnionMember5ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -4276,7 +4276,7 @@ class RankByLogExprUnionMember5ExprUnionMember6(TypedDict, total=False):
 
 
 class RankByLogExprUnionMember5ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -4301,7 +4301,7 @@ class RankByLogExprUnionMember5ExprUnionMember7(TypedDict, total=False):
 
 
 class RankByLogExprUnionMember5ExprUnionMember8ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -4347,7 +4347,7 @@ class RankByLogExprUnionMember5(TypedDict, total=False):
 
 
 class RankByLogExprUnionMember6ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -4359,7 +4359,7 @@ class RankByLogExprUnionMember6ExprUnionMember1(TypedDict, total=False):
 
 
 class RankByLogExprUnionMember6ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -4394,7 +4394,7 @@ class RankByLogExprUnionMember6ExprUnionMember4(TypedDict, total=False):
 
 
 class RankByLogExprUnionMember6ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -4417,7 +4417,7 @@ class RankByLogExprUnionMember6ExprUnionMember5(TypedDict, total=False):
 
 
 class RankByLogExprUnionMember6ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -4440,7 +4440,7 @@ class RankByLogExprUnionMember6ExprUnionMember6(TypedDict, total=False):
 
 
 class RankByLogExprUnionMember6ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -4465,7 +4465,7 @@ class RankByLogExprUnionMember6ExprUnionMember7(TypedDict, total=False):
 
 
 class RankByLogExprUnionMember6ExprUnionMember8ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -4511,7 +4511,7 @@ class RankByLogExprUnionMember6(TypedDict, total=False):
 
 
 class RankByLogExprUnionMember7ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -4523,7 +4523,7 @@ class RankByLogExprUnionMember7ExprUnionMember1(TypedDict, total=False):
 
 
 class RankByLogExprUnionMember7ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -4558,7 +4558,7 @@ class RankByLogExprUnionMember7ExprUnionMember4(TypedDict, total=False):
 
 
 class RankByLogExprUnionMember7ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -4581,7 +4581,7 @@ class RankByLogExprUnionMember7ExprUnionMember5(TypedDict, total=False):
 
 
 class RankByLogExprUnionMember7ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -4604,7 +4604,7 @@ class RankByLogExprUnionMember7ExprUnionMember6(TypedDict, total=False):
 
 
 class RankByLogExprUnionMember7ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -4629,7 +4629,7 @@ class RankByLogExprUnionMember7ExprUnionMember7(TypedDict, total=False):
 
 
 class RankByLogExprUnionMember7ExprUnionMember8ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -4677,7 +4677,7 @@ class RankByLogExprUnionMember7(TypedDict, total=False):
 
 
 class RankByLogExprUnionMember8ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -4689,7 +4689,7 @@ class RankByLogExprUnionMember8ExprUnionMember1(TypedDict, total=False):
 
 
 class RankByLogExprUnionMember8ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -4724,7 +4724,7 @@ class RankByLogExprUnionMember8ExprUnionMember4(TypedDict, total=False):
 
 
 class RankByLogExprUnionMember8ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -4747,7 +4747,7 @@ class RankByLogExprUnionMember8ExprUnionMember5(TypedDict, total=False):
 
 
 class RankByLogExprUnionMember8ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -4770,7 +4770,7 @@ class RankByLogExprUnionMember8ExprUnionMember6(TypedDict, total=False):
 
 
 class RankByLogExprUnionMember8ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -4795,7 +4795,7 @@ class RankByLogExprUnionMember8ExprUnionMember7(TypedDict, total=False):
 
 
 class RankByLogExprUnionMember8ExprUnionMember8ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -4866,7 +4866,7 @@ class RankByLog(TypedDict, total=False):
 
 
 class RankBySaturateExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -4878,7 +4878,7 @@ class RankBySaturateExprUnionMember1(TypedDict, total=False):
 
 
 class RankBySaturateExprUnionMember2ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -4890,7 +4890,7 @@ class RankBySaturateExprUnionMember2ExprUnionMember1(TypedDict, total=False):
 
 
 class RankBySaturateExprUnionMember2ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -4926,7 +4926,7 @@ class RankBySaturateExprUnionMember2ExprUnionMember4(TypedDict, total=False):
 
 
 class RankBySaturateExprUnionMember2ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -4950,7 +4950,7 @@ class RankBySaturateExprUnionMember2ExprUnionMember5(TypedDict, total=False):
 
 
 class RankBySaturateExprUnionMember2ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -4974,7 +4974,7 @@ class RankBySaturateExprUnionMember2ExprUnionMember6(TypedDict, total=False):
 
 
 class RankBySaturateExprUnionMember2ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -5000,7 +5000,7 @@ class RankBySaturateExprUnionMember2ExprUnionMember7(TypedDict, total=False):
 
 
 class RankBySaturateExprUnionMember2ExprUnionMember8ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -5059,7 +5059,7 @@ class RankBySaturateExprUnionMember4(TypedDict, total=False):
 
 
 class RankBySaturateExprUnionMember5ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -5071,7 +5071,7 @@ class RankBySaturateExprUnionMember5ExprUnionMember1(TypedDict, total=False):
 
 
 class RankBySaturateExprUnionMember5ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -5107,7 +5107,7 @@ class RankBySaturateExprUnionMember5ExprUnionMember4(TypedDict, total=False):
 
 
 class RankBySaturateExprUnionMember5ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -5131,7 +5131,7 @@ class RankBySaturateExprUnionMember5ExprUnionMember5(TypedDict, total=False):
 
 
 class RankBySaturateExprUnionMember5ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -5155,7 +5155,7 @@ class RankBySaturateExprUnionMember5ExprUnionMember6(TypedDict, total=False):
 
 
 class RankBySaturateExprUnionMember5ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -5181,7 +5181,7 @@ class RankBySaturateExprUnionMember5ExprUnionMember7(TypedDict, total=False):
 
 
 class RankBySaturateExprUnionMember5ExprUnionMember8ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -5228,7 +5228,7 @@ class RankBySaturateExprUnionMember5(TypedDict, total=False):
 
 
 class RankBySaturateExprUnionMember6ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -5240,7 +5240,7 @@ class RankBySaturateExprUnionMember6ExprUnionMember1(TypedDict, total=False):
 
 
 class RankBySaturateExprUnionMember6ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -5276,7 +5276,7 @@ class RankBySaturateExprUnionMember6ExprUnionMember4(TypedDict, total=False):
 
 
 class RankBySaturateExprUnionMember6ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -5300,7 +5300,7 @@ class RankBySaturateExprUnionMember6ExprUnionMember5(TypedDict, total=False):
 
 
 class RankBySaturateExprUnionMember6ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -5324,7 +5324,7 @@ class RankBySaturateExprUnionMember6ExprUnionMember6(TypedDict, total=False):
 
 
 class RankBySaturateExprUnionMember6ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -5350,7 +5350,7 @@ class RankBySaturateExprUnionMember6ExprUnionMember7(TypedDict, total=False):
 
 
 class RankBySaturateExprUnionMember6ExprUnionMember8ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -5397,7 +5397,7 @@ class RankBySaturateExprUnionMember6(TypedDict, total=False):
 
 
 class RankBySaturateExprUnionMember7ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -5409,7 +5409,7 @@ class RankBySaturateExprUnionMember7ExprUnionMember1(TypedDict, total=False):
 
 
 class RankBySaturateExprUnionMember7ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -5445,7 +5445,7 @@ class RankBySaturateExprUnionMember7ExprUnionMember4(TypedDict, total=False):
 
 
 class RankBySaturateExprUnionMember7ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -5469,7 +5469,7 @@ class RankBySaturateExprUnionMember7ExprUnionMember5(TypedDict, total=False):
 
 
 class RankBySaturateExprUnionMember7ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -5493,7 +5493,7 @@ class RankBySaturateExprUnionMember7ExprUnionMember6(TypedDict, total=False):
 
 
 class RankBySaturateExprUnionMember7ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -5519,7 +5519,7 @@ class RankBySaturateExprUnionMember7ExprUnionMember7(TypedDict, total=False):
 
 
 class RankBySaturateExprUnionMember7ExprUnionMember8ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -5568,7 +5568,7 @@ class RankBySaturateExprUnionMember7(TypedDict, total=False):
 
 
 class RankBySaturateExprUnionMember8ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -5580,7 +5580,7 @@ class RankBySaturateExprUnionMember8ExprUnionMember1(TypedDict, total=False):
 
 
 class RankBySaturateExprUnionMember8ExprUnionMember2ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -5616,7 +5616,7 @@ class RankBySaturateExprUnionMember8ExprUnionMember4(TypedDict, total=False):
 
 
 class RankBySaturateExprUnionMember8ExprUnionMember5ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -5640,7 +5640,7 @@ class RankBySaturateExprUnionMember8ExprUnionMember5(TypedDict, total=False):
 
 
 class RankBySaturateExprUnionMember8ExprUnionMember6ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -5664,7 +5664,7 @@ class RankBySaturateExprUnionMember8ExprUnionMember6(TypedDict, total=False):
 
 
 class RankBySaturateExprUnionMember8ExprUnionMember7ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
@@ -5690,7 +5690,7 @@ class RankBySaturateExprUnionMember8ExprUnionMember7(TypedDict, total=False):
 
 
 class RankBySaturateExprUnionMember8ExprUnionMember8ExprUnionMember0(TypedDict, total=False):
-    name: Required[Literal["ann", "stars", "issues_closed", "age", "recency"]]
+    name: Required[str]
 
     type: Required[Literal["Attr"]]
 
