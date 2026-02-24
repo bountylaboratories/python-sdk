@@ -63,7 +63,7 @@ class TestSearchRepos:
             },
             max_results=50,
             rank_by={
-                "name": "ann",
+                "name": "x",
                 "type": "Attr",
             },
         )
@@ -142,7 +142,7 @@ class TestSearchRepos:
             },
             max_results=50,
             rank_by={
-                "name": "ann",
+                "name": "x",
                 "type": "Attr",
             },
         )
@@ -223,7 +223,7 @@ class TestAsyncSearchRepos:
             },
             max_results=50,
             rank_by={
-                "name": "ann",
+                "name": "x",
                 "type": "Attr",
             },
         )
@@ -302,7 +302,7 @@ class TestAsyncSearchRepos:
             },
             max_results=50,
             rank_by={
-                "name": "ann",
+                "name": "x",
                 "type": "Attr",
             },
         )
