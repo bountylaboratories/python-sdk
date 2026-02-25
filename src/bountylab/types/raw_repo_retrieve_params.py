@@ -36,7 +36,10 @@ __all__ = [
 
 class RawRepoRetrieveParams(TypedDict, total=False):
     github_ids: Required[Annotated[SequenceNotStr[str], PropertyInfo(alias="githubIds")]]
-    """Array of GitHub node IDs (1-100)"""
+    """Array of IDs — GitHub node IDs (e.g.
+
+    MDEwOlJlcG9zaXRvcnkx) or BountyLab IDs (32-char hex). Can be mixed.
+    """
 
     include_attributes: Annotated[IncludeAttributes, PropertyInfo(alias="includeAttributes")]
     """Optional graph relationships and enrichment attributes"""
