@@ -27,7 +27,7 @@ class TestRawUsers:
     @parametrize
     def test_method_retrieve(self, client: Bountylab) -> None:
         raw_user = client.raw_users.retrieve(
-            github_ids=["MDQ6VXNlcjU4MzIzMQ==", "MDQ6VXNlcjE="],
+            github_ids=["MDQ6VXNlcjU4MzIzMQ==", "a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4"],
         )
         assert_matches_type(RawUserRetrieveResponse, raw_user, path=["response"])
 
@@ -35,7 +35,7 @@ class TestRawUsers:
     @parametrize
     def test_method_retrieve_with_all_params(self, client: Bountylab) -> None:
         raw_user = client.raw_users.retrieve(
-            github_ids=["MDQ6VXNlcjU4MzIzMQ==", "MDQ6VXNlcjE="],
+            github_ids=["MDQ6VXNlcjU4MzIzMQ==", "a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4"],
             include_attributes={
                 "aggregates": True,
                 "contributes": {
@@ -93,7 +93,7 @@ class TestRawUsers:
     @parametrize
     def test_raw_response_retrieve(self, client: Bountylab) -> None:
         response = client.raw_users.with_raw_response.retrieve(
-            github_ids=["MDQ6VXNlcjU4MzIzMQ==", "MDQ6VXNlcjE="],
+            github_ids=["MDQ6VXNlcjU4MzIzMQ==", "a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4"],
         )
 
         assert response.is_closed is True
@@ -105,7 +105,7 @@ class TestRawUsers:
     @parametrize
     def test_streaming_response_retrieve(self, client: Bountylab) -> None:
         with client.raw_users.with_streaming_response.retrieve(
-            github_ids=["MDQ6VXNlcjU4MzIzMQ==", "MDQ6VXNlcjE="],
+            github_ids=["MDQ6VXNlcjU4MzIzMQ==", "a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4"],
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"
@@ -483,7 +483,7 @@ class TestAsyncRawUsers:
     @parametrize
     async def test_method_retrieve(self, async_client: AsyncBountylab) -> None:
         raw_user = await async_client.raw_users.retrieve(
-            github_ids=["MDQ6VXNlcjU4MzIzMQ==", "MDQ6VXNlcjE="],
+            github_ids=["MDQ6VXNlcjU4MzIzMQ==", "a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4"],
         )
         assert_matches_type(RawUserRetrieveResponse, raw_user, path=["response"])
 
@@ -491,7 +491,7 @@ class TestAsyncRawUsers:
     @parametrize
     async def test_method_retrieve_with_all_params(self, async_client: AsyncBountylab) -> None:
         raw_user = await async_client.raw_users.retrieve(
-            github_ids=["MDQ6VXNlcjU4MzIzMQ==", "MDQ6VXNlcjE="],
+            github_ids=["MDQ6VXNlcjU4MzIzMQ==", "a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4"],
             include_attributes={
                 "aggregates": True,
                 "contributes": {
@@ -549,7 +549,7 @@ class TestAsyncRawUsers:
     @parametrize
     async def test_raw_response_retrieve(self, async_client: AsyncBountylab) -> None:
         response = await async_client.raw_users.with_raw_response.retrieve(
-            github_ids=["MDQ6VXNlcjU4MzIzMQ==", "MDQ6VXNlcjE="],
+            github_ids=["MDQ6VXNlcjU4MzIzMQ==", "a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4"],
         )
 
         assert response.is_closed is True
@@ -561,7 +561,7 @@ class TestAsyncRawUsers:
     @parametrize
     async def test_streaming_response_retrieve(self, async_client: AsyncBountylab) -> None:
         async with async_client.raw_users.with_streaming_response.retrieve(
-            github_ids=["MDQ6VXNlcjU4MzIzMQ==", "MDQ6VXNlcjE="],
+            github_ids=["MDQ6VXNlcjU4MzIzMQ==", "a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4"],
         ) as response:
             assert not response.is_closed
             assert response.http_request.headers.get("X-Stainless-Lang") == "python"

@@ -59,14 +59,16 @@ class RawReposResource(SyncAPIResource):
         extra_body: Body | None = None,
         timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> RawRepoRetrieveResponse:
-        """Fetch GitHub repositories by their node IDs.
+        """Fetch GitHub repositories by their IDs.
 
-        Returns a positional array matching
-        input order (null for unmatched IDs). Supports batch requests (1-100). Credits:
-        1 per non-null result + graph credits.
+        Accepts both GitHub node IDs (e.g.
+        MDEwOlJlcG9zaXRvcnkx) and BountyLab IDs (32-char hex). Returns a positional
+        array matching input order (null for unmatched IDs). Supports batch requests
+        (1-100). Credits: 1 per non-null result + graph credits.
 
         Args:
-          github_ids: Array of GitHub node IDs (1-100)
+          github_ids: Array of IDs — GitHub node IDs (e.g. MDEwOlJlcG9zaXRvcnkx) or BountyLab IDs
+              (32-char hex). Can be mixed.
 
           include_attributes: Optional graph relationships and enrichment attributes
 
@@ -275,14 +277,16 @@ class AsyncRawReposResource(AsyncAPIResource):
         extra_body: Body | None = None,
         timeout: float | httpx.Timeout | None | NotGiven = not_given,
     ) -> RawRepoRetrieveResponse:
-        """Fetch GitHub repositories by their node IDs.
+        """Fetch GitHub repositories by their IDs.
 
-        Returns a positional array matching
-        input order (null for unmatched IDs). Supports batch requests (1-100). Credits:
-        1 per non-null result + graph credits.
+        Accepts both GitHub node IDs (e.g.
+        MDEwOlJlcG9zaXRvcnkx) and BountyLab IDs (32-char hex). Returns a positional
+        array matching input order (null for unmatched IDs). Supports batch requests
+        (1-100). Credits: 1 per non-null result + graph credits.
 
         Args:
-          github_ids: Array of GitHub node IDs (1-100)
+          github_ids: Array of IDs — GitHub node IDs (e.g. MDEwOlJlcG9zaXRvcnkx) or BountyLab IDs
+              (32-char hex). Can be mixed.
 
           include_attributes: Optional graph relationships and enrichment attributes
 
