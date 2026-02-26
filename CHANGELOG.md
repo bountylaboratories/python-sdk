@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.42.0 (2026-02-26)
+
+Full Changelog: [v0.41.0...v0.42.0](https://github.com/bountylaboratories/python-sdk/compare/v0.41.0...v0.42.0)
+
+### Features
+
+* **api:** api update ([17d06c9](https://github.com/bountylaboratories/python-sdk/commit/17d06c906e2456ed9b7fc6e5134f1e4e50b40f94))
+
+
+### Chores
+
+* **internal:** make `test_proxy_environment_variables` more resilient to env ([5d60ed0](https://github.com/bountylaboratories/python-sdk/commit/5d60ed01060ab67647fd9315a07fc0eda0fd7640))
+
 ## 0.41.0 (2026-02-25)
 
 Full Changelog: [v0.40.0...v0.41.0](https://github.com/bountylaboratories/python-sdk/compare/v0.40.0...v0.41.0)
