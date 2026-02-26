@@ -135,7 +135,7 @@ class IncludeAttributesContributesFiltersUnionMember0(TypedDict, total=False):
     ]
     """Filter operator"""
 
-    value: Required[Union[str, float, SequenceNotStr[str], Iterable[float]]]
+    value: Required[Union[str, float, bool, SequenceNotStr[str], Iterable[float]]]
     """Filter value (type depends on field and operator)"""
 
 
@@ -171,7 +171,7 @@ class IncludeAttributesContributesFiltersUnionMember1Filter(TypedDict, total=Fal
     ]
     """Filter operator"""
 
-    value: Required[Union[str, float, SequenceNotStr[str], Iterable[float]]]
+    value: Required[Union[str, float, bool, SequenceNotStr[str], Iterable[float]]]
     """Filter value (type depends on field and operator)"""
 
 
@@ -215,7 +215,7 @@ class IncludeAttributesContributesFiltersUnionMember2FilterUnionMember0(TypedDic
     ]
     """Filter operator"""
 
-    value: Required[Union[str, float, SequenceNotStr[str], Iterable[float]]]
+    value: Required[Union[str, float, bool, SequenceNotStr[str], Iterable[float]]]
     """Filter value (type depends on field and operator)"""
 
 
@@ -251,7 +251,7 @@ class IncludeAttributesContributesFiltersUnionMember2FilterUnionMember1Filter(Ty
     ]
     """Filter operator"""
 
-    value: Required[Union[str, float, SequenceNotStr[str], Iterable[float]]]
+    value: Required[Union[str, float, bool, SequenceNotStr[str], Iterable[float]]]
     """Filter value (type depends on field and operator)"""
 
 
@@ -333,7 +333,7 @@ class IncludeAttributesContributorsFiltersUnionMember0(TypedDict, total=False):
     ]
     """Filter operator"""
 
-    value: Required[Union[str, float, SequenceNotStr[str], Iterable[float]]]
+    value: Required[Union[str, float, bool, SequenceNotStr[str], Iterable[float]]]
     """Filter value (type depends on field and operator)"""
 
 
@@ -369,7 +369,7 @@ class IncludeAttributesContributorsFiltersUnionMember1Filter(TypedDict, total=Fa
     ]
     """Filter operator"""
 
-    value: Required[Union[str, float, SequenceNotStr[str], Iterable[float]]]
+    value: Required[Union[str, float, bool, SequenceNotStr[str], Iterable[float]]]
     """Filter value (type depends on field and operator)"""
 
 
@@ -413,7 +413,7 @@ class IncludeAttributesContributorsFiltersUnionMember2FilterUnionMember0(TypedDi
     ]
     """Filter operator"""
 
-    value: Required[Union[str, float, SequenceNotStr[str], Iterable[float]]]
+    value: Required[Union[str, float, bool, SequenceNotStr[str], Iterable[float]]]
     """Filter value (type depends on field and operator)"""
 
 
@@ -449,7 +449,7 @@ class IncludeAttributesContributorsFiltersUnionMember2FilterUnionMember1Filter(T
     ]
     """Filter operator"""
 
-    value: Required[Union[str, float, SequenceNotStr[str], Iterable[float]]]
+    value: Required[Union[str, float, bool, SequenceNotStr[str], Iterable[float]]]
     """Filter value (type depends on field and operator)"""
 
 
@@ -531,7 +531,7 @@ class IncludeAttributesFollowersFiltersUnionMember0(TypedDict, total=False):
     ]
     """Filter operator"""
 
-    value: Required[Union[str, float, SequenceNotStr[str], Iterable[float]]]
+    value: Required[Union[str, float, bool, SequenceNotStr[str], Iterable[float]]]
     """Filter value (type depends on field and operator)"""
 
 
@@ -567,7 +567,7 @@ class IncludeAttributesFollowersFiltersUnionMember1Filter(TypedDict, total=False
     ]
     """Filter operator"""
 
-    value: Required[Union[str, float, SequenceNotStr[str], Iterable[float]]]
+    value: Required[Union[str, float, bool, SequenceNotStr[str], Iterable[float]]]
     """Filter value (type depends on field and operator)"""
 
 
@@ -611,7 +611,7 @@ class IncludeAttributesFollowersFiltersUnionMember2FilterUnionMember0(TypedDict,
     ]
     """Filter operator"""
 
-    value: Required[Union[str, float, SequenceNotStr[str], Iterable[float]]]
+    value: Required[Union[str, float, bool, SequenceNotStr[str], Iterable[float]]]
     """Filter value (type depends on field and operator)"""
 
 
@@ -647,7 +647,7 @@ class IncludeAttributesFollowersFiltersUnionMember2FilterUnionMember1Filter(Type
     ]
     """Filter operator"""
 
-    value: Required[Union[str, float, SequenceNotStr[str], Iterable[float]]]
+    value: Required[Union[str, float, bool, SequenceNotStr[str], Iterable[float]]]
     """Filter value (type depends on field and operator)"""
 
 
@@ -729,7 +729,7 @@ class IncludeAttributesFollowingFiltersUnionMember0(TypedDict, total=False):
     ]
     """Filter operator"""
 
-    value: Required[Union[str, float, SequenceNotStr[str], Iterable[float]]]
+    value: Required[Union[str, float, bool, SequenceNotStr[str], Iterable[float]]]
     """Filter value (type depends on field and operator)"""
 
 
@@ -765,7 +765,7 @@ class IncludeAttributesFollowingFiltersUnionMember1Filter(TypedDict, total=False
     ]
     """Filter operator"""
 
-    value: Required[Union[str, float, SequenceNotStr[str], Iterable[float]]]
+    value: Required[Union[str, float, bool, SequenceNotStr[str], Iterable[float]]]
     """Filter value (type depends on field and operator)"""
 
 
@@ -809,7 +809,7 @@ class IncludeAttributesFollowingFiltersUnionMember2FilterUnionMember0(TypedDict,
     ]
     """Filter operator"""
 
-    value: Required[Union[str, float, SequenceNotStr[str], Iterable[float]]]
+    value: Required[Union[str, float, bool, SequenceNotStr[str], Iterable[float]]]
     """Filter value (type depends on field and operator)"""
 
 
@@ -845,7 +845,7 @@ class IncludeAttributesFollowingFiltersUnionMember2FilterUnionMember1Filter(Type
     ]
     """Filter operator"""
 
-    value: Required[Union[str, float, SequenceNotStr[str], Iterable[float]]]
+    value: Required[Union[str, float, bool, SequenceNotStr[str], Iterable[float]]]
     """Filter value (type depends on field and operator)"""
 
 
@@ -927,7 +927,7 @@ class IncludeAttributesOwnsFiltersUnionMember0(TypedDict, total=False):
     ]
     """Filter operator"""
 
-    value: Required[Union[str, float, SequenceNotStr[str], Iterable[float]]]
+    value: Required[Union[str, float, bool, SequenceNotStr[str], Iterable[float]]]
     """Filter value (type depends on field and operator)"""
 
 
@@ -963,7 +963,7 @@ class IncludeAttributesOwnsFiltersUnionMember1Filter(TypedDict, total=False):
     ]
     """Filter operator"""
 
-    value: Required[Union[str, float, SequenceNotStr[str], Iterable[float]]]
+    value: Required[Union[str, float, bool, SequenceNotStr[str], Iterable[float]]]
     """Filter value (type depends on field and operator)"""
 
 
@@ -1007,7 +1007,7 @@ class IncludeAttributesOwnsFiltersUnionMember2FilterUnionMember0(TypedDict, tota
     ]
     """Filter operator"""
 
-    value: Required[Union[str, float, SequenceNotStr[str], Iterable[float]]]
+    value: Required[Union[str, float, bool, SequenceNotStr[str], Iterable[float]]]
     """Filter value (type depends on field and operator)"""
 
 
@@ -1043,7 +1043,7 @@ class IncludeAttributesOwnsFiltersUnionMember2FilterUnionMember1Filter(TypedDict
     ]
     """Filter operator"""
 
-    value: Required[Union[str, float, SequenceNotStr[str], Iterable[float]]]
+    value: Required[Union[str, float, bool, SequenceNotStr[str], Iterable[float]]]
     """Filter value (type depends on field and operator)"""
 
 
@@ -1125,7 +1125,7 @@ class IncludeAttributesStarrersFiltersUnionMember0(TypedDict, total=False):
     ]
     """Filter operator"""
 
-    value: Required[Union[str, float, SequenceNotStr[str], Iterable[float]]]
+    value: Required[Union[str, float, bool, SequenceNotStr[str], Iterable[float]]]
     """Filter value (type depends on field and operator)"""
 
 
@@ -1161,7 +1161,7 @@ class IncludeAttributesStarrersFiltersUnionMember1Filter(TypedDict, total=False)
     ]
     """Filter operator"""
 
-    value: Required[Union[str, float, SequenceNotStr[str], Iterable[float]]]
+    value: Required[Union[str, float, bool, SequenceNotStr[str], Iterable[float]]]
     """Filter value (type depends on field and operator)"""
 
 
@@ -1205,7 +1205,7 @@ class IncludeAttributesStarrersFiltersUnionMember2FilterUnionMember0(TypedDict, 
     ]
     """Filter operator"""
 
-    value: Required[Union[str, float, SequenceNotStr[str], Iterable[float]]]
+    value: Required[Union[str, float, bool, SequenceNotStr[str], Iterable[float]]]
     """Filter value (type depends on field and operator)"""
 
 
@@ -1241,7 +1241,7 @@ class IncludeAttributesStarrersFiltersUnionMember2FilterUnionMember1Filter(Typed
     ]
     """Filter operator"""
 
-    value: Required[Union[str, float, SequenceNotStr[str], Iterable[float]]]
+    value: Required[Union[str, float, bool, SequenceNotStr[str], Iterable[float]]]
     """Filter value (type depends on field and operator)"""
 
 
@@ -1323,7 +1323,7 @@ class IncludeAttributesStarsFiltersUnionMember0(TypedDict, total=False):
     ]
     """Filter operator"""
 
-    value: Required[Union[str, float, SequenceNotStr[str], Iterable[float]]]
+    value: Required[Union[str, float, bool, SequenceNotStr[str], Iterable[float]]]
     """Filter value (type depends on field and operator)"""
 
 
@@ -1359,7 +1359,7 @@ class IncludeAttributesStarsFiltersUnionMember1Filter(TypedDict, total=False):
     ]
     """Filter operator"""
 
-    value: Required[Union[str, float, SequenceNotStr[str], Iterable[float]]]
+    value: Required[Union[str, float, bool, SequenceNotStr[str], Iterable[float]]]
     """Filter value (type depends on field and operator)"""
 
 
@@ -1403,7 +1403,7 @@ class IncludeAttributesStarsFiltersUnionMember2FilterUnionMember0(TypedDict, tot
     ]
     """Filter operator"""
 
-    value: Required[Union[str, float, SequenceNotStr[str], Iterable[float]]]
+    value: Required[Union[str, float, bool, SequenceNotStr[str], Iterable[float]]]
     """Filter value (type depends on field and operator)"""
 
 
@@ -1439,7 +1439,7 @@ class IncludeAttributesStarsFiltersUnionMember2FilterUnionMember1Filter(TypedDic
     ]
     """Filter operator"""
 
-    value: Required[Union[str, float, SequenceNotStr[str], Iterable[float]]]
+    value: Required[Union[str, float, bool, SequenceNotStr[str], Iterable[float]]]
     """Filter value (type depends on field and operator)"""
 
 
