@@ -58,7 +58,7 @@ class FiltersUnionMember0(TypedDict, total=False):
     ]
     """Filter operator"""
 
-    value: Required[Union[str, float, SequenceNotStr[str], Iterable[float]]]
+    value: Required[Union[str, float, bool, SequenceNotStr[str], Iterable[float]]]
     """Filter value (type depends on field and operator)"""
 
 
@@ -94,7 +94,7 @@ class FiltersUnionMember1Filter(TypedDict, total=False):
     ]
     """Filter operator"""
 
-    value: Required[Union[str, float, SequenceNotStr[str], Iterable[float]]]
+    value: Required[Union[str, float, bool, SequenceNotStr[str], Iterable[float]]]
     """Filter value (type depends on field and operator)"""
 
 
@@ -138,7 +138,7 @@ class FiltersUnionMember2FilterUnionMember0(TypedDict, total=False):
     ]
     """Filter operator"""
 
-    value: Required[Union[str, float, SequenceNotStr[str], Iterable[float]]]
+    value: Required[Union[str, float, bool, SequenceNotStr[str], Iterable[float]]]
     """Filter value (type depends on field and operator)"""
 
 
@@ -174,7 +174,7 @@ class FiltersUnionMember2FilterUnionMember1Filter(TypedDict, total=False):
     ]
     """Filter operator"""
 
-    value: Required[Union[str, float, SequenceNotStr[str], Iterable[float]]]
+    value: Required[Union[str, float, bool, SequenceNotStr[str], Iterable[float]]]
     """Filter value (type depends on field and operator)"""
 
 
