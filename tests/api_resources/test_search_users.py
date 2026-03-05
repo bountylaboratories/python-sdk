@@ -34,6 +34,7 @@ class TestSearchUsers:
         search_user = client.search_users.natural_language(
             query="Find machine learning engineers at Google who work on AI infrastructure",
             after="Y3Vyc29yOjEyMzQ1",
+            dataset="standard",
             enable_pagination=True,
             first=50,
             include_attributes={
@@ -130,6 +131,7 @@ class TestSearchUsers:
         search_user = client.search_users.search(
             query="machine learning engineer san francisco",
             after="Y3Vyc29yOjEyMzQ1",
+            dataset="standard",
             enable_pagination=True,
             filters={
                 "field": "field",
@@ -237,6 +239,7 @@ class TestAsyncSearchUsers:
         search_user = await async_client.search_users.natural_language(
             query="Find machine learning engineers at Google who work on AI infrastructure",
             after="Y3Vyc29yOjEyMzQ1",
+            dataset="standard",
             enable_pagination=True,
             first=50,
             include_attributes={
@@ -333,6 +336,7 @@ class TestAsyncSearchUsers:
         search_user = await async_client.search_users.search(
             query="machine learning engineer san francisco",
             after="Y3Vyc29yOjEyMzQ1",
+            dataset="standard",
             enable_pagination=True,
             filters={
                 "field": "field",

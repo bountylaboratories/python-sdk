@@ -35,6 +35,7 @@ class TestSearchRepos:
             query="Find React libraries with over 1000 stars that have good TypeScript support and are actively maintained",
             after="Y3Vyc29yOjEyMzQ1",
             apply_filters_to_include_attributes=True,
+            dataset="standard",
             enable_pagination=True,
             filter_user_include_attributes=True,
             first=50,
@@ -110,6 +111,7 @@ class TestSearchRepos:
             query="react component library with typescript",
             after="Y3Vyc29yOjEyMzQ1",
             apply_filters_to_include_attributes=True,
+            dataset="standard",
             enable_pagination=True,
             filters={
                 "field": "field",
@@ -195,6 +197,7 @@ class TestAsyncSearchRepos:
             query="Find React libraries with over 1000 stars that have good TypeScript support and are actively maintained",
             after="Y3Vyc29yOjEyMzQ1",
             apply_filters_to_include_attributes=True,
+            dataset="standard",
             enable_pagination=True,
             filter_user_include_attributes=True,
             first=50,
@@ -270,6 +273,7 @@ class TestAsyncSearchRepos:
             query="react component library with typescript",
             after="Y3Vyc29yOjEyMzQ1",
             apply_filters_to_include_attributes=True,
+            dataset="standard",
             enable_pagination=True,
             filters={
                 "field": "field",

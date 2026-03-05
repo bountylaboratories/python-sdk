@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 from typing import Union
+from typing_extensions import Literal
 
 import httpx
 
@@ -49,6 +50,7 @@ class SearchUsersResource(SyncAPIResource):
         *,
         query: str,
         after: str | Omit = omit,
+        dataset: Literal["standard", "professional"] | Omit = omit,
         enable_pagination: bool | Omit = omit,
         first: int | Omit = omit,
         include_attributes: search_user_natural_language_params.IncludeAttributes | Omit = omit,
@@ -70,6 +72,9 @@ class SearchUsersResource(SyncAPIResource):
           query: Natural language query describing the users you want to find
 
           after: Cursor for pagination (from previous response pageInfo.endCursor)
+
+          dataset: Which dataset to search. 'standard' uses the base namespace; 'professional' uses
+              the LinkedIn-enriched namespace with additional professional fields.
 
           enable_pagination: Enable cursor-based pagination to fetch results across multiple requests
 
@@ -93,6 +98,7 @@ class SearchUsersResource(SyncAPIResource):
                 {
                     "query": query,
                     "after": after,
+                    "dataset": dataset,
                     "enable_pagination": enable_pagination,
                     "first": first,
                     "include_attributes": include_attributes,
@@ -111,6 +117,7 @@ class SearchUsersResource(SyncAPIResource):
         *,
         query: Union[str, SequenceNotStr[str], None],
         after: str | Omit = omit,
+        dataset: Literal["standard", "professional"] | Omit = omit,
         enable_pagination: bool | Omit = omit,
         filters: search_user_search_params.Filters | Omit = omit,
         first: int | Omit = omit,
@@ -136,6 +143,9 @@ class SearchUsersResource(SyncAPIResource):
               (filter-only)
 
           after: Cursor for pagination (from previous response pageInfo.endCursor)
+
+          dataset: Which dataset to search. 'standard' uses the base namespace; 'professional' uses
+              the LinkedIn-enriched namespace with additional professional fields.
 
           enable_pagination: Enable cursor-based pagination to fetch results across multiple requests
 
@@ -163,6 +173,7 @@ class SearchUsersResource(SyncAPIResource):
                 {
                     "query": query,
                     "after": after,
+                    "dataset": dataset,
                     "enable_pagination": enable_pagination,
                     "filters": filters,
                     "first": first,
@@ -203,6 +214,7 @@ class AsyncSearchUsersResource(AsyncAPIResource):
         *,
         query: str,
         after: str | Omit = omit,
+        dataset: Literal["standard", "professional"] | Omit = omit,
         enable_pagination: bool | Omit = omit,
         first: int | Omit = omit,
         include_attributes: search_user_natural_language_params.IncludeAttributes | Omit = omit,
@@ -224,6 +236,9 @@ class AsyncSearchUsersResource(AsyncAPIResource):
           query: Natural language query describing the users you want to find
 
           after: Cursor for pagination (from previous response pageInfo.endCursor)
+
+          dataset: Which dataset to search. 'standard' uses the base namespace; 'professional' uses
+              the LinkedIn-enriched namespace with additional professional fields.
 
           enable_pagination: Enable cursor-based pagination to fetch results across multiple requests
 
@@ -247,6 +262,7 @@ class AsyncSearchUsersResource(AsyncAPIResource):
                 {
                     "query": query,
                     "after": after,
+                    "dataset": dataset,
                     "enable_pagination": enable_pagination,
                     "first": first,
                     "include_attributes": include_attributes,
@@ -265,6 +281,7 @@ class AsyncSearchUsersResource(AsyncAPIResource):
         *,
         query: Union[str, SequenceNotStr[str], None],
         after: str | Omit = omit,
+        dataset: Literal["standard", "professional"] | Omit = omit,
         enable_pagination: bool | Omit = omit,
         filters: search_user_search_params.Filters | Omit = omit,
         first: int | Omit = omit,
@@ -290,6 +307,9 @@ class AsyncSearchUsersResource(AsyncAPIResource):
               (filter-only)
 
           after: Cursor for pagination (from previous response pageInfo.endCursor)
+
+          dataset: Which dataset to search. 'standard' uses the base namespace; 'professional' uses
+              the LinkedIn-enriched namespace with additional professional fields.
 
           enable_pagination: Enable cursor-based pagination to fetch results across multiple requests
 
@@ -317,6 +337,7 @@ class AsyncSearchUsersResource(AsyncAPIResource):
                 {
                     "query": query,
                     "after": after,
+                    "dataset": dataset,
                     "enable_pagination": enable_pagination,
                     "filters": filters,
                     "first": first,
