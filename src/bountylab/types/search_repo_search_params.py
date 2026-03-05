@@ -902,6 +902,13 @@ class SearchRepoSearchParams(TypedDict, total=False):
     criteria.
     """
 
+    dataset: Literal["standard", "professional"]
+    """Which dataset to search.
+
+    'standard' uses the base namespace; 'professional' uses the LinkedIn-enriched
+    namespace with additional owner LinkedIn fields.
+    """
+
     enable_pagination: Annotated[bool, PropertyInfo(alias="enablePagination")]
     """Enable cursor-based pagination to fetch results across multiple requests"""
 
