@@ -85,6 +85,13 @@ class SearchUserSearchParams(TypedDict, total=False):
     after: str
     """Cursor for pagination (from previous response pageInfo.endCursor)"""
 
+    dataset: Literal["standard", "professional"]
+    """Which dataset to search.
+
+    'standard' uses the base namespace; 'professional' uses the LinkedIn-enriched
+    namespace with additional professional fields.
+    """
+
     enable_pagination: Annotated[bool, PropertyInfo(alias="enablePagination")]
     """Enable cursor-based pagination to fetch results across multiple requests"""
 

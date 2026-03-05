@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 from typing import Union
+from typing_extensions import Literal
 
 import httpx
 
@@ -50,6 +51,7 @@ class SearchReposResource(SyncAPIResource):
         query: str,
         after: str | Omit = omit,
         apply_filters_to_include_attributes: bool | Omit = omit,
+        dataset: Literal["standard", "professional"] | Omit = omit,
         enable_pagination: bool | Omit = omit,
         filter_user_include_attributes: bool | Omit = omit,
         first: int | Omit = omit,
@@ -77,6 +79,9 @@ class SearchReposResource(SyncAPIResource):
           apply_filters_to_include_attributes: When true, applies the LLM-generated filter to all user-returning
               includeAttributes (contributors, starrers). Alias for
               filterUserIncludeAttributes.
+
+          dataset: Which dataset to search. 'standard' uses the base namespace; 'professional' uses
+              the LinkedIn-enriched namespace with additional owner LinkedIn fields.
 
           enable_pagination: Enable cursor-based pagination to fetch results across multiple requests
 
@@ -109,6 +114,7 @@ class SearchReposResource(SyncAPIResource):
                     "query": query,
                     "after": after,
                     "apply_filters_to_include_attributes": apply_filters_to_include_attributes,
+                    "dataset": dataset,
                     "enable_pagination": enable_pagination,
                     "filter_user_include_attributes": filter_user_include_attributes,
                     "first": first,
@@ -130,6 +136,7 @@ class SearchReposResource(SyncAPIResource):
         query: Union[str, SequenceNotStr[str], None],
         after: str | Omit = omit,
         apply_filters_to_include_attributes: bool | Omit = omit,
+        dataset: Literal["standard", "professional"] | Omit = omit,
         enable_pagination: bool | Omit = omit,
         filters: search_repo_search_params.Filters | Omit = omit,
         first: int | Omit = omit,
@@ -158,6 +165,9 @@ class SearchReposResource(SyncAPIResource):
           apply_filters_to_include_attributes: When true, applies the search filter to all user-returning includeAttributes
               (contributors, starrers). This filters the returned users to match the same
               criteria.
+
+          dataset: Which dataset to search. 'standard' uses the base namespace; 'professional' uses
+              the LinkedIn-enriched namespace with additional owner LinkedIn fields.
 
           enable_pagination: Enable cursor-based pagination to fetch results across multiple requests
 
@@ -188,6 +198,7 @@ class SearchReposResource(SyncAPIResource):
                     "query": query,
                     "after": after,
                     "apply_filters_to_include_attributes": apply_filters_to_include_attributes,
+                    "dataset": dataset,
                     "enable_pagination": enable_pagination,
                     "filters": filters,
                     "first": first,
@@ -230,6 +241,7 @@ class AsyncSearchReposResource(AsyncAPIResource):
         query: str,
         after: str | Omit = omit,
         apply_filters_to_include_attributes: bool | Omit = omit,
+        dataset: Literal["standard", "professional"] | Omit = omit,
         enable_pagination: bool | Omit = omit,
         filter_user_include_attributes: bool | Omit = omit,
         first: int | Omit = omit,
@@ -257,6 +269,9 @@ class AsyncSearchReposResource(AsyncAPIResource):
           apply_filters_to_include_attributes: When true, applies the LLM-generated filter to all user-returning
               includeAttributes (contributors, starrers). Alias for
               filterUserIncludeAttributes.
+
+          dataset: Which dataset to search. 'standard' uses the base namespace; 'professional' uses
+              the LinkedIn-enriched namespace with additional owner LinkedIn fields.
 
           enable_pagination: Enable cursor-based pagination to fetch results across multiple requests
 
@@ -289,6 +304,7 @@ class AsyncSearchReposResource(AsyncAPIResource):
                     "query": query,
                     "after": after,
                     "apply_filters_to_include_attributes": apply_filters_to_include_attributes,
+                    "dataset": dataset,
                     "enable_pagination": enable_pagination,
                     "filter_user_include_attributes": filter_user_include_attributes,
                     "first": first,
@@ -310,6 +326,7 @@ class AsyncSearchReposResource(AsyncAPIResource):
         query: Union[str, SequenceNotStr[str], None],
         after: str | Omit = omit,
         apply_filters_to_include_attributes: bool | Omit = omit,
+        dataset: Literal["standard", "professional"] | Omit = omit,
         enable_pagination: bool | Omit = omit,
         filters: search_repo_search_params.Filters | Omit = omit,
         first: int | Omit = omit,
@@ -338,6 +355,9 @@ class AsyncSearchReposResource(AsyncAPIResource):
           apply_filters_to_include_attributes: When true, applies the search filter to all user-returning includeAttributes
               (contributors, starrers). This filters the returned users to match the same
               criteria.
+
+          dataset: Which dataset to search. 'standard' uses the base namespace; 'professional' uses
+              the LinkedIn-enriched namespace with additional owner LinkedIn fields.
 
           enable_pagination: Enable cursor-based pagination to fetch results across multiple requests
 
@@ -368,6 +388,7 @@ class AsyncSearchReposResource(AsyncAPIResource):
                     "query": query,
                     "after": after,
                     "apply_filters_to_include_attributes": apply_filters_to_include_attributes,
+                    "dataset": dataset,
                     "enable_pagination": enable_pagination,
                     "filters": filters,
                     "first": first,
