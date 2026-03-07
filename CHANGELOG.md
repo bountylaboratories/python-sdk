@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.43.1 (2026-03-07)
+
+Full Changelog: [v0.43.0...v0.43.1](https://github.com/bountylaboratories/python-sdk/compare/v0.43.0...v0.43.1)
+
+### Chores
+
+* **ci:** skip uploading artifacts on stainless-internal branches ([6e1edd2](https://github.com/bountylaboratories/python-sdk/commit/6e1edd266be68b52d4afc35dd52122ed924b0e1c))
+
 ## 0.43.0 (2026-03-05)
 
 Full Changelog: [v0.42.0...v0.43.0](https://github.com/bountylaboratories/python-sdk/compare/v0.42.0...v0.43.0)
