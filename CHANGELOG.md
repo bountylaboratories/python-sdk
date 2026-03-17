@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.43.2 (2026-03-17)
+
+Full Changelog: [v0.43.1...v0.43.2](https://github.com/bountylaboratories/python-sdk/compare/v0.43.1...v0.43.2)
+
+### Bug Fixes
+
+* **deps:** bump minimum typing-extensions version ([11998a0](https://github.com/bountylaboratories/python-sdk/commit/11998a013d07f636daba7d740ae8ee5c16ae954e))
+
 ## 0.43.1 (2026-03-17)
 
 Full Changelog: [v0.43.0...v0.43.1](https://github.com/bountylaboratories/python-sdk/compare/v0.43.0...v0.43.1)
