@@ -9,7 +9,7 @@ import httpx
 
 from ..types import raw_repo_count_params, raw_repo_graph_params, raw_repo_retrieve_params, raw_repo_by_fullname_params
 from .._types import Body, Omit, Query, Headers, NotGiven, SequenceNotStr, omit, not_given
-from .._utils import maybe_transform, async_maybe_transform
+from .._utils import path_template, maybe_transform, async_maybe_transform
 from .._compat import cached_property
 from .._resource import SyncAPIResource, AsyncAPIResource
 from .._response import (
@@ -226,7 +226,7 @@ class RawReposResource(SyncAPIResource):
         return cast(
             RawRepoGraphResponse,
             self._post(
-                f"/raw/repos/{id}/graph/{relationship}",
+                path_template("/raw/repos/{id}/graph/{relationship}", id=id, relationship=relationship),
                 body=maybe_transform(
                     {
                         "after": after,
@@ -444,7 +444,7 @@ class AsyncRawReposResource(AsyncAPIResource):
         return cast(
             RawRepoGraphResponse,
             await self._post(
-                f"/raw/repos/{id}/graph/{relationship}",
+                path_template("/raw/repos/{id}/graph/{relationship}", id=id, relationship=relationship),
                 body=await async_maybe_transform(
                     {
                         "after": after,
