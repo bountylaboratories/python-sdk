@@ -1,5 +1,18 @@
 # Changelog
 
+## 0.43.3 (2026-03-20)
+
+Full Changelog: [v0.43.2...v0.43.3](https://github.com/bountylaboratories/python-sdk/compare/v0.43.2...v0.43.3)
+
+### Bug Fixes
+
+* sanitize endpoint path params ([e16bf7c](https://github.com/bountylaboratories/python-sdk/commit/e16bf7c0b277ec550c8a6539cfa8e40e556b3f64))
+
+
+### Chores
+
+* **internal:** tweak CI branches ([789ca7c](https://github.com/bountylaboratories/python-sdk/commit/789ca7c1bf35024c9938bf49107b2ab25e8526cf))
+
 ## 0.43.2 (2026-03-17)
 
 Full Changelog: [v0.43.1...v0.43.2](https://github.com/bountylaboratories/python-sdk/compare/v0.43.1...v0.43.2)
