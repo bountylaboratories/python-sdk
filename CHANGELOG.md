@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.44.0 (2026-03-27)
+
+Full Changelog: [v0.43.3...v0.44.0](https://github.com/bountylaboratories/python-sdk/compare/v0.43.3...v0.44.0)
+
+### Features
+
+* **internal:** implement indices array format for query and form serialization ([5efb9f9](https://github.com/bountylaboratories/python-sdk/commit/5efb9f9069b9d198ee91b176945e8a49be5b1b1f))
+
+
+### Chores
+
+* **ci:** skip lint on metadata-only changes ([76506d2](https://github.com/bountylaboratories/python-sdk/commit/76506d2cab55dfa4ffbadfc327cc51fa876d9c30))
+* **internal:** update gitignore ([b904eba](https://github.com/bountylaboratories/python-sdk/commit/b904eba95998c636183ab971b81ca5c4caa2f066))
+
 ## 0.43.3 (2026-03-20)
 
 Full Changelog: [v0.43.2...v0.43.3](https://github.com/bountylaboratories/python-sdk/compare/v0.43.2...v0.43.3)
