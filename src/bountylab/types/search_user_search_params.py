@@ -111,6 +111,19 @@ class SearchUserSearchParams(TypedDict, total=False):
     max_results: Annotated[int, PropertyInfo(alias="maxResults")]
     """Maximum number of results to return (default: 100, max: 1000)"""
 
+    recent_activity_days: Annotated[int, PropertyInfo(alias="recentActivityDays")]
+    """Filter results to users whose profile was last updated within this many days.
+
+    Uses updatedAt as a proxy for recent activity.
+    """
+
+    sort_by: Annotated[Literal["relevance", "recentActivity"], PropertyInfo(alias="sortBy")]
+    """Sort mode.
+
+    "relevance" ranks by text match (BM25). "recentActivity" ranks by most recently
+    updated profile first.
+    """
+
 
 class FiltersUnionMember0(TypedDict, total=False):
     field: Required[str]

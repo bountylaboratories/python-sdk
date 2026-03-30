@@ -190,6 +190,8 @@ class TestSearchUsers:
                 },
             },
             max_results=50,
+            recent_activity_days=30,
+            sort_by="relevance",
         )
         assert_matches_type(SearchUserSearchResponse, search_user, path=["response"])
 
@@ -395,6 +397,8 @@ class TestAsyncSearchUsers:
                 },
             },
             max_results=50,
+            recent_activity_days=30,
+            sort_by="relevance",
         )
         assert_matches_type(SearchUserSearchResponse, search_user, path=["response"])
 
