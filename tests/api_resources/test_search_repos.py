@@ -147,6 +147,8 @@ class TestSearchRepos:
                 "name": "x",
                 "type": "Attr",
             },
+            recent_activity_days=30,
+            sort_by="relevance",
         )
         assert_matches_type(SearchRepoSearchResponse, search_repo, path=["response"])
 
@@ -309,6 +311,8 @@ class TestAsyncSearchRepos:
                 "name": "x",
                 "type": "Attr",
             },
+            recent_activity_days=30,
+            sort_by="relevance",
         )
         assert_matches_type(SearchRepoSearchResponse, search_repo, path=["response"])
 
