@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.45.1 (2026-04-08)
+
+Full Changelog: [v0.45.0...v0.45.1](https://github.com/bountylaboratories/python-sdk/compare/v0.45.0...v0.45.1)
+
+### Bug Fixes
+
+* **client:** preserve hardcoded query params when merging with user params ([e82ad5f](https://github.com/bountylaboratories/python-sdk/commit/e82ad5ffbac4fdeb667db43318ca0214eb654bf9))
+
 ## 0.45.0 (2026-03-30)
 
 Full Changelog: [v0.44.0...v0.45.0](https://github.com/bountylaboratories/python-sdk/compare/v0.44.0...v0.45.0)
