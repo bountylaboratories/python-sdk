@@ -48,6 +48,7 @@ class TestRawRepos:
                 "owner": True,
                 "owner_devrank": True,
                 "owner_professional": True,
+                "reveal_emails": True,
                 "starrers": {
                     "first": 1,
                     "after": "after",
@@ -113,6 +114,7 @@ class TestRawRepos:
                 "owner": True,
                 "owner_devrank": True,
                 "owner_professional": True,
+                "reveal_emails": True,
                 "starrers": {
                     "first": 1,
                     "after": "after",
@@ -268,6 +270,7 @@ class TestRawRepos:
                     },
                 },
                 "professional": True,
+                "reveal_emails": True,
                 "starrers": {
                     "first": 1,
                     "after": "after",
@@ -359,6 +362,7 @@ class TestAsyncRawRepos:
                 "owner": True,
                 "owner_devrank": True,
                 "owner_professional": True,
+                "reveal_emails": True,
                 "starrers": {
                     "first": 1,
                     "after": "after",
@@ -424,6 +428,7 @@ class TestAsyncRawRepos:
                 "owner": True,
                 "owner_devrank": True,
                 "owner_professional": True,
+                "reveal_emails": True,
                 "starrers": {
                     "first": 1,
                     "after": "after",
@@ -579,6 +584,7 @@ class TestAsyncRawRepos:
                     },
                 },
                 "professional": True,
+                "reveal_emails": True,
                 "starrers": {
                     "first": 1,
                     "after": "after",

@@ -52,6 +52,7 @@ class TestSearchRepos:
                 "owner": True,
                 "owner_devrank": True,
                 "owner_professional": True,
+                "reveal_emails": True,
                 "starrers": {
                     "first": 1,
                     "after": "after",
@@ -132,6 +133,7 @@ class TestSearchRepos:
                 "owner": True,
                 "owner_devrank": True,
                 "owner_professional": True,
+                "reveal_emails": True,
                 "starrers": {
                     "first": 10,
                     "after": "after",
@@ -214,6 +216,7 @@ class TestAsyncSearchRepos:
                 "owner": True,
                 "owner_devrank": True,
                 "owner_professional": True,
+                "reveal_emails": True,
                 "starrers": {
                     "first": 1,
                     "after": "after",
@@ -294,6 +297,7 @@ class TestAsyncSearchRepos:
                 "owner": True,
                 "owner_devrank": True,
                 "owner_professional": True,
+                "reveal_emails": True,
                 "starrers": {
                     "first": 10,
                     "after": "after",

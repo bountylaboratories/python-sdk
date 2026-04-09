@@ -1305,5 +1305,8 @@ class IncludeAttributes(TypedDict, total=False):
     professional: bool
     """Include LinkedIn professional profile data (requires PROFESSIONAL service)"""
 
+    reveal_emails: Annotated[bool, PropertyInfo(alias="revealEmails")]
+    """Return unobfuscated emails instead of masked (e.g. \\**\\**\\**oe@gmail.com)"""
+
     stars: IncludeAttributesStars
     """Include starred repositories with cursor pagination"""
