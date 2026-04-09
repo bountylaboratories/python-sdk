@@ -143,8 +143,6 @@ class SearchReposResource(SyncAPIResource):
         include_attributes: search_repo_search_params.IncludeAttributes | Omit = omit,
         max_results: int | Omit = omit,
         rank_by: search_repo_search_params.RankBy | Omit = omit,
-        recent_activity_days: int | Omit = omit,
-        sort_by: Literal["relevance", "recentActivity"] | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -185,12 +183,6 @@ class SearchReposResource(SyncAPIResource):
               log-normalized 70/20/10 formula (70% semantic similarity, 20% popularity, 10%
               activity).
 
-          recent_activity_days: Filter results to repos pushed within this many days. Filters on updatedAt (last
-              push timestamp).
-
-          sort_by: Sort mode. "relevance" uses the default 70/20/10 formula. "recentActivity" flips
-              to 60% activity + 30% popularity + 10% semantic match.
-
           extra_headers: Send extra headers
 
           extra_query: Add additional query parameters to the request
@@ -213,8 +205,6 @@ class SearchReposResource(SyncAPIResource):
                     "include_attributes": include_attributes,
                     "max_results": max_results,
                     "rank_by": rank_by,
-                    "recent_activity_days": recent_activity_days,
-                    "sort_by": sort_by,
                 },
                 search_repo_search_params.SearchRepoSearchParams,
             ),
@@ -343,8 +333,6 @@ class AsyncSearchReposResource(AsyncAPIResource):
         include_attributes: search_repo_search_params.IncludeAttributes | Omit = omit,
         max_results: int | Omit = omit,
         rank_by: search_repo_search_params.RankBy | Omit = omit,
-        recent_activity_days: int | Omit = omit,
-        sort_by: Literal["relevance", "recentActivity"] | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -385,12 +373,6 @@ class AsyncSearchReposResource(AsyncAPIResource):
               log-normalized 70/20/10 formula (70% semantic similarity, 20% popularity, 10%
               activity).
 
-          recent_activity_days: Filter results to repos pushed within this many days. Filters on updatedAt (last
-              push timestamp).
-
-          sort_by: Sort mode. "relevance" uses the default 70/20/10 formula. "recentActivity" flips
-              to 60% activity + 30% popularity + 10% semantic match.
-
           extra_headers: Send extra headers
 
           extra_query: Add additional query parameters to the request
@@ -413,8 +395,6 @@ class AsyncSearchReposResource(AsyncAPIResource):
                     "include_attributes": include_attributes,
                     "max_results": max_results,
                     "rank_by": rank_by,
-                    "recent_activity_days": recent_activity_days,
-                    "sort_by": sort_by,
                 },
                 search_repo_search_params.SearchRepoSearchParams,
             ),
