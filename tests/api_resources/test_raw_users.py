@@ -77,6 +77,7 @@ class TestRawUsers:
                     },
                 },
                 "professional": True,
+                "reveal_emails": True,
                 "stars": {
                     "first": 1,
                     "after": "after",
@@ -170,6 +171,7 @@ class TestRawUsers:
                     },
                 },
                 "professional": True,
+                "reveal_emails": True,
                 "stars": {
                     "first": 1,
                     "after": "after",
@@ -263,6 +265,7 @@ class TestRawUsers:
                     },
                 },
                 "professional": True,
+                "reveal_emails": True,
                 "stars": {
                     "first": 1,
                     "after": "after",
@@ -418,6 +421,7 @@ class TestRawUsers:
                     },
                 },
                 "professional": True,
+                "reveal_emails": True,
                 "starrers": {
                     "first": 1,
                     "after": "after",
@@ -537,6 +541,7 @@ class TestAsyncRawUsers:
                     },
                 },
                 "professional": True,
+                "reveal_emails": True,
                 "stars": {
                     "first": 1,
                     "after": "after",
@@ -630,6 +635,7 @@ class TestAsyncRawUsers:
                     },
                 },
                 "professional": True,
+                "reveal_emails": True,
                 "stars": {
                     "first": 1,
                     "after": "after",
@@ -723,6 +729,7 @@ class TestAsyncRawUsers:
                     },
                 },
                 "professional": True,
+                "reveal_emails": True,
                 "stars": {
                     "first": 1,
                     "after": "after",
@@ -878,6 +885,7 @@ class TestAsyncRawUsers:
                     },
                 },
                 "professional": True,
+                "reveal_emails": True,
                 "starrers": {
                     "first": 1,
                     "after": "after",
