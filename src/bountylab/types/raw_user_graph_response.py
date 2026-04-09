@@ -2019,6 +2019,9 @@ class FollowersResponseUser(BaseModel):
     aggregates: Optional[FollowersResponseUserAggregates] = None
     """Aggregate metrics (only present when includeAttributes.aggregates = true)"""
 
+    best_email: Optional[str] = FieldInfo(alias="bestEmail", default=None)
+    """Best verified email address for the user"""
+
     bio: Optional[str] = None
     """User biography"""
 
@@ -3919,6 +3922,9 @@ class FollowingResponseUser(BaseModel):
 
     aggregates: Optional[FollowingResponseUserAggregates] = None
     """Aggregate metrics (only present when includeAttributes.aggregates = true)"""
+
+    best_email: Optional[str] = FieldInfo(alias="bestEmail", default=None)
+    """Best verified email address for the user"""
 
     bio: Optional[str] = None
     """User biography"""

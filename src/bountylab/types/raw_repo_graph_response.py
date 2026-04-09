@@ -2036,6 +2036,9 @@ class RepoStarsResponseUser(BaseModel):
     aggregates: Optional[RepoStarsResponseUserAggregates] = None
     """Aggregate metrics (only present when includeAttributes.aggregates = true)"""
 
+    best_email: Optional[str] = FieldInfo(alias="bestEmail", default=None)
+    """Best verified email address for the user"""
+
     bio: Optional[str] = None
     """User biography"""
 
@@ -3941,6 +3944,9 @@ class RepoContributesResponseUser(BaseModel):
     aggregates: Optional[RepoContributesResponseUserAggregates] = None
     """Aggregate metrics (only present when includeAttributes.aggregates = true)"""
 
+    best_email: Optional[str] = FieldInfo(alias="bestEmail", default=None)
+    """Best verified email address for the user"""
+
     bio: Optional[str] = None
     """User biography"""
 
@@ -5844,6 +5850,9 @@ class RepoOwnsResponseUser(BaseModel):
 
     aggregates: Optional[RepoOwnsResponseUserAggregates] = None
     """Aggregate metrics (only present when includeAttributes.aggregates = true)"""
+
+    best_email: Optional[str] = FieldInfo(alias="bestEmail", default=None)
+    """Best verified email address for the user"""
 
     bio: Optional[str] = None
     """User biography"""
