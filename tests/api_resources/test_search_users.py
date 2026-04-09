@@ -78,6 +78,7 @@ class TestSearchUsers:
                     },
                 },
                 "professional": True,
+                "reveal_emails": True,
                 "stars": {
                     "first": 1,
                     "after": "after",
@@ -181,6 +182,7 @@ class TestSearchUsers:
                     },
                 },
                 "professional": True,
+                "reveal_emails": True,
                 "stars": {
                     "first": 1,
                     "after": "after",
@@ -285,6 +287,7 @@ class TestAsyncSearchUsers:
                     },
                 },
                 "professional": True,
+                "reveal_emails": True,
                 "stars": {
                     "first": 1,
                     "after": "after",
@@ -388,6 +391,7 @@ class TestAsyncSearchUsers:
                     },
                 },
                 "professional": True,
+                "reveal_emails": True,
                 "stars": {
                     "first": 1,
                     "after": "after",
