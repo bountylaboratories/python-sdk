@@ -1087,6 +1087,9 @@ class IncludeAttributes(TypedDict, total=False):
     aggregates: bool
     """Include aggregate metrics (e.g. totalStars) for the user"""
 
+    best_email: Annotated[bool, PropertyInfo(alias="bestEmail")]
+    """Include best verified email address for the user"""
+
     contributes: IncludeAttributesContributes
     """Include contributed repositories with cursor pagination"""
 

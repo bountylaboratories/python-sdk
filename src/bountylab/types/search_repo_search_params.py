@@ -931,19 +931,6 @@ class SearchRepoSearchParams(TypedDict, total=False):
     similarity, 20% popularity, 10% activity).
     """
 
-    recent_activity_days: Annotated[int, PropertyInfo(alias="recentActivityDays")]
-    """Filter results to repos pushed within this many days.
-
-    Filters on updatedAt (last push timestamp).
-    """
-
-    sort_by: Annotated[Literal["relevance", "recentActivity"], PropertyInfo(alias="sortBy")]
-    """Sort mode.
-
-    "relevance" uses the default 70/20/10 formula. "recentActivity" flips to 60%
-    activity + 30% popularity + 10% semantic match.
-    """
-
 
 class FiltersUnionMember0(TypedDict, total=False):
     field: Required[str]

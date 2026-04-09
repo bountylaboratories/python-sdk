@@ -38,6 +38,7 @@ class TestRawUsers:
             github_ids=["MDQ6VXNlcjU4MzIzMQ==", "a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4"],
             include_attributes={
                 "aggregates": True,
+                "best_email": True,
                 "contributes": {
                     "first": 1,
                     "after": "after",
@@ -130,6 +131,7 @@ class TestRawUsers:
             linkedin_urls=["https://www.linkedin.com/in/octocat", "https://www.linkedin.com/in/torvalds"],
             include_attributes={
                 "aggregates": True,
+                "best_email": True,
                 "contributes": {
                     "first": 1,
                     "after": "after",
@@ -222,6 +224,7 @@ class TestRawUsers:
             logins=["octocat", "torvalds"],
             include_attributes={
                 "aggregates": True,
+                "best_email": True,
                 "contributes": {
                     "first": 1,
                     "after": "after",
@@ -364,6 +367,7 @@ class TestRawUsers:
             first=100,
             include_attributes={
                 "aggregates": True,
+                "best_email": True,
                 "contributes": {
                     "first": 1,
                     "after": "after",
@@ -494,6 +498,7 @@ class TestAsyncRawUsers:
             github_ids=["MDQ6VXNlcjU4MzIzMQ==", "a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4"],
             include_attributes={
                 "aggregates": True,
+                "best_email": True,
                 "contributes": {
                     "first": 1,
                     "after": "after",
@@ -586,6 +591,7 @@ class TestAsyncRawUsers:
             linkedin_urls=["https://www.linkedin.com/in/octocat", "https://www.linkedin.com/in/torvalds"],
             include_attributes={
                 "aggregates": True,
+                "best_email": True,
                 "contributes": {
                     "first": 1,
                     "after": "after",
@@ -678,6 +684,7 @@ class TestAsyncRawUsers:
             logins=["octocat", "torvalds"],
             include_attributes={
                 "aggregates": True,
+                "best_email": True,
                 "contributes": {
                     "first": 1,
                     "after": "after",
@@ -820,6 +827,7 @@ class TestAsyncRawUsers:
             first=100,
             include_attributes={
                 "aggregates": True,
+                "best_email": True,
                 "contributes": {
                     "first": 1,
                     "after": "after",

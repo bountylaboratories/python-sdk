@@ -39,6 +39,7 @@ class TestSearchUsers:
             first=50,
             include_attributes={
                 "aggregates": True,
+                "best_email": True,
                 "contributes": {
                     "first": 1,
                     "after": "after",
@@ -141,6 +142,7 @@ class TestSearchUsers:
             first=50,
             include_attributes={
                 "aggregates": True,
+                "best_email": True,
                 "contributes": {
                     "first": 1,
                     "after": "after",
@@ -190,8 +192,6 @@ class TestSearchUsers:
                 },
             },
             max_results=50,
-            recent_activity_days=30,
-            sort_by="relevance",
         )
         assert_matches_type(SearchUserSearchResponse, search_user, path=["response"])
 
@@ -246,6 +246,7 @@ class TestAsyncSearchUsers:
             first=50,
             include_attributes={
                 "aggregates": True,
+                "best_email": True,
                 "contributes": {
                     "first": 1,
                     "after": "after",
@@ -348,6 +349,7 @@ class TestAsyncSearchUsers:
             first=50,
             include_attributes={
                 "aggregates": True,
+                "best_email": True,
                 "contributes": {
                     "first": 1,
                     "after": "after",
@@ -397,8 +399,6 @@ class TestAsyncSearchUsers:
                 },
             },
             max_results=50,
-            recent_activity_days=30,
-            sort_by="relevance",
         )
         assert_matches_type(SearchUserSearchResponse, search_user, path=["response"])
 

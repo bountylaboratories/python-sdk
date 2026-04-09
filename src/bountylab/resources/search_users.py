@@ -123,8 +123,6 @@ class SearchUsersResource(SyncAPIResource):
         first: int | Omit = omit,
         include_attributes: search_user_search_params.IncludeAttributes | Omit = omit,
         max_results: int | Omit = omit,
-        recent_activity_days: int | Omit = omit,
-        sort_by: Literal["relevance", "recentActivity"] | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -161,12 +159,6 @@ class SearchUsersResource(SyncAPIResource):
 
           max_results: Maximum number of results to return (default: 100, max: 1000)
 
-          recent_activity_days: Filter results to users whose profile was last updated within this many days.
-              Uses updatedAt as a proxy for recent activity.
-
-          sort_by: Sort mode. "relevance" ranks by text match (BM25). "recentActivity" ranks by
-              most recently updated profile first.
-
           extra_headers: Send extra headers
 
           extra_query: Add additional query parameters to the request
@@ -187,8 +179,6 @@ class SearchUsersResource(SyncAPIResource):
                     "first": first,
                     "include_attributes": include_attributes,
                     "max_results": max_results,
-                    "recent_activity_days": recent_activity_days,
-                    "sort_by": sort_by,
                 },
                 search_user_search_params.SearchUserSearchParams,
             ),
@@ -297,8 +287,6 @@ class AsyncSearchUsersResource(AsyncAPIResource):
         first: int | Omit = omit,
         include_attributes: search_user_search_params.IncludeAttributes | Omit = omit,
         max_results: int | Omit = omit,
-        recent_activity_days: int | Omit = omit,
-        sort_by: Literal["relevance", "recentActivity"] | Omit = omit,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -335,12 +323,6 @@ class AsyncSearchUsersResource(AsyncAPIResource):
 
           max_results: Maximum number of results to return (default: 100, max: 1000)
 
-          recent_activity_days: Filter results to users whose profile was last updated within this many days.
-              Uses updatedAt as a proxy for recent activity.
-
-          sort_by: Sort mode. "relevance" ranks by text match (BM25). "recentActivity" ranks by
-              most recently updated profile first.
-
           extra_headers: Send extra headers
 
           extra_query: Add additional query parameters to the request
@@ -361,8 +343,6 @@ class AsyncSearchUsersResource(AsyncAPIResource):
                     "first": first,
                     "include_attributes": include_attributes,
                     "max_results": max_results,
-                    "recent_activity_days": recent_activity_days,
-                    "sort_by": sort_by,
                 },
                 search_user_search_params.SearchUserSearchParams,
             ),

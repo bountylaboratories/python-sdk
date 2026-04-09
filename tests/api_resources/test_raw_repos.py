@@ -217,6 +217,7 @@ class TestRawRepos:
             first=100,
             include_attributes={
                 "aggregates": True,
+                "best_email": True,
                 "contributes": {
                     "first": 1,
                     "after": "after",
@@ -527,6 +528,7 @@ class TestAsyncRawRepos:
             first=100,
             include_attributes={
                 "aggregates": True,
+                "best_email": True,
                 "contributes": {
                     "first": 1,
                     "after": "after",
