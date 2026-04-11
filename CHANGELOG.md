@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.47.1 (2026-04-11)
+
+Full Changelog: [v0.47.0...v0.47.1](https://github.com/bountylaboratories/python-sdk/compare/v0.47.0...v0.47.1)
+
+### Bug Fixes
+
+* ensure file data are only sent as 1 parameter ([d4070e3](https://github.com/bountylaboratories/python-sdk/commit/d4070e3a59538bd30a647be77474394ed37fef3e))
+
 ## 0.47.0 (2026-04-09)
 
 Full Changelog: [v0.46.0...v0.47.0](https://github.com/bountylaboratories/python-sdk/compare/v0.46.0...v0.47.0)
