@@ -1,5 +1,28 @@
 # Changelog
 
+## 0.48.0 (2026-04-28)
+
+Full Changelog: [v0.47.1...v0.48.0](https://github.com/bountylaboratories/python-sdk/compare/v0.47.1...v0.48.0)
+
+### Features
+
+* support setting headers via env ([c787b36](https://github.com/bountylaboratories/python-sdk/commit/c787b3613f4ba3084b029818e672d8352fb494a3))
+
+
+### Bug Fixes
+
+* use correct field name format for multipart file arrays ([eed373e](https://github.com/bountylaboratories/python-sdk/commit/eed373edf1f4363df12fb01708a5c4bd0fb4a6cd))
+
+
+### Performance Improvements
+
+* **client:** optimize file structure copying in multipart requests ([26603b6](https://github.com/bountylaboratories/python-sdk/commit/26603b6104c0b8ca25831705af7ffb9202f4d5c3))
+
+
+### Chores
+
+* **internal:** more robust bootstrap script ([8d367d1](https://github.com/bountylaboratories/python-sdk/commit/8d367d1e4be798950ab6c7c81188131117a3da98))
+
 ## 0.47.1 (2026-04-11)
 
 Full Changelog: [v0.47.0...v0.47.1](https://github.com/bountylaboratories/python-sdk/compare/v0.47.0...v0.47.1)
