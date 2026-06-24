@@ -430,6 +430,9 @@ class FollowersResponseUserContributesEdgeOwnerProfessionalExperience(BaseModel)
     start_date: Optional[str] = FieldInfo(alias="startDate", default=None)
     """Start date (YYYY-MM-DD format)"""
 
+    start_date_confidence: Optional[str] = FieldInfo(alias="startDateConfidence", default=None)
+    """Vendor confidence in the start date: "validated" or "low" (null if unknown)"""
+
     summary: Optional[str] = None
     """Description of role and responsibilities"""
 
@@ -484,6 +487,9 @@ class FollowersResponseUserContributesEdgeOwnerProfessional(BaseModel):
     headline: Optional[str] = None
     """Professional headline"""
 
+    hiring: Optional[bool] = None
+    """Whether the person indicates they are hiring"""
+
     languages: Optional[List[str]] = None
     """Languages spoken"""
 
@@ -498,6 +504,9 @@ class FollowersResponseUserContributesEdgeOwnerProfessional(BaseModel):
 
     memberships: Optional[List[str]] = None
     """Professional organization memberships"""
+
+    open_to_work: Optional[bool] = FieldInfo(alias="openToWork", default=None)
+    """Whether the person indicates they are open to work"""
 
     organization: Optional[str] = None
     """Current organization/company"""
@@ -1112,6 +1121,9 @@ class FollowersResponseUserOwnsEdgeOwnerProfessionalExperience(BaseModel):
     start_date: Optional[str] = FieldInfo(alias="startDate", default=None)
     """Start date (YYYY-MM-DD format)"""
 
+    start_date_confidence: Optional[str] = FieldInfo(alias="startDateConfidence", default=None)
+    """Vendor confidence in the start date: "validated" or "low" (null if unknown)"""
+
     summary: Optional[str] = None
     """Description of role and responsibilities"""
 
@@ -1166,6 +1178,9 @@ class FollowersResponseUserOwnsEdgeOwnerProfessional(BaseModel):
     headline: Optional[str] = None
     """Professional headline"""
 
+    hiring: Optional[bool] = None
+    """Whether the person indicates they are hiring"""
+
     languages: Optional[List[str]] = None
     """Languages spoken"""
 
@@ -1180,6 +1195,9 @@ class FollowersResponseUserOwnsEdgeOwnerProfessional(BaseModel):
 
     memberships: Optional[List[str]] = None
     """Professional organization memberships"""
+
+    open_to_work: Optional[bool] = FieldInfo(alias="openToWork", default=None)
+    """Whether the person indicates they are open to work"""
 
     organization: Optional[str] = None
     """Current organization/company"""
@@ -1420,6 +1438,9 @@ class FollowersResponseUserProfessionalExperience(BaseModel):
     start_date: Optional[str] = FieldInfo(alias="startDate", default=None)
     """Start date (YYYY-MM-DD format)"""
 
+    start_date_confidence: Optional[str] = FieldInfo(alias="startDateConfidence", default=None)
+    """Vendor confidence in the start date: "validated" or "low" (null if unknown)"""
+
     summary: Optional[str] = None
     """Description of role and responsibilities"""
 
@@ -1474,6 +1495,9 @@ class FollowersResponseUserProfessional(BaseModel):
     headline: Optional[str] = None
     """Professional headline"""
 
+    hiring: Optional[bool] = None
+    """Whether the person indicates they are hiring"""
+
     languages: Optional[List[str]] = None
     """Languages spoken"""
 
@@ -1488,6 +1512,9 @@ class FollowersResponseUserProfessional(BaseModel):
 
     memberships: Optional[List[str]] = None
     """Professional organization memberships"""
+
+    open_to_work: Optional[bool] = FieldInfo(alias="openToWork", default=None)
+    """Whether the person indicates they are open to work"""
 
     organization: Optional[str] = None
     """Current organization/company"""
@@ -1734,6 +1761,9 @@ class FollowersResponseUserStarsEdgeOwnerProfessionalExperience(BaseModel):
     start_date: Optional[str] = FieldInfo(alias="startDate", default=None)
     """Start date (YYYY-MM-DD format)"""
 
+    start_date_confidence: Optional[str] = FieldInfo(alias="startDateConfidence", default=None)
+    """Vendor confidence in the start date: "validated" or "low" (null if unknown)"""
+
     summary: Optional[str] = None
     """Description of role and responsibilities"""
 
@@ -1788,6 +1818,9 @@ class FollowersResponseUserStarsEdgeOwnerProfessional(BaseModel):
     headline: Optional[str] = None
     """Professional headline"""
 
+    hiring: Optional[bool] = None
+    """Whether the person indicates they are hiring"""
+
     languages: Optional[List[str]] = None
     """Languages spoken"""
 
@@ -1802,6 +1835,9 @@ class FollowersResponseUserStarsEdgeOwnerProfessional(BaseModel):
 
     memberships: Optional[List[str]] = None
     """Professional organization memberships"""
+
+    open_to_work: Optional[bool] = FieldInfo(alias="openToWork", default=None)
+    """Whether the person indicates they are open to work"""
 
     organization: Optional[str] = None
     """Current organization/company"""
@@ -2334,6 +2370,9 @@ class FollowingResponseUserContributesEdgeOwnerProfessionalExperience(BaseModel)
     start_date: Optional[str] = FieldInfo(alias="startDate", default=None)
     """Start date (YYYY-MM-DD format)"""
 
+    start_date_confidence: Optional[str] = FieldInfo(alias="startDateConfidence", default=None)
+    """Vendor confidence in the start date: "validated" or "low" (null if unknown)"""
+
     summary: Optional[str] = None
     """Description of role and responsibilities"""
 
@@ -2388,6 +2427,9 @@ class FollowingResponseUserContributesEdgeOwnerProfessional(BaseModel):
     headline: Optional[str] = None
     """Professional headline"""
 
+    hiring: Optional[bool] = None
+    """Whether the person indicates they are hiring"""
+
     languages: Optional[List[str]] = None
     """Languages spoken"""
 
@@ -2402,6 +2444,9 @@ class FollowingResponseUserContributesEdgeOwnerProfessional(BaseModel):
 
     memberships: Optional[List[str]] = None
     """Professional organization memberships"""
+
+    open_to_work: Optional[bool] = FieldInfo(alias="openToWork", default=None)
+    """Whether the person indicates they are open to work"""
 
     organization: Optional[str] = None
     """Current organization/company"""
@@ -3016,6 +3061,9 @@ class FollowingResponseUserOwnsEdgeOwnerProfessionalExperience(BaseModel):
     start_date: Optional[str] = FieldInfo(alias="startDate", default=None)
     """Start date (YYYY-MM-DD format)"""
 
+    start_date_confidence: Optional[str] = FieldInfo(alias="startDateConfidence", default=None)
+    """Vendor confidence in the start date: "validated" or "low" (null if unknown)"""
+
     summary: Optional[str] = None
     """Description of role and responsibilities"""
 
@@ -3070,6 +3118,9 @@ class FollowingResponseUserOwnsEdgeOwnerProfessional(BaseModel):
     headline: Optional[str] = None
     """Professional headline"""
 
+    hiring: Optional[bool] = None
+    """Whether the person indicates they are hiring"""
+
     languages: Optional[List[str]] = None
     """Languages spoken"""
 
@@ -3084,6 +3135,9 @@ class FollowingResponseUserOwnsEdgeOwnerProfessional(BaseModel):
 
     memberships: Optional[List[str]] = None
     """Professional organization memberships"""
+
+    open_to_work: Optional[bool] = FieldInfo(alias="openToWork", default=None)
+    """Whether the person indicates they are open to work"""
 
     organization: Optional[str] = None
     """Current organization/company"""
@@ -3324,6 +3378,9 @@ class FollowingResponseUserProfessionalExperience(BaseModel):
     start_date: Optional[str] = FieldInfo(alias="startDate", default=None)
     """Start date (YYYY-MM-DD format)"""
 
+    start_date_confidence: Optional[str] = FieldInfo(alias="startDateConfidence", default=None)
+    """Vendor confidence in the start date: "validated" or "low" (null if unknown)"""
+
     summary: Optional[str] = None
     """Description of role and responsibilities"""
 
@@ -3378,6 +3435,9 @@ class FollowingResponseUserProfessional(BaseModel):
     headline: Optional[str] = None
     """Professional headline"""
 
+    hiring: Optional[bool] = None
+    """Whether the person indicates they are hiring"""
+
     languages: Optional[List[str]] = None
     """Languages spoken"""
 
@@ -3392,6 +3452,9 @@ class FollowingResponseUserProfessional(BaseModel):
 
     memberships: Optional[List[str]] = None
     """Professional organization memberships"""
+
+    open_to_work: Optional[bool] = FieldInfo(alias="openToWork", default=None)
+    """Whether the person indicates they are open to work"""
 
     organization: Optional[str] = None
     """Current organization/company"""
@@ -3638,6 +3701,9 @@ class FollowingResponseUserStarsEdgeOwnerProfessionalExperience(BaseModel):
     start_date: Optional[str] = FieldInfo(alias="startDate", default=None)
     """Start date (YYYY-MM-DD format)"""
 
+    start_date_confidence: Optional[str] = FieldInfo(alias="startDateConfidence", default=None)
+    """Vendor confidence in the start date: "validated" or "low" (null if unknown)"""
+
     summary: Optional[str] = None
     """Description of role and responsibilities"""
 
@@ -3692,6 +3758,9 @@ class FollowingResponseUserStarsEdgeOwnerProfessional(BaseModel):
     headline: Optional[str] = None
     """Professional headline"""
 
+    hiring: Optional[bool] = None
+    """Whether the person indicates they are hiring"""
+
     languages: Optional[List[str]] = None
     """Languages spoken"""
 
@@ -3706,6 +3775,9 @@ class FollowingResponseUserStarsEdgeOwnerProfessional(BaseModel):
 
     memberships: Optional[List[str]] = None
     """Professional organization memberships"""
+
+    open_to_work: Optional[bool] = FieldInfo(alias="openToWork", default=None)
+    """Whether the person indicates they are open to work"""
 
     organization: Optional[str] = None
     """Current organization/company"""
@@ -4231,6 +4303,9 @@ class UserOwnsResponseRepositoryOwnerProfessionalExperience(BaseModel):
     start_date: Optional[str] = FieldInfo(alias="startDate", default=None)
     """Start date (YYYY-MM-DD format)"""
 
+    start_date_confidence: Optional[str] = FieldInfo(alias="startDateConfidence", default=None)
+    """Vendor confidence in the start date: "validated" or "low" (null if unknown)"""
+
     summary: Optional[str] = None
     """Description of role and responsibilities"""
 
@@ -4285,6 +4360,9 @@ class UserOwnsResponseRepositoryOwnerProfessional(BaseModel):
     headline: Optional[str] = None
     """Professional headline"""
 
+    hiring: Optional[bool] = None
+    """Whether the person indicates they are hiring"""
+
     languages: Optional[List[str]] = None
     """Languages spoken"""
 
@@ -4299,6 +4377,9 @@ class UserOwnsResponseRepositoryOwnerProfessional(BaseModel):
 
     memberships: Optional[List[str]] = None
     """Professional organization memberships"""
+
+    open_to_work: Optional[bool] = FieldInfo(alias="openToWork", default=None)
+    """Whether the person indicates they are open to work"""
 
     organization: Optional[str] = None
     """Current organization/company"""
@@ -4715,6 +4796,9 @@ class UserStarsResponseRepositoryOwnerProfessionalExperience(BaseModel):
     start_date: Optional[str] = FieldInfo(alias="startDate", default=None)
     """Start date (YYYY-MM-DD format)"""
 
+    start_date_confidence: Optional[str] = FieldInfo(alias="startDateConfidence", default=None)
+    """Vendor confidence in the start date: "validated" or "low" (null if unknown)"""
+
     summary: Optional[str] = None
     """Description of role and responsibilities"""
 
@@ -4769,6 +4853,9 @@ class UserStarsResponseRepositoryOwnerProfessional(BaseModel):
     headline: Optional[str] = None
     """Professional headline"""
 
+    hiring: Optional[bool] = None
+    """Whether the person indicates they are hiring"""
+
     languages: Optional[List[str]] = None
     """Languages spoken"""
 
@@ -4783,6 +4870,9 @@ class UserStarsResponseRepositoryOwnerProfessional(BaseModel):
 
     memberships: Optional[List[str]] = None
     """Professional organization memberships"""
+
+    open_to_work: Optional[bool] = FieldInfo(alias="openToWork", default=None)
+    """Whether the person indicates they are open to work"""
 
     organization: Optional[str] = None
     """Current organization/company"""
@@ -5199,6 +5289,9 @@ class UserContributesResponseRepositoryOwnerProfessionalExperience(BaseModel):
     start_date: Optional[str] = FieldInfo(alias="startDate", default=None)
     """Start date (YYYY-MM-DD format)"""
 
+    start_date_confidence: Optional[str] = FieldInfo(alias="startDateConfidence", default=None)
+    """Vendor confidence in the start date: "validated" or "low" (null if unknown)"""
+
     summary: Optional[str] = None
     """Description of role and responsibilities"""
 
@@ -5253,6 +5346,9 @@ class UserContributesResponseRepositoryOwnerProfessional(BaseModel):
     headline: Optional[str] = None
     """Professional headline"""
 
+    hiring: Optional[bool] = None
+    """Whether the person indicates they are hiring"""
+
     languages: Optional[List[str]] = None
     """Languages spoken"""
 
@@ -5267,6 +5363,9 @@ class UserContributesResponseRepositoryOwnerProfessional(BaseModel):
 
     memberships: Optional[List[str]] = None
     """Professional organization memberships"""
+
+    open_to_work: Optional[bool] = FieldInfo(alias="openToWork", default=None)
+    """Whether the person indicates they are open to work"""
 
     organization: Optional[str] = None
     """Current organization/company"""
