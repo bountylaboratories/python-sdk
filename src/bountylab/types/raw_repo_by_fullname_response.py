@@ -238,6 +238,9 @@ class RepositoryOwnerProfessionalExperience(BaseModel):
     start_date: Optional[str] = FieldInfo(alias="startDate", default=None)
     """Start date (YYYY-MM-DD format)"""
 
+    start_date_confidence: Optional[str] = FieldInfo(alias="startDateConfidence", default=None)
+    """Vendor confidence in the start date: "validated" or "low" (null if unknown)"""
+
     summary: Optional[str] = None
     """Description of role and responsibilities"""
 
@@ -292,6 +295,9 @@ class RepositoryOwnerProfessional(BaseModel):
     headline: Optional[str] = None
     """Professional headline"""
 
+    hiring: Optional[bool] = None
+    """Whether the person indicates they are hiring"""
+
     languages: Optional[List[str]] = None
     """Languages spoken"""
 
@@ -306,6 +312,9 @@ class RepositoryOwnerProfessional(BaseModel):
 
     memberships: Optional[List[str]] = None
     """Professional organization memberships"""
+
+    open_to_work: Optional[bool] = FieldInfo(alias="openToWork", default=None)
+    """Whether the person indicates they are open to work"""
 
     organization: Optional[str] = None
     """Current organization/company"""
