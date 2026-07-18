@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.51.0 (2026-07-18)
+
+Full Changelog: [v0.50.0...v0.51.0](https://github.com/bountylaboratories/python-sdk/compare/v0.50.0...v0.51.0)
+
+### Features
+
+* **stlc:** configurable CI runner and private-production-repo support in workflow templates ([2958ef7](https://github.com/bountylaboratories/python-sdk/commit/2958ef72a5b5e1007e6cd12d75f99fd259e68189))
+
 ## 0.50.0 (2026-06-24)
 
 Full Changelog: [v0.49.0...v0.50.0](https://github.com/bountylaboratories/python-sdk/compare/v0.49.0...v0.50.0)
