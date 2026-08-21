@@ -1507,6 +1507,14 @@ class IncludeAttributesStarrers(TypedDict, total=False):
 class IncludeAttributes(TypedDict, total=False):
     """Optional graph relationships and enrichment attributes"""
 
+    contributor_profiles: Annotated[bool, PropertyInfo(alias="contributorProfiles")]
+    """
+    Hydrate rich profiles (identity, top owned repos, devrank, LinkedIn overlay) for
+    the contributors in the SAME call, returned as `contributorProfiles`. Requires
+    `contributors` to be requested. Requires DEVRANK + PROFESSIONAL services for the
+    devrank/LinkedIn sections (each degrades independently).
+    """
+
     contributors: IncludeAttributesContributors
     """Include repository contributors with cursor pagination"""
 

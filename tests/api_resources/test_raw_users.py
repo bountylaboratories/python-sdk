@@ -380,6 +380,7 @@ class TestRawUsers:
                         "value": "string",
                     },
                 },
+                "contributor_profiles": True,
                 "contributors": {
                     "first": 1,
                     "after": "after",
@@ -844,6 +845,7 @@ class TestAsyncRawUsers:
                         "value": "string",
                     },
                 },
+                "contributor_profiles": True,
                 "contributors": {
                     "first": 1,
                     "after": "after",

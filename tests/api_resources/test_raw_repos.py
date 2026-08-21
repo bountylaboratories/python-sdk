@@ -36,6 +36,7 @@ class TestRawRepos:
         raw_repo = client.raw_repos.retrieve(
             github_ids=["MDEwOlJlcG9zaXRvcnkxMjk2MjY5", "a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4"],
             include_attributes={
+                "contributor_profiles": True,
                 "contributors": {
                     "first": 1,
                     "after": "after",
@@ -102,6 +103,7 @@ class TestRawRepos:
         raw_repo = client.raw_repos.by_fullname(
             full_names=["octocat/Hello-World", "torvalds/linux"],
             include_attributes={
+                "contributor_profiles": True,
                 "contributors": {
                     "first": 1,
                     "after": "after",
@@ -229,6 +231,7 @@ class TestRawRepos:
                         "value": "string",
                     },
                 },
+                "contributor_profiles": True,
                 "contributors": {
                     "first": 1,
                     "after": "after",
@@ -350,6 +353,7 @@ class TestAsyncRawRepos:
         raw_repo = await async_client.raw_repos.retrieve(
             github_ids=["MDEwOlJlcG9zaXRvcnkxMjk2MjY5", "a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4"],
             include_attributes={
+                "contributor_profiles": True,
                 "contributors": {
                     "first": 1,
                     "after": "after",
@@ -416,6 +420,7 @@ class TestAsyncRawRepos:
         raw_repo = await async_client.raw_repos.by_fullname(
             full_names=["octocat/Hello-World", "torvalds/linux"],
             include_attributes={
+                "contributor_profiles": True,
                 "contributors": {
                     "first": 1,
                     "after": "after",
@@ -543,6 +548,7 @@ class TestAsyncRawRepos:
                         "value": "string",
                     },
                 },
+                "contributor_profiles": True,
                 "contributors": {
                     "first": 1,
                     "after": "after",

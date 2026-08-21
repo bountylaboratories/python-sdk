@@ -40,6 +40,7 @@ class TestSearchRepos:
             filter_user_include_attributes=True,
             first=50,
             include_attributes={
+                "contributor_profiles": True,
                 "contributors": {
                     "first": 10,
                     "after": "after",
@@ -121,6 +122,7 @@ class TestSearchRepos:
             },
             first=50,
             include_attributes={
+                "contributor_profiles": True,
                 "contributors": {
                     "first": 10,
                     "after": "after",
@@ -204,6 +206,7 @@ class TestAsyncSearchRepos:
             filter_user_include_attributes=True,
             first=50,
             include_attributes={
+                "contributor_profiles": True,
                 "contributors": {
                     "first": 10,
                     "after": "after",
@@ -285,6 +288,7 @@ class TestAsyncSearchRepos:
             },
             first=50,
             include_attributes={
+                "contributor_profiles": True,
                 "contributors": {
                     "first": 10,
                     "after": "after",
