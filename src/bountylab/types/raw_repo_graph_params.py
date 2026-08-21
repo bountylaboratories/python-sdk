@@ -1504,6 +1504,14 @@ class IncludeAttributes(TypedDict, total=False):
     contributes: IncludeAttributesContributes
     """Include contributed repositories with cursor pagination"""
 
+    contributor_profiles: Annotated[bool, PropertyInfo(alias="contributorProfiles")]
+    """
+    Hydrate rich profiles (identity, top owned repos, devrank, LinkedIn overlay) for
+    the contributors in the SAME call, returned as `contributorProfiles`. Requires
+    `contributors` to be requested. Requires DEVRANK + PROFESSIONAL services for the
+    devrank/LinkedIn sections (each degrades independently).
+    """
+
     contributors: IncludeAttributesContributors
     """Include repository contributors with cursor pagination"""
 

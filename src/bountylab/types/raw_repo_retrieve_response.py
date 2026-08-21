@@ -9,6 +9,10 @@ from .._models import BaseModel
 __all__ = [
     "RawRepoRetrieveResponse",
     "Repository",
+    "RepositoryContributorProfile",
+    "RepositoryContributorProfileTopRepo",
+    "RepositoryContributorProfileDevrank",
+    "RepositoryContributorProfileLinkedin",
     "RepositoryContributors",
     "RepositoryContributorsEdge",
     "RepositoryContributorsEdgeSocialAccount",
@@ -24,6 +28,61 @@ __all__ = [
     "RepositoryStarrersEdgeSocialAccount",
     "RepositoryStarrersPageInfo",
 ]
+
+
+class RepositoryContributorProfileTopRepo(BaseModel):
+    name: str
+
+    stargazer_count: float = FieldInfo(alias="stargazerCount")
+
+
+class RepositoryContributorProfileDevrank(BaseModel):
+    cracked_score: float = FieldInfo(alias="crackedScore")
+
+    followers_in: float = FieldInfo(alias="followersIn")
+
+    following_out: float = FieldInfo(alias="followingOut")
+
+    tier: str
+
+
+class RepositoryContributorProfileLinkedin(BaseModel):
+    connections_count: Optional[float] = FieldInfo(alias="connectionsCount", default=None)
+
+    current_company: Optional[str] = FieldInfo(alias="currentCompany", default=None)
+
+    current_title: Optional[str] = FieldInfo(alias="currentTitle", default=None)
+
+    seniority_level: Optional[str] = FieldInfo(alias="seniorityLevel", default=None)
+
+    total_experience_years: Optional[float] = FieldInfo(alias="totalExperienceYears", default=None)
+
+    url: Optional[str] = None
+
+
+class RepositoryContributorProfile(BaseModel):
+    login: str
+
+    top_repos: List[RepositoryContributorProfileTopRepo] = FieldInfo(alias="topRepos")
+    """Most-starred repos this login owns, from our index."""
+
+    account_created_at: Optional[str] = FieldInfo(alias="accountCreatedAt", default=None)
+
+    bio: Optional[str] = None
+
+    company: Optional[str] = None
+
+    devrank: Optional[RepositoryContributorProfileDevrank] = None
+
+    display_name: Optional[str] = FieldInfo(alias="displayName", default=None)
+
+    github_id: Optional[str] = FieldInfo(alias="githubId", default=None)
+
+    linkedin: Optional[RepositoryContributorProfileLinkedin] = None
+
+    location: Optional[str] = None
+
+    user_id: Optional[str] = FieldInfo(alias="userId", default=None)
 
 
 class RepositoryContributorsEdgeSocialAccount(BaseModel):
@@ -450,6 +509,16 @@ class Repository(BaseModel):
 
     total_issues_open: float = FieldInfo(alias="totalIssuesOpen")
     """Number of open issues"""
+
+    contributor_profiles: Optional[List[RepositoryContributorProfile]] = FieldInfo(
+        alias="contributorProfiles", default=None
+    )
+    """
+    Rich profiles for the contributors (identity, top owned repos, devrank, LinkedIn
+    overlay), hydrated in the SAME call so callers skip a separate by-ids
+    round-trip. Join to `contributors` by login. Present when
+    includeAttributes.contributorProfiles = true.
+    """
 
     contributors: Optional[RepositoryContributors] = None
     """Users who follow this user (when includeAttributes.followers is specified)"""

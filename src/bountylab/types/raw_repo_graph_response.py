@@ -15,6 +15,10 @@ __all__ = [
     "RepoStarsResponseUserAggregates",
     "RepoStarsResponseUserContributes",
     "RepoStarsResponseUserContributesEdge",
+    "RepoStarsResponseUserContributesEdgeContributorProfile",
+    "RepoStarsResponseUserContributesEdgeContributorProfileTopRepo",
+    "RepoStarsResponseUserContributesEdgeContributorProfileDevrank",
+    "RepoStarsResponseUserContributesEdgeContributorProfileLinkedin",
     "RepoStarsResponseUserContributesEdgeContributors",
     "RepoStarsResponseUserContributesEdgeContributorsEdge",
     "RepoStarsResponseUserContributesEdgeContributorsEdgeSocialAccount",
@@ -41,6 +45,10 @@ __all__ = [
     "RepoStarsResponseUserFollowingPageInfo",
     "RepoStarsResponseUserOwns",
     "RepoStarsResponseUserOwnsEdge",
+    "RepoStarsResponseUserOwnsEdgeContributorProfile",
+    "RepoStarsResponseUserOwnsEdgeContributorProfileTopRepo",
+    "RepoStarsResponseUserOwnsEdgeContributorProfileDevrank",
+    "RepoStarsResponseUserOwnsEdgeContributorProfileLinkedin",
     "RepoStarsResponseUserOwnsEdgeContributors",
     "RepoStarsResponseUserOwnsEdgeContributorsEdge",
     "RepoStarsResponseUserOwnsEdgeContributorsEdgeSocialAccount",
@@ -62,6 +70,10 @@ __all__ = [
     "RepoStarsResponseUserSocialAccount",
     "RepoStarsResponseUserStars",
     "RepoStarsResponseUserStarsEdge",
+    "RepoStarsResponseUserStarsEdgeContributorProfile",
+    "RepoStarsResponseUserStarsEdgeContributorProfileTopRepo",
+    "RepoStarsResponseUserStarsEdgeContributorProfileDevrank",
+    "RepoStarsResponseUserStarsEdgeContributorProfileLinkedin",
     "RepoStarsResponseUserStarsEdgeContributors",
     "RepoStarsResponseUserStarsEdgeContributorsEdge",
     "RepoStarsResponseUserStarsEdgeContributorsEdgeSocialAccount",
@@ -83,6 +95,10 @@ __all__ = [
     "RepoContributesResponseUserAggregates",
     "RepoContributesResponseUserContributes",
     "RepoContributesResponseUserContributesEdge",
+    "RepoContributesResponseUserContributesEdgeContributorProfile",
+    "RepoContributesResponseUserContributesEdgeContributorProfileTopRepo",
+    "RepoContributesResponseUserContributesEdgeContributorProfileDevrank",
+    "RepoContributesResponseUserContributesEdgeContributorProfileLinkedin",
     "RepoContributesResponseUserContributesEdgeContributors",
     "RepoContributesResponseUserContributesEdgeContributorsEdge",
     "RepoContributesResponseUserContributesEdgeContributorsEdgeSocialAccount",
@@ -109,6 +125,10 @@ __all__ = [
     "RepoContributesResponseUserFollowingPageInfo",
     "RepoContributesResponseUserOwns",
     "RepoContributesResponseUserOwnsEdge",
+    "RepoContributesResponseUserOwnsEdgeContributorProfile",
+    "RepoContributesResponseUserOwnsEdgeContributorProfileTopRepo",
+    "RepoContributesResponseUserOwnsEdgeContributorProfileDevrank",
+    "RepoContributesResponseUserOwnsEdgeContributorProfileLinkedin",
     "RepoContributesResponseUserOwnsEdgeContributors",
     "RepoContributesResponseUserOwnsEdgeContributorsEdge",
     "RepoContributesResponseUserOwnsEdgeContributorsEdgeSocialAccount",
@@ -130,6 +150,10 @@ __all__ = [
     "RepoContributesResponseUserSocialAccount",
     "RepoContributesResponseUserStars",
     "RepoContributesResponseUserStarsEdge",
+    "RepoContributesResponseUserStarsEdgeContributorProfile",
+    "RepoContributesResponseUserStarsEdgeContributorProfileTopRepo",
+    "RepoContributesResponseUserStarsEdgeContributorProfileDevrank",
+    "RepoContributesResponseUserStarsEdgeContributorProfileLinkedin",
     "RepoContributesResponseUserStarsEdgeContributors",
     "RepoContributesResponseUserStarsEdgeContributorsEdge",
     "RepoContributesResponseUserStarsEdgeContributorsEdgeSocialAccount",
@@ -151,6 +175,10 @@ __all__ = [
     "RepoOwnsResponseUserAggregates",
     "RepoOwnsResponseUserContributes",
     "RepoOwnsResponseUserContributesEdge",
+    "RepoOwnsResponseUserContributesEdgeContributorProfile",
+    "RepoOwnsResponseUserContributesEdgeContributorProfileTopRepo",
+    "RepoOwnsResponseUserContributesEdgeContributorProfileDevrank",
+    "RepoOwnsResponseUserContributesEdgeContributorProfileLinkedin",
     "RepoOwnsResponseUserContributesEdgeContributors",
     "RepoOwnsResponseUserContributesEdgeContributorsEdge",
     "RepoOwnsResponseUserContributesEdgeContributorsEdgeSocialAccount",
@@ -177,6 +205,10 @@ __all__ = [
     "RepoOwnsResponseUserFollowingPageInfo",
     "RepoOwnsResponseUserOwns",
     "RepoOwnsResponseUserOwnsEdge",
+    "RepoOwnsResponseUserOwnsEdgeContributorProfile",
+    "RepoOwnsResponseUserOwnsEdgeContributorProfileTopRepo",
+    "RepoOwnsResponseUserOwnsEdgeContributorProfileDevrank",
+    "RepoOwnsResponseUserOwnsEdgeContributorProfileLinkedin",
     "RepoOwnsResponseUserOwnsEdgeContributors",
     "RepoOwnsResponseUserOwnsEdgeContributorsEdge",
     "RepoOwnsResponseUserOwnsEdgeContributorsEdgeSocialAccount",
@@ -198,6 +230,10 @@ __all__ = [
     "RepoOwnsResponseUserSocialAccount",
     "RepoOwnsResponseUserStars",
     "RepoOwnsResponseUserStarsEdge",
+    "RepoOwnsResponseUserStarsEdgeContributorProfile",
+    "RepoOwnsResponseUserStarsEdgeContributorProfileTopRepo",
+    "RepoOwnsResponseUserStarsEdgeContributorProfileDevrank",
+    "RepoOwnsResponseUserStarsEdgeContributorProfileLinkedin",
     "RepoOwnsResponseUserStarsEdgeContributors",
     "RepoOwnsResponseUserStarsEdgeContributorsEdge",
     "RepoOwnsResponseUserStarsEdgeContributorsEdgeSocialAccount",
@@ -231,6 +267,61 @@ class RepoStarsResponseUserAggregates(BaseModel):
 
     total_stars: float = FieldInfo(alias="totalStars")
     """Total stars received across all owned repositories"""
+
+
+class RepoStarsResponseUserContributesEdgeContributorProfileTopRepo(BaseModel):
+    name: str
+
+    stargazer_count: float = FieldInfo(alias="stargazerCount")
+
+
+class RepoStarsResponseUserContributesEdgeContributorProfileDevrank(BaseModel):
+    cracked_score: float = FieldInfo(alias="crackedScore")
+
+    followers_in: float = FieldInfo(alias="followersIn")
+
+    following_out: float = FieldInfo(alias="followingOut")
+
+    tier: str
+
+
+class RepoStarsResponseUserContributesEdgeContributorProfileLinkedin(BaseModel):
+    connections_count: Optional[float] = FieldInfo(alias="connectionsCount", default=None)
+
+    current_company: Optional[str] = FieldInfo(alias="currentCompany", default=None)
+
+    current_title: Optional[str] = FieldInfo(alias="currentTitle", default=None)
+
+    seniority_level: Optional[str] = FieldInfo(alias="seniorityLevel", default=None)
+
+    total_experience_years: Optional[float] = FieldInfo(alias="totalExperienceYears", default=None)
+
+    url: Optional[str] = None
+
+
+class RepoStarsResponseUserContributesEdgeContributorProfile(BaseModel):
+    login: str
+
+    top_repos: List[RepoStarsResponseUserContributesEdgeContributorProfileTopRepo] = FieldInfo(alias="topRepos")
+    """Most-starred repos this login owns, from our index."""
+
+    account_created_at: Optional[str] = FieldInfo(alias="accountCreatedAt", default=None)
+
+    bio: Optional[str] = None
+
+    company: Optional[str] = None
+
+    devrank: Optional[RepoStarsResponseUserContributesEdgeContributorProfileDevrank] = None
+
+    display_name: Optional[str] = FieldInfo(alias="displayName", default=None)
+
+    github_id: Optional[str] = FieldInfo(alias="githubId", default=None)
+
+    linkedin: Optional[RepoStarsResponseUserContributesEdgeContributorProfileLinkedin] = None
+
+    location: Optional[str] = None
+
+    user_id: Optional[str] = FieldInfo(alias="userId", default=None)
 
 
 class RepoStarsResponseUserContributesEdgeContributorsEdgeSocialAccount(BaseModel):
@@ -660,6 +751,16 @@ class RepoStarsResponseUserContributesEdge(BaseModel):
     total_issues_open: float = FieldInfo(alias="totalIssuesOpen")
     """Number of open issues"""
 
+    contributor_profiles: Optional[List[RepoStarsResponseUserContributesEdgeContributorProfile]] = FieldInfo(
+        alias="contributorProfiles", default=None
+    )
+    """
+    Rich profiles for the contributors (identity, top owned repos, devrank, LinkedIn
+    overlay), hydrated in the SAME call so callers skip a separate by-ids
+    round-trip. Join to `contributors` by login. Present when
+    includeAttributes.contributorProfiles = true.
+    """
+
     contributors: Optional[RepoStarsResponseUserContributesEdgeContributors] = None
     """Users who follow this user (when includeAttributes.followers is specified)"""
 
@@ -922,6 +1023,61 @@ class RepoStarsResponseUserFollowing(BaseModel):
 
     page_info: RepoStarsResponseUserFollowingPageInfo = FieldInfo(alias="pageInfo")
     """Pagination information"""
+
+
+class RepoStarsResponseUserOwnsEdgeContributorProfileTopRepo(BaseModel):
+    name: str
+
+    stargazer_count: float = FieldInfo(alias="stargazerCount")
+
+
+class RepoStarsResponseUserOwnsEdgeContributorProfileDevrank(BaseModel):
+    cracked_score: float = FieldInfo(alias="crackedScore")
+
+    followers_in: float = FieldInfo(alias="followersIn")
+
+    following_out: float = FieldInfo(alias="followingOut")
+
+    tier: str
+
+
+class RepoStarsResponseUserOwnsEdgeContributorProfileLinkedin(BaseModel):
+    connections_count: Optional[float] = FieldInfo(alias="connectionsCount", default=None)
+
+    current_company: Optional[str] = FieldInfo(alias="currentCompany", default=None)
+
+    current_title: Optional[str] = FieldInfo(alias="currentTitle", default=None)
+
+    seniority_level: Optional[str] = FieldInfo(alias="seniorityLevel", default=None)
+
+    total_experience_years: Optional[float] = FieldInfo(alias="totalExperienceYears", default=None)
+
+    url: Optional[str] = None
+
+
+class RepoStarsResponseUserOwnsEdgeContributorProfile(BaseModel):
+    login: str
+
+    top_repos: List[RepoStarsResponseUserOwnsEdgeContributorProfileTopRepo] = FieldInfo(alias="topRepos")
+    """Most-starred repos this login owns, from our index."""
+
+    account_created_at: Optional[str] = FieldInfo(alias="accountCreatedAt", default=None)
+
+    bio: Optional[str] = None
+
+    company: Optional[str] = None
+
+    devrank: Optional[RepoStarsResponseUserOwnsEdgeContributorProfileDevrank] = None
+
+    display_name: Optional[str] = FieldInfo(alias="displayName", default=None)
+
+    github_id: Optional[str] = FieldInfo(alias="githubId", default=None)
+
+    linkedin: Optional[RepoStarsResponseUserOwnsEdgeContributorProfileLinkedin] = None
+
+    location: Optional[str] = None
+
+    user_id: Optional[str] = FieldInfo(alias="userId", default=None)
 
 
 class RepoStarsResponseUserOwnsEdgeContributorsEdgeSocialAccount(BaseModel):
@@ -1351,6 +1507,16 @@ class RepoStarsResponseUserOwnsEdge(BaseModel):
     total_issues_open: float = FieldInfo(alias="totalIssuesOpen")
     """Number of open issues"""
 
+    contributor_profiles: Optional[List[RepoStarsResponseUserOwnsEdgeContributorProfile]] = FieldInfo(
+        alias="contributorProfiles", default=None
+    )
+    """
+    Rich profiles for the contributors (identity, top owned repos, devrank, LinkedIn
+    overlay), hydrated in the SAME call so callers skip a separate by-ids
+    round-trip. Join to `contributors` by login. Present when
+    includeAttributes.contributorProfiles = true.
+    """
+
     contributors: Optional[RepoStarsResponseUserOwnsEdgeContributors] = None
     """Users who follow this user (when includeAttributes.followers is specified)"""
 
@@ -1562,6 +1728,61 @@ class RepoStarsResponseUserSocialAccount(BaseModel):
     provider: str
 
     url: str
+
+
+class RepoStarsResponseUserStarsEdgeContributorProfileTopRepo(BaseModel):
+    name: str
+
+    stargazer_count: float = FieldInfo(alias="stargazerCount")
+
+
+class RepoStarsResponseUserStarsEdgeContributorProfileDevrank(BaseModel):
+    cracked_score: float = FieldInfo(alias="crackedScore")
+
+    followers_in: float = FieldInfo(alias="followersIn")
+
+    following_out: float = FieldInfo(alias="followingOut")
+
+    tier: str
+
+
+class RepoStarsResponseUserStarsEdgeContributorProfileLinkedin(BaseModel):
+    connections_count: Optional[float] = FieldInfo(alias="connectionsCount", default=None)
+
+    current_company: Optional[str] = FieldInfo(alias="currentCompany", default=None)
+
+    current_title: Optional[str] = FieldInfo(alias="currentTitle", default=None)
+
+    seniority_level: Optional[str] = FieldInfo(alias="seniorityLevel", default=None)
+
+    total_experience_years: Optional[float] = FieldInfo(alias="totalExperienceYears", default=None)
+
+    url: Optional[str] = None
+
+
+class RepoStarsResponseUserStarsEdgeContributorProfile(BaseModel):
+    login: str
+
+    top_repos: List[RepoStarsResponseUserStarsEdgeContributorProfileTopRepo] = FieldInfo(alias="topRepos")
+    """Most-starred repos this login owns, from our index."""
+
+    account_created_at: Optional[str] = FieldInfo(alias="accountCreatedAt", default=None)
+
+    bio: Optional[str] = None
+
+    company: Optional[str] = None
+
+    devrank: Optional[RepoStarsResponseUserStarsEdgeContributorProfileDevrank] = None
+
+    display_name: Optional[str] = FieldInfo(alias="displayName", default=None)
+
+    github_id: Optional[str] = FieldInfo(alias="githubId", default=None)
+
+    linkedin: Optional[RepoStarsResponseUserStarsEdgeContributorProfileLinkedin] = None
+
+    location: Optional[str] = None
+
+    user_id: Optional[str] = FieldInfo(alias="userId", default=None)
 
 
 class RepoStarsResponseUserStarsEdgeContributorsEdgeSocialAccount(BaseModel):
@@ -1991,6 +2212,16 @@ class RepoStarsResponseUserStarsEdge(BaseModel):
     total_issues_open: float = FieldInfo(alias="totalIssuesOpen")
     """Number of open issues"""
 
+    contributor_profiles: Optional[List[RepoStarsResponseUserStarsEdgeContributorProfile]] = FieldInfo(
+        alias="contributorProfiles", default=None
+    )
+    """
+    Rich profiles for the contributors (identity, top owned repos, devrank, LinkedIn
+    overlay), hydrated in the SAME call so callers skip a separate by-ids
+    round-trip. Join to `contributors` by login. Present when
+    includeAttributes.contributorProfiles = true.
+    """
+
     contributors: Optional[RepoStarsResponseUserStarsEdgeContributors] = None
     """Users who follow this user (when includeAttributes.followers is specified)"""
 
@@ -2171,6 +2402,61 @@ class RepoContributesResponseUserAggregates(BaseModel):
 
     total_stars: float = FieldInfo(alias="totalStars")
     """Total stars received across all owned repositories"""
+
+
+class RepoContributesResponseUserContributesEdgeContributorProfileTopRepo(BaseModel):
+    name: str
+
+    stargazer_count: float = FieldInfo(alias="stargazerCount")
+
+
+class RepoContributesResponseUserContributesEdgeContributorProfileDevrank(BaseModel):
+    cracked_score: float = FieldInfo(alias="crackedScore")
+
+    followers_in: float = FieldInfo(alias="followersIn")
+
+    following_out: float = FieldInfo(alias="followingOut")
+
+    tier: str
+
+
+class RepoContributesResponseUserContributesEdgeContributorProfileLinkedin(BaseModel):
+    connections_count: Optional[float] = FieldInfo(alias="connectionsCount", default=None)
+
+    current_company: Optional[str] = FieldInfo(alias="currentCompany", default=None)
+
+    current_title: Optional[str] = FieldInfo(alias="currentTitle", default=None)
+
+    seniority_level: Optional[str] = FieldInfo(alias="seniorityLevel", default=None)
+
+    total_experience_years: Optional[float] = FieldInfo(alias="totalExperienceYears", default=None)
+
+    url: Optional[str] = None
+
+
+class RepoContributesResponseUserContributesEdgeContributorProfile(BaseModel):
+    login: str
+
+    top_repos: List[RepoContributesResponseUserContributesEdgeContributorProfileTopRepo] = FieldInfo(alias="topRepos")
+    """Most-starred repos this login owns, from our index."""
+
+    account_created_at: Optional[str] = FieldInfo(alias="accountCreatedAt", default=None)
+
+    bio: Optional[str] = None
+
+    company: Optional[str] = None
+
+    devrank: Optional[RepoContributesResponseUserContributesEdgeContributorProfileDevrank] = None
+
+    display_name: Optional[str] = FieldInfo(alias="displayName", default=None)
+
+    github_id: Optional[str] = FieldInfo(alias="githubId", default=None)
+
+    linkedin: Optional[RepoContributesResponseUserContributesEdgeContributorProfileLinkedin] = None
+
+    location: Optional[str] = None
+
+    user_id: Optional[str] = FieldInfo(alias="userId", default=None)
 
 
 class RepoContributesResponseUserContributesEdgeContributorsEdgeSocialAccount(BaseModel):
@@ -2600,6 +2886,16 @@ class RepoContributesResponseUserContributesEdge(BaseModel):
     total_issues_open: float = FieldInfo(alias="totalIssuesOpen")
     """Number of open issues"""
 
+    contributor_profiles: Optional[List[RepoContributesResponseUserContributesEdgeContributorProfile]] = FieldInfo(
+        alias="contributorProfiles", default=None
+    )
+    """
+    Rich profiles for the contributors (identity, top owned repos, devrank, LinkedIn
+    overlay), hydrated in the SAME call so callers skip a separate by-ids
+    round-trip. Join to `contributors` by login. Present when
+    includeAttributes.contributorProfiles = true.
+    """
+
     contributors: Optional[RepoContributesResponseUserContributesEdgeContributors] = None
     """Users who follow this user (when includeAttributes.followers is specified)"""
 
@@ -2862,6 +3158,61 @@ class RepoContributesResponseUserFollowing(BaseModel):
 
     page_info: RepoContributesResponseUserFollowingPageInfo = FieldInfo(alias="pageInfo")
     """Pagination information"""
+
+
+class RepoContributesResponseUserOwnsEdgeContributorProfileTopRepo(BaseModel):
+    name: str
+
+    stargazer_count: float = FieldInfo(alias="stargazerCount")
+
+
+class RepoContributesResponseUserOwnsEdgeContributorProfileDevrank(BaseModel):
+    cracked_score: float = FieldInfo(alias="crackedScore")
+
+    followers_in: float = FieldInfo(alias="followersIn")
+
+    following_out: float = FieldInfo(alias="followingOut")
+
+    tier: str
+
+
+class RepoContributesResponseUserOwnsEdgeContributorProfileLinkedin(BaseModel):
+    connections_count: Optional[float] = FieldInfo(alias="connectionsCount", default=None)
+
+    current_company: Optional[str] = FieldInfo(alias="currentCompany", default=None)
+
+    current_title: Optional[str] = FieldInfo(alias="currentTitle", default=None)
+
+    seniority_level: Optional[str] = FieldInfo(alias="seniorityLevel", default=None)
+
+    total_experience_years: Optional[float] = FieldInfo(alias="totalExperienceYears", default=None)
+
+    url: Optional[str] = None
+
+
+class RepoContributesResponseUserOwnsEdgeContributorProfile(BaseModel):
+    login: str
+
+    top_repos: List[RepoContributesResponseUserOwnsEdgeContributorProfileTopRepo] = FieldInfo(alias="topRepos")
+    """Most-starred repos this login owns, from our index."""
+
+    account_created_at: Optional[str] = FieldInfo(alias="accountCreatedAt", default=None)
+
+    bio: Optional[str] = None
+
+    company: Optional[str] = None
+
+    devrank: Optional[RepoContributesResponseUserOwnsEdgeContributorProfileDevrank] = None
+
+    display_name: Optional[str] = FieldInfo(alias="displayName", default=None)
+
+    github_id: Optional[str] = FieldInfo(alias="githubId", default=None)
+
+    linkedin: Optional[RepoContributesResponseUserOwnsEdgeContributorProfileLinkedin] = None
+
+    location: Optional[str] = None
+
+    user_id: Optional[str] = FieldInfo(alias="userId", default=None)
 
 
 class RepoContributesResponseUserOwnsEdgeContributorsEdgeSocialAccount(BaseModel):
@@ -3291,6 +3642,16 @@ class RepoContributesResponseUserOwnsEdge(BaseModel):
     total_issues_open: float = FieldInfo(alias="totalIssuesOpen")
     """Number of open issues"""
 
+    contributor_profiles: Optional[List[RepoContributesResponseUserOwnsEdgeContributorProfile]] = FieldInfo(
+        alias="contributorProfiles", default=None
+    )
+    """
+    Rich profiles for the contributors (identity, top owned repos, devrank, LinkedIn
+    overlay), hydrated in the SAME call so callers skip a separate by-ids
+    round-trip. Join to `contributors` by login. Present when
+    includeAttributes.contributorProfiles = true.
+    """
+
     contributors: Optional[RepoContributesResponseUserOwnsEdgeContributors] = None
     """Users who follow this user (when includeAttributes.followers is specified)"""
 
@@ -3504,6 +3865,61 @@ class RepoContributesResponseUserSocialAccount(BaseModel):
     provider: str
 
     url: str
+
+
+class RepoContributesResponseUserStarsEdgeContributorProfileTopRepo(BaseModel):
+    name: str
+
+    stargazer_count: float = FieldInfo(alias="stargazerCount")
+
+
+class RepoContributesResponseUserStarsEdgeContributorProfileDevrank(BaseModel):
+    cracked_score: float = FieldInfo(alias="crackedScore")
+
+    followers_in: float = FieldInfo(alias="followersIn")
+
+    following_out: float = FieldInfo(alias="followingOut")
+
+    tier: str
+
+
+class RepoContributesResponseUserStarsEdgeContributorProfileLinkedin(BaseModel):
+    connections_count: Optional[float] = FieldInfo(alias="connectionsCount", default=None)
+
+    current_company: Optional[str] = FieldInfo(alias="currentCompany", default=None)
+
+    current_title: Optional[str] = FieldInfo(alias="currentTitle", default=None)
+
+    seniority_level: Optional[str] = FieldInfo(alias="seniorityLevel", default=None)
+
+    total_experience_years: Optional[float] = FieldInfo(alias="totalExperienceYears", default=None)
+
+    url: Optional[str] = None
+
+
+class RepoContributesResponseUserStarsEdgeContributorProfile(BaseModel):
+    login: str
+
+    top_repos: List[RepoContributesResponseUserStarsEdgeContributorProfileTopRepo] = FieldInfo(alias="topRepos")
+    """Most-starred repos this login owns, from our index."""
+
+    account_created_at: Optional[str] = FieldInfo(alias="accountCreatedAt", default=None)
+
+    bio: Optional[str] = None
+
+    company: Optional[str] = None
+
+    devrank: Optional[RepoContributesResponseUserStarsEdgeContributorProfileDevrank] = None
+
+    display_name: Optional[str] = FieldInfo(alias="displayName", default=None)
+
+    github_id: Optional[str] = FieldInfo(alias="githubId", default=None)
+
+    linkedin: Optional[RepoContributesResponseUserStarsEdgeContributorProfileLinkedin] = None
+
+    location: Optional[str] = None
+
+    user_id: Optional[str] = FieldInfo(alias="userId", default=None)
 
 
 class RepoContributesResponseUserStarsEdgeContributorsEdgeSocialAccount(BaseModel):
@@ -3933,6 +4349,16 @@ class RepoContributesResponseUserStarsEdge(BaseModel):
     total_issues_open: float = FieldInfo(alias="totalIssuesOpen")
     """Number of open issues"""
 
+    contributor_profiles: Optional[List[RepoContributesResponseUserStarsEdgeContributorProfile]] = FieldInfo(
+        alias="contributorProfiles", default=None
+    )
+    """
+    Rich profiles for the contributors (identity, top owned repos, devrank, LinkedIn
+    overlay), hydrated in the SAME call so callers skip a separate by-ids
+    round-trip. Join to `contributors` by login. Present when
+    includeAttributes.contributorProfiles = true.
+    """
+
     contributors: Optional[RepoContributesResponseUserStarsEdgeContributors] = None
     """Users who follow this user (when includeAttributes.followers is specified)"""
 
@@ -4118,6 +4544,61 @@ class RepoOwnsResponseUserAggregates(BaseModel):
 
     total_stars: float = FieldInfo(alias="totalStars")
     """Total stars received across all owned repositories"""
+
+
+class RepoOwnsResponseUserContributesEdgeContributorProfileTopRepo(BaseModel):
+    name: str
+
+    stargazer_count: float = FieldInfo(alias="stargazerCount")
+
+
+class RepoOwnsResponseUserContributesEdgeContributorProfileDevrank(BaseModel):
+    cracked_score: float = FieldInfo(alias="crackedScore")
+
+    followers_in: float = FieldInfo(alias="followersIn")
+
+    following_out: float = FieldInfo(alias="followingOut")
+
+    tier: str
+
+
+class RepoOwnsResponseUserContributesEdgeContributorProfileLinkedin(BaseModel):
+    connections_count: Optional[float] = FieldInfo(alias="connectionsCount", default=None)
+
+    current_company: Optional[str] = FieldInfo(alias="currentCompany", default=None)
+
+    current_title: Optional[str] = FieldInfo(alias="currentTitle", default=None)
+
+    seniority_level: Optional[str] = FieldInfo(alias="seniorityLevel", default=None)
+
+    total_experience_years: Optional[float] = FieldInfo(alias="totalExperienceYears", default=None)
+
+    url: Optional[str] = None
+
+
+class RepoOwnsResponseUserContributesEdgeContributorProfile(BaseModel):
+    login: str
+
+    top_repos: List[RepoOwnsResponseUserContributesEdgeContributorProfileTopRepo] = FieldInfo(alias="topRepos")
+    """Most-starred repos this login owns, from our index."""
+
+    account_created_at: Optional[str] = FieldInfo(alias="accountCreatedAt", default=None)
+
+    bio: Optional[str] = None
+
+    company: Optional[str] = None
+
+    devrank: Optional[RepoOwnsResponseUserContributesEdgeContributorProfileDevrank] = None
+
+    display_name: Optional[str] = FieldInfo(alias="displayName", default=None)
+
+    github_id: Optional[str] = FieldInfo(alias="githubId", default=None)
+
+    linkedin: Optional[RepoOwnsResponseUserContributesEdgeContributorProfileLinkedin] = None
+
+    location: Optional[str] = None
+
+    user_id: Optional[str] = FieldInfo(alias="userId", default=None)
 
 
 class RepoOwnsResponseUserContributesEdgeContributorsEdgeSocialAccount(BaseModel):
@@ -4547,6 +5028,16 @@ class RepoOwnsResponseUserContributesEdge(BaseModel):
     total_issues_open: float = FieldInfo(alias="totalIssuesOpen")
     """Number of open issues"""
 
+    contributor_profiles: Optional[List[RepoOwnsResponseUserContributesEdgeContributorProfile]] = FieldInfo(
+        alias="contributorProfiles", default=None
+    )
+    """
+    Rich profiles for the contributors (identity, top owned repos, devrank, LinkedIn
+    overlay), hydrated in the SAME call so callers skip a separate by-ids
+    round-trip. Join to `contributors` by login. Present when
+    includeAttributes.contributorProfiles = true.
+    """
+
     contributors: Optional[RepoOwnsResponseUserContributesEdgeContributors] = None
     """Users who follow this user (when includeAttributes.followers is specified)"""
 
@@ -4809,6 +5300,61 @@ class RepoOwnsResponseUserFollowing(BaseModel):
 
     page_info: RepoOwnsResponseUserFollowingPageInfo = FieldInfo(alias="pageInfo")
     """Pagination information"""
+
+
+class RepoOwnsResponseUserOwnsEdgeContributorProfileTopRepo(BaseModel):
+    name: str
+
+    stargazer_count: float = FieldInfo(alias="stargazerCount")
+
+
+class RepoOwnsResponseUserOwnsEdgeContributorProfileDevrank(BaseModel):
+    cracked_score: float = FieldInfo(alias="crackedScore")
+
+    followers_in: float = FieldInfo(alias="followersIn")
+
+    following_out: float = FieldInfo(alias="followingOut")
+
+    tier: str
+
+
+class RepoOwnsResponseUserOwnsEdgeContributorProfileLinkedin(BaseModel):
+    connections_count: Optional[float] = FieldInfo(alias="connectionsCount", default=None)
+
+    current_company: Optional[str] = FieldInfo(alias="currentCompany", default=None)
+
+    current_title: Optional[str] = FieldInfo(alias="currentTitle", default=None)
+
+    seniority_level: Optional[str] = FieldInfo(alias="seniorityLevel", default=None)
+
+    total_experience_years: Optional[float] = FieldInfo(alias="totalExperienceYears", default=None)
+
+    url: Optional[str] = None
+
+
+class RepoOwnsResponseUserOwnsEdgeContributorProfile(BaseModel):
+    login: str
+
+    top_repos: List[RepoOwnsResponseUserOwnsEdgeContributorProfileTopRepo] = FieldInfo(alias="topRepos")
+    """Most-starred repos this login owns, from our index."""
+
+    account_created_at: Optional[str] = FieldInfo(alias="accountCreatedAt", default=None)
+
+    bio: Optional[str] = None
+
+    company: Optional[str] = None
+
+    devrank: Optional[RepoOwnsResponseUserOwnsEdgeContributorProfileDevrank] = None
+
+    display_name: Optional[str] = FieldInfo(alias="displayName", default=None)
+
+    github_id: Optional[str] = FieldInfo(alias="githubId", default=None)
+
+    linkedin: Optional[RepoOwnsResponseUserOwnsEdgeContributorProfileLinkedin] = None
+
+    location: Optional[str] = None
+
+    user_id: Optional[str] = FieldInfo(alias="userId", default=None)
 
 
 class RepoOwnsResponseUserOwnsEdgeContributorsEdgeSocialAccount(BaseModel):
@@ -5238,6 +5784,16 @@ class RepoOwnsResponseUserOwnsEdge(BaseModel):
     total_issues_open: float = FieldInfo(alias="totalIssuesOpen")
     """Number of open issues"""
 
+    contributor_profiles: Optional[List[RepoOwnsResponseUserOwnsEdgeContributorProfile]] = FieldInfo(
+        alias="contributorProfiles", default=None
+    )
+    """
+    Rich profiles for the contributors (identity, top owned repos, devrank, LinkedIn
+    overlay), hydrated in the SAME call so callers skip a separate by-ids
+    round-trip. Join to `contributors` by login. Present when
+    includeAttributes.contributorProfiles = true.
+    """
+
     contributors: Optional[RepoOwnsResponseUserOwnsEdgeContributors] = None
     """Users who follow this user (when includeAttributes.followers is specified)"""
 
@@ -5449,6 +6005,61 @@ class RepoOwnsResponseUserSocialAccount(BaseModel):
     provider: str
 
     url: str
+
+
+class RepoOwnsResponseUserStarsEdgeContributorProfileTopRepo(BaseModel):
+    name: str
+
+    stargazer_count: float = FieldInfo(alias="stargazerCount")
+
+
+class RepoOwnsResponseUserStarsEdgeContributorProfileDevrank(BaseModel):
+    cracked_score: float = FieldInfo(alias="crackedScore")
+
+    followers_in: float = FieldInfo(alias="followersIn")
+
+    following_out: float = FieldInfo(alias="followingOut")
+
+    tier: str
+
+
+class RepoOwnsResponseUserStarsEdgeContributorProfileLinkedin(BaseModel):
+    connections_count: Optional[float] = FieldInfo(alias="connectionsCount", default=None)
+
+    current_company: Optional[str] = FieldInfo(alias="currentCompany", default=None)
+
+    current_title: Optional[str] = FieldInfo(alias="currentTitle", default=None)
+
+    seniority_level: Optional[str] = FieldInfo(alias="seniorityLevel", default=None)
+
+    total_experience_years: Optional[float] = FieldInfo(alias="totalExperienceYears", default=None)
+
+    url: Optional[str] = None
+
+
+class RepoOwnsResponseUserStarsEdgeContributorProfile(BaseModel):
+    login: str
+
+    top_repos: List[RepoOwnsResponseUserStarsEdgeContributorProfileTopRepo] = FieldInfo(alias="topRepos")
+    """Most-starred repos this login owns, from our index."""
+
+    account_created_at: Optional[str] = FieldInfo(alias="accountCreatedAt", default=None)
+
+    bio: Optional[str] = None
+
+    company: Optional[str] = None
+
+    devrank: Optional[RepoOwnsResponseUserStarsEdgeContributorProfileDevrank] = None
+
+    display_name: Optional[str] = FieldInfo(alias="displayName", default=None)
+
+    github_id: Optional[str] = FieldInfo(alias="githubId", default=None)
+
+    linkedin: Optional[RepoOwnsResponseUserStarsEdgeContributorProfileLinkedin] = None
+
+    location: Optional[str] = None
+
+    user_id: Optional[str] = FieldInfo(alias="userId", default=None)
 
 
 class RepoOwnsResponseUserStarsEdgeContributorsEdgeSocialAccount(BaseModel):
@@ -5877,6 +6488,16 @@ class RepoOwnsResponseUserStarsEdge(BaseModel):
 
     total_issues_open: float = FieldInfo(alias="totalIssuesOpen")
     """Number of open issues"""
+
+    contributor_profiles: Optional[List[RepoOwnsResponseUserStarsEdgeContributorProfile]] = FieldInfo(
+        alias="contributorProfiles", default=None
+    )
+    """
+    Rich profiles for the contributors (identity, top owned repos, devrank, LinkedIn
+    overlay), hydrated in the SAME call so callers skip a separate by-ids
+    round-trip. Join to `contributors` by login. Present when
+    includeAttributes.contributorProfiles = true.
+    """
 
     contributors: Optional[RepoOwnsResponseUserStarsEdgeContributors] = None
     """Users who follow this user (when includeAttributes.followers is specified)"""
